@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+
+# Environment variables / secrets
+.env
+.env.*
+.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Runtime / temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Uploaded/generated files
+uploads/*
+!uploads/.gitkeep
+
+# Seed/generated assets (ignore if generated locally)
+# seed-assets/*
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Package manager caches
+.npm/
+.pnpm-store/
+
+# Vercel
+.vercel/
+
+# Misc
+.cache/
+.parcel-cache/
+.turbo/
+EOF

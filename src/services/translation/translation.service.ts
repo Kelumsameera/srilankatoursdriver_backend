@@ -1,0 +1,284 @@
+import { Types } from "mongoose";
+import { Translation } from "../../models/Translation.js";
+import { isLocale, SOURCE_LOCALE, TARGET_LOCALES, type Locale } from "../../config/locales.js";
+import { ApiError } from "../../utils/ApiError.js";
+import { hashFields, setPath, sha256 } from "../../utils/helpers.js";
+import { revalidateFrontend } from "../revalidate.service.js";
+import { extractFields, isTranslatableType, TRANSLATABLE, type TranslatableType } from "./registry.js";
+import { getTranslationProvider } from "./providers.js";
+import { logger } from "../../config/logger.js";
+
+export type TranslationState = "missing" | "outdated" | "up_to_date";
+
+/**
+ * MongoDB/Mongoose map keys cannot contain "." – field paths such as "itinerary.0.title"
+ * are stored with "." encoded as "~" and decoded when read.
+ */
+const encodeKey = (path: string) => path.replace(/\./g, "~");
+const decodeKey = (key: string) => key.replace(/~/g, ".");
+function encodeRecord(rec: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(rec).map(([k, v]) => [encodeKey(k), v]));
+}
+
+function hashMap(fields: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(fields).map(([k, v]) => [k, sha256(v)]));
+}
+
+/** Reads a stored map (Map or plain object) back into a path → value record. */
+function toRecord(map: unknown): Record<string, string> {
+  if (!map) return {};
+  const entries = map instanceof Map ? Array.from(map.entries()) : Object.entries(map as Record<string, string>);
+  return Object.fromEntries(entries.map(([k, v]) => [decodeKey(String(k)), String(v)]));
+}
+
+async function loadSource(entityType: TranslatableType, entityId: string) {
+  const cfg = TRANSLATABLE[entityType];
+  const doc = await cfg.model.findById(entityId).lean();
+  if (!doc) throw ApiError.notFound("Content not found");
+  return { cfg, doc, fields: extractFields(doc, cfg.fields) };
+}
+
+/* ───────────────────────── Public read path ───────────────────────── */
+
+/** Deep-copies plain objects/arrays while keeping ObjectIds, Dates etc. as-is (structuredClone would break ObjectIds). */
+function clonePlain<T>(value: T): T {
+  if (Array.isArray(value)) return value.map((v) => clonePlain(v)) as unknown as T;
+  if (value && typeof value === "object" && Object.getPrototypeOf(value) === Object.prototype) {
+    return Object.fromEntries(Object.entries(value as Record<string, unknown>).map(([k, v]) => [k, clonePlain(v)])) as T;
+  }
+  return value;
+}
+
+/**
+ * Overlays published translations onto lean documents. A field is only replaced when its
+ * translation was made from the *current* English text, so outdated translations fall back
+ * to English instead of showing stale content.
+ */
+export async function localize<T extends { _id?: unknown }>(entityType: TranslatableType, docs: T[], locale?: string): Promise<T[]> {
+  if (!locale || locale === SOURCE_LOCALE || !isLocale(locale) || docs.length === 0) return docs;
+  const cfg = TRANSLATABLE[entityType];
+  const ids = docs.map((d) => d._id).filter(Boolean) as Types.ObjectId[];
+  const rows = await Translation.find({ entityType, entityId: { $in: ids }, locale, published: true }).lean();
+  if (rows.length === 0) return docs;
+  const byId = new Map(rows.map((r) => [String(r.entityId), r]));
+  return docs.map((doc) => {
+    const row = byId.get(String(doc._id));
+    if (!row) return doc;
+    const translated = toRecord(row.fields);
+    const hashes = toRecord(row.sourceHashes);
+    const source = extractFields(doc, cfg.fields);
+    const copy = clonePlain(doc) as unknown as Record<string, unknown>;
+    for (const [path, text] of Object.entries(translated)) {
+      const src = source[path];
+      if (src === undefined || !text) continue;
+      if (hashes[path] && hashes[path] !== sha256(src)) continue; // outdated → keep English
+      setPath(copy, path, text);
+    }
+    return copy as unknown as T;
+  });
+}
+
+export async function localizeOne<T extends { _id?: unknown }>(entityType: TranslatableType, doc: T | null, locale?: string) {
+  if (!doc) return doc;
+  const [out] = await localize(entityType, [doc], locale);
+  return out;
+}
+
+/* ───────────────────────── Admin ───────────────────────── */
+
+export function computeState(source: Record<string, string>, row?: { sourceHashes?: unknown; fields?: unknown } | null): TranslationState {
+  if (!row) return Object.keys(source).length === 0 ? "up_to_date" : "missing";
+  const hashes = toRecord(row.sourceHashes);
+  const fields = toRecord(row.fields);
+  for (const [path, value] of Object.entries(source)) {
+    if (!fields[path]) return "outdated";
+    if (hashes[path] && hashes[path] !== sha256(value)) return "outdated";
+  }
+  return "up_to_date";
+}
+
+/** Translation status matrix for every entity of a type (or all types). */
+export async function getStatusOverview(entityType?: string) {
+  const types = entityType ? [entityType] : Object.keys(TRANSLATABLE);
+  const result: {
+    entityType: string;
+    label: string;
+    items: { entityId: string; title: string; fieldCount: number; locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string }> }[];
+  }[] = [];
+
+  for (const type of types) {
+    if (!isTranslatableType(type)) throw ApiError.badRequest(`Unknown content type: ${type}`);
+    const cfg = TRANSLATABLE[type];
+    const docs = await cfg.model.find({}).sort({ order: 1, createdAt: -1 }).limit(500).lean();
+    const rows = await Translation.find({ entityType: type, entityId: { $in: docs.map((d) => d._id) } }).lean();
+    const index = new Map(rows.map((r) => [`${String(r.entityId)}:${r.locale}`, r]));
+    result.push({
+      entityType: type,
+      label: cfg.label,
+      items: docs.map((doc) => {
+        const source = extractFields(doc, cfg.fields);
+        const locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string }> = {};
+        for (const locale of TARGET_LOCALES) {
+          const row = index.get(`${String(doc._id)}:${locale}`);
+          locales[locale] = {
+            state: computeState(source, row),
+            locked: Boolean(row?.locked),
+            published: row ? row.published !== false : false,
+            origin: row?.origin,
+          };
+        }
+        return {
+          entityId: String(doc._id),
+          title: String((doc as Record<string, unknown>)[cfg.titleField] ?? "(untitled)"),
+          fieldCount: Object.keys(source).length,
+          locales,
+        };
+      }),
+    });
+  }
+  return result;
+}
+
+/** Source fields + every locale's translation for one entity (editor view). */
+export async function getEntityTranslations(entityType: string, entityId: string) {
+  if (!isTranslatableType(entityType)) throw ApiError.badRequest("Unknown content type");
+  const { fields } = await loadSource(entityType, entityId);
+  const rows = await Translation.find({ entityType, entityId }).lean();
+  const byLocale = Object.fromEntries(rows.map((r) => [r.locale, r]));
+  return {
+    entityType,
+    entityId,
+    source: fields,
+    locales: Object.fromEntries(
+      TARGET_LOCALES.map((l) => {
+        const row = byLocale[l];
+        return [
+          l,
+          {
+            state: computeState(fields, row),
+            fields: toRecord(row?.fields),
+            locked: Boolean(row?.locked),
+            published: row ? row.published !== false : false,
+            origin: row?.origin ?? null,
+            translatedAt: row?.translatedAt ?? null,
+          },
+        ];
+      }),
+    ),
+  };
+}
+
+interface GenerateOptions {
+  entityType: string;
+  entityId: string;
+  locales?: string[];
+  /** true = re-translate every field (regenerate); false = only missing/outdated fields. */
+  force?: boolean;
+  userId?: string;
+}
+
+/** Machine-translates an entity into the requested locales. Locked translations are never touched. */
+export async function generateTranslations(opts: GenerateOptions) {
+  if (!isTranslatableType(opts.entityType)) throw ApiError.badRequest("Unknown content type");
+  const provider = getTranslationProvider();
+  const { cfg, fields } = await loadSource(opts.entityType, opts.entityId);
+  const locales = (opts.locales?.length ? opts.locales : TARGET_LOCALES).filter(
+    (l): l is Locale => isLocale(l) && l !== SOURCE_LOCALE,
+  );
+  const sourceHashes = hashMap(fields);
+  const results: { locale: string; translated: number; skipped?: string; error?: string }[] = [];
+
+  for (const locale of locales) {
+    const existing = await Translation.findOne({ entityType: opts.entityType, entityId: opts.entityId, locale });
+    if (existing?.locked) {
+      results.push({ locale, translated: 0, skipped: "locked" });
+      continue;
+    }
+    const prevFields = toRecord(existing?.fields);
+    const prevHashes = toRecord(existing?.sourceHashes);
+    const todo = Object.keys(fields).filter((p) => opts.force || !prevFields[p] || prevHashes[p] !== sourceHashes[p]);
+    // Drop translations for fields that no longer exist in the source.
+    const kept = Object.fromEntries(Object.entries(prevFields).filter(([p]) => p in fields && !todo.includes(p)));
+
+    try {
+      const translated = todo.length ? await provider.translate(todo.map((p) => fields[p]), locale, SOURCE_LOCALE) : [];
+      const merged: Record<string, string> = { ...kept };
+      todo.forEach((p, i) => (merged[p] = translated[i] ?? ""));
+      await Translation.findOneAndUpdate(
+        { entityType: opts.entityType, entityId: new Types.ObjectId(opts.entityId), locale },
+        {
+          $set: {
+            fields: encodeRecord(merged),
+            sourceHashes: encodeRecord(sourceHashes),
+            sourceHash: hashFields(fields),
+            origin: existing?.origin === "manual" && !opts.force ? "manual" : "machine",
+            provider: provider.name,
+            translatedAt: new Date(),
+            ...(opts.userId ? { updatedBy: opts.userId } : {}),
+          },
+          $setOnInsert: { locked: false, published: true },
+        },
+        { upsert: true },
+      );
+      results.push({ locale, translated: todo.length });
+    } catch (err) {
+      logger.warn({ err, locale }, "Translation failed");
+      results.push({ locale, translated: 0, error: err instanceof Error ? err.message : "Translation failed" });
+    }
+  }
+  revalidateFrontend(cfg.cacheTag);
+  return results;
+}
+
+/** Manual edit of one locale. Marks the translation as manual and current. */
+export async function saveManualTranslation(
+  entityType: string,
+  entityId: string,
+  locale: string,
+  input: { fields?: Record<string, string>; locked?: boolean; published?: boolean },
+  userId?: string,
+) {
+  if (!isTranslatableType(entityType)) throw ApiError.badRequest("Unknown content type");
+  if (!isLocale(locale) || locale === SOURCE_LOCALE) throw ApiError.badRequest("Invalid locale");
+  const { cfg, fields: source } = await loadSource(entityType, entityId);
+
+  const update: Record<string, unknown> = { updatedBy: userId };
+  if (input.fields) {
+    const clean = Object.fromEntries(
+      Object.entries(input.fields)
+        .filter(([path, v]) => path in source && typeof v === "string")
+        .map(([p, v]) => [p, v.slice(0, 200_000)]),
+    );
+    update.fields = encodeRecord(clean);
+    update.sourceHashes = encodeRecord(hashMap(source));
+    update.sourceHash = hashFields(source);
+    update.origin = "manual";
+    update.translatedAt = new Date();
+  }
+  if (typeof input.locked === "boolean") update.locked = input.locked;
+  if (typeof input.published === "boolean") update.published = input.published;
+
+  const row = await Translation.findOneAndUpdate(
+    { entityType, entityId: new Types.ObjectId(entityId), locale },
+    { $set: update },
+    { upsert: true, returnDocument: "after" },
+  ).lean();
+  revalidateFrontend(cfg.cacheTag);
+  return row;
+}
+
+export async function deleteTranslationsFor(entityType: string, entityId: string) {
+  await Translation.deleteMany({ entityType, entityId });
+}
+
+/** Translates every item of a type that is missing or outdated (bulk action). */
+export async function generateForType(entityType: string, locales: string[] | undefined, userId?: string) {
+  if (!isTranslatableType(entityType)) throw ApiError.badRequest("Unknown content type");
+  const docs = await TRANSLATABLE[entityType].model.find({}).select("_id").limit(500).lean();
+  let processed = 0;
+  for (const d of docs) {
+    await generateTranslations({ entityType, entityId: String(d._id), locales, userId });
+    processed++;
+  }
+  return { processed };
+}
