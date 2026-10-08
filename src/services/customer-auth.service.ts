@@ -7,7 +7,8 @@ import { env } from "../config/env.js";
 import { Customer } from "../models/Customer.js";
 import { ApiError } from "../utils/ApiError.js";
 import { sha256 } from "../utils/helpers.js";
-import { baseCookie, hashPassword, msUntilExpiry, nextSessions, verifyPassword, type RequestMeta, type StoredSession } from "./auth.service.js";
+import { baseCookie, hashPassword, msUntilExpiry, nextSessions, rotateRefreshSession, verifyPassword, type RequestMeta, type StoredSession } from "./auth.service.js";
+import { clearLoginFailures, isLoginLocked, recordLoginFailure } from "./login-throttle.service.js";
 
 /**
  * Customer (website visitor) sessions. Same design as the admin sessions in auth.service.ts – short-lived
@@ -18,8 +19,6 @@ export const CUSTOMER_ACCESS_COOKIE = "sltd_cat";
 export const CUSTOMER_REFRESH_COOKIE = "sltd_crt";
 const ACCESS_PATH = "/api/customer";
 const REFRESH_PATH = "/api/customer/auth";
-const MAX_FAILED_ATTEMPTS = 5;
-const LOCK_MINUTES = 15;
 let dummyHash: string | undefined;
 
 interface AccessPayload {
@@ -94,28 +93,24 @@ export async function register(input: { name: string; email: string; password: s
 }
 
 export async function login(email: string, password: string, meta: RequestMeta) {
-  const customer = await Customer.findOne({ email }).select("+passwordHash +failedLoginAttempts +lockUntil +tokenVersion");
+  const customer = await Customer.findOne({ email }).select("+passwordHash +tokenVersion");
 
   // Always run bcrypt (also for unknown emails and Google-only accounts) so timing doesn't reveal which exist.
   dummyHash ??= await bcrypt.hash(crypto.randomUUID(), 12);
   const valid = await verifyPassword(password, customer?.passwordHash ?? dummyHash);
 
   if (!customer || !customer.passwordHash) throw ApiError.unauthorized("Invalid email or password");
-  if (customer.lockUntil && customer.lockUntil.getTime() > Date.now()) {
-    throw new ApiError(423, "Account temporarily locked after too many failed attempts. Try again later.", [], "LOCKED");
-  }
+  const account = `customer:${String(customer._id)}`;
+  const ip = meta.ip ?? "unknown";
+  // A locked account answers exactly like a wrong password, so the lock reveals nothing.
+  if (await isLoginLocked(account, ip)) throw ApiError.unauthorized("Invalid email or password");
   if (!valid) {
-    const attempts = (customer.failedLoginAttempts ?? 0) + 1;
-    customer.failedLoginAttempts = attempts >= MAX_FAILED_ATTEMPTS ? 0 : attempts;
-    if (attempts >= MAX_FAILED_ATTEMPTS) customer.lockUntil = new Date(Date.now() + LOCK_MINUTES * 60 * 1000);
-    await customer.save();
+    await recordLoginFailure(account, ip);
     throw ApiError.unauthorized("Invalid email or password");
   }
   if (customer.status !== "active") throw ApiError.forbidden("Account is suspended");
 
-  customer.failedLoginAttempts = 0;
-  customer.lockUntil = undefined;
-  await customer.save();
+  await clearLoginFailures(account, ip);
   const tokens = await createSession(String(customer._id), customer.tokenVersion ?? 0, meta);
   return { customer, ...tokens };
 }
@@ -139,12 +134,23 @@ async function verifyGoogleCredential(credential: string) {
 /** Signs in with Google, creating the account on first use or linking it to an existing one with the same (Google-verified) email. */
 export async function loginWithGoogle(credential: string, meta: RequestMeta) {
   const g = await verifyGoogleCredential(credential);
-  let customer = await Customer.findOne({ $or: [{ googleId: g.googleId }, { email: g.email }] }).select("+googleId +tokenVersion");
+  let customer = await Customer.findOne({ $or: [{ googleId: g.googleId }, { email: g.email }] }).select(
+    "+googleId +tokenVersion +passwordHash +refreshTokens +rotatedTokens",
+  );
   if (!customer) {
-    customer = await Customer.create({ name: g.name.slice(0, 120), email: g.email, googleId: g.googleId, avatar: g.avatar });
+    customer = await Customer.create({ name: g.name.slice(0, 120), email: g.email, googleId: g.googleId, avatar: g.avatar, emailVerified: true });
   } else {
     if (customer.googleId && customer.googleId !== g.googleId) throw ApiError.conflict("This email is linked to a different Google account");
+    if (!customer.googleId && !customer.emailVerified && customer.passwordHash) {
+      // Someone registered this address with a password but never proved they own it; Google just proved
+      // this person does. Drop the unproven password and its sessions, so an account created in advance
+      // by someone else (to hijack it later) is no longer usable by them.
+      customer.passwordHash = undefined;
+      customer.tokenVersion = (customer.tokenVersion ?? 0) + 1;
+      customer.set({ refreshTokens: [], rotatedTokens: [] });
+    }
     customer.googleId = g.googleId;
+    customer.emailVerified = true;
     if (!customer.avatar && g.avatar) customer.avatar = g.avatar;
     await customer.save();
   }
@@ -153,7 +159,7 @@ export async function loginWithGoogle(credential: string, meta: RequestMeta) {
   return { customer, ...tokens };
 }
 
-/** Rotates the refresh token; replaying an already-rotated token revokes every session (see auth.service.ts). */
+/** Rotates the refresh token (see rotateRefreshSession in auth.service.ts for replays and racing tabs). */
 export async function refresh(refreshToken: string | undefined, meta: RequestMeta) {
   if (!refreshToken) throw ApiError.unauthorized("No refresh token");
   let payload: RefreshPayload;
@@ -163,23 +169,12 @@ export async function refresh(refreshToken: string | undefined, meta: RequestMet
     throw ApiError.unauthorized("Invalid refresh token");
   }
 
-  const customer = await Customer.findById(payload.sub).select("+tokenVersion +refreshTokens").lean();
+  const customer = await Customer.findById(payload.sub).select("+tokenVersion").lean();
   if (!customer || customer.status !== "active") throw ApiError.unauthorized("Account unavailable");
   if ((customer.tokenVersion ?? 0) !== payload.tv) throw new ApiError(401, "Session revoked", [], "TOKEN_REVOKED");
 
-  const hash = sha256(payload.jti);
   const { session, accessToken, refreshToken: newRefreshToken } = issueTokens(String(customer._id), payload.tv, meta);
-  const sessions = (customer.refreshTokens ?? []) as StoredSession[];
-  const rotated = sessions.some((t) => t.tokenHash === hash)
-    ? await Customer.updateOne(
-        { _id: customer._id, status: "active", tokenVersion: payload.tv, "refreshTokens.tokenHash": hash },
-        { $set: { refreshTokens: nextSessions(sessions, { drop: hash, add: session }) } },
-      )
-    : null;
-  if (!rotated || rotated.modifiedCount !== 1) {
-    await Customer.updateOne({ _id: customer._id }, { $set: { refreshTokens: [] }, $inc: { tokenVersion: 1 } });
-    throw new ApiError(401, "Refresh token reuse detected – all sessions revoked", [], "TOKEN_REUSED");
-  }
+  await rotateRefreshSession(Customer, String(customer._id), sha256(payload.jti), payload.tv, session);
   return { customer, accessToken, refreshToken: newRefreshToken };
 }
 

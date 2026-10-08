@@ -1,4 +1,5 @@
 import { Schema, model, type InferSchemaType, type HydratedDocument, Types } from "mongoose";
+import { rotatedTokenSchema } from "./schemas/common.js";
 
 const refreshTokenSchema = new Schema(
   {
@@ -25,10 +26,14 @@ const customerSchema = new Schema(
     avatar: { type: String, default: "" },
     status: { type: String, enum: ["active", "suspended"], default: "active", index: true },
     lastLoginAt: Date,
+    /** False until the address is proven: Google sign-in proves it. Password sign-ups start unverified. */
+    emailVerified: { type: Boolean, default: false },
+    // No longer used (sign-in throttling lives in LoginAttempt); kept so values in old documents stay hidden.
     failedLoginAttempts: { type: Number, default: 0, select: false },
     lockUntil: { type: Date, select: false },
     tokenVersion: { type: Number, default: 0, select: false },
     refreshTokens: { type: [refreshTokenSchema], default: [], select: false },
+    rotatedTokens: { type: [rotatedTokenSchema], default: [], select: false },
   },
   {
     timestamps: true,
@@ -37,6 +42,7 @@ const customerSchema = new Schema(
         delete ret.passwordHash;
         delete ret.googleId;
         delete ret.refreshTokens;
+        delete ret.rotatedTokens;
         delete ret.tokenVersion;
         delete ret.failedLoginAttempts;
         delete ret.lockUntil;

@@ -1,8 +1,9 @@
 import { Types } from "mongoose";
 import { Translation } from "../../models/Translation.js";
+import { TranslationJob, type TranslationJobAttrs } from "../../models/TranslationJob.js";
 import { isLocale, SOURCE_LOCALE, TARGET_LOCALES, type Locale } from "../../config/locales.js";
 import { ApiError } from "../../utils/ApiError.js";
-import { hashFields, setPath, sha256 } from "../../utils/helpers.js";
+import { assertObjectId, hashFields, setPath, sha256 } from "../../utils/helpers.js";
 import { revalidateFrontend } from "../revalidate.service.js";
 import { extractFields, isTranslatableType, TRANSLATABLE, type TranslatableType } from "./registry.js";
 import { getProviderForLocale } from "./providers.js";
@@ -296,14 +297,76 @@ export async function deleteTranslationsFor(entityType: string, entityId: string
   await Translation.deleteMany({ entityType, entityId });
 }
 
-/** Translates every item of a type that is missing or outdated (bulk action). */
-export async function generateForType(entityType: string, locales: string[] | undefined, userId?: string) {
+/* ───────────────────────── Bulk translation (background job) ───────────────────────── */
+
+/** A job still "running" from before this process started was cut off by a restart. */
+const PROCESS_STARTED_AT = new Date();
+
+type JobRecord = TranslationJobAttrs & { _id: unknown; createdAt: Date };
+
+/** The job as the admin UI sees it: a run cut off by a restart is reported as "interrupted". */
+function jobView(job: JobRecord) {
+  const interrupted = job.status === "running" && job.createdAt < PROCESS_STARTED_AT;
+  return {
+    id: String(job._id),
+    entityType: job.entityType,
+    locales: job.locales,
+    status: interrupted ? "interrupted" : job.status,
+    total: job.total,
+    processed: job.processed,
+    failed: job.failed,
+    error: job.error || null,
+    createdAt: job.createdAt,
+    finishedAt: job.finishedAt ?? null,
+  };
+}
+
+/**
+ * Starts translating every item of a type that is missing or outdated. Runs in the background
+ * (it can take many minutes); poll getBulkTranslationJob for progress. While a job for a type is
+ * running, asking again returns that job instead of starting a second one.
+ */
+export async function startBulkTranslation(entityType: string, locales: string[] | undefined, userId?: string) {
   if (!isTranslatableType(entityType)) throw ApiError.badRequest("Unknown content type");
+  const targets = (locales?.length ? locales : TARGET_LOCALES).filter((l): l is Locale => isLocale(l) && l !== SOURCE_LOCALE);
+  // getProviderForLocale throws (503) when machine translation isn't configured: fail now, not inside the job.
+  for (const locale of targets) getProviderForLocale(locale);
+
+  const running = await TranslationJob.findOne({ entityType, status: "running", createdAt: { $gte: PROCESS_STARTED_AT } }).lean<JobRecord>();
+  if (running) return jobView(running);
+
   const docs = await TRANSLATABLE[entityType].model.find({}).select("_id").limit(500).lean();
-  let processed = 0;
-  for (const d of docs) {
-    await generateTranslations({ entityType, entityId: String(d._id), locales, userId });
-    processed++;
+  const ids = docs.map((d) => String(d._id));
+  const job = await TranslationJob.create({ entityType, locales: targets, total: ids.length, createdBy: userId });
+  void runBulkTranslation(String(job._id), entityType, ids, targets, userId);
+  return jobView(job.toObject());
+}
+
+async function runBulkTranslation(jobId: string, entityType: string, ids: string[], locales: string[], userId?: string) {
+  try {
+    for (const entityId of ids) {
+      let failed = false;
+      try {
+        await generateTranslations({ entityType, entityId, locales, userId });
+      } catch (err) {
+        // e.g. the item was deleted while the job ran. Per-locale provider errors are recorded by generateTranslations.
+        failed = true;
+        logger.warn({ err, entityType, entityId }, "Bulk translation skipped an item");
+      }
+      await TranslationJob.updateOne({ _id: jobId }, { $inc: { processed: 1, failed: failed ? 1 : 0 } });
+    }
+    await TranslationJob.updateOne({ _id: jobId }, { status: "done", finishedAt: new Date() });
+  } catch (err) {
+    logger.error({ err, jobId }, "Bulk translation job failed");
+    await TranslationJob.updateOne({ _id: jobId }, { status: "failed", error: (err as Error).message.slice(0, 300), finishedAt: new Date() }).catch(
+      () => undefined,
+    );
   }
-  return { processed };
+}
+
+export async function getBulkTranslationJob(id: string) {
+  assertObjectId(id);
+  const job = await TranslationJob.findById(id).lean<JobRecord>();
+  if (!job) throw ApiError.notFound("Translation job not found");
+  return jobView(job);
 }

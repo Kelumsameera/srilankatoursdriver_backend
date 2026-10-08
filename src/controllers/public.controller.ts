@@ -67,7 +67,7 @@ export async function page(req: Request, res: Response) {
 /** Preview including disabled sections / draft pages, authorised by a short-lived admin token. */
 export async function previewPage(req: Request, res: Response) {
   const token = q(req).token;
-  if (!token || !verifyPreviewToken(token)) throw ApiError.unauthorized("Invalid or expired preview link");
+  if (!token || !verifyPreviewToken(token, String(req.params.slug))) throw ApiError.unauthorized("Invalid or expired preview link");
   res.setHeader("Cache-Control", "no-store");
   return ok(res, await pub.getPublicPage(String(req.params.slug), locale(req), { preview: true }));
 }

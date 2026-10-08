@@ -6,7 +6,7 @@ import { isCloudinaryConfigured } from "../services/cloudinary/index.js";
 import { isEmailConfigured } from "../services/email/index.js";
 import { isTranslationConfigured } from "../services/translation/index.js";
 import { isTripAdvisorConfigured } from "../services/tripadvisor/tripadvisor.service.js";
-import { signPreviewToken } from "../services/auth.service.js";
+import { PREVIEW_TOKEN_MINUTES, signPreviewToken } from "../services/auth.service.js";
 import { env } from "../config/env.js";
 import { ok } from "../utils/response.js";
 import { escapeRegex } from "../utils/helpers.js";
@@ -51,5 +51,6 @@ export async function integrations(_req: Request, res: Response) {
 }
 
 export async function previewToken(req: Request, res: Response) {
-  return ok(res, { token: signPreviewToken(req.user!.id), expiresInMinutes: 30 });
+  const { slug } = req.validated?.body as { slug: string };
+  return ok(res, { token: signPreviewToken(req.user!.id, slug), expiresInMinutes: PREVIEW_TOKEN_MINUTES });
 }

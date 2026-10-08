@@ -1,4 +1,5 @@
 import { Schema, model, type InferSchemaType, type HydratedDocument, Types } from "mongoose";
+import { rotatedTokenSchema } from "./schemas/common.js";
 
 const refreshTokenSchema = new Schema(
   {
@@ -21,10 +22,12 @@ const userSchema = new Schema(
     avatar: { type: String, default: "" },
     lastLoginAt: Date,
     passwordChangedAt: Date,
+    // No longer used (sign-in throttling lives in LoginAttempt); kept so values in old documents stay hidden.
     failedLoginAttempts: { type: Number, default: 0, select: false },
     lockUntil: { type: Date, select: false },
     tokenVersion: { type: Number, default: 0, select: false },
     refreshTokens: { type: [refreshTokenSchema], default: [], select: false },
+    rotatedTokens: { type: [rotatedTokenSchema], default: [], select: false },
   },
   {
     timestamps: true,
@@ -32,6 +35,7 @@ const userSchema = new Schema(
       transform(_doc, ret: Record<string, unknown>) {
         delete ret.passwordHash;
         delete ret.refreshTokens;
+        delete ret.rotatedTokens;
         delete ret.tokenVersion;
         delete ret.failedLoginAttempts;
         delete ret.lockUntil;

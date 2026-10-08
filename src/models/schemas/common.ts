@@ -65,3 +65,15 @@ export const auditFields = {
   createdBy: { type: Schema.Types.ObjectId, ref: "User" },
   updatedBy: { type: Schema.Types.ObjectId, ref: "User" },
 };
+
+/**
+ * A refresh token that has already been exchanged (admin users and customers). Lets a refresh tell a
+ * second browser tab apart from a stolen token – see rotateRefreshSession in auth.service.ts.
+ */
+export const rotatedTokenSchema = new Schema(
+  {
+    tokenHash: { type: String, required: true },
+    rotatedAt: { type: Date, required: true },
+  },
+  { _id: false },
+);

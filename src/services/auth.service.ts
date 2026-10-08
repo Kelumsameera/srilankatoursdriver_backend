@@ -2,18 +2,24 @@ import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import jwt, { type SignOptions } from "jsonwebtoken";
 import type { CookieOptions, Response } from "express";
+import type { Model } from "mongoose";
 import { cookieSecure, env } from "../config/env.js";
 import { User } from "../models/User.js";
 import type { RoleAttrs } from "../models/Role.js";
 import { ApiError } from "../utils/ApiError.js";
 import { sha256 } from "../utils/helpers.js";
+import { clearLoginFailures, isLoginLocked, recordLoginFailure } from "./login-throttle.service.js";
 
 export const ACCESS_COOKIE = "sltd_at";
 export const REFRESH_COOKIE = "sltd_rt";
+/** The access token is only needed by the API, so browsers don't send it anywhere else on the host. */
+const ACCESS_PATH = "/api";
 const REFRESH_PATH = "/api/auth";
 const MAX_SESSIONS = 10;
-const MAX_FAILED_ATTEMPTS = 5;
-const LOCK_MINUTES = 15;
+/** How long an already-exchanged refresh token is still accepted: covers two tabs refreshing at the same moment. */
+export const REFRESH_GRACE_MS = 30_000;
+/** Recently exchanged tokens remembered per account (for the grace window and for theft detection). */
+const MAX_ROTATED_TOKENS = 50;
 const BCRYPT_ROUNDS = 12;
 let dummyHash: string | undefined;
 
@@ -87,7 +93,7 @@ export function msUntilExpiry(token: string, fallbackMs: number): number {
 }
 
 export function setAuthCookies(res: Response, accessToken: string, refreshToken: string) {
-  res.cookie(ACCESS_COOKIE, accessToken, { ...baseCookie(), path: "/", maxAge: msUntilExpiry(accessToken, 15 * 60 * 1000) });
+  res.cookie(ACCESS_COOKIE, accessToken, { ...baseCookie(), path: ACCESS_PATH, maxAge: msUntilExpiry(accessToken, 15 * 60 * 1000) });
   res.cookie(REFRESH_COOKIE, refreshToken, {
     ...baseCookie(),
     path: REFRESH_PATH,
@@ -96,6 +102,8 @@ export function setAuthCookies(res: Response, accessToken: string, refreshToken:
 }
 
 export function clearAuthCookies(res: Response) {
+  res.clearCookie(ACCESS_COOKIE, { ...baseCookie(), path: ACCESS_PATH });
+  // Access cookies issued before the path was narrowed to /api (they expire within ACCESS_TOKEN_TTL).
   res.clearCookie(ACCESS_COOKIE, { ...baseCookie(), path: "/" });
   res.clearCookie(REFRESH_COOKIE, { ...baseCookie(), path: REFRESH_PATH });
 }
@@ -130,6 +138,57 @@ export function nextSessions(current: StoredSession[] | undefined, opts: { drop?
   return kept.slice(-MAX_SESSIONS);
 }
 
+interface SessionRecords {
+  refreshTokens?: StoredSession[];
+  rotatedTokens?: { tokenHash: string; rotatedAt: Date }[];
+}
+
+/**
+ * Exchanges the refresh token whose hash is `tokenHash` for the new `session`, on a User or a Customer.
+ * Callers have already checked that the account is active and that the token's version is current.
+ *
+ * What happens depends on where the presented token is found:
+ * - among the current sessions: it is replaced by `session`. This is a compare-and-set, so of two
+ *   requests racing with the same token only one can succeed here.
+ * - among tokens exchanged in the last REFRESH_GRACE_MS: `session` is added as well. This is the request
+ *   that lost that race – usually a second browser tab – not a theft.
+ * - among tokens exchanged earlier: the token is being replayed, probably stolen, so every session is revoked.
+ * - nowhere (logged out, expired, or pushed out by the session limit): rejected.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function rotateRefreshSession(model: Model<any>, ownerId: string, tokenHash: string, tokenVersion: number, session: StoredSession) {
+  const activeAccount = { _id: ownerId, status: "active", tokenVersion };
+  const readSessions = () => model.findById(ownerId).select("+refreshTokens +rotatedTokens").lean<SessionRecords>();
+  const now = new Date();
+
+  let records = await readSessions();
+  const current = records?.refreshTokens ?? [];
+  if (current.some((t) => t.tokenHash === tokenHash)) {
+    const replaced = await model.updateOne(
+      { ...activeAccount, "refreshTokens.tokenHash": tokenHash },
+      {
+        $set: { refreshTokens: nextSessions(current, { drop: tokenHash, add: session }) },
+        $push: { rotatedTokens: { $each: [{ tokenHash, rotatedAt: now }], $slice: -MAX_ROTATED_TOKENS } },
+      },
+    );
+    if (replaced.modifiedCount === 1) return;
+    records = await readSessions(); // another request exchanged this token a moment ago
+  }
+
+  const exchanged = records?.rotatedTokens?.find((t) => t.tokenHash === tokenHash);
+  if (!exchanged) throw new ApiError(401, "Session expired – please sign in again", [], "SESSION_EXPIRED");
+
+  if (now.getTime() - new Date(exchanged.rotatedAt).getTime() <= REFRESH_GRACE_MS) {
+    const added = await model.updateOne(activeAccount, { $push: { refreshTokens: { $each: [session], $slice: -MAX_SESSIONS } } });
+    if (added.modifiedCount !== 1) throw new ApiError(401, "Session revoked", [], "TOKEN_REVOKED");
+    return;
+  }
+
+  // Revoke everything, including access tokens still in flight (tokenVersion bump).
+  await model.updateOne({ _id: ownerId }, { $set: { refreshTokens: [], rotatedTokens: [] }, $inc: { tokenVersion: 1 } });
+  throw new ApiError(401, "Refresh token reuse detected – all sessions revoked", [], "TOKEN_REUSED");
+}
+
 /** Creates a new refresh-token session for the user and returns both tokens. */
 async function createSession(userId: string, tokenVersion: number, meta: RequestMeta) {
   const { session, accessToken, refreshToken } = issueTokens(userId, tokenVersion, meta);
@@ -141,9 +200,7 @@ async function createSession(userId: string, tokenVersion: number, meta: Request
 }
 
 export async function login(email: string, password: string, meta: RequestMeta) {
-  const user = await User.findOne({ email: email.toLowerCase() }).select(
-    "+passwordHash +failedLoginAttempts +lockUntil +tokenVersion",
-  );
+  const user = await User.findOne({ email: email.toLowerCase() }).select("+passwordHash +tokenVersion");
 
   // Constant-ish time: always run bcrypt even if the user doesn't exist.
   dummyHash ??= await bcrypt.hash(crypto.randomUUID(), BCRYPT_ROUNDS);
@@ -151,20 +208,17 @@ export async function login(email: string, password: string, meta: RequestMeta) 
   const valid = await verifyPassword(password, hash);
 
   if (!user) throw ApiError.unauthorized("Invalid email or password");
-  if (user.lockUntil && user.lockUntil.getTime() > Date.now()) {
-    throw new ApiError(423, "Account temporarily locked after too many failed attempts. Try again later.", [], "LOCKED");
-  }
+  const account = `user:${String(user._id)}`;
+  const ip = meta.ip ?? "unknown";
+  // A locked account answers exactly like a wrong password, so the lock reveals nothing.
+  if (await isLoginLocked(account, ip)) throw ApiError.unauthorized("Invalid email or password");
   if (!valid) {
-    const attempts = (user.failedLoginAttempts ?? 0) + 1;
-    user.failedLoginAttempts = attempts >= MAX_FAILED_ATTEMPTS ? 0 : attempts;
-    if (attempts >= MAX_FAILED_ATTEMPTS) user.lockUntil = new Date(Date.now() + LOCK_MINUTES * 60 * 1000);
-    await user.save();
+    await recordLoginFailure(account, ip);
     throw ApiError.unauthorized("Invalid email or password");
   }
   if (user.status !== "active") throw ApiError.forbidden("Account is suspended");
 
-  user.failedLoginAttempts = 0;
-  user.lockUntil = undefined;
+  await clearLoginFailures(account, ip);
   user.lastLoginAt = new Date();
   await user.save();
 
@@ -172,7 +226,7 @@ export async function login(email: string, password: string, meta: RequestMeta) 
   return { user, ...tokens };
 }
 
-/** Rotates the refresh token. Reuse of an already-rotated token revokes every session (theft detection). */
+/** Rotates the refresh token (see rotateRefreshSession for how replays and racing tabs are told apart). */
 export async function refresh(refreshToken: string | undefined, meta: RequestMeta) {
   if (!refreshToken) throw ApiError.unauthorized("No refresh token");
   let payload: RefreshPayload;
@@ -182,28 +236,12 @@ export async function refresh(refreshToken: string | undefined, meta: RequestMet
     throw ApiError.unauthorized("Invalid refresh token");
   }
 
-  const user = await User.findById(payload.sub).select("+tokenVersion +refreshTokens").lean();
+  const user = await User.findById(payload.sub).select("+tokenVersion").lean();
   if (!user || user.status !== "active") throw ApiError.unauthorized("Account unavailable");
   if ((user.tokenVersion ?? 0) !== payload.tv) throw new ApiError(401, "Session revoked", [], "TOKEN_REVOKED");
 
-  // Rotate atomically: the write only succeeds while the presented token is still stored, so of two
-  // concurrent requests with the same token exactly one wins (compare-and-set on the array).
-  const hash = sha256(payload.jti);
   const { session, accessToken, refreshToken: newRefreshToken } = issueTokens(String(user._id), payload.tv, meta);
-  const sessions = (user.refreshTokens ?? []) as StoredSession[];
-  const stillStored = sessions.some((t) => t.tokenHash === hash);
-  const rotated = stillStored
-    ? await User.updateOne(
-        { _id: user._id, status: "active", tokenVersion: payload.tv, "refreshTokens.tokenHash": hash },
-        { $set: { refreshTokens: nextSessions(sessions, { drop: hash, add: session }) } },
-      )
-    : null;
-  if (!rotated || rotated.modifiedCount !== 1) {
-    // A valid, unexpired token that is no longer stored was already rotated → it was replayed (likely stolen).
-    // Revoke every session, including access tokens still in flight (tokenVersion bump).
-    await User.updateOne({ _id: user._id }, { $set: { refreshTokens: [] }, $inc: { tokenVersion: 1 } });
-    throw new ApiError(401, "Refresh token reuse detected – all sessions revoked", [], "TOKEN_REUSED");
-  }
+  await rotateRefreshSession(User, String(user._id), sha256(payload.jti), payload.tv, session);
   return { user, accessToken, refreshToken: newRefreshToken };
 }
 
@@ -254,15 +292,21 @@ export async function getProfile(userId: string) {
   };
 }
 
-/** Short-lived token allowing the Next.js preview route to render disabled/draft sections. */
-export function signPreviewToken(userId: string): string {
-  return jwt.sign({ sub: userId, typ: "preview" }, env.JWT_ACCESS_SECRET, { algorithm: "HS256", expiresIn: "30m" });
+export const PREVIEW_TOKEN_MINUTES = 10;
+
+/** Short-lived token allowing the Next.js preview route to render one page's disabled/draft sections. */
+export function signPreviewToken(userId: string, pageSlug: string): string {
+  return jwt.sign({ sub: userId, typ: "preview", slug: pageSlug }, env.JWT_ACCESS_SECRET, {
+    algorithm: "HS256",
+    expiresIn: `${PREVIEW_TOKEN_MINUTES}m`,
+  });
 }
 
-export function verifyPreviewToken(token: string): boolean {
+/** True only for a valid, unexpired preview token issued for this page. */
+export function verifyPreviewToken(token: string, pageSlug: string): boolean {
   try {
-    const decoded = jwt.verify(token, env.JWT_ACCESS_SECRET, { algorithms: ["HS256"] }) as { typ?: string };
-    return decoded.typ === "preview";
+    const decoded = jwt.verify(token, env.JWT_ACCESS_SECRET, { algorithms: ["HS256"] }) as { typ?: string; slug?: string };
+    return decoded.typ === "preview" && decoded.slug === pageSlug.toLowerCase();
   } catch {
     return false;
   }

@@ -6,11 +6,22 @@ import { escapeHtml } from "../../utils/helpers.js";
 
 let transporter: Transporter | null = null;
 
+/** Minimal transport shape, so tests can capture mail without an SMTP server. */
+export interface MailTransport {
+  sendMail(mail: Mail & { from: string }): Promise<unknown>;
+}
+let override: MailTransport | null = null;
+/** Test hook – lets tests capture outgoing mail. */
+export function setMailTransport(t: MailTransport | null) {
+  override = t;
+}
+
 export function isEmailConfigured(): boolean {
   return Boolean(env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASSWORD);
 }
 
-function getTransporter(): Transporter | null {
+function getTransporter(): MailTransport | null {
+  if (override) return override;
   if (!isEmailConfigured()) return null;
   transporter ??= nodemailer.createTransport({
     host: env.SMTP_HOST,
@@ -74,25 +85,46 @@ function headerText(value: string, max = 80): string {
   return value.replace(/[\r\n\t]+/g, " ").trim().slice(0, max);
 }
 
+// Guest acknowledgements go to an address typed into a public form, so they are capped to stop the
+// site being used to mail strangers. Counted in memory: the API runs as a single process.
+export const ACK_LIMIT_PER_RECIPIENT = 3;
+export const ACK_LIMIT_PER_DAY = 200;
+const DAY_MS = 24 * 60 * 60 * 1000;
+let acksByRecipient = new Map<string, number[]>();
+let acksToday: number[] = [];
+
+/** Records an acknowledgement if both caps allow it; returns false when it must not be sent. */
+function allowAcknowledgement(recipient: string): boolean {
+  const now = Date.now();
+  const since = now - DAY_MS;
+  acksToday = acksToday.filter((t) => t > since);
+  const key = recipient.trim().toLowerCase();
+  const sent = (acksByRecipient.get(key) ?? []).filter((t) => t > since);
+  if (sent.length >= ACK_LIMIT_PER_RECIPIENT || acksToday.length >= ACK_LIMIT_PER_DAY) return false;
+  acksByRecipient.set(key, [...sent, now]);
+  acksToday.push(now);
+  if (acksByRecipient.size > 5000) {
+    for (const [k, times] of acksByRecipient) if (times.every((t) => t <= since)) acksByRecipient.delete(k);
+  }
+  return true;
+}
+
+/** Test hook – clears the acknowledgement counters. */
+export function resetAcknowledgementLimits() {
+  acksByRecipient = new Map();
+  acksToday = [];
+}
+
 /**
- * Internal notification + guest acknowledgement for a new submission.
- * `privateRows` (free-text fields such as the message) go to the business only: the guest
- * acknowledgement goes to an address typed into a public form, so echoing free text there would
- * let anyone use the site to send arbitrary content to third parties.
+ * Internal notification (with every submitted detail) + a short guest acknowledgement.
+ * The acknowledgement contains only the reference and fixed text – nothing the visitor typed –
+ * so the site can't be used to deliver attacker-written content from our domain.
  */
-export async function notifyNewSubmission(
-  kind: string,
-  reference: string,
-  guestEmail: string,
-  guestName: string,
-  rows: [string, unknown][],
-  privateRows: [string, unknown][] = [],
-) {
-  if (!isEmailConfigured()) return;
+export async function notifyNewSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
+  if (!getTransporter()) return;
   const [to, name] = await Promise.all([notifyAddress(), businessName()]);
-  const internal = table([["Reference", reference], ...rows, ...privateRows]);
-  const body = table([["Reference", reference], ...rows]);
   if (to) {
+    const internal = table([["Reference", reference], ...details]);
     await sendMail({
       to,
       replyTo: guestEmail,
@@ -101,13 +133,16 @@ export async function notifyNewSubmission(
       text: `New ${kind}\n\n${internal.text}`,
     });
   }
-  guestName = headerText(guestName, 120);
+  if (!allowAcknowledgement(guestEmail)) {
+    logger.warn({ kind, reference }, "Guest acknowledgement not sent – rate limit reached");
+    return;
+  }
   await sendMail({
     to: guestEmail,
     subject: `We received your ${kind} (${reference})`,
-    html: `<p style="font-family:Arial">Dear ${escapeHtml(guestName)},</p><p style="font-family:Arial">Thank you for contacting ${escapeHtml(
-      name,
-    )}. We have received your ${escapeHtml(kind)} and will reply shortly.</p>${body.html}<p style="font-family:Arial">— ${escapeHtml(name)}</p>`,
-    text: `Dear ${guestName},\n\nThank you for contacting ${name}. We have received your ${kind} and will reply shortly.\n\n${body.text}\n\n— ${name}`,
+    html: `<p style="font-family:Arial">Hello,</p><p style="font-family:Arial">Thank you for contacting ${escapeHtml(name)}. We have received your ${escapeHtml(
+      kind,
+    )} (reference <strong>${escapeHtml(reference)}</strong>) and will reply shortly.</p><p style="font-family:Arial">— ${escapeHtml(name)}</p>`,
+    text: `Hello,\n\nThank you for contacting ${name}. We have received your ${kind} (reference ${reference}) and will reply shortly.\n\n— ${name}`,
   });
 }

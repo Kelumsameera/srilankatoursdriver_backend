@@ -22,7 +22,7 @@ const reviewSchema = new Schema(
     status: { type: String, enum: REVIEW_STATUSES, default: "pending", index: true },
     order: { type: Number, default: 0 },
     /** Fingerprint of a public submission – repeated identical submissions are not stored twice. */
-    submissionHash: { type: String },
+    submissionHash: { type: String, select: false },
     ...auditFields,
   },
   { timestamps: true },

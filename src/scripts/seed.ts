@@ -74,6 +74,9 @@ export async function seedAdmin() {
     log("Super Admin already exists – skipped");
     return null;
   }
+  if (!env.SEED_ADMIN_EMAIL) {
+    throw new Error("Set SEED_ADMIN_EMAIL (a private address, not the public business e-mail) to create the first Super Admin");
+  }
   if (env.SEED_ADMIN_PASSWORD) {
     const check = passwordPolicy.safeParse(env.SEED_ADMIN_PASSWORD);
     if (!check.success) throw new Error(`SEED_ADMIN_PASSWORD is too weak: ${check.error.issues.map((i) => i.message).join("; ")}`);

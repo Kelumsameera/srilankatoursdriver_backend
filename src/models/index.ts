@@ -27,3 +27,5 @@ export { Language } from "./Language.js";
 export { SeoMetadata } from "./SeoMetadata.js";
 export { ContactMessage } from "./ContactMessage.js";
 export { ActivityLog } from "./ActivityLog.js";
+export { LoginAttempt } from "./LoginAttempt.js";
+export { TranslationJob } from "./TranslationJob.js";

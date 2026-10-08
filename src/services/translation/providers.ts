@@ -41,8 +41,6 @@ async function postJson<T>(url: string, body: unknown, headers: Record<string, s
 }
 
 const DEEPL_CODES: Record<string, string> = { zh: "ZH-HANS", pt: "PT-PT", en: "EN-GB" };
-/** Site locales DeepL cannot translate into – routed to Google when GOOGLE_TRANSLATE_API_KEY is set. */
-const DEEPL_UNSUPPORTED = new Set(["si"]);
 
 /**
  * Resolves the DeepL API origin. Accepts a full endpoint URL (".../v2/translate") as well as a bare origin,
@@ -60,16 +58,6 @@ export function deeplBaseUrl(key: string, configured?: string): string {
 const deepl: TranslationProvider = {
   name: "deepl",
   async translate(texts, target, source = "en") {
-    if (DEEPL_UNSUPPORTED.has(target)) {
-      // Languages DeepL lacks (Sinhala) go to Google Translate when a fallback key is configured.
-      if (env.GOOGLE_TRANSLATE_API_KEY) return googleTranslate(texts, target, source, env.GOOGLE_TRANSLATE_API_KEY);
-      throw new ApiError(
-        422,
-        `DeepL does not support this language (${target}). Set GOOGLE_TRANSLATE_API_KEY to translate it with Google, or translate it manually.`,
-        [],
-        "TRANSLATION_UNSUPPORTED",
-      );
-    }
     const key = env.TRANSLATION_API_KEY!;
     const base = deeplBaseUrl(key, env.TRANSLATION_API_URL);
     return inChunks(texts, async (chunk) => {
@@ -103,8 +91,16 @@ const google: TranslationProvider = {
   translate: (texts, target, source = "en") => googleTranslate(texts, target, source, env.TRANSLATION_API_KEY!, env.TRANSLATION_API_URL),
 };
 
-/** Locales always translated with the free, keyless Google endpoint (bypasses the configured provider). */
-export const FREE_GOOGLE_LOCALES = new Set(["si"]);
+/**
+ * Locales the usual providers can't handle (DeepL has no Sinhala), always translated with Google:
+ * the official API when GOOGLE_TRANSLATE_API_KEY is set, otherwise the free keyless endpoint.
+ */
+export const GOOGLE_ONLY_LOCALES = new Set(["si"]);
+
+const googleOfficial: TranslationProvider = {
+  name: "google",
+  translate: (texts, target, source = "en") => googleTranslate(texts, target, source, env.GOOGLE_TRANSLATE_API_KEY!),
+};
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -163,9 +159,9 @@ export const googleFree: TranslationProvider = {
   },
 };
 
-/** Provider for one locale: free Google for FREE_GOOGLE_LOCALES, otherwise the configured provider. */
+/** Provider for one locale: Google for GOOGLE_ONLY_LOCALES (see above), otherwise the configured provider. */
 export function getProviderForLocale(locale: string): TranslationProvider {
-  if (!override && FREE_GOOGLE_LOCALES.has(locale)) return googleFree;
+  if (!override && GOOGLE_ONLY_LOCALES.has(locale)) return env.GOOGLE_TRANSLATE_API_KEY ? googleOfficial : googleFree;
   return getTranslationProvider();
 }
 

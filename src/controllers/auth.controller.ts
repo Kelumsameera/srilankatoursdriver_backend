@@ -15,7 +15,7 @@ export async function login(req: Request, res: Response) {
     await logActivity(req, { action: "login", entity: "user", entityId: String(user._id), userId: String(user._id), userEmail: user.email, summary: "Signed in" });
     return ok(res, { user: await auth.getProfile(String(user._id)) }, "Signed in");
   } catch (err) {
-    if (err instanceof ApiError && (err.statusCode === 401 || err.statusCode === 423)) {
+    if (err instanceof ApiError && err.statusCode === 401) {
       await logActivity(req, { action: "login_failed", entity: "user", userEmail: email, summary: err.message });
     }
     throw err;

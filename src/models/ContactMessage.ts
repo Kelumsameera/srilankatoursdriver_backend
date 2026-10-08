@@ -12,7 +12,7 @@ const contactMessageSchema = new Schema(
     notes: { type: [noteSchema], default: [] },
     locale: { type: String, default: "en" },
     /** Fingerprint of the public submission – repeated identical submissions are not stored twice. */
-    submissionHash: { type: String },
+    submissionHash: { type: String, select: false },
   },
   { timestamps: true },
 );

@@ -51,7 +51,7 @@ const bookingSchema = new Schema(
     statusHistory: { type: [statusHistorySchema], default: [] },
     locale: { type: String, default: "en" },
     /** Fingerprint of the public submission – repeated identical submissions are not stored twice. */
-    submissionHash: { type: String },
+    submissionHash: { type: String, select: false },
     source: { type: String, default: "website" },
   },
   { timestamps: true },

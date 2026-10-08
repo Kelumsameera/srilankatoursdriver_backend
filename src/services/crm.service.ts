@@ -1,8 +1,9 @@
 import type { Model, SortOrder } from "mongoose";
 import { Booking, ContactMessage, Destination, Excursion, Review, TailorMadeEnquiry, Tour, User, Vehicle } from "../models/index.js";
 import { ApiError } from "../utils/ApiError.js";
-import { assertObjectId, escapeRegex, fingerprint, generateReference, toCsv } from "../utils/helpers.js";
+import { assertObjectId, escapeRegex, fingerprint, generateReference, sha256, toCsv } from "../utils/helpers.js";
 import type { ListQuery } from "../validations/common.js";
+import { env } from "../config/env.js";
 import { notifyNewSubmission } from "./email/email.service.js";
 
 type AnyRecord = Record<string, unknown>;
@@ -11,6 +12,12 @@ type AnyRecord = Record<string, unknown>;
 
 /** Identical submissions inside this window return the first result instead of creating duplicates. */
 export const DUPLICATE_WINDOW_MS = 15 * 60 * 1000;
+
+/**
+ * HMAC key for submission fingerprints. Derived from JWT_REFRESH_SECRET rather than reusing that
+ * secret directly, so one key is never used for two different purposes.
+ */
+const FINGERPRINT_KEY = sha256(`submission-fingerprint:${env.JWT_REFRESH_SECRET}`);
 
 /** True when the hidden honeypot field was filled in – only bots do that. */
 export function isBotSubmission(input: AnyRecord): boolean {
@@ -36,7 +43,7 @@ export async function createBooking(input: AnyRecord) {
   if (isBotSubmission(input)) return { reference: generateReference("B"), id: "" };
   const data = { ...input };
   delete data.website;
-  const submissionHash = fingerprint(withoutMeta(data));
+  const submissionHash = fingerprint(withoutMeta(data), FINGERPRINT_KEY);
   const duplicate = await findRecentDuplicate(Booking, submissionHash);
   if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
 
@@ -81,8 +88,8 @@ export async function createBooking(input: AnyRecord) {
       ["Adults", booking.adults],
       ["Children", booking.children],
       ["Pickup", booking.pickupLocation],
+      ["Message", booking.message],
     ],
-    [["Message", booking.message]],
   );
   return { reference: booking.reference, id: String(booking._id) };
 }
@@ -91,7 +98,7 @@ export async function createTailorMadeEnquiry(input: AnyRecord) {
   if (isBotSubmission(input)) return { reference: generateReference("T"), id: "" };
   const data = { ...input };
   delete data.website;
-  const submissionHash = fingerprint(withoutMeta(data));
+  const submissionHash = fingerprint(withoutMeta(data), FINGERPRINT_KEY);
   const duplicate = await findRecentDuplicate(TailorMadeEnquiry, submissionHash);
   if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
 
@@ -135,8 +142,8 @@ export async function createTailorMadeEnquiry(input: AnyRecord) {
       ["Interests", enquiry.interests],
       ["Hotel category", enquiry.hotels?.category],
       ["Budget", enquiry.budget?.amount ? `${enquiry.budget.amount} ${enquiry.budget.currency}` : enquiry.budget?.range],
+      ["Requirements", enquiry.additionalRequirements],
     ],
-    [["Requirements", enquiry.additionalRequirements]],
   );
   return { reference: enquiry.reference, id: String(enquiry._id) };
 }
@@ -145,7 +152,7 @@ export async function createContactMessage(input: AnyRecord) {
   if (isBotSubmission(input)) return { id: "" };
   const data = { ...input };
   delete data.website;
-  const submissionHash = fingerprint(withoutMeta(data));
+  const submissionHash = fingerprint(withoutMeta(data), FINGERPRINT_KEY);
   const duplicate = await findRecentDuplicate(ContactMessage, submissionHash);
   if (duplicate) return { id: String(duplicate._id), duplicate: true };
 
@@ -159,8 +166,6 @@ export async function createContactMessage(input: AnyRecord) {
       ["Name", msg.name],
       ["Email", msg.email],
       ["Phone", msg.phone],
-    ],
-    [
       ["Subject", msg.subject],
       ["Message", msg.message],
     ],
@@ -172,7 +177,7 @@ export async function createContactMessage(input: AnyRecord) {
 export async function createPublicReview(input: AnyRecord) {
   if (isBotSubmission(input)) return { id: "" };
   const data = withoutMeta(input);
-  const submissionHash = fingerprint(data);
+  const submissionHash = fingerprint(data, FINGERPRINT_KEY);
   const duplicate = await findRecentDuplicate(Review, submissionHash);
   if (duplicate) return { id: String(duplicate._id), duplicate: true };
   if (data.tour && !(await Tour.exists({ _id: data.tour, status: "published" }))) data.tour = null;

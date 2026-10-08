@@ -71,8 +71,12 @@ export function escapeHtml(input: string): string {
     .replace(/'/g, "&#39;");
 }
 
-/** Stable hash of a JSON-like value (object keys sorted) – used to recognise duplicate submissions. */
-export function fingerprint(value: unknown): string {
+/**
+ * Stable keyed hash of a JSON-like value (object keys sorted) – used to recognise duplicate submissions.
+ * Keyed (HMAC) because submissions contain personal data such as e-mail addresses: a plain hash
+ * could be reversed by guessing the missing field.
+ */
+export function fingerprint(value: unknown, key: string): string {
   const normalise = (v: unknown): unknown => {
     if (v instanceof Date) return v.toISOString();
     if (Array.isArray(v)) return v.map(normalise);
@@ -83,7 +87,7 @@ export function fingerprint(value: unknown): string {
     }
     return typeof v === "string" ? v.trim().toLowerCase() : v;
   };
-  return sha256(JSON.stringify(normalise(value)));
+  return crypto.createHmac("sha256", key).update(JSON.stringify(normalise(value))).digest("hex");
 }
 
 /** Deterministic hash of a set of strings, used to detect stale translations. */

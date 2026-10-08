@@ -10,9 +10,11 @@ const optionalString = z
 const blankToUndefined = (v: unknown) => (typeof v === "string" && v.trim() === "" ? undefined : v);
 
 const envSchema = z.object({
-  NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
+  /** Required: defaulting to "development" would silently switch off production safeguards when it is forgotten. */
+  NODE_ENV: z.enum(["development", "test", "production"], { error: "NODE_ENV is required (development, test or production)" }),
   PORT: z.coerce.number().int().positive().default(5000),
-  TRUST_PROXY: z.coerce.number().int().min(0).default(0),
+  /** Number of reverse proxies in front of the API (0 = none). Must be set explicitly in production. */
+  TRUST_PROXY: z.preprocess(blankToUndefined, z.coerce.number().int().min(0).optional()),
   /** Max login/refresh attempts per IP per 15 minutes (raise only for automated E2E runs). */
   AUTH_RATE_LIMIT: z.coerce.number().int().positive().default(20),
   LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace", "silent"]).default("info"),
@@ -45,7 +47,9 @@ const envSchema = z.object({
 
   FRONTEND_URL: z.string().url().default("http://localhost:3000"),
   CORS_ORIGINS: optionalString,
-  REVALIDATE_SECRET: optionalString,
+  REVALIDATE_SECRET: optionalString.refine((v) => v === undefined || v.length >= 32, {
+    message: "REVALIDATE_SECRET must be at least 32 characters (or empty to disable revalidation)",
+  }),
 
   SMTP_HOST: optionalString,
   SMTP_PORT: z.coerce.number().int().positive().default(587),
@@ -64,7 +68,8 @@ const envSchema = z.object({
   TRIPADVISOR_LOCATION_ID: optionalString,
 
   SEED_ADMIN_NAME: z.string().default("Super Admin"),
-  SEED_ADMIN_EMAIL: z.string().email().default("info@srilankatoursdriver.com"),
+  /** No default: the Super Admin sign-in should not be the published business address (anyone can target it). */
+  SEED_ADMIN_EMAIL: z.preprocess(blankToUndefined, z.email().optional()),
   SEED_ADMIN_PASSWORD: optionalString,
 });
 
@@ -98,6 +103,13 @@ const checkedEnvSchema = envSchema.superRefine((e, ctx) => {
     }
     if (e.COOKIE_SECURE === "false") {
       ctx.addIssue({ code: "custom", path: ["COOKIE_SECURE"], message: "COOKIE_SECURE=false is not allowed in production (serve the API over HTTPS)" });
+    }
+    if (e.TRUST_PROXY === undefined) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["TRUST_PROXY"],
+        message: "Set TRUST_PROXY in production: the number of reverse proxies in front of the API (usually 1), or 0 if clients connect directly",
+      });
     }
   }
 });
@@ -140,5 +152,7 @@ export const allowedOrigins: string[] = Array.from(
   ),
 );
 
-/** Whether auth cookies get the Secure flag. */
-export const cookieSecure = env.COOKIE_SECURE === "true" || (env.COOKIE_SECURE === "auto" && (isProduction || env.COOKIE_SAMESITE === "none"));
+/** Whether auth cookies get the Secure flag. "auto" also turns it on whenever the site itself is served over HTTPS. */
+export const cookieSecure =
+  env.COOKIE_SECURE === "true" ||
+  (env.COOKIE_SECURE === "auto" && (isProduction || env.COOKIE_SAMESITE === "none" || env.FRONTEND_URL.startsWith("https:")));

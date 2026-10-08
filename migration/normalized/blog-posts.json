@@ -1,6 +1,0 @@
-{
-  "targetModel": null,
-  "count": 0,
-  "note": "data = fields of the EXISTING CMS model only; media url fields still point to the old site (Cloudinary upload is a later phase); ObjectId references are resolved at import time from `references`.",
-  "records": []
-}

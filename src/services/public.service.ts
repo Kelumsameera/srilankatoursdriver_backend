@@ -42,6 +42,8 @@ interface PublicResource {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   model: Model<any>;
   translatable?: TranslatableType;
+  /** Category slugs are only unique per kind, so `?category=<slug>` is looked up within this kind. */
+  categoryKind?: CategoryKind;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   filter: () => Record<string, any>;
   sort: Record<string, 1 | -1>;
@@ -55,6 +57,7 @@ export const PUBLIC_RESOURCES = {
   tours: {
     model: Tour,
     translatable: "tour",
+    categoryKind: "tour",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, createdAt: -1 },
     listSelect:
@@ -65,6 +68,7 @@ export const PUBLIC_RESOURCES = {
   destinations: {
     model: Destination,
     translatable: "destination",
+    categoryKind: "destination",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, name: 1 },
     listSelect: "name slug region shortDescription heroMedia featured category location",
@@ -74,6 +78,7 @@ export const PUBLIC_RESOURCES = {
   excursions: {
     model: Excursion,
     translatable: "excursion",
+    categoryKind: "excursion",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, createdAt: -1 },
     listSelect: "title slug shortDescription heroMedia duration price currency priceNote location category featured destination",
@@ -83,6 +88,7 @@ export const PUBLIC_RESOURCES = {
   vehicles: {
     model: Vehicle,
     translatable: "vehicle",
+    categoryKind: "vehicle",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1 },
     populate: [categoryPopulate],
@@ -90,6 +96,7 @@ export const PUBLIC_RESOURCES = {
   gallery: {
     model: GalleryItem,
     translatable: "galleryItem",
+    categoryKind: "gallery",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, createdAt: -1 },
     populate: [categoryPopulate],
@@ -97,6 +104,7 @@ export const PUBLIC_RESOURCES = {
   blog: {
     model: BlogPost,
     translatable: "blogPost",
+    categoryKind: "blog",
     filter: () => ({
       $or: [{ status: "published" }, { status: "scheduled" }],
       publishDate: { $lte: new Date() },
@@ -149,7 +157,8 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
     // Accept a category id or slug.
     if (/^[a-f0-9]{24}$/i.test(opts.category)) filter.category = opts.category;
     else {
-      const cat = await Category.findOne({ slug: opts.category }).select("_id").lean();
+      const kindFilter = cfg.categoryKind ? { kind: cfg.categoryKind } : {};
+      const cat = await Category.findOne({ slug: opts.category, ...kindFilter }).select("_id").lean();
       filter.category = cat?._id ?? null;
     }
   }

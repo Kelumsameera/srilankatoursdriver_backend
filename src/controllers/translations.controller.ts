@@ -21,18 +21,33 @@ export async function getEntity(req: Request, res: Response) {
   return ok(res, await tr.getEntityTranslations(String(req.params.entityType), String(req.params.entityId)));
 }
 
+/**
+ * One item: translated before responding (200).
+ * A whole content type: too slow for one request, so a background job starts and 202 returns the
+ * job for polling (GET /admin/translations/jobs/:id).
+ */
 export async function generate(req: Request, res: Response) {
   const body = req.validated?.body as { entityType: string; entityId?: string; locales?: string[]; force?: boolean };
-  const result = body.entityId
-    ? await tr.generateTranslations({ entityType: body.entityType, entityId: body.entityId, locales: body.locales, force: body.force, userId: req.user?.id })
-    : await tr.generateForType(body.entityType, body.locales, req.user?.id);
+  const forLocales = body.locales?.length ? ` (${body.locales.join(", ")})` : "";
+
+  if (!body.entityId) {
+    const job = await tr.startBulkTranslation(body.entityType, body.locales, req.user?.id);
+    await logActivity(req, { action: "translate", entity: body.entityType, summary: `Started translating all ${body.entityType} items${forLocales}` });
+    return ok(res, job, "Translation started", 202);
+  }
+
+  const result = await tr.generateTranslations({ entityType: body.entityType, entityId: body.entityId, locales: body.locales, force: body.force, userId: req.user?.id });
   await logActivity(req, {
     action: "translate",
     entity: body.entityType,
-    entityId: body.entityId ?? "",
-    summary: `${body.force ? "Regenerated" : "Generated"} translations${body.locales?.length ? ` (${body.locales.join(", ")})` : ""}`,
+    entityId: body.entityId,
+    summary: `${body.force ? "Regenerated" : "Generated"} translations${forLocales}`,
   });
   return ok(res, result, "Translation finished");
+}
+
+export async function job(req: Request, res: Response) {
+  return ok(res, await tr.getBulkTranslationJob(String(req.params.id)));
 }
 
 export async function save(req: Request, res: Response) {

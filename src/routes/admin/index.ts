@@ -32,7 +32,12 @@ adminRouter.use(authenticate);
 adminRouter.get("/dashboard", can("dashboard:read"), system.dashboard);
 adminRouter.get("/activity-logs", can("activityLogs:read"), validate({ query: listQuery }), system.activityLogs);
 adminRouter.get("/system/integrations", can("system:read"), system.integrations);
-adminRouter.post("/preview-token", can("pages:read"), system.previewToken);
+adminRouter.post(
+  "/preview-token",
+  can("pages:read"),
+  validate({ body: z.object({ slug: z.string().trim().toLowerCase().min(1).max(160) }) }),
+  system.previewToken,
+);
 
 /* ───────────── Settings & branding ───────────── */
 adminRouter.get("/site-settings", can("settings:read"), settings.getSiteSettings);
@@ -148,6 +153,7 @@ mountCrm("/contact-messages", "contacts", contactAdminUpdate);
 /* ───────────── Translations ───────────── */
 const entityParams = z.object({ entityType: z.string().regex(/^[a-zA-Z]{2,40}$/), entityId: objectId });
 adminRouter.get("/translations", can("translations:read"), validate({ query: z.object({ type: z.string().max(40).optional() }) }), translations.overview);
+adminRouter.get("/translations/jobs/:id", can("translations:read"), id, translations.job);
 adminRouter.get("/translations/:entityType/:entityId", can("translations:read"), validate({ params: entityParams }), translations.getEntity);
 adminRouter.post(
   "/translations/generate",
