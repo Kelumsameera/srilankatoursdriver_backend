@@ -50,12 +50,15 @@ const bookingSchema = new Schema(
     notes: { type: [noteSchema], default: [] },
     statusHistory: { type: [statusHistorySchema], default: [] },
     locale: { type: String, default: "en" },
+    /** Fingerprint of the public submission – repeated identical submissions are not stored twice. */
+    submissionHash: { type: String },
     source: { type: String, default: "website" },
   },
   { timestamps: true },
 );
 
 bookingSchema.index({ createdAt: -1 });
+bookingSchema.index({ submissionHash: 1, createdAt: -1 });
 bookingSchema.index({ "customer.email": 1 });
 
 export const Booking = model("Booking", bookingSchema);

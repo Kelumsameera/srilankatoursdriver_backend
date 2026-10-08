@@ -1,0 +1,437 @@
+{
+  "targetModel": "SeoMetadata",
+  "count": 9,
+  "note": "data = fields of the EXISTING CMS model only; media url fields still point to the old site (Cloudinary upload is a later phase); ObjectId references are resolved at import time from `references`.",
+  "records": [
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "route-seo",
+      "sourceWpId": 8012,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "global",
+        "seoTitle": "Home - Sri Lanka Tours Drivers",
+        "metaDescription": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+        "ogTitle": "Home - Sri Lanka Tours Drivers",
+        "ogDescription": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Home - Sri Lanka Tours Drivers",
+          "description": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+          "label1": "Written by",
+          "data1": "srilankatoursdriver",
+          "label2": "Time to read",
+          "data2": "2 minutes"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "ImageObject",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "100% of old titles use the pattern \"%s - Sri Lanka Tours Drivers\""
+        ]
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/contact/",
+      "sourceType": "route-seo",
+      "sourceWpId": 890,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "contact",
+        "seoTitle": "Contact - Sri Lanka Tours Drivers",
+        "metaDescription": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+        "ogTitle": "Contact - Sri Lanka Tours Drivers",
+        "ogDescription": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/contact/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Contact - Sri Lanka Tours Drivers",
+          "description": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/destination-list/",
+      "sourceType": "route-seo",
+      "sourceWpId": 3119,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "destinations",
+        "seoTitle": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+        "metaDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+        "ogTitle": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+        "ogDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/destination-list/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+          "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/drivers-guides/",
+      "sourceType": "route-seo",
+      "sourceWpId": 3139,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "vehicles",
+        "seoTitle": "Drivers & Guides - Sri Lanka Tours Drivers",
+        "metaDescription": "A Great Journey Begins with a Skilled Driver",
+        "ogTitle": "Drivers & Guides - Sri Lanka Tours Drivers",
+        "ogDescription": "A Great Journey Begins with a Skilled Driver",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/drivers-guides/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Drivers & Guides - Sri Lanka Tours Drivers",
+          "description": "A Great Journey Begins with a Skilled Driver",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/excursions/",
+      "sourceType": "route-seo",
+      "sourceWpId": 7380,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "excursions",
+        "seoTitle": "Excursions - Sri Lanka Tours Drivers",
+        "metaDescription": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+        "ogTitle": "Excursions - Sri Lanka Tours Drivers",
+        "ogDescription": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/excursions/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Excursions - Sri Lanka Tours Drivers",
+          "description": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/faq/",
+      "sourceType": "route-seo",
+      "sourceWpId": 1005,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "faqs",
+        "seoTitle": "Faq - Sri Lanka Tours Drivers",
+        "metaDescription": "If you want to ask additional questions, don't hesitate to contact us.",
+        "ogTitle": "Faq - Sri Lanka Tours Drivers",
+        "ogDescription": "If you want to ask additional questions, don't hesitate to contact us.",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/faq/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Faq - Sri Lanka Tours Drivers",
+          "description": "If you want to ask additional questions, don't hesitate to contact us.",
+          "label1": "Time to read",
+          "data1": "4 minutes"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/gallery/",
+      "sourceType": "route-seo",
+      "sourceWpId": 7955,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "gallery",
+        "seoTitle": "Gallery - Sri Lanka Tours Drivers",
+        "metaDescription": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+        "ogTitle": "Gallery - Sri Lanka Tours Drivers",
+        "ogDescription": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/gallery/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Gallery - Sri Lanka Tours Drivers",
+          "description": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/tailor-made-tours/",
+      "sourceType": "route-seo",
+      "sourceWpId": 7320,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "tailor-made-tours",
+        "seoTitle": "Tailor Made Tours - Sri Lanka Tours Drivers",
+        "metaDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+        "ogTitle": "Tailor Made Tours - Sri Lanka Tours Drivers",
+        "ogDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+        "ogImage": {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+          "resourceType": "image",
+          "alt": "Tailor Made Tours",
+          "format": "jpg",
+          "width": 410,
+          "height": 300
+        },
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/tailor-made-tours/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Tailor Made Tours - Sri Lanka Tours Drivers",
+          "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "image": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "ImageObject",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/tours/",
+      "sourceType": "route-seo",
+      "sourceWpId": 8757,
+      "targetModel": "SeoMetadata",
+      "data": {
+        "key": "tours",
+        "seoTitle": "Tours - Sri Lanka Tours Drivers",
+        "metaDescription": "",
+        "ogTitle": "Tours - Sri Lanka Tours Drivers",
+        "ogDescription": "",
+        "robots": "index,follow"
+      },
+      "references": {},
+      "unmapped": {
+        "canonical": "https://srilankatoursdriver.com/tours/",
+        "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Tours - Sri Lanka Tours Drivers",
+          "label1": "Time to read",
+          "data1": "Less than a minute"
+        },
+        "structuredDataTypes": [
+          "TouristInformationCenter",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "Person",
+          "Article"
+        ],
+        "htmlLang": "en-US"
+      },
+      "quality": {
+        "status": "partial",
+        "extractedSuccessfully": true,
+        "missingFields": [
+          "metaDescription"
+        ],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the new site's SEO configuration must not be changed yet – reference only"
+    }
+  ]
+}

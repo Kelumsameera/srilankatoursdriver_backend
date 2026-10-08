@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { isHttpUrl, isMapEmbedUrl, isSafeHref } from "../utils/url.js";
 
 /**
  * NOTE: entity schemas intentionally avoid `.default()` – updates use `.partial()`
@@ -24,19 +25,29 @@ export const optionalNumber = z
   .transform((v) => (typeof v === "number" && Number.isFinite(v) ? v : null))
   .optional();
 
-const safeUrlPattern = /^(https?:\/\/|\/|#|mailto:|tel:)/i;
-/** Relative paths, http(s), mailto:, tel: or empty. Blocks javascript: and data: URLs. */
+/**
+ * Site-relative path ("/tours", never "//host"), "#anchor", http(s), mailto:, tel:, "whatsapp" or empty.
+ * Rejects javascript:, vbscript:, data:, protocol-relative and malformed URLs (see utils/url.ts).
+ */
 export const safeUrl = z
   .string()
   .trim()
   .max(2048)
-  .refine((v) => v === "" || safeUrlPattern.test(v), "Must be a relative path or an http(s)/mailto/tel URL");
+  .refine((v) => v === "" || isSafeHref(v), "Must be a site path like /tours, or a valid http(s), mailto: or tel: link");
 
+/** Absolute http(s) URL (or empty). */
 export const httpUrl = z
   .string()
   .trim()
   .max(2048)
-  .refine((v) => v === "" || /^https?:\/\//i.test(v), "Must be an http(s) URL");
+  .refine((v) => v === "" || isHttpUrl(v), "Must be a valid http(s) URL");
+
+/** https Google Maps / OpenStreetMap embed URL (rendered in an iframe) or empty. */
+export const mapEmbedUrl = z
+  .string()
+  .trim()
+  .max(2048)
+  .refine((v) => v === "" || isMapEmbedUrl(v), "Must be an https Google Maps or OpenStreetMap embed URL");
 
 export const shortText = (max = 200) => z.string().trim().max(max);
 export const longText = (max = 50_000) => z.string().max(max);

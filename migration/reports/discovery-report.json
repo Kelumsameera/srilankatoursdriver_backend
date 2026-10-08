@@ -1,0 +1,1461 @@
+{
+  "website": "https://srilankatoursdriver.com",
+  "mode": "offline (re-parsed from cache)",
+  "startedAt": "2026-10-07T19:30:24.717Z",
+  "finishedAt": "2026-10-07T19:30:28.049Z",
+  "extractionMethod": "Hybrid. Primary: sitemap_index.xml (Rank Math/Yoast-style) + polite HTML extraction of every public page (cheerio, no JS execution). Supplementary: the public WordPress REST API (/wp-json/wp/v2) for page/post metadata and media alt text/dimensions. The REST API was NOT used for content because the site's custom post types (to_book, destination, excursion, offers – BA Book Everything plugin) are not exposed there, and tour prices, durations, itineraries and inclusions are rendered by theme widgets rather than stored in post content.",
+  "safety": {
+    "mongodbAccessed": false,
+    "cloudinaryAccessed": false,
+    "mediaDownloaded": false,
+    "note": "The discovery script imports no database/Cloudinary/application modules and only performs HTTP GET requests against the old public website."
+  },
+  "robots": {
+    "allow": [
+      "/wp-admin/admin-ajax.php"
+    ],
+    "disallow": [
+      "/wp-admin/"
+    ],
+    "crawlDelaySec": null,
+    "sitemaps": [
+      "https://srilankatoursdriver.com/sitemap_index.xml"
+    ]
+  },
+  "requests": {
+    "requests": 0,
+    "retries": 0,
+    "failures": 0,
+    "blockedByRobots": 0
+  },
+  "sitemaps": [
+    {
+      "url": "https://srilankatoursdriver.com/sitemap_index.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/sitemap_index.xml",
+      "kind": "index",
+      "urls": 0,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/sitemap_index.xml",
+      "kind": "alias",
+      "urls": 0,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/wp-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/sitemap_index.xml",
+      "kind": "alias",
+      "urls": 0,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/post-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/post-sitemap.xml",
+      "kind": "urlset",
+      "urls": 2,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/page-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/page-sitemap.xml",
+      "kind": "urlset",
+      "urls": 32,
+      "images": 9,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/destination-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/destination-sitemap.xml",
+      "kind": "urlset",
+      "urls": 8,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/excursion-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/excursion-sitemap.xml",
+      "kind": "urlset",
+      "urls": 17,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/offers-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/offers-sitemap.xml",
+      "kind": "urlset",
+      "urls": 3,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/to_book-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/to_book-sitemap.xml",
+      "kind": "urlset",
+      "urls": 27,
+      "images": 0,
+      "error": null
+    },
+    {
+      "url": "https://srilankatoursdriver.com/category-sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://srilankatoursdriver.com/category-sitemap.xml",
+      "kind": "urlset",
+      "urls": 1,
+      "images": 0,
+      "error": null
+    }
+  ],
+  "wordpressApi": {
+    "available": true,
+    "name": "Sri Lanka Tours Drivers",
+    "description": "Sri Lanka Best Tour Drivers Company",
+    "namespaces": [
+      "oembed/1.0",
+      "contact-form-7/v1",
+      "hostinger-easy-onboarding/v1",
+      "litespeed/v1",
+      "litespeed/v3",
+      "rankmath/v1",
+      "trustindex/v1",
+      "elementor/v1",
+      "monsterinsights/v1",
+      "hostinger-amplitude/v1",
+      "hostinger-tools-plugin/v1",
+      "rankmath/v1/ca",
+      "rankmath/v1/an",
+      "rankmath/v1/in",
+      "google-site-kit/v1",
+      "elementor/v1/documents",
+      "elementor-ai/v1",
+      "elementor-pro/v1",
+      "forminator/v1",
+      "wpforms/v1",
+      "wp/v2",
+      "wp-site-health/v1",
+      "wp-block-editor/v1"
+    ],
+    "customPostTypeRoutes": [],
+    "restTypes": {
+      "post": "posts",
+      "page": "pages",
+      "attachment": "media",
+      "nav_menu_item": "menu-items",
+      "wp_block": "blocks",
+      "wp_template": "templates",
+      "wp_template_part": "template-parts",
+      "wp_global_styles": "global-styles",
+      "wp_navigation": "navigation",
+      "wp_font_family": "font-families",
+      "wp_font_face": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+      "elementor_library": "elementor_library",
+      "service": "service",
+      "rm_content_editor": "rm_content_editor"
+    },
+    "counts": {
+      "pages": 32,
+      "posts": 1,
+      "media": 35,
+      "categories": 5,
+      "tags": 5,
+      "services": 2
+    },
+    "errors": [],
+    "categories": [
+      {
+        "name": "Company Insight",
+        "slug": "company-insight",
+        "count": 0
+      },
+      {
+        "name": "Creative",
+        "slug": "creative",
+        "count": 0
+      },
+      {
+        "name": "Lifestyle",
+        "slug": "lifestyle",
+        "count": 0
+      },
+      {
+        "name": "Tips &amp; Tricks",
+        "slug": "tips-tricks",
+        "count": 0
+      },
+      {
+        "name": "Uncategorized",
+        "slug": "uncategorized",
+        "count": 1
+      }
+    ],
+    "tags": [
+      {
+        "name": "bread",
+        "slug": "bread",
+        "count": 0
+      },
+      {
+        "name": "fruits",
+        "slug": "fruits",
+        "count": 0
+      },
+      {
+        "name": "meat",
+        "slug": "meat",
+        "count": 0
+      },
+      {
+        "name": "natural",
+        "slug": "natural",
+        "count": 0
+      },
+      {
+        "name": "vegetables",
+        "slug": "vegetables",
+        "count": 0
+      }
+    ]
+  },
+  "urls": {
+    "totalDiscovered": 121,
+    "fetched": 101,
+    "fetchedSuccessfully": 93,
+    "failed": 8,
+    "skipped": 20,
+    "skippedReasons": {
+      "system/utility page – not fetched": 20
+    },
+    "byCategory": {
+      "about": 1,
+      "contact": 1,
+      "destination": 8,
+      "destination (listing)": 1,
+      "excursion": 17,
+      "excursion (listing)": 1,
+      "faq": 1,
+      "gallery": 1,
+      "homepage": 1,
+      "other": 14,
+      "page": 5,
+      "system": 20,
+      "tour-detail": 26,
+      "tours (listing)": 17,
+      "vehicle": 6,
+      "vehicle (listing)": 1
+    },
+    "excludedFromImport": [
+      {
+        "url": "https://srilankatoursdriver.com/?page_id=964",
+        "reasons": [
+          "query-string permalink (?page_id / ?p) – resolves via redirect"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/test-pg/",
+        "reasons": [
+          "looks like test / builder draft page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/home-3/",
+        "reasons": [
+          "looks like test / builder draft page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/customer-confirmation/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/test-email/",
+        "reasons": [
+          "looks like test / builder draft page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/test2/",
+        "reasons": [
+          "looks like test / builder draft page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/elementor-7306/",
+        "reasons": [
+          "looks like test / builder draft page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/my-account/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/admin-confirmation/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-items/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/search-result/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/checkout/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/add_services/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/confirmation/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours-list-top-search/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba-wishlist/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/icons/",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "reasons": [
+          "/offers/<slug>/ single item",
+          "looks like test content"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/category/uncategorized/",
+        "reasons": [
+          "/category/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/services/service-per-person/",
+        "reasons": [
+          "/services/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/services/service-per-booking/",
+        "reasons": [
+          "/services/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+        "reasons": [
+          "plugin / checkout / utility page"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/author/srilankatoursdriver/",
+        "reasons": [
+          "/author/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/?paged=2",
+        "reasons": [
+          "pagination of /all-tours/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/to_book/?paged=2",
+        "reasons": [
+          "pagination of /to_book/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/kandy/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/habarana/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/negombo/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/nuwara-eliya/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/ella/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/mirissa/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/hikkaduwa/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/yala-national-park/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/colombo/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/negombo-fish-market/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/pidurangala-rock/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/anuradhapura/",
+        "reasons": [
+          "/ba_locations/<slug>/ single item"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/?paged=2",
+        "reasons": [
+          "pagination of /tours/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/page/2/",
+        "reasons": [
+          "pagination of /all-tours/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/page/2/?paged=1",
+        "reasons": [
+          "pagination of /all-tours/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/to_book/page/2/",
+        "reasons": [
+          "pagination of /to_book/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/to_book/page/2/?paged=1",
+        "reasons": [
+          "pagination of /to_book/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/page/2/",
+        "reasons": [
+          "pagination of /tours/"
+        ]
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/page/2/?paged=1",
+        "reasons": [
+          "pagination of /tours/"
+        ]
+      }
+    ],
+    "discoveredOnlyViaLinks": [
+      "https://srilankatoursdriver.com/tours-list-view/",
+      "https://srilankatoursdriver.com/airport-transfers/",
+      "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+      "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+      "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+      "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+      "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+      "https://srilankatoursdriver.com/author/srilankatoursdriver/",
+      "https://srilankatoursdriver.com/all-tours/?paged=2",
+      "https://srilankatoursdriver.com/to_book/?paged=2",
+      "https://srilankatoursdriver.com/ba_locations/kandy/",
+      "https://srilankatoursdriver.com/ba_locations/habarana/",
+      "https://srilankatoursdriver.com/ba_locations/negombo/",
+      "https://srilankatoursdriver.com/ba_locations/nuwara-eliya/",
+      "https://srilankatoursdriver.com/ba_locations/ella/",
+      "https://srilankatoursdriver.com/ba_locations/mirissa/",
+      "https://srilankatoursdriver.com/ba_locations/hikkaduwa/",
+      "https://srilankatoursdriver.com/ba_locations/yala-national-park/",
+      "https://srilankatoursdriver.com/ba_locations/colombo/",
+      "https://srilankatoursdriver.com/ba_locations/negombo-fish-market/",
+      "https://srilankatoursdriver.com/ba_locations/pidurangala-rock/",
+      "https://srilankatoursdriver.com/ba_locations/anuradhapura/",
+      "https://srilankatoursdriver.com/tours/?paged=2",
+      "https://srilankatoursdriver.com/all-tours/page/2/",
+      "https://srilankatoursdriver.com/all-tours/page/2/?paged=1",
+      "https://srilankatoursdriver.com/to_book/page/2/",
+      "https://srilankatoursdriver.com/to_book/page/2/?paged=1",
+      "https://srilankatoursdriver.com/tours/page/2/",
+      "https://srilankatoursdriver.com/tours/page/2/?paged=1"
+    ]
+  },
+  "counts": {
+    "tours": 21,
+    "tourOffers": 1,
+    "destinations": 8,
+    "excursions": 17,
+    "vehicles": 6,
+    "blogPosts": 0,
+    "galleryItems": 20,
+    "reviews": 6,
+    "faqs": 14,
+    "pages": 12,
+    "pageSectionCandidates": 21,
+    "tourCategories": 4,
+    "navigationItems": 12,
+    "mediaAssets": 257,
+    "mediaForImport": 84
+  },
+  "datasets": {
+    "tours": {
+      "total": 22,
+      "import": 18,
+      "review": 3,
+      "skip": 1,
+      "qualityOk": 19,
+      "qualityPartial": 3,
+      "qualityFailed": 0
+    },
+    "vehicles": {
+      "total": 6,
+      "import": 0,
+      "review": 6,
+      "skip": 0,
+      "qualityOk": 6,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "destinations": {
+      "total": 8,
+      "import": 0,
+      "review": 8,
+      "skip": 0,
+      "qualityOk": 0,
+      "qualityPartial": 8,
+      "qualityFailed": 0
+    },
+    "excursions": {
+      "total": 17,
+      "import": 0,
+      "review": 17,
+      "skip": 0,
+      "qualityOk": 0,
+      "qualityPartial": 17,
+      "qualityFailed": 0
+    },
+    "blog-posts": {
+      "total": 0,
+      "import": 0,
+      "review": 0,
+      "skip": 0,
+      "qualityOk": 0,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "faqs": {
+      "total": 14,
+      "import": 0,
+      "review": 14,
+      "skip": 0,
+      "qualityOk": 14,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "reviews": {
+      "total": 6,
+      "import": 6,
+      "review": 0,
+      "skip": 0,
+      "qualityOk": 6,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "gallery": {
+      "total": 20,
+      "import": 0,
+      "review": 20,
+      "skip": 0,
+      "qualityOk": 20,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "pages": {
+      "total": 15,
+      "import": 9,
+      "review": 3,
+      "skip": 3,
+      "qualityOk": 12,
+      "qualityPartial": 3,
+      "qualityFailed": 0
+    },
+    "page-sections": {
+      "total": 21,
+      "import": 0,
+      "review": 21,
+      "skip": 0,
+      "qualityOk": 16,
+      "qualityPartial": 5,
+      "qualityFailed": 0
+    },
+    "categories": {
+      "total": 4,
+      "import": 2,
+      "review": 2,
+      "skip": 0,
+      "qualityOk": 3,
+      "qualityPartial": 1,
+      "qualityFailed": 0
+    },
+    "navigation": {
+      "total": 12,
+      "import": 0,
+      "review": 12,
+      "skip": 0,
+      "qualityOk": 12,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "site-settings": {
+      "total": 1,
+      "import": 0,
+      "review": 1,
+      "skip": 0,
+      "qualityOk": 1,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "brand-settings": {
+      "total": 1,
+      "import": 1,
+      "review": 0,
+      "skip": 0,
+      "qualityOk": 1,
+      "qualityPartial": 0,
+      "qualityFailed": 0
+    },
+    "seo": {
+      "total": 9,
+      "import": 0,
+      "review": 9,
+      "skip": 0,
+      "qualityOk": 8,
+      "qualityPartial": 1,
+      "qualityFailed": 0
+    }
+  },
+  "httpErrors": [
+    {
+      "url": "https://srilankatoursdriver.com/tours-list-view/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/airport-transfers/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/",
+        "link:https://srilankatoursdriver.com/?page_id=964",
+        "link:https://srilankatoursdriver.com/about-us/",
+        "link:https://srilankatoursdriver.com/all-tours/",
+        "link:https://srilankatoursdriver.com/category/uncategorized/",
+        "link:https://srilankatoursdriver.com/contact/",
+        "link:https://srilankatoursdriver.com/destination-list/",
+        "link:https://srilankatoursdriver.com/destination/colombo-city/",
+        "link:https://srilankatoursdriver.com/destination/galle-face-green/",
+        "link:https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "link:https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "link:https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "link:https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "link:https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "link:https://srilankatoursdriver.com/destination/yala-national-park/",
+        "link:https://srilankatoursdriver.com/drivers-guides/",
+        "link:https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "link:https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "link:https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "link:https://srilankatoursdriver.com/excursion/colombo/",
+        "link:https://srilankatoursdriver.com/excursion/ella/",
+        "link:https://srilankatoursdriver.com/excursion/galle/",
+        "link:https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "link:https://srilankatoursdriver.com/excursion/kalutara/",
+        "link:https://srilankatoursdriver.com/excursion/kandy/",
+        "link:https://srilankatoursdriver.com/excursion/mirissa/",
+        "link:https://srilankatoursdriver.com/excursion/negombo/",
+        "link:https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "link:https://srilankatoursdriver.com/excursion/pasikuda/",
+        "link:https://srilankatoursdriver.com/excursion/sigiriya/",
+        "link:https://srilankatoursdriver.com/excursion/trincomalee/",
+        "link:https://srilankatoursdriver.com/excursion/udawalawa/",
+        "link:https://srilankatoursdriver.com/excursion/yala/",
+        "link:https://srilankatoursdriver.com/excursions/",
+        "link:https://srilankatoursdriver.com/faq/",
+        "link:https://srilankatoursdriver.com/gallery/",
+        "link:https://srilankatoursdriver.com/offers/",
+        "link:https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "link:https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "link:https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+        "link:https://srilankatoursdriver.com/privacy-policy/",
+        "link:https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-round-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+        "link:https://srilankatoursdriver.com/tailor-made-tours/",
+        "link:https://srilankatoursdriver.com/terms-conditions/",
+        "link:https://srilankatoursdriver.com/to_book/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/",
+        "link:https://srilankatoursdriver.com/to_book/galle-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kandy-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kumara-podi-car/",
+        "link:https://srilankatoursdriver.com/to_book/mahesh-car/",
+        "link:https://srilankatoursdriver.com/to_book/nilanka-french-speaking-car/",
+        "link:https://srilankatoursdriver.com/to_book/saman-kdh-highroof-van/",
+        "link:https://srilankatoursdriver.com/to_book/sanka-suv/",
+        "link:https://srilankatoursdriver.com/to_book/sigiriya-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udawalawa-safari-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udesh-bus/",
+        "link:https://srilankatoursdriver.com/tours/",
+        "link:https://srilankatoursdriver.com/all-tours/page/2/",
+        "link:https://srilankatoursdriver.com/to_book/page/2/",
+        "link:https://srilankatoursdriver.com/tours/page/2/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/",
+        "link:https://srilankatoursdriver.com/?page_id=964",
+        "link:https://srilankatoursdriver.com/about-us/",
+        "link:https://srilankatoursdriver.com/all-tours/",
+        "link:https://srilankatoursdriver.com/category/uncategorized/",
+        "link:https://srilankatoursdriver.com/contact/",
+        "link:https://srilankatoursdriver.com/destination-list/",
+        "link:https://srilankatoursdriver.com/destination/colombo-city/",
+        "link:https://srilankatoursdriver.com/destination/galle-face-green/",
+        "link:https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "link:https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "link:https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "link:https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "link:https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "link:https://srilankatoursdriver.com/destination/yala-national-park/",
+        "link:https://srilankatoursdriver.com/drivers-guides/",
+        "link:https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "link:https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "link:https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "link:https://srilankatoursdriver.com/excursion/colombo/",
+        "link:https://srilankatoursdriver.com/excursion/ella/",
+        "link:https://srilankatoursdriver.com/excursion/galle/",
+        "link:https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "link:https://srilankatoursdriver.com/excursion/kalutara/",
+        "link:https://srilankatoursdriver.com/excursion/kandy/",
+        "link:https://srilankatoursdriver.com/excursion/mirissa/",
+        "link:https://srilankatoursdriver.com/excursion/negombo/",
+        "link:https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "link:https://srilankatoursdriver.com/excursion/pasikuda/",
+        "link:https://srilankatoursdriver.com/excursion/sigiriya/",
+        "link:https://srilankatoursdriver.com/excursion/trincomalee/",
+        "link:https://srilankatoursdriver.com/excursion/udawalawa/",
+        "link:https://srilankatoursdriver.com/excursion/yala/",
+        "link:https://srilankatoursdriver.com/excursions/",
+        "link:https://srilankatoursdriver.com/faq/",
+        "link:https://srilankatoursdriver.com/gallery/",
+        "link:https://srilankatoursdriver.com/offers/",
+        "link:https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "link:https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "link:https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+        "link:https://srilankatoursdriver.com/privacy-policy/",
+        "link:https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-round-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+        "link:https://srilankatoursdriver.com/tailor-made-tours/",
+        "link:https://srilankatoursdriver.com/terms-conditions/",
+        "link:https://srilankatoursdriver.com/to_book/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/",
+        "link:https://srilankatoursdriver.com/to_book/galle-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kandy-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kumara-podi-car/",
+        "link:https://srilankatoursdriver.com/to_book/mahesh-car/",
+        "link:https://srilankatoursdriver.com/to_book/nilanka-french-speaking-car/",
+        "link:https://srilankatoursdriver.com/to_book/saman-kdh-highroof-van/",
+        "link:https://srilankatoursdriver.com/to_book/sanka-suv/",
+        "link:https://srilankatoursdriver.com/to_book/sigiriya-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udawalawa-safari-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udesh-bus/",
+        "link:https://srilankatoursdriver.com/tours/",
+        "link:https://srilankatoursdriver.com/all-tours/page/2/",
+        "link:https://srilankatoursdriver.com/to_book/page/2/",
+        "link:https://srilankatoursdriver.com/tours/page/2/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/",
+        "link:https://srilankatoursdriver.com/?page_id=964",
+        "link:https://srilankatoursdriver.com/about-us/",
+        "link:https://srilankatoursdriver.com/all-tours/",
+        "link:https://srilankatoursdriver.com/category/uncategorized/",
+        "link:https://srilankatoursdriver.com/contact/",
+        "link:https://srilankatoursdriver.com/destination-list/",
+        "link:https://srilankatoursdriver.com/destination/colombo-city/",
+        "link:https://srilankatoursdriver.com/destination/galle-face-green/",
+        "link:https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "link:https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "link:https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "link:https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "link:https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "link:https://srilankatoursdriver.com/destination/yala-national-park/",
+        "link:https://srilankatoursdriver.com/drivers-guides/",
+        "link:https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "link:https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "link:https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "link:https://srilankatoursdriver.com/excursion/colombo/",
+        "link:https://srilankatoursdriver.com/excursion/ella/",
+        "link:https://srilankatoursdriver.com/excursion/galle/",
+        "link:https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "link:https://srilankatoursdriver.com/excursion/kalutara/",
+        "link:https://srilankatoursdriver.com/excursion/kandy/",
+        "link:https://srilankatoursdriver.com/excursion/mirissa/",
+        "link:https://srilankatoursdriver.com/excursion/negombo/",
+        "link:https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "link:https://srilankatoursdriver.com/excursion/pasikuda/",
+        "link:https://srilankatoursdriver.com/excursion/sigiriya/",
+        "link:https://srilankatoursdriver.com/excursion/trincomalee/",
+        "link:https://srilankatoursdriver.com/excursion/udawalawa/",
+        "link:https://srilankatoursdriver.com/excursion/yala/",
+        "link:https://srilankatoursdriver.com/excursions/",
+        "link:https://srilankatoursdriver.com/faq/",
+        "link:https://srilankatoursdriver.com/gallery/",
+        "link:https://srilankatoursdriver.com/offers/",
+        "link:https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "link:https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "link:https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+        "link:https://srilankatoursdriver.com/privacy-policy/",
+        "link:https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-round-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+        "link:https://srilankatoursdriver.com/tailor-made-tours/",
+        "link:https://srilankatoursdriver.com/terms-conditions/",
+        "link:https://srilankatoursdriver.com/to_book/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/",
+        "link:https://srilankatoursdriver.com/to_book/galle-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kandy-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kumara-podi-car/",
+        "link:https://srilankatoursdriver.com/to_book/mahesh-car/",
+        "link:https://srilankatoursdriver.com/to_book/nilanka-french-speaking-car/",
+        "link:https://srilankatoursdriver.com/to_book/saman-kdh-highroof-van/",
+        "link:https://srilankatoursdriver.com/to_book/sanka-suv/",
+        "link:https://srilankatoursdriver.com/to_book/sigiriya-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udawalawa-safari-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udesh-bus/",
+        "link:https://srilankatoursdriver.com/tours/",
+        "link:https://srilankatoursdriver.com/all-tours/page/2/",
+        "link:https://srilankatoursdriver.com/to_book/page/2/",
+        "link:https://srilankatoursdriver.com/tours/page/2/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/",
+        "link:https://srilankatoursdriver.com/?page_id=964",
+        "link:https://srilankatoursdriver.com/about-us/",
+        "link:https://srilankatoursdriver.com/all-tours/",
+        "link:https://srilankatoursdriver.com/category/uncategorized/",
+        "link:https://srilankatoursdriver.com/contact/",
+        "link:https://srilankatoursdriver.com/destination-list/",
+        "link:https://srilankatoursdriver.com/destination/colombo-city/",
+        "link:https://srilankatoursdriver.com/destination/galle-face-green/",
+        "link:https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "link:https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "link:https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "link:https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "link:https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "link:https://srilankatoursdriver.com/destination/yala-national-park/",
+        "link:https://srilankatoursdriver.com/drivers-guides/",
+        "link:https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "link:https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "link:https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "link:https://srilankatoursdriver.com/excursion/colombo/",
+        "link:https://srilankatoursdriver.com/excursion/ella/",
+        "link:https://srilankatoursdriver.com/excursion/galle/",
+        "link:https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "link:https://srilankatoursdriver.com/excursion/kalutara/",
+        "link:https://srilankatoursdriver.com/excursion/kandy/",
+        "link:https://srilankatoursdriver.com/excursion/mirissa/",
+        "link:https://srilankatoursdriver.com/excursion/negombo/",
+        "link:https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "link:https://srilankatoursdriver.com/excursion/pasikuda/",
+        "link:https://srilankatoursdriver.com/excursion/sigiriya/",
+        "link:https://srilankatoursdriver.com/excursion/trincomalee/",
+        "link:https://srilankatoursdriver.com/excursion/udawalawa/",
+        "link:https://srilankatoursdriver.com/excursion/yala/",
+        "link:https://srilankatoursdriver.com/excursions/",
+        "link:https://srilankatoursdriver.com/faq/",
+        "link:https://srilankatoursdriver.com/gallery/",
+        "link:https://srilankatoursdriver.com/offers/",
+        "link:https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "link:https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "link:https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+        "link:https://srilankatoursdriver.com/privacy-policy/",
+        "link:https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-round-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+        "link:https://srilankatoursdriver.com/tailor-made-tours/",
+        "link:https://srilankatoursdriver.com/terms-conditions/",
+        "link:https://srilankatoursdriver.com/to_book/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/",
+        "link:https://srilankatoursdriver.com/to_book/galle-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kandy-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kumara-podi-car/",
+        "link:https://srilankatoursdriver.com/to_book/mahesh-car/",
+        "link:https://srilankatoursdriver.com/to_book/nilanka-french-speaking-car/",
+        "link:https://srilankatoursdriver.com/to_book/saman-kdh-highroof-van/",
+        "link:https://srilankatoursdriver.com/to_book/sanka-suv/",
+        "link:https://srilankatoursdriver.com/to_book/sigiriya-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udawalawa-safari-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udesh-bus/",
+        "link:https://srilankatoursdriver.com/tours/",
+        "link:https://srilankatoursdriver.com/all-tours/page/2/",
+        "link:https://srilankatoursdriver.com/to_book/page/2/",
+        "link:https://srilankatoursdriver.com/tours/page/2/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/",
+        "link:https://srilankatoursdriver.com/?page_id=964",
+        "link:https://srilankatoursdriver.com/about-us/",
+        "link:https://srilankatoursdriver.com/all-tours/",
+        "link:https://srilankatoursdriver.com/category/uncategorized/",
+        "link:https://srilankatoursdriver.com/contact/",
+        "link:https://srilankatoursdriver.com/destination-list/",
+        "link:https://srilankatoursdriver.com/destination/colombo-city/",
+        "link:https://srilankatoursdriver.com/destination/galle-face-green/",
+        "link:https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "link:https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "link:https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "link:https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "link:https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "link:https://srilankatoursdriver.com/destination/yala-national-park/",
+        "link:https://srilankatoursdriver.com/drivers-guides/",
+        "link:https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "link:https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "link:https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "link:https://srilankatoursdriver.com/excursion/colombo/",
+        "link:https://srilankatoursdriver.com/excursion/ella/",
+        "link:https://srilankatoursdriver.com/excursion/galle/",
+        "link:https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "link:https://srilankatoursdriver.com/excursion/kalutara/",
+        "link:https://srilankatoursdriver.com/excursion/kandy/",
+        "link:https://srilankatoursdriver.com/excursion/mirissa/",
+        "link:https://srilankatoursdriver.com/excursion/negombo/",
+        "link:https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "link:https://srilankatoursdriver.com/excursion/pasikuda/",
+        "link:https://srilankatoursdriver.com/excursion/sigiriya/",
+        "link:https://srilankatoursdriver.com/excursion/trincomalee/",
+        "link:https://srilankatoursdriver.com/excursion/udawalawa/",
+        "link:https://srilankatoursdriver.com/excursion/yala/",
+        "link:https://srilankatoursdriver.com/excursions/",
+        "link:https://srilankatoursdriver.com/faq/",
+        "link:https://srilankatoursdriver.com/gallery/",
+        "link:https://srilankatoursdriver.com/offers/",
+        "link:https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "link:https://srilankatoursdriver.com/offers/5-days-test-offer/",
+        "link:https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+        "link:https://srilankatoursdriver.com/privacy-policy/",
+        "link:https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-round-tours/",
+        "link:https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+        "link:https://srilankatoursdriver.com/tailor-made-tours/",
+        "link:https://srilankatoursdriver.com/terms-conditions/",
+        "link:https://srilankatoursdriver.com/to_book/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/",
+        "link:https://srilankatoursdriver.com/to_book/galle-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kandy-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/kumara-podi-car/",
+        "link:https://srilankatoursdriver.com/to_book/mahesh-car/",
+        "link:https://srilankatoursdriver.com/to_book/nilanka-french-speaking-car/",
+        "link:https://srilankatoursdriver.com/to_book/saman-kdh-highroof-van/",
+        "link:https://srilankatoursdriver.com/to_book/sanka-suv/",
+        "link:https://srilankatoursdriver.com/to_book/sigiriya-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udawalawa-safari-one-day-tour/",
+        "link:https://srilankatoursdriver.com/to_book/udesh-bus/",
+        "link:https://srilankatoursdriver.com/tours/",
+        "link:https://srilankatoursdriver.com/all-tours/page/2/",
+        "link:https://srilankatoursdriver.com/to_book/page/2/",
+        "link:https://srilankatoursdriver.com/tours/page/2/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/ba_locations/habarana/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/05-days-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-down-south-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/08-days-east-coast-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour-with-hotels/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/10-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-down-south-tour/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/",
+        "link:https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/"
+      ]
+    },
+    {
+      "url": "https://srilankatoursdriver.com/ba_locations/pidurangala-rock/",
+      "status": 404,
+      "error": "HTTP 404",
+      "discoveredVia": [
+        "link:https://srilankatoursdriver.com/to_book/10-days-down-south-tour/"
+      ]
+    }
+  ],
+  "parsingErrors": [],
+  "duplicates": {
+    "urlAliases": [
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/?paged=2",
+        "resolvesTo": "https://srilankatoursdriver.com/all-tours/page/2/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/to_book/?paged=2",
+        "resolvesTo": "https://srilankatoursdriver.com/to_book/page/2/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/kandy/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/kandy/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/negombo/",
+        "resolvesTo": "https://srilankatoursdriver.com/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/nuwara-eliya/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/ella/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/ella/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/mirissa/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/mirissa/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/hikkaduwa/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/yala-national-park/",
+        "resolvesTo": "https://srilankatoursdriver.com/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/colombo/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/colombo/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/negombo-fish-market/",
+        "resolvesTo": "https://srilankatoursdriver.com/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/ba_locations/anuradhapura/",
+        "resolvesTo": "https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/?paged=2",
+        "resolvesTo": "https://srilankatoursdriver.com/tours/page/2/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/page/2/?paged=1",
+        "resolvesTo": "https://srilankatoursdriver.com/all-tours/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/to_book/page/2/?paged=1",
+        "resolvesTo": "https://srilankatoursdriver.com/to_book/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/page/2/?paged=1",
+        "resolvesTo": "https://srilankatoursdriver.com/tours/",
+        "reason": "HTTP redirect"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/all-tours/page/2/",
+        "resolvesTo": "https://srilankatoursdriver.com/all-tours/",
+        "reason": "rel=canonical points elsewhere"
+      },
+      {
+        "url": "https://srilankatoursdriver.com/tours/page/2/",
+        "resolvesTo": "https://srilankatoursdriver.com/tours/",
+        "reason": "rel=canonical points elsewhere"
+      }
+    ],
+    "duplicateSlugs": [],
+    "duplicateTitles": [
+      {
+        "model": "GalleryItem",
+        "title": "11 Days All Inclusive Family Tour - United Kingdom ❤ Sri Lanka Negombo / Pinnawala / Sigiriya / Ella / Kirinda /…",
+        "sources": [
+          "https://www.instagram.com/p/CjKKUr6qjN6/",
+          "https://www.instagram.com/p/CjKKS4wqsz6/",
+          "https://www.instagram.com/p/CjKKQ8TKTWc/",
+          "https://www.instagram.com/p/CjKKO9IKFAg/",
+          "https://www.instagram.com/p/CjKKNMGqAJ5/",
+          "https://www.instagram.com/p/CjKKLF3qfGE/",
+          "https://www.instagram.com/p/CjKKI_lqWXp/",
+          "https://www.instagram.com/p/CjKKHDBKEpj/",
+          "https://www.instagram.com/p/CjKKE1Fq8vt/",
+          "https://www.instagram.com/p/CjKJ-B4qxL6/",
+          "https://www.instagram.com/p/CjKJ6oDK4X9/",
+          "https://www.instagram.com/p/CjKJ44GKhTI/",
+          "https://www.instagram.com/p/CjKJ27HqCc3/",
+          "https://www.instagram.com/p/CjKJ0xiqzFl/",
+          "https://www.instagram.com/p/CjKJy3lqvb2/",
+          "https://www.instagram.com/p/CjKJxJBKzDc/",
+          "https://www.instagram.com/p/CjKJu0BqC8j/"
+        ]
+      }
+    ],
+    "identicalContent": [
+      {
+        "model": "Tour",
+        "field": "description",
+        "sources": [
+          "https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-sri-lanka/",
+          "https://srilankatoursdriver.com/to_book/12-days-east-coast-tour-with-hotels-sri-lanka/"
+        ]
+      }
+    ],
+    "media": {
+      "sizeVariantGroups": 54,
+      "sameFilenameDifferentFolders": [],
+      "urlAliases": 2
+    }
+  },
+  "missingImportantFields": {
+    "tours": {
+      "price": [
+        "https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/"
+      ],
+      "currency": [
+        "https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/",
+        "https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/"
+      ],
+      "included": [
+        "https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/"
+      ],
+      "itinerary": [
+        "https://srilankatoursdriver.com/offers/10-days-east-coast-tour-offer/"
+      ],
+      "durationDays": [
+        "https://srilankatoursdriver.com/to_book/down-south-east-coast-10-days-offer/"
+      ]
+    },
+    "destinations": {
+      "region": [
+        "https://srilankatoursdriver.com/destination/colombo-city/",
+        "https://srilankatoursdriver.com/destination/galle-face-green/",
+        "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "https://srilankatoursdriver.com/destination/yala-national-park/"
+      ],
+      "seo.metaDescription": [
+        "https://srilankatoursdriver.com/destination/colombo-city/",
+        "https://srilankatoursdriver.com/destination/galle-face-green/",
+        "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "https://srilankatoursdriver.com/destination/yala-national-park/"
+      ]
+    },
+    "excursions": {
+      "shortDescription": [
+        "https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "https://srilankatoursdriver.com/excursion/colombo/",
+        "https://srilankatoursdriver.com/excursion/ella/",
+        "https://srilankatoursdriver.com/excursion/galle/",
+        "https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "https://srilankatoursdriver.com/excursion/kalutara/",
+        "https://srilankatoursdriver.com/excursion/kandy/",
+        "https://srilankatoursdriver.com/excursion/mirissa/",
+        "https://srilankatoursdriver.com/excursion/negombo/",
+        "https://srilankatoursdriver.com/excursion/pasikuda/",
+        "https://srilankatoursdriver.com/excursion/udawalawa/"
+      ],
+      "price": [
+        "https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "https://srilankatoursdriver.com/excursion/colombo/",
+        "https://srilankatoursdriver.com/excursion/ella/",
+        "https://srilankatoursdriver.com/excursion/galle/",
+        "https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "https://srilankatoursdriver.com/excursion/kalutara/",
+        "https://srilankatoursdriver.com/excursion/kandy/",
+        "https://srilankatoursdriver.com/excursion/mirissa/",
+        "https://srilankatoursdriver.com/excursion/negombo/",
+        "https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "https://srilankatoursdriver.com/excursion/pasikuda/",
+        "https://srilankatoursdriver.com/excursion/sigiriya/",
+        "https://srilankatoursdriver.com/excursion/trincomalee/",
+        "https://srilankatoursdriver.com/excursion/udawalawa/",
+        "https://srilankatoursdriver.com/excursion/yala/"
+      ],
+      "duration": [
+        "https://srilankatoursdriver.com/excursion/anuradhapura/",
+        "https://srilankatoursdriver.com/excursion/arugam-bay/",
+        "https://srilankatoursdriver.com/excursion/colombo-airport/",
+        "https://srilankatoursdriver.com/excursion/colombo/",
+        "https://srilankatoursdriver.com/excursion/ella/",
+        "https://srilankatoursdriver.com/excursion/galle/",
+        "https://srilankatoursdriver.com/excursion/hikkaduwa/",
+        "https://srilankatoursdriver.com/excursion/kalutara/",
+        "https://srilankatoursdriver.com/excursion/kandy/",
+        "https://srilankatoursdriver.com/excursion/mirissa/",
+        "https://srilankatoursdriver.com/excursion/negombo/",
+        "https://srilankatoursdriver.com/excursion/nuwara-eliya/",
+        "https://srilankatoursdriver.com/excursion/pasikuda/",
+        "https://srilankatoursdriver.com/excursion/sigiriya/",
+        "https://srilankatoursdriver.com/excursion/trincomalee/",
+        "https://srilankatoursdriver.com/excursion/udawalawa/",
+        "https://srilankatoursdriver.com/excursion/yala/"
+      ]
+    },
+    "pages": {
+      "content": [
+        "https://srilankatoursdriver.com/tailor-made-tours/"
+      ],
+      "seo.metaDescription": [
+        "https://srilankatoursdriver.com/tours/"
+      ]
+    },
+    "page-sections": {
+      "title": [
+        "https://srilankatoursdriver.com/about-us/#section-1",
+        "https://srilankatoursdriver.com/drivers-guides/#section-1",
+        "https://srilankatoursdriver.com/excursions/#section-1",
+        "https://srilankatoursdriver.com/tailor-made-tours/#section-1",
+        "https://srilankatoursdriver.com/tours/#section-1"
+      ]
+    },
+    "categories": {
+      "members": [
+        "https://srilankatoursdriver.com/sri-lanka-tour-offers/"
+      ]
+    },
+    "seo": {
+      "metaDescription": [
+        "https://srilankatoursdriver.com/tours/"
+      ]
+    }
+  },
+  "media": {
+    "total": 257,
+    "byType": {
+      "image": 257
+    },
+    "byRole": {
+      "avatar": 6,
+      "background": 27,
+      "content": 169,
+      "favicon": 3,
+      "gallery": 92,
+      "hero": 31,
+      "instagram": 20,
+      "logo": 1,
+      "og-image": 28,
+      "ui-asset": 2
+    },
+    "sizeVariants": 147,
+    "excludedFromImport": 26,
+    "hostedExternally": 28,
+    "withAltText": 124,
+    "withDimensions": 158
+  },
+  "translations": "None extracted – the old site is English-only; GTranslate translates client-side and stores nothing.",
+  "notMigratable": [
+    "Bookings and tailor-made enquiries: private customer data held in the WordPress database / mailbox – not publicly available and intentionally NOT scraped.",
+    "Contact form submissions (Contact Form 7 / Forminator / WPForms): not public."
+  ]
+}

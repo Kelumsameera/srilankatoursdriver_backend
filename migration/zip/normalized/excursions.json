@@ -1,0 +1,476 @@
+[
+  {
+    "title": "Colombo Airport",
+    "shortDescription": "Bandaranaike International Airport (CMB) in Katunayake is the main international gateway to Sri Lanka. Named after the world's first female Prime Minister, Sirimavo Bandaranaike, it is located 35km North of the capital, Colombo.",
+    "description": "Bandaranaike International Airport (CMB) in Katunayake is the main international gateway to Sri Lanka. Named after the world's first female Prime Minister, Sirimavo Bandaranaike, it is located 35km North of the capital, Colombo. \n\nNote: Our transfer rates cover direct pick-up and drop-off. Optional site visits along the route can be arranged upon request. We offer a special 5% discount for car bookings and 3% for vans. Payments are accepted in LKR or any major foreign currency at the prevailing daily conversion rate.",
+    "highlights": [
+      "Airport (CMB)"
+    ],
+    "slug": "colombo-airport",
+    "location": "Colombo Airport",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourscolombo-airport",
+      "url": "(dry-run) /tours/colombo-airport.jpg",
+      "resourceType": "image",
+      "alt": "Colombo Airport"
+    },
+    "category": "(excursion:city)",
+    "seo": {
+      "seoTitle": "Colombo Airport",
+      "metaDescription": "Bandaranaike International Airport (CMB) in Katunayake is the main international gateway to Sri Lanka. Named after the world's first female Prime Minister, Sirimavo Bandaranaike, it is located 35km North of the capital, Colombo."
+    },
+    "status": "published",
+    "order": 1,
+    "price": 42000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 42,000 · Van LKR 50,000 · Bus LKR 65,000 · 290 km",
+    "duration": "4 Hours (Toll Road)"
+  },
+  {
+    "title": "Colombo",
+    "shortDescription": "As Sri Lanka's vibrant commercial capital, Colombo offers a fascinating blend of colonial history and modern urban lifestyle.",
+    "description": "As Sri Lanka's vibrant commercial capital, Colombo offers a fascinating blend of colonial history and modern urban lifestyle. \n\nExplore the iconic Lotus Tower, stroll along Galle Face Green at sunset, and visit the historic Dutch Hospital. From luxury shopping malls to the bustling Pettah Market, Colombo provides an unforgettable introduction to the island's diverse culture and heritage.",
+    "highlights": [
+      "Capital City"
+    ],
+    "slug": "colombo",
+    "location": "Colombo",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourscolombo",
+      "url": "(dry-run) /tours/colombo.jpg",
+      "resourceType": "image",
+      "alt": "Colombo"
+    },
+    "category": "(excursion:city)",
+    "seo": {
+      "seoTitle": "Colombo",
+      "metaDescription": "As Sri Lanka's vibrant commercial capital, Colombo offers a fascinating blend of colonial history and modern urban lifestyle."
+    },
+    "status": "published",
+    "order": 2,
+    "price": 55000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 55,000 · Van LKR 63,000 · Bus LKR 75,000 · 265 km",
+    "duration": "4 Hours (Toll Road)"
+  },
+  {
+    "title": "Kandy",
+    "shortDescription": "Nestled amidst lush green hills, Kandy is the spiritual and cultural heart of Sri Lanka.",
+    "description": "Nestled amidst lush green hills, Kandy is the spiritual and cultural heart of Sri Lanka. \n\nIt is home to the sacred Temple of the Tooth Relic (Sri Dalada Maligawa), a UNESCO World Heritage site. Visitors can enjoy traditional Kandyan dance performances, walk around the scenic Kandy Lake, and explore the Royal Botanical Gardens in Peradeniya, which features a world-renowned orchid collection.",
+    "highlights": [
+      "Hill Capital"
+    ],
+    "slug": "kandy",
+    "location": "Kandy",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourskandy",
+      "url": "(dry-run) /tours/kandy.jpg",
+      "resourceType": "image",
+      "alt": "Kandy"
+    },
+    "category": "(excursion:culture)",
+    "seo": {
+      "seoTitle": "Kandy",
+      "metaDescription": "Nestled amidst lush green hills, Kandy is the spiritual and cultural heart of Sri Lanka."
+    },
+    "status": "published",
+    "order": 3,
+    "price": 45000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 45,000 · Van LKR 53,000 · Bus LKR 70,000 · 230 km",
+    "duration": "5.2 Hours"
+  },
+  {
+    "title": "Galle",
+    "shortDescription": "Galle is a masterpiece of colonial architecture and coastal beauty. The historic Galle Fort, a UNESCO World Heritage site built by the Dutch, is a living monument with narrow streets, boutique shops, and cozy cafes.",
+    "description": "Galle is a masterpiece of colonial architecture and coastal beauty. The historic Galle Fort, a UNESCO World Heritage site built by the Dutch, is a living monument with narrow streets, boutique shops, and cozy cafes. \n\nThe city perfectly balances its rich history with the stunning beaches of the southern coast, making it a must-visit destination for history buffs and sun-seekers alike.",
+    "highlights": [
+      "Historic Coastal City"
+    ],
+    "slug": "galle",
+    "location": "Galle",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursgalle",
+      "url": "(dry-run) /tours/galle.jpg",
+      "resourceType": "image",
+      "alt": "Galle"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Galle",
+      "metaDescription": "Galle is a masterpiece of colonial architecture and coastal beauty. The historic Galle Fort, a UNESCO World Heritage site built by the Dutch, is a living monument with narrow streets, boutique shops, and cozy cafes."
+    },
+    "status": "published",
+    "order": 4,
+    "price": 33000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 33,000 · Van LKR 42,000 · Bus LKR 50,000 · 165 km",
+    "duration": "3 Hours (Toll Road)"
+  },
+  {
+    "title": "Ella",
+    "shortDescription": "Ella is a charming mountain village that has become a paradise for hikers and nature lovers.",
+    "description": "Ella is a charming mountain village that has become a paradise for hikers and nature lovers. \n\nIt is famous for the architectural marvel of the Nine Arch Bridge and the breathtaking views from Little Adam's Peak and Ella Rock. Surrounded by emerald-green tea plantations and misty mountains, Ella offers some of the most beautiful hiking trails and train journeys in the world.",
+    "highlights": [
+      "Scenic Hill Country"
+    ],
+    "slug": "ella",
+    "location": "Ella",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursella",
+      "url": "(dry-run) /tours/ella.jpg",
+      "resourceType": "image",
+      "alt": "Ella"
+    },
+    "category": "(excursion:nature)",
+    "seo": {
+      "seoTitle": "Ella",
+      "metaDescription": "Ella is a charming mountain village that has become a paradise for hikers and nature lovers."
+    },
+    "status": "published",
+    "order": 5,
+    "price": 27000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 27,000 · Van LKR 32,000 · Bus LKR 40,000 · 105 km",
+    "duration": "2.4 Hours"
+  },
+  {
+    "title": "Nuwara Eliya",
+    "shortDescription": "Known as 'Little England', Nuwara Eliya is famous for its cool climate and British colonial-style bungalows.",
+    "description": "Known as 'Little England', Nuwara Eliya is famous for its cool climate and British colonial-style bungalows. \n\nThis region is the heart of Sri Lanka's tea industry, where you can visit world-class tea estates and factories. Enjoy a boat ride on Gregory Lake, walk through the beautifully manicured Victoria Park, and experience the misty charm of the highest town in Sri Lanka.",
+    "highlights": [
+      "Little England"
+    ],
+    "slug": "nuwara-eliya",
+    "location": "Nuwara Eliya",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursnuwaraeliya",
+      "url": "(dry-run) /tours/nuwaraeliya.jpg",
+      "resourceType": "image",
+      "alt": "Nuwara Eliya"
+    },
+    "category": "(excursion:nature)",
+    "seo": {
+      "seoTitle": "Nuwara Eliya",
+      "metaDescription": "Known as 'Little England', Nuwara Eliya is famous for its cool climate and British colonial-style bungalows."
+    },
+    "status": "published",
+    "order": 6,
+    "price": 38000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 38,000 · Van LKR 45,000 · Bus LKR 55,000 · 150 km",
+    "duration": "4 Hours"
+  },
+  {
+    "title": "Sigiriya",
+    "shortDescription": "Sigiriya, or the Lion Rock, is a staggering 200-meter high ancient rock fortress that stands as a testament to ancient Sri Lankan engineering and art.",
+    "description": "Sigiriya, or the Lion Rock, is a staggering 200-meter high ancient rock fortress that stands as a testament to ancient Sri Lankan engineering and art. \n\nBuilt by King Kashyapa in the 5th century, this UNESCO site features world-famous frescoes, the Mirror Wall, and meticulously planned water gardens. The panoramic view from the summit is one of the most iconic experiences in all of Asia.",
+    "highlights": [
+      "Lion Rock Fortress"
+    ],
+    "slug": "sigiriya",
+    "location": "Sigiriya",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourssigiriya",
+      "url": "(dry-run) /tours/sigiriya.jpg",
+      "resourceType": "image",
+      "alt": "Sigiriya"
+    },
+    "category": "(excursion:culture)",
+    "seo": {
+      "seoTitle": "Sigiriya",
+      "metaDescription": "Sigiriya, or the Lion Rock, is a staggering 200-meter high ancient rock fortress that stands as a testament to ancient Sri Lankan engineering and art."
+    },
+    "status": "published",
+    "order": 7,
+    "price": 55000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 55,000 · Van LKR 63,000 · Bus LKR 75,000 · 270 km",
+    "duration": "5.3 Hours"
+  },
+  {
+    "title": "Anuradhapura",
+    "shortDescription": "Anuradhapura was the first capital of ancient Sri Lanka and remains one of the most sacred Buddhist pilgrimage sites in the world.",
+    "description": "Anuradhapura was the first capital of ancient Sri Lanka and remains one of the most sacred Buddhist pilgrimage sites in the world. \n\nThe city is home to massive stupas like Ruwanwelisaya and Jetavanaramaya, which were among the tallest structures of the ancient world. You can also visit the Jaya Sri Maha Bodhi, the oldest documented tree in the world, planted over 2,000 years ago.",
+    "highlights": [
+      "Ancient Sacred City"
+    ],
+    "slug": "anuradhapura",
+    "location": "Anuradhapura",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursanuradhapura",
+      "url": "(dry-run) /tours/anuradhapura.jpg",
+      "resourceType": "image",
+      "alt": "Anuradhapura"
+    },
+    "category": "(excursion:culture)",
+    "seo": {
+      "seoTitle": "Anuradhapura",
+      "metaDescription": "Anuradhapura was the first capital of ancient Sri Lanka and remains one of the most sacred Buddhist pilgrimage sites in the world."
+    },
+    "status": "published",
+    "order": 8,
+    "price": 58000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 58,000 · Van LKR 65,000 · Bus LKR 80,000 · 310 km",
+    "duration": "6.3 Hours"
+  },
+  {
+    "title": "Polonnaruwa",
+    "shortDescription": "Step back in time at Polonnaruwa, the second ancient capital of Sri Lanka.",
+    "description": "Step back in time at Polonnaruwa, the second ancient capital of Sri Lanka. \n\nThis medieval city is remarkably well-preserved, featuring the majestic ruins of the Royal Palace and the Gal Vihara, where four magnificent Buddha statues are carved directly into granite rock. The city's advanced irrigation systems, like the Parakrama Samudra, continue to support the region's agriculture today.",
+    "highlights": [
+      "Medieval Capital"
+    ],
+    "slug": "polonnaruwa",
+    "location": "Polonnaruwa",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourspolonnaruwa",
+      "url": "(dry-run) /tours/polonnaruwa.jpg",
+      "resourceType": "image",
+      "alt": "Polonnaruwa"
+    },
+    "category": "(excursion:culture)",
+    "seo": {
+      "seoTitle": "Polonnaruwa",
+      "metaDescription": "Step back in time at Polonnaruwa, the second ancient capital of Sri Lanka."
+    },
+    "status": "published",
+    "order": 9
+  },
+  {
+    "title": "Mirissa",
+    "shortDescription": "Mirissa is a tropical paradise known for its crescent-shaped beach and laid-back atmosphere.",
+    "description": "Mirissa is a tropical paradise known for its crescent-shaped beach and laid-back atmosphere. \n\nIt is internationally recognized as one of the best locations in the world for whale and dolphin watching. Beyond the ocean adventures, visitors can relax at the famous Coconut Tree Hill for a perfect sunset view or enjoy the vibrant nightlife along the sandy shores.",
+    "highlights": [
+      "Whale Watching Destination"
+    ],
+    "slug": "mirissa",
+    "location": "Mirissa",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursmirissa",
+      "url": "(dry-run) /tours/mirissa.jpg",
+      "resourceType": "image",
+      "alt": "Mirissa"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Mirissa",
+      "metaDescription": "Mirissa is a tropical paradise known for its crescent-shaped beach and laid-back atmosphere."
+    },
+    "status": "published",
+    "order": 10,
+    "price": 30000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 30,000 · Van LKR 38,000 · Bus LKR 50,000 · 130 km",
+    "duration": "2.3 Hours (Toll Road)"
+  },
+  {
+    "title": "Hikkaduwa",
+    "shortDescription": "Hikkaduwa is a legendary beach destination famous for its vibrant coral reefs and excellent surfing conditions.",
+    "description": "Hikkaduwa is a legendary beach destination famous for its vibrant coral reefs and excellent surfing conditions. \n\nThe Hikkaduwa National Park is a marine sanctuary where you can see colorful fish and sea turtles through glass-bottom boats or while snorkeling. The town is also known for its lively beach festivals, art markets, and a wide variety of seafood restaurants.",
+    "highlights": [
+      "Coral Beach Town"
+    ],
+    "slug": "hikkaduwa",
+    "location": "Hikkaduwa",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourshikkaduwa",
+      "url": "(dry-run) /tours/hikkaduwa.jpg",
+      "resourceType": "image",
+      "alt": "Hikkaduwa"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Hikkaduwa",
+      "metaDescription": "Hikkaduwa is a legendary beach destination famous for its vibrant coral reefs and excellent surfing conditions."
+    },
+    "status": "published",
+    "order": 11,
+    "price": 38000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 38,000 · Van LKR 50,000 · Bus LKR 65,000 · 170 km",
+    "duration": "2.3 Hours (Toll Road)"
+  },
+  {
+    "title": "Trincomalee",
+    "shortDescription": "Located on the northeastern coast, Trincomalee boasts one of the world’s finest natural deep-water harbors.",
+    "description": "Located on the northeastern coast, Trincomalee boasts one of the world’s finest natural deep-water harbors. \n\nIt is home to the stunning Nilaveli Beach and Pigeon Island, a premier snorkeling spot with crystal-clear waters. Don't miss the Koneswaram Temple, a majestic Hindu shrine perched on a cliff edge (Swami Rock) offering spectacular views of the Indian Ocean.",
+    "highlights": [
+      "East Coast Paradise"
+    ],
+    "slug": "trincomalee",
+    "location": "Trincomalee",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourstrincomalee",
+      "url": "(dry-run) /tours/trincomalee.jpg",
+      "resourceType": "image",
+      "alt": "Trincomalee"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Trincomalee",
+      "metaDescription": "Located on the northeastern coast, Trincomalee boasts one of the world’s finest natural deep-water harbors."
+    },
+    "status": "published",
+    "order": 12,
+    "price": 62000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 62,000 · Van LKR 72,000 · Bus LKR 90,000 · 330 km",
+    "duration": "6.4 Hours"
+  },
+  {
+    "title": "Pasikuda",
+    "shortDescription": "Pasikuda is renowned for its iconic bay with shallow, turquoise waters that allow you to walk hundreds of meters into the sea.",
+    "description": "Pasikuda is renowned for its iconic bay with shallow, turquoise waters that allow you to walk hundreds of meters into the sea. \n\nThis tranquil destination is perfect for families and those seeking luxury relaxation. The calm, reef-protected waters make it ideal for swimming, windsurfing, and water skiing in one of the safest coastal stretches in Sri Lanka.",
+    "highlights": [
+      "Shallow Blue Waters"
+    ],
+    "slug": "pasikuda",
+    "location": "Pasikuda",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourspasikuda",
+      "url": "(dry-run) /tours/pasikuda.jpg",
+      "resourceType": "image",
+      "alt": "Pasikuda"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Pasikuda",
+      "metaDescription": "Pasikuda is renowned for its iconic bay with shallow, turquoise waters that allow you to walk hundreds of meters into the sea."
+    },
+    "status": "published",
+    "order": 13,
+    "price": 45000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 45,000 · Van LKR 53,000 · Bus LKR 70,000 · 230 km",
+    "duration": "4.4 Hours"
+  },
+  {
+    "title": "Tissamaharama (Yala)",
+    "shortDescription": "Tissamaharama, or 'Tissa', serves as the primary gateway to Yala National Park, the most visited wildlife sanctuary in Sri Lanka.",
+    "description": "Tissamaharama, or 'Tissa', serves as the primary gateway to Yala National Park, the most visited wildlife sanctuary in Sri Lanka. \n\nYala is famous for having one of the highest leopard densities in the world, along with wild elephants, sloth bears, and crocodiles. Tissa itself is a historic town featuring ancient artificial lakes (tanks) that are perfect for bird watching and evening walks.",
+    "highlights": [
+      "Wildlife Gateway"
+    ],
+    "slug": "tissamaharama",
+    "location": "Tissamaharama (Yala)",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourstissamaharama",
+      "url": "(dry-run) /tours/tissamaharama.jpg",
+      "resourceType": "image",
+      "alt": "Tissamaharama (Yala)"
+    },
+    "category": "(excursion:wildlife)",
+    "seo": {
+      "seoTitle": "Tissamaharama (Yala)",
+      "metaDescription": "Tissamaharama, or 'Tissa', serves as the primary gateway to Yala National Park, the most visited wildlife sanctuary in Sri Lanka."
+    },
+    "status": "published",
+    "order": 14
+  },
+  {
+    "title": "Udawalawa",
+    "shortDescription": "Udawalawa National Park is the best place in Sri Lanka to witness wild elephants in their natural habitat.",
+    "description": "Udawalawa National Park is the best place in Sri Lanka to witness wild elephants in their natural habitat. \n\nThe park's open plains resemble an African savanna, making it easy to spot massive herds of elephants. A visit to the nearby Elephant Transit Home, where orphaned calves are rehabilitated and released back into the wild, is an heartwarming experience for animal lovers.",
+    "highlights": [
+      "Elephant Safari"
+    ],
+    "slug": "udawalawa",
+    "location": "Udawalawa",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursudawalawa",
+      "url": "(dry-run) /tours/udawalawa.jpg",
+      "resourceType": "image",
+      "alt": "Udawalawa"
+    },
+    "category": "(excursion:wildlife)",
+    "seo": {
+      "seoTitle": "Udawalawa",
+      "metaDescription": "Udawalawa National Park is the best place in Sri Lanka to witness wild elephants in their natural habitat."
+    },
+    "status": "published",
+    "order": 15,
+    "price": 25000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 25,000 · Van LKR 32,000 · Bus LKR 40,000 · 70 km",
+    "duration": "1.3 Hours"
+  },
+  {
+    "title": "Negombo",
+    "shortDescription": "Conveniently located just minutes from the airport, Negombo is a historic fishing town with a rich colonial past.",
+    "description": "Conveniently located just minutes from the airport, Negombo is a historic fishing town with a rich colonial past. \n\nKnown for its expansive lagoon and traditional outrigger canoes (Oruvas), Negombo offers a vibrant fish market experience. The city's 'Little Rome' charm is seen in its numerous Dutch-era churches and the peaceful canal system that stretches through the town.",
+    "highlights": [
+      "Lagoon City"
+    ],
+    "slug": "negombo",
+    "location": "Negombo",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursnegombo",
+      "url": "(dry-run) /tours/negombo.jpg",
+      "resourceType": "image",
+      "alt": "Negombo"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Negombo",
+      "metaDescription": "Conveniently located just minutes from the airport, Negombo is a historic fishing town with a rich colonial past."
+    },
+    "status": "published",
+    "order": 16,
+    "price": 43000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 43,000 · Van LKR 52,000 · Bus LKR 65,000 · 295 km",
+    "duration": "4.2 Hours (Toll Road)"
+  },
+  {
+    "title": "Kalutara",
+    "shortDescription": "Kalutara is a coastal town famous for its sacred Bodhiya—the only hollow Buddhist stupa in the world.",
+    "description": "Kalutara is a coastal town famous for its sacred Bodhiya—the only hollow Buddhist stupa in the world. \n\nPositioned where the Kalu River meets the sea, it offers beautiful river-side and beach-front views. Kalutara is also well-known for its traditional basket weaving industry and serves as a serene retreat for those looking to escape the hustle and bustle of Colombo.",
+    "highlights": [
+      "Coastal Retreat"
+    ],
+    "slug": "kalutara",
+    "location": "Kalutara",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-tourskalutara",
+      "url": "(dry-run) /tours/kalutara.jpg",
+      "resourceType": "image",
+      "alt": "Kalutara"
+    },
+    "category": "(excursion:beach)",
+    "seo": {
+      "seoTitle": "Kalutara",
+      "metaDescription": "Kalutara is a coastal town famous for its sacred Bodhiya—the only hollow Buddhist stupa in the world."
+    },
+    "status": "published",
+    "order": 17,
+    "price": 43000,
+    "currency": "LKR",
+    "priceNote": "Car LKR 43,000 · Van LKR 52,000 · Bus LKR 65,000 · 220 km",
+    "duration": "3.1 Hours (Toll Road)"
+  },
+  {
+    "title": "Jaffna",
+    "shortDescription": "Jaffna offers a unique cultural experience distinct from the rest of the island.",
+    "description": "Jaffna offers a unique cultural experience distinct from the rest of the island. \n\nWith its colorful Hindu temples like Nallur Kandaswamy Kovil, historic Jaffna Fort, and the serene islands of Delft and Nainativu, the North is a land of resilience and beauty. Discover the unique northern cuisine, explore the vibrant local markets, and enjoy the untouched landscapes of the Jaffna peninsula.",
+    "highlights": [
+      "Northern Cultural City"
+    ],
+    "slug": "jaffna",
+    "location": "Jaffna",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/excursions/zip-toursjaffna",
+      "url": "(dry-run) /tours/jaffna.jpg",
+      "resourceType": "image",
+      "alt": "Jaffna"
+    },
+    "category": "(excursion:culture)",
+    "seo": {
+      "seoTitle": "Jaffna",
+      "metaDescription": "Jaffna offers a unique cultural experience distinct from the rest of the island."
+    },
+    "status": "published",
+    "order": 18
+  }
+]

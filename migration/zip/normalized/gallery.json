@@ -1,0 +1,242 @@
+[
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-01",
+      "url": "(dry-run) /gallery/gallery-01.jpeg",
+      "resourceType": "image",
+      "alt": "Sigiriya Rock Fortress"
+    },
+    "title": "Sigiriya Rock Fortress",
+    "caption": "Climb the iconic Sigiriya Rock Fortress",
+    "altText": "Sigiriya Rock Fortress",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 1
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-02",
+      "url": "(dry-run) /gallery/gallery-02.jpeg",
+      "resourceType": "image",
+      "alt": "Kandy Temple of the Tooth"
+    },
+    "title": "Kandy Temple of the Tooth",
+    "caption": "Sacred Temple of the Tooth in Kandy",
+    "altText": "Kandy Temple of the Tooth",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 2
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-03",
+      "url": "(dry-run) /gallery/gallery-03.jpeg",
+      "resourceType": "image",
+      "alt": "Ella Nine Arch Bridge"
+    },
+    "title": "Ella Nine Arch Bridge",
+    "caption": "Famous Nine Arch Bridge in Ella",
+    "altText": "Ella Nine Arch Bridge",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 3
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-04",
+      "url": "(dry-run) /gallery/gallery-04.jpeg",
+      "resourceType": "image",
+      "alt": "Mirissa Beach"
+    },
+    "title": "Mirissa Beach",
+    "caption": "Relax at Mirissa Beach",
+    "altText": "Mirissa Beach",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 4
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-05",
+      "url": "(dry-run) /gallery/gallery-05.jpeg",
+      "resourceType": "image",
+      "alt": "Udawalawe Safari"
+    },
+    "title": "Udawalawe Safari",
+    "caption": "Wildlife Safari Experience",
+    "altText": "Udawalawe Safari",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 5
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-06",
+      "url": "(dry-run) /gallery/gallery-06.jpeg",
+      "resourceType": "image",
+      "alt": "Luxury Hotel in Habarana"
+    },
+    "title": "Luxury Hotel in Habarana",
+    "caption": "Comfortable stay in Habarana",
+    "altText": "Luxury Hotel in Habarana",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 6
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-07",
+      "url": "(dry-run) /gallery/gallery-07.jpeg",
+      "resourceType": "image",
+      "alt": "Kandy Hotel View"
+    },
+    "title": "Kandy Hotel View",
+    "caption": "Beautiful hill country accommodation",
+    "altText": "Kandy Hotel View",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 7
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-08",
+      "url": "(dry-run) /gallery/gallery-08.jpeg",
+      "resourceType": "image",
+      "alt": "Ella Mountain View"
+    },
+    "title": "Ella Mountain View",
+    "caption": "Mountain sunrise in Ella",
+    "altText": "Ella Mountain View",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 8
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-09",
+      "url": "(dry-run) /gallery/gallery-09.jpeg",
+      "resourceType": "image",
+      "alt": "Beach Hotel Mirissa"
+    },
+    "title": "Beach Hotel Mirissa",
+    "caption": "Beachfront hotel in Mirissa",
+    "altText": "Beach Hotel Mirissa",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 9
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-10",
+      "url": "(dry-run) /gallery/gallery-10.jpeg",
+      "resourceType": "image",
+      "alt": "Negombo Lagoon"
+    },
+    "title": "Negombo Lagoon",
+    "caption": "Negombo Lagoon Boat Tour",
+    "altText": "Negombo Lagoon",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 10
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-11",
+      "url": "(dry-run) /gallery/gallery-11.jpeg",
+      "resourceType": "image",
+      "alt": "Dambulla Cave Temple"
+    },
+    "title": "Dambulla Cave Temple",
+    "caption": "Ancient Dambulla Cave Temple",
+    "altText": "Dambulla Cave Temple",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 11
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-12",
+      "url": "(dry-run) /gallery/gallery-12.jpeg",
+      "resourceType": "image",
+      "alt": "Ella Rock View"
+    },
+    "title": "Ella Rock View",
+    "caption": "Hiking Ella Rock",
+    "altText": "Ella Rock View",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 12
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-13",
+      "url": "(dry-run) /gallery/gallery-13.jpeg",
+      "resourceType": "image",
+      "alt": "Yala Safari Jeep"
+    },
+    "title": "Yala Safari Jeep",
+    "caption": "Yala National Park Safari",
+    "altText": "Yala Safari Jeep",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 13
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-14",
+      "url": "(dry-run) /gallery/gallery-14.jpeg",
+      "resourceType": "image",
+      "alt": "Pasikuda Beach"
+    },
+    "title": "Pasikuda Beach",
+    "caption": "Crystal clear waters of Pasikuda",
+    "altText": "Pasikuda Beach",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 14
+  },
+  {
+    "media": {
+      "publicId": "srilankatoursdriver/gallery/zip-gallerygallery-15",
+      "url": "(dry-run) /gallery/gallery-15.jpeg",
+      "resourceType": "image",
+      "alt": "Pigeon Island"
+    },
+    "title": "Pigeon Island",
+    "caption": "Snorkeling at Pigeon Island",
+    "altText": "Pigeon Island",
+    "tags": [
+      "migrated"
+    ],
+    "status": "published",
+    "order": 15
+  }
+]

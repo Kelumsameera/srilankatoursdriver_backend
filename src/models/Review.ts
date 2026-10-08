@@ -21,11 +21,14 @@ const reviewSchema = new Schema(
     featured: { type: Boolean, default: false, index: true },
     status: { type: String, enum: REVIEW_STATUSES, default: "pending", index: true },
     order: { type: Number, default: 0 },
+    /** Fingerprint of a public submission – repeated identical submissions are not stored twice. */
+    submissionHash: { type: String },
     ...auditFields,
   },
   { timestamps: true },
 );
 
 reviewSchema.index({ status: 1, featured: -1, date: -1 });
+reviewSchema.index({ submissionHash: 1, createdAt: -1 });
 
 export const Review = model("Review", reviewSchema);

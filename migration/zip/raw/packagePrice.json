@@ -1,0 +1,175 @@
+{
+  "packageprices": [
+    {
+      "id": "airport",
+      "destination": "Airport",
+      "car": 42000,
+      "van": 50000,
+      "bus": 65000,
+      "estimatedDuration": "4 Hours (Toll Road)",
+      "mileageKm": 290
+    },
+    {
+      "id": "aluthgama",
+      "destination": "Aluthgama",
+      "car": 38000,
+      "van": 45000,
+      "bus": 58000,
+      "estimatedDuration": "3 Hours (Toll Road)",
+      "mileageKm": 200
+    },
+    {
+      "id": "anuradhapura",
+      "destination": "Anuradhapura",
+      "car": 58000,
+      "van": 65000,
+      "bus": 80000,
+      "estimatedDuration": "6.3 Hours",
+      "mileageKm": 310
+    },
+    {
+      "id": "arugam-bay",
+      "destination": "Arugam Bay",
+      "car": 38000,
+      "van": 43000,
+      "bus": 58000,
+      "estimatedDuration": "3.3 Hours",
+      "mileageKm": 160
+    },
+    {
+      "id": "beruwala",
+      "destination": "Beruwala",
+      "car": 40000,
+      "van": 53000,
+      "bus": 65000,
+      "estimatedDuration": "3.3 Hours (Toll Road)",
+      "mileageKm": 205
+    },
+    {
+      "id": "colombo",
+      "destination": "Colombo",
+      "car": 55000,
+      "van": 63000,
+      "bus": 75000,
+      "estimatedDuration": "4 Hours (Toll Road)",
+      "mileageKm": 265
+    },
+    {
+      "id": "dambulla",
+      "destination": "Dambulla",
+      "car": 50000,
+      "van": 65000,
+      "bus": 80000,
+      "estimatedDuration": "5.3 Hours",
+      "mileageKm": 250
+    },
+    {
+      "id": "ella",
+      "destination": "Ella",
+      "car": 27000,
+      "van": 32000,
+      "bus": 40000,
+      "estimatedDuration": "2.4 Hours",
+      "mileageKm": 105
+    },
+    {
+      "id": "galle",
+      "destination": "Galle",
+      "car": 33000,
+      "van": 42000,
+      "bus": 50000,
+      "estimatedDuration": "3 Hours (Toll Road)",
+      "mileageKm": 165
+    },
+    {
+      "id": "hikkaduwa",
+      "destination": "Hikkaduwa",
+      "car": 38000,
+      "van": 50000,
+      "bus": 65000,
+      "estimatedDuration": "2.3 Hours (Toll Road)",
+      "mileageKm": 170
+    },
+    {
+      "id": "kalutara",
+      "destination": "Kalutara",
+      "car": 43000,
+      "van": 52000,
+      "bus": 65000,
+      "estimatedDuration": "3.1 Hours (Toll Road)",
+      "mileageKm": 220
+    },
+    {
+      "id": "kandy",
+      "destination": "Kandy",
+      "car": 45000,
+      "van": 53000,
+      "bus": 70000,
+      "estimatedDuration": "5.2 Hours",
+      "mileageKm": 230
+    },
+    {
+      "id": "mirissa",
+      "destination": "Mirissa",
+      "car": 30000,
+      "van": 38000,
+      "bus": 50000,
+      "estimatedDuration": "2.3 Hours (Toll Road)",
+      "mileageKm": 130
+    },
+    {
+      "id": "negombo",
+      "destination": "Negombo",
+      "car": 43000,
+      "van": 52000,
+      "bus": 65000,
+      "estimatedDuration": "4.2 Hours (Toll Road)",
+      "mileageKm": 295
+    },
+    {
+      "id": "nuwara-eliya",
+      "destination": "Nuwara Eliya",
+      "car": 38000,
+      "van": 45000,
+      "bus": 55000,
+      "estimatedDuration": "4 Hours",
+      "mileageKm": 150
+    },
+    {
+      "id": "pasikuda",
+      "destination": "Pasikuda",
+      "car": 45000,
+      "van": 53000,
+      "bus": 70000,
+      "estimatedDuration": "4.4 Hours",
+      "mileageKm": 230
+    },
+    {
+      "id": "sigiriya-habarana",
+      "destination": "Sigiriya (Habarana)",
+      "car": 55000,
+      "van": 63000,
+      "bus": 75000,
+      "estimatedDuration": "5.3 Hours",
+      "mileageKm": 270
+    },
+    {
+      "id": "trincomalee",
+      "destination": "Trincomalee",
+      "car": 62000,
+      "van": 72000,
+      "bus": 90000,
+      "estimatedDuration": "6.4 Hours",
+      "mileageKm": 330
+    },
+    {
+      "id": "udawalawa",
+      "destination": "Udawalawa",
+      "car": 25000,
+      "van": 32000,
+      "bus": 40000,
+      "estimatedDuration": "1.3 Hours",
+      "mileageKm": 70
+    }
+  ]
+}

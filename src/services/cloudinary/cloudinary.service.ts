@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { v2 as cloudinary, type UploadApiOptions, type UploadApiResponse } from "cloudinary";
 import { env } from "../../config/env.js";
 import { ApiError } from "../../utils/ApiError.js";
-import { IMAGE_FORMATS, VIDEO_FORMATS } from "../../middleware/upload.js";
+import { DIRECT_IMAGE_FORMATS, IMAGE_FORMATS, VIDEO_FORMATS } from "../../middleware/upload.js";
 
 export const MEDIA_FOLDERS = [
   "branding",
@@ -170,6 +170,7 @@ export async function getResource(publicId: string, resourceType: ResourceType):
 /**
  * Signature for a direct, signed browser→Cloudinary upload. Only the signed parameters are
  * accepted by Cloudinary, so the browser cannot change the folder or allowed formats.
+ * SVG is never allowed here (its markup must be inspected server-side first).
  * The API secret never leaves the server.
  */
 export function generateUploadSignature(folder: MediaFolder, resourceType: ResourceType) {
@@ -178,7 +179,7 @@ export function generateUploadSignature(folder: MediaFolder, resourceType: Resou
   const params = {
     timestamp,
     folder: folderPath(folder),
-    allowed_formats: (resourceType === "video" ? VIDEO_FORMATS : IMAGE_FORMATS).join(","),
+    allowed_formats: (resourceType === "video" ? VIDEO_FORMATS : DIRECT_IMAGE_FORMATS).join(","),
   };
   const signature = c.utils.api_sign_request(params, env.CLOUDINARY_API_SECRET!);
   return {

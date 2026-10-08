@@ -11,10 +11,13 @@ const contactMessageSchema = new Schema(
     status: { type: String, enum: ["new", "read", "replied", "archived"], default: "new", index: true },
     notes: { type: [noteSchema], default: [] },
     locale: { type: String, default: "en" },
+    /** Fingerprint of the public submission – repeated identical submissions are not stored twice. */
+    submissionHash: { type: String },
   },
   { timestamps: true },
 );
 
 contactMessageSchema.index({ createdAt: -1 });
+contactMessageSchema.index({ submissionHash: 1, createdAt: -1 });
 
 export const ContactMessage = model("ContactMessage", contactMessageSchema);

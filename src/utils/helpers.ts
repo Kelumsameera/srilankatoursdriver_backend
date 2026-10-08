@@ -43,13 +43,18 @@ export function generateReference(prefix: string): string {
   return `SLTD-${prefix}-${ymd}-${suffix}`;
 }
 
-/** Recursively removes keys that could be interpreted as MongoDB operators. */
+/**
+ * Recursively removes keys that could be interpreted as MongoDB operators ("$gt", "$where" …) or
+ * that could pollute prototypes. Dotted keys are kept: Zod strips unknown keys from every body
+ * schema, and the only free-form map (translation field paths such as "seo.seoTitle") is matched
+ * against known source paths and encoded before it is stored.
+ */
 export function stripMongoOperators<T>(value: T): T {
   if (Array.isArray(value)) return value.map((v) => stripMongoOperators(v)) as unknown as T;
   if (value && typeof value === "object" && !(value instanceof Date) && !(value instanceof Types.ObjectId)) {
     const out: Record<string, unknown> = {};
     for (const [k, v] of Object.entries(value as Record<string, unknown>)) {
-      if (k.startsWith("$") || k.includes(".") || k === "__proto__" || k === "constructor" || k === "prototype") continue;
+      if (k.startsWith("$") || k.includes(".$") || k === "__proto__" || k === "constructor" || k === "prototype") continue;
       out[k] = stripMongoOperators(v);
     }
     return out as T;
@@ -64,6 +69,21 @@ export function escapeHtml(input: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+/** Stable hash of a JSON-like value (object keys sorted) – used to recognise duplicate submissions. */
+export function fingerprint(value: unknown): string {
+  const normalise = (v: unknown): unknown => {
+    if (v instanceof Date) return v.toISOString();
+    if (Array.isArray(v)) return v.map(normalise);
+    if (v && typeof v === "object") {
+      return Object.keys(v as Record<string, unknown>)
+        .sort()
+        .map((k) => [k, normalise((v as Record<string, unknown>)[k])]);
+    }
+    return typeof v === "string" ? v.trim().toLowerCase() : v;
+  };
+  return sha256(JSON.stringify(normalise(value)));
 }
 
 /** Deterministic hash of a set of strings, used to detect stale translations. */

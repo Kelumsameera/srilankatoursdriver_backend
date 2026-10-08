@@ -1,7 +1,7 @@
 import type { Model, SortOrder } from "mongoose";
-import { Booking, ContactMessage, Excursion, TailorMadeEnquiry, Tour, User, Vehicle } from "../models/index.js";
+import { Booking, ContactMessage, Destination, Excursion, Review, TailorMadeEnquiry, Tour, User, Vehicle } from "../models/index.js";
 import { ApiError } from "../utils/ApiError.js";
-import { assertObjectId, escapeRegex, generateReference, toCsv } from "../utils/helpers.js";
+import { assertObjectId, escapeRegex, fingerprint, generateReference, toCsv } from "../utils/helpers.js";
 import type { ListQuery } from "../validations/common.js";
 import { notifyNewSubmission } from "./email/email.service.js";
 
@@ -9,9 +9,37 @@ type AnyRecord = Record<string, unknown>;
 
 /* ───────────────────────── Public submissions ───────────────────────── */
 
+/** Identical submissions inside this window return the first result instead of creating duplicates. */
+export const DUPLICATE_WINDOW_MS = 15 * 60 * 1000;
+
+/** True when the hidden honeypot field was filled in – only bots do that. */
+export function isBotSubmission(input: AnyRecord): boolean {
+  return typeof input.website === "string" && input.website.trim().length > 0;
+}
+
+function withoutMeta(input: AnyRecord): AnyRecord {
+  const { website: _hp, locale: _l, ...rest } = input;
+  void _hp;
+  void _l;
+  return rest;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function findRecentDuplicate(model: Model<any>, submissionHash: string) {
+  return model
+    .findOne({ submissionHash, createdAt: { $gte: new Date(Date.now() - DUPLICATE_WINDOW_MS) } })
+    .select("_id reference")
+    .lean<{ _id: unknown; reference?: string }>();
+}
+
 export async function createBooking(input: AnyRecord) {
+  if (isBotSubmission(input)) return { reference: generateReference("B"), id: "" };
   const data = { ...input };
   delete data.website;
+  const submissionHash = fingerprint(withoutMeta(data));
+  const duplicate = await findRecentDuplicate(Booking, submissionHash);
+  if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
+
   let itemTitle = "";
   const type = String(data.type ?? "general");
   const refModel: Record<string, Model<AnyRecord>> = {
@@ -31,70 +59,125 @@ export async function createBooking(input: AnyRecord) {
   const booking = await Booking.create({
     ...data,
     itemTitle,
+    submissionHash,
     reference: generateReference("B"),
     statusHistory: [{ status: "new", changedAt: new Date() }],
   });
   const customer = booking.customer!;
-  void notifyNewSubmission("booking request", booking.reference, customer.email, customer.name, [
-    ["Name", customer.name],
-    ["Email", customer.email],
-    ["Phone", customer.phone],
-    ["WhatsApp", customer.whatsapp],
-    ["Country", customer.country],
-    ["Booking for", itemTitle || type],
-    ["Start date", booking.startDate],
-    ["End date", booking.endDate],
-    ["Adults", booking.adults],
-    ["Children", booking.children],
-    ["Pickup", booking.pickupLocation],
-    ["Message", booking.message],
-  ]);
+  void notifyNewSubmission(
+    "booking request",
+    booking.reference,
+    customer.email,
+    customer.name,
+    [
+      ["Name", customer.name],
+      ["Email", customer.email],
+      ["Phone", customer.phone],
+      ["WhatsApp", customer.whatsapp],
+      ["Country", customer.country],
+      ["Booking for", itemTitle || type],
+      ["Start date", booking.startDate],
+      ["End date", booking.endDate],
+      ["Adults", booking.adults],
+      ["Children", booking.children],
+      ["Pickup", booking.pickupLocation],
+    ],
+    [["Message", booking.message]],
+  );
   return { reference: booking.reference, id: String(booking._id) };
 }
 
 export async function createTailorMadeEnquiry(input: AnyRecord) {
+  if (isBotSubmission(input)) return { reference: generateReference("T"), id: "" };
   const data = { ...input };
   delete data.website;
+  const submissionHash = fingerprint(withoutMeta(data));
+  const duplicate = await findRecentDuplicate(TailorMadeEnquiry, submissionHash);
+  if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
+
+  // Only keep references to content that exists and is public.
+  if (Array.isArray(data.destinations) && data.destinations.length) {
+    const found = await Destination.find({ _id: { $in: data.destinations }, status: "published" }).select("_id").lean();
+    const ok = new Set(found.map((d) => String(d._id)));
+    data.destinations = (data.destinations as string[]).filter((d) => ok.has(String(d)));
+  }
+  const vehicle = data.vehicle as { vehicleRef?: string | null } | undefined;
+  if (vehicle?.vehicleRef && !(await Vehicle.exists({ _id: vehicle.vehicleRef, status: "published" }))) {
+    data.vehicle = { ...vehicle, vehicleRef: null };
+  }
+
   const travel = data.travel as { arrivalDate: Date; departureDate: Date };
   const durationDays = Math.max(1, Math.round((travel.departureDate.getTime() - travel.arrivalDate.getTime()) / 86_400_000));
   const enquiry = await TailorMadeEnquiry.create({
     ...data,
+    submissionHash,
     travel: { ...(data.travel as AnyRecord), durationDays },
     reference: generateReference("T"),
     statusHistory: [{ status: "new", changedAt: new Date() }],
   });
   const p = enquiry.personal!;
-  void notifyNewSubmission("tailor-made tour enquiry", enquiry.reference, p.email, p.firstName, [
-    ["Name", `${p.firstName} ${p.lastName ?? ""}`.trim()],
-    ["Email", p.email],
-    ["Phone", p.phone],
-    ["WhatsApp", p.whatsapp],
-    ["Country", p.country],
-    ["Arrival", enquiry.travel?.arrivalDate],
-    ["Departure", enquiry.travel?.departureDate],
-    ["Days", durationDays],
-    ["Adults", enquiry.travelers?.adults],
-    ["Children", enquiry.travelers?.children],
-    ["Interests", enquiry.interests],
-    ["Hotel category", enquiry.hotels?.category],
-    ["Budget", enquiry.budget?.amount ? `${enquiry.budget.amount} ${enquiry.budget.currency}` : enquiry.budget?.range],
-    ["Requirements", enquiry.additionalRequirements],
-  ]);
+  void notifyNewSubmission(
+    "tailor-made tour enquiry",
+    enquiry.reference,
+    p.email,
+    p.firstName,
+    [
+      ["Name", `${p.firstName} ${p.lastName ?? ""}`.trim()],
+      ["Email", p.email],
+      ["Phone", p.phone],
+      ["WhatsApp", p.whatsapp],
+      ["Country", p.country],
+      ["Arrival", enquiry.travel?.arrivalDate],
+      ["Departure", enquiry.travel?.departureDate],
+      ["Days", durationDays],
+      ["Adults", enquiry.travelers?.adults],
+      ["Children", enquiry.travelers?.children],
+      ["Interests", enquiry.interests],
+      ["Hotel category", enquiry.hotels?.category],
+      ["Budget", enquiry.budget?.amount ? `${enquiry.budget.amount} ${enquiry.budget.currency}` : enquiry.budget?.range],
+    ],
+    [["Requirements", enquiry.additionalRequirements]],
+  );
   return { reference: enquiry.reference, id: String(enquiry._id) };
 }
 
 export async function createContactMessage(input: AnyRecord) {
+  if (isBotSubmission(input)) return { id: "" };
   const data = { ...input };
   delete data.website;
-  const msg = await ContactMessage.create(data);
-  void notifyNewSubmission("message", `SLTD-C-${String(msg._id).slice(-6).toUpperCase()}`, msg.email, msg.name, [
-    ["Name", msg.name],
-    ["Email", msg.email],
-    ["Phone", msg.phone],
-    ["Subject", msg.subject],
-    ["Message", msg.message],
-  ]);
+  const submissionHash = fingerprint(withoutMeta(data));
+  const duplicate = await findRecentDuplicate(ContactMessage, submissionHash);
+  if (duplicate) return { id: String(duplicate._id), duplicate: true };
+
+  const msg = await ContactMessage.create({ ...data, submissionHash });
+  void notifyNewSubmission(
+    "message",
+    `SLTD-C-${String(msg._id).slice(-6).toUpperCase()}`,
+    msg.email,
+    msg.name,
+    [
+      ["Name", msg.name],
+      ["Email", msg.email],
+      ["Phone", msg.phone],
+    ],
+    [
+      ["Subject", msg.subject],
+      ["Message", msg.message],
+    ],
+  );
   return { id: String(msg._id) };
+}
+
+/** Public review submission – always pending & unverified; bots and duplicates are dropped quietly. */
+export async function createPublicReview(input: AnyRecord) {
+  if (isBotSubmission(input)) return { id: "" };
+  const data = withoutMeta(input);
+  const submissionHash = fingerprint(data);
+  const duplicate = await findRecentDuplicate(Review, submissionHash);
+  if (duplicate) return { id: String(duplicate._id), duplicate: true };
+  if (data.tour && !(await Tour.exists({ _id: data.tour, status: "published" }))) data.tour = null;
+  const review = await Review.create({ ...data, submissionHash, platform: "website", status: "pending", verified: false, date: new Date() });
+  return { id: String(review._id) };
 }
 
 /* ───────────────────────── Admin CRM ───────────────────────── */

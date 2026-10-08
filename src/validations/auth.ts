@@ -51,3 +51,19 @@ export const roleCreate = z.object({
   permissions: z.array(permissionKey).max(500),
 });
 export const roleUpdate = roleCreate.partial();
+
+/** Website customers: friendlier than the admin policy, still rejects trivial passwords. */
+export const customerPassword = z
+  .string()
+  .min(8, "Password must be at least 8 characters")
+  .max(128)
+  .regex(/[A-Za-z]/, "Include a letter")
+  .regex(/\d/, "Include a number");
+
+export const customerRegisterSchema = z.object({
+  name: shortText(120).min(2),
+  email: z.email().max(254).transform((v) => v.toLowerCase()),
+  password: customerPassword,
+});
+
+export const googleLoginSchema = z.object({ credential: z.string().min(20).max(5000) });

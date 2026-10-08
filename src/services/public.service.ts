@@ -21,9 +21,19 @@ import { ApiError } from "../utils/ApiError.js";
 import { escapeRegex } from "../utils/helpers.js";
 import { localize, localizeOne } from "./translation/translation.service.js";
 import type { TranslatableType } from "./translation/registry.js";
-import { getTripAdvisorSummary } from "./tripadvisor/tripadvisor.service.js";
+import { getTripAdvisorSummary, isTripAdvisorConfigured } from "./tripadvisor/tripadvisor.service.js";
+import { getUsdRates, toUsd } from "./currency.service.js";
 
 type AnyRecord = Record<string, unknown>;
+
+const PRICED = new Set<string>(["tours", "excursions", "vehicles"]);
+
+/** The public site shows every price in USD (Admin may enter LKR etc.). */
+async function pricesInUsd<T extends AnyRecord>(key: string, docs: T[]): Promise<T[]> {
+  if (!PRICED.has(key) || docs.length === 0) return docs;
+  const rates = await getUsdRates();
+  return docs.map((d) => toUsd(d, rates));
+}
 
 const HIDDEN = "-createdBy -updatedBy -__v";
 const categoryPopulate: PopulateOptions = { path: "category", select: "name slug kind" };
@@ -158,7 +168,8 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
     .limit(limit);
   for (const p of cfg.populate ?? []) query = query.populate(p);
   const [rows, total] = await Promise.all([query.lean(), cfg.model.countDocuments(filter)]);
-  const items = cfg.translatable ? await localize(cfg.translatable, rows as AnyRecord[], opts.locale) : rows;
+  const localized = cfg.translatable ? await localize(cfg.translatable, rows as AnyRecord[], opts.locale) : rows;
+  const items = await pricesInUsd(key, localized as AnyRecord[]);
   return { items, meta: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } };
 }
 
@@ -203,7 +214,8 @@ export async function getPublicBySlug(key: "tours" | "destinations" | "excursion
     .limit(3)
     .lean();
   const relatedLocalized = cfg.translatable ? await localize(cfg.translatable, related as AnyRecord[], locale) : related;
-  return { item: out, related: relatedLocalized };
+  [out] = await pricesInUsd(key, [out]);
+  return { item: out, related: await pricesInUsd(key, relatedLocalized as AnyRecord[]) };
 }
 
 export async function listCategories(kind: string, locale?: string) {
@@ -241,14 +253,44 @@ export async function getActiveHeroSlides(locale?: string) {
   return localize("heroMedia", rows as AnyRecord[], locale);
 }
 
+/**
+ * Adds the latest TripAdvisor reviews (live from the Content API, cached 6 h in the service) to a
+ * reviews section, newest first, so new TripAdvisor reviews appear on the site automatically.
+ * They are not stored in MongoDB; ones already imported as CMS reviews (same guest name) are skipped.
+ */
+async function withLiveTripAdvisor(items: unknown[], limit: number): Promise<unknown[]> {
+  if (!isTripAdvisorConfigured()) return items;
+  const ta = await getTripAdvisorSummary();
+  const known = new Set((items as AnyRecord[]).map((r) => String(r.guestName ?? "").trim().toLowerCase()));
+  const live = ta.reviews
+    .filter((r) => r.text && !known.has(r.user.username.trim().toLowerCase()))
+    .map((r) => ({
+      _id: `tripadvisor-${r.id}`,
+      guestName: r.user.username,
+      country: r.user.country ?? "",
+      rating: r.rating,
+      title: r.title,
+      review: r.text,
+      date: r.publishedDate,
+      platform: "tripadvisor",
+      sourceUrl: r.url,
+      verified: true,
+      live: true,
+    }));
+  if (!live.length) return items;
+  const byDate = (r: AnyRecord) => new Date(String(r.date ?? 0)).getTime() || 0;
+  return [...live, ...(items as AnyRecord[])].sort((a, b) => byDate(b) - byDate(a)).slice(0, Math.max(limit, live.length));
+}
+
 /** Loads the data each dynamic section needs, so a page renders from a single API call. */
 async function resolveSectionData(section: AnyRecord, locale?: string): Promise<unknown> {
-  const settings = (section.settings ?? {}) as { limit?: number; source?: string };
+  const settings = (section.settings ?? {}) as { limit?: number; source?: string; category?: unknown };
   const limit = settings.limit ?? 6;
   const featured = settings.source === "featured";
+  const category = settings.category ? String(settings.category) : undefined;
   const fetchList = async (key: PublicResourceKey) => {
-    let r = await listPublicLocalized(key, { locale, limit, featured });
-    if (featured && r.items.length === 0) r = await listPublicLocalized(key, { locale, limit }); // graceful fallback
+    let r = await listPublicLocalized(key, { locale, limit, featured, category });
+    if (featured && r.items.length === 0) r = await listPublicLocalized(key, { locale, limit, category }); // graceful fallback
     return r.items;
   };
   switch (section.type) {
@@ -267,7 +309,7 @@ async function resolveSectionData(section: AnyRecord, locale?: string): Promise<
     case "guestShorts":
       return fetchList("guestShorts");
     case "reviews":
-      return fetchList("reviews");
+      return withLiveTripAdvisor(await fetchList("reviews"), limit);
     case "blog":
       return fetchList("blog");
     case "faqs":

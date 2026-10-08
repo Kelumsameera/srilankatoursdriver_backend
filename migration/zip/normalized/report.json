@@ -1,0 +1,31 @@
+{
+  "mode": "dry-run",
+  "warnings": [
+    "excursion polonnaruwa: no transfer rate in packageprices",
+    "excursion tissamaharama: no transfer rate in packageprices",
+    "excursion jaffna: no transfer rate in packageprices",
+    "transfer rate \"Aluthgama\" has no excursion page – not imported",
+    "transfer rate \"Arugam Bay\" has no excursion page – not imported",
+    "transfer rate \"Beruwala\" has no excursion page – not imported",
+    "transfer rate \"Dambulla\" has no excursion page – not imported",
+    "tour 12-days-down-south-hotels: no zh translation in the zip",
+    "gallery files without captions not imported: gallery-16.png, gallery-17.png, gallery-18.jpg"
+  ],
+  "uploads": 0,
+  "reusedMedia": 0,
+  "archived": {
+    "tours": [],
+    "destinations": [],
+    "excursions": [],
+    "vehicles": []
+  },
+  "counts": {
+    "tours": 20,
+    "destinations": 8,
+    "excursions": 18,
+    "vehicles": 7,
+    "gallery": 15,
+    "hero": 3
+  },
+  "translations": 688
+}

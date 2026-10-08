@@ -37,6 +37,12 @@ export interface ResourceConfig {
   publishField?: "status" | "enabled";
   /** Fields copied with "(Copy)" suffix on duplicate. */
   duplicateTitleField?: string;
+  /** Throw to refuse a delete (e.g. a record the site cannot work without). */
+  beforeDelete?: (doc: AnyRecord) => void | Promise<void>;
+  /** Removes references to a deleted record from other content so nothing points at a missing document. */
+  onDelete?: (id: string) => Promise<void>;
+  /** Extra cache tags to refresh after a delete (content touched by onDelete). */
+  deleteCacheTags?: string[];
 }
 
 export class CrudService {
@@ -142,10 +148,13 @@ export class CrudService {
 
   async remove(id: string): Promise<AnyRecord> {
     assertObjectId(id);
-    const doc = await this.model.findByIdAndDelete(id).lean();
+    const doc = await this.model.findById(id).lean<AnyRecord>();
     if (!doc) throw ApiError.notFound(`${this.cfg.label} item not found`);
+    await this.cfg.beforeDelete?.(doc);
+    await this.model.deleteOne({ _id: id });
     if (this.cfg.translatable) await deleteTranslationsFor(this.cfg.translatable, id);
-    return doc as AnyRecord;
+    await this.cfg.onDelete?.(id);
+    return doc;
   }
 
   async duplicate(id: string, userId?: string): Promise<AnyRecord> {

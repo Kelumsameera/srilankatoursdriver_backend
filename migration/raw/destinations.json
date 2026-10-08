@@ -1,0 +1,3203 @@
+[
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Colombo City",
+    "rawHtmlFile": "raw/html/destination__colombo-city.html",
+    "rawHtmlSha256": "0762ec4cca42633de8e600b9626d020dad7868e641caad5623cf843918ca0529",
+    "rawHtmlBytes": 202019,
+    "extractedText": "Colombo City Colombo is Sri Lanka’s largest economic corridor and tourist destination. As the island nation’s capital city, Colombo is a cosmopolitan gateway to the wonders of Portuguese, Dutch and British colonial heritage, splendid tropical landscapes and delectable cuisines. The city is well connected to other places in Sri Lanka by rail and road. Colombo is the capital city of Sri Lanka, and the country’s largest city in terms of population. Located on the west coast, it is a beautiful city surrounded by white sand beaches and an impressive harbourfront. Colombo is characterised by a series of canals, with the picturesque 160-acre Beira Lake at its centre. It’s the perfect destination for students to experience plenty in the way of culture, history and recreation as they work towards their degree. It is in Colombo that you can find it all; from the Lotus Tower, South Asia’s tallest freestanding structure, world-class casinos like Bellagio and Ballys, and cinnamon plantation hiking trails. The city identifies with the classic form of urban tourism and offers a great experience of sightseeing, shopping and nightlife. Taking an open deck bus tour is the best way to sightsee around the city on a day of pleasant weather. Against the ocean at Galle Face Green Promenade, Galle Fort and Lighthouse showcase astonishing Victorian relics in a snazzy neighbourhood with cafes. Pettah Market, acclaimed as a shopaholic’s abode by tourists and locals, features vibrant oriental themes and colourful shops. Also, be sure to visit Mount Lavinia Beach and enjoy a beautiful day with the sunset at the end too. The Viharamahadevi Park are great place if you are travelling with kids. For the adventure enthusiast in you, indulge in some scuba diving in Chief Dragon and The Sierra. Colombo seamlessly blends adventure, luxury, culture, and history from regalia of 17th-century Kandyan Kings, colossal Buddha figures and Thambili-coconut drinks to amusement parks, malls and bustling bazaars.",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:52.206Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8896,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Colombo City",
+      "pageTitle": "Colombo City",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Colombo City"
+        }
+      ],
+      "paragraphs": [
+        "Colombo is Sri Lanka’s largest economic corridor and tourist destination. As the island nation’s capital city, Colombo is a cosmopolitan gateway to the wonders of Portuguese, Dutch and British colonial heritage, splendid tropical landscapes and delectable cuisines. The city is well connected to other places in Sri Lanka by rail and road.",
+        "Colombo is the capital city of Sri Lanka, and the country’s largest city in terms of population. Located on the west coast, it is a beautiful city surrounded by white sand beaches and an impressive harbourfront. Colombo is characterised by a series of canals, with the picturesque 160-acre Beira Lake at its centre. It’s the perfect destination for students to experience plenty in the way of culture, history and recreation as they work towards their degree.",
+        "It is in Colombo that you can find it all; from the Lotus Tower, South Asia’s tallest freestanding structure, world-class casinos like Bellagio and Ballys, and cinnamon plantation hiking trails. The city identifies with the classic form of urban tourism and offers a great experience of sightseeing, shopping and nightlife. Taking an open deck bus tour is the best way to sightsee around the city on a day of pleasant weather. Against the ocean at Galle Face Green Promenade, Galle Fort and Lighthouse showcase astonishing Victorian relics in a snazzy neighbourhood with cafes. Pettah Market, acclaimed as a shopaholic’s abode by tourists and locals, features vibrant oriental themes and colourful shops.",
+        "Also, be sure to visit Mount Lavinia Beach and enjoy a beautiful day with the sunset at the end too. The Viharamahadevi Park are great place if you are travelling with kids. For the adventure enthusiast in you, indulge in some scuba diving in Chief Dragon and The Sierra. Colombo seamlessly blends adventure, luxury, culture, and history from regalia of 17th-century Kandyan Kings, colossal Buddha figures and Thambili-coconut drinks to amusement parks, malls and bustling bazaars."
+      ],
+      "contentMarkdown": "## Colombo City\n\nColombo is Sri Lanka’s largest economic corridor and tourist destination. As the island nation’s capital city, Colombo is a cosmopolitan gateway to the wonders of Portuguese, Dutch and British colonial heritage, splendid tropical landscapes and delectable cuisines. The city is well connected to other places in Sri Lanka by rail and road.\n\nColombo is the capital city of Sri Lanka, and the country’s largest city in terms of population. Located on the west coast, it is a beautiful city surrounded by white sand beaches and an impressive harbourfront. Colombo is characterised by a series of canals, with the picturesque 160-acre Beira Lake at its centre. It’s the perfect destination for students to experience plenty in the way of culture, history and recreation as they work towards their degree.\n\nIt is in Colombo that you can find it all; from the Lotus Tower, South Asia’s tallest freestanding structure, world-class casinos like Bellagio and Ballys, and cinnamon plantation hiking trails. The city identifies with the classic form of urban tourism and offers a great experience of sightseeing, shopping and nightlife. Taking an open deck bus tour is the best way to sightsee around the city on a day of pleasant weather. Against the ocean at Galle Face Green Promenade, Galle Fort and Lighthouse showcase astonishing Victorian relics in a snazzy neighbourhood with cafes. Pettah Market, acclaimed as a shopaholic’s abode by tourists and locals, features vibrant oriental themes and colourful shops.\n\nAlso, be sure to visit Mount Lavinia Beach and enjoy a beautiful day with the sunset at the end too. The Viharamahadevi Park are great place if you are travelling with kids. For the adventure enthusiast in you, indulge in some scuba diving in Chief Dragon and The Sierra. Colombo seamlessly blends adventure, luxury, culture, and history from regalia of 17th-century Kandyan Kings, colossal Buddha figures and Thambili-coconut drinks to amusement parks, malls and bustling bazaars.",
+      "seo": {
+        "title": "Colombo City - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/colombo-city/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Colombo City - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "site_name": "Sri Lanka Tours Driver"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Colombo City - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8896,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8896",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Colombo.jpeg",
+          "alternates": [],
+          "alt": "Colombo City Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Colombo.jpeg",
+          "alternates": [],
+          "alt": "Colombo City-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Colombo City",
+      "paragraphs": [
+        "Colombo is Sri Lanka’s largest economic corridor and tourist destination. As the island nation’s capital city, Colombo is a cosmopolitan gateway to the wonders of Portuguese, Dutch and British colonial heritage, splendid tropical landscapes and delectable cuisines. The city is well connected to other places in Sri Lanka by rail and road.",
+        "Colombo is the capital city of Sri Lanka, and the country’s largest city in terms of population. Located on the west coast, it is a beautiful city surrounded by white sand beaches and an impressive harbourfront. Colombo is characterised by a series of canals, with the picturesque 160-acre Beira Lake at its centre. It’s the perfect destination for students to experience plenty in the way of culture, history and recreation as they work towards their degree.",
+        "It is in Colombo that you can find it all; from the Lotus Tower, South Asia’s tallest freestanding structure, world-class casinos like Bellagio and Ballys, and cinnamon plantation hiking trails. The city identifies with the classic form of urban tourism and offers a great experience of sightseeing, shopping and nightlife. Taking an open deck bus tour is the best way to sightsee around the city on a day of pleasant weather. Against the ocean at Galle Face Green Promenade, Galle Fort and Lighthouse showcase astonishing Victorian relics in a snazzy neighbourhood with cafes. Pettah Market, acclaimed as a shopaholic’s abode by tourists and locals, features vibrant oriental themes and colourful shops.",
+        "Also, be sure to visit Mount Lavinia Beach and enjoy a beautiful day with the sunset at the end too. The Viharamahadevi Park are great place if you are travelling with kids. For the adventure enthusiast in you, indulge in some scuba diving in Chief Dragon and The Sierra. Colombo seamlessly blends adventure, luxury, culture, and history from regalia of 17th-century Kandyan Kings, colossal Buddha figures and Thambili-coconut drinks to amusement parks, malls and bustling bazaars."
+      ],
+      "markdown": "Colombo is Sri Lanka’s largest economic corridor and tourist destination. As the island nation’s capital city, Colombo is a cosmopolitan gateway to the wonders of Portuguese, Dutch and British colonial heritage, splendid tropical landscapes and delectable cuisines. The city is well connected to other places in Sri Lanka by rail and road.\n\nColombo is the capital city of Sri Lanka, and the country’s largest city in terms of population. Located on the west coast, it is a beautiful city surrounded by white sand beaches and an impressive harbourfront. Colombo is characterised by a series of canals, with the picturesque 160-acre Beira Lake at its centre. It’s the perfect destination for students to experience plenty in the way of culture, history and recreation as they work towards their degree.\n\nIt is in Colombo that you can find it all; from the Lotus Tower, South Asia’s tallest freestanding structure, world-class casinos like Bellagio and Ballys, and cinnamon plantation hiking trails. The city identifies with the classic form of urban tourism and offers a great experience of sightseeing, shopping and nightlife. Taking an open deck bus tour is the best way to sightsee around the city on a day of pleasant weather. Against the ocean at Galle Face Green Promenade, Galle Fort and Lighthouse showcase astonishing Victorian relics in a snazzy neighbourhood with cafes. Pettah Market, acclaimed as a shopaholic’s abode by tourists and locals, features vibrant oriental themes and colourful shops.\n\nAlso, be sure to visit Mount Lavinia Beach and enjoy a beautiful day with the sunset at the end too. The Viharamahadevi Park are great place if you are travelling with kids. For the adventure enthusiast in you, indulge in some scuba diving in Chief Dragon and The Sierra. Colombo seamlessly blends adventure, luxury, culture, and history from regalia of 17th-century Kandyan Kings, colossal Buddha figures and Thambili-coconut drinks to amusement parks, malls and bustling bazaars.",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Colombo.jpeg",
+          "alternates": [],
+          "alt": "Colombo City Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Colombo.jpeg",
+          "alternates": [],
+          "alt": "Colombo City-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/colombo-city/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Galle Face Green",
+    "rawHtmlFile": "raw/html/destination__galle-face-green.html",
+    "rawHtmlSha256": "eb394a3ae71f51df883f42f56a0ce426f5087c4c2faf50cd4692d146cc13fe5b",
+    "rawHtmlBytes": 201472,
+    "extractedText": "Galle Face Green The Galle Face Green is a beautiful beach park located in Fort Colombo along its eastern coastline. Spread over almost five hectares, it is popular for activities like kite flying, fishing, football, beach volleyball, jogging, and relaxing by the beach. It also offers stunning sunrise and sunset views. There are many stalls along the beach selling food, drinks, and souvenirs. This area was initially laid out in 1859 by Governor Sir Henry George Ward. It is frequently visited by many locals in Colombo to sit back, relax, and spend some quality time with loved ones. All this makes it the perfect coastal marvel, making the most out of the sea, stars, and sand. View on Map",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:53.226Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8907,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Galle Face Green",
+      "pageTitle": "Galle Face Green",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Galle Face Green"
+        }
+      ],
+      "paragraphs": [
+        "The Galle Face Green is a beautiful beach park located in Fort Colombo along its eastern coastline. Spread over almost five hectares, it is popular for activities like kite flying, fishing, football, beach volleyball, jogging, and relaxing by the beach. It also offers stunning sunrise and sunset views. There are many stalls along the beach selling food, drinks, and souvenirs.",
+        "This area was initially laid out in 1859 by Governor Sir Henry George Ward. It is frequently visited by many locals in Colombo to sit back, relax, and spend some quality time with loved ones. All this makes it the perfect coastal marvel, making the most out of the sea, stars, and sand."
+      ],
+      "contentMarkdown": "## Galle Face Green\n\nThe Galle Face Green is a beautiful beach park located in Fort Colombo along its eastern coastline. Spread over almost five hectares, it is popular for activities like kite flying, fishing, football, beach volleyball, jogging, and relaxing by the beach. It also offers stunning sunrise and sunset views. There are many stalls along the beach selling food, drinks, and souvenirs.\n\nThis area was initially laid out in 1859 by Governor Sir Henry George Ward. It is frequently visited by many locals in Colombo to sit back, relax, and spend some quality time with loved ones. All this makes it the perfect coastal marvel, making the most out of the sea, stars, and sand.\n\n[View on Map](https://maps.app.goo.gl/vJ4JhQo4vshcxJFdA)",
+      "seo": {
+        "title": "Galle Face Green - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/galle-face-green/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Galle Face Green - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "site_name": "Sri Lanka Tours Driver",
+          "updated_time": "2025-05-24T12:49:14+05:30"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Galle Face Green - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8907,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8907",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://maps.app.goo.gl/vJ4JhQo4vshcxJFdA",
+            "text": "View on Map"
+          },
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green-1.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Galle Face Green",
+      "paragraphs": [
+        "The Galle Face Green is a beautiful beach park located in Fort Colombo along its eastern coastline. Spread over almost five hectares, it is popular for activities like kite flying, fishing, football, beach volleyball, jogging, and relaxing by the beach. It also offers stunning sunrise and sunset views. There are many stalls along the beach selling food, drinks, and souvenirs.",
+        "This area was initially laid out in 1859 by Governor Sir Henry George Ward. It is frequently visited by many locals in Colombo to sit back, relax, and spend some quality time with loved ones. All this makes it the perfect coastal marvel, making the most out of the sea, stars, and sand."
+      ],
+      "markdown": "The Galle Face Green is a beautiful beach park located in Fort Colombo along its eastern coastline. Spread over almost five hectares, it is popular for activities like kite flying, fishing, football, beach volleyball, jogging, and relaxing by the beach. It also offers stunning sunrise and sunset views. There are many stalls along the beach selling food, drinks, and souvenirs.\n\nThis area was initially laid out in 1859 by Governor Sir Henry George Ward. It is frequently visited by many locals in Colombo to sit back, relax, and spend some quality time with loved ones. All this makes it the perfect coastal marvel, making the most out of the sea, stars, and sand.\n\n[View on Map](https://maps.app.goo.gl/vJ4JhQo4vshcxJFdA)",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Galle-Face-Green-1.jpeg",
+          "alternates": [],
+          "alt": "Galle Face Green-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://maps.app.goo.gl/vJ4JhQo4vshcxJFdA",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "map link \"View on Map\""
+        },
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/galle-face-green/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Gangaramaya Temple",
+    "rawHtmlFile": "raw/html/destination__gangaramaya-temple.html",
+    "rawHtmlSha256": "92f6fd3ec3a5aee9635c751913ba49753cee8342ee11d5b7ee6eb175ff9f6e69",
+    "rawHtmlBytes": 201512,
+    "extractedText": "Gangaramaya Temple Gangaramaya is one of the oldest Buddhist temples in Colombo, started by the famous scholar monk Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th Century. After the Venerable Sri Sumangala, his chief pupil Devundera Sri Jinaratana Nayake Thera took on the administration of the temple. It was he who laid the foundation to convert the little temple to an institute of international reckoning. The next chief incumbent was the Ven. Devundara Keerthi Sri Sumangala Jinaratana Vacissara Thera, the teacher of the Ven. Galboda Gnanissara, who worked to make the Gangaramaya what it is today: much more than a temple in the conventional term, but a place of worship, a seat of learning and a cultural centre. View on Map",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:54.252Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8676,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Gangaramaya Temple",
+      "pageTitle": "Gangaramaya Temple",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Gangaramaya Temple"
+        }
+      ],
+      "paragraphs": [
+        "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by the famous scholar monk Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th Century.",
+        "After the Venerable Sri Sumangala, his chief pupil Devundera Sri Jinaratana Nayake Thera took on the administration of the temple. It was he who laid the foundation to convert the little temple to an institute of international reckoning.",
+        "The next chief incumbent was the Ven. Devundara Keerthi Sri Sumangala Jinaratana Vacissara Thera, the teacher of the Ven. Galboda Gnanissara, who worked to make the Gangaramaya what it is today: much more than a temple in the conventional term, but a place of worship, a seat of learning and a cultural centre."
+      ],
+      "contentMarkdown": "## Gangaramaya Temple\n\nGangaramaya is one of the oldest Buddhist temples in Colombo, started by the famous scholar monk Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th Century.\n\nAfter the Venerable Sri Sumangala, his chief pupil Devundera Sri Jinaratana Nayake Thera took on the administration of the temple. It was he who laid the foundation to convert the little temple to an institute of international reckoning.\n\nThe next chief incumbent was the Ven. Devundara Keerthi Sri Sumangala Jinaratana Vacissara Thera, the teacher of the Ven. Galboda Gnanissara, who worked to make the Gangaramaya what it is today: much more than a temple in the conventional term, but a place of worship, a seat of learning and a cultural centre.\n\n[View on Map](https://maps.app.goo.gl/iyed6C75QsmYbVew6)",
+      "seo": {
+        "title": "Gangaramaya Temple - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Gangaramaya Temple - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "site_name": "Sri Lanka Tours Driver",
+          "updated_time": "2025-05-24T13:36:10+05:30"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Gangaramaya Temple - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8676,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8676",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://maps.app.goo.gl/iyed6C75QsmYbVew6",
+            "text": "View on Map"
+          },
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/bb6e3c8a-8ad4-43af-b7b3-02dbf9b4ddd7.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/bb6e3c8a-8ad4-43af-b7b3-02dbf9b4ddd7.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/image-3.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Gangaramaya Temple",
+      "paragraphs": [
+        "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by the famous scholar monk Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th Century.",
+        "After the Venerable Sri Sumangala, his chief pupil Devundera Sri Jinaratana Nayake Thera took on the administration of the temple. It was he who laid the foundation to convert the little temple to an institute of international reckoning.",
+        "The next chief incumbent was the Ven. Devundara Keerthi Sri Sumangala Jinaratana Vacissara Thera, the teacher of the Ven. Galboda Gnanissara, who worked to make the Gangaramaya what it is today: much more than a temple in the conventional term, but a place of worship, a seat of learning and a cultural centre."
+      ],
+      "markdown": "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by the famous scholar monk Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th Century.\n\nAfter the Venerable Sri Sumangala, his chief pupil Devundera Sri Jinaratana Nayake Thera took on the administration of the temple. It was he who laid the foundation to convert the little temple to an institute of international reckoning.\n\nThe next chief incumbent was the Ven. Devundara Keerthi Sri Sumangala Jinaratana Vacissara Thera, the teacher of the Ven. Galboda Gnanissara, who worked to make the Gangaramaya what it is today: much more than a temple in the conventional term, but a place of worship, a seat of learning and a cultural centre.\n\n[View on Map](https://maps.app.goo.gl/iyed6C75QsmYbVew6)",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/bb6e3c8a-8ad4-43af-b7b3-02dbf9b4ddd7.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/bb6e3c8a-8ad4-43af-b7b3-02dbf9b4ddd7.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2024/11/image-3.webp",
+          "alternates": [],
+          "alt": "Gangaramaya Temple-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://maps.app.goo.gl/iyed6C75QsmYbVew6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "map link \"View on Map\""
+        },
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/gangaramaya-temple/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Jami Ul-Alfar Mosque",
+    "rawHtmlFile": "raw/html/destination__jami-ul-alfar-mosque.html",
+    "rawHtmlSha256": "ef73c9e9acaaab6a5e8d7d257e401e5e9119b64ce85114a03bba513c72c736da",
+    "rawHtmlBytes": 200958,
+    "extractedText": "Jami Ul-Alfar Mosque Jami Ul-Alfar Mosque is one of Colombo’s first establishments combining Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture. Famed for its striking red and white candy-striped brick facade, Red Mosque is a long-standing landmark mosque on Second Cross Street, the old port area of Colombo. The dual-storied building with minarets has a clock tower reminiscent of Kuala Lumpur’s Jamek Mosque. Prayer times and Fridays are the busiest hours.",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:55.237Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8901,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Jami Ul-Alfar Mosque",
+      "pageTitle": "Jami Ul-Alfar Mosque",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Jami Ul-Alfar Mosque"
+        }
+      ],
+      "paragraphs": [
+        "Jami Ul-Alfar Mosque is one of Colombo’s first establishments combining Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture.",
+        "Famed for its striking red and white candy-striped brick facade, Red Mosque is a long-standing landmark mosque on Second Cross Street, the old port area of Colombo. The dual-storied building with minarets has a clock tower reminiscent of Kuala Lumpur’s Jamek Mosque. Prayer times and Fridays are the busiest hours."
+      ],
+      "contentMarkdown": "## Jami Ul-Alfar Mosque\n\nJami Ul-Alfar Mosque is one of Colombo’s first establishments combining Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture.\n\nFamed for its striking red and white candy-striped brick facade, Red Mosque is a long-standing landmark mosque on Second Cross Street, the old port area of Colombo. The dual-storied building with minarets has a clock tower reminiscent of Kuala Lumpur’s Jamek Mosque. Prayer times and Fridays are the busiest hours.",
+      "seo": {
+        "title": "Jami Ul-Alfar Mosque - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Jami Ul-Alfar Mosque - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "site_name": "Sri Lanka Tours Driver"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Jami Ul-Alfar Mosque - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8901,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8901",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque-1.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque-1.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Jami Ul-Alfar Mosque",
+      "paragraphs": [
+        "Jami Ul-Alfar Mosque is one of Colombo’s first establishments combining Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture.",
+        "Famed for its striking red and white candy-striped brick facade, Red Mosque is a long-standing landmark mosque on Second Cross Street, the old port area of Colombo. The dual-storied building with minarets has a clock tower reminiscent of Kuala Lumpur’s Jamek Mosque. Prayer times and Fridays are the busiest hours."
+      ],
+      "markdown": "Jami Ul-Alfar Mosque is one of Colombo’s first establishments combining Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture.\n\nFamed for its striking red and white candy-striped brick facade, Red Mosque is a long-standing landmark mosque on Second Cross Street, the old port area of Colombo. The dual-storied building with minarets has a clock tower reminiscent of Kuala Lumpur’s Jamek Mosque. Prayer times and Fridays are the busiest hours.",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque-1.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque-1.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Jami-Ul-Alfar-Mosque.jpeg",
+          "alternates": [],
+          "alt": "Jami Ul-Alfar Mosque-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/jami-ul-alfar-mosque/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Kelaniya Raja Maha Viharaya",
+    "rawHtmlFile": "raw/html/destination__kelaniya-raja-maha-viharaya.html",
+    "rawHtmlSha256": "1f01a4bbedc87916830bfc2536bb6616022bdd3d0e42074acfa1848634be4739",
+    "rawHtmlBytes": 201605,
+    "extractedText": "Kelaniya Raja Maha Viharaya Kelaniya Raja Maha Viharaya is a Buddhist temple built in the 5th century. It is believed to have been visited by the Buddha on his third visit to the country along with 500 monks after the enlightenment of 8 years, back in 500 BCE. The main attraction is the astounding 90 feet stupa and the intrinsic paintings. According to mythology Vibhishana(King Ravana’s younger brother) ruled Kelaniya as a provincial kingdom and in today’s era, he is worshipped as the deity of the area. Naga King Maniakkitha was the ruler of Kelaniya at the time of Lord Buddha’s arrival, and he was the one to invite lord Buddha. The stupa had been renovated by king Uttiya in 3rd century BC and later by king Yatala Tissa. King Parakramabahu VI further improved the infrastructure. But more subsequently the Portuguese who visited the Island destroyed the temple, but the Dutch restored it, and the Kandyan King Kirthi Sri Rajasingha renovated the temple which is existing till now.",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:56.296Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8904,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Kelaniya Raja Maha Viharaya",
+      "pageTitle": "Kelaniya Raja Maha Viharaya",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Kelaniya Raja Maha Viharaya"
+        }
+      ],
+      "paragraphs": [
+        "Kelaniya Raja Maha Viharaya is a Buddhist temple built in the 5th century. It is believed to have been visited by the Buddha on his third visit to the country along with 500 monks after the enlightenment of 8 years, back in 500 BCE. The main attraction is the astounding 90 feet stupa and the intrinsic paintings.",
+        "According to mythology Vibhishana(King Ravana’s younger brother) ruled Kelaniya as a provincial kingdom and in today’s era, he is worshipped as the deity of the area. Naga King Maniakkitha was the ruler of Kelaniya at the time of Lord Buddha’s arrival, and he was the one to invite lord Buddha. The stupa had been renovated by king Uttiya in 3rd century BC and later by king Yatala Tissa. King Parakramabahu VI further improved the infrastructure. But more subsequently the Portuguese who visited the Island destroyed the temple, but the Dutch restored it, and the Kandyan King Kirthi Sri Rajasingha renovated the temple which is existing till now."
+      ],
+      "contentMarkdown": "## Kelaniya Raja Maha Viharaya\n\nKelaniya Raja Maha Viharaya is a Buddhist temple built in the 5th century. It is believed to have been visited by the Buddha on his third visit to the country along with 500 monks after the enlightenment of 8 years, back in 500 BCE. The main attraction is the astounding 90 feet stupa and the intrinsic paintings.\n\nAccording to mythology Vibhishana(King Ravana’s younger brother) ruled Kelaniya as a provincial kingdom and in today’s era, he is worshipped as the deity of the area. Naga King Maniakkitha was the ruler of Kelaniya at the time of Lord Buddha’s arrival, and he was the one to invite lord Buddha. The stupa had been renovated by king Uttiya in 3rd century BC and later by king Yatala Tissa. King Parakramabahu VI further improved the infrastructure. But more subsequently the Portuguese who visited the Island destroyed the temple, but the Dutch restored it, and the Kandyan King Kirthi Sri Rajasingha renovated the temple which is existing till now.",
+      "seo": {
+        "title": "Kelaniya Raja Maha Viharaya - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Kelaniya Raja Maha Viharaya - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "site_name": "Sri Lanka Tours Driver"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Kelaniya Raja Maha Viharaya - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8904,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8904",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya-1.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya-1.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Kelaniya Raja Maha Viharaya",
+      "paragraphs": [
+        "Kelaniya Raja Maha Viharaya is a Buddhist temple built in the 5th century. It is believed to have been visited by the Buddha on his third visit to the country along with 500 monks after the enlightenment of 8 years, back in 500 BCE. The main attraction is the astounding 90 feet stupa and the intrinsic paintings.",
+        "According to mythology Vibhishana(King Ravana’s younger brother) ruled Kelaniya as a provincial kingdom and in today’s era, he is worshipped as the deity of the area. Naga King Maniakkitha was the ruler of Kelaniya at the time of Lord Buddha’s arrival, and he was the one to invite lord Buddha. The stupa had been renovated by king Uttiya in 3rd century BC and later by king Yatala Tissa. King Parakramabahu VI further improved the infrastructure. But more subsequently the Portuguese who visited the Island destroyed the temple, but the Dutch restored it, and the Kandyan King Kirthi Sri Rajasingha renovated the temple which is existing till now."
+      ],
+      "markdown": "Kelaniya Raja Maha Viharaya is a Buddhist temple built in the 5th century. It is believed to have been visited by the Buddha on his third visit to the country along with 500 monks after the enlightenment of 8 years, back in 500 BCE. The main attraction is the astounding 90 feet stupa and the intrinsic paintings.\n\nAccording to mythology Vibhishana(King Ravana’s younger brother) ruled Kelaniya as a provincial kingdom and in today’s era, he is worshipped as the deity of the area. Naga King Maniakkitha was the ruler of Kelaniya at the time of Lord Buddha’s arrival, and he was the one to invite lord Buddha. The stupa had been renovated by king Uttiya in 3rd century BC and later by king Yatala Tissa. King Parakramabahu VI further improved the infrastructure. But more subsequently the Portuguese who visited the Island destroyed the temple, but the Dutch restored it, and the Kandyan King Kirthi Sri Rajasingha renovated the temple which is existing till now.",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya-1.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya-1.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Kelaniya-Raja-Maha-Viharaya.jpeg",
+          "alternates": [],
+          "alt": "Kelaniya Raja Maha Viharaya-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/kelaniya-raja-maha-viharaya/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Old Parliament Building",
+    "rawHtmlFile": "raw/html/destination__old-parliament-building.html",
+    "rawHtmlSha256": "dfbdfe8bc6e1e936ecc25fc280a073cc2b590f0525d7d5665ecf3094e0ed8f32",
+    "rawHtmlBytes": 202536,
+    "extractedText": "Old Parliament Building The building was designated as the Parliament of Sri Lanka in 1977. Initially, the building was home to the Legislative Council of Ceylon and was witness to the country’s transition from a colonial state to self-rule in 1947. Completed in 1930, this building was home to the country’s legislature for 53 years until the new parliamentary complex was opened at Sri Jayawardenepura in 1983 CE during the country’s prolonged Civil War. Since then, the Old Parliament Building has functioned as the home to the Presidential Secretariat. Built-in the Neo-Baroque style of architecture, the Old Parliament Building is a complete reminder of the Colonial past of Sri Lanka. It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920. Designed by A. Woodson, the building was declared open as the Legislative Council on 29th January 1930 by Governor Sir Herbert Stanley. The architecture of the Old Parliament Building in Sri Lanka is stunning. The facade of this magnificent building has an entrance reached by ascending many flights of steps. At the top are six columns supporting a traditional triangular pediment, and on either side are four more columns. Along the length of the structure is a series of colonnades, a pair with eleven columns each. The British Coat of Arms adorned the top of the building face till 1948 when it was replaced by the arms of the Dominion of Ceylon and was once again replaced in 1972 with the arms of the Democratic Socialist Republic of Sri Lanka. The front garden of the Old Parliament building has hosted several bronze statues of eminent statesmen including Rt Hon D.S. Senanayake, the first prime minister of Ceylon, Honorable Dudley Senanayake and General Sir John Kotalawela- Prime minister of Ceylon.",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:57.275Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8898,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Old Parliament Building",
+      "pageTitle": "Old Parliament Building",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Old Parliament Building"
+        }
+      ],
+      "paragraphs": [
+        "The building was designated as the Parliament of Sri Lanka in 1977. Initially, the building was home to the Legislative Council of Ceylon and was witness to the country’s transition from a colonial state to self-rule in 1947. Completed in 1930, this building was home to the country’s legislature for 53 years until the new parliamentary complex was opened at Sri Jayawardenepura in 1983 CE during the country’s prolonged Civil War. Since then, the Old Parliament Building has functioned as the home to the Presidential Secretariat.",
+        "Built-in the Neo-Baroque style of architecture, the Old Parliament Building is a complete reminder of the Colonial past of Sri Lanka. It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920. Designed by A. Woodson, the building was declared open as the Legislative Council on 29th January 1930 by Governor Sir Herbert Stanley.",
+        "The architecture of the Old Parliament Building in Sri Lanka is stunning. The facade of this magnificent building has an entrance reached by ascending many flights of steps. At the top are six columns supporting a traditional triangular pediment, and on either side are four more columns. Along the length of the structure is a series of colonnades, a pair with eleven columns each. The British Coat of Arms adorned the top of the building face till 1948 when it was replaced by the arms of the Dominion of Ceylon and was once again replaced in 1972 with the arms of the Democratic Socialist Republic of Sri Lanka. The front garden of the Old Parliament building has hosted several bronze statues of eminent statesmen including Rt Hon D.S. Senanayake, the first prime minister of Ceylon, Honorable Dudley Senanayake and General Sir John Kotalawela- Prime minister of Ceylon."
+      ],
+      "contentMarkdown": "## Old Parliament Building\n\nThe building was designated as the Parliament of Sri Lanka in 1977. Initially, the building was home to the Legislative Council of Ceylon and was witness to the country’s transition from a colonial state to self-rule in 1947. Completed in 1930, this building was home to the country’s legislature for 53 years until the new parliamentary complex was opened at Sri Jayawardenepura in 1983 CE during the country’s prolonged Civil War. Since then, the Old Parliament Building has functioned as the home to the Presidential Secretariat.\n\nBuilt-in the Neo-Baroque style of architecture, the Old Parliament Building is a complete reminder of the Colonial past of Sri Lanka. It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920. Designed by A. Woodson, the building was declared open as the Legislative Council on 29th January 1930 by Governor Sir Herbert Stanley.\n\nThe architecture of the Old Parliament Building in Sri Lanka is stunning. The facade of this magnificent building has an entrance reached by ascending many flights of steps. At the top are six columns supporting a traditional triangular pediment, and on either side are four more columns. Along the length of the structure is a series of colonnades, a pair with eleven columns each. The British Coat of Arms adorned the top of the building face till 1948 when it was replaced by the arms of the Dominion of Ceylon and was once again replaced in 1972 with the arms of the Democratic Socialist Republic of Sri Lanka. The front garden of the Old Parliament building has hosted several bronze statues of eminent statesmen including Rt Hon D.S. Senanayake, the first prime minister of Ceylon, Honorable Dudley Senanayake and General Sir John Kotalawela- Prime minister of Ceylon.",
+      "seo": {
+        "title": "Old Parliament Building - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Old Parliament Building - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "site_name": "Sri Lanka Tours Driver"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Old Parliament Building - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8898,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8898",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building-1.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Old Parliament Building",
+      "paragraphs": [
+        "The building was designated as the Parliament of Sri Lanka in 1977. Initially, the building was home to the Legislative Council of Ceylon and was witness to the country’s transition from a colonial state to self-rule in 1947. Completed in 1930, this building was home to the country’s legislature for 53 years until the new parliamentary complex was opened at Sri Jayawardenepura in 1983 CE during the country’s prolonged Civil War. Since then, the Old Parliament Building has functioned as the home to the Presidential Secretariat.",
+        "Built-in the Neo-Baroque style of architecture, the Old Parliament Building is a complete reminder of the Colonial past of Sri Lanka. It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920. Designed by A. Woodson, the building was declared open as the Legislative Council on 29th January 1930 by Governor Sir Herbert Stanley.",
+        "The architecture of the Old Parliament Building in Sri Lanka is stunning. The facade of this magnificent building has an entrance reached by ascending many flights of steps. At the top are six columns supporting a traditional triangular pediment, and on either side are four more columns. Along the length of the structure is a series of colonnades, a pair with eleven columns each. The British Coat of Arms adorned the top of the building face till 1948 when it was replaced by the arms of the Dominion of Ceylon and was once again replaced in 1972 with the arms of the Democratic Socialist Republic of Sri Lanka. The front garden of the Old Parliament building has hosted several bronze statues of eminent statesmen including Rt Hon D.S. Senanayake, the first prime minister of Ceylon, Honorable Dudley Senanayake and General Sir John Kotalawela- Prime minister of Ceylon."
+      ],
+      "markdown": "The building was designated as the Parliament of Sri Lanka in 1977. Initially, the building was home to the Legislative Council of Ceylon and was witness to the country’s transition from a colonial state to self-rule in 1947. Completed in 1930, this building was home to the country’s legislature for 53 years until the new parliamentary complex was opened at Sri Jayawardenepura in 1983 CE during the country’s prolonged Civil War. Since then, the Old Parliament Building has functioned as the home to the Presidential Secretariat.\n\nBuilt-in the Neo-Baroque style of architecture, the Old Parliament Building is a complete reminder of the Colonial past of Sri Lanka. It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920. Designed by A. Woodson, the building was declared open as the Legislative Council on 29th January 1930 by Governor Sir Herbert Stanley.\n\nThe architecture of the Old Parliament Building in Sri Lanka is stunning. The facade of this magnificent building has an entrance reached by ascending many flights of steps. At the top are six columns supporting a traditional triangular pediment, and on either side are four more columns. Along the length of the structure is a series of colonnades, a pair with eleven columns each. The British Coat of Arms adorned the top of the building face till 1948 when it was replaced by the arms of the Dominion of Ceylon and was once again replaced in 1972 with the arms of the Democratic Socialist Republic of Sri Lanka. The front garden of the Old Parliament building has hosted several bronze statues of eminent statesmen including Rt Hon D.S. Senanayake, the first prime minister of Ceylon, Honorable Dudley Senanayake and General Sir John Kotalawela- Prime minister of Ceylon.",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Old-Parliament-Building-1.jpeg",
+          "alternates": [],
+          "alt": "Old Parliament Building-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/old-parliament-building/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "St. Mary’s Church - Negambo",
+    "rawHtmlFile": "raw/html/destination__st-marys-church-negambo.html",
+    "rawHtmlSha256": "d687278095fd8a223e33f6b1c4d98c1172c884e627259de9544cdbcc14f44449",
+    "rawHtmlBytes": 201445,
+    "extractedText": "St. Mary’s Church – Negambo St. Mary’s Church is one of the largest cathedrals in Sri Lanka, located in the heart of Negombo. The church stands as a mesmerizing building with cream-yellow walls and black and white marble detail. This 140-year-old Church is famously known for one painting of Christ that was painted by N.S. Godamanne, who was a Buddhist painter. It is also known for its magnificent church organ and stained glass windows. St. Mary’s Church, also known as the ‘Maha Veediya Palliya’ seems to rise above other buildings in Negombo, which is also known as ‘Little Rome’ due to its numerous churches and Portuguese – Dutch influence. Locals and tourists can all join in the morning prayers that take place below the beautifully decorated ceiling of the Church and enjoy the light that comes through the stained glass windows.",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:58.250Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8886,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "St. Mary’s Church - Negambo",
+      "pageTitle": "St. Mary’s Church - Negambo",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "St. Mary’s Church – Negambo"
+        }
+      ],
+      "paragraphs": [
+        "St. Mary’s Church is one of the largest cathedrals in Sri Lanka, located in the heart of Negombo. The church stands as a mesmerizing building with cream-yellow walls and black and white marble detail. This 140-year-old Church is famously known for one painting of Christ that was painted by N.S. Godamanne, who was a Buddhist painter. It is also known for its magnificent church organ and stained glass windows.",
+        "St. Mary’s Church, also known as the ‘Maha Veediya Palliya’ seems to rise above other buildings in Negombo, which is also known as ‘Little Rome’ due to its numerous churches and Portuguese – Dutch influence. Locals and tourists can all join in the morning prayers that take place below the beautifully decorated ceiling of the Church and enjoy the light that comes through the stained glass windows."
+      ],
+      "contentMarkdown": "## St. Mary’s Church – Negambo\n\nSt. Mary’s Church is one of the largest cathedrals in Sri Lanka, located in the heart of Negombo. The church stands as a mesmerizing building with cream-yellow walls and black and white marble detail. This 140-year-old Church is famously known for one painting of Christ that was painted by N.S. Godamanne, who was a Buddhist painter. It is also known for its magnificent church organ and stained glass windows.\n\nSt. Mary’s Church, also known as the ‘Maha Veediya Palliya’ seems to rise above other buildings in Negombo, which is also known as ‘Little Rome’ due to its numerous churches and Portuguese – Dutch influence. Locals and tourists can all join in the morning prayers that take place below the beautifully decorated ceiling of the Church and enjoy the light that comes through the stained glass windows.",
+      "seo": {
+        "title": "St. Mary’s Church - Negambo - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "St. Mary’s Church - Negambo - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "site_name": "Sri Lanka Tours Driver"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "St. Mary’s Church - Negambo - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8886,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8886",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25-1.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25-1.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "St. Mary’s Church – Negambo",
+      "paragraphs": [
+        "St. Mary’s Church is one of the largest cathedrals in Sri Lanka, located in the heart of Negombo. The church stands as a mesmerizing building with cream-yellow walls and black and white marble detail. This 140-year-old Church is famously known for one painting of Christ that was painted by N.S. Godamanne, who was a Buddhist painter. It is also known for its magnificent church organ and stained glass windows.",
+        "St. Mary’s Church, also known as the ‘Maha Veediya Palliya’ seems to rise above other buildings in Negombo, which is also known as ‘Little Rome’ due to its numerous churches and Portuguese – Dutch influence. Locals and tourists can all join in the morning prayers that take place below the beautifully decorated ceiling of the Church and enjoy the light that comes through the stained glass windows."
+      ],
+      "markdown": "St. Mary’s Church is one of the largest cathedrals in Sri Lanka, located in the heart of Negombo. The church stands as a mesmerizing building with cream-yellow walls and black and white marble detail. This 140-year-old Church is famously known for one painting of Christ that was painted by N.S. Godamanne, who was a Buddhist painter. It is also known for its magnificent church organ and stained glass windows.\n\nSt. Mary’s Church, also known as the ‘Maha Veediya Palliya’ seems to rise above other buildings in Negombo, which is also known as ‘Little Rome’ due to its numerous churches and Portuguese – Dutch influence. Locals and tourists can all join in the morning prayers that take place below the beautifully decorated ceiling of the Church and enjoy the light that comes through the stained glass windows.",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25-1.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25-1.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-21.59.25.jpeg",
+          "alternates": [],
+          "alt": "St. Mary’s Church – Negambo-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": null
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/st-marys-church-negambo/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  },
+  {
+    "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+    "finalUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+    "sourceType": "destination",
+    "classification": {
+      "category": "destination",
+      "isListing": false,
+      "subtype": null,
+      "excludeFromImport": false,
+      "reasons": [
+        "/destination/<slug>/ single item",
+        "body.single-destination"
+      ]
+    },
+    "httpStatus": 200,
+    "title": "Yala National Park",
+    "rawHtmlFile": "raw/html/destination__yala-national-park.html",
+    "rawHtmlSha256": "eeaba6c7a2323e032454b5a93e2df0b89e70b5c01d8efea6f43849043f05e3b1",
+    "rawHtmlBytes": 201264,
+    "extractedText": "Yala National Park Yala National Park was initially started as a Game Sanctuary by the British in 1894 and was established as the Yala National Park in 1938. Yala covers more than 100,000 hectares of wildlife with Kirinda to the west, Kataragama to the North, Panama to the east and the Indian Ocean to the south. Yala is divided into 5 areas known as blocks 1 to 5. The most visited area is block one. The road network is much better on this block and easily accessible even without a four-wheel drive Main attractions Yala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos..",
+    "discoveredAt": "2026-10-07T19:18:20.313Z",
+    "fetchedAt": "2026-10-07T19:18:58.760Z",
+    "discoveredVia": [
+      "sitemap:destination-sitemap.xml",
+      "link:https://srilankatoursdriver.com/destination-list/"
+    ],
+    "wpPostId": 8890,
+    "wpPostType": "destination",
+    "error": null,
+    "parsingErrors": [],
+    "generic": {
+      "title": "Yala National Park",
+      "pageTitle": "Yala National Park",
+      "h1": [],
+      "headings": [
+        {
+          "level": 2,
+          "text": "Yala National Park"
+        }
+      ],
+      "paragraphs": [
+        "Yala National Park was initially started as a Game Sanctuary by the British in 1894 and was established as the Yala National Park in 1938. Yala covers more than 100,000 hectares of wildlife with Kirinda to the west, Kataragama to the North, Panama to the east and the Indian Ocean to the south. Yala is divided into 5 areas known as blocks 1 to 5. The most visited area is block one. The road network is much better on this block and easily accessible even without a four-wheel drive",
+        "Main attractions Yala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos.."
+      ],
+      "contentMarkdown": "## Yala National Park\n\nYala National Park was initially started as a Game Sanctuary by the British in 1894 and was established as the Yala National Park in 1938. Yala covers more than 100,000 hectares of wildlife with Kirinda to the west, Kataragama to the North, Panama to the east and the Indian Ocean to the south. Yala is divided into 5 areas known as blocks 1 to 5. The most visited area is block one. The road network is much better on this block and easily accessible even without a four-wheel drive\n\n**Main attractions**\\\nYala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos..",
+      "seo": {
+        "title": "Yala National Park - Sri Lanka Tours Drivers",
+        "metaDescription": null,
+        "metaKeywords": null,
+        "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://srilankatoursdriver.com/destination/yala-national-park/",
+        "htmlLang": "en-US",
+        "hreflang": [],
+        "og": {
+          "locale": "en_US",
+          "type": "article",
+          "title": "Yala National Park - Sri Lanka Tours Drivers",
+          "url": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "site_name": "Sri Lanka Tours Driver",
+          "updated_time": "2025-03-04T21:08:38+05:30"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Yala National Park - Sri Lanka Tours Drivers"
+        },
+        "article": {},
+        "verification": {},
+        "structuredData": [],
+        "structuredDataTypes": [],
+        "structuredDataErrors": []
+      },
+      "wpPostId": 8890,
+      "wpPostType": "destination",
+      "bodyClasses": [
+        "destination-template-default",
+        "single",
+        "single-destination",
+        "postid-8890",
+        "wp-custom-logo",
+        "wp-embed-responsive",
+        "no-wc-breadcrumb",
+        "theme-triply",
+        "elementor-default",
+        "elementor-kit-13"
+      ],
+      "links": {
+        "internal": [
+          {
+            "href": "https://srilankatoursdriver.com/",
+            "text": ""
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tours/",
+            "text": "Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-round-tours/",
+            "text": "Round Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/",
+            "text": "One Day Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/",
+            "text": "Per Day Basis"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/destination-list/",
+            "text": "Destinations"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/excursions/",
+            "text": "Excursions"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/sri-lanka-tour-offers/",
+            "text": "Offers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "text": "Tailor Made Tours"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/contact/",
+            "text": "Contact"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/about-us/",
+            "text": "About Us"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/gallery/",
+            "text": "Gallery"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/airport-transfers/",
+            "text": "Airport Transfers"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-tour-sri-lanka/",
+            "text": "5 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/5-days-east-coast-tour-sri-lanka/",
+            "text": "5 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-down-south-tour-sri-lanka/",
+            "text": "8 Days to Down South"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/to_book/8-days-east-coast-tour/",
+            "text": "8 Days to East Coast"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/privacy-policy/",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/faq/",
+            "text": "FAQ"
+          },
+          {
+            "href": "https://srilankatoursdriver.com/my-account/?action=lostpassword",
+            "text": "Forgot password?"
+          }
+        ],
+        "external": [
+          {
+            "href": "https://wa.me/+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "https://www.facebook.com/srilankatoursdriver",
+            "text": "Facebook"
+          },
+          {
+            "href": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA",
+            "text": "Youtube"
+          },
+          {
+            "href": "https://twitter.com/SLToursDriver",
+            "text": "Twitter"
+          },
+          {
+            "href": "https://www.instagram.com/srilankatoursdriver/",
+            "text": "Instagram"
+          },
+          {
+            "href": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+            "text": "Tripadvisor"
+          },
+          {
+            "href": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "text": "Address:"
+          }
+        ],
+        "special": [
+          {
+            "href": "tel:+94769300334",
+            "text": "(+94) 769 300 334"
+          },
+          {
+            "href": "mailto:info@srilankatoursdriver.com",
+            "text": "info@srilankatoursdriver.com"
+          }
+        ]
+      },
+      "contentLinks": [],
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park-Leopard.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "backgroundImages": [],
+      "videos": [],
+      "decodedEmails": [
+        "info@srilankatoursdriver.com"
+      ],
+      "elementorCss": [
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-13.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8504.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1589.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-1209.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-8662.css",
+        "https://srilankatoursdriver.com/wp-content/uploads/elementor/css/post-490.css"
+      ]
+    },
+    "destination": {
+      "name": "Yala National Park",
+      "paragraphs": [
+        "Yala National Park was initially started as a Game Sanctuary by the British in 1894 and was established as the Yala National Park in 1938. Yala covers more than 100,000 hectares of wildlife with Kirinda to the west, Kataragama to the North, Panama to the east and the Indian Ocean to the south. Yala is divided into 5 areas known as blocks 1 to 5. The most visited area is block one. The road network is much better on this block and easily accessible even without a four-wheel drive",
+        "Main attractions Yala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos.."
+      ],
+      "markdown": "Yala National Park was initially started as a Game Sanctuary by the British in 1894 and was established as the Yala National Park in 1938. Yala covers more than 100,000 hectares of wildlife with Kirinda to the west, Kataragama to the North, Panama to the east and the Indian Ocean to the south. Yala is divided into 5 areas known as blocks 1 to 5. The most visited area is block one. The road network is much better on this block and easily accessible even without a four-wheel drive\n\n**Main attractions**\\\nYala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos..",
+      "images": [
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park-1 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        },
+        {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2025/03/Sri-Lanka-Tours-Driver-Yala-National-Park-Leopard.jpeg",
+          "alternates": [],
+          "alt": "Yala National Park-2 Sri Lanka Tours Driver",
+          "title": null,
+          "caption": null,
+          "width": null,
+          "height": null,
+          "context": "content"
+        }
+      ],
+      "attractions": "Yala has the world’s highest concentration of Leopards. crocodile, elephant, deer, sambar, bear, wild bore, wild buffalo peacock and many varieties of birds including migratory birds such as flamingos.."
+    },
+    "faqs": [],
+    "reviews": [],
+    "instagram": [],
+    "galleryImages": [],
+    "business": {
+      "siteName": [
+        {
+          "value": "Sri Lanka Tours Driver",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "og:site_name"
+        }
+      ],
+      "addresses": [
+        {
+          "value": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka.",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "icon box \"Address:\""
+        }
+      ],
+      "phones": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "tel: link \"(+94) 769 300 334\""
+        }
+      ],
+      "whatsapp": [
+        {
+          "value": "+94769300334",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "WhatsApp link https://wa.me/+94769300334"
+        }
+      ],
+      "emails": [
+        {
+          "value": "info@srilankatoursdriver.com",
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "mailto: link"
+        }
+      ],
+      "businessHours": [],
+      "socials": [
+        {
+          "value": {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/srilankatoursdriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "link \"Facebook\""
+        },
+        {
+          "value": {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/channel/UC2CNnfA5zDLKQjtV7ogxwdA"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "link \"Youtube\""
+        },
+        {
+          "value": {
+            "platform": "twitter",
+            "url": "https://twitter.com/SLToursDriver"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "link \"Twitter\""
+        },
+        {
+          "value": {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/srilankatoursdriver/"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "link \"Instagram\""
+        },
+        {
+          "value": {
+            "platform": "tripadvisor",
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html"
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "link \"Tripadvisor\""
+        }
+      ],
+      "maps": [
+        {
+          "value": {
+            "kind": "link",
+            "url": "https://goo.gl/maps/wrVxucvyXjUseDRS6",
+            "query": null
+          },
+          "sourceUrl": "https://srilankatoursdriver.com/destination/yala-national-park/",
+          "evidence": "map link \"\""
+        }
+      ],
+      "iconBoxes": [
+        {
+          "title": "Address:",
+          "text": "No:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka."
+        }
+      ]
+    }
+  }
+]

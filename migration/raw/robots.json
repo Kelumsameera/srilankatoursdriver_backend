@@ -1,0 +1,12 @@
+{
+  "allow": [
+    "/wp-admin/admin-ajax.php"
+  ],
+  "disallow": [
+    "/wp-admin/"
+  ],
+  "crawlDelaySec": null,
+  "sitemaps": [
+    "https://srilankatoursdriver.com/sitemap_index.xml"
+  ]
+}

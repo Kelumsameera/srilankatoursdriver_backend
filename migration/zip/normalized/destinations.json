@@ -1,0 +1,220 @@
+[
+  {
+    "name": "Old Parliament Building",
+    "region": "Colombo",
+    "shortDescription": "The Old Parliament Building, completed in 1930, is a stunning Neo-Baroque structure that served as Sri Lanka's legislature for 53 years. Built on the idea of Sir Henry McCallum and designed by A.",
+    "description": "The Old Parliament Building, completed in 1930, is a stunning Neo-Baroque structure that served as Sri Lanka's legislature for 53 years. Built on the idea of Sir Henry McCallum and designed by A. Woodson, it now houses the Presidential Secretariat and stands as a proud reminder of Sri Lanka's colonial past and journey to independence in 1947.\n\n**🕒** Mon–Fri 8:30am–4:30pm",
+    "highlights": [
+      "Colonial",
+      "History",
+      "Architecture"
+    ],
+    "bestTimeToVisit": "November – April",
+    "slug": "old-parliament-building",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsold-parliament-building",
+      "url": "(dry-run) /destinations/old-parliament-building.jpeg",
+      "resourceType": "image",
+      "alt": "Old Parliament Building"
+    },
+    "category": "(destination:heritage)",
+    "seo": {
+      "seoTitle": "Old Parliament Building",
+      "metaDescription": "The Old Parliament Building, completed in 1930, is a stunning Neo-Baroque structure that served as Sri Lanka's legislature for 53 years. Built on the idea of Sir Henry McCallum and designed by A."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "name": "Jami Ul-Alfar Mosque",
+    "region": "Colombo",
+    "shortDescription": "Jami Ul-Alfar Mosque combines Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture. Famed for its striking red and white candy-striped brick facade, the Red Mosque is a long-standing landmark on Second Cross Street in Pettah.",
+    "description": "Jami Ul-Alfar Mosque combines Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture. Famed for its striking red and white candy-striped brick facade, the Red Mosque is a long-standing landmark on Second Cross Street in Pettah.",
+    "highlights": [
+      "Mosque",
+      "Architecture",
+      "Culture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "slug": "jami-ul-alfar-mosque",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsjami-ul-alfar-mosque",
+      "url": "(dry-run) /destinations/jami-ul-alfar-mosque.jpeg",
+      "resourceType": "image",
+      "alt": "Jami Ul-Alfar Mosque"
+    },
+    "category": "(destination:religious)",
+    "seo": {
+      "seoTitle": "Jami Ul-Alfar Mosque",
+      "metaDescription": "Jami Ul-Alfar Mosque combines Indo-Islamic, Persian, Gothic revival, and Neoclassical architecture. Famed for its striking red and white candy-striped brick facade, the Red Mosque is a long-standing landmark on Second Cross Street in Pettah."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "name": "Colombo City",
+    "region": "Colombo",
+    "shortDescription": "Colombo is Sri Lanka's commercial capital blending colonial heritage, modern skyscrapers, beaches, shopping malls, and vibrant nightlife. Landmarks include the Lotus Tower, Galle Face Green, Pettah Market, and Beira Lake.",
+    "description": "Colombo is Sri Lanka's commercial capital blending colonial heritage, modern skyscrapers, beaches, shopping malls, and vibrant nightlife. Landmarks include the Lotus Tower, Galle Face Green, Pettah Market, and Beira Lake.",
+    "highlights": [
+      "Shopping",
+      "Nightlife",
+      "Culture",
+      "Food"
+    ],
+    "bestTimeToVisit": "November – April",
+    "slug": "colombo-city",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationscolombo-city",
+      "url": "(dry-run) /destinations/colombo-city.jpeg",
+      "resourceType": "image",
+      "alt": "Colombo City"
+    },
+    "category": "(destination:city)",
+    "seo": {
+      "seoTitle": "Colombo City",
+      "metaDescription": "Colombo is Sri Lanka's commercial capital blending colonial heritage, modern skyscrapers, beaches, shopping malls, and vibrant nightlife. Landmarks include the Lotus Tower, Galle Face Green, Pettah Market, and Beira Lake."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "name": "Gangaramaya Temple",
+    "region": "Colombo",
+    "shortDescription": "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th century. Today it serves as a temple, cultural and educational center.",
+    "description": "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th century. Today it serves as a temple, cultural and educational center.\n\n**🕒** 6:00am – 10:00pm",
+    "highlights": [
+      "Buddhist",
+      "Temple",
+      "Culture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "slug": "gangaramaya-temple",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple",
+      "url": "(dry-run) /destinations/gangaramaya-temple.jpeg",
+      "resourceType": "image",
+      "alt": "Gangaramaya Temple"
+    },
+    "category": "(destination:religious)",
+    "seo": {
+      "seoTitle": "Gangaramaya Temple",
+      "metaDescription": "Gangaramaya is one of the oldest Buddhist temples in Colombo, started by Hikkaduwe Sri Sumangala Nayaka Thera in the late 19th century. Today it serves as a temple, cultural and educational center."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "name": "Galle Face Green",
+    "region": "Colombo",
+    "shortDescription": "Galle Face Green is a popular ocean-side park known for sunset views, street food stalls, and leisure activities. Originally laid out in 1859 by Governor Sir Henry George Ward.",
+    "description": "Galle Face Green is a popular ocean-side park known for sunset views, street food stalls, and leisure activities. Originally laid out in 1859 by Governor Sir Henry George Ward.",
+    "highlights": [
+      "Park",
+      "Ocean",
+      "Sunset"
+    ],
+    "bestTimeToVisit": "November – April",
+    "slug": "galle-face-green",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsgalle-face-green",
+      "url": "(dry-run) /destinations/galle-face-green.jpeg",
+      "resourceType": "image",
+      "alt": "Galle Face Green"
+    },
+    "category": "(destination:nature)",
+    "seo": {
+      "seoTitle": "Galle Face Green",
+      "metaDescription": "Galle Face Green is a popular ocean-side park known for sunset views, street food stalls, and leisure activities. Originally laid out in 1859 by Governor Sir Henry George Ward."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 5
+  },
+  {
+    "name": "Kelaniya Raja Maha Viharaya",
+    "region": "Kelaniya",
+    "shortDescription": "Kelaniya Raja Maha Viharaya is a historic Buddhist temple believed to have been visited by Lord Buddha. Renovated by ancient kings, it remains one of the most sacred religious sites in Sri Lanka.",
+    "description": "Kelaniya Raja Maha Viharaya is a historic Buddhist temple believed to have been visited by Lord Buddha. Renovated by ancient kings, it remains one of the most sacred religious sites in Sri Lanka.\n\n**🕒** 5:30am – 9:00pm",
+    "highlights": [
+      "Buddhist",
+      "Sacred",
+      "Heritage"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "slug": "kelaniya-raja-maha-viharaya",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationskelaniya-raja-maha-viharaya",
+      "url": "(dry-run) /destinations/kelaniya-raja-maha-viharaya.jpeg",
+      "resourceType": "image",
+      "alt": "Kelaniya Raja Maha Viharaya"
+    },
+    "category": "(destination:religious)",
+    "seo": {
+      "seoTitle": "Kelaniya Raja Maha Viharaya",
+      "metaDescription": "Kelaniya Raja Maha Viharaya is a historic Buddhist temple believed to have been visited by Lord Buddha. Renovated by ancient kings, it remains one of the most sacred religious sites in Sri Lanka."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 6
+  },
+  {
+    "name": "Yala National Park",
+    "region": "Yala",
+    "shortDescription": "Established in 1938, Yala National Park is famous for one of the highest concentrations of leopards in the world. Home to elephants, crocodiles, bears, deer, peacocks, and many migratory birds.",
+    "description": "Established in 1938, Yala National Park is famous for one of the highest concentrations of leopards in the world. Home to elephants, crocodiles, bears, deer, peacocks, and many migratory birds.\n\n**🎟** USD $15–$30 (Foreign visitors)",
+    "highlights": [
+      "Safari",
+      "Leopard",
+      "Wildlife",
+      "Nature"
+    ],
+    "bestTimeToVisit": "February – July",
+    "slug": "yala-national-park",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsyala-national-park",
+      "url": "(dry-run) /destinations/yala-national-park.jpeg",
+      "resourceType": "image",
+      "alt": "Yala National Park"
+    },
+    "category": "(destination:wildlife)",
+    "seo": {
+      "seoTitle": "Yala National Park",
+      "metaDescription": "Established in 1938, Yala National Park is famous for one of the highest concentrations of leopards in the world. Home to elephants, crocodiles, bears, deer, peacocks, and many migratory birds."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 7
+  },
+  {
+    "name": "St Marys Church Negombo",
+    "region": "Negombo",
+    "shortDescription": "St. Mary's Church is one of the largest cathedrals in Sri Lanka, known for beautiful ceiling paintings, stained glass windows, and colonial architectural influence.",
+    "description": "St. Mary's Church is one of the largest cathedrals in Sri Lanka, known for beautiful ceiling paintings, stained glass windows, and colonial architectural influence.",
+    "highlights": [
+      "Church",
+      "Colonial",
+      "Architecture"
+    ],
+    "bestTimeToVisit": "November – April",
+    "slug": "st-marys-church-negombo",
+    "heroMedia": {
+      "publicId": "srilankatoursdriver/destinations/zip-destinationsst-marys-church-negombo",
+      "url": "(dry-run) /destinations/st-marys-church-negombo.jpeg",
+      "resourceType": "image",
+      "alt": "St Marys Church Negombo"
+    },
+    "category": "(destination:religious)",
+    "seo": {
+      "seoTitle": "St Marys Church Negombo",
+      "metaDescription": "St. Mary's Church is one of the largest cathedrals in Sri Lanka, known for beautiful ceiling paintings, stained glass windows, and colonial architectural influence."
+    },
+    "status": "published",
+    "featured": true,
+    "order": 8
+  }
+]

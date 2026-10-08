@@ -11,6 +11,17 @@ interface LogInput {
   userEmail?: string;
 }
 
+/**
+ * Defence in depth: audit summaries are built from server-side strings, but they can include
+ * titles or emails typed by users. Anything that looks like a credential is masked.
+ */
+export function redactSecrets(text: string): string {
+  return text
+    .replace(/eyJ[\w-]{8,}\.[\w-]{8,}\.[\w-]{8,}/g, "[redacted-token]")
+    .replace(/\b(bearer)\s+[\w.~+/-]{16,}=*/gi, "$1 [redacted]")
+    .replace(/\b(password|passwd|pwd|secret|token|api[_-]?key|authorization)(\s*[:=]\s*)("[^"]*"|'[^']*'|\S+)/gi, "$1$2[redacted]");
+}
+
 /** Records an audit entry. Never throws – auditing must not break the request. */
 export async function logActivity(req: Request | null, input: LogInput): Promise<void> {
   try {
@@ -20,7 +31,7 @@ export async function logActivity(req: Request | null, input: LogInput): Promise
       action: input.action,
       entity: input.entity ?? "",
       entityId: input.entityId ?? "",
-      summary: (input.summary ?? "").slice(0, 500),
+      summary: redactSecrets(input.summary ?? "").slice(0, 500),
       ip: req?.ip ?? "",
       userAgent: (req?.headers["user-agent"] ?? "").slice(0, 300),
       timestamp: new Date(),

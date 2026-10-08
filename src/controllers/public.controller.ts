@@ -3,7 +3,7 @@ import * as pub from "../services/public.service.js";
 import * as settings from "../services/settings.service.js";
 import { getTripAdvisorSummary } from "../services/tripadvisor/tripadvisor.service.js";
 import { verifyPreviewToken } from "../services/auth.service.js";
-import { Review } from "../models/index.js";
+import { createPublicReview } from "../services/crm.service.js";
 import { ok, created } from "../utils/response.js";
 import { ApiError } from "../utils/ApiError.js";
 import { isLocale } from "../config/locales.js";
@@ -112,8 +112,6 @@ export async function sitemap(_req: Request, res: Response) {
 }
 
 export async function submitReview(req: Request, res: Response) {
-  const { website: _hp, ...data } = req.validated?.body as Record<string, unknown>;
-  void _hp;
-  await Review.create({ ...data, platform: "website", status: "pending", verified: false, date: new Date() });
+  await createPublicReview(req.validated?.body as Record<string, unknown>);
   return created(res, null, "Thank you! Your review will appear once it has been approved.");
 }

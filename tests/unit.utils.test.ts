@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { escapeRegex, generateReference, slugify, stripMongoOperators, toCsv, setPath } from "../src/utils/helpers.js";
 import { extractFields } from "../src/services/translation/registry.js";
+import { deeplBaseUrl } from "../src/services/translation/providers.js";
 import { hasPermission, DEFAULT_ROLES, ALL_PERMISSIONS } from "../src/config/permissions.js";
 
 describe("helpers", () => {
@@ -16,10 +17,11 @@ describe("helpers", () => {
   });
 
   it("stripMongoOperators removes operator and prototype keys recursively", () => {
-    const input = { email: { $gt: "" }, nested: { ok: 1, $where: "x", "a.b": 1 }, list: [{ $ne: 1, keep: true }], __proto__: { polluted: true } };
+    const input = { email: { $gt: "" }, nested: { ok: 1, $where: "x", "a.$": 1, "seo.seoTitle": "kept" }, list: [{ $ne: 1, keep: true }], __proto__: { polluted: true } };
     const out = stripMongoOperators(input) as Record<string, unknown>;
     expect(out.email).toEqual({});
-    expect(out.nested).toEqual({ ok: 1 });
+    // Dotted paths are legitimate translation keys; operator-like keys are not.
+    expect(out.nested).toEqual({ ok: 1, "seo.seoTitle": "kept" });
     expect(out.list).toEqual([{ keep: true }]);
     expect(({} as Record<string, unknown>).polluted).toBeUndefined();
   });
@@ -78,5 +80,19 @@ describe("permissions", () => {
     expect(hasPermission(editor, "tours:update")).toBe(true);
     expect(hasPermission(bm, "tours:update")).toBe(false);
     expect(hasPermission(bm, "bookings:update")).toBe(true);
+  });
+});
+
+describe("deeplBaseUrl", () => {
+  it("defaults by key type", () => {
+    expect(deeplBaseUrl("abc:fx")).toBe("https://api-free.deepl.com");
+    expect(deeplBaseUrl("abc")).toBe("https://api.deepl.com");
+  });
+
+  it("strips an endpoint path and routes free keys to the free host", () => {
+    expect(deeplBaseUrl("abc:fx", "https://api.deepl.com/v2/translate")).toBe("https://api-free.deepl.com");
+    expect(deeplBaseUrl("abc", "https://api.deepl.com/v2/translate/")).toBe("https://api.deepl.com");
+    expect(deeplBaseUrl("abc", "https://api-free.deepl.com")).toBe("https://api.deepl.com");
+    expect(deeplBaseUrl("abc", "https://proxy.example.com/v2")).toBe("https://proxy.example.com");
   });
 });

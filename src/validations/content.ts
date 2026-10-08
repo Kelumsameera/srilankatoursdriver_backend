@@ -17,6 +17,7 @@ import {
 } from "./common.js";
 import { CATEGORY_KINDS } from "../models/Category.js";
 import { SECTION_TYPES } from "../models/PageSection.js";
+import { GUEST_SHORT_PLATFORMS, guestShortIssues } from "../models/GuestShort.js";
 
 const currency = z
   .string()
@@ -199,7 +200,7 @@ const guestShortBase = z.object({
   title: shortText(200).min(1),
   guestName: shortText(120).optional(),
   country: shortText(80).optional(),
-  platform: z.enum(["youtube", "instagram", "tiktok", "upload"]),
+  platform: z.enum(GUEST_SHORT_PLATFORMS),
   videoUrl: httpUrl.optional(),
   uploadedMedia: mediaAsset,
   thumbnail: mediaAsset,
@@ -207,11 +208,23 @@ const guestShortBase = z.object({
   date: optionalDate,
   ...publishable,
 });
-export const guestShortCreate = guestShortBase.refine(
-  (v) => (v.platform === "upload" ? Boolean(v.uploadedMedia?.url) : Boolean(v.videoUrl)),
-  { message: "Provide a video URL, or upload a video when platform is 'upload'", path: ["videoUrl"] },
-);
-export const guestShortUpdate = guestShortBase.partial();
+
+/**
+ * platform = "upload"                     → uploadedMedia (a Cloudinary video) is required, no URL needed
+ * platform = youtube | instagram | tiktok → an https link on that platform is required, no upload needed
+ * Updates are checked again on the merged document by the GuestShort model.
+ */
+export const guestShortCreate = guestShortBase.superRefine((v, ctx) => {
+  for (const issue of guestShortIssues(v)) ctx.addIssue({ code: "custom", path: [issue.path], message: issue.message });
+});
+export const guestShortUpdate = guestShortBase.partial().superRefine((v, ctx) => {
+  // Without the platform we cannot judge the URL here; the model validates the merged result.
+  if (!v.platform) return;
+  for (const issue of guestShortIssues(v)) {
+    // Only complain about fields the request actually touches – the rest is validated on save.
+    if (issue.path in v) ctx.addIssue({ code: "custom", path: [issue.path], message: issue.message });
+  }
+});
 
 /* ───────────── Reviews ───────────── */
 export const reviewCreate = z.object({
@@ -241,7 +254,7 @@ export const publicReviewSubmit = z.object({
   title: shortText(200).optional(),
   review: shortText(5000).min(20),
   tour: optionalRef,
-  website: z.string().max(0).optional(), // honeypot
+  website: z.string().max(500).optional(), // honeypot – filled in by bots only (silently discarded)
 });
 
 /* ───────────── FAQs ───────────── */
@@ -309,6 +322,7 @@ export const pageUpdate = pageCreate.partial();
 
 const sectionItem = z.object({
   title: shortText(200).optional(),
+  role: shortText(120).optional(),
   description: shortText(2000).optional(),
   icon: shortText(40).optional(),
   image: mediaAsset,
@@ -321,6 +335,9 @@ export const sectionCreate = z.object({
   eyebrow: shortText(120).optional(),
   title: shortText(200).optional(),
   subtitle: shortText(1000).optional(),
+  badge: shortText(120).optional(),
+  price: shortText(40).optional(),
+  priceNote: shortText(120).optional(),
   content: longText(50_000).optional(),
   items: z.array(sectionItem).max(30).optional(),
   buttons: z.array(link).max(4).optional(),
@@ -331,6 +348,7 @@ export const sectionCreate = z.object({
       source: z.enum(["featured", "latest", "all"]).optional(),
       theme: z.enum(["light", "sand", "forest", "dark"]).optional(),
       layout: z.enum(["grid", "carousel", "list", "split"]).optional(),
+      category: optionalRef,
     })
     .optional(),
   enabled: z.boolean().optional(),

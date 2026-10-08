@@ -4,7 +4,9 @@ node_modules/
 # Environment variables / secrets
 .env
 .env.*
-.env.example
+!.env.example
+*.pem
+*.key
 
 # Logs
 *.log
@@ -62,3 +64,6 @@ Desktop.ini
 .parcel-cache/
 .turbo/
 EOF
+# Old-site migration: fetched HTML / CSS cache (large, reproducible with `npm run migration:discover`)
+migration/raw/html/
+migration/raw/assets/

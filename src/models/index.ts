@@ -1,4 +1,5 @@
 export { User } from "./User.js";
+export { Customer } from "./Customer.js";
 export { Role } from "./Role.js";
 export { Permission } from "./Permission.js";
 export { SiteSetting } from "./SiteSetting.js";

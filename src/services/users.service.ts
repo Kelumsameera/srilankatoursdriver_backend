@@ -1,9 +1,25 @@
 import { Permission, Role, User } from "../models/index.js";
 import { ApiError } from "../utils/ApiError.js";
 import { assertObjectId, escapeRegex } from "../utils/helpers.js";
+import { hasPermission } from "../config/permissions.js";
 import { hashPassword } from "./auth.service.js";
 
 type AnyRecord = Record<string, unknown>;
+
+export interface Actor {
+  id: string;
+  permissions: string[];
+}
+
+/**
+ * Privilege-escalation guard: someone who is not a Super Admin may only hand out (or manage
+ * holders of) permissions they hold themselves.
+ */
+function assertWithinActor(actor: Actor, permissions: readonly string[], what: string) {
+  if (actor.permissions.includes("*")) return;
+  const beyond = permissions.filter((p) => !hasPermission(actor.permissions, p));
+  if (beyond.length > 0) throw ApiError.forbidden(`You cannot ${what} with permissions you do not have yourself (${beyond.slice(0, 5).join(", ")}${beyond.length > 5 ? " …" : ""})`);
+}
 
 async function superAdminRoleId() {
   const role = await Role.findOne({ permissions: "*" }).select("_id").lean();
@@ -43,10 +59,11 @@ export async function getUser(id: string) {
   return user;
 }
 
-export async function createUser(input: { name: string; email: string; password: string; role: string; status?: string }, actorPermissions: string[]) {
+export async function createUser(input: { name: string; email: string; password: string; role: string; status?: string }, actor: Actor) {
   const role = await Role.findById(input.role).lean();
   if (!role) throw ApiError.badRequest("Role not found");
-  if (role.permissions.includes("*") && !actorPermissions.includes("*")) throw ApiError.forbidden("Only a Super Admin can create Super Admins");
+  if (role.permissions.includes("*") && !actor.permissions.includes("*")) throw ApiError.forbidden("Only a Super Admin can create Super Admins");
+  assertWithinActor(actor, role.permissions, "create a user");
   if (await User.exists({ email: input.email })) throw ApiError.conflict("A user with this email already exists");
   const user = await User.create({
     name: input.name,
@@ -58,17 +75,21 @@ export async function createUser(input: { name: string; email: string; password:
   return user.toJSON();
 }
 
-export async function updateUser(id: string, input: AnyRecord, actor: { id: string; permissions: string[] }) {
+export async function updateUser(id: string, input: AnyRecord, actor: Actor) {
   assertObjectId(id);
   const user = await User.findById(id).select("+tokenVersion");
   if (!user) throw ApiError.notFound("User not found");
-  if (input.role) {
+  const roleChanges = Boolean(input.role) && String(input.role) !== String(user.role);
+  if (roleChanges) {
+    if (id === actor.id && !actor.permissions.includes("*")) throw ApiError.forbidden("You cannot change your own role");
     const role = await Role.findById(input.role).lean();
     if (!role) throw ApiError.badRequest("Role not found");
     if (role.permissions.includes("*") && !actor.permissions.includes("*")) throw ApiError.forbidden("Only a Super Admin can grant Super Admin");
+    assertWithinActor(actor, role.permissions, "assign a role");
   }
   const current = await Role.findById(user.role).lean();
   if (current?.permissions.includes("*") && !actor.permissions.includes("*")) throw ApiError.forbidden("Only a Super Admin can edit a Super Admin");
+  if (current && id !== actor.id) assertWithinActor(actor, current.permissions, "edit a user");
   if (id === actor.id && input.status === "suspended") throw ApiError.badRequest("You cannot suspend your own account");
   await assertNotLastSuperAdmin(id, { role: input.role as string | undefined, status: input.status as string | undefined });
 
@@ -82,7 +103,7 @@ export async function updateUser(id: string, input: AnyRecord, actor: { id: stri
     user.passwordChangedAt = new Date();
   }
   // Any security-relevant change invalidates the user's existing sessions.
-  if (password || input.role || input.status === "suspended") {
+  if (password || roleChanges || input.status === "suspended") {
     user.tokenVersion = (user.tokenVersion ?? 0) + 1;
     user.set("refreshTokens", []);
   }
@@ -90,13 +111,17 @@ export async function updateUser(id: string, input: AnyRecord, actor: { id: stri
   return user.toJSON();
 }
 
-export async function deleteUser(id: string, actorId: string) {
+export async function deleteUser(id: string, actor: Actor) {
   assertObjectId(id);
-  if (id === actorId) throw ApiError.badRequest("You cannot delete your own account");
+  if (id === actor.id) throw ApiError.badRequest("You cannot delete your own account");
+  const target = await User.findById(id).lean();
+  if (!target) throw ApiError.notFound("User not found");
+  const targetRole = await Role.findById(target.role).lean();
+  if (targetRole?.permissions.includes("*") && !actor.permissions.includes("*")) throw ApiError.forbidden("Only a Super Admin can delete a Super Admin");
+  if (targetRole) assertWithinActor(actor, targetRole.permissions, "delete a user");
   await assertNotLastSuperAdmin(id, { deleting: true });
-  const user = await User.findByIdAndDelete(id).lean();
-  if (!user) throw ApiError.notFound("User not found");
-  return user;
+  await User.deleteOne({ _id: id });
+  return target;
 }
 
 /* ───────────── Roles ───────────── */
@@ -112,27 +137,34 @@ export async function listPermissions() {
   return Permission.find({}).sort({ module: 1, action: 1 }).lean();
 }
 
-export async function createRole(input: { name: string; description?: string; permissions: string[] }) {
+export async function createRole(input: { name: string; description?: string; permissions: string[] }, actor: Actor) {
   if (input.permissions.includes("*")) throw ApiError.badRequest("The wildcard permission is reserved for the Super Admin role");
-  return (await Role.create({ ...input, isSystem: false })).toObject();
+  assertWithinActor(actor, input.permissions, "create a role");
+  return (await Role.create({ ...input, permissions: Array.from(new Set(input.permissions)), isSystem: false })).toObject();
 }
 
-export async function updateRole(id: string, input: { name?: string; description?: string; permissions?: string[] }) {
+export async function updateRole(id: string, input: { name?: string; description?: string; permissions?: string[] }, actor: Actor) {
   assertObjectId(id);
   const role = await Role.findById(id);
   if (!role) throw ApiError.notFound("Role not found");
   if (role.permissions.includes("*")) throw ApiError.badRequest("The Super Admin role cannot be modified");
   if (input.permissions?.includes("*")) throw ApiError.badRequest("The wildcard permission is reserved for the Super Admin role");
+  assertWithinActor(actor, role.permissions, "edit a role");
+  if (input.permissions) {
+    assertWithinActor(actor, input.permissions, "edit a role");
+    input = { ...input, permissions: Array.from(new Set(input.permissions)) };
+  }
   if (role.isSystem && input.name && input.name !== role.name) throw ApiError.badRequest("System role names cannot be changed");
   role.set(input);
   await role.save();
   return role.toObject();
 }
 
-export async function deleteRole(id: string) {
+export async function deleteRole(id: string, actor: Actor) {
   assertObjectId(id);
   const role = await Role.findById(id);
   if (!role) throw ApiError.notFound("Role not found");
+  assertWithinActor(actor, role.permissions, "delete a role");
   if (role.isSystem) throw ApiError.badRequest("System roles cannot be deleted");
   if (await User.exists({ role: id })) throw ApiError.badRequest("Reassign users before deleting this role");
   await role.deleteOne();

@@ -48,10 +48,12 @@ export async function authenticate(req: Request, _res: Response, next: NextFunct
 
 /** Requires ALL listed permissions. Must be used after `authenticate`. */
 export function requirePermission(...required: string[]) {
-  return (req: Request, _res: Response, next: NextFunction) => {
+  const guard = (req: Request, _res: Response, next: NextFunction) => {
     if (!req.user) return next(ApiError.unauthorized());
     const missing = required.filter((p) => !hasPermission(req.user!.permissions, p));
     if (missing.length > 0) return next(ApiError.forbidden(`Missing permission: ${missing.join(", ")}`));
     next();
   };
+  // Lets the route-audit test verify that every admin route declares a permission.
+  return Object.assign(guard, { requiredPermissions: required });
 }

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { httpUrl, mediaAsset, safeUrl, shortText } from "./common.js";
+import { httpUrl, mapEmbedUrl, mediaAsset, safeUrl, shortText } from "./common.js";
 import { SUPPORTED_LOCALES } from "../config/locales.js";
 
 const phone = z
@@ -15,7 +15,7 @@ export const siteSettingsUpdate = z
     tagline: shortText(300),
     address: shortText(400),
     googleMapsUrl: httpUrl,
-    mapEmbedUrl: httpUrl,
+    mapEmbedUrl,
     phone,
     whatsapp: phone,
     whatsappMessage: shortText(500),
@@ -69,6 +69,28 @@ export const siteSettingsUpdate = z
         ratingText: shortText(200),
       })
       .partial(),
+    transferRates: z
+      .object({
+        enabled: z.boolean(),
+        title: shortText(120),
+        subtitle: shortText(200),
+        currency: z.string().trim().toUpperCase().regex(/^[A-Z]{3}$/, "Use a 3-letter currency code"),
+        note: shortText(400),
+        rows: z
+          .array(
+            z.object({
+              destination: shortText(120).min(1),
+              car: z.number().min(0).max(100_000_000).nullable().optional(),
+              van: z.number().min(0).max(100_000_000).nullable().optional(),
+              bus: z.number().min(0).max(100_000_000).nullable().optional(),
+              duration: shortText(80).optional(),
+              distanceKm: z.number().min(0).max(5000).nullable().optional(),
+            }),
+          )
+          .max(80),
+      })
+      .partial(),
+    partners: z.array(z.object({ name: shortText(120).min(1), url: httpUrl.optional(), logo: mediaAsset })).max(20),
     maintenanceMode: z.boolean(),
   })
   .partial();

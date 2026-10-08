@@ -1,0 +1,2074 @@
+{
+  "ar": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "مطار كولومبو",
+        "subtitle": "مطار باندارانايكا الدولي (CMB)",
+        "category": "مدينة",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "يعد مطار باندارانايكا الدولي (CMB) في كاتوناياكي البوابة الدولية الرئيسية لسريلانكا. يقع على بعد 35 كم شمال العاصمة كولومبو. \n\nملاحظة: تغطي أسعار النقل لدينا التوصيل المباشر. يمكن ترتيب زيارات اختيارية للمواقع على طول الطريق عند الطلب. نقدم خصمًا خاصًا بنسبة 5% لحجوزات السيارات و3% للحافلات الصغيرة (Vans). يتم قبول المدفوعات بالروبية السريلانكية أو أي عملة أجنبية رئيسية حسب سعر الصرف اليومي السائد."
+      },
+      {
+        "id": "colombo",
+        "title": "كولومبو",
+        "subtitle": "العاصمة التجارية",
+        "category": "مدينة",
+        "image": "/tours/colombo.jpg",
+        "description": "باعتبارها العاصمة التجارية النابضة بالحياة في سريلانكا، تقدم كولومبو مزيجًا رائعًا من التاريخ الاستعماري ونمط الحياة الحضري الحديث. \n\nاستكشف برج اللوتس الشهير، وتجول على طول شاطئ غالي فيس غرين عند غروب الشمس، وقم بزيارة المستشفى الهولندي التاريخي. من مراكز التسوق الفاخرة إلى سوق بيتا المزدحم، توفر كولومبو مقدمة لا تُنسى لثقافة وتراث الجزيرة المتنوع."
+      },
+      {
+        "id": "kandy",
+        "title": "كاندي",
+        "subtitle": "عاصمة التلال",
+        "category": "ثقافي",
+        "image": "/tours/kandy.jpg",
+        "description": "تقع كاندي وسط التلال الخضراء المورقة، وهي القلب الروحي والثقافي لسريلانكا. \n\nتعد موطناً لمعبد السن المقدس (سري دالادا ماليغاوا) المصنف ضمن مواقع التراث العالمي لليونسكو. يمكن للزوار الاستمتاع برقصات كاندي التقليدية، والمشي حول بحيرة كاندي الخلابة، واستكشاف الحدائق النباتية الملكية في بيرادينيا التي تضم مجموعة أوركيد عالمية المستوى."
+      },
+      {
+        "id": "galle",
+        "title": "جالي",
+        "subtitle": "مدينة ساحلية تاريخية",
+        "category": "شاطئ",
+        "image": "/tours/galle.jpg",
+        "description": "تعتبر جالي تحفة فنية من العمارة الاستعمارية والجمال الساحلي. قلعة جالي التاريخية، التي بناها الهولنديون وهي موقع تراث عالمي، هي نصب حي يضم شوارع ضيقة ومتاجر راقية ومقاهي مريحة. \n\nتوازن المدينة تمامًا بين تاريخها الغني والشواطئ المذهلة للساحل الجنوبي، مما يجعلها وجهة لا بد من زيارتها لعشاق التاريخ ومحبي الشمس على حد سواء."
+      },
+      {
+        "id": "ella",
+        "title": "إيلا",
+        "subtitle": "الريف الجبلي الخلاب",
+        "category": "طبيعة",
+        "image": "/tours/ella.jpg",
+        "description": "إيلا هي قرية جبلية ساحرة أصبحت جنة للمتنزهين وعشاق الطبيعة. \n\nتشتهر بـ 'جسر الأقواس التسعة' المعماري المذهل والإطلالات الخلابة من قمة آدم الصغيرة وصخرة إيلا. محاطة بمزارع الشاي الخضراء والجبال الضبابية، توفر إيلا بعضًا من أجمل مسارات المشي لمسافات طويلة ورحلات القطار في العالم."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "نوارا إليا",
+        "subtitle": "إنجلترا الصغيرة",
+        "category": "طبيعة",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "تُعرف نوارا إليا باسم 'إنجلترا الصغيرة'، وتشتهر بمناخها البارد وبنغلاتها المصممة على الطراز الاستعماري البريطاني. \n\nهذه المنطقة هي قلب صناعة الشاي في سريلانكا، حيث يمكنك زيارة مزارع ومصانع الشاي العالمية. استمتع بجولة في القارب في بحيرة غريغوري، وتجول في حديقة فيكتوريا المنسقة بشكل جميل، واختبر سحر الضباب في أعلى بلدة في سريلانكا."
+      },
+      {
+        "id": "sigiriya",
+        "title": "سيجيريا",
+        "subtitle": "حصن صخرة الأسد",
+        "category": "ثقافي",
+        "image": "/tours/sigiriya.jpg",
+        "description": "سيجيريا، أو صخرة الأسد، هي حصن صخري قديم مذهل يبلغ ارتفاعه 200 متر ويقف كشاهد على الهندسة والفن السريلانكي القديم. \n\nبناها الملك كاشيابا في القرن الخامس، ويتميز هذا الموقع التابع لليونسكو بلوحات الفريسكو الشهيرة عالميًا، والجدار المرآتي، والحدائق المائية المخططة بدقة. الإطلالة البانورامية من القمة هي واحدة من أكثر التجارب أيقونية في آسيا."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "أنورادابورا",
+        "subtitle": "المدينة المقدسة القديمة",
+        "category": "ثقافي",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "كانت أنورادابورا العاصمة الأولى لسريلانكا القديمة ولا تزال واحدة من أقدس مواقع الحج البوذي في العالم. \n\nتضم المدينة ستوباس ضخمة مثل روانويليسايا وجيتاوانارامايا، والتي كانت من بين أطول الهياكل في العالم القديم. يمكنك أيضًا زيارة 'جايا سري مها بودي'، وهي أقدم شجرة موثقة في العالم، زُرعت منذ أكثر من 2000 عام."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "بولوناروا",
+        "subtitle": "عاصمة العصور الوسطى",
+        "category": "ثقافي",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "عد بالزمن إلى الوراء في بولوناروا، العاصمة القديمة الثانية لسريلانكا. \n\nتتميز هذه المدينة التي تعود إلى العصور الوسطى بكونها محفوظة بشكل جيد، وتضم أطلال القصر الملكي ومعبد 'غال فيهارا'، حيث نُحتت أربعة تماثيل رائعة لبوذا مباشرة في صخر الغرانيت. لا تزال أنظمة الري المتقدمة في المدينة تدعم الزراعة في المنطقة حتى اليوم."
+      },
+      {
+        "id": "mirissa",
+        "title": "ميريسا",
+        "subtitle": "وجهة مشاهدة الحيتان",
+        "category": "شاطئ",
+        "image": "/tours/mirissa.jpg",
+        "description": "ميريسا هي جنة استوائية تشتهر بشاطئها الذي يشبه الهلال وأجوائها الهادئة. \n\nمعترف بها دوليًا كواحدة من أفضل المواقع في العالم لمشاهدة الحيتان والدلافين. بالإضافة إلى مغامرات المحيط، يمكن للزوار الاسترخاء في تلة شجر جوز الهند الشهيرة لمشاهدة غروب الشمس المثالي أو الاستمتاع بالحياة الليلية النابضة بالحياة على طول الشواطئ الرملية."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "هيكادوا",
+        "subtitle": "مدينة شاطئ المرجان",
+        "category": "شاطئ",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "هيكادوا هي وجهة شاطئية أسطورية تشتهر بشعابها المرجانية النابضة بالحياة وظروف ركوب الأمواج الممتازة. \n\nمنتزه هيكادوا الوطني هو محمية بحرية حيث يمكنك رؤية الأسماك الملونة والسلاحف البحرية من خلال القوارب ذات القاع الزجاجي أو أثناء الغوص. تشتهر البلدة أيضًا بمهرجانات الشاطئ الحيوية، وأسواق الفن، ومجموعة واسعة من مطاعم المأكولات البحرية."
+      },
+      {
+        "id": "trincomalee",
+        "title": "ترينكومالي",
+        "subtitle": "جنة الساحل الشرقي",
+        "category": "شاطئ",
+        "image": "/tours/trincomalee.jpg",
+        "description": "تقع ترينكومالي على الساحل الشمالي الشرقي، وتفتخر بواحد من أفضل الموانئ الطبيعية في المياه العميقة في العالم. \n\nتضم شاطئ نيافيلي المذهل وجزيرة بيجون، وهي موقع متميز للغوص بمياهها الكريستالية الصافية. لا تفوت زيارة معبد كونيسوارام، وهو ضريح هندوسي مهيب يقع على حافة جرف يوفر إطلالات خلابة على المحيط الهندي."
+      },
+      {
+        "id": "pasikuda",
+        "title": "باسيكودا",
+        "subtitle": "المياه الزرقاء الضحلة",
+        "category": "شاطئ",
+        "image": "/tours/pasikuda.jpg",
+        "description": "تشتهر باسيكودا بخليجها الأيقوني ذو المياه الفيروزية الضحلة التي تسمح لك بالمشي لمئات الأمتار داخل البحر. \n\nهذه الوجهة الهادئة مثالية للعائلات والباحثين عن الاسترخاء الفاخر. مياهها الهادئة المحمية بالشعاب المرجانية تجعلها مثالية للسباحة، وركوب الأمواج شراعيًا، والتزلج على الماء في واحدة من آمن المناطق الساحلية في سريلانكا."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "تيساماهاراما (يالا)",
+        "subtitle": "بوابة الحياة البرية",
+        "category": "حياة برية",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "تعد تيساماهاراما البوابة الرئيسية لمنتزه يالا الوطني، المحمية البرية الأكثر زيارة في سريلانكا. \n\nتشتهر يالا بكونها تضم واحدة من أعلى كثافات الفهود في العالم، إلى جانب الفيلة البرية والدببة والتماسيح. تيساماهاراما نفسها بلدة تاريخية تضم بحيرات اصطناعية قديمة مثالية لمراقبة الطيور والمشي في المساء."
+      },
+      {
+        "id": "udawalawa",
+        "title": "أوداوالاوي",
+        "subtitle": "سفاري الفيلة",
+        "category": "حياة برية",
+        "image": "/tours/udawalawa.jpg",
+        "description": "منتزه أوداوالاوي الوطني هو أفضل مكان في سريلانكا لمشاهدة الفيلة البرية في بيئتها الطبيعية. \n\nتشبه سهول المنتزه المفتوحة غابات السافانا الأفريقية، مما يجعل من السهل رصد قطعان كبيرة من الفيلة. زيارة دار رعاية الفيلة القريبة، حيث يتم إعادة تأهيل صغار الفيلة الأيتام وإطلاقها مرة أخرى في البرية، هي تجربة مؤثرة لمحبي الحيوانات."
+      },
+      {
+        "id": "negombo",
+        "title": "نيغومبو",
+        "subtitle": "مدينة البحيرة",
+        "category": "شاطئ",
+        "image": "/tours/negombo.jpg",
+        "description": "تقع نيغومبو على بعد دقائق فقط من المطار، وهي بلدة صيد تاريخية ذات ماضٍ استعماري غني. \n\nتشتهر ببحيرتها الواسعة وقوارب الصيد التقليدية، وتوفر تجربة سوق السمك النابضة بالحياة. يظهر سحر 'روما الصغيرة' في كنائسها العديدة التي تعود للحقبة الهولندية ونظام القنوات الهادئ الذي يمتد عبر البلدة."
+      },
+      {
+        "id": "kalutara",
+        "title": "كالوтара",
+        "subtitle": "ملاذ ساحلي",
+        "category": "شاطئ",
+        "image": "/tours/kalutara.jpg",
+        "description": "كالوтара بلدة ساحلية تشتهر بمعبدها المقدس 'كالوтара بوديا' - وهو الستوبا البوذية الوحيدة المجوفة في العالم. \n\nبموقعها حيث يلتقي نهر 'كالو' بالبحر، توفر إطلالات جميلة على النهر والشاطئ. تشتهر كالوтара أيضًا بصناعة نسج السلال التقليدية وتعتبر ملاذًا هادئًا لأولئك الذين يتطلعون للهروب من صخب كولومبو."
+      },
+      {
+        "id": "jaffna",
+        "title": "جافنا",
+        "subtitle": "مدينة الشمال الثقافية",
+        "category": "ثقافي",
+        "image": "/tours/jaffna.jpg",
+        "description": "تقدم جافنا تجربة ثقافية فريدة متميزة عن بقية الجزيرة. \n\nبمعابدها الهندوسية الملونة مثل 'نالور كانداسوامي'، وقلعة جافنا التاريخية، وجزر 'دلفت' و'نايناتيفو' الهادئة، يعتبر الشمال أرض الجمال والمرونة. اكتشف المأكولات الشمالية الفريدة، واستكشف الأسواق المحلية النابضة بالحياة، واستمتع بالمناظر الطبيعية الخلابة لشبه جزيرة جافنا."
+      }
+    ]
+  },
+  "de": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Flughafen Colombo",
+        "subtitle": "Flughafen (CMB)",
+        "category": "Stadt",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "Der Bandaranaike International Airport (CMB) in Katunayake ist das wichtigste internationale Tor zu Sri Lanka. Benannt nach der weltweit ersten weiblichen Premierministerin, Sirimavo Bandaranaike, liegt er 35 km nördlich der Hauptstadt Colombo. \n\nHinweis: Unsere Transferraten decken die direkte Abholung und Rückbringung ab. Optionale Besichtigungen entlang der Route können auf Anfrage arrangiert werden. Wir bieten einen speziellen Rabatt von 5 % für Pkw-Buchungen und 3 % für Vans. Zahlungen werden in LKR oder einer anderen gängigen Fremdwährung zum aktuellen Tageskurs akzeptiert."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Wirtschaftshauptstadt",
+        "category": "Stadt",
+        "image": "/tours/colombo.jpg",
+        "description": "Als pulsierende Wirtschaftshauptstadt Sri Lankas bietet Colombo eine faszinierende Mischung aus Kolonialgeschichte und modernem urbanem Lebensstil. \n\nErkunden Sie den ikonischen Lotus Tower, spazieren Sie bei Sonnenuntergang am Galle Face Green entlang und besuchen Sie das historische Dutch Hospital. Von luxuriösen Einkaufszentren bis hin zum geschäftigen Pettah-Markt bietet Colombo eine unvergessliche Einführung in die vielfältige Kultur und das Erbe der Insel."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Kulturhauptstadt des Hochlands",
+        "category": "Kultur",
+        "image": "/tours/kandy.jpg",
+        "description": "Eingebettet in üppig grüne Hügel ist Kandy das spirituelle und kulturelle Herz von Sri Lanka. \n\nHier befindet sich der heilige Zahntempel (Sri Dalada Maligawa), ein UNESCO-Weltkulturerbe. Besucher können traditionelle kandyanische Tanzaufführungen genießen, um den malerischen Kandy-See spazieren und den Botanischen Garten von Peradeniya erkunden, der eine weltberühmte Orchideensammlung beherbergt."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Historische Küstenstadt",
+        "category": "Strand",
+        "image": "/tours/galle.jpg",
+        "description": "Galle ist ein Meisterwerk der Kolonialarchitektur und der Küstenschönheit. Das historische Galle Fort, ein von den Niederländern erbautes UNESCO-Weltkulturerbe, ist ein lebendiges Denkmal mit schmalen Gassen, Boutique-Läden und gemütlichen Cafés. \n\nDie Stadt verbindet ihre reiche Geschichte perfekt mit den atemberaubenden Stränden der Südküste und ist ein Muss für Geschichtsinteressierte und Sonnenanbeter gleichermaßen."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Malerisches Hochland",
+        "category": "Natur",
+        "image": "/tours/ella.jpg",
+        "description": "Ella ist ein charmantes Bergdorf, das zu einem Paradies für Wanderer und Naturliebhaber geworden ist. \n\nBerühmt ist Ella für das architektonische Wunder der Nine Arch Bridge und die atemberaubende Aussicht vom Little Adam's Peak sowie vom Ella Rock. Umgeben von smaragdgrünen Teeplantagen und nebligen Bergen bietet Ella einige der schönsten Wanderwege und Zugreisen der Welt."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "Klein-England",
+        "category": "Natur",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Bekannt als „Klein-England“, ist Nuwara Eliya berühmt für sein kühles Klima und seine Bungalows im britischen Kolonialstil. \n\nDiese Region ist das Zentrum der Teeindustrie Sri Lankas, in der Sie erstklassige Teestände und Fabriken besuchen können. Genießen Sie eine Bootsfahrt auf dem Gregory-See, spazieren Sie durch den wunderschön gepflegten Victoria Park und erleben Sie den nebligen Charme der höchstgelegenen Stadt Sri Lankas."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Löwenfelsen-Festung",
+        "category": "Kultur",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, oder der Löwenfelsen, ist eine beeindruckende, 200 Meter hohe antike Felsfestung, die als Zeugnis antiker srilankischer Ingenieurskunst und Kunst gilt. \n\nErbaut von König Kashyapa im 5. Jahrhundert, bietet diese UNESCO-Stätte weltberühmte Fresken (die „Wolkenmädchen“), die Spiegelwand und akribisch geplante Wassergärten. Der Panoramablick vom Gipfel gehört zu den ikonischsten Erlebnissen in ganz Asien."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Heilige antike Stadt",
+        "category": "Kultur",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura war die erste Hauptstadt des antiken Sri Lanka und bleibt eine der heiligsten buddhistischen Pilgerstätten der Welt. \n\nDie Stadt beherbergt massive Stupas wie Ruwanwelisaya und Jetavanaramaya, die zu den höchsten Bauwerken der antiken Welt gehörten. Sie können auch den Jaya Sri Maha Bodhi besuchen, den ältesten dokumentierten Baum der Welt, der vor über 2.000 Jahren gepflanzt wurde."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Mittelalterliche Hauptstadt",
+        "category": "Kultur",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Machen Sie eine Zeitreise in Polonnaruwa, der zweiten antiken Hauptstadt Sri Lankas. \n\nDiese mittelalterliche Stadt ist bemerkenswert gut erhalten und zeigt die majestätischen Ruinen des Königspalastes und das Gal Vihara, wo vier prächtige Buddha-Statuen direkt in den Granitfelsen gehauen wurden. Die fortschrittlichen Bewässerungssysteme der Stadt, wie das Parakrama Samudra, unterstützen bis heute die Landwirtschaft der Region."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Ziel für Walbeobachtungen",
+        "category": "Strand",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa ist ein tropisches Paradies, bekannt für seinen sichelförmigen Strand und seine entspannte Atmosphäre. \n\nEs ist international als einer der besten Orte weltweit für Wal- und Delfinbeobachtungen anerkannt. Neben den Meeresabenteuern können Besucher am berühmten Coconut Tree Hill entspannen, um einen perfekten Sonnenuntergang zu genießen, oder das lebhafte Nachtleben an den Sandstränden erleben."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Korallen-Strandstadt",
+        "category": "Strand",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa ist ein legendäres Strandziel, berühmt für seine lebhaften Korallenriffe und exzellenten Surfbedingungen. \n\nDer Hikkaduwa-Nationalpark ist ein Meeresschutzgebiet, in dem Sie bunte Fische und Meeresschildkröten durch Glasbodenboote oder beim Schnorcheln beobachten können. Die Stadt ist auch bekannt für ihre lebhaften Strandfestivals, Kunstmärkte und eine große Auswahl an Meeresfrüchte-Restaurants."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "Paradies an der Ostküste",
+        "category": "Strand",
+        "image": "/tours/trincomalee.jpg",
+        "description": "An der Nordostküste gelegen, verfügt Trincomalee über einen der weltweit schönsten natürlichen Tiefwasserhäfen. \n\nHier befinden sich der atemberaubende Nilaveli-Strand und Pigeon Island, ein erstklassiger Schnorchelplatz mit kristallklarem Wasser. Verpassen Sie nicht den Koneswaram-Tempel, einen majestätischen Hindutempel auf einer Klippe (Swami Rock), der spektakuläre Ausblicke auf den Indischen Ozean bietet."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Flaches blaues Wasser",
+        "category": "Strand",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda ist bekannt für seine ikonische Bucht mit flachem, türkisfarbenem Wasser, in der man hunderte Meter weit ins Meer hinauslaufen kann. \n\nDieses ruhige Reiseziel ist perfekt für Familien und diejenigen, die luxuriöse Entspannung suchen. Das ruhige, durch Riffe geschützte Wasser ist ideal zum Schwimmen, Windsurfen und Wasserski in einem der sichersten Küstenabschnitte Sri Lankas."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Tor zur Wildnis",
+        "category": "Wildtier",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, oder kurz 'Tissa', dient als Haupttor zum Yala-Nationalpark, dem meistbesuchten Wildschutzgebiet Sri Lankas. \n\nYala ist berühmt für eine der weltweit höchsten Leopardendichten sowie für wilde Elefanten, Lippenbären und Krokodile. Tissa selbst ist eine historische Stadt mit alten künstlichen Seen, die perfekt für Vogelbeobachtungen und Abendspaziergänge sind."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Elefanten-Safari",
+        "category": "Wildtier",
+        "image": "/tours/udawalawa.jpg",
+        "description": "Der Udawalawa-Nationalpark ist der beste Ort in Sri Lanka, um wilde Elefanten in ihrem natürlichen Lebensraum zu beobachten. \n\nDie offenen Ebenen des Parks ähneln einer afrikanischen Savanne, was es einfach macht, massive Elefantenherden zu sichten. Ein Besuch im nahe gelegenen Elephant Transit Home, wo verwaiste Elefantenkälber rehabilitiert und wieder in die Freiheit entlassen werden, ist ein herzerwärmendes Erlebnis für Tierliebhaber."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Lagunenstadt",
+        "category": "Strand",
+        "image": "/tours/negombo.jpg",
+        "description": "Günstig gelegen, nur wenige Minuten vom Flughafen entfernt, ist Negombo eine historische Fischerstadt mit einer reichen kolonialen Vergangenheit. \n\nBekannt für seine weitläufige Lagune und traditionelle Auslegerkanus (Oruvas), bietet Negombo ein lebendiges Fischmarkterlebnis. Der Charme von „Klein-Rom“ zeigt sich in den zahlreichen Kirchen aus der niederländischen Ära und dem friedlichen Kanalsystem, das sich durch die Stadt zieht."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Küsten-Refugium",
+        "category": "Strand",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara ist eine Küstenstadt, berühmt für ihren heiligen Bodhiya – die einzige hohle buddhistische Stupa der Welt. \n\nAn der Mündung des Kalu-Flusses ins Meer gelegen, bietet sie wunderschöne Fluss- und Strandansichten. Kalutara ist auch bekannt für seine traditionelle Korbflechterei und dient als ruhiger Rückzugsort für diejenigen, die dem Trubel von Colombo entfliehen möchten."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Kulturzentrum des Nordens",
+        "category": "Kultur",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna bietet ein einzigartiges kulturelles Erlebnis, das sich vom Rest der Insel unterscheidet. \n\nMit seinen farbenfrohen Hindutempeln wie dem Nallur Kandaswamy Kovil, dem historischen Jaffna Fort und den ruhigen Inseln Delft und Nainativu ist der Norden ein Land der Schönheit und Widerstandsfähigkeit. Entdecken Sie die einzigartige nordindische Küche, erkunden Sie die lebhaften lokalen Märkte und genießen Sie die unberührten Landschaften der Halbinsel Jaffna."
+      }
+    ]
+  },
+  "en": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Colombo Airport",
+        "subtitle": "Airport (CMB)",
+        "category": "City",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "Bandaranaike International Airport (CMB) in Katunayake is the main international gateway to Sri Lanka. Named after the world's first female Prime Minister, Sirimavo Bandaranaike, it is located 35km North of the capital, Colombo. \n\nNote: Our transfer rates cover direct pick-up and drop-off. Optional site visits along the route can be arranged upon request. We offer a special 5% discount for car bookings and 3% for vans. Payments are accepted in LKR or any major foreign currency at the prevailing daily conversion rate."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Capital City",
+        "category": "City",
+        "image": "/tours/colombo.jpg",
+        "description": "As Sri Lanka's vibrant commercial capital, Colombo offers a fascinating blend of colonial history and modern urban lifestyle. \n\nExplore the iconic Lotus Tower, stroll along Galle Face Green at sunset, and visit the historic Dutch Hospital. From luxury shopping malls to the bustling Pettah Market, Colombo provides an unforgettable introduction to the island's diverse culture and heritage."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Hill Capital",
+        "category": "Cultural",
+        "image": "/tours/kandy.jpg",
+        "description": "Nestled amidst lush green hills, Kandy is the spiritual and cultural heart of Sri Lanka. \n\nIt is home to the sacred Temple of the Tooth Relic (Sri Dalada Maligawa), a UNESCO World Heritage site. Visitors can enjoy traditional Kandyan dance performances, walk around the scenic Kandy Lake, and explore the Royal Botanical Gardens in Peradeniya, which features a world-renowned orchid collection."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Historic Coastal City",
+        "category": "Beach",
+        "image": "/tours/galle.jpg",
+        "description": "Galle is a masterpiece of colonial architecture and coastal beauty. The historic Galle Fort, a UNESCO World Heritage site built by the Dutch, is a living monument with narrow streets, boutique shops, and cozy cafes. \n\nThe city perfectly balances its rich history with the stunning beaches of the southern coast, making it a must-visit destination for history buffs and sun-seekers alike."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Scenic Hill Country",
+        "category": "Nature",
+        "image": "/tours/ella.jpg",
+        "description": "Ella is a charming mountain village that has become a paradise for hikers and nature lovers. \n\nIt is famous for the architectural marvel of the Nine Arch Bridge and the breathtaking views from Little Adam's Peak and Ella Rock. Surrounded by emerald-green tea plantations and misty mountains, Ella offers some of the most beautiful hiking trails and train journeys in the world."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "Little England",
+        "category": "Nature",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Known as 'Little England', Nuwara Eliya is famous for its cool climate and British colonial-style bungalows. \n\nThis region is the heart of Sri Lanka's tea industry, where you can visit world-class tea estates and factories. Enjoy a boat ride on Gregory Lake, walk through the beautifully manicured Victoria Park, and experience the misty charm of the highest town in Sri Lanka."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Lion Rock Fortress",
+        "category": "Cultural",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, or the Lion Rock, is a staggering 200-meter high ancient rock fortress that stands as a testament to ancient Sri Lankan engineering and art. \n\nBuilt by King Kashyapa in the 5th century, this UNESCO site features world-famous frescoes, the Mirror Wall, and meticulously planned water gardens. The panoramic view from the summit is one of the most iconic experiences in all of Asia."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Ancient Sacred City",
+        "category": "Cultural",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura was the first capital of ancient Sri Lanka and remains one of the most sacred Buddhist pilgrimage sites in the world. \n\nThe city is home to massive stupas like Ruwanwelisaya and Jetavanaramaya, which were among the tallest structures of the ancient world. You can also visit the Jaya Sri Maha Bodhi, the oldest documented tree in the world, planted over 2,000 years ago."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Medieval Capital",
+        "category": "Cultural",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Step back in time at Polonnaruwa, the second ancient capital of Sri Lanka. \n\nThis medieval city is remarkably well-preserved, featuring the majestic ruins of the Royal Palace and the Gal Vihara, where four magnificent Buddha statues are carved directly into granite rock. The city's advanced irrigation systems, like the Parakrama Samudra, continue to support the region's agriculture today."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Whale Watching Destination",
+        "category": "Beach",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa is a tropical paradise known for its crescent-shaped beach and laid-back atmosphere. \n\nIt is internationally recognized as one of the best locations in the world for whale and dolphin watching. Beyond the ocean adventures, visitors can relax at the famous Coconut Tree Hill for a perfect sunset view or enjoy the vibrant nightlife along the sandy shores."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Coral Beach Town",
+        "category": "Beach",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa is a legendary beach destination famous for its vibrant coral reefs and excellent surfing conditions. \n\nThe Hikkaduwa National Park is a marine sanctuary where you can see colorful fish and sea turtles through glass-bottom boats or while snorkeling. The town is also known for its lively beach festivals, art markets, and a wide variety of seafood restaurants."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "East Coast Paradise",
+        "category": "Beach",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Located on the northeastern coast, Trincomalee boasts one of the world’s finest natural deep-water harbors. \n\nIt is home to the stunning Nilaveli Beach and Pigeon Island, a premier snorkeling spot with crystal-clear waters. Don't miss the Koneswaram Temple, a majestic Hindu shrine perched on a cliff edge (Swami Rock) offering spectacular views of the Indian Ocean."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Shallow Blue Waters",
+        "category": "Beach",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda is renowned for its iconic bay with shallow, turquoise waters that allow you to walk hundreds of meters into the sea. \n\nThis tranquil destination is perfect for families and those seeking luxury relaxation. The calm, reef-protected waters make it ideal for swimming, windsurfing, and water skiing in one of the safest coastal stretches in Sri Lanka."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Wildlife Gateway",
+        "category": "Wildlife",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, or 'Tissa', serves as the primary gateway to Yala National Park, the most visited wildlife sanctuary in Sri Lanka. \n\nYala is famous for having one of the highest leopard densities in the world, along with wild elephants, sloth bears, and crocodiles. Tissa itself is a historic town featuring ancient artificial lakes (tanks) that are perfect for bird watching and evening walks."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Elephant Safari",
+        "category": "Wildlife",
+        "image": "/tours/udawalawa.jpg",
+        "description": "Udawalawa National Park is the best place in Sri Lanka to witness wild elephants in their natural habitat. \n\nThe park's open plains resemble an African savanna, making it easy to spot massive herds of elephants. A visit to the nearby Elephant Transit Home, where orphaned calves are rehabilitated and released back into the wild, is an heartwarming experience for animal lovers."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Lagoon City",
+        "category": "Beach",
+        "image": "/tours/negombo.jpg",
+        "description": "Conveniently located just minutes from the airport, Negombo is a historic fishing town with a rich colonial past. \n\nKnown for its expansive lagoon and traditional outrigger canoes (Oruvas), Negombo offers a vibrant fish market experience. The city's 'Little Rome' charm is seen in its numerous Dutch-era churches and the peaceful canal system that stretches through the town."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Coastal Retreat",
+        "category": "Beach",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara is a coastal town famous for its sacred Bodhiya—the only hollow Buddhist stupa in the world. \n\nPositioned where the Kalu River meets the sea, it offers beautiful river-side and beach-front views. Kalutara is also well-known for its traditional basket weaving industry and serves as a serene retreat for those looking to escape the hustle and bustle of Colombo."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Northern Cultural City",
+        "category": "Cultural",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna offers a unique cultural experience distinct from the rest of the island. \n\nWith its colorful Hindu temples like Nallur Kandaswamy Kovil, historic Jaffna Fort, and the serene islands of Delft and Nainativu, the North is a land of resilience and beauty. Discover the unique northern cuisine, explore the vibrant local markets, and enjoy the untouched landscapes of the Jaffna peninsula."
+      }
+    ]
+  },
+  "es": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Aeropuerto de Colombo",
+        "subtitle": "Aeropuerto (CMB)",
+        "category": "Ciudad",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "El Aeropuerto Internacional Bandaranaike (CMB) en Katunayake es la principal puerta de entrada internacional a Sri Lanka. Nombrado en honor a la primera mujer primera ministra del mundo, Sirimavo Bandaranaike, se encuentra a 35 km al norte de la capital, Colombo. \n\nNota: Nuestras tarifas de traslado cubren la recogida y entrega directa. Se pueden organizar visitas opcionales a sitios a lo largo de la ruta bajo petición. Ofrecemos un descuento especial del 5% para reservas de coches y del 3% para furgonetas. Se aceptan pagos en LKR o cualquier moneda extranjera principal a la tasa de conversión diaria vigente."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Capital Comercial",
+        "category": "Ciudad",
+        "image": "/tours/colombo.jpg",
+        "description": "Como la vibrante capital comercial de Sri Lanka, Colombo ofrece una mezcla fascinante de historia colonial y estilo de vida urbano moderno. \n\nExplore la icónica Lotus Tower, pasee por Galle Face Green al atardecer y visite el histórico Hospital Holandés. Desde centros comerciales de lujo hasta el bullicioso mercado de Pettah, Colombo ofrece una introducción inolvidable a la diversa cultura y patrimonio de la isla."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Capital de las Montañas",
+        "category": "Cultural",
+        "image": "/tours/kandy.jpg",
+        "description": "Ubicada entre exuberantes colinas verdes, Kandy es el corazón espiritual y cultural de Sri Lanka. \n\nEs el hogar del sagrado Templo de la Reliquia del Diente (Sri Dalada Maligawa), un sitio Patrimonio de la Humanidad por la UNESCO. Los visitantes pueden disfrutar de danzas tradicionales de Kandy, caminar alrededor del pintoresco lago de Kandy y explorar el Real Jardín Botánico de Peradeniya, que cuenta con una colección de orquídeas de renombre mundial."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Ciudad Costera Histórica",
+        "category": "Playa",
+        "image": "/tours/galle.jpg",
+        "description": "Galle es una obra maestra de la arquitectura colonial y la belleza costera. El histórico Fuerte de Galle, un sitio Patrimonio de la Humanidad por la UNESCO construido por los holandeses, es un monumento vivo con calles estrechas, tiendas boutique y acogedores cafés. \n\nLa ciudad equilibra perfectamente su rica historia con las impresionantes playas de la costa sur, lo que la convierte en un destino imprescindible tanto para los aficionados a la historia como para los amantes del sol."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Paisajes de Montaña",
+        "category": "Naturaleza",
+        "image": "/tours/ella.jpg",
+        "description": "Ella es un encantador pueblo de montaña que se ha convertido en un paraíso para los senderistas y amantes de la naturaleza. \n\nEs famoso por la maravilla arquitectónica del Puente de los Nueve Arcos y las impresionantes vistas desde Little Adam's Peak y Ella Rock. Rodeado de plantaciones de té de color verde esmeralda y montañas brumosas, Ella ofrece algunas de las rutas de senderismo y viajes en tren más bellos del mundo."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "Pequeña Inglaterra",
+        "category": "Naturaleza",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Conocida como la 'Pequeña Inglaterra', Nuwara Eliya es famosa por su clima fresco y sus bungalows de estilo colonial británico. \n\nEsta región es el corazón de la industria del té de Sri Lanka, donde se pueden visitar fábricas y plantaciones de té de clase mundial. Disfrute de un paseo en bote por el lago Gregory, camine por el hermoso Victoria Park y experimente el encanto brumoso de la ciudad más alta de Sri Lanka."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Fortaleza de la Roca del León",
+        "category": "Cultural",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, o la Roca del León, es una asombrosa fortaleza de roca antigua de 200 metros de altura que se erige como testimonio de la ingeniería y el arte de la antigua Sri Lanka. \n\nConstruida por el rey Kashyapa en el siglo V, este sitio de la UNESCO presenta frescos de fama mundial, el Muro del Espejo y jardines acuáticos meticulosamente planificados. La vista panorámica desde la cima es una de las experiencias más icónicas de toda Asia."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Antigua Ciudad Sagrada",
+        "category": "Cultural",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura fue la primera capital de la antigua Sri Lanka y sigue siendo uno de los lugares de peregrinación budista más sagrados del mundo. \n\nLa ciudad alberga estupas masivas como Ruwanwelisaya y Jetavanaramaya, que estuvieron entre las estructuras más altas del mundo antiguo. También puede visitar el Jaya Sri Maha Bodhi, el árbol documentado más antiguo del mundo, plantado hace más de 2.000 años."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Capital Medieval",
+        "category": "Cultural",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Retroceda en el tiempo en Polonnaruwa, la segunda capital antigua de Sri Lanka. \n\nEsta ciudad medieval está notablemente bien conservada y cuenta con las majestuosas ruinas del Palacio Real y el Gal Vihara, donde se tallaron cuatro magníficas estatuas de Buda directamente en la roca de granito. Los avanzados sistemas de riego de la ciudad, como el Parakrama Samudra, continúan apoyando la agricultura de la región hoy en día."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Avistamiento de Ballenas",
+        "category": "Playa",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa es un paraíso tropical conocido por su playa en forma de media luna y su ambiente relajado. \n\nEs reconocida internacionalmente como uno de los mejores lugares del mundo para el avistamiento de ballenas y delfines. Más allá de las aventuras en el océano, los visitantes pueden relajarse en el famoso Coconut Tree Hill para disfrutar de una puesta de sol perfecta o disfrutar de la vibrante vida nocturna a lo largo de las costas arenosas."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Pueblo de Corales",
+        "category": "Playa",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa es un legendario destino de playa famoso por sus vibrantes arrecifes de coral y excelentes condiciones para el surf. \n\nEl Parque Nacional de Hikkaduwa es un santuario marino donde se pueden ver peces de colores y tortugas marinas a través de botes con fondo de cristal o mientras se practica snorkel. El pueblo también es conocido por sus animados festivales de playa, mercados de arte y una amplia variedad de restaurantes de mariscos."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "Paraíso de la Costa Este",
+        "category": "Playa",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Ubicada en la costa noreste, Trincomalee cuenta con uno de los mejores puertos naturales de aguas profundas del mundo. \n\nEs el hogar de la impresionante playa de Nilaveli y Pigeon Island, un lugar privilegiado para el snorkel con aguas cristalinas. No se pierda el Templo Koneswaram, un majestuoso santuario hindú situado en el borde de un acantilado (Swami Rock) que ofrece vistas espectaculares del Océano Índico."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Aguas Azules Poco Profundas",
+        "category": "Playa",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda es famosa por su icónica bahía con aguas turquesas poco profundas que permiten caminar cientos de metros mar adentro. \n\nEste destino tranquilo es perfecto para familias y aquellos que buscan relajación de lujo. Las aguas tranquilas y protegidas por arrecifes lo hacen ideal para nadar, practicar windsurf y esquí acuático en uno de los tramos costeros más seguros de Sri Lanka."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Puerta a la Vida Silvestre",
+        "category": "Vida Silvestre",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, o 'Tissa', sirve como la puerta de entrada principal al Parque Nacional Yala, el santuario de vida silvestre más visitado de Sri Lanka. \n\nYala es famoso por tener una de las densidades de leopardos más altas del mundo, junto con elefantes salvajes, osos perezosos y cocodrilos. Tissa es una ciudad histórica con antiguos lagos artificiales que son perfectos para la observación de aves y paseos nocturnos."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Safari de Elefantes",
+        "category": "Vida Silvestre",
+        "image": "/tours/udawalawa.jpg",
+        "description": "El Parque Nacional Udawalawa es el mejor lugar en Sri Lanka para observar elefantes salvajes en su hábitat natural. \n\nLas llanuras abiertas del parque se asemejan a una sabana africana, lo que facilita el avistamiento de manadas masivas de elefantes. Una visita al cercano Elephant Transit Home, donde los elefantes huérfanos son rehabilitados y liberados, es una experiencia conmovedora para los amantes de los animales."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Ciudad de la Laguna",
+        "category": "Playa",
+        "image": "/tours/negombo.jpg",
+        "description": "Convenientemente ubicada a pocos minutos del aeropuerto, Negombo es un histórico pueblo pesquero con un rico pasado colonial. \n\nConocida por su extensa laguna y sus canoas tradicionales (Oruvas), Negombo ofrece una vibrante experiencia en el mercado de pescado. El encanto de la 'Pequeña Roma' se ve en sus numerosas iglesias de la época holandesa y el tranquilo sistema de canales que atraviesa el pueblo."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Refugio Costero",
+        "category": "Playa",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara es una ciudad costera famosa por su sagrada Bodhiya, la única estupa budista hueca del mundo. \n\nSituada donde el río Kalu se encuentra con el mar, ofrece hermosas vistas del río y del frente marítimo. Kalutara también es conocida por su industria tradicional de tejido de cestas y sirve como un refugio sereno para aquellos que buscan escapar del ajetreo y el bullicio de Colombo."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Ciudad Cultural del Norte",
+        "category": "Cultural",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna ofrece una experiencia cultural única distinta al resto de la isla. \n\nCon sus coloridos templos hindúes como Nallur Kandaswamy Kovil, el histórico Fuerte de Jaffna y las serenas islas de Delft y Nainativu, el norte es una tierra de resiliencia y belleza. Descubra la cocina única del norte, explore los vibrantes mercados locales y disfrute de los paisajes vírgenes de la península de Jaffna."
+      }
+    ]
+  },
+  "fr": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Aéroport de Colombo",
+        "subtitle": "Aéroport (CMB)",
+        "category": "Ville",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "L'aéroport international Bandaranaike (CMB) à Katunayake est la principale porte d'entrée internationale du Sri Lanka. Nommé d'après la première femme Premier ministre au monde, Sirimavo Bandaranaike, il est situé à 35 km au nord de la capitale, Colombo. \n\nNote : Nos tarifs de transfert couvrent la prise en charge et le dépôt directs. Des visites optionnelles sur la route peuvent être organisées sur demande. Nous offrons une remise spéciale de 5 % pour les réservations de voitures et de 3 % pour les vans. Les paiements sont acceptés en LKR ou dans toute devise étrangère majeure au taux de conversion quotidien en vigueur."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Capitale Commerciale",
+        "category": "Ville",
+        "image": "/tours/colombo.jpg",
+        "description": "En tant que capitale commerciale dynamique du Sri Lanka, Colombo offre un mélange fascinant d'histoire coloniale et de mode de vie urbain moderne. \n\nExplorez l'emblématique Tour du Lotus, promenez-vous sur Galle Face Green au coucher du soleil et visitez l'ancien hôpital hollandais historique. Des centres commerciaux de luxe au marché animé de Pettah, Colombo offre une introduction inoubliable à la culture et au patrimoine diversifiés de l'île."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Capitale des Collines",
+        "category": "Culturel",
+        "image": "/tours/kandy.jpg",
+        "description": "Nichée au milieu de collines verdoyantes, Kandy est le cœur spirituel et culturel du Sri Lanka. \n\nElle abrite le temple sacré de la Dent (Sri Dalada Maligawa), un site classé au patrimoine mondial de l'UNESCO. Les visiteurs peuvent apprécier les spectacles de danse traditionnelle de Kandy, se promener autour du lac pittoresque et explorer les jardins botaniques royaux de Peradeniya, qui possèdent une collection d'orchidées de renommée mondiale."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Ville Côtière Historique",
+        "category": "Plage",
+        "image": "/tours/galle.jpg",
+        "description": "Galle est un chef-d'œuvre d'architecture coloniale et de beauté côtière. Le fort historique de Galle, site classé à l'UNESCO et construit par les Hollandais, est un monument vivant avec ses rues étroites, ses boutiques de créateurs et ses cafés accueillants. \n\nLa ville équilibre parfaitement son histoire riche avec les superbes plages de la côte sud, ce qui en fait une destination incontournable pour les passionnés d'histoire et les amateurs de soleil."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Paysages de Montagne",
+        "category": "Nature",
+        "image": "/tours/ella.jpg",
+        "description": "Ella est un charmant village de montagne devenu un paradis pour les randonneurs et les amoureux de la nature. \n\nElle est célèbre pour la merveille architecturale du Pont aux Neuf Arches et les vues imprenables depuis le Petit Pic d'Adam et Ella Rock. Entourée de plantations de thé vert émeraude et de montagnes brumeuses, Ella propose certains des plus beaux sentiers de randonnée et trajets en train au monde."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "La Petite Angleterre",
+        "category": "Nature",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Surnommée la 'Petite Angleterre', Nuwara Eliya est célèbre pour son climat frais et ses bungalows de style colonial britannique. \n\nCette région est le cœur de l'industrie du thé du Sri Lanka, où vous pouvez visiter des domaines et des usines de classe mondiale. Profitez d'une promenade en bateau sur le lac Gregory, promenez-vous dans le parc Victoria magnifiquement entretenu et découvrez le charme brumeux de la ville la plus haute du Sri Lanka."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Forteresse du Rocher du Lion",
+        "category": "Culturel",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, ou le Rocher du Lion, est une forteresse rocheuse antique de 200 mètres de haut, témoin du génie de l'ingénierie et de l'art sri-lankais ancien. \n\nConstruit par le roi Kashyapa au Ve siècle, ce site de l'UNESCO présente des fresques de renommée mondiale, le mur du miroir et des jardins aquatiques méticuleusement planifiés. La vue panoramique depuis le sommet est l'une des expériences les plus emblématiques de toute l'Asie."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Ancienne Ville Sacrée",
+        "category": "Culturel",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura fut la première capitale de l'ancien Sri Lanka et reste l'un des sites de pèlerinage bouddhiste les plus sacrés au monde. \n\nLa ville abrite des stoupas massifs comme Ruwanwelisaya et Jetavanaramaya, qui comptaient parmi les plus hautes structures du monde antique. Vous pouvez également visiter le Jaya Sri Maha Bodhi, le plus vieil arbre documenté au monde, planté il y a plus de 2 000 ans."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Capitale Médiévale",
+        "category": "Culturel",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Remontez le temps à Polonnaruwa, la deuxième capitale ancienne du Sri Lanka. \n\nCette ville médiévale est remarquablement bien préservée et présente les ruines majestueuses du palais royal et du Gal Vihara, où quatre magnifiques statues de Bouddha sont sculptées directement dans la roche de granit. Les systèmes d'irrigation avancés de la ville continuent de soutenir l'agriculture de la région aujourd'hui."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Observation des Baleines",
+        "category": "Plage",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa est un paradis tropical connu pour sa plage en forme de croissant et son atmosphère décontractée. \n\nElle est internationalement reconnue comme l'un des meilleurs endroits au monde pour l'observation des baleines et des dauphins. Au-delà des aventures océaniques, les visiteurs peuvent se détendre à Coconut Tree Hill pour un coucher de soleil parfait ou profiter de la vie nocturne animée le long des rivages sablonneux."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Ville de Corail",
+        "category": "Plage",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa est une destination balnéaire légendaire célèbre pour ses récifs coralliens vibrants et ses excellentes conditions de surf. \n\nLe parc national de Hikkaduwa est un sanctuaire marin où vous pouvez voir des poissons colorés et des tortues de mer à travers des bateaux à fond de verre ou en faisant de la plongée avec tuba. La ville est également connue pour ses festivals de plage, ses marchés d'art et sa grande variété de restaurants de fruits de mer."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "Paradis de la Côte Est",
+        "category": "Plage",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Située sur la côte nord-est, Trincomalee possède l'un des plus beaux ports naturels en eau profonde au monde. \n\nElle abrite la superbe plage de Nilaveli et l'île Pigeon, un site de plongée de premier ordre avec des eaux cristallines. Ne manquez pas le temple Koneswaram, un sanctuaire hindou majestueux perché au bord d'une falaise (Swami Rock) offrant une vue spectaculaire sur l'océan Indien."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Eaux Bleues Peu Profondes",
+        "category": "Plage",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda est réputée pour sa baie emblématique aux eaux turquoise peu profondes qui permettent de marcher sur des centaines de mètres dans la mer. \n\nCette destination tranquille est parfaite pour les familles et ceux qui recherchent une détente de luxe. Les eaux calmes, protégées par les récifs, sont idéales pour la baignade, la planche à voile et le ski nautique dans l'une des zones côtières les plus sûres du Sri Lanka."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Porte de la Vie Sauvage",
+        "category": "Vie Sauvage",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, ou 'Tissa', sert de porte d'entrée principale au parc national de Yala, le sanctuaire de vie sauvage le plus visité du Sri Lanka. \n\nYala est célèbre pour avoir l'une des densités de léopards les plus élevées au monde, ainsi que des éléphants sauvages, des ours lippus et des crocodiles. Tissa elle-même est une ville historique avec d'anciens lacs artificiels parfaits pour l'observation des oiseaux."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Safari aux Éléphants",
+        "category": "Vie Sauvage",
+        "image": "/tours/udawalawa.jpg",
+        "description": "Le parc national d'Udawalawa est le meilleur endroit au Sri Lanka pour observer les éléphants sauvages dans leur habitat naturel. \n\nLes plaines ouvertes du parc ressemblent à une savane africaine, ce qui permet d'apercevoir facilement d'immenses troupeaux d'éléphants. Une visite à l'Elephant Transit Home, où les éléphanteaux orphelins sont réhabilités avant d'être relâchés, est une expérience émouvante pour les amoureux des animaux."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Ville Lagunaire",
+        "category": "Plage",
+        "image": "/tours/negombo.jpg",
+        "description": "Idéalement situé à quelques minutes de l'aéroport, Negombo est une ville de pêche historique avec un riche passé colonial. \n\nConnue pour sa vaste lagune et ses pirogues traditionnelles (Oruvas), Negombo offre une expérience vibrante au marché aux poissons. Le charme de la 'Petite Rome' se reflète dans ses nombreuses églises de l'époque hollandaise et son système de canaux paisibles."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Retraite Côtière",
+        "category": "Plage",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara est une ville côtière célèbre pour son Bodhiya sacré — le seul stoupa bouddhiste creux au monde. \n\nSituée là où la rivière Kalu rencontre la mer, elle offre de magnifiques vues sur la rivière et le front de mer. Kalutara est également réputée pour son industrie traditionnelle de vannerie et constitue une retraite sereine pour ceux qui cherchent à échapper à l'agitation de Colombo."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Cité Culturelle du Nord",
+        "category": "Culturel",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna offre une expérience culturelle unique, distincte du reste de l'île. \n\nAvec ses temples hindous colorés comme Nallur Kandaswamy Kovil, le fort historique de Jaffna et les îles sereines de Delft et Nainativu, le Nord est une terre de résilience et de beauté. Découvrez la cuisine unique du nord, explorez les marchés locaux animés et profitez des paysages préservés de la péninsule de Jaffna."
+      }
+    ]
+  },
+  "hi": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "कोलंबो एयरपोर्ट",
+        "subtitle": "हवाई अड्डा (CMB)",
+        "category": "शहर",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "कटुनायके में स्थित भंडारनायके अंतरराष्ट्रीय हवाई अड्डा (CMB) श्रीलंका का मुख्य अंतरराष्ट्रीय प्रवेश द्वार है। दुनिया की पहली महिला प्रधानमंत्री सिरीमावो भंडारनायके के नाम पर बना यह हवाई अड्डा राजधानी कोलंबो से 35 किमी उत्तर में स्थित है। \n\nनोट: हमारी ट्रांसफर दरों में सीधे पिक-अप और ड्रॉप-ऑफ शामिल है। अनुरोध पर रास्ते में आने वाले पर्यटन स्थलों का भ्रमण भी व्यवस्थित किया जा सकता है। हम कार बुकिंग पर 5% और वैन पर 3% की विशेष छूट प्रदान करते हैं। भुगतान श्रीलंकाई रुपये (LKR) या दैनिक विनिमय दर के अनुसार किसी भी प्रमुख विदेशी मुद्रा में स्वीकार किए जाते हैं।"
+      },
+      {
+        "id": "colombo",
+        "title": "कोलंबो",
+        "subtitle": "व्यापारिक राजधानी",
+        "category": "शहर",
+        "image": "/tours/colombo.jpg",
+        "description": "श्रीलंका की जीवंत व्यापारिक राजधानी के रूप में, कोलंबो औपनिवेशिक इतिहास और आधुनिक शहरी जीवन शैली का एक शानदार मिश्रण पेश करता है। \n\nप्रसिद्ध लोटस टॉवर देखें, सूर्यास्त के समय गॉल फेस ग्रीन पर टहलें और ऐतिहासिक डच अस्पताल का दौरा करें। लक्जरी शॉपिंग मॉल से लेकर व्यस्त पेट्टाह बाजार तक, कोलंबो द्वीप की विविध संस्कृति और विरासत का एक यादगार अनुभव प्रदान करता है।"
+      },
+      {
+        "id": "kandy",
+        "title": "कैंडी",
+        "subtitle": "पहाड़ी राजधानी",
+        "category": "सांस्कृतिक",
+        "image": "/tours/kandy.jpg",
+        "description": "हरे-भरे पहाड़ों के बीच बसा कैंडी श्रीलंका का आध्यात्मिक और सांस्कृतिक केंद्र है। \n\nयह पवित्र दंत अवशेष मंदिर (श्री दलदा मालिगावा) का घर है, जो यूनेस्को की विश्व धरोहर स्थल है। पर्यटक पारंपरिक केंडियन नृत्य प्रदर्शन का आनंद ले सकते हैं, सुंदर कैंडी झील के चारों ओर टहल सकते हैं और पेराडेनिया में रॉयल बॉटनिकल गार्डन देख सकते हैं, जिसमें विश्व प्रसिद्ध ऑर्किड संग्रह है।"
+      },
+      {
+        "id": "galle",
+        "title": "गॉल",
+        "subtitle": "ऐतिहासिक तटीय शहर",
+        "category": "समुद्र तट",
+        "image": "/tours/galle.jpg",
+        "description": "गॉल औपनिवेशिक वास्तुकला और तटीय सुंदरता का एक बेहतरीन उदाहरण है। डचों द्वारा निर्मित ऐतिहासिक गॉल किला एक यूनेस्को विश्व धरोहर स्थल है, जो अपनी संकरी गलियों, बुटीक दुकानों और आरामदायक कैफे के साथ एक जीवित स्मारक है। \n\nयह शहर अपने समृद्ध इतिहास और दक्षिणी तट के शानदार समुद्र तटों के बीच एक आदर्श संतुलन बनाता है, जो इसे इतिहास प्रेमियों और समुद्र किनारे घूमने वालों के लिए एक अनिवार्य गंतव्य बनाता है।"
+      },
+      {
+        "id": "ella",
+        "title": "एला",
+        "subtitle": "सुरम्य पहाड़ी इलाका",
+        "category": "प्रकृति",
+        "image": "/tours/ella.jpg",
+        "description": "एला एक आकर्षक पहाड़ी गाँव है जो पैदल यात्रियों (hikers) और प्रकृति प्रेमियों के लिए स्वर्ग बन गया है। \n\nयह 'नाइन आर्च ब्रिज' के वास्तुशिल्प चमत्कार और लिटिल एडम्स पीक और एला रॉक से लुभावने दृश्यों के लिए प्रसिद्ध है। पन्ने जैसे हरे चाय के बागानों और धुंधले पहाड़ों से घिरा एला दुनिया के कुछ सबसे खूबसूरत लंबी पैदल यात्रा मार्ग और ट्रेन यात्रा का अनुभव प्रदान करता है।"
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "नुवारा एलिया",
+        "subtitle": "लिटिल इंग्लैंड",
+        "category": "प्रकृति",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "'लिटिल इंग्लैंड' के रूप में जाना जाने वाला नुवारा एलिया अपनी ठंडी जलवायु और ब्रिटिश औपनिवेशिक शैली के बंगलों के लिए प्रसिद्ध है। \n\nयह क्षेत्र श्रीलंका के चाय उद्योग का केंद्र है, जहाँ आप विश्व स्तरीय चाय बागानों और कारखानों का दौरा कर सकते हैं। ग्रेगोरी झील में नाव की सवारी का आनंद लें, खूबसूरती से सजाए गए विक्टोरिया पार्क में टहलें और श्रीलंका के सबसे ऊंचे शहर के धुंधले आकर्षण का अनुभव करें।"
+      },
+      {
+        "id": "sigiriya",
+        "title": "सिगिरिया",
+        "subtitle": "लायन रॉक किला",
+        "category": "सांस्कृतिक",
+        "image": "/tours/sigiriya.jpg",
+        "description": "सिगिरिया, या लायन रॉक, 200 मीटर ऊंचा एक प्राचीन चट्टानी किला है जो प्राचीन श्रीलंकाई इंजीनियरिंग और कला का प्रमाण है। \n\n5वीं शताब्दी में राजा कश्यप द्वारा निर्मित यह यूनेस्को स्थल अपने विश्व प्रसिद्ध भित्ति चित्रों (frescoes), मिरर वॉल और सावधानीपूर्वक नियोजित जल उद्यानों के लिए जाना जाता है। इसकी चोटी से दिखने वाला नज़ारा पूरे एशिया के सबसे यादगार अनुभवों में से एक है।"
+      },
+      {
+        "id": "anuradhapura",
+        "title": "अनुराधापुरा",
+        "subtitle": "प्राचीन पवित्र शहर",
+        "category": "सांस्कृतिक",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "अनुराधापुरा प्राचीन श्रीलंका की पहली राजधानी थी और आज भी दुनिया के सबसे पवित्र बौद्ध तीर्थ स्थलों में से एक है। \n\nयह शहर रुवनवेलिसया और जेतवनारामया जैसे विशाल स्तूपों का घर है, जो प्राचीन दुनिया की सबसे ऊंची संरचनाओं में से थे। आप 'जया श्री महा बोधि' के दर्शन भी कर सकते हैं, जो दुनिया का सबसे पुराना प्रलेखित पेड़ है, जिसे 2,000 साल पहले लगाया गया था।"
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "पोलोन्नरुवा",
+        "subtitle": "मध्ययुगीन राजधानी",
+        "category": "सांस्कृतिक",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "श्रीलंका की दूसरी प्राचीन राजधानी पोलोन्नरुवा में समय के पीछे कदम रखें। \n\nयह मध्ययुगीन शहर बहुत अच्छी तरह से संरक्षित है, जिसमें शाही महल के राजसी अवशेष और 'गल विहार' शामिल है, जहाँ ग्रेनाइट चट्टान में बुद्ध की चार भव्य मूर्तियाँ तराशी गई हैं। शहर की उन्नत सिंचाई प्रणाली, जैसे पराक्रम समुद्र, आज भी इस क्षेत्र की कृषि में सहायक है।"
+      },
+      {
+        "id": "mirissa",
+        "title": "मिरिसा",
+        "subtitle": "व्हेल वाचिंग गंतव्य",
+        "category": "समुद्र तट",
+        "image": "/tours/mirissa.jpg",
+        "description": "मिरिसा एक उष्णकटिबंधीय स्वर्ग है जो अपने अर्धचंद्राकार समुद्र तट और शांत वातावरण के लिए जाना जाता है। \n\nइसे अंतरराष्ट्रीय स्तर पर व्हेल और डॉल्फिन देखने के लिए दुनिया के सबसे अच्छे स्थानों में से एक माना जाता है। समुद्री रोमांच के अलावा, पर्यटक सूर्यास्त के शानदार नज़ारे के लिए प्रसिद्ध 'कोकोनट ट्री हिल' पर आराम कर सकते हैं या रेतीले किनारों पर जीवंत नाइटलाइफ़ का आनंद ले सकते हैं।"
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "हिक्काडुवा",
+        "subtitle": "कोरल बीच टाउन",
+        "category": "समुद्र तट",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "हिक्काडुवा एक प्रसिद्ध समुद्र तट गंतव्य है जो अपने जीवंत कोरल रीफ (मूंगा चट्टानों) और सर्फिंग के लिए प्रसिद्ध है। \n\nहिक्काडुवा नेशनल पार्क एक समुद्री अभयारण्य है जहाँ आप कांच के तल वाली नावों या स्नॉर्कलिंग के माध्यम से रंगीन मछलियाँ और समुद्री कछुए देख सकते हैं। यह शहर अपने बीच फेस्टिवल, आर्ट मार्केट और समुद्री भोजन (seafood) के लिए भी जाना जाता है।"
+      },
+      {
+        "id": "trincomalee",
+        "title": "त्रिंकोमाली",
+        "subtitle": "पूर्वी तट का स्वर्ग",
+        "category": "समुद्र तट",
+        "image": "/tours/trincomalee.jpg",
+        "description": "उत्तर-पूर्वी तट पर स्थित त्रिंकोमाली में दुनिया के बेहतरीन प्राकृतिक गहरे पानी के बंदरगाहों में से एक है। \n\nयह शानदार नीलावेली बीच और पिजन आइलैंड का घर है, जो अपने साफ नीले पानी के साथ स्नॉर्कलिंग के लिए एक प्रमुख स्थान है। कोनेश्वरम मंदिर देखना न भूलें, जो एक चट्टान के किनारे (स्वामी रॉक) पर स्थित एक राजसी हिंदू मंदिर है, जहाँ से हिंद महासागर का अद्भुत दृश्य दिखता है।"
+      },
+      {
+        "id": "pasikuda",
+        "title": "पासिकुडा",
+        "subtitle": "उथला नीला पानी",
+        "category": "समुद्र तट",
+        "image": "/tours/pasikuda.jpg",
+        "description": "पासिकुडा अपनी प्रसिद्ध खाड़ी और उथले नीले पानी के लिए जाना जाता है, जहाँ आप समुद्र में सैकड़ों मीटर पैदल चल सकते हैं। \n\nयह शांत स्थान परिवारों और आराम चाहने वालों के लिए एकदम सही है। यहाँ का शांत पानी तैराकी, विंडसर्फिंग और वॉटर स्कीइंग के लिए श्रीलंका के सबसे सुरक्षित तटीय क्षेत्रों में से एक माना जाता है।"
+      },
+      {
+        "id": "tissamaharama",
+        "title": "तिस्सामहारामा (याला)",
+        "subtitle": "वन्यजीव प्रवेश द्वार",
+        "category": "वन्यजीव",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "तिस्सामहारामा, या 'तिस्सा', याला नेशनल पार्क का मुख्य प्रवेश द्वार है, जो श्रीलंका का सबसे लोकप्रिय वन्यजीव अभयारण्य है। \n\nयाला दुनिया में तेंदुओं (leopards) के उच्चतम घनत्व के साथ-साथ जंगली हाथियों, भालू और मगरमच्छों के लिए प्रसिद्ध है। तिस्सा स्वयं एक ऐतिहासिक शहर है जिसमें प्राचीन कृत्रिम झीलें हैं जो पक्षियों को देखने और शाम की सैर के लिए बेहतरीन हैं।"
+      },
+      {
+        "id": "udawalawa",
+        "title": "उदावालावे",
+        "subtitle": "हाथी सफारी",
+        "category": "वन्यजीव",
+        "image": "/tours/udawalawa.jpg",
+        "description": "जंगली हाथियों को उनके प्राकृतिक आवास में देखने के लिए उदावालावे नेशनल पार्क श्रीलंका का सबसे अच्छा स्थान है। \n\nपार्क के खुले मैदान अफ्रीकी सवाना की याद दिलाते हैं, जिससे हाथियों के झुंड को देखना आसान हो जाता है। पास के 'एलिफेंट ट्रांजिट होम' का दौरा करना एक सुखद अनुभव है, जहाँ अनाथ हाथियों के बच्चों की देखभाल की जाती है और उन्हें वापस जंगल में छोड़ा जाता है।"
+      },
+      {
+        "id": "negombo",
+        "title": "नेगोंबो",
+        "subtitle": "लैगून सिटी",
+        "category": "समुद्र तट",
+        "image": "/tours/negombo.jpg",
+        "description": "हवाई अड्डे से कुछ ही मिनटों की दूरी पर स्थित नेगोंबो एक समृद्ध औपनिवेशिक अतीत वाला ऐतिहासिक मछली पकड़ने वाला शहर है। \n\nअपने विशाल लैगून और पारंपरिक नावों (Oruvas) के लिए प्रसिद्ध नेगोंबो में आपको मछली बाजार का जीवंत अनुभव मिलता है। शहर का 'लिटिल रोम' आकर्षण इसके डच काल के चर्चों और शांतिपूर्ण नहर प्रणाली में देखा जा सकता है।"
+      },
+      {
+        "id": "kalutara",
+        "title": "कलुतरा",
+        "subtitle": "तटीय विश्राम स्थल",
+        "category": "समुद्र तट",
+        "image": "/tours/kalutara.jpg",
+        "description": "कलुतरा एक तटीय शहर है जो अपने पवित्र 'कलुतरा बोधिया' के लिए प्रसिद्ध है - यह दुनिया का एकमात्र खोखला बौद्ध स्तूप है। \n\nजहाँ कलु नदी समुद्र से मिलती है, वहां स्थित यह शहर नदी और समुद्र के सुंदर दृश्य पेश करता है। कलुतरा पारंपरिक टोकरी बुनाई उद्योग के लिए भी जाना जाता है और कोलंबो की भीड़भाड़ से दूर एक शांत विश्राम स्थल के रूप में काम करता है।"
+      },
+      {
+        "id": "jaffna",
+        "title": "जाफना",
+        "subtitle": "उत्तरी सांस्कृतिक शहर",
+        "category": "सांस्कृतिक",
+        "image": "/tours/jaffna.jpg",
+        "description": "जाफना द्वीप के बाकी हिस्सों से अलग एक अनूठा सांस्कृतिक अनुभव प्रदान करता है। \n\nनल्लूर कंदास्वामी कोविल जैसे रंगीन हिंदू मंदिरों, ऐतिहासिक जाफना किले और डेल्फ़्ट और नैनातिवु जैसे शांत द्वीपों के साथ, उत्तर की भूमि सुंदरता से भरी है। यहाँ के अनोखे व्यंजनों का स्वाद लें, स्थानीय बाजारों को देखें और जाफना प्रायद्वीप के अछूते परिदृश्यों का आनंद लें।"
+      }
+    ]
+  },
+  "it": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Aeroporto di Colombo",
+        "subtitle": "Aeroporto (CMB)",
+        "category": "Città",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "L'Aeroporto Internazionale Bandaranaike (CMB) a Katunayake è la principale porta d'accesso internazionale per lo Sri Lanka. Prende il nome dalla prima donna Primo Ministro al mondo, Sirimavo Bandaranaike, e si trova a 35 km a nord della capitale, Colombo. \n\nNota: Le nostre tariffe di trasferimento coprono il prelievo e la riconsegna diretti. Visite facoltative ai siti lungo il percorso possono essere organizzate su richiesta. Offriamo uno sconto speciale del 5% per prenotazioni di auto e del 3% per i furgoni. I pagamenti sono accettati in LKR o in qualsiasi valuta estera principale al tasso di conversione giornaliero corrente."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Capitale Commerciale",
+        "category": "Città",
+        "image": "/tours/colombo.jpg",
+        "description": "Essendo la vibrante capitale commerciale dello Sri Lanka, Colombo offre un affascinante mix di storia coloniale e moderno stile di vita urbano. \n\nEsplora l'iconica Lotus Tower, passeggia lungo Galle Face Green al tramonto e visita lo storico Dutch Hospital. Dai centri commerciali di lusso al vivace mercato di Pettah, Colombo offre un'introduzione indimenticabile alla variegata cultura e al patrimonio dell'isola."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Capitale delle Colline",
+        "category": "Culturale",
+        "image": "/tours/kandy.jpg",
+        "description": "Immersa tra rigogliose colline verdi, Kandy è il cuore spirituale e culturale dello Sri Lanka. \n\nOspita il sacro Tempio del dente (Sri Dalada Maligawa), sito patrimonio mondiale dell'UNESCO. I visitatori possono assistere a spettacoli di danza tradizionale kandyana, camminare intorno al pittoresco lago di Kandy ed esplorare i Giardini botanici reali di Peradeniya, che vantano una collezione di orchidee di fama mondiale."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Città Costiera Storica",
+        "category": "Spiaggia",
+        "image": "/tours/galle.jpg",
+        "description": "Galle è un capolavoro di architettura coloniale e bellezza costiera. Lo storico Forte di Galle, sito patrimonio mondiale dell'UNESCO costruito dagli olandesi, è un monumento vivente con strade strette, boutique esclusive e caffè accoglienti. \n\nLa città bilancia perfettamente la sua ricca storia con le splendide spiagge della costa meridionale, rendendola una destinazione imperdibile sia per gli appassionati di storia che per chi cerca il sole."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Paesaggi Montani Panoramici",
+        "category": "Natura",
+        "image": "/tours/ella.jpg",
+        "description": "Ella è un incantevole villaggio di montagna diventato un paradiso per escursionisti e amanti della natura. \n\nÈ famosa per la meraviglia architettonica del Nine Arch Bridge e per le viste mozzafiato dal Little Adam's Peak e da Ella Rock. Circondata da piantagioni di tè verde smeraldo e montagne nebbiose, Ella offre alcuni dei sentieri escursionistici e dei viaggi in treno più belli del mondo."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "Piccola Inghilterra",
+        "category": "Natura",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Conosciuta come 'Piccola Inghilterra', Nuwara Eliya è famosa per il suo clima fresco e i suoi bungalow in stile coloniale britannico. \n\nQuesta regione è il cuore dell'industria del tè dello Sri Lanka, dove è possibile visitare tenute e fabbriche di tè di classe mondiale. Goditi un giro in barca sul lago Gregory, cammina attraverso il Victoria Park splendidamente curato e scopri il fascino nebbioso della città più alta dello Sri Lanka."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Fortezza della Roccia del Leone",
+        "category": "Culturale",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, o la Roccia del Leone, è una sbalorditiva antica fortezza rocciosa alta 200 metri che testimonia l'antica ingegneria e arte dello Sri Lanka. \n\nCostruito dal re Kashyapa nel V secolo, questo sito UNESCO presenta affreschi famosi in tutto il mondo, il Muro dello Specchio e giardini acquatici meticolosamente pianificati. La vista panoramica dalla cima è una delle esperienze più iconiche di tutta l'Asia."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Antica Città Sacra",
+        "category": "Culturale",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura è stata la prima capitale dell'antico Sri Lanka e rimane uno dei siti di pellegrinaggio buddisti più sacri al mondo. \n\nLa città ospita massicci stupa come Ruwanwelisaya e Jetavanaramaya, che erano tra le strutture più alte del mondo antico. Puoi anche visitare lo Jaya Sri Maha Bodhi, l'albero documentato più antico del mondo, piantato oltre 2.000 anni fa."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Capitale Medievale",
+        "category": "Culturale",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Fai un salto indietro nel tempo a Polonnaruwa, la seconda antica capitale dello Sri Lanka. \n\nQuesta città medievale è notevolmente ben conservata e presenta le maestose rovine del Palazzo Reale e il Gal Vihara, dove quattro magnifiche statue di Buddha sono scolpite direttamente nella roccia di granito. Gli avanzati sistemi di irrigazione della città, come il Parakrama Samudra, continuano a sostenere l'agricoltura della regione oggi."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Destinazione per l'Avvistamento Balene",
+        "category": "Spiaggia",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa è un paradiso tropicale noto per la sua spiaggia a forma di mezzaluna e la sua atmosfera rilassata. \n\nÈ riconosciuta a livello internazionale come una delle migliori località al mondo per l'avvistamento di balene e delfini. Oltre alle avventure oceaniche, i visitatori possono rilassarsi alla famosa Coconut Tree Hill per una perfetta vista del tramonto o godersi la vivace vita notturna lungo le rive sabbiose."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Città corallina",
+        "category": "Spiaggia",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa è una leggendaria destinazione balneare famosa per le sue vivaci barriere coralline e le eccellenti condizioni per il surf. \n\nIl Parco Nazionale di Hikkaduwa è un santuario marino dove è possibile vedere pesci colorati e tartarughe marine attraverso barche dal fondo di vetro o facendo snorkeling. La città è anche nota per i suoi vivaci festival sulla spiaggia, i mercati d'arte e una grande varietà di ristoranti di pesce."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "Paradiso della Costa Orientale",
+        "category": "Spiaggia",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Situata sulla costa nord-orientale, Trincomalee vanta uno dei più bei porti naturali in acque profonde del mondo. \n\nOspita la splendida spiaggia di Nilaveli e Pigeon Island, un luogo privilegiato per lo snorkeling con acque cristalline. Non perdere il tempio di Koneswaram, un maestoso santuario indù arroccato sul bordo di una scogliera (Swami Rock) che offre viste spettacolari sull'Oceano Indiano."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Acque Azzurre Poco Profonde",
+        "category": "Spiaggia",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda è rinomata per la sua iconica baia con acque turchesi poco profonde che permettono di camminare per centinaia di metri nel mare. \n\nQuesta destinazione tranquilla è perfetta per le famiglie e per chi cerca un relax di lusso. Le acque calme, protette dalla barriera corallina, la rendono ideale per il nuoto, il windsurf e lo sci nautico in uno dei tratti costieri più sicuri dello Sri Lanka."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Porta della Fauna Selvatica",
+        "category": "Fauna selvatica",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, o 'Tissa', funge da porta d'accesso principale al Parco Nazionale di Yala, il santuario della fauna selvatica più visitato dello Sri Lanka. \n\nYala è famosa per avere una delle più alte densità di leopardi al mondo, insieme a elefanti selvatici, orsi labiati e coccodrilli. Tissa stessa è una città storica con antichi laghi artificiali perfetti per il birdwatching e le passeggiate serali."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Safari con gli Elefanti",
+        "category": "Fauna selvatica",
+        "image": "/tours/udawalawa.jpg",
+        "description": "Il Parco Nazionale di Udawalawa è il posto migliore in Sri Lanka per osservare gli elefanti selvatici nel loro habitat naturale. \n\nLe pianure aperte del parco ricordano una savana africana, facilitando l'avvistamento di massicci branchi di elefanti. Una visita alla vicina Elephant Transit Home, dove i piccoli di elefante orfani vengono riabilitati e rilasciati in natura, è un'esperienza commovente per gli amanti degli animali."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Città della Laguna",
+        "category": "Spiaggia",
+        "image": "/tours/negombo.jpg",
+        "description": "Situata a pochi minuti dall'aeroporto, Negombo è una storica città di pescatori con un ricco passato coloniale. \n\nNota per la sua vasta laguna e le tradizionali canoe a bilanciere (Oruvas), Negombo offre un'esperienza vibrante nel mercato del pesce. Il fascino di 'Piccola Roma' è visibile nelle sue numerose chiese dell'era olandese e nel tranquillo sistema di canali che attraversa la città."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Rifugio Costiero",
+        "category": "Spiaggia",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara è una città costiera famosa per il suo sacro Bodhiya, l'unico stupa buddista vuoto al mondo. \n\nPosizionata dove il fiume Kalu incontra il mare, offre splendide viste sul fiume e sulla spiaggia. Kalutara è anche nota per la sua industria tradizionale di tessitura di cesti e funge da rifugio sereno per coloro che cercano di fuggire dal trambusto di Colombo."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Città Culturale del Nord",
+        "category": "Culturale",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna offre un'esperienza culturale unica, distinta dal resto dell'isola. \n\nCon i suoi colorati templi indù come il Nallur Kandaswamy Kovil, lo storico Forte di Jaffna e le tranquille isole di Delft e Nainativu, il Nord è una terra di bellezza e resilienza. Scopri la cucina unica del nord, esplora i vivaci mercati locali e goditi i paesaggi incontaminati della penisola di Jaffna."
+      }
+    ]
+  },
+  "ja": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "コロンボ空港",
+        "subtitle": "バンダラナイケ国際空港 (CMB)",
+        "category": "都市",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "カトゥナーයකにあるバンダラナイケ国際空港（CMB）は、スリランカへの主要な国際的玄関口です。世界初の女性首相シリマヴォ・バンダラナイケにちなんで名付けられ、首都コロンボから北へ35kmの場所に位置しています。\n\n注：当社の送迎料金は、直接の送迎を対象としています。ご要望に応じて、ルート沿いの観光スポットへの立ち寄りも可能です。乗用車のご予約で5％、バンで3％の特別割引を提供しています。お支払いはスリランカルピー（LKR）、または当日の為替レートに基づいた主要外貨で承ります。"
+      },
+      {
+        "id": "colombo",
+        "title": "コロンボ",
+        "subtitle": "商業首都",
+        "category": "都市",
+        "image": "/tours/colombo.jpg",
+        "description": "スリランカの活気ある商業首都コロンボは、植民地時代の歴史と現代の都市ライフスタイルが魅力的に融合した街です。\n\n象徴的なロータス・タワーを探索し、夕暮れ時にはゴール・フェイス・グリーンを散策し、歴史的なダッチ・ホスピタルを訪れてみてください。豪華なショッピングモールから賑やかなペター市場まで、コロンボはこの島の多様な文化と遺産への忘れられない入り口となるでしょう。"
+      },
+      {
+        "id": "kandy",
+        "title": "キャンディ",
+        "subtitle": "高原の都",
+        "category": "文化",
+        "image": "/tours/kandy.jpg",
+        "description": "緑豊かな丘陵地帯に抱かれたキャンディは、スリランカの精神的・文化的な中心地です。\n\nユネスコ世界遺産である聖仏歯寺（ダラダー・マーリガーワ寺院）があることで知られています。伝統的なキャンディアン・ダンスの鑑賞や、風光明媚なキャンディ湖の散策、そして世界的に有名なラン園があるペラーデニヤ王立植物園の探索など、見どころが満載です。"
+      },
+      {
+        "id": "galle",
+        "title": "ガレ",
+        "subtitle": "歴史ある港町",
+        "category": "ビーチ",
+        "image": "/tours/galle.jpg",
+        "description": "ガレは植民地時代の建築と海岸の美しさが融合した傑作です。オランダ人によって築かれたユネスコ世界遺産のガレ砦は、狭い路地、ブティック、居心地の良いカフェが並ぶ「生きている記念碑」です。\n\n豊かな歴史と南部海岸の素晴らしいビーチが完璧なバランスを保っており、歴史ファンにとってもビーチ愛好家にとっても外せない目的地です。"
+      },
+      {
+        "id": "ella",
+        "title": "エラ",
+        "subtitle": "風光明媚な高原地帯",
+        "category": "自然",
+        "image": "/tours/ella.jpg",
+        "description": "エラは、ハイカーや自然愛好家にとってのパラダイスとなった魅力的な山の村です。\n\n建築美で知られる「ナイン・アーチ・ブリッジ」や、リトル・アダムス・ピーク、エラ・ロックからの息を呑むような絶景が有名です。エメラルドグリーンの茶畑と霧に包まれた山々に囲まれたエラでは、世界で最も美しいハイキングコースや鉄道旅行を楽しむことができます。"
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "ヌワラ・エリヤ",
+        "subtitle": "リトル・イングランド",
+        "category": "自然",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "「リトル・イングランド」として知られるヌワラ・エリヤは、涼しい気候と英国植民地様式の邸宅で有名です。\n\nこの地域はスリランカの紅茶産業の中心地であり、世界クラスの茶園や工場を訪れることができます。グレゴリー湖でのボート乗り、手入れの行き届いたビクトリア公園の散策、そしてスリランカで最も標高の高い街の霧深い情緒を体験してください。"
+      },
+      {
+        "id": "sigiriya",
+        "title": "シギリヤ",
+        "subtitle": "獅子岩の要塞",
+        "category": "文化",
+        "image": "/tours/sigiriya.jpg",
+        "description": "「獅子岩」として知られるシギリヤは、高さ200メートルの古代の岩山要塞で、古代スリランカの工学技術と芸術の結晶です。\n\n5世紀にカッサパ王によって築かれたこのユネスコ遺産には、世界的に有名なフレスコ画（シギリヤ・レディ）やミラー・ウォール、緻密に計画された水の庭園があります。山頂からのパノラマビューは、アジア全体で最も象徴的な体験の一つです。"
+      },
+      {
+        "id": "anuradhapura",
+        "title": "アヌラーダプラ",
+        "subtitle": "聖なる古代都市",
+        "category": "文化",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "アヌラーダプラは古代スリランカの最初の首都であり、現在も世界で最も聖なる仏教巡礼地の一つです。\n\n古代世界で最も高い建造物の一つであったルワンウェリ・サーヤやジェータバナーラーマなどの巨大なスタゥーパ（仏塔）が点在しています。また、2000年以上前に植えられた、記録に残る世界最古の木「マハー菩提樹」を訪れることもできます。"
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "ポロンナルワ",
+        "subtitle": "中世の首都",
+        "category": "文化",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "スリランカの第2の古都、ポロンナルワで時代を遡ってみましょう。\n\nこの中世の都市は保存状態が非常に良く、王宮の威厳ある遺跡や、花崗岩に直接刻まれた4体の見事な仏像があるガル・ビハーラが見どころです。パラークラマ・サムドラのような高度な灌漑システムは、今日でもこの地域の農業を支え続けています。"
+      },
+      {
+        "id": "mirissa",
+        "title": "ミリッサ",
+        "subtitle": "ホエールウォッチングの聖地",
+        "category": "ビーチ",
+        "image": "/tours/mirissa.jpg",
+        "description": "ミリッサは、三日月型のビーチとゆったりとした雰囲気で知られる熱帯のパラダイスです。\n\nクジラやイルカのウォッチングにおいて、世界でも最高の場所の一つとして国際的に認められています。海洋アドベンチャー以外にも、有名なココナッツ・ツリー・ヒルで完璧な夕日を眺めたり、砂浜沿いの賑やかなナイトライフを楽しんだりすることができます。"
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "ヒッカドゥワ",
+        "subtitle": "サンゴ礁のビーチタウン",
+        "category": "ビーチ",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "ヒッカドゥワは、鮮やかなサンゴ礁と絶好のサーフィンコンディションで有名な伝説的なビーチ目的地です。\n\nヒッカドゥワ国立公園は海洋保護区となっており、グラスボトムボートやシュノーケリングで色とりどりの魚やウミガメを観察できます。街はビーチフェスティバルやアートマーケット、多彩なシーフードレストランでも知られています。"
+      },
+      {
+        "id": "trincomalee",
+        "title": "トリンコマリー",
+        "subtitle": "東海岸のパラダイス",
+        "category": "ビーチ",
+        "image": "/tours/trincomalee.jpg",
+        "description": "北東海岸に位置するトリンコマリーは、世界屈指の天然の深水港を誇ります。\n\n素晴らしいニラヴェリ・ビーチや、クリスタルクリアな海でのシュノーケリングに最適なピジョン島があります。崖の縁（スワミ・ロック）にそびえ立ち、インド洋の壮大な景色を望むヒンドゥー教の聖地、コネシュワラム寺院も必見です。"
+      },
+      {
+        "id": "pasikuda",
+        "title": "パシクダ",
+        "subtitle": "浅瀬のブルーオーシャン",
+        "category": "ビーチ",
+        "image": "/tours/pasikuda.jpg",
+        "description": "パシクダは、海の中を数百メートル歩いて行けるほど浅く透き通ったターコイズブルーの海で有名です。\n\n家族連れや贅沢なリラクゼーションを求める方に最適な、静かな目的地です。サンゴ礁に守られた穏やかな海は、スリランカで最も安全な海岸線の一つとして、水泳やウィンドサーフィン、水上スキーに理想的です。"
+      },
+      {
+        "id": "tissamaharama",
+        "title": "ティッサマハーラーマ（ヤーラ）",
+        "subtitle": "野生動物への入り口",
+        "category": "野生動物",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "「ティッサ」の愛称で親しまれるティッサマハーラーマは、スリランカで最も人気のあるヤーラ国立公園への主要な玄関口です。\n\nヤーラは、野生のゾウ、ナマケグマ、ワニに加えて、ヒョウの生息密度が世界で最も高い場所の一つとして有名です。ティッサ自体も歴史的な街で、バードウォッチングや夕方の散策に最適な古代の人造湖があります。"
+      },
+      {
+        "id": "udawalawa",
+        "title": "ウダワラウェ",
+        "subtitle": "ゾウのサファリ",
+        "category": "野生動物",
+        "image": "/tours/udawalawa.jpg",
+        "description": "ウダワラウェ国立公園は、野生のゾウを自然の生息地で観察するのにスリランカで最高の場所です。\n\n公園の開けた平原はアフリカのサバンナに似ており、巨大なゾウの群れを容易に見つけることができます。近くにある、孤児になった子ゾウを保護し野生に帰す「ゾウのトランジット・ホーム」への訪問は、動物愛好家にとって心温まる体験となるでしょう。"
+      },
+      {
+        "id": "negombo",
+        "title": "ネゴンボ",
+        "subtitle": "ラグーンの街",
+        "category": "ビーチ",
+        "image": "/tours/negombo.jpg",
+        "description": "空港からわずか数分の便利な場所に位置するネゴンボは、豊かな植民地時代の過去を持つ歴史的な漁師の街です。\n\n広大なラグーンと伝統的なアウトリガーカヌー（オルワ）で知られ、活気ある魚市場を体験できます。「リトル・ローマ」とも呼ばれるこの街の魅力は、オランダ時代の数多くの教会や、街を貫く穏やかな運河システムに見ることができます。"
+      },
+      {
+        "id": "kalutara",
+        "title": "カルタラ",
+        "subtitle": "海辺の隠れ家",
+        "category": "ビーチ",
+        "image": "/tours/kalutara.jpg",
+        "description": "カルタラは、聖なる菩提樹と世界で唯一の「中が空洞になった仏塔」であるカルタラ・ボーディヤで有名な海岸沿いの街です。\n\nカル河が海に注ぐ場所に位置し、美しい河畔とビーチの景色を楽しめます。伝統的な籠編み細工でも知られており、コロンボの喧騒から逃れて静かに過ごしたい方にぴったりの隠れ家です。"
+      },
+      {
+        "id": "jaffna",
+        "title": "ジャフナ",
+        "subtitle": "北部の文化都市",
+        "category": "文化",
+        "image": "/tours/jaffna.jpg",
+        "description": "ジャフナは、島の他の地域とは異なる独自の文化体験を提供します。\n\nナルール・カンダスワミ寺院のような色彩豊かなヒンドゥー寺院、歴史的なジャフナ砦、そしてデルフト島やナイナティヴ島といった静かな島々があり、北部は強さと美しさが共存する地です。独特の北部料理を味わい、活気ある地元市場を探索し、手つかずの自然を楽しみましょう。"
+      }
+    ]
+  },
+  "ko": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "콜롬보 공항",
+        "subtitle": "반다라나이케 국제공항 (CMB)",
+        "category": "도시",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "카투나야케에 위치한 반다라나이케 국제공항(CMB)은 스리랑카로 들어오는 주요 관문입니다. 세계 최초의 여성 총리인 시리마보 반다라나이케의 이름을 딴 이 공항은 수도 콜롬보에서 북쪽으로 35km 떨어져 있습니다. \n\n참고: 저희의 송영 요금은 직항 픽업 및 드롭 서비스를 기준으로 합니다. 요청 시 이동 경로에 있는 관광지 방문을 추가로 준비해 드릴 수 있습니다. 승용차 예약 시 5%, 밴 예약 시 3%의 특별 할인을 제공합니다. 결제는 스리랑카 루피(LKR) 또는 당일 환율에 따른 주요 외화로 가능합니다."
+      },
+      {
+        "id": "colombo",
+        "title": "콜롬보",
+        "subtitle": "상업 수도",
+        "category": "도시",
+        "image": "/tours/colombo.jpg",
+        "description": "스리랑카의 활기찬 상업 수도인 콜롬보는 식민지 시대의 역사와 현대적인 도시 생활이 매력적으로 어우러진 곳입니다. \n\n상징적인 로터스 타워를 탐방하고, 해 질 녘 갈레 페이스 그린을 산책하며, 역사적인 더치 호스피탈을 방문해 보세요. 고급 쇼핑몰부터 북적이는 페타 시장까지, 콜롬보는 이 섬의 다양한 문화와 유산을 경험할 수 있는 잊지 못할 시작점이 될 것입니다."
+      },
+      {
+        "id": "kandy",
+        "title": "캔디",
+        "subtitle": "고원의 수도",
+        "category": "문화",
+        "image": "/tours/kandy.jpg",
+        "description": "푸른 언덕에 둘러싸인 캔디는 스리랑카의 정신적, 문화적 중심지입니다. \n\n유네스코 세계문화유산인 불치사(Sri Dalada Maligawa)가 이곳에 있습니다. 전통 캔디안 댄스 공연을 관람하고, 아름다운 캔디 호수 주변을 거닐며, 세계적인 난초 컬렉션을 자랑하는 페라데니야 왕립 식물원을 탐험해 보세요."
+      },
+      {
+        "id": "galle",
+        "title": "갈레",
+        "subtitle": "역사적인 해안 도시",
+        "category": "해변",
+        "image": "/tours/galle.jpg",
+        "description": "갈레는 식민지 건축 양식과 해안의 아름다움이 결합된 걸작과도 같은 도시입니다. 네덜란드인이 건설한 유네스코 세계문화유산인 갈레 요새는 좁은 골목, 부티크 숍, 아늑한 카페가 즐비한 살아있는 기념비입니다. \n\n풍부한 역사와 남부 해안의 환상적인 해변이 완벽한 조화를 이루고 있어, 역사 애호가와 휴양객 모두에게 반드시 방문해야 할 곳입니다."
+      },
+      {
+        "id": "ella",
+        "title": "엘라",
+        "subtitle": "아름다운 산악 마을",
+        "category": "자연",
+        "image": "/tours/ella.jpg",
+        "description": "엘라는 하이커와 자연 애호가들의 낙원이 된 매력적인 산악 마을입니다. \n\n건축의 경이로움이라 불리는 나인 아치 브릿지와 리틀 아담스 피크, 엘라 락에서 내려다보는 숨 막히는 절경으로 유명합니다. 에메랄드빛 차밭과 안개 낀 산으로 둘러싸인 엘라는 세계에서 가장 아름다운 하이킹 코스와 기차 여행을 선사합니다."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "누와라 엘리야",
+        "subtitle": "리틀 잉글랜드",
+        "category": "자연",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "‘리틀 잉글랜드’로 알려진 누와라 엘리야는 시원한 기후와 영국 식민지 스타일의 방갈로로 유명합니다. \n\n이 지역은 스리랑카 차 산업의 중심지로, 세계적인 차 농장과 공장을 방문할 수 있습니다. 그레고리 호수에서 보트를 타고, 아름답게 가꾸어진 빅토리아 공원을 산책하며 스리랑카에서 가장 높은 도시가 주는 안개 자욱한 매력을 경험해 보세요."
+      },
+      {
+        "id": "sigiriya",
+        "title": "시기리야",
+        "subtitle": "사자 바위 요새",
+        "category": "문화",
+        "image": "/tours/sigiriya.jpg",
+        "description": "‘사자 바위’라 불리는 시기리야는 200m 높이의 거대한 고대 바위 요새로, 스리랑카 고대 공학 기술과 예술의 결정체입니다. \n\n5세기 카샤파 왕이 건설한 이 유네스코 유적지에는 세계적으로 유명한 프레스코 벽화, 거울 벽, 그리고 정교하게 설계된 수중 정원이 있습니다. 정상에서 내려다보는 360도 파노라마 뷰는 아시아 전체에서 가장 상징적인 경험 중 하나입니다."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "아누라다푸라",
+        "subtitle": "고대 성지",
+        "category": "문화",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "아누라다푸라는 고대 스리랑카의 첫 번째 수도였으며, 오늘날까지도 세계에서 가장 신성한 불교 성지 중 하나입니다. \n\n고대 세계에서 가장 높은 건축물 중 하나였던 루완웰리사야와 제타바나라마야 같은 거대한 스투파(불탑)를 볼 수 있습니다. 또한, 2,000년 전 심어진 세계에서 가장 오래된 수령의 기록된 나무인 ‘자야 스리 마하 보디’를 방문해 보세요."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "폴론나루와",
+        "subtitle": "중세 수도",
+        "category": "문화",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "스리랑카의 두 번째 고대 수도인 폴론나루와에서 과거로의 여행을 떠나보세요. \n\n이 중세 도시는 매우 잘 보존되어 있으며, 왕궁 유적과 화강암 바위에 직접 새겨진 네 개의 거대한 불상이 있는 갈 비하라(Gal Vihara)가 핵심 볼거리입니다. 파라크라마 사무드라와 같은 고대 관개 시스템은 오늘날까지도 이 지역의 농업을 지탱하고 있습니다."
+      },
+      {
+        "id": "mirissa",
+        "title": "미리사",
+        "subtitle": "고래 관찰 명소",
+        "category": "해변",
+        "image": "/tours/mirissa.jpg",
+        "description": "미리사는 초승달 모양의 해변과 여유로운 분위기로 잘 알려진 열대 낙원입니다. \n\n세계에서 고래와 돌고래를 관찰하기 가장 좋은 장소 중 하나로 국제적인 인정을 받고 있습니다. 해양 액티비티 외에도 유명한 코코넛 트리 힐(Coconut Tree Hill)에서 완벽한 일몰을 감상하거나 모래사장 위 활기찬 밤문화를 즐겨보세요."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "히카두와",
+        "subtitle": "산호 해변 마을",
+        "category": "해변",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "히카두와는 화려한 산호초와 훌륭한 서핑 환경으로 유명한 전설적인 해변 휴양지입니다. \n\n히카두와 국립공원은 해양 보호구역으로, 바닥이 유리로 된 보트나 스노클링을 통해 형형색색의 물고기와 바다거북을 관찰할 수 있습니다. 또한 활기찬 해변 축제, 예술 시장, 다양한 해산물 레스토랑으로도 유명합니다."
+      },
+      {
+        "id": "trincomalee",
+        "title": "트린코말리",
+        "subtitle": "동부 해안의 낙원",
+        "category": "해변",
+        "image": "/tours/trincomalee.jpg",
+        "description": "동북부 해안에 위치한 트린코말리는 세계 최고의 천연 심해 항구를 자랑합니다. \n\n아름다운 닐라벨리 해변과 투명한 바다에서 스노클링을 즐기기에 완벽한 피죤 아일랜드가 이곳에 있습니다. 절벽 끝(스와미 락)에 위치하여 인도양의 장엄한 전망을 선사하는 코네스와람 힌두 사원도 놓치지 마세요."
+      },
+      {
+        "id": "pasikuda",
+        "title": "파시쿠다",
+        "subtitle": "얕고 푸른 바다",
+        "category": "해변",
+        "image": "/tours/pasikuda.jpg",
+        "description": "파시쿠다는 바다 안쪽으로 수백 미터를 걸어 나갈 수 있을 정도로 얕고 투명한 터쿼이아빛 바다로 유명합니다. \n\n가족 단위 여행객이나 럭셔리한 휴식을 원하는 분들에게 완벽한 곳입니다. 산호초로 보호받는 잔잔한 파도는 수영, 윈드서핑, 수상스키를 즐기기에 스리랑카에서 가장 안전한 해안선 중 하나입니다."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "티사마하라마 (얄라)",
+        "subtitle": "야생동물의 관문",
+        "category": "야생동물",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "‘티사’라는 애칭으로 불리는 티사마하라마는 스리랑카에서 가장 인기 있는 얄라 국립공원으로 들어가는 주요 관문입니다. \n\n얄라는 세계에서 표범 밀도가 가장 높은 곳 중 하나로 유명하며, 야생 코끼리, 느림보곰, 악어 등을 관찰할 수 있습니다. 티사 자체도 역사적인 마을로, 조류 관찰과 저녁 산책에 완벽한 고대 인공 호수들이 있습니다."
+      },
+      {
+        "id": "udawalawa",
+        "title": "우다왈라웨",
+        "subtitle": "코끼리 사파리",
+        "category": "야생동물",
+        "image": "/tours/udawalawa.jpg",
+        "description": "우다왈라웨 국립공원은 야생 코끼리를 자연 서식지에서 관찰하기에 스리랑카에서 가장 좋은 장소입니다. \n\n공원의 탁 트인 평원은 아프리카 사바나를 연상시키며, 거대한 코끼리 떼를 쉽게 발견할 수 있게 해줍니다. 고아 코끼리들을 보살피고 야생으로 돌려보내는 ‘엘리펀트 트랜짓 홈’ 방문은 동물을 사랑하는 분들에게 큰 감동을 줄 것입니다."
+      },
+      {
+        "id": "negombo",
+        "title": "네곰보",
+        "subtitle": "라군 도시",
+        "category": "해변",
+        "image": "/tours/negombo.jpg",
+        "description": "공항에서 불과 몇 분 거리에 위치한 네곰보는 풍부한 식민지 역사를 가진 유서 깊은 어촌 마을입니다. \n\n광활한 라군과 전통 뗏목(Oruvas)으로 유명하며, 활기찬 수산 시장을 경험할 수 있습니다. ‘리틀 로마’라 불리는 이 도시의 매력은 수많은 네덜란드 시대 성당들과 도시를 가로지르는 평화로운 운하 시스템에서 엿볼 수 있습니다."
+      },
+      {
+        "id": "kalutara",
+        "title": "칼루타라",
+        "subtitle": "해안 휴양지",
+        "category": "해변",
+        "image": "/tours/kalutara.jpg",
+        "description": "칼루타라는 세계 유일의 속이 빈 불탑인 칼루타라 보디야(Kalutara Bodhiya)로 유명한 해안 도시입니다. \n\n칼루 강이 바다와 만나는 지점에 위치하여 아름다운 강변과 해변 전망을 동시에 제공합니다. 전통 바구니 공예로도 잘 알려져 있으며, 콜롬보의 번잡함에서 벗어나 조용한 휴식을 원하는 분들에게 안성맞춤인 곳입니다."
+      },
+      {
+        "id": "jaffna",
+        "title": "자프나",
+        "subtitle": "북부 문화 도시",
+        "category": "문화",
+        "image": "/tours/jaffna.jpg",
+        "description": "자프나는 섬의 다른 지역과는 확연히 다른 독특한 문화적 경험을 제공합니다. \n\n날루르 칸다스와미 코빌 같은 화려한 힌두 사원, 역사적인 자프나 요새, 그리고 델프트 섬과 나이나티부 섬 같은 평화로운 섬들이 있는 북부는 강인함과 아름다움의 땅입니다. 독특한 북부 요리를 맛보고 활기찬 지역 시장을 둘러보며 자프나 반도의 때 묻지 않은 풍경을 감상해 보세요."
+      }
+    ]
+  },
+  "pt": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Aeroporto de Colombo",
+        "subtitle": "Aeroporto (CMB)",
+        "category": "Cidade",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "O Aeroporto Internacional Bandaranaike (CMB) em Katunayake é a principal porta de entrada internacional para o Sri Lanka. Nomeado em homenagem à primeira mulher Primeira-Ministra do mundo, Sirimavo Bandaranaike, está localizado a 35 km ao norte da capital, Colombo. \n\nNota: Nossas tarifas de transporte cobrem o embarque e desembarque direto. Visitas opcionais a locais ao longo da rota podem ser organizadas mediante solicitação. Oferecemos um desconto especial de 5% para reservas de carros e 3% para vans. Os pagamentos são aceitos em LKR ou em qualquer moeda estrangeira principal à taxa de conversão diária vigente."
+      },
+      {
+        "id": "colombo",
+        "title": "Colombo",
+        "subtitle": "Capital Comercial",
+        "category": "Cidade",
+        "image": "/tours/colombo.jpg",
+        "description": "Como a vibrante capital comercial do Sri Lanka, Colombo oferece uma mistura fascinante de história colonial e estilo de vida urbano moderno. \n\nExplore a icônica Lotus Tower, passeie pelo Galle Face Green ao pôr do sol e visite o histórico Hospital Holandês. De shopping centers de luxo ao agitado Mercado de Pettah, Colombo proporciona uma introdução inesquecível à diversificada cultura e patrimônio da ilha."
+      },
+      {
+        "id": "kandy",
+        "title": "Kandy",
+        "subtitle": "Capital das Colinas",
+        "category": "Cultural",
+        "image": "/tours/kandy.jpg",
+        "description": "Aninhada entre colinas verdejantes, Kandy é o coração espiritual e cultural do Sri Lanka. \n\nÉ a casa do sagrado Templo da Relíquia do Dente (Sri Dalada Maligawa), um local listado como Patrimônio Mundial pela UNESCO. Os visitantes podem desfrutar de apresentações de dança tradicional de Kandy, caminhar ao redor do pitoresco Lago Kandy e explorar o Jardim Botânico Real em Peradeniya, que apresenta uma coleção de orquídeas de renome mundial."
+      },
+      {
+        "id": "galle",
+        "title": "Galle",
+        "subtitle": "Cidade Costeira Histórica",
+        "category": "Praia",
+        "image": "/tours/galle.jpg",
+        "description": "Galle é uma obra-prima da arquitetura colonial e da beleza costeira. O histórico Forte de Galle, Patrimônio Mundial da UNESCO construído pelos holandeses, é um monumento vivo com ruas estreitas, lojas boutique e cafés aconchegantes. \n\nA cidade equilibra perfeitamente sua rica história com as praias deslumbrantes da costa sul, tornando-se um destino obrigatório para entusiastas da história e amantes do sol."
+      },
+      {
+        "id": "ella",
+        "title": "Ella",
+        "subtitle": "Terras Altas Cênicas",
+        "category": "Natureza",
+        "image": "/tours/ella.jpg",
+        "description": "Ella é uma charmosa vila de montanha que se tornou um paraíso para caminhantes e amantes da natureza. \n\nÉ famosa pela maravilha arquitetônica da Ponte dos Nove Arcos (Nine Arch Bridge) e pelas vistas deslumbrantes do Little Adam's Peak e da Ella Rock. Cercada por plantações de chá verde-esmeralda e montanhas enevoadas, Ella oferece algumas das trilhas e viagens de trem mais bonitas do mundo."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Nuwara Eliya",
+        "subtitle": "Pequena Inglaterra",
+        "category": "Natureza",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Conhecida como 'Pequena Inglaterra', Nuwara Eliya é famosa por seu clima fresco e bangalôs em estilo colonial britânico. \n\nEsta região é o coração da indústria do chá do Sri Lanka, onde você pode visitar propriedades e fábricas de chá de classe mundial. Desfrute de um passeio de barco no Lago Gregory, caminhe pelo Victoria Park lindamente cuidado e experimente o charme enevoado da cidade mais alta do Sri Lanka."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Sigiriya",
+        "subtitle": "Fortaleza da Rocha do Leão",
+        "category": "Cultural",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Sigiriya, ou a Rocha do Leão, é uma impressionante fortaleza de rocha antiga com 200 metros de altura que serve como testemunho da engenharia e arte milenar do Sri Lanka. \n\nConstruída pelo Rei Kashyapa no século V, este local da UNESCO apresenta afrescos mundialmente famosos, a Parede de Espelhos e jardins aquáticos meticulosamente planejados. A vista panorâmica do cume é uma das experiências mais icônicas de toda a Ásia."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Anuradhapura",
+        "subtitle": "Antiga Cidade Sagrada",
+        "category": "Cultural",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Anuradhapura foi a primeira capital do antigo Sri Lanka e continua sendo um dos locais de peregrinação budista mais sagrados do mundo. \n\nA cidade abriga estupas maciças como Ruwanwelisaya e Jetavanaramaya, que estavam entre as estruturas mais altas do mundo antigo. Você também pode visitar a Jaya Sri Maha Bodhi, a árvore documentada mais antiga do mundo, plantada há mais de 2.000 anos."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Polonnaruwa",
+        "subtitle": "Capital Medieval",
+        "category": "Cultural",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Volte no tempo em Polonnaruwa, a segunda capital antiga do Sri Lanka. \n\nEsta cidade medieval está notavelmente bem preservada, apresentando as majestosas ruínas do Palácio Real e o Gal Vihara, onde quatro magníficas estátuas de Buda são esculpidas diretamente na rocha de granito. Os sistemas avançados de irrigação da cidade, como o Parakrama Samudra, continuam a apoiar a agricultura da região até hoje."
+      },
+      {
+        "id": "mirissa",
+        "title": "Mirissa",
+        "subtitle": "Destino de Observação de Baleias",
+        "category": "Praia",
+        "image": "/tours/mirissa.jpg",
+        "description": "Mirissa é um paraíso tropical conhecido por sua praia em forma de lua crescente e atmosfera descontraída. \n\nÉ reconhecida internacionalmente como um dos melhores locais do mundo para a observação de baleias e golfinhos. Além das aventuras no oceano, os visitantes podem relaxar no famoso Coconut Tree Hill para uma vista perfeita do pôr do sol ou aproveitar a vibrante vida noturna ao longo da costa."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Hikkaduwa",
+        "subtitle": "Cidade da Praia de Corais",
+        "category": "Praia",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Hikkaduwa é um destino de praia lendário, famoso por seus recifes de corais vibrantes e excelentes condições para o surf. \n\nO Parque Nacional de Hikkaduwa é um santuário marinho onde você pode ver peixes coloridos e tartarugas marinhas através de barcos com fundo de vidro ou praticando snorkel. A cidade também é conhecida por seus festivais de praia, mercados de arte e uma grande variedade de restaurantes de frutos do mar."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Trincomalee",
+        "subtitle": "Paraíso da Costa Leste",
+        "category": "Praia",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Localizada na costa nordeste, Trincomalee possui um dos melhores portos naturais de águas profundas do mundo. \n\nÉ o lar da deslumbrante Praia de Nilaveli e da Ilha Pigeon, um local de mergulho de primeira classe com águas cristalinas. Não perca o Templo Koneswaram, um majestoso santuário hindu situado na borda de um penhasco (Swami Rock), oferecendo vistas espetaculares do Oceano Índico."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Pasikuda",
+        "subtitle": "Águas Azuis Rasas",
+        "category": "Praia",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Pasikuda é renomada por sua baía icônica com águas azul-turquesa rasas que permitem caminhar centenas de metros mar adentro. \n\nEste destino tranquilo é perfeito para famílias e para quem busca relaxamento de luxo. As águas calmas e protegidas por recifes tornam o local ideal para natação, windsurf e esqui aquático em um dos trechos costeiros mais seguros do Sri Lanka."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Tissamaharama (Yala)",
+        "subtitle": "Portal da Vida Selvagem",
+        "category": "Vida Selvagem",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Tissamaharama, ou 'Tissa', serve como a principal porta de entrada para o Parque Nacional Yala, o santuário de vida selvagem mais visitado do Sri Lanka. \n\nYala é famoso por ter uma das maiores densidades de leopardos do mundo, junto com elefantes selvagens, ursos-preguiça e crocodilos. Tissa é uma cidade histórica com antigos lagos artificiais que são perfeitos para observação de pássaros e passeios noturnos."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Udawalawa",
+        "subtitle": "Safári de Elefantes",
+        "category": "Vida Selvagem",
+        "image": "/tours/udawalawa.jpg",
+        "description": "O Parque Nacional Udawalawa é o melhor lugar no Sri Lanka para testemunhar elefantes selvagens em seu habitat natural. \n\nAs planícies abertas do parque lembram uma savana africana, facilitando a avistagem de manadas massivas. Uma visita ao vizinho Elephant Transit Home, onde filhotes órfãos são reabilitados e soltos na natureza, é uma experiência emocionante para os amantes dos animais."
+      },
+      {
+        "id": "negombo",
+        "title": "Negombo",
+        "subtitle": "Cidade da Lagoa",
+        "category": "Praia",
+        "image": "/tours/negombo.jpg",
+        "description": "Convenientemente localizada a poucos minutos do aeroporto, Negombo é uma cidade histórica de pescadores com um rico passado colonial. \n\nConhecida por sua vasta lagoa e canoas tradicionais (Oruvas), Negombo oferece uma experiência vibrante no mercado de peixes. O charme da 'Pequena Roma' é visto em suas inúmeras igrejas da era holandesa e no tranquilo sistema de canais que atravessa a cidade."
+      },
+      {
+        "id": "kalutara",
+        "title": "Kalutara",
+        "subtitle": "Refúgio Costeiro",
+        "category": "Praia",
+        "image": "/tours/kalutara.jpg",
+        "description": "Kalutara é uma cidade costeira famosa por sua sagrada Bodhiya — a única estupa budista oca do mundo. \n\nPosicionada onde o Rio Kalu encontra o mar, oferece belas vistas do rio e da praia. Kalutara também é bem conhecida por sua indústria tradicional de cestaria e serve como um retiro sereno para aqueles que buscam escapar da agitação de Colombo."
+      },
+      {
+        "id": "jaffna",
+        "title": "Jaffna",
+        "subtitle": "Cidade Cultural do Norte",
+        "category": "Cultural",
+        "image": "/tours/jaffna.jpg",
+        "description": "Jaffna oferece uma experiência cultural única, distinta do resto da ilha. \n\nCom seus templos hindus coloridos como Nallur Kandaswamy Kovil, o histórico Forte de Jaffna e as ilhas serenas de Delft e Nainativu, o Norte é uma terra de resiliência e beleza. Descubra a culinária nortista única, explore os vibrantes mercados locais e desfrute das paisagens intocadas da península de Jaffna."
+      }
+    ]
+  },
+  "ru": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "Аэропорт Коломбо",
+        "subtitle": "Аэропорт (CMB)",
+        "category": "Город",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "Международный аэропорт Бандаранайке (CMB) в Катунайаке — главные международные ворота Шри-Ланки. Названный в честь первой в мире женщины-премьер-министра Сиримаво Бандаранайке, он расположен в 35 км к северу от столицы Коломбо. \n\nПримечание: Наши тарифы на трансфер включают прямую встречу и проводы. По запросу могут быть организованы дополнительные посещения достопримечательностей по маршруту. Мы предлагаем специальную скидку 5% при бронировании легковых автомобилей и 3% — для минивэнов. Оплата принимается в LKR или любой основной иностранной валюте по действующему ежедневному курсу."
+      },
+      {
+        "id": "colombo",
+        "title": "Коломбо",
+        "subtitle": "Коммерческая столица",
+        "category": "Город",
+        "image": "/tours/colombo.jpg",
+        "description": "Коломбо, оживленная коммерческая столица Шри-Ланки, предлагает захватывающее сочетание колониальной истории и современного городского образа жизни. \n\nПосетите знаменитую Башню Лотоса, прогуляйтесь по набережной Галле Фейс Грин на закате и загляните в исторический Голландский госпиталь. От роскошных торговых центров до шумного рынка Петтах — Коломбо станет незабываемым знакомством с разнообразной культурой и наследием острова."
+      },
+      {
+        "id": "kandy",
+        "title": "Канди",
+        "subtitle": "Горная столица",
+        "category": "Культура",
+        "image": "/tours/kandy.jpg",
+        "description": "Расположенный среди пышных зеленых холмов, Канди является духовным и культурным центром Шри-Ланки. \n\nЗдесь находится священный Храм Зуба Будды (Шри Далада Малигава), объект Всемирного наследия ЮНЕСКО. Гости могут насладиться традиционными кандийскими танцами, прогуляться вокруг живописного озера Канди и исследовать Королевский ботанический сад в Перадении, где представлена всемирно известная коллекция орхидей."
+      },
+      {
+        "id": "galle",
+        "title": "Галле",
+        "subtitle": "Исторический прибрежный город",
+        "category": "Пляж",
+        "image": "/tours/galle.jpg",
+        "description": "Галле — это шедевр колониальной архитектуры и прибрежной красоты. Исторический Форт Галле, построенный голландцами и внесенный в список Всемирного наследия ЮНЕСКО, — живой памятник с узкими улочками, бутиками и уютными кафе. \n\nГород идеально сочетает свою богатую историю с потрясающими пляжами южного побережья, что делает его обязательным для посещения как любителями истории, так и искателями солнца."
+      },
+      {
+        "id": "ella",
+        "title": "Элла",
+        "subtitle": "Живописное высокогорье",
+        "category": "Природа",
+        "image": "/tours/ella.jpg",
+        "description": "Элла — это очаровательная горная деревня, ставшая раем для любителей пеших прогулок и природы. \n\nОна славится архитектурным чудом — Девятиарочным мостом — и захватывающими дух видами с Малого пика Адама и скалы Элла Рок. Окруженная изумрудно-зелеными чайными плантациями и туманными горами, Элла предлагает одни из самых красивых пешеходных троп и железнодорожных маршрутов в мире."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "Нувара-Элия",
+        "subtitle": "Маленькая Англия",
+        "category": "Природа",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "Известная как «Маленькая Англия», Нувара-Элия славится своим прохладным климатом и бунгало в британском колониальном стиле. \n\nЭтот регион — сердце чайной индустрии Шри-Ланки, где вы можете посетить чайные плантации и фабрики мирового класса. Насладитесь прогулкой на лодке по озеру Грегори, пройдитесь по ухоженному парку Виктория и ощутите туманное очарование самого высокогорного города острова."
+      },
+      {
+        "id": "sigiriya",
+        "title": "Сигирия",
+        "subtitle": "Крепость «Львиная скала»",
+        "category": "Культура",
+        "image": "/tours/sigiriya.jpg",
+        "description": "Сигирия, или Львиная скала, представляет собой ошеломляющую древнюю скальную крепость высотой 200 метров, которая является свидетельством древнего инженерного искусства и мастерства Шри-Ланки. \n\nПостроенный царем Кашьяпой в V веке, этот объект ЮНЕСКО украшен всемирно известными фресками, Зеркальной стеной и тщательно спланированными водными садами. Панорамный вид с вершины — одно из самых знаковых впечатлений во всей Азии."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "Анурадхапура",
+        "subtitle": "Древний священный город",
+        "category": "Культура",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "Анурадхапура была первой столицей древней Шри-Ланки и остается одним из самых священных мест буддийского паломничества в мире. \n\nВ городе находятся массивные ступы, такие как Руванвелисая и Джетаванарамая, которые входили в число самых высоких сооружений древнего мира. Вы также можете посетить Джая Шри Маха Бодхи — старейшее задокументированное дерево в мире, посаженное более 2000 лет назад."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "Полоннарува",
+        "subtitle": "Средневековая столица",
+        "category": "Культура",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "Сделайте шаг назад во времени в Полоннаруве, второй древней столице Шри-Ланки. \n\nЭтот средневековый город удивительно хорошо сохранился: здесь находятся величественные руины Королевского дворца и Гал Вихара, где четыре великолепные статуи Будды высечены прямо в гранитной скале. Передовые ирригационные системы города, такие как Паракрама Самудра, продолжают поддерживать сельское хозяйство региона и по сей день."
+      },
+      {
+        "id": "mirissa",
+        "title": "Мирисса",
+        "subtitle": "Наблюдение за китами",
+        "category": "Пляж",
+        "image": "/tours/mirissa.jpg",
+        "description": "Мирисса — это тропический рай, известный своим пляжем в форме полумесяца и непринужденной атмосферой. \n\nОна признана во всем мире как одно из лучших мест для наблюдения за китами и дельфинами. Помимо океанских приключений, гости могут отдохнуть на знаменитом холме Coconut Tree Hill, чтобы насладиться идеальным закатом, или окунуться в яркую ночную жизнь вдоль песчаного побережья."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "Хиккадува",
+        "subtitle": "Город коралловых пляжей",
+        "category": "Пляж",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "Хиккадува — легендарное пляжное направление, известное своими яркими коралловыми рифами и отличными условиями для серфинга. \n\nНациональный парк Хиккадува — это морской заповедник, где можно увидеть разноцветных рыб и морских черепах через лодки со стеклянным дном или во время снорклинга. Город также известен своими оживленными пляжными фестивалями, арт-рынками и широким выбором ресторанов морепродуктов."
+      },
+      {
+        "id": "trincomalee",
+        "title": "Тринкомали",
+        "subtitle": "Рай на восточном побережье",
+        "category": "Пляж",
+        "image": "/tours/trincomalee.jpg",
+        "description": "Расположенный на северо-восточном побережье, Тринкомали может похвастаться одной из лучших в мире естественных глубоководных гаваней. \n\nЗдесь находятся великолепный пляж Нилавели и остров Пиджен — первоклассное место для снорклинга с кристально чистой водой. Не пропустите храм Конесварам, величественную индуистскую святыню, расположенную на краю утеса (скала Свами), откуда открывается захватывающий вид на Индийский океан."
+      },
+      {
+        "id": "pasikuda",
+        "title": "Пасикуда",
+        "subtitle": "Мелководье и бирюзовая вода",
+        "category": "Пляж",
+        "image": "/tours/pasikuda.jpg",
+        "description": "Пасикуда славится своей культовой бухтой с мелководной бирюзовой водой, которая позволяет заходить в море на сотни метров. \n\nЭто спокойное место идеально подходит для семейного отдыха и тех, кто ищет роскошной релаксации. Спокойные воды, защищенные рифами, делают бухту идеальной для плавания, виндсерфинга и водных лыж в одном из самых безопасных прибрежных районов Шри-Ланки."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "Тиссамахарама (Яла)",
+        "subtitle": "Ворота в дикую природу",
+        "category": "Дикая природа",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "Тиссамахарама, или просто «Тисса», служит главными воротами в национальный парк Яла, самый посещаемый заповедник дикой природы на Шри-Ланке. \n\nЯла славится одной из самых высоких в мире плотностей популяции леопардов, а также дикими слонами, медведями-губачами и крокодилами. Сама Тисса — исторический город с древними искусственными озерами, которые идеально подходят для наблюдения за птицами и вечерних прогулок."
+      },
+      {
+        "id": "udawalawa",
+        "title": "Удавалаве",
+        "subtitle": "Сафари на слонов",
+        "category": "Дикая природа",
+        "image": "/tours/udawalawa.jpg",
+        "description": "Национальный парк Удавалаве — лучшее место на Шри-Ланке, чтобы увидеть диких слонов в их естественной среде обитания. \n\nОткрытые равнины парка напоминают африканскую саванну, что позволяет легко заметить огромные стада слонов. Посещение близлежащего приюта для слонов (Elephant Transit Home), где осиротевших слонят реабилитируют и выпускают обратно в дикую природу, станет трогательным моментом для всех любителей животных."
+      },
+      {
+        "id": "negombo",
+        "title": "Негомбо",
+        "subtitle": "Город лагун",
+        "category": "Пляж",
+        "image": "/tours/negombo.jpg",
+        "description": "Удобно расположенный всего в нескольких минутах от аэропорта, Негомбо — исторический рыбацкий город с богатым колониальным прошлым. \n\nИзвестный своей обширной лагуной и традиционными каноэ (Oruvas), Негомбо предлагает окунуться в атмосферу оживленного рыбного рынка. Очарование «Маленького Рима» проявляется в многочисленных церквях голландской эпохи и тихой системе каналов, проходящих через город."
+      },
+      {
+        "id": "kalutara",
+        "title": "Калутара",
+        "subtitle": "Прибрежный отдых",
+        "category": "Пляж",
+        "image": "/tours/kalutara.jpg",
+        "description": "Калутара — прибрежный город, знаменитый священным деревом Бодхия и Калутара Бодхия — единственной в мире полой буддийской ступой. \n\nРасположенный в месте впадения реки Калу в море, город предлагает прекрасные виды на реку и пляж. Калутара также славится традиционным плетением корзин и служит безмятежным убежищем для тех, кто хочет сбежать от суеты Коломбо."
+      },
+      {
+        "id": "jaffna",
+        "title": "Джафна",
+        "subtitle": "Культурный город севера",
+        "category": "Культура",
+        "image": "/tours/jaffna.jpg",
+        "description": "Джафна предлагает уникальный культурный опыт, отличный от остальной части острова. \n\nС ее яркими индуистскими храмами, такими как Наллур Кандасвами Ковил, историческим фортом Джафна и безмятежными островами Делфт и Найнативу, север — это земля стойкости и красоты. Откройте для себя уникальную северную кухню, исследуйте оживленные местные рынки и насладитесь нетронутыми пейзажами полуострова Джафна."
+      }
+    ]
+  },
+  "si": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "කොළඹ ගුවන් තොටුපළ",
+        "subtitle": "ගුවන් තොටුපළ (CMB)",
+        "category": "නගරය",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "කටුනායක බණ්ඩාරනායක ජාත්‍යන්තර ගුවන්තොටුපළ (CMB) ශ්‍රී ලංකාවට ඇති ප්‍රධාන ජාත්‍යන්තර දොරටුවයි. ලොව ප්‍රථම අගමැතිනිය වූ සිරිමාවෝ බණ්ඩාරනායක මැතිණියගේ නමින් නම් කර ඇති මෙය අගනුවර වන කොළඹ සිට කිලෝමීටර් 35ක් උතුරින් පිහිටා ඇත. \n\nසටහන: අපගේ ප්‍රවාහන ගාස්තු සෘජු ප්‍රවාහනය (Direct Pick-up/Drop-off) සඳහා පමණක් අදාළ වේ. අතරමගදී වෙනත් ස්ථාන නැරඹීම සඳහා ඉල්ලීම මත පහසුකම් සැලසිය හැක. අපි මෝටර් රථ (Car) වෙන් කිරීම් සඳහා 5% ක සහ වෑන් රථ (Van) සඳහා 3% ක විශේෂ වට්ටමක් ලබා දෙන්නෙමු. ගෙවීම් ශ්‍රී ලංකා රුපියල් (LKR) වලින් හෝ එදින පවතින විනිමය අනුපාතයට අනුව ඕනෑම ප්‍රධාන විදේශ මුදලකින් කළ හැකිය."
+      },
+      {
+        "id": "colombo",
+        "title": "කොළඹ",
+        "subtitle": "වාණිජ අගනගරය",
+        "category": "නගරය",
+        "image": "/tours/colombo.jpg",
+        "description": "ශ්‍රී ලංකාවේ සජීවී වාණිජ අගනගරය ලෙස කොළඹ නගරය, යටත් විජිත ඉතිහාසය සහ නවීන නාගරික ජීවන රටාවේ අපූරු සම්මිශ්‍රණයක් ඉදිරිපත් කරයි. \n\nදර්ශනීය ලෝටස් ටවර් (Lotus Tower) නරඹන්න, හිරු බැස යන සැන්දෑවේ ගාලු මුවදොර පිටියේ (Galle Face Green) ඇවිදින්න, සහ ඓතිහාසික ඕලන්ද රෝහල් සංකීර්ණය වෙත පිවිසෙන්න. සුඛෝපභෝගී සාප්පු සංකීර්ණවල සිට කාර්යබහුල පිටකොටුව වෙළඳපොළ දක්වා, කොළඹ නගරය දිවයිනේ විවිධ සංස්කෘතීන් සහ උරුමයන් පිළිබඳ අමතක නොවන අත්දැකීමක් ලබා දෙයි."
+      },
+      {
+        "id": "kandy",
+        "title": "මහනුවර",
+        "subtitle": "කන්ද උඩරට අගනුවර",
+        "category": "සංස්කෘතික",
+        "image": "/tours/kandy.jpg",
+        "description": "සශ්‍රීක හරිත කඳුකරයෙන් වට වූ මහනුවර නගරය ශ්‍රී ලංකාවේ අධ්‍යාත්මික සහ සංස්කෘතික හදවතයි. \n\nඑය යුනෙස්කෝ ලෝක උරුම අඩවියක් වන පූජනීය ශ්‍රී දළදා මාළිගාවේ නිවහනයි. සංචාරකයින්ට සාම්ප්‍රදායික උඩරට නැටුම් නැරඹීමට, මනරම් මහනුවර වැව වටා ඇවිදීමට සහ ලෝක ප්‍රකට ඕකිඩ් එකතුවක් සහිත පේරාදෙණිය රාජකීය උද්භිද උද්‍යානය ගවේෂණය කිරීමට මෙහිදී අවස්ථාව ලැබේ."
+      },
+      {
+        "id": "galle",
+        "title": "ගාල්ල",
+        "subtitle": "ඓතිහාසික වෙරළබඩ නගරය",
+        "category": "වෙරළබඩ",
+        "image": "/tours/galle.jpg",
+        "description": "ගාල්ල යනු යටත් විජිත ගෘහ නිර්මාණ ශිල්පයේ සහ වෙරළබඩ සුන්දරත්වයේ විශිෂ්ට නිර්මාණයකි. ලන්දේසීන් විසින් ඉදිකරන ලද ඓතිහාසික ගාලු කොටුව, පටු වීදි, විචිත්‍රවත් සාප්පු සහ ආකර්ෂණීය අවන්හල් සහිත යුනෙස්කෝ ලෝක උරුම අඩවියකි. \n\nමෙම නගරය එහි පොහොසත් ඉතිහාසය සහ දකුණු වෙරළ තීරයේ සිත් ඇදගන්නා සුළු වෙරළ තීරයන් මනාව සමතුලිත කරන බැවින්, එය ඉතිහාසයට ලැදි සහ වෙරළට ආදරය කරන සැමට අත්‍යවශ්‍ය ගමනාන්තයකි."
+      },
+      {
+        "id": "ella",
+        "title": "ඇල්ල",
+        "subtitle": "දර්ශනීය කඳුකර පෙදෙස",
+        "category": "සොබාදහම",
+        "image": "/tours/ella.jpg",
+        "description": "ඇල්ල යනු කඳු නැගීමට සහ සොබාදහමට ලැදි සංචාරකයින්ගේ පාරාදීසයක් බවට පත් වූ ආකර්ෂණීය කඳුකර ගම්මානයකි. \n\nඑය ගෘහ නිර්මාණ ශිල්පයේ විස්මය දනවන ආරුක්කු නවයේ පාලම (Nine Arch Bridge) සහ පුංචි සිරීපාදය (Little Adam's Peak) සහ ඇල්ල රොක් වෙතින් පෙනෙන විශ්මිත දසුන් සඳහා ප්‍රසිද්ධය. හරිත පැහැති තේ වතු සහ මීදුමෙන් වැසුණු කඳු වලින් වට වූ ඇල්ල, ලොව සුන්දරම දුම්රිය ගමන් සහ පා ගමන් අත්දැකීම් ලබා දෙයි."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "නුවරඑළිය",
+        "subtitle": "පුංචි එංගලන්තය",
+        "category": "සොබාදහම",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "'පුංචි එංගලන්තය' ලෙස හඳුන්වන නුවරඑළිය, එහි සිසිල් දේශගුණය සහ බ්‍රිතාන්‍ය යටත් විජිත පන්නයේ බංගලාවලට ප්‍රසිද්ධය. \n\nමෙම කලාපය ශ්‍රී ලංකාවේ තේ කර්මාන්තයේ හදවත වන අතර, ඔබට ලෝක මට්ටමේ තේ වතු සහ කර්මාන්තශාලා නැරඹිය හැකිය. ග්‍රෙගරි වැවේ (Gregory Lake) බෝට්ටු සංචාරයක නිරත වන්න, වික්ටෝරියා උද්‍යානයේ ඇවිදින්න සහ ශ්‍රී ලංකාවේ උසම නගරයේ මීදුම සහිත චමත්කාරය අත්විඳින්න."
+      },
+      {
+        "id": "sigiriya",
+        "title": "සීගිරිය",
+        "subtitle": "සීහගිරි පර්වත බලකොටුව",
+        "category": "සංස්කෘතික",
+        "image": "/tours/sigiriya.jpg",
+        "description": "මීටර් 200ක් උසැති දැවැන්ත පර්වතයක් මත පිහිටි සීගිරිය බලකොටුව, පැරණි ශ්‍රී ලාංකික ඉංජිනේරු ශිල්පයට සහ කලාවට කදිම නිදසුනකි. \n\n5 වන සියවසේදී කාශ්‍යප රජු විසින් ඉදිකරන ලද මෙම යුනෙස්කෝ අඩවිය, ලෝක ප්‍රකට සීගිරි බිතුසිතුවම්, කැඩපත් තාප්පය සහ ඉතා ක්‍රමවත්ව සැලසුම් කළ දිය උද්‍යාන වලින් සමන්විත වේ. පර්වතය මුදුනේ සිට පෙනෙන අංශක 360ක දර්ශනය ආසියාවේ වඩාත්ම සුවිශේෂී අත්දැකීම් වලින් එකකි."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "අනුරාධපුරය",
+        "subtitle": "පැරණි පූජනීය නගරය",
+        "category": "සංස්කෘතික",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "අනුරාධපුරය පැරණි ශ්‍රී ලංකාවේ ප්‍රථම අගනගරය වූ අතර එය අදටත් ලෝකයේ වඩාත්ම පූජනීය බෞද්ධ වන්දනා ස්ථානයක් ලෙස පවතී. \n\nමෙම නගරය පුරාණ ලෝකයේ උසම ව්‍යුහයන් අතරට අයත් වූ රුවන්වැලි සෑය සහ ජේතවනාරාමය වැනි දැවැන්ත ස්තූප පිහිටා ඇත. ඔබට වසර 2,000කට වඩා පැරණි, ලොව පැරණිතම ලිඛිත ඉතිහාසයක් ඇති ජය ශ්‍රී මහා බෝධීන් වහන්සේ ද මෙහිදී වන්දනාමාන කළ හැකිය."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "පොළොන්නරුව",
+        "subtitle": "මධ්‍යතන යුගයේ අගනුවර",
+        "category": "සංස්කෘතික",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "ශ්‍රී ලංකාවේ දෙවන පැරණි අගනගරය වූ පොළොන්නරුවේදී අතීතයට පියමං කරන්න. \n\nමෙම මධ්‍යතන යුගයේ නගරය ඉතා හොඳින් සංරක්ෂණය කර ඇති අතර, රාජකීය මාලිගාවේ නටබුන් සහ කළුගලින් නිමවූ බුද්ධ ප්‍රතිමා හතරක් සහිත ගල් විහාරය මෙහි ප්‍රධාන ආකර්ෂණයන් වේ. පරාක්‍රම සමුද්‍රය වැනි දියුණු වාරි පද්ධතීන් අදටත් කලාපයේ කෘෂිකර්මාන්තයට මහත් පිටුවහලක් සපයයි."
+      },
+      {
+        "id": "mirissa",
+        "title": "මිරිස්ස",
+        "subtitle": "තල්මසුන් නැරඹීමේ ගමනාන්තය",
+        "category": "වෙරළබඩ",
+        "image": "/tours/mirissa.jpg",
+        "description": "මිරිස්ස යනු අඩ සඳක හැඩැති වෙරළ තීරයක් සහ නිදහස් වටපිටාවක් සහිත නිවර්තන පාරාදීසයකි. \n\nඑය තල්මසුන් සහ ඩොල්ෆින් නැරඹීම සඳහා ලොව ඇති හොඳම ස්ථානයක් ලෙස ජාත්‍යන්තරව පිළිගැනේ. සාගර වික්‍රමාන්විතයන්ට අමතරව, සංචාරකයින්ට ප්‍රසිද්ධ පොල් ගස් කන්ද (Coconut Tree Hill) වෙත ගොස් හිරු බැස යන දසුන් නැරඹීමට හෝ වැලි සහිත වෙරළ තීරයේ රාත්‍රී කාලය විනෝදයෙන් ගත කිරීමට හැකිය."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "හික්කඩුව",
+        "subtitle": "කොරල් වෙරළබඩ නගරය",
+        "category": "වෙරළබඩ",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "හික්කඩුව යනු එහි වර්ණවත් කොරල් පර සහ රළ පැදීම (Surfing) සඳහා ඉතා ප්‍රසිද්ධ ජනප්‍රිය වෙරළබඩ ගමනාන්තයකි. \n\nහික්කඩුව ජාතික උද්‍යානය යනු වීදුරු පතුලක් සහිත බෝට්ටු මගින් හෝ ස්නෝකර්ලිං (Snorkeling) මගින් වර්ණවත් මසුන් සහ මුහුදු කැස්බෑවුන් නැරඹිය හැකි සාගර අභයභූමියකි. මෙම නගරය වෙරළබඩ උත්සව, කලා වෙළඳපොළවල් සහ විවිධ මුහුදු ආහාර අවන්හල් සඳහා ද ප්‍රසිද්ධය."
+      },
+      {
+        "id": "trincomalee",
+        "title": "ත්‍රිකුණාමලය",
+        "subtitle": "නැගෙනහිර වෙරළබඩ පාරාදීසය",
+        "category": "වෙරළබඩ",
+        "image": "/tours/trincomalee.jpg",
+        "description": "ඊසානදිග වෙරළ තීරයේ පිහිටි ත්‍රිකුණාමලය, ලොව විශිෂ්ටතම ස්වාභාවික ගැඹුරු මුහුදු වරායකට උරුමකම් කියයි. \n\nඑය ඉතා සුන්දර නිලාවේලි වෙරළ තීරයට සහ ස්නෝකර්ලිං සඳහා කදිම ස්ථානයක් වන පරෙවි දූපතට (Pigeon Island) නිවහන වේ. ඉන්දියන් සාගරයේ දර්ශනීය දසුන් මවන ස්වාමි පර්වතය (Swami Rock) මුදුනේ පිහිටි මනරම් කෝණේෂ්වරම් හින්දු කෝවිල නැරඹීමට අමතක නොකරන්න."
+      },
+      {
+        "id": "pasikuda",
+        "title": "පාසිකුඩා",
+        "subtitle": "නොගැඹුරු නිල් දියවර",
+        "category": "වෙරළබඩ",
+        "image": "/tours/pasikuda.jpg",
+        "description": "පාසිකුඩා නගරය ප්‍රසිද්ධ වී ඇත්තේ මුහුද දෙසට මීටර් සිය ගණනක් පයින් යා හැකි නොගැඹුරු, නිල් පැහැති සන්සුන් දියවර සහිත වෙරළ තීරයටයි. \n\nමෙම සන්සුන් ගමනාන්තය පවුලේ සැමට සහ සුඛෝපභෝගී විවේකයක් සොයන අයට කදිම ස්ථානයකි. කොරල් පර වලින් ආරක්ෂිත සන්සුන් ජලය පිහිටි බැවින්, පිහිනීම සහ ජල ක්‍රීඩා සඳහා ශ්‍රී ලංකාවේ ඇති ආරක්ෂිතම වෙරළ තීරයක් ලෙස මෙය සැලකේ."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "තිස්සමහාරාමය (යාල)",
+        "subtitle": "වනජීවී දොරටුව",
+        "category": "වනජීවී",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "තිස්සමහාරාමය, ශ්‍රී ලංකාවේ වැඩිපුරම සංචාරකයන් ආකර්ෂණය කරගන්නා වනජීවී අභයභූමිය වන යාල ජාතික උද්‍යානය වෙත පිවිසෙන ප්‍රධාන දොරටුවයි. \n\nයාල උද්‍යානය ලොව වැඩිම දිවි ගහනයක් සහිත ස්ථානයක් ලෙස ප්‍රසිද්ධ වන අතර, එහිදී අලි ඇතුන්, වලසුන් සහ කිඹුලන් ද දැකගත හැකිය. තිස්සමහාරාමය යනු කුරුල්ලන් නැරඹීමට සහ සන්ධ්‍යා කාලයේ ඇවිදීමට සුදුසු පැරණි වැව් සහිත ඓතිහාසික නගරයකි."
+      },
+      {
+        "id": "udawalawa",
+        "title": "උඩවලව",
+        "subtitle": "අලි ඇතුන් නැරඹීමේ සෆාරි",
+        "category": "වනජීවී",
+        "image": "/tours/udawalawa.jpg",
+        "description": "උඩවලව ජාතික උද්‍යානය යනු ශ්‍රී ලංකාවේ වන අලි ඇතුන් ඔවුන්ගේ ස්වාභාවික පරිසරය තුළ දැකගත හැකි හොඳම ස්ථානයයි. \n\nඋද්‍යානයේ ඇති විවෘත තැනිතලා නිසා විශාල අලි රංචු පහසුවෙන් හඳුනාගත හැකිය. අනාථ වූ අලි පැටවුන් රැකබලා ගෙන නැවත වනයට මුදා හරින 'ඇත් අතුරු සෙවණ' නැරඹීම සතුන්ට ලැදි ඕනෑම අයෙකුට ඉතා සංවේදී සහ ආදරණීය අත්දැකීමක් වනු ඇත."
+      },
+      {
+        "id": "negombo",
+        "title": "මීගමුව",
+        "subtitle": "කලපු නගරය",
+        "category": "වෙරළබඩ",
+        "image": "/tours/negombo.jpg",
+        "description": "ගුවන්තොටුපළට ඉතා ආසන්නව පිහිටි මීගමුව යනු පොහොසත් යටත් විජිත අතීතයක් සහිත ඓතිහාසික ධීවර නගරයකි. \n\nඑහි ඇති විශාල කලපුව සහ සාම්ප්‍රදායික ඔරු සඳහා ප්‍රසිද්ධ මීගමුවේදී ඔබට නැවුම් මාළු වෙළඳපොළ අත්දැකීමක් ලබාගත හැකිය. ලන්දේසි යුගයේ පල්ලි සහ නගරය මැදින් දිවෙන ඇළ පද්ධතිය නිසා මෙම නගරයට 'පුංචි රෝමය' යන විරුදාවලිය ද ලැබී ඇත."
+      },
+      {
+        "id": "kalutara",
+        "title": "කළුතර",
+        "subtitle": "වෙරළබඩ නවාතැන",
+        "category": "වෙරළබඩ",
+        "image": "/tours/kalutara.jpg",
+        "description": "කළුතර යනු ලොව ඇති එකම කුහර ස්තූපය සහිත පූජනීය කළුතර බෝධියට ප්‍රසිද්ධ වෙරළබඩ නගරයකි. \n\nකළු ගඟ මුහුදට එක්වන ස්ථානයේ පිහිටා ඇති මෙම නගරය ඉතා ලස්සන ගංගා සහ වෙරළ දර්ශන මවයි. කළුතර එහි සාම්ප්‍රදායික පන් විවීම් කර්මාන්තයට ද ප්‍රසිද්ධ වන අතර, කොළඹ නගරයේ කාර්යබහුලත්වයෙන් මිදී සන්සුන්ව කාලය ගත කිරීමට සුදුසු ස්ථානයකි."
+      },
+      {
+        "id": "jaffna",
+        "title": "යාපනය",
+        "subtitle": "උතුරු සංස්කෘතික නගරය",
+        "category": "සංස්කෘතික",
+        "image": "/tours/jaffna.jpg",
+        "description": "යාපනය නගරය දිවයිනේ සෙසු ප්‍රදේශවලට වඩා වෙනස් වූ සුවිශේෂී සංස්කෘතික අත්දැකීමක් ලබා දෙයි. \n\nනල්ලූර් කන්දසාමි කෝවිල වැනි වර්ණවත් හින්දු කෝවිල්, ඓතිහාසික යාපනය බලකොටුව සහ ඩෙල්ෆ්ට් සහ නයිනතිව් වැනි සන්සුන් දූපත් සමගින් උතුරේ සුන්දරත්වය අත්විඳින්න. උතුරටම ආවේණික වූ ආහාර රස විඳීමට, දේශීය වෙළඳපොළවල් ගවේෂණය කිරීමට සහ යාපනය අර්ධද්වීපයේ නොකැලැල් ස්වාභාවික සෞන්දර්යය විඳීමට මෙහිදී අවස්ථාව ලැබේ."
+      }
+    ]
+  },
+  "ta": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "கொழும்பு விமான நிலையம்",
+        "subtitle": "விமான நிலையம் (CMB)",
+        "category": "நகரம்",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "கட்டுநாயக்கவில் உள்ள பண்டாரநாயக்க சர்வதேச விமான நிலையம் (CMB) இலங்கையின் பிரதான சர்வதேச நுழைவாயிலாகும். உலகின் முதல் பெண் பிரதமரான சிறிமாவோ பண்டாரநாயக்கவின் பெயரால் அழைக்கப்படும் இது, தலைநகர் கொழும்பில் இருந்து 35 கி.மீ வடக்கே அமைந்துள்ளது. \n\nகுறிப்பு: எமது போக்குவரத்து கட்டணங்கள் நேரடி பிக்-அப் மற்றும் டிராப்-ஆஃப் சேவைகளை உள்ளடக்கியது. பயண வழியில் உள்ள இடங்களை பார்வையிட விரும்புவோருக்கு அதற்கான வசதிகள் செய்து தரப்படும். கார் முன்பதிவுகளுக்கு 5% மற்றும் வேன் முன்பதிவுகளுக்கு 3% சிறப்பு தள்ளுபடி வழங்குகிறோம். கொடுப்பனவுகள் இலங்கை ரூபாய் (LKR) அல்லது அன்றைய மாற்று விகிதத்திற்கு ஏற்ப வெளிநாட்டு நாணயங்களில் ஏற்றுக்கொள்ளப்படும்."
+      },
+      {
+        "id": "colombo",
+        "title": "கொழும்பு",
+        "subtitle": "வர்த்தகத் தலைநகரம்",
+        "category": "நகரம்",
+        "image": "/tours/colombo.jpg",
+        "description": "இலங்கையின் துடிப்பான வர்த்தகத் தலைநகரான கொழும்பு, காலனித்துவ வரலாற்றையும் நவீன நகர வாழ்க்கையையும் அழகாகக் கலந்த ஒரு இடமாகும். \n\nதாமரை கோபுரத்தை ஆராயுங்கள், காலி முகத்திடலில் (Galle Face Green) சூரிய அஸ்தமனத்தை இரசியுங்கள் மற்றும் வரலாற்று சிறப்புமிக்க டச்சு மருத்துவமனைக்குச் செல்லுங்கள். ஆடம்பர வணிக வளாகங்கள் முதல் பரபரப்பான பெட்டா சந்தை வரை, கொழும்பு நகரின் கலாச்சாரம் மற்றும் பாரம்பரியம் உங்களுக்கு மறக்க முடியாத அனுபவத்தைத் தரும்."
+      },
+      {
+        "id": "kandy",
+        "title": "கண்டி",
+        "subtitle": "மலைநாட்டுத் தலைநகரம்",
+        "category": "கலாச்சாரம்",
+        "image": "/tours/kandy.jpg",
+        "description": "பசுமையான மலைகளுக்கு நடுவே அமைந்துள்ள கண்டி, இலங்கையின் ஆன்மீக மற்றும் கலாச்சார இதயமாகும். \n\nயுனெஸ்கோ உலக பாரம்பரிய சின்னமான புனித தலாதா மாளிகை (புத்தரின் புனிதப் பல் கோயில்) இங்கே அமைந்துள்ளது. சுற்றுலாப் பயணிகள் கண்டியின் பாரம்பரிய நடனங்களை ரசிக்கலாம், கண்டி ஏரியைச் சுற்றி உலாவலாம் மற்றும் உலகப் புகழ்பெற்ற ஓர்க்கிட் மலர் தொகுப்பைக் கொண்ட பேராதனை அரச தாவரவியல் பூங்காவை ஆராயலாம்."
+      },
+      {
+        "id": "galle",
+        "title": "காலி",
+        "subtitle": "வரலாற்று சிறப்புமிக்க கடற்கரை நகரம்",
+        "category": "கடற்கரை",
+        "image": "/tours/galle.jpg",
+        "description": "காலி நகரம் காலனித்துவ கட்டிடக்கலை மற்றும் கடற்கரை அழகின் ஒரு சிறந்த எடுத்துக்காட்டாகும். டச்சுக்காரர்களால் கட்டப்பட்ட யுனெஸ்கோ உலக பாரம்பரிய சின்னமான வரலாற்று காலி கோட்டை, குறுகிய வீதிகள், பிரத்தியேக கடைகள் மற்றும் அழகான கஃபேக்களைக் கொண்ட ஒரு வாழும் நினைவுச்சின்னமாகும். \n\nஇந்த நகரம் அதன் செழுமையான வரலாற்றையும் தெற்குக் கடற்கரையின் அற்புதமான கடற்கரைகளையும் சமமாகப் பெற்றுள்ளது, இது வரலாற்று ஆர்வலர்களுக்கும் கடற்கரை பிரியர்களுக்கும் ஒரு சிறந்த இடமாகும்."
+      },
+      {
+        "id": "ella",
+        "title": "எல்லா",
+        "subtitle": "மலைநாட்டின் இயற்கை அழகு",
+        "category": "இயற்கை",
+        "image": "/tours/ella.jpg",
+        "description": "எல்லா என்பது இயற்கை ஆர்வலர்களுக்கும் நடைப்பயணம் மேற்கொள்பவர்களுக்கும் சொர்க்கமாக விளங்கும் ஒரு அழகான மலைக் கிராமமாகும். \n\nஇது ஒன்பது வளைவு பாலம் (Nine Arch Bridge) மற்றும் லிட்டில் ஆடம்ஸ் பீக் (Little Adam's Peak) ஆகியவற்றின் வியக்கத்தக்க காட்சிகளுக்குப் பெயர் பெற்றது. மரகதப் பச்சை நிற தேயிலை தோட்டங்கள் மற்றும் மூடுபனி சூழ்ந்த மலைகளால் சூழப்பட்ட எல்லா, உலகின் மிக அழகான ரயில் பயணங்கள் மற்றும் நடைப்பயண அனுபவங்களை வழங்குகிறது."
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "நுவரெலியா",
+        "subtitle": "குட்டி இங்கிலாந்து",
+        "category": "இயற்கை",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "'குட்டி இங்கிலாந்து' என்று அழைக்கப்படும் நுவரெலியா, அதன் குளிர்ச்சியான காலநிலை மற்றும் பிரிட்டிஷ் காலனித்துவ பாணி பங்களாக்களுக்குப் பெயர் பெற்றது. \n\nஇது இலங்கையின் தேயிலை தொழிலின் இதயமாகும். இங்கே நீங்கள் உலகத்தரம் வாய்ந்த தேயிலை தோட்டங்கள் மற்றும் தொழிற்சாலைகளைப் பார்வையிடலாம். கிரிகோரி ஏரியில் படகு சவாரி செய்யுங்கள், விக்டோரியா பூங்காவில் உலாவுங்கள் மற்றும் இலங்கையின் உயரமான நகரத்தின் அழகை அனுபவியுங்கள்."
+      },
+      {
+        "id": "sigiriya",
+        "title": "சீகிரியா",
+        "subtitle": "சிங்கக் கல் கோட்டை",
+        "category": "கலாச்சாரம்",
+        "image": "/tours/sigiriya.jpg",
+        "description": "சீகிரியா அல்லது சிங்கக் கல் என்பது 200 மீட்டர் உயரமுள்ள ஒரு பழங்கால பாறை கோட்டையாகும், இது இலங்கையின் பண்டைய பொறியியல் மற்றும் கலைக்குச் சான்றாகும். \n\nகி.பி 5 ஆம் நூற்றாண்டில் காசியப்ப மன்னனால் கட்டப்பட்ட இந்த யுனெஸ்கோ தளம், உலகப் புகழ்பெற்ற சீகிரிய ஓவியங்கள், கண்ணாடிச் சுவர் மற்றும் நுணுக்கமாகத் திட்டமிடப்பட்ட நீர் பூங்காக்களைக் கொண்டுள்ளது. பாறையின் உச்சியில் இருந்து தெரியும் 360 பாகை காட்சி ஆசியாவிலேயே மிகச் சிறந்த அனுபவங்களில் ஒன்றாகும்."
+      },
+      {
+        "id": "anuradhapura",
+        "title": "அனுராதபுரம்",
+        "subtitle": "புனிதமான பண்டைய நகரம்",
+        "category": "கலாச்சாரம்",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "அனுராதபுரம் பண்டைய இலங்கையின் முதல் தலைநகராகவும், உலகின் மிக புனிதமான பௌத்த யாத்திரை தலங்களில் ஒன்றாகவும் விளங்குகிறது. \n\nஇங்கே ருவன்வெலிசாய மற்றும் ஜேத்தவனராமய போன்ற மாபெரும் தூபிகள் உள்ளன, இவை பண்டைய உலகின் மிக உயரமான கட்டிடங்களாகக் கருதப்பட்டன. நீங்கள் 2,000 ஆண்டுகளுக்கு மேலான வரலாற்றைக் கொண்ட உலகின் மிகப் பழமையான மரமான 'ஜய ஸ்ரீ மகா போதி'யையும் இங்கே தரிசிக்கலாம்."
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "பொலன்னறுவை",
+        "subtitle": "மத்திய காலத் தலைநகரம்",
+        "category": "கலாச்சாரம்",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "இலங்கையின் இரண்டாவது பண்டைய தலைநகரான பொலன்னறுவையில் வரலாற்றைத் தரிசியுங்கள். \n\nஇந்த மத்திய கால நகரம் மிகவும் சிறப்பாகப் பாதுகாக்கப்பட்டுள்ளது. அரச மாளிகையின் சிதிலங்கள் மற்றும் கிரானைட் பாறையில் செதுக்கப்பட்ட நான்கு பிரம்மாண்டமான புத்த சிலைகளைக் கொண்ட 'கல் விகாரை' ஆகியவை இதன் முக்கிய ஈர்ப்புகளாகும். பராக்கிரம சமுத்திரம் போன்ற மேம்பட்ட நீர்ப்பாசன அமைப்புகள் இன்றும் இப்பகுதியின் விவசாயத்திற்கு உதவுகின்றன."
+      },
+      {
+        "id": "mirissa",
+        "title": "மிரிசா",
+        "subtitle": "திமிங்கிலம் பார்க்கும் இடம்",
+        "category": "கடற்கரை",
+        "image": "/tours/mirissa.jpg",
+        "description": "மிரிசா என்பது பிறை வடிவ கடற்கரை மற்றும் அமைதியான சூழலைக் கொண்ட ஒரு வெப்பமண்டல சொர்க்கமாகும். \n\nஇது திமிங்கிலங்கள் மற்றும் டால்பின்களைப் பார்ப்பதற்கான உலகின் சிறந்த இடங்களில் ஒன்றாக சர்வதேச அளவில் அங்கீகரிக்கப்பட்டுள்ளது. கடல் சாகசங்கள் தவிர, தென்னை மரக் குன்றுக்குச் (Coconut Tree Hill) சென்று சூரிய அஸ்தமனத்தை ரசிக்கலாம் அல்லது கடற்கரையில் துடிப்பான இரவு வாழ்க்கையை அனுபவிக்கலாம்."
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "இக்கடுவை",
+        "subtitle": "பவளப் பாறை கடற்கரை",
+        "category": "கடற்கரை",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "இக்கடுவை அதன் துடிப்பான பவளப் பாறைகள் மற்றும் சர்பிங் (Surfing) விளையாட்டுக்கு மிகவும் பிரபலமான ஒரு கடற்கரை நகரமாகும். \n\nஇக்கடுவை தேசிய பூங்கா என்பது கடல் வாழ் உயிரினங்கள் நிறைந்த ஒரு பகுதியாகும். இங்கே கண்ணாடி அடிப்பகுதி கொண்ட படகுகள் மூலம் அல்லது ஸ்நோர்கெலிங் (Snorkeling) மூலம் வண்ணமயமான மீன்கள் மற்றும் கடல் ஆமைகளைப் பார்க்கலாம். இந்நகரம் கடற்கரைத் திருவிழாக்கள் மற்றும் கடல் உணவு உணவகங்களுக்கும் பெயர் பெற்றது."
+      },
+      {
+        "id": "trincomalee",
+        "title": "திருகோணமலை",
+        "subtitle": "கிழக்குக் கடற்கரை சொர்க்கம்",
+        "category": "கடற்கரை",
+        "image": "/tours/trincomalee.jpg",
+        "description": "இலங்கையின் வடகிழக்கு கடற்கரையில் அமைந்துள்ள திருகோணமலை, உலகின் மிகச்சிறந்த இயற்கை ஆழ்கடல் துறைமுகங்களில் ஒன்றைக் கொண்டுள்ளது. \n\nஇங்கே அழகான நிலாவெளி கடற்கரை மற்றும் புறா தீவு (Pigeon Island) ஆகியவை உள்ளன. கடலின் வியக்கத்தக்க காட்சியை வழங்கும் ஸ்வாமி பாறையின் நுனியில் அமைந்துள்ள மாட்சிமை பொருந்திய கோணேஸ்வரம் ஆலயத்தைத் தரிசிக்கத் தவறாதீர்கள்."
+      },
+      {
+        "id": "pasikuda",
+        "title": "பாசிக்குடா",
+        "subtitle": "ஆழமற்ற நீலக் கடல்",
+        "category": "கடற்கரை",
+        "image": "/tours/pasikuda.jpg",
+        "description": "பாசிக்குடா அதன் ஆழமற்ற, நீல நிறக் கடல் நீருக்குப் பெயர் பெற்றது. இங்கே கடலுக்குள் நூற்றுக்கணக்கான மீட்டர்கள் தூரம் வரை நடந்து செல்ல முடியும். \n\nஇந்த அமைதியான இடம் குடும்பங்களுடன் சுற்றுலா வருவோருக்கும் சொகுசான ஓய்வைத் தேடுவோருக்கும் ஏற்றது. பவளப் பாறைகளால் பாதுகாக்கப்பட்ட அமைதியான கடல் நீர் என்பதால், நீச்சல் மற்றும் நீர் விளையாட்டுகளுக்கு இது மிகவும் பாதுகாப்பான இடமாகும்."
+      },
+      {
+        "id": "tissamaharama",
+        "title": "திஸ்ஸமஹாராமய (யால)",
+        "subtitle": "வனவிலங்கு நுழைவாயில்",
+        "category": "வனவிலங்குகள்",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "திஸ்ஸமஹாராமய என்பது இலங்கையின் அதிக பார்வையாளர்களைக் கவரும் யால தேசிய பூங்காவிற்கான பிரதான நுழைவாயிலாகும். \n\nயால பூங்கா சிறுத்தைகள் அதிகமுள்ள இடமாகவும், காட்டு யானைகள், கரடிகள் மற்றும் முதலைகளைப் பார்க்கக்கூடிய இடமாகவும் திகழ்கிறது. திஸ்ஸமஹாராமய நகரில் உள்ள பழங்காலக் குளங்கள் பறவைகளைப் பார்ப்பதற்கும் மாலை நேர நடைப்பயணத்திற்கும் மிகச் சிறந்தவை."
+      },
+      {
+        "id": "udawalawa",
+        "title": "உடவளவை",
+        "subtitle": "யானைச் சவாரி",
+        "category": "வனவிலங்குகள்",
+        "image": "/tours/udawalawa.jpg",
+        "description": "காட்டு யானைகளை அவற்றின் இயற்கையான வாழிடத்தில் பார்ப்பதற்கு உடவளவை தேசிய பூங்கா இலங்கையின் சிறந்த இடமாகும். \n\nஆப்பிரிக்க சவன்னா போன்ற புல்வெளிகளைக் கொண்டிருப்பதால் இங்கே யானைக் கூட்டங்களை எளிதாகக் காண முடியும். ஆதரவற்ற யானைக் குட்டிகளைப் பராமரிக்கும் 'யானை இடைத்தங்கல் முகாம்' (Elephant Transit Home) விலங்கு பிரியர்களுக்கு ஒரு நெகிழ்ச்சியான அனுபவத்தைத் தரும்."
+      },
+      {
+        "id": "negombo",
+        "title": "நீர்கொழும்பு",
+        "subtitle": "காயல் நகரம்",
+        "category": "கடற்கரை",
+        "image": "/tours/negombo.jpg",
+        "description": "விமான நிலையத்திற்கு மிக அருகில் அமைந்துள்ள நீர்கொழும்பு, காலனித்துவ கால வரலாற்றைக் கொண்ட ஒரு மீன்பிடி நகரமாகும். \n\nபரந்த காயல் மற்றும் பாரம்பரிய மீன்பிடிப் படகுகளுக்குப் (Oruvas) பெயர் பெற்ற நீர்கொழும்பில் புதிய கடல் உணவுகளைச் சுவைக்கலாம். 'குட்டி ரோம்' என்று அழைக்கப்படும் இந்நகரம், டச்சு கால தேவாலயங்கள் மற்றும் அமைதியான கால்வாய் அமைப்பிற்கும் பெயர் பெற்றது."
+      },
+      {
+        "id": "kalutara",
+        "title": "களுத்துறை",
+        "subtitle": "கடற்கரை ஓய்விடம்",
+        "category": "கடற்கரை",
+        "image": "/tours/kalutara.jpg",
+        "description": "களுத்துறை நகரம் அதன் புனிதமான களுத்துறை போதிக்கு பெயர் பெற்றது - இது உலகின் ஒரே ஒரு உட்புறம் காலியான பௌத்த தூபியாகும். \n\nகளு கங்கை கடலுடன் சங்கமிக்கும் இடத்தில் அமைந்துள்ள இந்நகரம் அழகான நதி மற்றும் கடற்கரை காட்சிகளை வழங்குகிறது. இங்கே பாரம்பரியமான கூடை பின்னும் தொழிலையும் நீங்கள் பார்க்கலாம்."
+      },
+      {
+        "id": "jaffna",
+        "title": "யாழ்ப்பாணம்",
+        "subtitle": "வடக்கின் கலாச்சார நகரம்",
+        "category": "கலாச்சாரம்",
+        "image": "/tours/jaffna.jpg",
+        "description": "யாழ்ப்பாணம் மற்ற பகுதிகளிலிருந்து முற்றிலும் மாறுபட்ட தனித்துவமான கலாச்சார அனுபவத்தை வழங்குகிறது. \n\nவண்ணமயமான நல்லூர் கந்தசுவாமி கோயில், வரலாற்று யாழ்ப்பாணக் கோட்டை மற்றும் அமைதியான தீவுகளான நெடுந்தீவு மற்றும் நயினாதீவு ஆகியவற்றின் அழகை அனுபவியுங்கள். தனித்துவமான யாழ்ப்பாண உணவுகள், உள்ளூர் சந்தைகள் மற்றும் யாழ்ப்பாண தீபகற்பத்தின் இயற்கை எழிலைக் காண இது சிறந்த இடமாகும்."
+      }
+    ]
+  },
+  "zh": {
+    "EXCURSIONS": [
+      {
+        "id": "colombo-airport",
+        "title": "科伦坡机场",
+        "subtitle": "班达拉奈克国际机场 (CMB)",
+        "category": "城市",
+        "image": "/tours/colombo-airport.jpg",
+        "description": "位于卡图纳亚克的班达拉奈克国际机场 (CMB) 是进入斯里兰卡的主要门户。机场以世界上第一位女总理西丽玛沃·班达拉奈克的名字命名，距离首都科伦坡以北 35 公里。\n\n注：我们的接送价格涵盖直接取车和送机服务。如需在沿途安排额外的景点参观，可根据要求进行安排。我们为轿车预订提供 5% 的特别折扣，面包车提供 3% 的折扣。支付方式接受斯里兰卡卢比 (LKR) 或按当日汇率折算的任何主要外币。"
+      },
+      {
+        "id": "colombo",
+        "title": "科伦坡",
+        "subtitle": "商业首都",
+        "category": "城市",
+        "image": "/tours/colombo.jpg",
+        "description": "作为斯里兰卡充满活力的商业中心，科伦坡将殖民历史与现代都市生活方式完美交融，展现出迷人的魅力。\n\n您可以探索标志性的莲花塔，在日落时分沿着加勒费斯绿地散步，或参观历史悠久的荷兰医院旧址。从奢华的购物中心到熙熙攘攘的佩塔市场，科伦坡为您开启了一段难忘的旅程，带您初探这座岛屿多元的文化与遗产。"
+      },
+      {
+        "id": "kandy",
+        "title": "康提",
+        "subtitle": "圣城山区之都",
+        "category": "文化",
+        "image": "/tours/kandy.jpg",
+        "description": "康提坐落在郁郁葱葱的绿色山丘之间，是斯里兰卡的精神与文化中心。\n\n这里是神圣的佛牙寺（Sri Dalada Maligawa）所在地，该寺庙被列为联合国教科文组织世界遗产。游客可以欣赏传统的康提舞表演，在风景如画的康提湖畔散步，并探索佩拉德尼亚皇家植物园，那里拥有享誉世界的兰花收藏。"
+      },
+      {
+        "id": "galle",
+        "title": "加勒",
+        "subtitle": "历史悠久的沿海城市",
+        "category": "海滩",
+        "image": "/tours/galle.jpg",
+        "description": "加勒是殖民时期建筑艺术与海岸美景的杰作。由荷兰人建造的加勒古堡是联合国教科文组织世界遗产，也是一座活生生的纪念碑，街道狭窄，精品店琳琅满目，咖啡馆温馨舒适。\n\n这座城市完美地平衡了其深厚的历史底蕴与南海岸迷人的海滩，是历史爱好者和海滩度假者的必游之地。"
+      },
+      {
+        "id": "ella",
+        "title": "埃拉",
+        "subtitle": "风景如画的山区小镇",
+        "category": "自然",
+        "image": "/tours/ella.jpg",
+        "description": "埃拉是一个迷人的山村，已成为徒步旅行者和自然爱好者的天堂。\n\n它以建筑奇迹“九拱桥”以及从小亚当峰和埃拉岩俯瞰的壮丽景色而闻名。埃拉被翠绿的茶园和雾气缭绕的山脉所环绕，提供了世界上最美的徒步路径和火车旅行体验。"
+      },
+      {
+        "id": "nuwara-eliya",
+        "title": "努沃勒埃利耶",
+        "subtitle": "小英伦",
+        "category": "自然",
+        "image": "/tours/nuwaraeliya.jpg",
+        "description": "努沃勒埃利耶被称为“小英伦”，以其凉爽的气候和英国殖民风格的洋房而闻名。\n\n该地区是斯里兰卡茶叶产业的核心，您可以参观世界级的茶园和茶厂。在格雷戈里湖上享受泛舟之乐，穿过维护精美的维多利亚公园，体验斯里兰卡海拔最高城镇的迷雾魅力。"
+      },
+      {
+        "id": "sigiriya",
+        "title": "锡吉里耶",
+        "subtitle": "狮子岩要塞",
+        "category": "文化",
+        "image": "/tours/sigiriya.jpg",
+        "description": "锡吉里耶（又称狮子岩）是一座高达 200 米的高空古岩石堡垒，是古代斯里兰卡工程技术和艺术的惊人见证。\n\n这座联合国教科文组织世界遗产由迦叶波国王于 5 世纪建造，拥有世界著名的壁画、镜像墙和规划严谨的水上花园。从山顶俯瞰的 360 度全景是全亚洲最具代表性的旅行体验之一。"
+      },
+      {
+        "id": "anuradhapura",
+        "title": "阿努拉德普勒",
+        "subtitle": "古代圣城",
+        "category": "文化",
+        "image": "/tours/anuradhapura.jpg",
+        "description": "阿努拉德普勒是古代斯里兰卡的第一个首都，至今仍是世界上最神圣的佛教朝圣地之一。\n\n这座城市拥有巨大的佛塔，如鲁万维利萨亚 (Ruwanwelisaya) 和杰塔瓦纳拉玛 (Jetavanaramaya)，它们曾是古代世界最高的建筑。您还可以参观大菩提树 (Jaya Sri Maha Bodhi)，这是世界上有记载的最古老的树，种植于 2000 多年前。"
+      },
+      {
+        "id": "polonnaruwa",
+        "title": "波隆纳鲁沃",
+        "subtitle": "中世纪首都",
+        "category": "文化",
+        "image": "/tours/polonnaruwa.jpg",
+        "description": "在波隆纳鲁沃这块斯里兰卡第二个古代首都的土地上步入时光隧道。\n\n这座中世纪古城的遗迹保存得异常完好，拥有雄伟的皇宫遗址和伽尔寺 (Gal Vihara)——这里的四尊壮丽的佛像直接在花岗岩石上雕刻而成。城市先进的灌溉系统（如帕拉克拉玛海）至今仍在支持该地区的农业。"
+      },
+      {
+        "id": "mirissa",
+        "title": "米瑞莎",
+        "subtitle": "观鲸胜地",
+        "category": "海滩",
+        "image": "/tours/mirissa.jpg",
+        "description": "米瑞莎是一座热带天堂，以其新月形的海滩和悠闲的氛围而闻名。\n\n它被公认为世界上观赏鲸鱼和海豚的最佳地点之一。除了海洋探险，游客还可以在著名的椰树山 (Coconut Tree Hill) 放松身心，欣赏完美的日落，或在沙滩边享受充满活力的夜生活。"
+      },
+      {
+        "id": "hikkaduwa",
+        "title": "黑卡杜瓦",
+        "subtitle": "珊瑚海滩小镇",
+        "category": "海滩",
+        "image": "/tours/hikkaduwa.jpg",
+        "description": "黑卡杜瓦是一处传奇的海滩胜地，以其充满活力的珊瑚礁和极佳的冲浪条件而闻名。\n\n黑卡杜瓦国家公园是一处海洋保护区，您可以乘坐玻璃底船或通过浮潜观赏五颜六色的鱼类和海龟。小镇还因其热闹的海滩节、艺术市场和品种繁多的海鲜餐厅而备受欢迎。"
+      },
+      {
+        "id": "trincomalee",
+        "title": "亭可马里",
+        "subtitle": "东海岸天堂",
+        "category": "海滩",
+        "image": "/tours/trincomalee.jpg",
+        "description": "亭可马里位于东北海岸，拥有世界上最好的天然深水港之一。\n\n这里有美丽的尼拉韦利 (Nilaveli) 海滩和鸽子岛 (Pigeon Island)，后者是拥有清澈海水的顶级浮潜地点。千万不要错过科内斯瓦拉姆神庙 (Koneswaram Temple)，这座雄伟的印度教神庙坐落在悬崖边缘，可以俯瞰印度洋的壮丽景色。"
+      },
+      {
+        "id": "pasikuda",
+        "title": "帕希库达",
+        "subtitle": "浅滩蓝海",
+        "category": "海滩",
+        "image": "/tours/pasikuda.jpg",
+        "description": "帕希库达以其标志性的浅滩而闻名，清澈见底的青绿色海水让您可以向大海深处步行数百米。\n\n这处宁静的目的地非常适合家庭游客和追求奢华放松的游客。受珊瑚礁保护的平静海域使其成为斯里兰卡最安全的海岸线之一，非常适合游泳、帆板运动和滑水。"
+      },
+      {
+        "id": "tissamaharama",
+        "title": "提萨马哈拉马 (雅拉)",
+        "subtitle": "野生动物门户",
+        "category": "野生动物",
+        "image": "/tours/tissamaharama.jpg",
+        "description": "提萨马哈拉马（简称“提萨”）是前往雅拉国家公园的主要门户，雅拉是斯里兰卡游客最多的野生动物保护区。\n\n雅拉以拥有世界最高密度的花豹种群而闻名，同时还有野象、懒熊和鳄鱼。提萨本身也是一座历史名镇，拥有古老的人工湖，非常适合观鸟和傍晚散步。"
+      },
+      {
+        "id": "udawalawa",
+        "title": "乌达瓦拉维",
+        "subtitle": "大象游猎",
+        "category": "野生动物",
+        "image": "/tours/udawalawa.jpg",
+        "description": "乌达瓦拉维国家公园是斯里兰卡在自然栖息地观察野象的最佳地点。\n\n公园开阔的平原酷似非洲大草原，让人很容易发现成群的野象。参观附近的“大象中转站”(Elephant Transit Home) 是一段温馨的体验，在那里孤儿小象接受康复训练并最终重返大自然。"
+      },
+      {
+        "id": "negombo",
+        "title": "内格博",
+        "subtitle": "泻湖之城",
+        "category": "海滩",
+        "image": "/tours/negombo.jpg",
+        "description": "内格博距离机场仅几分钟路程，是一座拥有丰富殖民历史的古老渔镇。\n\n内格博以其广阔的泻湖和传统的支腿独木舟 (Oruvas) 而闻名，提供充满活力的鱼市体验。其“小罗马”的魅力体现在众多的荷兰时期教堂和贯穿小镇的宁静运河系统中。"
+      },
+      {
+        "id": "kalutara",
+        "title": "卡卢特勒",
+        "subtitle": "海岸度假胜地",
+        "category": "海滩",
+        "image": "/tours/kalutara.jpg",
+        "description": "卡卢特勒是一座沿海小镇，以其神圣的菩提树而闻名——这里拥有世界上唯一的中空佛教佛塔。 \n\n小镇坐落在卡卢河入海口，拥有优美的河景和海景。卡卢特勒还以其传统的编篮工业而闻名，是寻求逃离科伦坡喧嚣的游客的静谧下榻地。"
+      },
+      {
+        "id": "jaffna",
+        "title": "贾夫纳",
+        "subtitle": "北部文化之都",
+        "category": "文化",
+        "image": "/tours/jaffna.jpg",
+        "description": "贾夫纳提供了区别于岛屿其他地区的独特文化体验。\n\n这里有色彩缤纷的印度教神庙（如 Nallur Kandaswamy Kovil）、历史悠久的贾夫纳堡以及德尔夫特岛和纳伊纳蒂夫岛等宁静的岛屿。探索独特的北部美食，逛逛充满活力的本地市场，享受贾夫纳半岛未经雕琢的自然美景。"
+      }
+    ]
+  }
+}

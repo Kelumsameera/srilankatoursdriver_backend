@@ -15,9 +15,15 @@ import {
   Vehicle,
 } from "../models/index.js";
 import * as v from "../validations/content.js";
+import { ApiError } from "../utils/ApiError.js";
 import { CACHE_TAGS } from "../services/revalidate.service.js";
 
 const categoryPopulate = { path: "category", select: "name slug kind" };
+
+/* Reference clean-up after deletes – nothing is left pointing at a missing document. */
+async function unsetRef(models: { updateMany: (f: object, u: object) => unknown }[], field: string, id: string) {
+  await Promise.all(models.map((m) => m.updateMany({ [field]: id }, { $unset: { [field]: 1 } })));
+}
 
 /** Declarative configuration for every CMS content type handled by the generic CRUD layer. */
 export const RESOURCES = {
@@ -37,6 +43,9 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.tours],
     translatable: "tour",
     publishField: "status",
+    // Reviews keep their text but no longer link to a tour that is gone. Bookings keep their stored title.
+    onDelete: (id) => unsetRef([Review], "tour", id),
+    deleteCacheTags: [CACHE_TAGS.reviews],
   },
   destinations: {
     name: "destination",
@@ -54,6 +63,11 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.destinations],
     translatable: "destination",
     publishField: "status",
+    onDelete: async (id) => {
+      await Tour.updateMany({ destinations: id }, { $pull: { destinations: id } });
+      await unsetRef([Excursion], "destination", id);
+    },
+    deleteCacheTags: [CACHE_TAGS.tours, CACHE_TAGS.excursions],
   },
   excursions: {
     name: "excursion",
@@ -88,6 +102,8 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.vehicles],
     translatable: "vehicle",
     publishField: "status",
+    onDelete: (id) => unsetRef([Tour], "vehicle", id),
+    deleteCacheTags: [CACHE_TAGS.tours],
   },
   categories: {
     name: "category",
@@ -104,6 +120,8 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.categories, CACHE_TAGS.tours, CACHE_TAGS.excursions, CACHE_TAGS.blog, CACHE_TAGS.gallery],
     translatable: "category",
     publishField: "enabled",
+    onDelete: (id) => unsetRef([Tour, Destination, Excursion, Vehicle, BlogPost, GalleryItem], "category", id),
+    deleteCacheTags: [CACHE_TAGS.destinations, CACHE_TAGS.vehicles],
   },
   gallery: {
     name: "galleryItem",
@@ -209,6 +227,10 @@ export const RESOURCES = {
     translatable: "navigationItem",
     publishField: "enabled",
     duplicateTitleField: "label",
+    // Children of a deleted menu item move up to the top level instead of disappearing.
+    onDelete: async (id) => {
+      await NavigationItem.updateMany({ parent: id }, { $set: { parent: null } });
+    },
   },
   seo: {
     name: "seoMetadata",
@@ -220,5 +242,8 @@ export const RESOURCES = {
     searchFields: ["key", "seoTitle"],
     defaultSort: { key: 1 },
     cacheTags: [CACHE_TAGS.seo],
+    beforeDelete: (doc) => {
+      if (doc.key === "global") throw ApiError.badRequest("The global SEO defaults cannot be deleted – edit them instead");
+    },
   },
 } satisfies Record<string, ResourceConfig>;

@@ -1,4 +1,28 @@
 import { Schema, model, type InferSchemaType } from "mongoose";
+import { mediaAssetSchema } from "./schemas/common.js";
+
+/** One row of the fixed airport-transfer price table (destinations pages). */
+const transferRateSchema = new Schema(
+  {
+    destination: { type: String, trim: true, required: true },
+    car: { type: Number, default: null },
+    van: { type: Number, default: null },
+    bus: { type: Number, default: null },
+    duration: { type: String, trim: true, default: "" },
+    distanceKm: { type: Number, default: null },
+  },
+  { _id: false },
+);
+
+/** Accreditation / partner logos shown in the website trust bar (SLTDA, PATA, TripAdvisor …). */
+const partnerSchema = new Schema(
+  {
+    name: { type: String, trim: true, required: true },
+    url: { type: String, trim: true, default: "" },
+    logo: mediaAssetSchema,
+  },
+  { _id: false },
+);
 
 const footerLinkSchema = new Schema(
   { label: { type: String, trim: true, required: true }, url: { type: String, trim: true, required: true } },
@@ -58,6 +82,15 @@ const siteSettingSchema = new Schema(
       enabled: { type: Boolean, default: false },
       profileUrl: { type: String, trim: true, default: "" },
       ratingText: { type: String, trim: true, default: "" },
+    },
+    partners: { type: [partnerSchema], default: [] },
+    transferRates: {
+      enabled: { type: Boolean, default: true },
+      title: { type: String, trim: true, default: "" },
+      subtitle: { type: String, trim: true, default: "" },
+      currency: { type: String, trim: true, uppercase: true, default: "USD" },
+      note: { type: String, trim: true, default: "" },
+      rows: { type: [transferRateSchema], default: [] },
     },
     maintenanceMode: { type: Boolean, default: false },
   },

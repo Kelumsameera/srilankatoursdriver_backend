@@ -53,6 +53,7 @@ export function crmController(kind: crm.CrmKind) {
     },
     async deleteNote(req: Request, res: Response) {
       const doc = await crm.deleteCrmNote(kind, String(req.params.id), String(req.params.noteId));
+      await logActivity(req, { action: "update", entity, entityId: String(req.params.id), summary: `Removed a note from ${ref(doc as Record<string, unknown>)}` });
       return ok(res, doc, "Note removed");
     },
     async remove(req: Request, res: Response) {

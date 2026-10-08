@@ -1,0 +1,1347 @@
+{
+  "targetModel": "Page",
+  "count": 15,
+  "note": "data = fields of the EXISTING CMS model only; media url fields still point to the old site (Cloudinary upload is a later phase); ObjectId references are resolved at import time from `references`.",
+  "records": [
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "homepage",
+      "sourceWpId": 8012,
+      "targetModel": "Page",
+      "data": {
+        "slug": "home",
+        "title": "Home",
+        "subtitle": "Discover amazing places at exclusive deals in Sri Lanka",
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Home - Sri Lanka Tours Drivers",
+          "metaDescription": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+          "ogTitle": "Home - Sri Lanka Tours Drivers",
+          "ogDescription": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": null,
+        "headings": [
+          {
+            "level": 2,
+            "text": "We are Sri Lanka Tours Driver"
+          },
+          {
+            "level": 2,
+            "text": "Featured Tour Packages"
+          },
+          {
+            "level": 2,
+            "text": "(November to April)"
+          },
+          {
+            "level": 2,
+            "text": "Seasonal Packages"
+          },
+          {
+            "level": 2,
+            "text": "(May to September)"
+          },
+          {
+            "level": 2,
+            "text": "Recommended Drivers & Guides"
+          },
+          {
+            "level": 3,
+            "text": "We have English Speaking French Speaking German Speaking Hindi Speaking Spanish Speaking Italian Speaking Drivers"
+          },
+          {
+            "level": 2,
+            "text": "We Make All The Process Easy"
+          },
+          {
+            "level": 3,
+            "text": "Best Travel Agent"
+          },
+          {
+            "level": 3,
+            "text": "Beautiful Places"
+          },
+          {
+            "level": 3,
+            "text": "Tailor Made Tours"
+          },
+          {
+            "level": 3,
+            "text": "Transportation"
+          },
+          {
+            "level": 3,
+            "text": "Best Price Guarantee"
+          },
+          {
+            "level": 3,
+            "text": "Fast Booking"
+          },
+          {
+            "level": 2,
+            "text": "One Day Tour Packages"
+          },
+          {
+            "level": 2,
+            "text": "Customer Reviews"
+          },
+          {
+            "level": 2,
+            "text": "Destinations"
+          },
+          {
+            "level": 2,
+            "text": "We Help You Planning Your Journey"
+          },
+          {
+            "level": 2,
+            "text": "Our Gallery"
+          },
+          {
+            "level": 3,
+            "text": "Login"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Home - Sri Lanka Tours Drivers",
+            "description": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+            "label1": "Written by",
+            "data1": "srilankatoursdriver",
+            "label2": "Time to read",
+            "data2": "2 minutes"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "website",
+            "title": "Home - Sri Lanka Tours Drivers",
+            "description": "Discover Sri Lanka tours, cultural trips, wildlife safaris, Ayurveda retreats & beach adventures. Plan your perfect holiday today!",
+            "url": "https://srilankatoursdriver.com/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2025-07-05T17:38:01+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "ImageObject",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/about-us/",
+      "sourceType": "about",
+      "sourceWpId": 614,
+      "targetModel": "Page",
+      "data": {
+        "slug": "about-us",
+        "title": "About Sri Lanka Tours Driver",
+        "subtitle": "",
+        "heroImage": {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2020/11/about_image-2.png",
+          "resourceType": "image",
+          "alt": "",
+          "format": "png",
+          "width": 370,
+          "height": 155
+        },
+        "content": "About Us\n\n## We Help You Planning Your Journey\n\nA smiling sun all year round, golden beaches, ancient cities, safaris, lovely people a in a tropical paradise, mouth watering foods Sri Lanka unforgettable travelling experience you can ever imagine, we are licensed tour guide team in **Colombo-Sri Lanka.**\n\n[Contact Us](https://srilankatoursdriver.com/contact/)",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "About Sri Lanka Tours Driver - Sri Lanka Tours Drivers",
+          "metaDescription": "Expert Sri Lanka travel guides offering cultural tours, wildlife safaris, Ayurveda retreats & unforgettable experiences across the island.",
+          "ogTitle": "About Sri Lanka Tours Driver - Sri Lanka Tours Drivers",
+          "ogDescription": "Expert Sri Lanka travel guides offering cultural tours, wildlife safaris, Ayurveda retreats & unforgettable experiences across the island.",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "about-us",
+        "headings": [
+          {
+            "level": 2,
+            "text": "We Help You Planning Your Journey"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/about-us/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "About Sri Lanka Tours Driver - Sri Lanka Tours Drivers",
+            "description": "Expert Sri Lanka travel guides offering cultural tours, wildlife safaris, Ayurveda retreats & unforgettable experiences across the island.",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "About Sri Lanka Tours Driver - Sri Lanka Tours Drivers",
+            "description": "Expert Sri Lanka travel guides offering cultural tours, wildlife safaris, Ayurveda retreats & unforgettable experiences across the island.",
+            "url": "https://srilankatoursdriver.com/about-us/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2025-07-05T17:43:47+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "ImageObject",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/about-us",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "1 link(s) in the text still point to the old site – rewrite with the URL map at import time"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/contact/",
+      "sourceType": "contact",
+      "sourceWpId": 890,
+      "targetModel": "Page",
+      "data": {
+        "slug": "contact",
+        "title": "Contact",
+        "subtitle": "",
+        "content": "### [Address](https://goo.gl/maps/jyHJkiXsQ3Vz1JTQA)\n\nNo:96, Maddawaththa, Halthota, Bandaragama, Sri Lanka, 12530.\n\n### [WhatsApp](https://wa.me/+94769300334)\n\n[(+94) 769 300 334](https://wa.me/+94769300334)\n\n### [Email](mailto:contact@example.com)\n\n[info@srilankatoursdriver.com](mailto:info@srilankatoursdriver.com)\n\n### Business Hours\n\nOpen 24 Hours | 7 Days\n\n## Send us a message\n\nEverything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at[info@srilankatoursdriver.com](mailto:info@srilankatoursdriver.com) Talk to us via WhatsApp We are always here for your assistance and at your service.",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Contact - Sri Lanka Tours Drivers",
+          "metaDescription": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+          "ogTitle": "Contact - Sri Lanka Tours Drivers",
+          "ogDescription": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "contact",
+        "headings": [
+          {
+            "level": 3,
+            "text": "Address"
+          },
+          {
+            "level": 3,
+            "text": "WhatsApp"
+          },
+          {
+            "level": 3,
+            "text": "Email"
+          },
+          {
+            "level": 3,
+            "text": "Business Hours"
+          },
+          {
+            "level": 2,
+            "text": "Send us a message"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/contact/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Contact - Sri Lanka Tours Drivers",
+            "description": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Contact - Sri Lanka Tours Drivers",
+            "description": "Everything you need is at your fingertips. For any questions or queries you may have please use the form below or alternatively email us at",
+            "url": "https://srilankatoursdriver.com/contact/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-11-04T20:32:03+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/contact",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [
+          {
+            "field": "content",
+            "reason": "page contains a placeholder e-mail (contact@example.com)"
+          }
+        ],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "content: page contains a placeholder e-mail (contact@example.com)"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/destination-list/",
+      "sourceType": "destination-listing",
+      "sourceWpId": 3119,
+      "targetModel": "Page",
+      "data": {
+        "slug": "destinations",
+        "title": "Sri Lanka Destinations",
+        "subtitle": "",
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+          "metaDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "ogTitle": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+          "ogDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "destination-list",
+        "headings": [
+          {
+            "level": 2,
+            "text": "Gangaramaya Temple"
+          },
+          {
+            "level": 2,
+            "text": "St. Mary’s Church – Negambo"
+          },
+          {
+            "level": 2,
+            "text": "Old Parliament Building"
+          },
+          {
+            "level": 2,
+            "text": "Colombo City"
+          },
+          {
+            "level": 2,
+            "text": "Jami Ul-Alfar Mosque"
+          },
+          {
+            "level": 2,
+            "text": "Kelaniya Raja Maha Viharaya"
+          },
+          {
+            "level": 2,
+            "text": "Yala National Park"
+          },
+          {
+            "level": 2,
+            "text": "Galle Face Green"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/destination-list/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+            "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Sri Lanka Destinations - Sri Lanka Tours Drivers",
+            "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+            "url": "https://srilankatoursdriver.com/destination-list/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-12-01T07:59:04+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/destinations",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "old slug \"destination-list\" maps onto the CMS system page \"destinations\"",
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/drivers-guides/",
+      "sourceType": "vehicle-listing",
+      "sourceWpId": 3139,
+      "targetModel": "Page",
+      "data": {
+        "slug": "vehicles",
+        "title": "Drivers & Guides",
+        "subtitle": "A Great Journey Begins with a Skilled Driver",
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Drivers & Guides - Sri Lanka Tours Drivers",
+          "metaDescription": "A Great Journey Begins with a Skilled Driver",
+          "ogTitle": "Drivers & Guides - Sri Lanka Tours Drivers",
+          "ogDescription": "A Great Journey Begins with a Skilled Driver",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "drivers-guides",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/drivers-guides/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Drivers & Guides - Sri Lanka Tours Drivers",
+            "description": "A Great Journey Begins with a Skilled Driver",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Drivers & Guides - Sri Lanka Tours Drivers",
+            "description": "A Great Journey Begins with a Skilled Driver",
+            "url": "https://srilankatoursdriver.com/drivers-guides/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-09-12T18:41:31+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/vehicles",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "old slug \"drivers-guides\" maps onto the CMS system page \"vehicles\"",
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/excursions/",
+      "sourceType": "excursion-listing",
+      "sourceWpId": 7380,
+      "targetModel": "Page",
+      "data": {
+        "slug": "excursions",
+        "title": "Excursions",
+        "subtitle": "",
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Excursions - Sri Lanka Tours Drivers",
+          "metaDescription": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+          "ogTitle": "Excursions - Sri Lanka Tours Drivers",
+          "ogDescription": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "excursions",
+        "headings": [
+          {
+            "level": 4,
+            "text": "Excursions starting from All Locations"
+          },
+          {
+            "level": 4,
+            "text": "Airport (CMB)"
+          },
+          {
+            "level": 4,
+            "text": "Anuradhapura"
+          },
+          {
+            "level": 4,
+            "text": "Arugambay"
+          },
+          {
+            "level": 4,
+            "text": "Colombo"
+          },
+          {
+            "level": 4,
+            "text": "Ella"
+          },
+          {
+            "level": 4,
+            "text": "Galle"
+          },
+          {
+            "level": 4,
+            "text": "Habarana (Sigiriya)"
+          },
+          {
+            "level": 4,
+            "text": "Hikkaduwa"
+          },
+          {
+            "level": 4,
+            "text": "Kalutara"
+          },
+          {
+            "level": 4,
+            "text": "Kandy"
+          },
+          {
+            "level": 4,
+            "text": "Mirissa"
+          },
+          {
+            "level": 4,
+            "text": "Negombo"
+          },
+          {
+            "level": 4,
+            "text": "Nuwara Eliya"
+          },
+          {
+            "level": 4,
+            "text": "Pasikuda"
+          },
+          {
+            "level": 4,
+            "text": "Thissamaharama (Yala)"
+          },
+          {
+            "level": 4,
+            "text": "Trincomalee"
+          },
+          {
+            "level": 4,
+            "text": "Udawalawa"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/excursions/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Excursions - Sri Lanka Tours Drivers",
+            "description": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Excursions - Sri Lanka Tours Drivers",
+            "description": ".exc-filter{ padding-bottom: 10px; border-bottom: 1px solid #ececec; background-color: #ececec; padding: 20px; border-radius: 10px; margin-bottom: 50px; }",
+            "url": "https://srilankatoursdriver.com/excursions/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-12-23T00:24:29+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/excursions",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/faq/",
+      "sourceType": "faq",
+      "sourceWpId": 1005,
+      "targetModel": "Page",
+      "data": {
+        "slug": "faqs",
+        "title": "Faq",
+        "subtitle": "",
+        "content": "## Find Answers\n\nIf you want to ask additional questions, don’t hesitate to contact us.\n\nEmail: [info@srilankatoursdriver.com](mailto:info@srilankatoursdriver.com)\n\nWhatsApp: [(+94) 769 300 334](https://wa.me/+94769300334)\n\nWHAT ARE THE VISA REQUIREMENTS NEEDED ?\n\nWhen visiting Sri Lanka, all travellers who are on business travel or on holiday must obtain an Electronic Travel Authorization (ETA). For Business Purpose Visa you may apply at the Head Office of the Department of Immigration & Emigration and the Sri Lankan Overseas Missions.\n\nWHAT IS ELECTRONIC TRAVEL AUTHORIZATION (ETA)?\n\nThe ETA is an authorised body for Short Visits to Sri Lanka and is issued through its on-line system.\n\nAn ETA is needed if your intention is to visit Sri Lanka as a Tourist, for Business or on Transit. No documentation, photographs or passport copies needed to apply and obtain for the same. The applicants will be given a “30 day short visit visa” at the port of entry in Sri Lanka.\n\nTo apply and gain more information visit: [www.eta.gov.lk/slvisa/](http://www.eta.gov.lk/slvisa/)\n\nHOW MUCH DOES THE ETA COST?\n\nFor a citizen from SAARC (South Asian Association for Regional Cooperation) countries, the non-refundable processing fee for a visa with double entry for 30days will cost USD 15. Every other nation that does not belong to SAARC will be charged USD 30. Children (below 12yrs) are exempt from ETA fee.\n\nTo apply and gain more information visit: [www.eta.gov.lk/slvisa/](http://www.eta.gov.lk/slvisa/)\n\nONCE THE 30 DAYS ARE OVER, HOW CAN I GET AN EXTENSION ON MY VISA?\n\nYou can apply for an extended visa from Sri Lankan Embassy or consulate from your country prior to arrival. You may also apply from the Department of Immigration and Emigration in Colombo 10.\n\nWHAT IS THE BEST TIME TO VISIT SRI LANKA?\n\nSri Lanka is a beautiful tropical island with a sunny climate all year long, except for monsoon seasons that results in continuous showers. Following are best times to visit Sri Lanka;\n\n**IDEAL TIME**\n\n• January to April (Entire Country)\\\n• Mid-July to September (Entire Country)\\\n• February to September (North and East)\n\n**MONSOON SEASON**\n\n• May to July (South West Monsoon)\\\n• October to January (North East Monsoon)\n\n**BEACH SEASON**\n\n• January to April (South)\\\n• May to July (East)\n\n**WILDLIFE**\n\n• December to April (Bundala National Park – Birds)\\\n(South coast – whales)\\\n• November to April (Kalpitiya – Dolphins)\\\n• July to September (The cultural Triangle)\\\n(The gathering of the elephants)\\\n(Yala/Wilpattu – Leopards)\n\nWHAT IS THE TIME DIFFERENCE IN SRI LANKA?\n\nSri Lanka Standard Time is five and a half hours ahead of GMT (+5.30).\n\nWHAT ABOUT ELECTRICITY?\n\n230, 240 volts, 50 cycles AC. It is best if you can bring a stabilizer.\n\nWHAT ARE THE HEALTH PRECAUTIONS THAT I MUST TAKE BEFORE VISITING SRI LANKA?\n\nImmunizations are not compulsory unless you are from an area that is identified as a red zone for yellow fever or cholera. (Cholera is not considered a serious risk since it’s reported occasionally in Sri Lanka) However, the following vaccinations are recommended, particularly if you plan a long trip or intend visiting remote areas:\n\n• Typhoid (monovalent), Polio, Tetanus, Hepatitis A, Hepatitis B, Rabies\n\n• Children should, in addition, be protected against:\n\n• diphtheria, whooping cough, mumps, measles, rubella\n\nRemember to plan well ahead with vaccinations. Allow up to six weeks to receive the full course, for some vaccinations require more than one dose, and some should not be given together.\n\nWHAT ARE THE PAYMENT MODES IN SRI LANKA?\n\nThe local currency is Sri Lankan Rupee (Rs. and LKR). The currency denominations are as follows;\n\n**Coins** : 1 Rupee, 2 Rupee, 5 Rupee, 10 Rupee & 20 Rupee\n\n**Notes** : 20 Rupee, 50 Rupee, 100 Rupee, 200 Rupee, 500 Rupee, 1000 Rupee, 2000 Rupee and 5000 Rupee\n\nApart from that most hotels, restaurants and shopping centers accept credit cards. The most widely used card types are Visa and MasterCard, with Amex to a lesser extent. Some establishments may try to add a surcharge, be warned it is illegal.\n\nWherever you go, be sure to carry money in small denominations to make life easy for you during travelling.\n\nWHAT LANGUAGE WILL PEOPLE UNDERSTAND?\n\nWhile Sinhala and Tamil become the official languages in Sri Lanka, English is widely spoken in all parts of the country with few exceptions. Travelling around the country is very convenient since most of the signboards and shop names are both written in native languages and in English. Apart from that if a need arise we can assign guides for the entire tour who are fluent in English, French, German, Spanish, Japanese and Italian languages, ensuring a smooth holiday in Sri Lanka.\n\nWHAT IS THE COUNTRY CODE AND HOW DO I DIAL AREA CODES?\n\nSri Lanka’s country code is 94. If you need to take an overseas call, you’ll have to dial ’00’.\n\nFor more information visit: [www.en.wikipedia.org/wiki/Telephone\\_numbers\\_in\\_Sri\\_Lanka](https://en.wikipedia.org/wiki/Telephone_numbers_in_Sri_Lanka)\n\nWILL I BE ABLE TO USE MY DEBIT AND CREDIT CARD, IN CASE OF CASH SHORTAGE?\n\nYes you are able to. ATM’s are available in main cities and you are able to withdraw cash against VISA/Mastercard. But it’s advisable to ensure the usage validity of your credit/debit card by contacting your bank.\n\nWHAT ARE THE GENERAL WORKING HOURS AND DAYS?\n\n• Banks are open from Monday to Friday from 0900hrs to 1500hrs. But selected main branches are open on Saturday until 1300hrs. ATM’s can be accessed 24/7.\n\n• Government offices are open from Monday to Friday from 0930hrs to 1700hrs\n\n• Many of the shops are generally open by 1000hrs and closes by 2000hrs, but some open at 9000hrs and stay opened till 2100hrs.\n\nAll organizations and shops are closed on Sunday’s and Full moon Poya days.\n\nWHAT ARE THE EMERGENCY CONTACT POINTS?\n\nFollowing are the emergency contact points for your convenience.\n\n| **Emergency Services** | **Telephone Number** |\n| --- | --- |\n| Police Emergency Hotline | 118 / 119 |\n| Ambulance / Fire & rescue | 110 |\n| Accident Service-General Hospital-Colombo | 011-2691111 |\n| Tourist Police | 011-2421052 |\n| Police Emergency | 011-2433333 |\n| Government Information Centre | 1919 |\n| Report Crimes | 011-2691500 |\n| Emergency Police Mobile Squad | 011-5717171 |\n| Fire & Ambulance Service | 011-2422222 |",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Faq - Sri Lanka Tours Drivers",
+          "metaDescription": "If you want to ask additional questions, don't hesitate to contact us.",
+          "ogTitle": "Faq - Sri Lanka Tours Drivers",
+          "ogDescription": "If you want to ask additional questions, don't hesitate to contact us.",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "faq",
+        "headings": [
+          {
+            "level": 2,
+            "text": "Find Answers"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/faq/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Faq - Sri Lanka Tours Drivers",
+            "description": "If you want to ask additional questions, don't hesitate to contact us.",
+            "label1": "Time to read",
+            "data1": "4 minutes"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Faq - Sri Lanka Tours Drivers",
+            "description": "If you want to ask additional questions, don't hesitate to contact us.",
+            "url": "https://srilankatoursdriver.com/faq/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2022-05-21T17:48:33+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/faqs",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "old slug \"faq\" maps onto the CMS system page \"faqs\""
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/gallery/",
+      "sourceType": "gallery",
+      "sourceWpId": 7955,
+      "targetModel": "Page",
+      "data": {
+        "slug": "gallery",
+        "title": "Gallery",
+        "subtitle": "",
+        "content": "[Wish you all a very Happy New Year 2023! May this](https://www.instagram.com/p/Cm16mGjNdkE/)\n\n[🚨30% OFF | 10 DAYS TOUR IN SRI LANKA (with Acco](https://www.instagram.com/p/CjNAGSwqCii/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKUr6qjN6/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKS4wqsz6/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKQ8TKTWc/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKO9IKFAg/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKNMGqAJ5/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKLF3qfGE/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKI_lqWXp/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKHDBKEpj/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKKE1Fq8vt/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJ-B4qxL6/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJ6oDK4X9/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJ44GKhTI/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJ27HqCc3/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJ0xiqzFl/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJy3lqvb2/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJxJBKzDc/)\n\n[11 Days All Inclusive Family Tour - United Kingdom](https://www.instagram.com/p/CjKJu0BqC8j/)\n\n[Happy Customers of Sri Lanka Tours Driver | Aditya](https://www.instagram.com/p/CeA_V96pn-D/)\n\n[Follow on Instagram](https://www.instagram.com/srilankatoursdriver/)",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Gallery - Sri Lanka Tours Drivers",
+          "metaDescription": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+          "ogTitle": "Gallery - Sri Lanka Tours Drivers",
+          "ogDescription": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "gallery",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/gallery/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Gallery - Sri Lanka Tours Drivers",
+            "description": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Gallery - Sri Lanka Tours Drivers",
+            "description": "Explore stunning photos of Sri Lanka tours, cultural sites, wildlife safaris, beach resorts & adventure experiences to inspire your next journey.",
+            "url": "https://srilankatoursdriver.com/gallery/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2025-07-05T18:01:00+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/gallery",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/privacy-policy/",
+      "sourceType": "page",
+      "sourceWpId": 3,
+      "targetModel": "Page",
+      "data": {
+        "slug": "privacy-policy",
+        "title": "Privacy Policy",
+        "subtitle": "",
+        "content": "## Who we are\n\nOur website address is: https://www.srilankatoursdriver.com.\n\n## Comments\n\nWhen visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.\n\nAn anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.\n\n## Media\n\nIf you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.\n\n## Cookies\n\nIf you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.\n\nIf you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.\n\nWhen you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.\n\nIf you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.\n\n## Embedded content from other websites\n\nArticles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.\n\nThese websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.\n\n## Who we share your data with\n\nIf you request a password reset, your IP address will be included in the reset email.\n\n## How long we retain your data\n\nIf you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.\n\nFor users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.\n\n## What rights you have over your data\n\nIf you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.\n\n## Where we send your data\n\nVisitor comments may be checked through an automated spam detection service.",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Privacy Policy - Sri Lanka Tours Drivers",
+          "metaDescription": "Our website address is: https://www.srilankatoursdriver.com.",
+          "ogTitle": "Privacy Policy - Sri Lanka Tours Drivers",
+          "ogDescription": "Our website address is: https://www.srilankatoursdriver.com.",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "privacy-policy",
+        "headings": [
+          {
+            "level": 2,
+            "text": "Who we are"
+          },
+          {
+            "level": 2,
+            "text": "Comments"
+          },
+          {
+            "level": 2,
+            "text": "Media"
+          },
+          {
+            "level": 2,
+            "text": "Cookies"
+          },
+          {
+            "level": 2,
+            "text": "Embedded content from other websites"
+          },
+          {
+            "level": 2,
+            "text": "Who we share your data with"
+          },
+          {
+            "level": 2,
+            "text": "How long we retain your data"
+          },
+          {
+            "level": 2,
+            "text": "What rights you have over your data"
+          },
+          {
+            "level": 2,
+            "text": "Where we send your data"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/privacy-policy/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Privacy Policy - Sri Lanka Tours Drivers",
+            "description": "Our website address is: https://www.srilankatoursdriver.com.",
+            "label1": "Time to read",
+            "data1": "3 minutes"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Privacy Policy - Sri Lanka Tours Drivers",
+            "description": "Our website address is: https://www.srilankatoursdriver.com.",
+            "url": "https://srilankatoursdriver.com/privacy-policy/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2022-05-05T07:55:20+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/privacy-policy",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/tailor-made-tours/",
+      "sourceType": "page",
+      "sourceWpId": 7320,
+      "targetModel": "Page",
+      "data": {
+        "slug": "tailor-made-tours",
+        "title": "Tailor Made Tours",
+        "subtitle": "",
+        "heroImage": {
+          "url": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+          "resourceType": "image",
+          "alt": "Tailor Made Tours",
+          "format": "jpg",
+          "width": 410,
+          "height": 300
+        },
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Tailor Made Tours - Sri Lanka Tours Drivers",
+          "metaDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "ogTitle": "Tailor Made Tours - Sri Lanka Tours Drivers",
+          "ogDescription": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+          "ogImage": {
+            "url": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+            "resourceType": "image",
+            "alt": "Tailor Made Tours",
+            "format": "jpg",
+            "width": 410,
+            "height": 300
+          },
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "tailor-made-tours",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/tailor-made-tours/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Tailor Made Tours - Sri Lanka Tours Drivers",
+            "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+            "image": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Tailor Made Tours - Sri Lanka Tours Drivers",
+            "description": "/*! elementor - v3.7.7 - 20-09-2022 */ .elementor-column",
+            "url": "https://srilankatoursdriver.com/tailor-made-tours/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-11-23T19:47:44+05:30",
+            "image": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+            "image:secure_url": "https://srilankatoursdriver.com/wp-content/uploads/2020/12/h1_banner-3.jpg",
+            "image:width": "410",
+            "image:height": "300",
+            "image:alt": "Tailor Made Tours",
+            "image:type": "image/jpeg"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "ImageObject",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/tailor-made-tours",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "partial",
+        "extractedSuccessfully": true,
+        "missingFields": [
+          "content"
+        ],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "missing: content"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/terms-conditions/",
+      "sourceType": "page",
+      "sourceWpId": 9,
+      "targetModel": "Page",
+      "data": {
+        "slug": "terms-conditions",
+        "title": "Terms & Conditions",
+        "subtitle": "",
+        "content": "## Terms & Conditions\n\nYou have to edit “Terms & Conditions” page to replace this start content with your own.",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Terms & Conditions - Sri Lanka Tours Drivers",
+          "metaDescription": "You have to edit \"Terms & Conditions\" page to replace this start content with your own.",
+          "ogTitle": "Terms & Conditions - Sri Lanka Tours Drivers",
+          "ogDescription": "You have to edit \"Terms & Conditions\" page to replace this start content with your own.",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "terms-conditions",
+        "headings": [
+          {
+            "level": 1,
+            "text": "Terms & Conditions"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/terms-conditions/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Terms & Conditions - Sri Lanka Tours Drivers",
+            "description": "You have to edit \"Terms & Conditions\" page to replace this start content with your own.",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Terms & Conditions - Sri Lanka Tours Drivers",
+            "description": "You have to edit \"Terms & Conditions\" page to replace this start content with your own.",
+            "url": "https://srilankatoursdriver.com/terms-conditions/",
+            "site_name": "Sri Lanka Tours Driver"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/terms-conditions",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/tours/",
+      "sourceType": "tours-listing",
+      "sourceWpId": 8757,
+      "targetModel": "Page",
+      "data": {
+        "slug": "tours",
+        "title": "Tours",
+        "subtitle": "",
+        "content": "",
+        "isSystem": true,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Tours - Sri Lanka Tours Drivers",
+          "ogTitle": "Tours - Sri Lanka Tours Drivers",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "tours",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/tours/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Tours - Sri Lanka Tours Drivers",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Tours - Sri Lanka Tours Drivers",
+            "url": "https://srilankatoursdriver.com/tours/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-12-24T12:35:04+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": "/tours",
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "partial",
+        "extractedSuccessfully": true,
+        "missingFields": [
+          "seo.metaDescription"
+        ],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "review",
+      "recommendationReason": "missing: seo.metaDescription"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/all-tours/page/2/",
+      "sourceType": "tours-listing",
+      "sourceWpId": 6632,
+      "targetModel": "Page",
+      "data": {
+        "slug": "2",
+        "title": "All Tours",
+        "subtitle": "It seems we can’t find what you’re looking for.",
+        "content": "",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "All Tours - Sri Lanka Tours Drivers",
+          "metaDescription": "Search Tours Title Item Booking Locations Title Item Booking Types When Guests 0 0 Adult 0 Youth 0 Children Apply Search Filter Price Reviews",
+          "ogTitle": "All Tours - Sri Lanka Tours Drivers",
+          "ogDescription": "Search Tours Title Item Booking Locations Title Item Booking Types When Guests 0 0 Adult 0 Youth 0 Children Apply Search Filter Price Reviews",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "2",
+        "headings": [
+          {
+            "level": 2,
+            "text": "No available tours"
+          },
+          {
+            "level": 2,
+            "text": "Search Tours"
+          },
+          {
+            "level": 2,
+            "text": "Filter"
+          },
+          {
+            "level": 2,
+            "text": "Price"
+          },
+          {
+            "level": 2,
+            "text": "Reviews"
+          }
+        ],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/all-tours/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "All Tours - Sri Lanka Tours Drivers",
+            "description": "Search Tours Title Item Booking Locations Title Item Booking Types When Guests 0 0 Adult 0 Youth 0 Children Apply Search Filter Price Reviews",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "All Tours - Sri Lanka Tours Drivers",
+            "description": "Search Tours Title Item Booking Locations Title Item Booking Types When Guests 0 0 Adult 0 Youth 0 Children Apply Search Filter Price Reviews",
+            "url": "https://srilankatoursdriver.com/all-tours/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2025-02-16T16:45:43+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": null,
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "skip",
+      "recommendationReason": "pagination of /all-tours/"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/to_book/page/2/",
+      "sourceType": "tours-listing",
+      "sourceWpId": null,
+      "targetModel": "Page",
+      "data": {
+        "slug": "2",
+        "title": "Booking Objects - Page 2 of 2",
+        "subtitle": "",
+        "content": "",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Booking Objects - Page 2 of 2 - Sri Lanka Tours Drivers",
+          "metaDescription": "Booking Objects Archive - Page 2 of 2 - Sri Lanka Tours Drivers",
+          "ogTitle": "Booking Objects - Page 2 of 2 - Sri Lanka Tours Drivers",
+          "ogDescription": "Booking Objects Archive - Page 2 of 2 - Sri Lanka Tours Drivers",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "2",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/to_book/page/2/",
+          "robotsRaw": "index, follow",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Booking Objects - Page 2 of 2 - Sri Lanka Tours Drivers",
+            "description": "Booking Objects Archive - Page 2 of 2 - Sri Lanka Tours Drivers"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Booking Objects - Page 2 of 2 - Sri Lanka Tours Drivers",
+            "description": "Booking Objects Archive - Page 2 of 2 - Sri Lanka Tours Drivers",
+            "url": "https://srilankatoursdriver.com/to_book/page/2/",
+            "site_name": "Sri Lanka Tours Driver"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "WebSite",
+            "CollectionPage"
+          ]
+        },
+        "proposedNewPath": null,
+        "wpPostType": "archive"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "skip",
+      "recommendationReason": "pagination of /to_book/"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/tours/page/2/",
+      "sourceType": "tours-listing",
+      "sourceWpId": 8757,
+      "targetModel": "Page",
+      "data": {
+        "slug": "2",
+        "title": "Tours",
+        "subtitle": "",
+        "content": "",
+        "isSystem": false,
+        "status": "draft",
+        "seo": {
+          "seoTitle": "Tours - Sri Lanka Tours Drivers",
+          "ogTitle": "Tours - Sri Lanka Tours Drivers",
+          "robots": "index,follow"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "oldSlug": "2",
+        "headings": [],
+        "seo": {
+          "oldCanonicalUrl": "https://srilankatoursdriver.com/tours/",
+          "robotsRaw": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Tours - Sri Lanka Tours Drivers",
+            "label1": "Time to read",
+            "data1": "Less than a minute"
+          },
+          "openGraph": {
+            "locale": "en_US",
+            "type": "article",
+            "title": "Tours - Sri Lanka Tours Drivers",
+            "url": "https://srilankatoursdriver.com/tours/",
+            "site_name": "Sri Lanka Tours Driver",
+            "updated_time": "2024-12-24T12:35:04+05:30"
+          },
+          "structuredDataTypes": [
+            "TouristInformationCenter",
+            "Organization",
+            "WebSite",
+            "WebPage",
+            "Person",
+            "Article"
+          ]
+        },
+        "proposedNewPath": null,
+        "wpPostType": "page"
+      },
+      "quality": {
+        "status": "partial",
+        "extractedSuccessfully": true,
+        "missingFields": [
+          "seo.metaDescription"
+        ],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "listing page – only title/subtitle/SEO are migrated; the item cards come from the CMS collections"
+        ]
+      },
+      "recommendation": "skip",
+      "recommendationReason": "pagination of /tours/"
+    }
+  ]
+}

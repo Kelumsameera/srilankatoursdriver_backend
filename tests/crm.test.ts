@@ -104,7 +104,7 @@ describe("tailor-made CRM", () => {
     expect((await admin.get("/api/admin/tailor-made-enquiries?status=processing")).body.data).toHaveLength(1);
   });
 
-  it("rejects bot submissions via honeypot", async () => {
+  it("silently discards bot submissions caught by the honeypot", async () => {
     const res = await api()
       .post("/api/tailor-made-enquiries")
       .send({
@@ -113,7 +113,10 @@ describe("tailor-made CRM", () => {
         travelers: { adults: 1 },
         website: "http://spam",
       });
-    expect(res.status).toBe(400);
+    // Bots get a normal-looking answer (nothing to learn from), but nothing is stored.
+    expect(res.status).toBe(201);
+    const list = await admin.get("/api/admin/tailor-made-enquiries?search=bot@example.com");
+    expect(list.body.data).toHaveLength(0);
   });
 });
 

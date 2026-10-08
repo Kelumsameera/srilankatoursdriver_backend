@@ -19,6 +19,9 @@ const translationSchema = new Schema(
     locked: { type: Boolean, default: false },
     published: { type: Boolean, default: true },
     translatedAt: { type: Date, default: Date.now },
+    /** Last machine-translation failure for this locale (cleared on the next successful run or manual save). */
+    lastError: { type: String, default: "" },
+    lastErrorAt: Date,
     updatedBy: { type: Schema.Types.ObjectId, ref: "User" },
   },
   { timestamps: true },

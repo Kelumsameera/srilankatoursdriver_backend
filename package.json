@@ -14,7 +14,13 @@
     "seed": "tsx src/scripts/seed.ts",
     "seed:prod": "node dist/scripts/seed.js",
     "create-admin": "tsx src/scripts/create-admin.ts",
-    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts"
+    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts",
+    "migration:discover": "tsx migration/src/discover.ts",
+    "migration:zip:extract": "tsx migration/zip/scripts/extract.ts ../migrate",
+    "migration:zip:import": "tsx migration/zip/scripts/import.ts",
+    "migration:zip:homepage": "tsx migration/zip/scripts/homepage.ts",
+    "migration:zip:reviews-about": "tsx migration/zip/scripts/reviews-about.ts",
+    "migration:zip:about-team": "tsx migration/zip/scripts/about-team.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -24,6 +30,7 @@
     "dotenv": "^18.0.6",
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.1",
+    "google-auth-library": "^10.9.1",
     "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.11.0",
@@ -44,6 +51,8 @@
     "@types/node": "^24.19.1",
     "@types/nodemailer": "^8.0.2",
     "@types/supertest": "^7.2.1",
+    "cheerio": "^1.2.0",
+    "domhandler": "^5.0.3",
     "eslint": "^10.12.0",
     "globals": "^17.13.0",
     "mongodb-memory-server": "^11.3.0",

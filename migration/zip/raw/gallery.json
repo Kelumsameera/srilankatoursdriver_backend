@@ -1,0 +1,145 @@
+{
+  "TOUR_GALLERIES": {
+    "05-days-down-south": [
+      {
+        "src": "/gallery/gallery-01.jpeg",
+        "alt": "Sigiriya Rock Fortress",
+        "caption": "Climb the iconic Sigiriya Rock Fortress"
+      },
+      {
+        "src": "/gallery/gallery-02.jpeg",
+        "alt": "Kandy Temple of the Tooth",
+        "caption": "Sacred Temple of the Tooth in Kandy"
+      },
+      {
+        "src": "/gallery/gallery-03.jpeg",
+        "alt": "Ella Nine Arch Bridge",
+        "caption": "Famous Nine Arch Bridge in Ella"
+      },
+      {
+        "src": "/gallery/gallery-04.jpeg",
+        "alt": "Mirissa Beach",
+        "caption": "Relax at Mirissa Beach"
+      },
+      {
+        "src": "/gallery/gallery-05.jpeg",
+        "alt": "Udawalawe Safari",
+        "caption": "Wildlife Safari Experience"
+      }
+    ],
+    "05-days-down-south-hotels": [
+      {
+        "src": "/gallery/gallery-06.jpeg",
+        "alt": "Luxury Hotel in Habarana",
+        "caption": "Comfortable stay in Habarana"
+      },
+      {
+        "src": "/gallery/gallery-07.jpeg",
+        "alt": "Kandy Hotel View",
+        "caption": "Beautiful hill country accommodation"
+      },
+      {
+        "src": "/gallery/gallery-08.jpeg",
+        "alt": "Ella Mountain View",
+        "caption": "Mountain sunrise in Ella"
+      },
+      {
+        "src": "/gallery/gallery-09.jpeg",
+        "alt": "Beach Hotel Mirissa",
+        "caption": "Beachfront hotel in Mirissa"
+      }
+    ],
+    "08-days-down-south": [
+      {
+        "src": "/gallery/gallery-10.jpeg",
+        "alt": "Negombo Lagoon",
+        "caption": "Negombo Lagoon Boat Tour"
+      },
+      {
+        "src": "/gallery/gallery-11.jpeg",
+        "alt": "Dambulla Cave Temple",
+        "caption": "Ancient Dambulla Cave Temple"
+      },
+      {
+        "src": "/gallery/gallery-12.jpeg",
+        "alt": "Ella Rock View",
+        "caption": "Hiking Ella Rock"
+      },
+      {
+        "src": "/gallery/gallery-13.jpeg",
+        "alt": "Yala Safari Jeep",
+        "caption": "Yala National Park Safari"
+      }
+    ],
+    "08-days-east-coast": [
+      {
+        "src": "/gallery/gallery-14.jpeg",
+        "alt": "Pasikuda Beach",
+        "caption": "Crystal clear waters of Pasikuda"
+      },
+      {
+        "src": "/gallery/gallery-15.jpeg",
+        "alt": "Pigeon Island",
+        "caption": "Snorkeling at Pigeon Island"
+      },
+      {
+        "src": "/gallery/gallery-01.jpeg",
+        "alt": "Trincomalee Temple",
+        "caption": "Koneswaram Temple in Trincomalee"
+      }
+    ],
+    "10-days-down-south": [
+      {
+        "src": "/gallery/gallery-02.jpeg",
+        "alt": "Horton Plains",
+        "caption": "World's End at Horton Plains"
+      },
+      {
+        "src": "/gallery/gallery-03.jpeg",
+        "alt": "Nuwara Eliya",
+        "caption": "Tea plantations in Nuwara Eliya"
+      },
+      {
+        "src": "/gallery/gallery-04.jpeg",
+        "alt": "Mirissa Whale Watching",
+        "caption": "Whale watching adventure"
+      }
+    ],
+    "10-days-east-coast": [
+      {
+        "src": "/gallery/gallery-05.jpeg",
+        "alt": "Batticaloa Fort",
+        "caption": "Historic Batticaloa Fort"
+      },
+      {
+        "src": "/gallery/gallery-06.jpeg",
+        "alt": "Nilaveli Beach",
+        "caption": "Peaceful Nilaveli Beach"
+      }
+    ],
+    "12-days-down-south": [
+      {
+        "src": "/gallery/gallery-07.jpeg",
+        "alt": "Anuradhapura Ruins",
+        "caption": "Ancient city of Anuradhapura"
+      },
+      {
+        "src": "/gallery/gallery-08.jpeg",
+        "alt": "Ambuluwawa Tower",
+        "caption": "Ambuluwawa Biodiversity Complex"
+      }
+    ],
+    "12-days-east-coast": [
+      {
+        "src": "/gallery/gallery-09.jpeg",
+        "alt": "Kalpitiya Lagoon",
+        "caption": "Kite surfing in Kalpitiya"
+      },
+      {
+        "src": "/gallery/gallery-10.jpeg",
+        "alt": "Wilpattu Safari",
+        "caption": "Safari at Wilpattu National Park"
+      }
+    ]
+  }
+}

@@ -54,7 +54,7 @@ export function createCrudController(cfg: ResourceConfig) {
     async remove(req: Request, res: Response) {
       const doc = await service.remove(String(req.params.id));
       await logActivity(req, { action: "delete", entity: cfg.name, entityId: String(doc._id), summary: `Deleted ${cfg.label}: ${describe(doc)}` });
-      changed();
+      revalidateFrontend(...cfg.cacheTags, ...(cfg.deleteCacheTags ?? []));
       return noContent(res, `${cfg.label} item deleted`);
     },
 

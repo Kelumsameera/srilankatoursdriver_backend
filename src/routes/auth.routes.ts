@@ -7,6 +7,12 @@ import { changePasswordSchema, loginSchema } from "../validations/auth.js";
 
 export const authRouter = Router();
 
+// Auth responses carry session data – never let browsers or proxies cache them.
+authRouter.use((_req, res, next) => {
+  res.set("Cache-Control", "no-store");
+  next();
+});
+
 authRouter.post("/login", authLimiter, validate({ body: loginSchema }), c.login);
 authRouter.post("/refresh", authLimiter, c.refresh);
 authRouter.post("/logout", c.logout);

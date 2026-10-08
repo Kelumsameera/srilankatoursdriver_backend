@@ -1,13 +1,18 @@
 /**
- * Idempotent seed: `npm run seed`
- * Creates permissions, roles, the first Super Admin, languages and the initial CMS content.
- * Uses upserts with $setOnInsert, so running it again never overwrites changes made in the admin.
+ * Idempotent, non-destructive seed: `npm run seed`
+ * - Never deletes anything and never overwrites values edited in the admin ($setOnInsert only).
+ * - Core records (permissions, roles, first Super Admin, languages, settings, system pages, global SEO)
+ *   are created when missing.
+ * - Starter content (categories, destinations, excursions, vehicles, tours, FAQs, legal pages, menu, hero)
+ *   is only added to a collection that is still empty, so content you deleted or renamed is not
+ *   brought back and edited items are not duplicated.
  */
 import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import crypto from "node:crypto";
-import { env } from "../config/env.js";
+import { env, isProduction } from "../config/env.js";
+import { passwordPolicy } from "../validations/auth.js";
 import { connectDatabase, disconnectDatabase } from "../config/db.js";
 import {
   BrandSetting,
@@ -40,23 +45,22 @@ import * as data from "./seed-data.js";
 const log = (...args: unknown[]) => console.log("  •", ...args);
 
 export async function seedPermissionsAndRoles() {
-  await Permission.bulkWrite(
-    ALL_PERMISSIONS.map((key) => {
-      const [module, action] = key.split(":");
-      return {
-        updateOne: {
-          filter: { key },
-          update: { $setOnInsert: { key, module, action, description: `${action} ${module}` } },
-          upsert: true,
-        },
-      };
-    }),
-  );
+  // Insert only the permission records that are missing (existing ones are left untouched).
+  const existing = new Set((await Permission.find({}).select("key").lean()).map((p) => p.key));
+  const missing = ALL_PERMISSIONS.filter((key) => !existing.has(key)).map((key) => {
+    const [module, action] = key.split(":");
+    return { key, module, action, description: `${action} ${module}` };
+  });
+  if (missing.length) await Permission.insertMany(missing, { ordered: false });
   for (const role of DEFAULT_ROLES) {
-    // System roles keep their permission set in sync with the code (except Super Admin which is "*").
+    // Permission sets edited in Admin → Roles are kept; only missing roles are created.
+    // The Super Admin role always keeps the wildcard so the site can never be locked out.
+    const isSuper = role.permissions.includes("*");
     await Role.updateOne(
       { name: role.name },
-      { $set: { permissions: role.permissions, isSystem: true }, $setOnInsert: { description: role.description } },
+      isSuper
+        ? { $set: { permissions: ["*"], isSystem: true }, $setOnInsert: { description: role.description } }
+        : { $set: { isSystem: true }, $setOnInsert: { description: role.description, permissions: role.permissions } },
       { upsert: true },
     );
   }
@@ -69,6 +73,13 @@ export async function seedAdmin() {
   if (await User.exists({ role: superRole._id })) {
     log("Super Admin already exists – skipped");
     return null;
+  }
+  if (env.SEED_ADMIN_PASSWORD) {
+    const check = passwordPolicy.safeParse(env.SEED_ADMIN_PASSWORD);
+    if (!check.success) throw new Error(`SEED_ADMIN_PASSWORD is too weak: ${check.error.issues.map((i) => i.message).join("; ")}`);
+  } else if (isProduction) {
+    // Never print a generated credential into production logs.
+    throw new Error("Set SEED_ADMIN_PASSWORD (or use `npm run create-admin`) to create the first Super Admin in production");
   }
   const password = env.SEED_ADMIN_PASSWORD ?? `${crypto.randomBytes(9).toString("base64url")}Aa1`;
   await User.create({
@@ -120,7 +131,17 @@ async function seedBranding() {
   log("Uploaded logo to Cloudinary and set it as the primary logo");
 }
 
+/** Starter content is only added to collections that are still empty. */
+async function isEmpty(model: { exists: (f: object) => Promise<unknown> }, label: string) {
+  if (await model.exists({})) {
+    log(`${label}: already has data – skipped`);
+    return false;
+  }
+  return true;
+}
+
 async function seedCategories() {
+  if (!(await isEmpty(Category, "Categories"))) return;
   for (const [i, c] of data.CATEGORIES.entries()) {
     const slug = slugify(c.name);
     await upsert(Category, { kind: c.kind, slug }, { ...c, slug, order: i, enabled: true });
@@ -135,30 +156,47 @@ async function catId(kind: string, name: string) {
 
 async function seedContent() {
   // Destinations
-  for (const [i, d] of data.DESTINATIONS.entries()) {
-    const { category, ...rest } = d;
-    await upsert(Destination, { slug: slugify(d.name) }, { ...rest, slug: slugify(d.name), category: await catId("destination", category), status: "published", order: i + 1 });
+  if (await isEmpty(Destination, "Destinations")) {
+    for (const [i, d] of data.DESTINATIONS.entries()) {
+      const { category, ...rest } = d;
+      await upsert(Destination, { slug: slugify(d.name) }, { ...rest, slug: slugify(d.name), category: await catId("destination", category), status: "published", order: i + 1 });
+    }
+    log(`${data.DESTINATIONS.length} destinations`);
   }
-  log(`${data.DESTINATIONS.length} destinations`);
 
   const destIds = async (names: string[]) =>
     (await Destination.find({ slug: { $in: names.map(slugify) } }).select("_id slug").lean())
       .sort((a, b) => names.map(slugify).indexOf(a.slug) - names.map(slugify).indexOf(b.slug))
       .map((d) => d._id);
 
-  for (const [i, e] of data.EXCURSIONS.entries()) {
-    const { category, destination, ...rest } = e;
-    const [dest] = await destIds([destination]);
-    await upsert(Excursion, { slug: slugify(e.title) }, { ...rest, slug: slugify(e.title), category: await catId("excursion", category), destination: dest, status: "published", order: i + 1 });
+  if (await isEmpty(Excursion, "Excursions")) {
+    for (const [i, e] of data.EXCURSIONS.entries()) {
+      const { category, destination, ...rest } = e;
+      const [dest] = await destIds([destination]);
+      await upsert(Excursion, { slug: slugify(e.title) }, { ...rest, slug: slugify(e.title), category: await catId("excursion", category), destination: dest, status: "published", order: i + 1 });
+    }
+    log(`${data.EXCURSIONS.length} excursions`);
   }
-  log(`${data.EXCURSIONS.length} excursions`);
 
-  for (const [i, v] of data.VEHICLES.entries()) {
-    const { category, ...rest } = v;
-    await upsert(Vehicle, { slug: slugify(v.name) }, { ...rest, slug: slugify(v.name), category: await catId("vehicle", category), airConditioning: true, status: "published", order: i + 1 });
+  if (await isEmpty(Vehicle, "Vehicles")) {
+    for (const [i, v] of data.VEHICLES.entries()) {
+      const { category, ...rest } = v;
+      await upsert(Vehicle, { slug: slugify(v.name) }, { ...rest, slug: slugify(v.name), category: await catId("vehicle", category), airConditioning: true, status: "published", order: i + 1 });
+    }
+    log(`${data.VEHICLES.length} vehicles`);
   }
-  log(`${data.VEHICLES.length} vehicles`);
 
+  if (await isEmpty(Tour, "Tours")) await seedTours(destIds);
+
+  if (await isEmpty(FAQ, "FAQs")) {
+    for (const [i, f] of data.FAQS.entries()) {
+      await upsert(FAQ, { question: f.question }, { ...f, status: "published", order: i + 1, featured: i < 4 });
+    }
+    log(`${data.FAQS.length} FAQs`);
+  }
+}
+
+async function seedTours(destIds: (names: string[]) => Promise<unknown[]>) {
   const van = await Vehicle.findOne({ slug: "family-van" }).select("_id").lean();
   for (const [i, t] of data.TOURS.entries()) {
     const { category, destinations, ...rest } = t;
@@ -179,11 +217,6 @@ async function seedContent() {
     );
   }
   log(`${data.TOURS.length} tours`);
-
-  for (const [i, f] of data.FAQS.entries()) {
-    await upsert(FAQ, { question: f.question }, { ...f, status: "published", order: i + 1, featured: i < 4 });
-  }
-  log(`${data.FAQS.length} FAQs`);
 }
 
 async function seedPages() {
@@ -195,10 +228,14 @@ async function seedPages() {
       await PageSection.insertMany(p.sections.map((s, i) => ({ ...s, page: page._id, order: i + 1, enabled: true })));
     }
   }
-  for (const p of data.CUSTOM_PAGES) {
-    await upsert(Page, { slug: p.slug }, { ...p, isSystem: false, status: "published" });
+  // Legal pages are starter content: only added while no custom page exists (deleted ones stay deleted).
+  if (!(await Page.exists({ isSystem: false }))) {
+    for (const p of data.CUSTOM_PAGES) {
+      await upsert(Page, { slug: p.slug }, { ...p, isSystem: false, status: "published" });
+    }
+    log(`${data.CUSTOM_PAGES.length} legal pages`);
   }
-  log(`${data.SYSTEM_PAGES.length} system pages, ${data.CUSTOM_PAGES.length} legal pages`);
+  log(`${data.SYSTEM_PAGES.length} system pages`);
 
   if (!(await HeroMedia.exists({}))) {
     await HeroMedia.create({

@@ -3,7 +3,7 @@ import { z } from "zod";
 import { authenticate, requirePermission as can } from "../../middleware/authenticate.js";
 import { validate } from "../../middleware/validate.js";
 import { uploadLimiter } from "../../middleware/security.js";
-import { mediaUpload } from "../../middleware/upload.js";
+import { cleanupTempFiles, mediaUpload } from "../../middleware/upload.js";
 import { listQuery, noteBody, objectId, reorderSchema } from "../../validations/common.js";
 import { pageCreate, pageUpdate, sectionCreate, sectionUpdate } from "../../validations/content.js";
 import { brandingUpdate, languageUpdate, siteSettingsUpdate } from "../../validations/settings.js";
@@ -97,6 +97,7 @@ adminRouter.post(
   "/media/upload",
   can("media:create"),
   uploadLimiter,
+  cleanupTempFiles,
   mediaUpload.array("files", 10),
   validate({
     body: z.object({
@@ -113,9 +114,15 @@ adminRouter.post(
   media.upload,
 );
 adminRouter.get("/media/:id", can("media:read"), id, media.get);
+adminRouter.get("/media/:id/usage", can("media:read"), id, media.usage);
 adminRouter.patch("/media/:id", can("media:update"), id, validate({ body: z.object(mediaMeta) }), media.update);
-adminRouter.post("/media/:id/replace", can("media:update"), uploadLimiter, id, mediaUpload.single("file"), media.replace);
-adminRouter.delete("/media/:id", can("media:delete"), id, media.remove);
+adminRouter.post("/media/:id/replace", can("media:update"), uploadLimiter, id, cleanupTempFiles, mediaUpload.single("file"), media.replace);
+adminRouter.delete(
+  "/media/:id",
+  can("media:delete"),
+  validate({ params: z.object({ id: objectId }), query: z.object({ force: z.enum(["true", "false"]).optional() }) }),
+  media.remove,
+);
 
 /* ───────────── CRM: bookings, tailor-made, contact ───────────── */
 function mountCrm(path: string, kind: "bookings" | "enquiries" | "contacts", updateSchema: z.ZodType) {

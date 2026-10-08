@@ -20,6 +20,8 @@ const make = (windowMs: number, limit: number) =>
 export const apiLimiter = make(15 * 60 * 1000, 1500);
 /** Login / refresh brute-force protection. */
 export const authLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
+/** Customer register / login / refresh – a separate budget so visitors can't lock admins out (and vice versa). */
+export const customerAuthLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
 /** Public form submissions (bookings, enquiries, contact, reviews). */
 export const formLimiter = make(60 * 60 * 1000, 20);
 /** Media uploads. */

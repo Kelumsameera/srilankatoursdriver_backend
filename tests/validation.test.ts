@@ -22,8 +22,12 @@ describe("booking validation", () => {
     const r = bookingCreate.safeParse({ ...valid, endDate: inDays(10) });
     expect(r.success).toBe(false);
   });
-  it("rejects the honeypot field", () => {
-    expect(bookingCreate.safeParse({ ...valid, website: "spam" }).success).toBe(false);
+  it("passes the honeypot through so the service can drop bots silently", () => {
+    // A validation error would tell bots which field gave them away; crm.service discards these instead.
+    const r = bookingCreate.safeParse({ ...valid, website: "spam" });
+    expect(r.success).toBe(true);
+    expect(r.data?.website).toBe("spam");
+    expect(bookingCreate.safeParse({ ...valid, website: "x".repeat(501) }).success).toBe(false);
   });
 });
 

@@ -1,0 +1,245 @@
+{
+  "targetModel": "Review",
+  "count": 6,
+  "note": "data = fields of the EXISTING CMS model only; media url fields still point to the old site (Cloudinary upload is a later phase); ObjectId references are resolved at import time from `references`.",
+  "records": [
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "Vairavelu R",
+        "rating": 5,
+        "title": "Colombo Trip",
+        "review": "Trip was great, will highly recommend others to go. Planning and execution was smooth, thanks to the team. Best wishes.",
+        "date": "2025-04-08",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+        "verified": true,
+        "status": "pending"
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "April 8, 2025",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "Bhairavi V",
+        "rating": 5,
+        "title": "Highly recommended!!",
+        "review": "Had an amazing trip with my dad to Colombo & Kandy. Our driver Sisira was very helpful. The team behind the scenes – Dinushan and Gayathtri, reached out via Whatsapp and helped to arrange everything beforehand. Really appreciate their help in making this a great trip, would highly recommend other travellers to reach out to them for more trips!",
+        "date": "2025-04-02",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+        "verified": true,
+        "status": "pending"
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "April 2, 2025",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "Melania M",
+        "rating": 5,
+        "title": "Sri Lanka tour",
+        "review": "fantastic experience! Great driver and tour organized in every detail. I recommend both the driver and the agency. Very kind and attentive to our every need",
+        "date": "2024-12-27",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+        "verified": true,
+        "status": "pending",
+        "photo": {
+          "url": "https://static.tacdn.com/img2/generic/site/no_user_photo-v1.gif",
+          "resourceType": "image",
+          "alt": "Melania M"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "December 27, 2024",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "Paradise568523",
+        "rating": 5,
+        "title": "Highly Recommend!",
+        "review": "I booked prior to arriving in Sri Lanka, they communicated well and helped me achieve an adventurous trip in a short time. My driver Sisira was amazing! He was the best tour guide to his beautiful country and went above and beyond to give me a great experience. I am truly grateful to him and the team for such a lovely experience!",
+        "date": "2024-12-15",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+        "verified": true,
+        "status": "pending"
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "December 15, 2024",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "Manel C",
+        "rating": 5,
+        "title": "Amazing Family Tour",
+        "review": "We had an amazing family tour this October .Nice itinerary with a variety of activities. The guide/ driver (Mahesh)plus all the other activities (safari, whale watching ) were really nice, pleasant and helpful.So we highly recommend SriLanka Tours Driver with their good service . Accommodation bookings are also done by themselves.weldone guys.great job!!.Thank you!",
+        "date": "2024-11-20",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html",
+        "verified": true,
+        "status": "pending"
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "November 20, 2024",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "review",
+      "sourceWpId": null,
+      "targetModel": "Review",
+      "data": {
+        "guestName": "83nisam",
+        "rating": 5,
+        "title": "Excellent tour driver in Sri Lanka",
+        "review": "In my recent tour to Sri Lanka from USA I I had an excellent experience with Sri Lanka Tours Driver. I can highly recommend the people and the Company! Very safe also very kind and friendly!! They know every where in Sri Lanka great company for the tours. They concern about the safety !! Please go through with them the vacation will be very interesting , and fun !! They know all over sri lanka for visiting . Please don’t be hesitate to contact This Company 0094 769300334 / info@srilankatoursdriver.com",
+        "date": "2024-11-10",
+        "platform": "tripadvisor",
+        "sourceUrl": "https://media-cdn.tripadvisor.com/media/photo-s/2e/15/ed/fa/caption.jpg",
+        "verified": true,
+        "status": "pending",
+        "photo": {
+          "url": "https://media-cdn.tripadvisor.com/media/photo-l/2e/16/ed/bf/83nisam.jpg",
+          "resourceType": "image",
+          "alt": "83nisam"
+        }
+      },
+      "references": {},
+      "unmapped": {
+        "dateRaw": "November 10, 2024",
+        "widgetId": "wprev-slider-1",
+        "seenOnPages": [
+          "https://srilankatoursdriver.com/"
+        ]
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": [
+          "genuine TripAdvisor review shown on the old site – verify against TripAdvisor before publishing"
+        ]
+      },
+      "recommendation": "import",
+      "recommendationReason": "all important fields extracted"
+    }
+  ]
+}

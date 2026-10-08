@@ -58,8 +58,13 @@ export async function replace(req: Request, res: Response) {
   return ok(res, doc, "File replaced");
 }
 
+export async function usage(req: Request, res: Response) {
+  return ok(res, await media.getMediaUsage(String(req.params.id)));
+}
+
 export async function remove(req: Request, res: Response) {
-  const doc = await media.removeMedia(String(req.params.id));
+  const force = (req.validated?.query as { force?: string } | undefined)?.force === "true";
+  const doc = await media.removeMedia(String(req.params.id), { force });
   await logActivity(req, { action: "media_delete", entity: "media", entityId: String(doc._id), summary: `Deleted ${doc.publicId}` });
   return noContent(res, "Media deleted");
 }

@@ -1,0 +1,391 @@
+{
+  "targetModel": "NavigationItem",
+  "count": 12,
+  "note": "data = fields of the EXISTING CMS model only; media url fields still point to the old site (Cloudinary upload is a later phase); ObjectId references are resolved at import time from `references`.",
+  "records": [
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Home",
+        "url": "/",
+        "location": "header",
+        "order": 1,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Tours",
+        "url": "/tours",
+        "location": "header",
+        "order": 2,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/tours/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Round Tours",
+        "url": "/tours?category=round-tours",
+        "location": "header",
+        "order": 1,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": "Tours"
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/sri-lanka-round-tours/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "One Day Tours",
+        "url": "/tours?category=one-day-tours",
+        "location": "header",
+        "order": 2,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": "Tours"
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/sri-lanka-one-day-tours/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Per Day Basis",
+        "url": "/tours?category=per-day-basis",
+        "location": "header",
+        "order": 3,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": "Tours"
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/per-day-basis-tours-sri-lanka/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Destinations",
+        "url": "/destinations",
+        "location": "header",
+        "order": 3,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/destination-list/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Excursions",
+        "url": "/excursions",
+        "location": "header",
+        "order": 4,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/excursions/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Offers",
+        "url": "/tours?category=offers",
+        "location": "header",
+        "order": 5,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/sri-lanka-tour-offers/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Tailor Made Tours",
+        "url": "/tailor-made-tours",
+        "location": "header",
+        "order": 6,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/tailor-made-tours/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Contact",
+        "url": "/contact",
+        "location": "header",
+        "order": 7,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": null
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/contact/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "About Us",
+        "url": "/about-us",
+        "location": "header",
+        "order": 1,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": "Contact"
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/about-us/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    },
+    {
+      "sourceUrl": "https://srilankatoursdriver.com/",
+      "sourceType": "header-menu-item",
+      "sourceWpId": null,
+      "targetModel": "NavigationItem",
+      "data": {
+        "label": "Contact Us",
+        "url": "/contact",
+        "location": "header",
+        "order": 2,
+        "enabled": true,
+        "openInNewTab": false,
+        "isCta": false
+      },
+      "references": {
+        "parentLabel": "Contact"
+      },
+      "unmapped": {
+        "oldUrl": "https://srilankatoursdriver.com/contact/"
+      },
+      "quality": {
+        "status": "ok",
+        "extractedSuccessfully": true,
+        "missingFields": [],
+        "suspiciousFields": [],
+        "duplicateOf": [],
+        "parsingErrors": [],
+        "notes": []
+      },
+      "recommendation": "review",
+      "recommendationReason": "the CMS already has a seeded header menu – merge manually"
+    }
+  ]
+}

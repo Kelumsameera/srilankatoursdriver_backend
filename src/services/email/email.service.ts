@@ -69,20 +69,39 @@ async function businessName(): Promise<string> {
   return s?.businessName || "Sri Lanka Tours Driver";
 }
 
-/** Internal notification + guest acknowledgement for a new submission. */
-export async function notifyNewSubmission(kind: string, reference: string, guestEmail: string, guestName: string, rows: [string, unknown][]) {
+/** Header-safe single line (no CR/LF) of limited length. */
+function headerText(value: string, max = 80): string {
+  return value.replace(/[\r\n\t]+/g, " ").trim().slice(0, max);
+}
+
+/**
+ * Internal notification + guest acknowledgement for a new submission.
+ * `privateRows` (free-text fields such as the message) go to the business only: the guest
+ * acknowledgement goes to an address typed into a public form, so echoing free text there would
+ * let anyone use the site to send arbitrary content to third parties.
+ */
+export async function notifyNewSubmission(
+  kind: string,
+  reference: string,
+  guestEmail: string,
+  guestName: string,
+  rows: [string, unknown][],
+  privateRows: [string, unknown][] = [],
+) {
   if (!isEmailConfigured()) return;
   const [to, name] = await Promise.all([notifyAddress(), businessName()]);
+  const internal = table([["Reference", reference], ...rows, ...privateRows]);
   const body = table([["Reference", reference], ...rows]);
   if (to) {
     await sendMail({
       to,
       replyTo: guestEmail,
-      subject: `New ${kind} ${reference} – ${guestName}`,
-      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${body.html}`,
-      text: `New ${kind}\n\n${body.text}`,
+      subject: `New ${kind} ${reference} – ${headerText(guestName)}`,
+      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${internal.html}`,
+      text: `New ${kind}\n\n${internal.text}`,
     });
   }
+  guestName = headerText(guestName, 120);
   await sendMail({
     to: guestEmail,
     subject: `We received your ${kind} (${reference})`,

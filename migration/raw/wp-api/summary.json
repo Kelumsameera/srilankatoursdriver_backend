@@ -1,0 +1,110 @@
+{
+  "available": true,
+  "name": "Sri Lanka Tours Drivers",
+  "description": "Sri Lanka Best Tour Drivers Company",
+  "namespaces": [
+    "oembed/1.0",
+    "contact-form-7/v1",
+    "hostinger-easy-onboarding/v1",
+    "litespeed/v1",
+    "litespeed/v3",
+    "rankmath/v1",
+    "trustindex/v1",
+    "elementor/v1",
+    "monsterinsights/v1",
+    "hostinger-amplitude/v1",
+    "hostinger-tools-plugin/v1",
+    "rankmath/v1/ca",
+    "rankmath/v1/an",
+    "rankmath/v1/in",
+    "google-site-kit/v1",
+    "elementor/v1/documents",
+    "elementor-ai/v1",
+    "elementor-pro/v1",
+    "forminator/v1",
+    "wpforms/v1",
+    "wp/v2",
+    "wp-site-health/v1",
+    "wp-block-editor/v1"
+  ],
+  "customPostTypeRoutes": [],
+  "restTypes": {
+    "post": "posts",
+    "page": "pages",
+    "attachment": "media",
+    "nav_menu_item": "menu-items",
+    "wp_block": "blocks",
+    "wp_template": "templates",
+    "wp_template_part": "template-parts",
+    "wp_global_styles": "global-styles",
+    "wp_navigation": "navigation",
+    "wp_font_family": "font-families",
+    "wp_font_face": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+    "elementor_library": "elementor_library",
+    "service": "service",
+    "rm_content_editor": "rm_content_editor"
+  },
+  "counts": {
+    "pages": 32,
+    "posts": 1,
+    "media": 35,
+    "categories": 5,
+    "tags": 5,
+    "services": 2
+  },
+  "errors": [],
+  "categories": [
+    {
+      "name": "Company Insight",
+      "slug": "company-insight",
+      "count": 0
+    },
+    {
+      "name": "Creative",
+      "slug": "creative",
+      "count": 0
+    },
+    {
+      "name": "Lifestyle",
+      "slug": "lifestyle",
+      "count": 0
+    },
+    {
+      "name": "Tips &amp; Tricks",
+      "slug": "tips-tricks",
+      "count": 0
+    },
+    {
+      "name": "Uncategorized",
+      "slug": "uncategorized",
+      "count": 1
+    }
+  ],
+  "tags": [
+    {
+      "name": "bread",
+      "slug": "bread",
+      "count": 0
+    },
+    {
+      "name": "fruits",
+      "slug": "fruits",
+      "count": 0
+    },
+    {
+      "name": "meat",
+      "slug": "meat",
+      "count": 0
+    },
+    {
+      "name": "natural",
+      "slug": "natural",
+      "count": 0
+    },
+    {
+      "name": "vegetables",
+      "slug": "vegetables",
+      "count": 0
+    }
+  ]
+}

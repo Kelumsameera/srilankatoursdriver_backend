@@ -1,0 +1,4384 @@
+{
+  "ar": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "هوندا فيت شاتل",
+        "type": "سيارة",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "هجين (Hybrid)",
+        "transmission": "أوتوماتيك",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "تكييف هواء",
+          "مقاعد مريحة",
+          "كفاءة في استهلاك الوقود",
+          "مثالية لجولات المدينة"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "تويوتا بريوس",
+        "type": "سيارة",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "هجين (Hybrid)",
+        "transmission": "أوتوماتيك",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "هجين صديق للبيئة",
+          "قيادة سلسة",
+          "تكييف هواء",
+          "تصميم داخلي مريح"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "تويوتا أكسيو",
+        "type": "سيارة",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "هجين (Hybrid)",
+        "transmission": "أوتوماتيك",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "كفاءة في استهلاك الوقود",
+          "قيادة مريحة",
+          "تكييف هواء",
+          "مثالية للتنقل داخل المدينة"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "هوندا جريس",
+        "type": "سيارة",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "هجين (Hybrid)",
+        "transmission": "أوتوماتيك",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "تصميم داخلي فاخر",
+          "قيادة هجين هادئة",
+          "تكييف هواء",
+          "سفر مريح"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "تويوتا KDH سقف عالي",
+        "type": "فان",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "ديزل",
+        "transmission": "يدوي",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "سقف مرتفع",
+          "مساحة واسعة للأمتعة",
+          "جاهزة للجولات السياحية",
+          "مناسبة للعائلات"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "تويوتا KDH سقف مسطح VIP",
+        "type": "فان",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "ديزل",
+        "transmission": "يدوي",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "مقاعد VIP",
+          "تصميم سقف مسطح",
+          "تصميم داخلي فائق الراحة",
+          "مثالية للجولات الخاصة"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "حافلة تويوتا كوستر مكيفة",
+        "type": "حافلة",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "ديزل",
+        "transmission": "يدوي",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "تكييف هواء كامل",
+          "مقاعد مريحة",
+          "مساحة كبيرة للأمتعة",
+          "مثالية للمجموعات"
+        ],
+        "driver": {
+          "experience": "10 سنوات",
+          "languages": [
+            "الإنجليزية",
+            "السينهالية",
+            "التاميلية",
+            "الصينية",
+            "اليابانية",
+            "الكورية",
+            "الروسية",
+            "الفرنسية",
+            "الألمانية"
+          ]
+        },
+        "overview": "استأجر سائقًا خاصًا محترفًا في سريلانكا. متوفر للجولات السياحية، ومشاهدة المعالم، والرحلات اليومية، وجولات التراث والثقافة، ورحلات السفاري البرية. مركباتنا مصانة جيدًا وسائقونا خبراء في الطرق المحلية.",
+        "paymentPolicy": [
+          "الدفع الكامل في اليوم الأول أو الدفع اليومي حسب المسافة المقطوعة",
+          "الحد الأدنى للحجز: 3 أيام",
+          "تشمل 170 كم في اليوم الواحد",
+          "تطبق رسوم إضافية على المسافات الزائدة"
+        ]
+      }
+    ]
+  },
+  "de": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Auto",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Automatik",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Klimaanlage",
+          "Komfortsitze",
+          "Kraftstoffeffizient",
+          "Ideal für Stadttouren"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Auto",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Hybrid",
+        "transmission": "Automatik",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Umweltfreundlicher Hybrid",
+          "Sanftes Fahrverhalten",
+          "Klimaanlage",
+          "Komfortables Interieur"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Auto",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Automatik",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Kraftstoffeffizient",
+          "Ruhige Fahrt",
+          "Klimaanlage",
+          "Perfekt für Stadtfahrten"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Auto",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Automatik",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Luxuriöses Interieur",
+          "Geräuscharmer Hybridantrieb",
+          "Klimaanlage",
+          "Komfortables Reisen"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Kleinbus",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diesel",
+        "transmission": "Manuell",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Hochdach",
+          "Viel Platz für Gepäck",
+          "Bereit für Rundreisen",
+          "Familienfreundlich"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Kleinbus",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diesel",
+        "transmission": "Manuell",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIP-Bestuhlung",
+          "Flachdach-Design",
+          "Besonders komfortables Interieur",
+          "Perfekt für private Touren"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Toyota Coaster AC Bus",
+        "type": "Bus",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diesel",
+        "transmission": "Manuell",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Vollklimatisiert",
+          "Bequeme Sitze",
+          "Viel Stauraum für Gepäck",
+          "Ideal für Gruppentouren"
+        ],
+        "driver": {
+          "experience": "10 Jahre",
+          "languages": [
+            "Englisch",
+            "Singhalesisch",
+            "Tamil",
+            "Chinesisch",
+            "Japanisch",
+            "Koreanisch",
+            "Russisch",
+            "Französisch",
+            "Deutsch"
+          ]
+        },
+        "overview": "Mieten Sie einen professionellen privaten Fahrer in Sri Lanka. Verfügbar für Rundreisen, Besichtigungen, Tagesausflüge, Kultur- und Erbe-Touren sowie Wildtier-Safaris. Unsere Fahrzeuge sind bestens gewartet und unsere Fahrer sind Experten für lokale Routen.",
+        "paymentPolicy": [
+          "Vollständige Zahlung am ersten Tag ODER tägliche Zahlung basierend auf den Kilometern",
+          "Mindestbuchung: 3 Tage",
+          "170 km pro Tag inklusive",
+          "Zusätzliche Kilometergebühren fallen an"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Car",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Auto",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Air Conditioning",
+          "Comfort seats",
+          "Fuel efficient",
+          "Ideal for city tours"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Car",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Hybrid",
+        "transmission": "Auto",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Eco friendly hybrid",
+          "Smooth driving",
+          "Air Conditioning",
+          "Comfort interior"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Car",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Auto",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Fuel efficient",
+          "Smooth ride",
+          "Air Conditioning",
+          "Perfect for city travel"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Car",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Hybrid",
+        "transmission": "Auto",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Luxury interior",
+          "Silent hybrid drive",
+          "Air Conditioning",
+          "Comfort travel"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Van",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "High roof",
+          "Large luggage space",
+          "Tour ready",
+          "Family friendly"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Van",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIP seating",
+          "Flat roof design",
+          "Extra comfort interior",
+          "Perfect for private tours"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Toyota Coaster AC Bus",
+        "type": "Bus",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Full Air Conditioning",
+          "Comfortable seats",
+          "Large luggage space",
+          "Ideal for group tours"
+        ],
+        "driver": {
+          "experience": "10 Years",
+          "languages": [
+            "English",
+            "Sinhala",
+            "Tamil",
+            "Chinese",
+            "Japanese",
+            "Korean",
+            "Russian",
+            "French",
+            "German"
+          ]
+        },
+        "overview": "Hire a professional private driver in Sri Lanka. Available for round tours, sightseeing, day excursions, culture & heritage tours, and wildlife safaris. Our vehicles are well-maintained and our drivers are experts in local routes.",
+        "paymentPolicy": [
+          "Full payment first day OR daily payment based on mileage",
+          "Minimum booking: 3 days",
+          "170km included per day",
+          "Extra mileage charges apply"
+        ]
+      }
+    ]
+  },
+  "es": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Coche",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Aire acondicionado",
+          "Asientos confortables",
+          "Eficiente en combustible",
+          "Ideal para recorridos por la ciudad"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Coche",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Híbrido ecológico",
+          "Conducción suave",
+          "Aire acondicionado",
+          "Interior confortable"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Coche",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Eficiente en combustible",
+          "Viaje suave",
+          "Aire acondicionado",
+          "Perfecto para viajes urbanos"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Coche",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Interior de lujo",
+          "Conducción híbrida silenciosa",
+          "Aire acondicionado",
+          "Viaje confortable"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Furgoneta",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diésel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Techo alto",
+          "Amplio espacio para equipaje",
+          "Lista para recorridos",
+          "Ideal para familias"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Furgoneta",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diésel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "Asientos VIP",
+          "Diseño de techo plano",
+          "Interior extra confortable",
+          "Perfecta para tours privados"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Toyota Coaster AC Bus",
+        "type": "Autobús",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diésel",
+        "transmission": "Manual",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Aire acondicionado completo",
+          "Asientos cómodos",
+          "Gran espacio para equipaje",
+          "Ideal para tours en grupo"
+        ],
+        "driver": {
+          "experience": "10 años",
+          "languages": [
+            "Inglés",
+            "Cingalés",
+            "Tamil",
+            "Chino",
+            "Japonés",
+            "Coreano",
+            "Ruso",
+            "Francés",
+            "Alemán"
+          ]
+        },
+        "overview": "Contrate un conductor privado profesional en Sri Lanka. Disponible para recorridos de ida y vuelta, turismo, excursiones de un día, recorridos culturales y de patrimonio, y safaris de vida silvestre. Nuestros vehículos están bien mantenidos y nuestros conductores son expertos en rutas locales.",
+        "paymentPolicy": [
+          "Pago total el primer día O pago diario basado en el kilometraje",
+          "Reserva mínima: 3 días",
+          "170 km incluidos por día",
+          "Se aplican cargos por kilometraje adicional"
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Voiture",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Hybride",
+        "transmission": "Automatique",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Climatisation",
+          "Sièges confortables",
+          "Économie de carburant",
+          "Idéal pour les visites en ville"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Voiture",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Hybride",
+        "transmission": "Automatique",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Hybride écologique",
+          "Conduite souple",
+          "Climatisation",
+          "Intérieur confortable"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Voiture",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Hybride",
+        "transmission": "Automatique",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Économe en carburant",
+          "Trajet fluide",
+          "Climatisation",
+          "Parfait pour les déplacements urbains"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Voiture",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Hybride",
+        "transmission": "Automatique",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Intérieur de luxe",
+          "Conduite hybride silencieuse",
+          "Climatisation",
+          "Voyage tout confort"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Van",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diesel",
+        "transmission": "Manuelle",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Toit surélevé",
+          "Grand espace pour bagages",
+          "Prêt pour les circuits",
+          "Idéal pour les familles"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Van",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diesel",
+        "transmission": "Manuelle",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "Sièges VIP",
+          "Toit plat",
+          "Intérieur extra confort",
+          "Parfait pour les tours privés"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Bus Toyota Coaster AC",
+        "type": "Bus",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diesel",
+        "transmission": "Manuelle",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Entièrement climatisé",
+          "Sièges confortables",
+          "Grand espace bagages",
+          "Idéal pour les groupes"
+        ],
+        "driver": {
+          "experience": "10 ans",
+          "languages": [
+            "Anglais",
+            "Cinghalais",
+            "Tamoul",
+            "Chinois",
+            "Japonais",
+            "Coréen",
+            "Russe",
+            "Français",
+            "Allemand"
+          ]
+        },
+        "overview": "Louez un chauffeur privé professionnel au Sri Lanka. Disponible pour des circuits complets, des visites guidées, des excursions d'une journée, des visites culturelles et du patrimoine, ainsi que des safaris animaliers. Nos véhicules sont bien entretenus et nos chauffeurs sont experts des routes locales.",
+        "paymentPolicy": [
+          "Paiement complet le premier jour OU paiement quotidien basé sur le kilométrage",
+          "Réservation minimum : 3 jours",
+          "170 km inclus par jour",
+          "Des frais de kilométrage supplémentaire s'appliquent"
+        ]
+      }
+    ]
+  },
+  "hi": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "होंडा फिट शटल",
+        "type": "कार",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "हाइब्रिड",
+        "transmission": "ऑटोमैटिक",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "एयर कंडीशनिंग",
+          "आरामदायक सीटें",
+          "ईंधन कुशल",
+          "शहर के दौरों के लिए आदर्श"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "टोयोटा प्रियस",
+        "type": "कार",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "हाइब्रिड",
+        "transmission": "ऑटोमैटिक",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "पर्यावरण अनुकूल हाइब्रिड",
+          "सुगम ड्राइविंग",
+          "एयर कंडीशनिंग",
+          "आरामदायक इंटीरियर"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "टोयोटा एक्सियो",
+        "type": "कार",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "हाइब्रिड",
+        "transmission": "ऑटोमैटिक",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "ईंधन कुशल",
+          "सुगम सवारी",
+          "एयर कंडीशनिंग",
+          "शहर की यात्रा के लिए उपयुक्त"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "होंडा ग्रेस",
+        "type": "कार",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "हाइब्रिड",
+        "transmission": "ऑटोमैटिक",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "लक्जरी इंटीरियर",
+          "शांत हाइब्रिड ड्राइव",
+          "एयर कंडीशनिंग",
+          "आरामदायक यात्रा"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "टोयोटा KDH हाईरूफ",
+        "type": "वैन",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "डीजल",
+        "transmission": "मैनुअल",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "ऊंची छत",
+          "सामान के लिए बड़ा स्थान",
+          "यात्रा के लिए तैयार",
+          "परिवार के अनुकूल"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "टोयोटा KDH फ्लैटरूफ VIP वैन",
+        "type": "वैन",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "डीजल",
+        "transmission": "मैनुअल",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "वीआईपी बैठने की व्यवस्था",
+          "फ्लैट रूफ डिजाइन",
+          "अतिरिक्त आरामदायक इंटीरियर",
+          "निजी यात्राओं के लिए बिल्कुल सही"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "टोयोटा कोस्टर एसी बस",
+        "type": "बस",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "डीजल",
+        "transmission": "मैनुअल",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "पूर्ण वातानुकूलित (AC)",
+          "आरामदायक सीटें",
+          "सामान के लिए बड़ा स्थान",
+          "समूह यात्राओं के लिए आदर्श"
+        ],
+        "driver": {
+          "experience": "10 वर्ष",
+          "languages": [
+            "अंग्रेजी",
+            "सिंहली",
+            "तमिल",
+            "चीनी",
+            "जापानी",
+            "कोरियाई",
+            "रूसी",
+            "फ्रेंच",
+            "जर्मन"
+          ]
+        },
+        "overview": "श्रीलंका में एक पेशेवर निजी ड्राइवर किराए पर लें। राउंड टूर, दर्शनीय स्थलों की यात्रा, एक दिवसीय भ्रमण, संस्कृति और विरासत यात्रा और वन्यजीव सफारी के लिए उपलब्ध। हमारे वाहन अच्छी तरह से रखरखाव किए गए हैं और हमारे ड्राइवर स्थानीय रास्तों के विशेषज्ञ हैं।",
+        "paymentPolicy": [
+          "पहले दिन पूर्ण भुगतान या माइलेज के आधार पर दैनिक भुगतान",
+          "न्यूनतम बुकिंग: 3 दिन",
+          "प्रति दिन 170 किमी शामिल",
+          "अतिरिक्त माइलेज शुल्क लागू"
+        ]
+      }
+    ]
+  },
+  "it": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Auto",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Ibrido",
+        "transmission": "Automatico",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Aria Condizionata",
+          "Sedili comfort",
+          "Efficienza nei consumi",
+          "Ideale per tour in città"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Auto",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Ibrido",
+        "transmission": "Automatico",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Ibrido eco-friendly",
+          "Guida fluida",
+          "Aria Condizionata",
+          "Interni confortevoli"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Auto",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Ibrido",
+        "transmission": "Automatico",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Efficienza nei consumi",
+          "Guida rilassante",
+          "Aria Condizionata",
+          "Perfetta per viaggi urbani"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Auto",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Ibrido",
+        "transmission": "Automatico",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Interni di lusso",
+          "Guida ibrida silenziosa",
+          "Aria Condizionata",
+          "Viaggio comfort"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Van",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diesel",
+        "transmission": "Manuale",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Tetto alto",
+          "Ampio spazio per i bagagli",
+          "Pronto per i tour",
+          "Ideale per le famiglie"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Van",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diesel",
+        "transmission": "Manuale",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "Sedili VIP",
+          "Design a tetto piatto",
+          "Interni extra comfort",
+          "Perfetta per tour privati"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Toyota Coaster AC Bus",
+        "type": "Autobus",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diesel",
+        "transmission": "Manuale",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Completamente climatizzato",
+          "Sedili confortevoli",
+          "Grande spazio per bagagli",
+          "Ideale per tour di gruppo"
+        ],
+        "driver": {
+          "experience": "10 anni",
+          "languages": [
+            "Inglese",
+            "Singalese",
+            "Tamil",
+            "Cinese",
+            "Giapponese",
+            "Coreano",
+            "Russo",
+            "Francese",
+            "Tedesco"
+          ]
+        },
+        "overview": "Noleggia un autista privato professionista in Sri Lanka. Disponibile per tour completi, visite guidate, escursioni giornaliere, tour culturali e del patrimonio e safari naturalistici. I nostri veicoli sono ben mantenuti e i nostri autisti sono esperti dei percorsi locali.",
+        "paymentPolicy": [
+          "Pagamento completo il primo giorno OPPURE pagamento giornaliero basato sul chilometraggio",
+          "Prenotazione minima: 3 giorni",
+          "170 km inclusi al giorno",
+          "Si applicano costi per chilometraggio extra"
+        ]
+      }
+    ]
+  },
+  "ja": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "ホンダ フィットシャトル",
+        "type": "乗用車",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "ハイブリッド",
+        "transmission": "オートマ",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "エアコン完備",
+          "快適なシート",
+          "低燃費",
+          "市内観光に最適"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "トヨタ プリウス",
+        "type": "乗用車",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "ハイブリッド",
+        "transmission": "オートマ",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "環境に優しいハイブリッド",
+          "スムーズな走行",
+          "エアコン完備",
+          "快適なインテリア"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "トヨタ カローラアクシオ",
+        "type": "乗用車",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "ハイブリッド",
+        "transmission": "オートマ",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "燃費性能に優れる",
+          "静かな乗り心地",
+          "エアコン完備",
+          "都市部での移動に最適"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "ホンダ グレイス",
+        "type": "乗用車",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "ハイブリッド",
+        "transmission": "オートマ",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "豪華な内装",
+          "静かなハイブリッド走行",
+          "エアコン完備",
+          "快適な旅をお約束"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "トヨタ ハイエース KDH ハイルーフ",
+        "type": "バン",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "ディーゼル",
+        "transmission": "マニュアル",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "ハイルーフ",
+          "広い荷物スペース",
+          "ツアー対応",
+          "ファミリー・団体向け"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "トヨタ ハイエース KDH 標準ルーフ VIP仕様",
+        "type": "バン",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "ディーゼル",
+        "transmission": "マニュアル",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIPシート",
+          "標準ルーフデザイン",
+          "最高級の快適な内装",
+          "プライベートツアーに最適"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "トヨタ コースター ACバス",
+        "type": "バス",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "ディーゼル",
+        "transmission": "マニュアル",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "フルエアコン完備",
+          "快適な座席",
+          "大容量の荷物スペース",
+          "団体ツアーに最適"
+        ],
+        "driver": {
+          "experience": "10年",
+          "languages": [
+            "英語",
+            "シンハラ語",
+            "タミル語",
+            "中国語",
+            "日本語",
+            "韓国語",
+            "ロシア語",
+            "フランス語",
+            "ドイツ語"
+          ]
+        },
+        "overview": "スリランカでのプロのプライベートドライバーを予約しましょう。周遊ツアー、観光、日帰り旅行、文化・遺産ツアー、野生動物サファリにご利用いただけます。車両はメンテナンスが行き届いており、ドライバーは現地のルートに精通しています。",
+        "paymentPolicy": [
+          "初日に全額支払い、または走行距離に応じた日払い",
+          "最低予約期間：3日間",
+          "1日あたり170kmを含む",
+          "追加走行距離料金が適用されます"
+        ]
+      }
+    ]
+  },
+  "ko": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "혼다 피트 셔틀",
+        "type": "승용차",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "하이브리드",
+        "transmission": "자동",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "에어컨 완비",
+          "편안한 좌석",
+          "우수한 연비",
+          "시내 관광에 최적"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "토요타 프리우스",
+        "type": "승용차",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "하이브리드",
+        "transmission": "자동",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "친환경 하이브리드",
+          "부드러운 주행",
+          "에어컨 완비",
+          "쾌적한 실내"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "토요타 악시오",
+        "type": "승용차",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "하이브리드",
+        "transmission": "자동",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "연비 효율성",
+          "정숙한 승차감",
+          "에어컨 완비",
+          "도시 여행에 적합"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "혼다 그레이스",
+        "type": "승용차",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "하이브리드",
+        "transmission": "자동",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "고급스러운 실내",
+          "조용한 하이브리드 주행",
+          "에어컨 완비",
+          "편안한 여행"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "토요타 KDH 하이루프",
+        "type": "밴",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "디젤",
+        "transmission": "수동",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "높은 천장",
+          "넓은 수하물 공간",
+          "투어 맞춤형",
+          "가족 여행에 적합"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "토요타 KDH 플랫루프 VIP 밴",
+        "type": "밴",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "디젤",
+        "transmission": "수동",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIP 시트",
+          "플랫루프 디자인",
+          "최고의 안락한 실내",
+          "프라이빗 투어에 최적"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "토요타 코스터 AC 버스",
+        "type": "버스",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "디젤",
+        "transmission": "수동",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "풀 에어컨 시스템",
+          "편안한 좌석",
+          "대용량 수하물 공간",
+          "단체 투어에 최적"
+        ],
+        "driver": {
+          "experience": "10년",
+          "languages": [
+            "영어",
+            "싱할라어",
+            "타밀어",
+            "중국어",
+            "일본어",
+            "한국어",
+            "러시아어",
+            "프랑스어",
+            "독일어"
+          ]
+        },
+        "overview": "스리랑카에서 전문 프라이빗 드라이버를 예약하세요. 라운드 투어, 관광, 일일 투어, 문화 및 유산 투어, 야생동물 사파리 등 다양한 여정에 이용 가능합니다. 철저히 관리된 차량과 현지 경로에 능숙한 드라이버가 안전한 여행을 약속합니다.",
+        "paymentPolicy": [
+          "첫날 전액 지불 또는 주행 거리 기준 일일 지불",
+          "최소 예약 기간: 3일",
+          "하루 170km 포함",
+          "추가 주행 거리 요금 적용"
+        ]
+      }
+    ]
+  },
+  "pt": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Carro",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Ar Condicionado",
+          "Assentos confortáveis",
+          "Eficiente em combustível",
+          "Ideal para passeios na cidade"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Carro",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Híbrido ecológico",
+          "Condução suave",
+          "Ar Condicionado",
+          "Interior confortável"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Carro",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Eficiente em combustível",
+          "Viagem suave",
+          "Ar Condicionado",
+          "Perfeito para viagens urbanas"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Carro",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Híbrido",
+        "transmission": "Automático",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Interior de luxo",
+          "Condução híbrida silenciosa",
+          "Ar Condicionado",
+          "Viagem confortável"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Van",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Teto alto",
+          "Grande espaço para bagagem",
+          "Pronto para passeios",
+          "Ideal para famílias"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Van",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "Assentos VIP",
+          "Design de teto plano",
+          "Interior extra confortável",
+          "Perfeito para tours privados"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Ônibus Toyota Coaster AC",
+        "type": "Ônibus",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Diesel",
+        "transmission": "Manual",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Ar Condicionado central",
+          "Assentos confortáveis",
+          "Grande espaço para bagagem",
+          "Ideal para tours em grupo"
+        ],
+        "driver": {
+          "experience": "10 Anos",
+          "languages": [
+            "Inglês",
+            "Cingalês",
+            "Tâmil",
+            "Chinês",
+            "Japonês",
+            "Coreano",
+            "Russo",
+            "Francês",
+            "Alemão"
+          ]
+        },
+        "overview": "Contrate um motorista particular profissional no Sri Lanka. Disponível para viagens de ida e volta, passeios turísticos, excursões de um dia, passeios culturais e de patrimônio e safaris de vida selvagem. Nossos veículos são bem mantidos e nossos motoristas são especialistas em rotas locais.",
+        "paymentPolicy": [
+          "Pagamento integral no primeiro dia OU pagamento diário baseado na quilometragem",
+          "Reserva mínima: 3 dias",
+          "170 km incluídos por dia",
+          "Taxas extras de quilometragem se aplicam"
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "Honda Fit Shuttle",
+        "type": "Легковой автомобиль",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "Гибрид",
+        "transmission": "Автомат",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "Кондиционер",
+          "Комфортные сиденья",
+          "Экономичный расход топлива",
+          "Идеально для городских туров"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "Toyota Prius",
+        "type": "Легковой автомобиль",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "Гибрид",
+        "transmission": "Автомат",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "Экологичный гибрид",
+          "Плавный ход",
+          "Кондиционер",
+          "Комфортный интерьер"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "Toyota Axio",
+        "type": "Легковой автомобиль",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "Гибрид",
+        "transmission": "Автомат",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "Экономичный расход",
+          "Тихая езда",
+          "Кондиционер",
+          "Отлично для городских поездок"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "Honda Grace",
+        "type": "Легковой автомобиль",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "Гибрид",
+        "transmission": "Автомат",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "Люксовый интерьер",
+          "Бесшумный гибридный привод",
+          "Кондиционер",
+          "Комфортные путешествия"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "Toyota KDH Highroof",
+        "type": "Микроавтобус",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "Дизель",
+        "transmission": "Механика",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "Высокая крыша",
+          "Большое багажное отделение",
+          "Готов к турам",
+          "Подходит для семей"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "Toyota KDH Flatroof VIP Van",
+        "type": "Микроавтобус",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "Дизель",
+        "transmission": "Механика",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIP сиденья",
+          "Дизайн с плоской крышей",
+          "Экстра-комфортный интерьер",
+          "Идеально для частных туров"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "Toyota Coaster AC Bus",
+        "type": "Автобус",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "Дизель",
+        "transmission": "Механика",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "Полное кондиционирование",
+          "Удобные кресла",
+          "Много места для багажа",
+          "Идеально для групповых туров"
+        ],
+        "driver": {
+          "experience": "10 лет",
+          "languages": [
+            "Английский",
+            "Сингальский",
+            "Тамильский",
+            "Китайский",
+            "Японский",
+            "Корейский",
+            "Русский",
+            "Французский",
+            "Немецкий"
+          ]
+        },
+        "overview": "Арендуйте профессионального частного водителя на Шри-Ланке. Доступно для экскурсионных туров, осмотра достопримечательностей, однодневных поездок, культурных туров и сафари по дикой природе. Наши автомобили находятся в отличном техническом состоянии, а водители — эксперты по местным маршрутам.",
+        "paymentPolicy": [
+          "Полная оплата в первый день ИЛИ ежедневная оплата в зависимости от пробега",
+          "Минимальное бронирование: 3 дня",
+          "Включено 170 км в день",
+          "Применяется дополнительная плата за превышение лимита км"
+        ]
+      }
+    ]
+  },
+  "si": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "හොන්ඩා ෆිට් ෂටල් (Honda Fit Shuttle)",
+        "type": "මෝටර් රථ",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "හයිබ්‍රිඩ් (Hybrid)",
+        "transmission": "ඔටෝ (Auto)",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "වායු සමනය කළ (A/C)",
+          "සුවපහසු ආසන",
+          "ඉන්ධන පිරිමැසුම්දායක",
+          "නගර සංචාර සඳහා වඩාත් සුදුසුයි"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "ටොයෝටා ප්‍රියස් (Toyota Prius)",
+        "type": "මෝටර් රථ",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "හයිබ්‍රිඩ් (Hybrid)",
+        "transmission": "ඔටෝ (Auto)",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "පරිසර හිතකාමී හයිබ්‍රිඩ් තාක්ෂණය",
+          "ඉතා සුමට ධාවනය",
+          "වායු සමනය කළ (A/C)",
+          "සුවපහසු ඇතුළත සැකසුම"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "ටොයෝටා ඇක්සියෝ (Toyota Axio)",
+        "type": "මෝටර් රථ",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "හයිබ්‍රිඩ් (Hybrid)",
+        "transmission": "ඔටෝ (Auto)",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "ඉහළ ඉන්ධන කාර්යක්ෂමතාව",
+          "නිස්කලංක ධාවනය",
+          "වායු සමනය කළ (A/C)",
+          "නගරයේ ගමන් බිමන් සඳහා ඉතා හොඳයි"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "හොන්ඩා ග්‍රේස් (Honda Grace)",
+        "type": "මෝටර් රථ",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "හයිබ්‍රිඩ් (Hybrid)",
+        "transmission": "ඔටෝ (Auto)",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "සුඛෝපභෝගී අභ්‍යන්තරය",
+          "නිශ්ශබ්ද හයිබ්‍රිඩ් ධාවනය",
+          "වායු සමනය කළ (A/C)",
+          "සුවපහසු දිගු ගමන්"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "ටොයෝටා KDH හයි-රූෆ් (Toyota KDH Highroof)",
+        "type": "වෑන් රථ",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "ඩීසල් (Diesel)",
+        "transmission": "මැනුවල් (Manual)",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "උසින් වැඩි වහලය (High roof)",
+          "ගමන් මලු සඳහා වැඩි ඉඩක්",
+          "සංචාර සඳහා සකස් කළ",
+          "පවුලේ සංචාර සඳහා වඩාත් සුදුසුයි"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "ටොයෝටා KDH ෆ්ලැට්-රූෆ් VIP (VIP Van)",
+        "type": "වෑන් රථ",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "ඩීසල් (Diesel)",
+        "transmission": "මැනුවල් (Manual)",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "VIP ආසන පහසුකම්",
+          "සුවපහසු අභ්‍යන්තර සැකසුම",
+          "ඉහළ ප්‍රමිතිය",
+          "පෞද්ගලික විශේෂ සංචාර සඳහා ඉතා හොඳයි"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "ටොයෝටා කෝස්ටර් (Toyota Coaster Bus)",
+        "type": "බස් රථ",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "ඩීසල් (Diesel)",
+        "transmission": "මැනුවල් (Manual)",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "පූර්ණ වායු සමනය කළ (Full A/C)",
+          "සුවපහසු ආසන",
+          "ගමන් මලු සඳහා විශාල ඉඩක්",
+          "කණ්ඩායම් සංචාර සඳහා වඩාත් සුදුසුයි"
+        ],
+        "driver": {
+          "experience": "වසර 10 ක පළපුරුද්ද",
+          "languages": [
+            "ඉංග්‍රීසි",
+            "සිංහල",
+            "දෙමළ",
+            "චීන",
+            "ජපන්",
+            "කොරියානු",
+            "රුසියානු",
+            "ප්‍රංශ",
+            "ජර්මන්"
+          ]
+        },
+        "overview": "ශ්‍රී ලංකාව තුළ වෘත්තීය මට්ටමේ පෞද්ගලික රියදුරු සේවාවක් ලබා ගන්න. සංචාරක චාරිකා, දර්ශන නැරඹීම, එක්දින විනෝද චාරිකා, සංස්කෘතික සහ උරුමයන් නැරඹීමේ චාරිකා සහ වනජීවී සෆාරි සඳහා ලබා ගත හැකිය. අපගේ වාහන ඉතා හොඳින් නඩත්තු කර ඇති අතර අපගේ රියදුරන් දේශීය මාර්ග පිළිබඳ මනා දැනුමක් ඇති ප්‍රවීණයන් වේ.",
+        "paymentPolicy": [
+          "පළමු දිනයේ සම්පූර්ණ ගෙවීම හෝ ධාවනය කරන දුර ප්‍රමාණය අනුව දෛනික ගෙවීම",
+          "අවම වෙන්කරවා ගැනීමේ කාලය: දින 3",
+          "දිනකට කිලෝමීටර් 170 ක් ඇතුළත් වේ",
+          "අමතර ධාවනය සඳහා අමතර ගාස්තු අය කෙරේ"
+        ]
+      }
+    ]
+  },
+  "ta": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "ஹோண்டா ஃபிட் ஷட்டில் (Honda Fit Shuttle)",
+        "type": "கார்",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான இருக்கைகள்",
+          "குறைந்த எரிபொருள் பயன்பாடு",
+          "நகர சுற்றுப்பயணங்களுக்கு சிறந்தது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "டொயோட்டா பிரியஸ் (Toyota Prius)",
+        "type": "கார்",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "சூழல் நட்பு ஹைப்ரிட்",
+          "மென்மையான ஓட்டம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான உட்புறம்"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "டொயோட்டா ஆக்சியோ (Toyota Axio)",
+        "type": "கார்",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "எரிபொருள் திறன் மிக்கது",
+          "நிதானமான பயணம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "நகர பயணங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "ஹோண்டா கிரேஸ் (Honda Grace)",
+        "type": "கார்",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "ஆடம்பரமான உட்புறம்",
+          "சத்தமற்ற ஹைப்ரிட் ஓட்டம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான பயணம்"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "டொயோட்டா KDH ஹைரூஃப் (Toyota KDH Highroof)",
+        "type": "வேன்",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "உயரமான கூரை (High roof)",
+          "பெரிய லக்கேஜ் வசதி",
+          "சுற்றுப்பயணத்திற்கு தயார்",
+          "குடும்பங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "டொயோட்டா KDH விஐபி வேன் (VIP Van)",
+        "type": "வேன்",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "விஐபி இருக்கைகள்",
+          "தட்டையான கூரை வடிவமைப்பு",
+          "அதிக வசதியான உட்புறம்",
+          "தனியார் சுற்றுப்பயணங்களுக்கு சிறந்தது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "டொயோட்டா கோஸ்டர் ஏசி பஸ் (Toyota Coaster Bus)",
+        "type": "பஸ்",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "முழுமையான குளிர்சாதன வசதி",
+          "வசதியான இருக்கைகள்",
+          "பெரிய லக்கேஜ் வசதி",
+          "குழு சுற்றுப்பயணங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      }
+    ]
+  },
+  "zh": {
+    "vehicles": [
+      {
+        "id": "honda-fit",
+        "name": "ஹோண்டா ஃபிட் ஷட்டில் (Honda Fit Shuttle)",
+        "type": "கார்",
+        "price": "$55",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+        "gallery": [
+          "/honda-fit-shuttle/honda-fit-shuttle-1.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-2.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-3.jpeg",
+          "/honda-fit-shuttle/honda-fit-shuttle-4.jpeg"
+        ],
+        "features": [
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான இருக்கைகள்",
+          "குறைந்த எரிபொருள் பயன்பாடு",
+          "நகர சுற்றுப்பயணங்களுக்கு சிறந்தது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-prius",
+        "name": "டொயோட்டா பிரியஸ் (Toyota Prius)",
+        "type": "கார்",
+        "price": "$80",
+        "passengers": 3,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/toyota-prius/toyota-prius-10.jpg",
+        "gallery": [
+          "/toyota-prius/toyota-prius-1.jpg",
+          "/toyota-prius/toyota-prius-2.jpg",
+          "/toyota-prius/toyota-prius-3.jpg",
+          "/toyota-prius/toyota-prius-4.jpg",
+          "/toyota-prius/toyota-prius-5.jpg",
+          "/toyota-prius/toyota-prius-6.jpg",
+          "/toyota-prius/toyota-prius-7.jpg",
+          "/toyota-prius/toyota-prius-8.jpg",
+          "/toyota-prius/toyota-prius-9.jpg",
+          "/toyota-prius/toyota-prius-10.jpg"
+        ],
+        "features": [
+          "சூழல் நட்பு ஹைப்ரிட்",
+          "மென்மையான ஓட்டம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான உட்புறம்"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-axio",
+        "name": "டொயோட்டா ஆக்சியோ (Toyota Axio)",
+        "type": "கார்",
+        "price": "$60",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/toyota-axio/toyota-axio-1.jpeg",
+        "gallery": [
+          "/toyota-axio/toyota-axio-1.jpeg",
+          "/toyota-axio/toyota-axio-2.jpeg",
+          "/toyota-axio/toyota-axio-3.jpeg",
+          "/toyota-axio/toyota-axio-4.jpeg"
+        ],
+        "features": [
+          "எரிபொருள் திறன் மிக்கது",
+          "நிதானமான பயணம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "நகர பயணங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "honda-grace",
+        "name": "ஹோண்டா கிரேஸ் (Honda Grace)",
+        "type": "கார்",
+        "price": "$65",
+        "passengers": 4,
+        "fuel": "ஹைப்ரிட்",
+        "transmission": "ஆட்டோ",
+        "image": "/honda-grace/honda-grace-1.jpeg",
+        "gallery": [
+          "/honda-grace/honda-grace-1.jpeg",
+          "/honda-grace/honda-grace-2.jpeg",
+          "/honda-grace/honda-grace-3.jpeg",
+          "/honda-grace/honda-grace-4.jpeg",
+          "/honda-grace/honda-grace-5.jpeg",
+          "/honda-grace/honda-grace-6.jpeg"
+        ],
+        "features": [
+          "ஆடம்பரமான உட்புறம்",
+          "சத்தமற்ற ஹைப்ரிட் ஓட்டம்",
+          "குளிர்சாதன வசதி (A/C)",
+          "வசதியான பயணம்"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-kdh",
+        "name": "டொயோட்டா KDH ஹைரூஃப் (Toyota KDH Highroof)",
+        "type": "வேன்",
+        "price": "$110",
+        "passengers": 10,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-1.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-2.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-3.jpeg",
+          "/toyota-kdh-highroof-van/toyota-kdh-highroof-4.jpeg"
+        ],
+        "features": [
+          "உயரமான கூரை (High roof)",
+          "பெரிய லக்கேஜ் வசதி",
+          "சுற்றுப்பயணத்திற்கு தயார்",
+          "குடும்பங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "kdh-vip-flatroof",
+        "name": "டொயோட்டா KDH விஐபி வேன் (VIP Van)",
+        "type": "வேன்",
+        "price": "$130",
+        "passengers": 8,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+        "gallery": [
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-1.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-2.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-3.jpeg",
+          "/toyota-kdh-flatroof-vip-van/toyota-kdh-flatroof-vip-4.jpeg"
+        ],
+        "features": [
+          "விஐபி இருக்கைகள்",
+          "தட்டையான கூரை வடிவமைப்பு",
+          "அதிக வசதியான உட்புறம்",
+          "தனியார் சுற்றுப்பயணங்களுக்கு சிறந்தது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      },
+      {
+        "id": "toyota-coaster",
+        "name": "டொயோட்டா கோஸ்டர் ஏசி பஸ் (Toyota Coaster Bus)",
+        "type": "பஸ்",
+        "price": "$180",
+        "passengers": 25,
+        "fuel": "டீசல்",
+        "transmission": "மேனுவல்",
+        "image": "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+        "gallery": [
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-1.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-2.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-3.jpeg",
+          "/toyota-coaster-ac-bus/toyota-coaster-ac-bus-4.jpeg"
+        ],
+        "features": [
+          "முழுமையான குளிர்சாதன வசதி",
+          "வசதியான இருக்கைகள்",
+          "பெரிய லக்கேஜ் வசதி",
+          "குழு சுற்றுப்பயணங்களுக்கு ஏற்றது"
+        ],
+        "driver": {
+          "experience": "10 வருட அனுபவம்",
+          "languages": [
+            "ஆங்கிலம்",
+            "சிங்களம்",
+            "தமிழ்",
+            "சீனம்",
+            "ஜப்பானிய மொழி",
+            "கொரிய மொழி",
+            "ரஷ்ய மொழி",
+            "பிரஞ்சு",
+            "ஜெர்மன்"
+          ]
+        },
+        "overview": "இலங்கையில் ஒரு தொழில்முறை தனியார் ஓட்டுநரை வாடகைக்கு அமர்த்துங்கள். சுற்றுப்பயணங்கள், சுற்றிப் பார்த்தல், ஒரு நாள் உல்லாசப் பயணங்கள், கலாச்சார மற்றும் பாரம்பரிய சுற்றுப்பயணங்கள் மற்றும் வனவிலங்கு சபாரிகளுக்குக் கிடைக்கும். எமது வாகனங்கள் சிறப்பாக பராமரிக்கப்படுகின்றன, மேலும் எமது ஓட்டுநர்கள் உள்ளூர் வழிகளில் நிபுணத்துவம் பெற்றவர்கள்.",
+        "paymentPolicy": [
+          "முதல் நாளில் முழு செலுத்துகை அல்லது மைலேஜ் அடிப்படையில் தினசரி செலுத்துகை",
+          "குறைந்தபட்ச முன்பதிவு: 3 நாட்கள்",
+          "ஒரு நாளைக்கு 170 கி.மீ உள்ளடங்கும்",
+          "கூடுதல் மைலேஜிற்கு கூடுதல் கட்டணம் விதிக்கப்படும்"
+        ]
+      }
+    ]
+  }
+}

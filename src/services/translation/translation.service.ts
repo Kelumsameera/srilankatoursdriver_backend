@@ -5,10 +5,16 @@ import { ApiError } from "../../utils/ApiError.js";
 import { hashFields, setPath, sha256 } from "../../utils/helpers.js";
 import { revalidateFrontend } from "../revalidate.service.js";
 import { extractFields, isTranslatableType, TRANSLATABLE, type TranslatableType } from "./registry.js";
-import { getTranslationProvider } from "./providers.js";
+import { getProviderForLocale } from "./providers.js";
 import { logger } from "../../config/logger.js";
 
-export type TranslationState = "missing" | "outdated" | "up_to_date";
+/**
+ * missing    – no translation yet
+ * outdated   – the English source changed after translating (or some fields are untranslated)
+ * failed     – the last machine translation attempt failed and the locale is not up to date
+ * up_to_date – every field was translated from the current English text
+ */
+export type TranslationState = "missing" | "outdated" | "failed" | "up_to_date";
 
 /**
  * MongoDB/Mongoose map keys cannot contain "." – field paths such as "itinerary.0.title"
@@ -86,13 +92,19 @@ export async function localizeOne<T extends { _id?: unknown }>(entityType: Trans
 
 /* ───────────────────────── Admin ───────────────────────── */
 
-export function computeState(source: Record<string, string>, row?: { sourceHashes?: unknown; fields?: unknown } | null): TranslationState {
+export function computeState(
+  source: Record<string, string>,
+  row?: { sourceHashes?: unknown; fields?: unknown; lastError?: string | null } | null,
+): TranslationState {
   if (!row) return Object.keys(source).length === 0 ? "up_to_date" : "missing";
   const hashes = toRecord(row.sourceHashes);
   const fields = toRecord(row.fields);
+  const hasAny = Object.keys(fields).length > 0;
   for (const [path, value] of Object.entries(source)) {
-    if (!fields[path]) return "outdated";
-    if (hashes[path] && hashes[path] !== sha256(value)) return "outdated";
+    if (!fields[path] || (hashes[path] && hashes[path] !== sha256(value))) {
+      if (row.lastError) return "failed";
+      return hasAny ? "outdated" : "missing";
+    }
   }
   return "up_to_date";
 }
@@ -103,7 +115,7 @@ export async function getStatusOverview(entityType?: string) {
   const result: {
     entityType: string;
     label: string;
-    items: { entityId: string; title: string; fieldCount: number; locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string }> }[];
+    items: { entityId: string; title: string; fieldCount: number; locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string; lastError?: string }> }[];
   }[] = [];
 
   for (const type of types) {
@@ -117,7 +129,7 @@ export async function getStatusOverview(entityType?: string) {
       label: cfg.label,
       items: docs.map((doc) => {
         const source = extractFields(doc, cfg.fields);
-        const locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string }> = {};
+        const locales: Record<string, { state: TranslationState; locked: boolean; published: boolean; origin?: string; lastError?: string }> = {};
         for (const locale of TARGET_LOCALES) {
           const row = index.get(`${String(doc._id)}:${locale}`);
           locales[locale] = {
@@ -125,6 +137,7 @@ export async function getStatusOverview(entityType?: string) {
             locked: Boolean(row?.locked),
             published: row ? row.published !== false : false,
             origin: row?.origin,
+            ...(row?.lastError ? { lastError: row.lastError } : {}),
           };
         }
         return {
@@ -161,6 +174,7 @@ export async function getEntityTranslations(entityType: string, entityId: string
             published: row ? row.published !== false : false,
             origin: row?.origin ?? null,
             translatedAt: row?.translatedAt ?? null,
+            lastError: row?.lastError || null,
           },
         ];
       }),
@@ -180,15 +194,17 @@ interface GenerateOptions {
 /** Machine-translates an entity into the requested locales. Locked translations are never touched. */
 export async function generateTranslations(opts: GenerateOptions) {
   if (!isTranslatableType(opts.entityType)) throw ApiError.badRequest("Unknown content type");
-  const provider = getTranslationProvider();
   const { cfg, fields } = await loadSource(opts.entityType, opts.entityId);
   const locales = (opts.locales?.length ? opts.locales : TARGET_LOCALES).filter(
     (l): l is Locale => isLocale(l) && l !== SOURCE_LOCALE,
   );
+  // Resolved up front so a missing provider configuration fails fast (Sinhala uses the free engine).
+  const providers = new Map(locales.map((l) => [l, getProviderForLocale(l)]));
   const sourceHashes = hashMap(fields);
   const results: { locale: string; translated: number; skipped?: string; error?: string }[] = [];
 
   for (const locale of locales) {
+    const provider = providers.get(locale)!;
     const existing = await Translation.findOne({ entityType: opts.entityType, entityId: opts.entityId, locale });
     if (existing?.locked) {
       results.push({ locale, translated: 0, skipped: "locked" });
@@ -214,6 +230,7 @@ export async function generateTranslations(opts: GenerateOptions) {
             origin: existing?.origin === "manual" && !opts.force ? "manual" : "machine",
             provider: provider.name,
             translatedAt: new Date(),
+            lastError: "",
             ...(opts.userId ? { updatedBy: opts.userId } : {}),
           },
           $setOnInsert: { locked: false, published: true },
@@ -223,7 +240,14 @@ export async function generateTranslations(opts: GenerateOptions) {
       results.push({ locale, translated: todo.length });
     } catch (err) {
       logger.warn({ err, locale }, "Translation failed");
-      results.push({ locale, translated: 0, error: err instanceof Error ? err.message : "Translation failed" });
+      const message = (err instanceof Error ? err.message : "Translation failed").slice(0, 300);
+      // Remember the failure so the status matrix shows "failed" instead of silently staying "missing".
+      await Translation.updateOne(
+        { entityType: opts.entityType, entityId: new Types.ObjectId(opts.entityId), locale },
+        { $set: { lastError: message, lastErrorAt: new Date() }, $setOnInsert: { locked: false, published: true, origin: "machine", provider: provider.name } },
+        { upsert: true },
+      ).catch((e: unknown) => logger.warn({ err: e }, "Could not record translation failure"));
+      results.push({ locale, translated: 0, error: message });
     }
   }
   revalidateFrontend(cfg.cacheTag);
@@ -254,6 +278,7 @@ export async function saveManualTranslation(
     update.sourceHash = hashFields(source);
     update.origin = "manual";
     update.translatedAt = new Date();
+    update.lastError = "";
   }
   if (typeof input.locked === "boolean") update.locked = input.locked;
   if (typeof input.published === "boolean") update.published = input.published;

@@ -10,7 +10,13 @@ const phone = z
   .max(30)
   .regex(/^[+\d][\d\s()-]*$|^$/, "Invalid phone number");
 
-const honeypot = z.string().max(0, "Spam detected").optional();
+/**
+ * Hidden "website" field that people never fill in. Bots that do are answered with a normal
+ * success response but nothing is stored (see crm.service) – a validation error would teach them.
+ */
+export const honeypot = z.string().max(500).optional();
+const MAX_DAYS_AHEAD = 3 * 365;
+const daysFromNow = (d: Date) => (d.getTime() - Date.now()) / 86_400_000;
 const locale = z.enum(SUPPORTED_LOCALES).optional();
 
 /* ───────────── Bookings ───────────── */
@@ -40,6 +46,11 @@ export const bookingCreate = z
   .refine((b) => b.startDate.getTime() >= Date.now() - 24 * 3600 * 1000, {
     message: "Start date cannot be in the past",
     path: ["startDate"],
+  })
+  .refine((b) => daysFromNow(b.startDate) <= MAX_DAYS_AHEAD, { message: "Start date is too far in the future", path: ["startDate"] })
+  .refine((b) => !b.endDate || (b.endDate.getTime() - b.startDate.getTime()) / 86_400_000 <= 365, {
+    message: "Trips can be at most one year long",
+    path: ["endDate"],
   });
 
 export const bookingAdminUpdate = z
@@ -126,6 +137,11 @@ export const tailorMadeCreate = z
   .refine((v) => v.travel.arrivalDate.getTime() >= Date.now() - 24 * 3600 * 1000, {
     message: "Arrival date cannot be in the past",
     path: ["travel", "arrivalDate"],
+  })
+  .refine((v) => daysFromNow(v.travel.arrivalDate) <= MAX_DAYS_AHEAD, { message: "Arrival date is too far in the future", path: ["travel", "arrivalDate"] })
+  .refine((v) => (v.travel.departureDate.getTime() - v.travel.arrivalDate.getTime()) / 86_400_000 <= 365, {
+    message: "Trips can be at most one year long",
+    path: ["travel", "departureDate"],
   });
 
 export const tailorMadeAdminUpdate = z

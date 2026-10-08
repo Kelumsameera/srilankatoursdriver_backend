@@ -64,10 +64,13 @@ const tailorMadeEnquirySchema = new Schema(
     notes: { type: [noteSchema], default: [] },
     statusHistory: { type: [statusHistorySchema], default: [] },
     locale: { type: String, default: "en" },
+    /** Fingerprint of the public submission – repeated identical submissions are not stored twice. */
+    submissionHash: { type: String },
   },
   { timestamps: true },
 );
 
 tailorMadeEnquirySchema.index({ createdAt: -1 });
+tailorMadeEnquirySchema.index({ submissionHash: 1, createdAt: -1 });
 
 export const TailorMadeEnquiry = model("TailorMadeEnquiry", tailorMadeEnquirySchema);
