@@ -3,24 +3,16 @@
   "version": "1.0.0",
   "description": "Sri Lanka Tours Driver REST API (Express + MongoDB + Cloudinary)",
   "main": "dist/server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc",
     "start": "node dist/server.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "seed": "tsx src/scripts/seed.ts",
-    "seed:prod": "node dist/scripts/seed.js",
     "create-admin": "tsx src/scripts/create-admin.ts",
-    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts",
-    "migration:discover": "tsx migration/src/discover.ts",
-    "migration:zip:extract": "tsx migration/zip/scripts/extract.ts ../migrate",
-    "migration:zip:import": "tsx migration/zip/scripts/import.ts",
-    "migration:zip:homepage": "tsx migration/zip/scripts/homepage.ts",
-    "migration:zip:reviews-about": "tsx migration/zip/scripts/reviews-about.ts",
-    "migration:zip:about-team": "tsx migration/zip/scripts/about-team.ts"
+    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -50,26 +42,17 @@
     "@types/multer": "^2.3.0",
     "@types/node": "^24.19.1",
     "@types/nodemailer": "^8.0.2",
-    "@types/supertest": "^7.2.1",
-    "cheerio": "^1.2.0",
-    "domhandler": "^5.0.3",
     "eslint": "^10.12.0",
     "globals": "^17.13.0",
-    "mongodb-memory-server": "^11.3.0",
     "pino-pretty": "^13.2.0",
-    "supertest": "^7.3.1",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.1",
-    "vitest": "^5.0.3"
+    "typescript-eslint": "^8.71.1"
   },
-  "private": true,
-  "type": "module",
   "engines": {
-    "node": ">=20.10"
+    "node": "24.19.0"
   },
   "allowScripts": {
-    "esbuild@0.28.2": true,
-    "mongodb-memory-server@11.3.0": true
+    "esbuild@0.28.2": true
   }
 }
