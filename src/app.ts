@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import { pinoHttp } from "pino-http";
 import { allowedOrigins, env } from "./config/env.js";
 import { logger, redactRequestForLog } from "./config/logger.js";
-import { apiLimiter, originCheck, sanitizeBody, warnOnUntrustedProxy } from "./middleware/security.js";
+import { apiLimiter, originCheck, sanitizeBody, trustedProxyClientIp, warnOnUntrustedProxy } from "./middleware/security.js";
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler.js";
 import { apiRouter } from "./routes/index.js";
 
@@ -35,6 +35,7 @@ export function createApp() {
     }),
   );
   app.use(warnOnUntrustedProxy);
+  app.use(trustedProxyClientIp);
   app.use(
     pinoHttp({
       logger,

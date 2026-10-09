@@ -1,3 +1,5 @@
+import { createHash, timingSafeEqual } from "node:crypto";
+import { isIP } from "node:net";
 import type { NextFunction, Request, Response } from "express";
 import { rateLimit } from "express-rate-limit";
 import { allowedOrigins, env, isTest } from "../config/env.js";
@@ -45,6 +47,30 @@ export function warnOnUntrustedProxy(req: Request, _res: Response, next: NextFun
     warnedAboutProxy = true;
     logger.warn("Request has an X-Forwarded-For header but TRUST_PROXY is 0 – rate limits and logs see the proxy's IP. Set TRUST_PROXY to the number of proxies in front of the API.");
   }
+  next();
+}
+
+export const PROXY_SECRET_HEADER = "x-sltd-proxy-secret";
+export const PROXY_CLIENT_IP_HEADER = "x-sltd-client-ip";
+
+const digest = (value: string) => createHash("sha256").update(value).digest();
+const expectedProxySecret = env.API_PROXY_SECRET ? digest(env.API_PROXY_SECRET) : null;
+
+/**
+ * Requests forwarded by the frontend's /api proxy (Vercel) arrive from Vercel's addresses, so every visitor
+ * would share one rate-limit bucket. The proxy therefore sends the visitor's IP together with
+ * API_PROXY_SECRET; only when the secret matches does that IP become `req.ip` (rate limits, login throttling,
+ * sessions, activity log). Without it the header is ignored, so callers cannot choose their own IP and
+ * TRUST_PROXY keeps counting only the proxies directly in front of the API.
+ */
+export function trustedProxyClientIp(req: Request, _res: Response, next: NextFunction) {
+  const secret = req.headers[PROXY_SECRET_HEADER];
+  const ip = req.headers[PROXY_CLIENT_IP_HEADER];
+  if (expectedProxySecret && typeof secret === "string" && typeof ip === "string" && isIP(ip) && timingSafeEqual(digest(secret), expectedProxySecret)) {
+    Object.defineProperty(req, "ip", { value: ip, configurable: true, enumerable: true });
+  }
+  // Never log or pass the secret further down.
+  delete req.headers[PROXY_SECRET_HEADER];
   next();
 }
 

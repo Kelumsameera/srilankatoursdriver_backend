@@ -14,6 +14,7 @@ export const logger = pino({
     paths: [
       "req.headers.authorization",
       "req.headers.cookie",
+      "req.headers['x-sltd-proxy-secret']",
       "res.headers['set-cookie']",
       "*.password",
       "*.passwordHash",
