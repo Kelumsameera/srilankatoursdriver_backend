@@ -67,3 +67,7 @@ export const customerRegisterSchema = z.object({
 });
 
 export const googleLoginSchema = z.object({ credential: z.string().min(20).max(5000) });
+
+export const forgotPasswordSchema = z.object({ email: z.email().max(254).transform((v) => v.toLowerCase()) });
+/** The strength rule depends on the account type, so it is checked in the service. */
+export const resetPasswordSchema = z.object({ token: z.string().min(20).max(200), password: z.string().min(1).max(128) });

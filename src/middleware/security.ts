@@ -27,6 +27,8 @@ export const apiLimiter = make(15 * 60 * 1000, 1500);
 export const authLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
 /** Customer register / login / refresh – a separate budget so visitors can't lock admins out (and vice versa). */
 export const customerAuthLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
+/** Forgot / reset password: each request can send an email, so keep it tight. */
+export const passwordResetLimiter = make(60 * 60 * 1000, 10);
 /** Public form submissions (bookings, enquiries, contact, reviews). */
 export const formLimiter = make(60 * 60 * 1000, 20);
 /** Media uploads. */
