@@ -25,6 +25,12 @@ const id = validate({ params: z.object({ id: objectId }) });
 
 export const adminRouter = Router();
 
+// Admin responses are per-user – never let browsers or shared caches (e.g. the frontend's CDN proxy) store them.
+adminRouter.use((_req, res, next) => {
+  res.set("Cache-Control", "private, no-store");
+  next();
+});
+
 // Every admin route requires a valid session; each route then checks its own permission.
 adminRouter.use(authenticate);
 

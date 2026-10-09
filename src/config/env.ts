@@ -50,6 +50,13 @@ const envSchema = z.object({
   REVALIDATE_SECRET: optionalString.refine((v) => v === undefined || v.length >= 32, {
     message: "REVALIDATE_SECRET must be at least 32 characters (or empty to disable revalidation)",
   }),
+  /**
+   * Shared with the frontend's /api proxy (same variable there). With it, the visitor IP the proxy forwards is
+   * used for rate limits and logs instead of the proxy's own address. Empty = proxy IP headers are ignored.
+   */
+  API_PROXY_SECRET: optionalString.refine((v) => v === undefined || v.length >= 32, {
+    message: "API_PROXY_SECRET must be at least 32 characters (or empty to disable it)",
+  }),
 
   SMTP_HOST: optionalString,
   SMTP_PORT: z.coerce.number().int().positive().default(587),
@@ -96,8 +103,11 @@ const checkedEnvSchema = envSchema.superRefine((e, ctx) => {
   if (e.JWT_ACCESS_SECRET === e.JWT_REFRESH_SECRET) {
     ctx.addIssue({ code: "custom", path: ["JWT_REFRESH_SECRET"], message: "JWT_REFRESH_SECRET must be different from JWT_ACCESS_SECRET" });
   }
+  if (e.API_PROXY_SECRET && [e.JWT_ACCESS_SECRET, e.JWT_REFRESH_SECRET, e.REVALIDATE_SECRET].includes(e.API_PROXY_SECRET)) {
+    ctx.addIssue({ code: "custom", path: ["API_PROXY_SECRET"], message: "API_PROXY_SECRET must not reuse another secret" });
+  }
   if (e.NODE_ENV === "production") {
-    for (const key of ["JWT_ACCESS_SECRET", "JWT_REFRESH_SECRET", "REVALIDATE_SECRET"] as const) {
+    for (const key of ["JWT_ACCESS_SECRET", "JWT_REFRESH_SECRET", "REVALIDATE_SECRET", "API_PROXY_SECRET"] as const) {
       const value = e[key];
       if (value && PLACEHOLDER_SECRET.test(value)) ctx.addIssue({ code: "custom", path: [key], message: `${key} looks like a placeholder – generate a long random value` });
     }
