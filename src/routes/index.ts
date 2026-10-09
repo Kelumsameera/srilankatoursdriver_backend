@@ -2,6 +2,7 @@ import { Router } from "express";
 import mongoose from "mongoose";
 import { authRouter } from "./auth.routes.js";
 import { customerRouter } from "./customer.routes.js";
+import { passwordRouter } from "./password.routes.js";
 import { publicRouter } from "./public/index.js";
 import { adminRouter } from "./admin/index.js";
 
@@ -14,5 +15,6 @@ apiRouter.get("/health", (_req, res) => {
 
 apiRouter.use("/auth", authRouter);
 apiRouter.use("/customer", customerRouter);
+apiRouter.use("/password", passwordRouter);
 apiRouter.use("/admin", adminRouter);
 apiRouter.use("/", publicRouter);

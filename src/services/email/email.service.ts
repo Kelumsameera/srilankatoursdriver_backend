@@ -146,3 +146,23 @@ export async function notifyNewSubmission(kind: string, reference: string, guest
     text: `Hello,\n\nThank you for contacting ${name}. We have received your ${kind} (reference ${reference}) and will reply shortly.\n\n— ${name}`,
   });
 }
+
+/** "Forgot password" email. The name is the account's own; the link is built by the server. */
+export async function sendPasswordResetEmail(to: string, name: string, link: string, team: boolean) {
+  if (!getTransporter()) return;
+  const site = await businessName();
+  const intro = team ? `We received a request to reset the password of your ${site} team account.` : `We received a request to reset your ${site} account password.`;
+  const outro = "This link works once and expires in 1 hour. If you didn't ask for this, you can ignore this email – your password stays the same.";
+  await sendMail({
+    to,
+    subject: `Reset your ${headerText(site)} password`,
+    html: `<div style="font-family:Arial,sans-serif;font-size:15px;color:#222;max-width:520px">
+<p>Hello ${escapeHtml(name)},</p>
+<p>${escapeHtml(intro)}</p>
+<p><a href="${escapeHtml(link)}" style="display:inline-block;background:#1f4d3a;color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none">Reset password</a></p>
+<p style="color:#555;font-size:13px">Or paste this link into your browser:<br>${escapeHtml(link)}</p>
+<p style="color:#555;font-size:13px">${escapeHtml(outro)}</p>
+</div>`,
+    text: `Hello ${name},\n\n${intro}\n\nReset your password: ${link}\n\n${outro}`,
+  });
+}

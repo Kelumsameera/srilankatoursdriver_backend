@@ -29,3 +29,4 @@ export { ContactMessage } from "./ContactMessage.js";
 export { ActivityLog } from "./ActivityLog.js";
 export { LoginAttempt } from "./LoginAttempt.js";
 export { TranslationJob } from "./TranslationJob.js";
+export { PasswordReset } from "./PasswordReset.js";
