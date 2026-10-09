@@ -11,6 +11,7 @@
     "start": "node dist/src/server.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
+    "seed": "tsx src/scripts/seed.ts",
     "create-admin": "tsx src/scripts/create-admin.ts",
     "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts"
   },
@@ -42,6 +43,8 @@
     "@types/multer": "^2.3.0",
     "@types/node": "^24.19.1",
     "@types/nodemailer": "^8.0.2",
+    "cheerio": "^1.2.0",
+    "domhandler": "^5.0.3",
     "eslint": "^10.12.0",
     "globals": "^17.13.0",
     "pino-pretty": "^13.2.0",
@@ -53,6 +56,7 @@
     "node": "24.19.0"
   },
   "allowScripts": {
-    "esbuild@0.28.2": true
+    "esbuild@0.28.2": true,
+    "mongodb-memory-server@11.3.0": true
   }
 }

@@ -46,7 +46,7 @@ const crud = (...modules: PermissionModule[]): PermissionKey[] =>
 const only = (actions: PermissionAction[], ...modules: PermissionModule[]): PermissionKey[] =>
   modules.flatMap((m) => actions.map((a) => `${m}:${a}` as PermissionKey));
 
-const CONTENT_MODULES: PermissionModule[] = [
+export const CONTENT_MODULES: PermissionModule[] = [
   "navigation",
   "pages",
   "hero",
@@ -66,40 +66,36 @@ const CONTENT_MODULES: PermissionModule[] = [
 ];
 
 export const DEFAULT_ROLES: { name: string; description: string; permissions: PermissionKey[] }[] = [
-  { name: "Super Admin", description: "Unrestricted access to everything, including roles and security.", permissions: ["*"] },
+  {
+    name: "Super Admin",
+    description: "Unrestricted access to everything, including roles, users and system security.",
+    permissions: ["*"],
+  },
   {
     name: "Admin",
-    description: "Manages the whole website and CRM. Cannot change roles or system security settings.",
+    description: "Full website and CRM administration. Cannot change Super Admin security controls.",
     permissions: [
       ...ALL_PERMISSIONS.filter((p) => !p.startsWith("roles:") && p !== "system:update" && p !== "system:delete"),
       "roles:read",
     ],
   },
   {
-    name: "Content Manager",
-    description: "Full control of website content, media and translations.",
-    permissions: [
-      "dashboard:read",
-      ...crud(...CONTENT_MODULES),
-      ...only(["read", "update"], "settings", "branding"),
-    ],
-  },
-  {
-    name: "Booking Manager",
-    description: "Handles bookings, tailor-made enquiries and contact messages.",
+    name: "Manager",
+    description: "Manages bookings, enquiries, customers and day-to-day tour operations.",
     permissions: [
       "dashboard:read",
       ...crud("bookings", "enquiries", "contacts"),
-      ...only(["read"], "tours", "excursions", "vehicles", "destinations", "users"),
+      ...only(["read", "update"], "users"),
+      ...only(["read"], "tours", "destinations", "excursions", "vehicles", "categories", "reviews"),
     ],
   },
   {
-    name: "Editor",
-    description: "Creates and edits content but cannot delete or publish settings.",
+    name: "Staff",
+    description: "Handles assigned operational work and customer enquiries with limited access.",
     permissions: [
       "dashboard:read",
-      ...only(["create", "read", "update"], ...CONTENT_MODULES.filter((m) => m !== "navigation" && m !== "seo")),
-      ...only(["read"], "navigation", "seo"),
+      ...only(["read", "update"], "bookings", "enquiries"),
+      ...only(["read"], "contacts", "users", "tours", "destinations", "excursions", "vehicles", "reviews"),
     ],
   },
 ];
