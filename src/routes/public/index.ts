@@ -2,8 +2,11 @@ import { Router } from "express";
 import { z } from "zod";
 import * as c from "../../controllers/public.controller.js";
 import * as crm from "../../controllers/crm.controller.js";
+import { identifyCustomer } from "../../controllers/customer-auth.controller.js";
 import { validate } from "../../middleware/validate.js";
-import { formLimiter } from "../../middleware/security.js";
+import { formLimiter, trackLimiter } from "../../middleware/security.js";
+import * as analytics from "../../controllers/analytics.controller.js";
+import { trackBody } from "../../validations/analytics.js";
 import { bookingCreate, contactCreate, tailorMadeCreate } from "../../validations/crm.js";
 import { publicReviewSubmit } from "../../validations/content.js";
 import { CATEGORY_KINDS } from "../../models/Category.js";
@@ -60,8 +63,11 @@ publicRouter.get("/reviews", lq, c.list("reviews"));
 publicRouter.get("/reviews/tripadvisor", c.tripadvisor);
 publicRouter.get("/faqs", lq, c.list("faqs"));
 
+// Anonymous page-view analytics
+publicRouter.post("/track", trackLimiter, validate({ body: trackBody }), analytics.track);
+
 // Submissions (rate-limited + honeypot)
-publicRouter.post("/bookings", formLimiter, validate({ body: bookingCreate }), crm.submitBooking);
+publicRouter.post("/bookings", formLimiter, identifyCustomer, validate({ body: bookingCreate }), crm.submitBooking);
 publicRouter.post("/tailor-made-enquiries", formLimiter, validate({ body: tailorMadeCreate }), crm.submitTailorMade);
 publicRouter.post("/contact", formLimiter, validate({ body: contactCreate }), crm.submitContact);
 publicRouter.post("/reviews", formLimiter, validate({ body: publicReviewSubmit }), c.submitReview);

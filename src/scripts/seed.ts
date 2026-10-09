@@ -52,6 +52,9 @@ export async function seedPermissionsAndRoles() {
     return { key, module, action, description: `${action} ${module}` };
   });
   if (missing.length) await Permission.insertMany(missing, { ordered: false });
+  // Permissions introduced by a newer release (e.g. analytics, customers) are granted to the built-in roles
+  // that include them by default. Only brand-new keys are added, so permissions removed in Admin → Roles stay removed.
+  const added = new Set(missing.map((p) => p.key));
   for (const role of DEFAULT_ROLES) {
     // Permission sets edited in Admin → Roles are kept; only missing roles are created.
     // The Super Admin role always keeps the wildcard so the site can never be locked out.
@@ -63,6 +66,8 @@ export async function seedPermissionsAndRoles() {
         : { $set: { isSystem: true }, $setOnInsert: { description: role.description, permissions: role.permissions } },
       { upsert: true },
     );
+    const grant = isSuper || existing.size === 0 ? [] : role.permissions.filter((p) => added.has(p));
+    if (grant.length) await Role.updateOne({ name: role.name }, { $addToSet: { permissions: { $each: grant } } });
   }
   log(`${ALL_PERMISSIONS.length} permissions, ${DEFAULT_ROLES.length} roles`);
 }

@@ -18,6 +18,10 @@ import * as users from "../../controllers/users.controller.js";
 import * as system from "../../controllers/system.controller.js";
 import * as translations from "../../controllers/translations.controller.js";
 import { crmController } from "../../controllers/crm.controller.js";
+import * as analytics from "../../controllers/analytics.controller.js";
+import * as customers from "../../controllers/customers.controller.js";
+import * as guests from "../../controllers/guests.controller.js";
+import { analyticsQuery, customerAdminUpdate, guestParams, guestUpdate } from "../../validations/analytics.js";
 import { MEDIA_FOLDERS } from "../../services/cloudinary/index.js";
 import { SUPPORTED_LOCALES } from "../../config/locales.js";
 
@@ -36,6 +40,7 @@ adminRouter.use(authenticate);
 
 /* ───────────── Dashboard & system ───────────── */
 adminRouter.get("/dashboard", can("dashboard:read"), system.dashboard);
+adminRouter.get("/analytics", can("analytics:read"), validate({ query: analyticsQuery }), analytics.overview);
 adminRouter.get("/activity-logs", can("activityLogs:read"), validate({ query: listQuery }), system.activityLogs);
 adminRouter.get("/system/integrations", can("system:read"), system.integrations);
 adminRouter.post(
@@ -155,6 +160,22 @@ function mountCrm(path: string, kind: "bookings" | "enquiries" | "contacts", upd
 mountCrm("/bookings", "bookings", bookingAdminUpdate);
 mountCrm("/tailor-made-enquiries", "enquiries", tailorMadeAdminUpdate);
 mountCrm("/contact-messages", "contacts", contactAdminUpdate);
+
+/* ───────────── Website customers ───────────── */
+adminRouter.get("/customers", can("customers:read"), validate({ query: listQuery }), customers.list);
+adminRouter.get("/customers/export", can("customers:read"), validate({ query: listQuery }), customers.exportCsv);
+adminRouter.get("/customers/:id", can("customers:read"), id, customers.get);
+adminRouter.patch("/customers/:id", can("customers:update"), id, validate({ body: customerAdminUpdate }), customers.update);
+adminRouter.post("/customers/:id/revoke-sessions", can("customers:update"), id, customers.revokeSessions);
+adminRouter.delete("/customers/:id", can("customers:delete"), id, customers.remove);
+
+/* Guests: people who booked or enquired without an account (grouped by email; no record of their own). */
+const guest = validate({ params: guestParams });
+adminRouter.get("/guests", can("customers:read"), validate({ query: listQuery }), guests.list);
+adminRouter.get("/guests/export", can("customers:read"), validate({ query: listQuery }), guests.exportCsv);
+adminRouter.get("/guests/:email", can("customers:read"), guest, guests.get);
+adminRouter.patch("/guests/:email", can("customers:update"), guest, validate({ body: guestUpdate }), guests.update);
+adminRouter.post("/guests/:email/erase", can("customers:delete"), guest, guests.erase);
 
 /* ───────────── Translations ───────────── */
 const entityParams = z.object({ entityType: z.string().regex(/^[a-zA-Z]{2,40}$/), entityId: objectId });
