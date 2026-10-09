@@ -1,5 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
 import * as auth from "../services/customer-auth.service.js";
+import { listCustomerBookings } from "../services/customer-bookings.service.js";
 import { Customer } from "../models/Customer.js";
 import { ok, created } from "../utils/response.js";
 import { ApiError } from "../utils/ApiError.js";
@@ -23,6 +24,20 @@ export async function authenticateCustomer(req: Request, _res: Response, next: N
   if ((customer.tokenVersion ?? 0) !== payload.tv) return next(new ApiError(401, "Session revoked", [], "TOKEN_REVOKED"));
   req.customer = { id: String(customer._id), email: customer.email };
   next();
+}
+
+/** Like `authenticateCustomer`, but optional: guests (or stale sessions) continue anonymously. */
+export function identifyCustomer(req: Request, res: Response, next: NextFunction) {
+  let done = false;
+  const proceed = () => {
+    if (done) return;
+    done = true;
+    next();
+  };
+  authenticateCustomer(req, res, (err?: unknown) => {
+    if (err) delete req.customer;
+    proceed();
+  }).catch(proceed);
 }
 
 export async function register(req: Request, res: Response) {
@@ -65,4 +80,8 @@ export async function logout(req: Request, res: Response) {
 
 export async function me(req: Request, res: Response) {
   return ok(res, { user: await auth.getCustomerProfile(req.customer!.id) });
+}
+
+export async function bookings(req: Request, res: Response) {
+  return ok(res, await listCustomerBookings(req.customer!.id));
 }

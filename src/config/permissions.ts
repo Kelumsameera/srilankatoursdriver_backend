@@ -4,6 +4,8 @@
  */
 export const PERMISSION_MODULES = [
   "dashboard",
+  "analytics",
+  "customers",
   "settings",
   "branding",
   "navigation",
@@ -84,8 +86,9 @@ export const DEFAULT_ROLES: { name: string; description: string; permissions: Pe
     description: "Manages bookings, enquiries, customers and day-to-day tour operations.",
     permissions: [
       "dashboard:read",
+      "analytics:read",
       ...crud("bookings", "enquiries", "contacts"),
-      ...only(["read", "update"], "users"),
+      ...only(["read", "update"], "users", "customers"),
       ...only(["read"], "tours", "destinations", "excursions", "vehicles", "categories", "reviews"),
     ],
   },
@@ -95,7 +98,7 @@ export const DEFAULT_ROLES: { name: string; description: string; permissions: Pe
     permissions: [
       "dashboard:read",
       ...only(["read", "update"], "bookings", "enquiries"),
-      ...only(["read"], "contacts", "users", "tours", "destinations", "excursions", "vehicles", "reviews"),
+      ...only(["read"], "contacts", "users", "customers", "tours", "destinations", "excursions", "vehicles", "reviews"),
     ],
   },
 ];

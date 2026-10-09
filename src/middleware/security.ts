@@ -33,6 +33,8 @@ export const customerAuthLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
 export const passwordResetLimiter = make(60 * 60 * 1000, 10);
 /** Public form submissions (bookings, enquiries, contact, reviews). */
 export const formLimiter = make(60 * 60 * 1000, 20);
+/** Anonymous page-view beacons: generous (SPA navigation), but bounded so one client can't flood the stats. */
+export const trackLimiter = make(15 * 60 * 1000, 600);
 /** Media uploads. */
 export const uploadLimiter = make(15 * 60 * 1000, 200);
 
@@ -52,6 +54,8 @@ export function warnOnUntrustedProxy(req: Request, _res: Response, next: NextFun
 
 export const PROXY_SECRET_HEADER = "x-sltd-proxy-secret";
 export const PROXY_CLIENT_IP_HEADER = "x-sltd-client-ip";
+/** Visitor's country (ISO 3166-1 alpha-2) as geolocated by the frontend host; trusted only with the proxy secret. */
+export const PROXY_CLIENT_COUNTRY_HEADER = "x-sltd-client-country";
 
 const digest = (value: string) => createHash("sha256").update(value).digest();
 const expectedProxySecret = env.API_PROXY_SECRET ? digest(env.API_PROXY_SECRET) : null;
@@ -66,9 +70,12 @@ const expectedProxySecret = env.API_PROXY_SECRET ? digest(env.API_PROXY_SECRET) 
 export function trustedProxyClientIp(req: Request, _res: Response, next: NextFunction) {
   const secret = req.headers[PROXY_SECRET_HEADER];
   const ip = req.headers[PROXY_CLIENT_IP_HEADER];
+  const country = req.headers[PROXY_CLIENT_COUNTRY_HEADER];
   if (expectedProxySecret && typeof secret === "string" && typeof ip === "string" && isIP(ip) && timingSafeEqual(digest(secret), expectedProxySecret)) {
     Object.defineProperty(req, "ip", { value: ip, configurable: true, enumerable: true });
+    if (typeof country === "string" && /^[A-Z]{2}$/.test(country)) req.clientCountry = country;
   }
+  delete req.headers[PROXY_CLIENT_COUNTRY_HEADER];
   // Never log or pass the secret further down.
   delete req.headers[PROXY_SECRET_HEADER];
   next();

@@ -39,7 +39,8 @@ async function findRecentDuplicate(model: Model<any>, submissionHash: string) {
     .lean<{ _id: unknown; reference?: string }>();
 }
 
-export async function createBooking(input: AnyRecord) {
+/** `accountId`: the signed-in website customer, so the request shows up under their "My bookings". */
+export async function createBooking(input: AnyRecord, accountId?: string) {
   if (isBotSubmission(input)) return { reference: generateReference("B"), id: "" };
   const data = { ...input };
   delete data.website;
@@ -66,6 +67,7 @@ export async function createBooking(input: AnyRecord) {
   const booking = await Booking.create({
     ...data,
     itemTitle,
+    account: accountId,
     submissionHash,
     reference: generateReference("B"),
     statusHistory: [{ status: "new", changedAt: new Date() }],

@@ -37,6 +37,8 @@ const bookingSchema = new Schema(
       whatsapp: { type: String, trim: true, default: "" },
       country: { type: String, trim: true, default: "" },
     },
+    /** Website account that submitted the request while signed in (guests: unset). Drives "My bookings". */
+    account: { type: Schema.Types.ObjectId, ref: "Customer", index: true },
     startDate: Date,
     endDate: Date,
     adults: { type: Number, min: 1, default: 1 },

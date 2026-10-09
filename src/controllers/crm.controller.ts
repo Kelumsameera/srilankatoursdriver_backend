@@ -7,7 +7,7 @@ import type { ListQuery } from "../validations/common.js";
 /* ───────────── Public submissions ───────────── */
 
 export async function submitBooking(req: Request, res: Response) {
-  return created(res, await crm.createBooking(req.validated?.body as Record<string, unknown>), "Thank you! Your booking request has been received.");
+  return created(res, await crm.createBooking(req.validated?.body as Record<string, unknown>, req.customer?.id), "Thank you! Your booking request has been received.");
 }
 
 export async function submitTailorMade(req: Request, res: Response) {

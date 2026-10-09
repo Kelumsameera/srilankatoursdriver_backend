@@ -16,6 +16,8 @@ declare global {
       user?: AuthUser;
       /** Signed-in website customer (set by `authenticateCustomer`). Never grants admin access. */
       customer?: { id: string; email: string };
+      /** Visitor country from the trusted frontend proxy (see trustedProxyClientIp); unset otherwise. */
+      clientCountry?: string;
       /** Parsed & validated payloads written by the `validate` middleware. */
       validated?: { body?: unknown; query?: unknown; params?: unknown };
     }

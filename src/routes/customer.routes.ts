@@ -18,3 +18,4 @@ customerRouter.post("/auth/google", customerAuthLimiter, validate({ body: google
 customerRouter.post("/auth/refresh", customerAuthLimiter, c.refresh);
 customerRouter.post("/auth/logout", c.logout);
 customerRouter.get("/auth/me", c.authenticateCustomer, c.me);
+customerRouter.get("/bookings", c.authenticateCustomer, c.bookings);
