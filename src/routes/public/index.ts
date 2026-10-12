@@ -14,6 +14,7 @@ import { destinationRouter } from "../destinationRouter.js";
 import { tourRouter } from "../tourRouter.js";
 import { excursionRouter } from "../excursionRouter.js";
 import { vehicleRouter } from "../vehicleRouter.js";
+import { blogRouter } from "../blogRouter.js";
 
 const keyParam = z.object({ key: z.string().regex(/^[a-z0-9-]{1,60}$/i) });
 
@@ -39,8 +40,7 @@ publicRouter.use("/tours", tourRouter);
 publicRouter.use("/destinations", destinationRouter);
 publicRouter.use("/excursions", excursionRouter);
 publicRouter.use("/vehicles", vehicleRouter);
-publicRouter.get("/blog", lq, c.list("blog"));
-publicRouter.get("/blog/:slug", sq, c.detail("blog"));
+publicRouter.use("/blog", blogRouter);
 publicRouter.get("/gallery", lq, c.list("gallery"));
 publicRouter.get("/guest-shorts", lq, c.list("guestShorts"));
 publicRouter.get("/reviews", lq, c.list("reviews"));
