@@ -67,3 +67,6 @@ EOF
 # Old-site migration: fetched HTML / CSS cache (large, reproducible with `npm run migration:discover`)
 migration/raw/html/
 migration/raw/assets/
+
+# Seed backups (may contain content exports)
+backups/

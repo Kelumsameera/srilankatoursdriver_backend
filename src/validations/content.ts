@@ -92,18 +92,37 @@ export const tourCreate = z.object({
 export const tourUpdate = tourCreate.partial();
 
 /* ───────────── Destinations ───────────── */
+/** Accepted destination coordinates (WGS84 decimal degrees), slightly wider than the island itself. */
+export const SRI_LANKA_BOUNDS = { lat: [5.5, 10], lng: [79, 82.5] } as const;
+
 export const destinationCreate = z.object({
   name: shortText(120).min(2),
   slug: slugField,
   region: shortText(120).optional(),
+  subtitle: shortText(200).optional(),
+  tagline: shortText(160).optional(),
   shortDescription: shortText(400).optional(),
   description: longText().optional(),
   heroMedia: mediaAsset,
   gallery: z.array(mediaAsset.unwrap().unwrap()).max(60).optional(),
   highlights: stringList(40, 300).optional(),
   thingsToDo: stringList(40, 300).optional(),
+  featuredExperiences: z.array(z.object({
+    _id: objectId.optional(),
+    title: shortText(160).min(1),
+    description: shortText(2000).optional(),
+    image: mediaAsset.refine((v) => !v || v.resourceType !== "video", "Choose an image"),
+    detailUrl: safeUrl.optional(),
+    verified: z.boolean().optional(),
+  })).max(30).optional(),
   bestTimeToVisit: shortText(200).optional(),
-  location: z.object({ lat: optionalNumber, lng: optionalNumber }).optional(),
+  howToGetThere: shortText(2000).optional(),
+  itinerary: z.array(z.object({ title: shortText(160).min(1), description: shortText(1000).optional() })).max(14).optional(),
+  // Destinations are in Sri Lanka: reject out-of-island values (and swapped lat/lng) instead of storing a pin that can't be drawn.
+  location: z.object({
+    lat: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lat[0] && v <= SRI_LANKA_BOUNDS.lat[1]), `Latitude must be between ${SRI_LANKA_BOUNDS.lat[0]} and ${SRI_LANKA_BOUNDS.lat[1]} (Sri Lanka)`),
+    lng: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lng[0] && v <= SRI_LANKA_BOUNDS.lng[1]), `Longitude must be between ${SRI_LANKA_BOUNDS.lng[0]} and ${SRI_LANKA_BOUNDS.lng[1]} (Sri Lanka)`),
+  }).refine((l) => (l.lat == null) === (l.lng == null), { message: "Enter both latitude and longitude, or leave both empty", path: ["lng"] }).optional(),
   category: optionalRef,
   seo,
   ...publishable,
@@ -271,9 +290,9 @@ export const heroCreate = z.object({
   title: shortText(200).min(1),
   subtitle: shortText(300).optional(),
   description: shortText(1000).optional(),
-  desktopImage: mediaAsset,
-  mobileImage: mediaAsset,
-  video: mediaAsset,
+  desktopImage: mediaAsset.refine((value) => !value || value.resourceType !== "video", "Choose an image for the desktop poster"),
+  mobileImage: mediaAsset.refine((value) => !value || value.resourceType !== "video", "Choose an image for the mobile poster"),
+  video: mediaAsset.refine((value) => !value || value.resourceType !== "image", "Choose a video"),
   button1: link.optional(),
   button2: link.optional(),
   overlay: z.boolean().optional(),

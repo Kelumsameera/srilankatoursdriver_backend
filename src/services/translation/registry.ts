@@ -65,7 +65,7 @@ export const TRANSLATABLE: Record<string, TranslatableEntity> = {
     model: Destination,
     titleField: "name",
     cacheTag: CACHE_TAGS.destinations,
-    fields: ["name", "region", "shortDescription", "description", "highlights.*", "thingsToDo.*", "bestTimeToVisit", ...seoFields],
+    fields: ["name", "region", "subtitle", "tagline", "shortDescription", "description", "heroMedia.alt", "highlights.*", "thingsToDo.*", "bestTimeToVisit", "howToGetThere", "itinerary.*.title", "itinerary.*.description", "featuredExperiences.*.title", "featuredExperiences.*.description", "featuredExperiences.*.image.alt", ...seoFields],
   },
   excursion: {
     label: "Excursions",

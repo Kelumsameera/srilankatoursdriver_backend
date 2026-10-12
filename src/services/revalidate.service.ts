@@ -49,6 +49,7 @@ export function revalidateFrontend(...tags: string[]): void {
       .then((r) => {
         if (!r.ok) logger.warn({ status: r.status }, "Frontend revalidation rejected");
       })
-      .catch((err: unknown) => logger.debug({ err }, "Frontend revalidation failed (is the frontend running?)"));
+      // warn, not debug: a failed call leaves public pages stale until their 5-minute revalidation.
+      .catch((err: unknown) => logger.warn({ err, tags: batch }, "Frontend revalidation failed (is FRONTEND_URL correct and the frontend running?)"));
   }, 300);
 }

@@ -13,7 +13,11 @@
     "lint": "eslint .",
     "seed": "tsx src/scripts/seed.ts",
     "create-admin": "tsx src/scripts/create-admin.ts",
-    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts"
+    "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts",
+    "seed:destinations": "tsx src/scripts/seed-destinations.ts",
+    "images:inventory": "tsx scripts/image-inventory.ts",
+    "images:match": "tsx scripts/match-images.ts",
+    "images:apply": "tsx scripts/apply-image-matches.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
