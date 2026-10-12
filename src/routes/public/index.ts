@@ -11,6 +11,7 @@ import { bookingCreate, contactCreate, tailorMadeCreate } from "../../validation
 import { publicReviewSubmit } from "../../validations/content.js";
 import { publicQuery, slugParam } from "../../validations/public.js";
 import { destinationRouter } from "../destinationRouter.js";
+import { tourRouter } from "../tourRouter.js";
 
 const keyParam = z.object({ key: z.string().regex(/^[a-z0-9-]{1,60}$/i) });
 
@@ -32,8 +33,7 @@ publicRouter.get("/sitemap-data", c.sitemap);
 publicRouter.get("/categories", lq, c.categories);
 
 // Collections
-publicRouter.get("/tours", lq, c.list("tours"));
-publicRouter.get("/tours/:slug", sq, c.detail("tours"));
+publicRouter.use("/tours", tourRouter);
 publicRouter.use("/destinations", destinationRouter);
 publicRouter.get("/excursions", lq, c.list("excursions"));
 publicRouter.get("/excursions/:slug", sq, c.detail("excursions"));
