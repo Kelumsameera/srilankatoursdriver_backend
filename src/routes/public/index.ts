@@ -13,6 +13,7 @@ import { publicQuery, slugParam } from "../../validations/public.js";
 import { destinationRouter } from "../destinationRouter.js";
 import { tourRouter } from "../tourRouter.js";
 import { excursionRouter } from "../excursionRouter.js";
+import { vehicleRouter } from "../vehicleRouter.js";
 
 const keyParam = z.object({ key: z.string().regex(/^[a-z0-9-]{1,60}$/i) });
 
@@ -37,8 +38,7 @@ publicRouter.get("/categories", lq, c.categories);
 publicRouter.use("/tours", tourRouter);
 publicRouter.use("/destinations", destinationRouter);
 publicRouter.use("/excursions", excursionRouter);
-publicRouter.get("/vehicles", lq, c.list("vehicles"));
-publicRouter.get("/vehicles/:slug", sq, c.detail("vehicles"));
+publicRouter.use("/vehicles", vehicleRouter);
 publicRouter.get("/blog", lq, c.list("blog"));
 publicRouter.get("/blog/:slug", sq, c.detail("blog"));
 publicRouter.get("/gallery", lq, c.list("gallery"));
