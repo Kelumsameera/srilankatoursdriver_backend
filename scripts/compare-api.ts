@@ -1,9 +1,9 @@
 // Compares public API responses before and after a code change. READ-ONLY: it only sends GET requests.
 //
 // 1. Save a snapshot of every public GET endpoint (run once on the old code, once on the new code):
-//      npx tsx scripts/compare-api.ts snapshot http://localhost:5000/api ../_archive/api-compare/before
+//      npx tsx scripts/compare-api.ts snapshot http://localhost:5000/api "$LOCALAPPDATA/sltd-qa/api-before"
 // 2. Compare two saved snapshots:
-//      npx tsx scripts/compare-api.ts diff ../_archive/api-compare/before ../_archive/api-compare/after
+//      npx tsx scripts/compare-api.ts diff "$LOCALAPPDATA/sltd-qa/api-before" "$LOCALAPPDATA/sltd-qa/api-after"
 //
 // Detail slugs are taken from the list responses, so both snapshots must be taken against the same database.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";

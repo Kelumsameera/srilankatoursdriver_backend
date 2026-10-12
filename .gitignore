@@ -35,9 +35,6 @@ temp/
 uploads/*
 !uploads/.gitkeep
 
-# Seed/generated assets (ignore if generated locally)
-# seed-assets/*
-
 # TypeScript
 *.tsbuildinfo
 
@@ -63,10 +60,6 @@ Desktop.ini
 .cache/
 .parcel-cache/
 .turbo/
-EOF
-# Old-site migration: fetched HTML / CSS cache (large, reproducible with `npm run migration:discover`)
-migration/raw/html/
-migration/raw/assets/
 
 # Seed backups (may contain content exports)
 backups/
