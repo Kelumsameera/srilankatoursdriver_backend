@@ -2,22 +2,10 @@ import type { NextFunction, Request, Response } from "express";
 import { Destination } from "../models/Destination.js";
 import { getPublicBySlug, listPublicLocalized, localizeCategories, PUBLIC_RESOURCES } from "../services/public.service.js";
 import { localize } from "../services/translation/translation.service.js";
-import { isLocale } from "../config/locales.js";
 import { ApiError } from "../utils/ApiError.js";
-import type { PublicQuery } from "../validations/public.js";
+import { readLocale, readQuery } from "./publicRequest.js";
 
 type Location = { lat: number; lng: number };
-
-// The query string after the validate() middleware has checked it
-function readQuery(req: Request) {
-  return (req.validated?.query ?? {}) as PublicQuery;
-}
-
-// ?locale=de -> "de". Unknown locales mean "use the original English text"
-function readLocale(req: Request) {
-  const locale = readQuery(req).locale;
-  return isLocale(locale) ? locale : undefined;
-}
 
 // true when the destination has both a latitude and a longitude
 function hasLocation(location: unknown): location is Location {

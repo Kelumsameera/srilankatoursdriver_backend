@@ -7,20 +7,7 @@ import { createPublicReview } from "../services/crm.service.js";
 import { ok, created } from "../utils/response.js";
 import { ApiError } from "../utils/ApiError.js";
 import { isLocale } from "../config/locales.js";
-
-interface PublicQuery {
-  locale?: string;
-  page?: number;
-  limit?: number;
-  featured?: string;
-  category?: string;
-  destination?: string;
-  search?: string;
-  q?: string;
-  platform?: string;
-  kind?: string;
-  token?: string;
-}
+import type { PublicQuery } from "../validations/public.js";
 
 const q = (req: Request) => (req.validated?.query ?? {}) as PublicQuery;
 const locale = (req: Request) => {
@@ -88,10 +75,6 @@ export function list(key: pub.PublicResourceKey) {
     });
     return ok(res, items, "OK", 200, meta);
   };
-}
-
-export function detail(key: "tours" | "destinations" | "excursions" | "vehicles" | "blog") {
-  return async (req: Request, res: Response) => ok(res, await pub.getPublicBySlug(key, String(req.params.slug), locale(req)));
 }
 
 export async function categories(req: Request, res: Response) {
