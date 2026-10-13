@@ -1,0 +1,2026 @@
+{
+  "generatedAt": "2026-10-12T09:46:49.702Z",
+  "threshold": 0.85,
+  "totals": {
+    "targets": 121,
+    "confident": 26,
+    "review": 35,
+    "unmatched": 60,
+    "images": 112,
+    "imagesUsed": 25
+  },
+  "results": [
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a0d3893a7017c30c41",
+        "filename": "anuradhapura",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403424/srilankatoursdriver/excursions/zip-toursanuradhapura.jpg",
+        "score": 1,
+        "reason": "filename \"anuradhapura\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a0d3893a7017c30c41",
+          "filename": "anuradhapura",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403424/srilankatoursdriver/excursions/zip-toursanuradhapura.jpg",
+          "score": 1,
+          "reason": "filename \"anuradhapura\""
+        }
+      ]
+    },
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "kind": "attraction",
+      "attraction": "Ruwanwelisaya",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "kind": "attraction",
+      "attraction": "Sri Maha Bodhi",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a595d3893a7017c30c2a",
+          "filename": "kelaniya-raja-maha-viharaya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403412/srilankatoursdriver/destinations/zip-destinationskelaniya-raja-maha-viharaya.jpg",
+          "score": 0.25,
+          "reason": "filename \"kelaniya-raja-maha-viharaya\""
+        }
+      ]
+    },
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "kind": "attraction",
+      "attraction": "Abhayagiri",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "kind": "attraction",
+      "attraction": "Jetavanaramaya",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "arugam-bay",
+      "name": "Arugam Bay",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "arugam-bay",
+      "name": "Arugam Bay",
+      "kind": "attraction",
+      "attraction": "Kumana National Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.67,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "arugam-bay",
+      "name": "Arugam Bay",
+      "kind": "attraction",
+      "attraction": "Learn Surfing",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "arugam-bay",
+      "name": "Arugam Bay",
+      "kind": "attraction",
+      "attraction": "Kudumbigala Sanctuary",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "kind": "attraction",
+      "attraction": "Bentota Beach",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d8d3893a7017c30c8f",
+          "filename": "gallery-04",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+          "score": 0.5,
+          "reason": "title \"Mirissa Beach\""
+        },
+        {
+          "imageId": "6ac6a5ecd3893a7017c30caa",
+          "filename": "gallery-14",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+          "score": 0.5,
+          "reason": "title \"Pasikuda Beach\""
+        },
+        {
+          "imageId": "6ac6a5e0d3893a7017c30c99",
+          "filename": "gallery-09",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403488/srilankatoursdriver/gallery/zip-gallerygallery-09.jpg",
+          "score": 0.33,
+          "reason": "title \"Beach Hotel Mirissa\""
+        }
+      ]
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "kind": "attraction",
+      "attraction": "Bentota River",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "kind": "attraction",
+      "attraction": "Water sports",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "kind": "attraction",
+      "attraction": "Lunuganga",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "colombo",
+      "name": "Colombo",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a599d3893a7017c30c34",
+        "filename": "colombo",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403417/srilankatoursdriver/excursions/zip-tourscolombo.webp",
+        "score": 1,
+        "reason": "filename \"colombo\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a599d3893a7017c30c34",
+          "filename": "colombo",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403417/srilankatoursdriver/excursions/zip-tourscolombo.webp",
+          "score": 1,
+          "reason": "filename \"colombo\""
+        }
+      ]
+    },
+    {
+      "slug": "colombo",
+      "name": "Colombo",
+      "kind": "attraction",
+      "attraction": "Independence Square",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "colombo",
+      "name": "Colombo",
+      "kind": "attraction",
+      "attraction": "Colombo National Museum",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a592d3893a7017c30c22",
+          "filename": "colombo-city",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403409/srilankatoursdriver/destinations/zip-destinationscolombo-city.jpg",
+          "score": 0.33,
+          "reason": "title \"Colombo City\""
+        },
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.33,
+          "reason": "title \"Yala National Park\""
+        },
+        {
+          "imageId": "6ac6a598d3893a7017c30c31",
+          "filename": "colombo-airport",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403415/srilankatoursdriver/excursions/zip-tourscolombo-airport.jpg",
+          "score": 0.33,
+          "reason": "title \"Colombo Airport\""
+        }
+      ]
+    },
+    {
+      "slug": "colombo",
+      "name": "Colombo",
+      "kind": "attraction",
+      "attraction": "Gangaramaya Temple",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a593d3893a7017c30c25",
+        "filename": "gangaramaya-temple",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+        "score": 1,
+        "reason": "filename \"gangaramaya-temple\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 1,
+          "reason": "filename \"gangaramaya-temple\""
+        }
+      ]
+    },
+    {
+      "slug": "dambulla",
+      "name": "Dambulla",
+      "kind": "destination",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "dambulla",
+      "name": "Dambulla",
+      "kind": "attraction",
+      "attraction": "Dambulla Cave Temple",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5e7d3893a7017c30ca2",
+        "filename": "gallery-11",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+        "score": 1,
+        "reason": "title \"Dambulla Cave Temple\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 1,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "dambulla",
+      "name": "Dambulla",
+      "kind": "attraction",
+      "attraction": "Golden Temple",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "dambulla",
+      "name": "Dambulla",
+      "kind": "attraction",
+      "attraction": "Popham's Arboretum",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a59dd3893a7017c30c3a",
+        "filename": "ella",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403420/srilankatoursdriver/excursions/zip-toursella.jpg",
+        "score": 1,
+        "reason": "filename \"ella\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a59dd3893a7017c30c3a",
+          "filename": "ella",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403420/srilankatoursdriver/excursions/zip-toursella.jpg",
+          "score": 1,
+          "reason": "filename \"ella\""
+        }
+      ]
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "kind": "attraction",
+      "attraction": "Nine Arch Bridge",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d7d3893a7017c30c8e",
+          "filename": "gallery-03",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403479/srilankatoursdriver/gallery/zip-gallerygallery-03.jpg",
+          "score": 0.75,
+          "reason": "title \"Ella Nine Arch Bridge\""
+        }
+      ]
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "kind": "attraction",
+      "attraction": "Little Adam's Peak",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "kind": "attraction",
+      "attraction": "Ravana Falls",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "kind": "attraction",
+      "attraction": "Ella Rock",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5e8d3893a7017c30ca3",
+          "filename": "gallery-12",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403495/srilankatoursdriver/gallery/zip-gallerygallery-12.jpg",
+          "score": 0.67,
+          "reason": "title \"Ella Rock View\""
+        },
+        {
+          "imageId": "6ac6a59dd3893a7017c30c3a",
+          "filename": "ella",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403420/srilankatoursdriver/excursions/zip-toursella.jpg",
+          "score": 0.5,
+          "reason": "filename \"ella\""
+        },
+        {
+          "imageId": "6ac6a602d3893a7017c30cd6",
+          "filename": "ella-poster",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403521/srilankatoursdriver/hero/zip-heroella-poster.webp",
+          "score": 0.5,
+          "reason": "filename \"ella-poster\""
+        }
+      ]
+    },
+    {
+      "slug": "galle",
+      "name": "Galle",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a59bd3893a7017c30c38",
+        "filename": "galle",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403419/srilankatoursdriver/excursions/zip-toursgalle.jpg",
+        "score": 1,
+        "reason": "filename \"galle\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a59bd3893a7017c30c38",
+          "filename": "galle",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403419/srilankatoursdriver/excursions/zip-toursgalle.jpg",
+          "score": 1,
+          "reason": "filename \"galle\""
+        }
+      ]
+    },
+    {
+      "slug": "galle",
+      "name": "Galle",
+      "kind": "attraction",
+      "attraction": "Galle Fort",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a59bd3893a7017c30c38",
+          "filename": "galle",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403419/srilankatoursdriver/excursions/zip-toursgalle.jpg",
+          "score": 0.5,
+          "reason": "filename \"galle\""
+        },
+        {
+          "imageId": "6ac6a594d3893a7017c30c27",
+          "filename": "galle-face-green",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403411/srilankatoursdriver/destinations/zip-destinationsgalle-face-green.jpg",
+          "score": 0.33,
+          "reason": "title \"Galle Face Green\""
+        },
+        {
+          "imageId": "6ac6a5d0d3893a7017c30c83",
+          "filename": "galle-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403471/srilankatoursdriver/tours/zip-toursgalle-one-day-tour.jpg",
+          "score": 0.33,
+          "reason": "title \"Galle One Day Tour\""
+        }
+      ]
+    },
+    {
+      "slug": "galle",
+      "name": "Galle",
+      "kind": "attraction",
+      "attraction": "Galle Lighthouse",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a59bd3893a7017c30c38",
+          "filename": "galle",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403419/srilankatoursdriver/excursions/zip-toursgalle.jpg",
+          "score": 0.5,
+          "reason": "filename \"galle\""
+        },
+        {
+          "imageId": "6ac6a594d3893a7017c30c27",
+          "filename": "galle-face-green",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403411/srilankatoursdriver/destinations/zip-destinationsgalle-face-green.jpg",
+          "score": 0.33,
+          "reason": "title \"Galle Face Green\""
+        },
+        {
+          "imageId": "6ac6a5d0d3893a7017c30c83",
+          "filename": "galle-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403471/srilankatoursdriver/tours/zip-toursgalle-one-day-tour.jpg",
+          "score": 0.33,
+          "reason": "title \"Galle One Day Tour\""
+        }
+      ]
+    },
+    {
+      "slug": "galle",
+      "name": "Galle",
+      "kind": "attraction",
+      "attraction": "Dutch-era streets",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "habarana",
+      "name": "Habarana",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5dad3893a7017c30c91",
+        "filename": "habarana",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403481/srilankatoursdriver/tours/zip-tourshabarana.jpg",
+        "score": 1,
+        "reason": "filename \"habarana\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5dad3893a7017c30c91",
+          "filename": "habarana",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403481/srilankatoursdriver/tours/zip-tourshabarana.jpg",
+          "score": 1,
+          "reason": "filename \"habarana\""
+        }
+      ]
+    },
+    {
+      "slug": "habarana",
+      "name": "Habarana",
+      "kind": "attraction",
+      "attraction": "Minneriya National Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.67,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "habarana",
+      "name": "Habarana",
+      "kind": "attraction",
+      "attraction": "Kaudulla National Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.67,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "habarana",
+      "name": "Habarana",
+      "kind": "attraction",
+      "attraction": "Village experiences",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hatton",
+      "name": "Hatton",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hatton",
+      "name": "Hatton",
+      "kind": "attraction",
+      "attraction": "Tea estates",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hatton",
+      "name": "Hatton",
+      "kind": "attraction",
+      "attraction": "Castlereagh Reservoir",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hatton",
+      "name": "Hatton",
+      "kind": "attraction",
+      "attraction": "Adam's Peak access",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hikkaduwa",
+      "name": "Hikkaduwa",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a4d3893a7017c30c47",
+        "filename": "hikkaduwa",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403427/srilankatoursdriver/excursions/zip-tourshikkaduwa.webp",
+        "score": 1,
+        "reason": "filename \"hikkaduwa\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a4d3893a7017c30c47",
+          "filename": "hikkaduwa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403427/srilankatoursdriver/excursions/zip-tourshikkaduwa.webp",
+          "score": 1,
+          "reason": "filename \"hikkaduwa\""
+        }
+      ]
+    },
+    {
+      "slug": "hikkaduwa",
+      "name": "Hikkaduwa",
+      "kind": "attraction",
+      "attraction": "Hikkaduwa Beach",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5a4d3893a7017c30c47",
+          "filename": "hikkaduwa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403427/srilankatoursdriver/excursions/zip-tourshikkaduwa.webp",
+          "score": 0.5,
+          "reason": "filename \"hikkaduwa\""
+        },
+        {
+          "imageId": "6ac6a5d8d3893a7017c30c8f",
+          "filename": "gallery-04",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+          "score": 0.5,
+          "reason": "title \"Mirissa Beach\""
+        },
+        {
+          "imageId": "6ac6a5ecd3893a7017c30caa",
+          "filename": "gallery-14",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+          "score": 0.5,
+          "reason": "title \"Pasikuda Beach\""
+        }
+      ]
+    },
+    {
+      "slug": "hikkaduwa",
+      "name": "Hikkaduwa",
+      "kind": "attraction",
+      "attraction": "Coral reefs",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "hikkaduwa",
+      "name": "Hikkaduwa",
+      "kind": "attraction",
+      "attraction": "Snorkelling",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "jaffna",
+      "name": "Jaffna",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5abd3893a7017c30c55",
+        "filename": "jaffna",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403434/srilankatoursdriver/excursions/zip-toursjaffna.webp",
+        "score": 1,
+        "reason": "filename \"jaffna\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5abd3893a7017c30c55",
+          "filename": "jaffna",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403434/srilankatoursdriver/excursions/zip-toursjaffna.webp",
+          "score": 1,
+          "reason": "filename \"jaffna\""
+        }
+      ]
+    },
+    {
+      "slug": "jaffna",
+      "name": "Jaffna",
+      "kind": "attraction",
+      "attraction": "Nallur Temple",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "jaffna",
+      "name": "Jaffna",
+      "kind": "attraction",
+      "attraction": "Nagadeepa Temple",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "jaffna",
+      "name": "Jaffna",
+      "kind": "attraction",
+      "attraction": "Delft Island",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5edd3893a7017c30cab",
+          "filename": "gallery-15",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403500/srilankatoursdriver/gallery/zip-gallerygallery-15.jpg",
+          "score": 0.5,
+          "reason": "title \"Pigeon Island\""
+        }
+      ]
+    },
+    {
+      "slug": "kalpitiya",
+      "name": "Kalpitiya",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5f9d3893a7017c30cbe",
+        "filename": "kalpitiya",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403513/srilankatoursdriver/tours/zip-tourskalpitiya.jpg",
+        "score": 1,
+        "reason": "filename \"kalpitiya\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5f9d3893a7017c30cbe",
+          "filename": "kalpitiya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403513/srilankatoursdriver/tours/zip-tourskalpitiya.jpg",
+          "score": 1,
+          "reason": "filename \"kalpitiya\""
+        }
+      ]
+    },
+    {
+      "slug": "kalpitiya",
+      "name": "Kalpitiya",
+      "kind": "attraction",
+      "attraction": "Dolphin watching",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "kalpitiya",
+      "name": "Kalpitiya",
+      "kind": "attraction",
+      "attraction": "Kitesurfing",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "kalpitiya",
+      "name": "Kalpitiya",
+      "kind": "attraction",
+      "attraction": "Kalpitiya Lagoon",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5e6d3893a7017c30ca1",
+          "filename": "gallery-10",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403492/srilankatoursdriver/gallery/zip-gallerygallery-10.jpg",
+          "score": 0.5,
+          "reason": "title \"Negombo Lagoon\""
+        },
+        {
+          "imageId": "6ac6a5f9d3893a7017c30cbe",
+          "filename": "kalpitiya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403513/srilankatoursdriver/tours/zip-tourskalpitiya.jpg",
+          "score": 0.5,
+          "reason": "filename \"kalpitiya\""
+        }
+      ]
+    },
+    {
+      "slug": "kandy",
+      "name": "Kandy",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a59ad3893a7017c30c36",
+        "filename": "kandy",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403418/srilankatoursdriver/excursions/zip-tourskandy.jpg",
+        "score": 1,
+        "reason": "filename \"kandy\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a59ad3893a7017c30c36",
+          "filename": "kandy",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403418/srilankatoursdriver/excursions/zip-tourskandy.jpg",
+          "score": 1,
+          "reason": "filename \"kandy\""
+        }
+      ]
+    },
+    {
+      "slug": "kandy",
+      "name": "Kandy",
+      "kind": "attraction",
+      "attraction": "Temple of the Tooth",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.67,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "kandy",
+      "name": "Kandy",
+      "kind": "attraction",
+      "attraction": "Royal Botanical Gardens",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "kandy",
+      "name": "Kandy",
+      "kind": "attraction",
+      "attraction": "Kandy Lake",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a59ad3893a7017c30c36",
+          "filename": "kandy",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403418/srilankatoursdriver/excursions/zip-tourskandy.jpg",
+          "score": 0.5,
+          "reason": "filename \"kandy\""
+        },
+        {
+          "imageId": "6ac6a5d2d3893a7017c30c86",
+          "filename": "kandy-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403473/srilankatoursdriver/tours/zip-tourskandy-one-day-tour.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy One Day Tour\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        }
+      ]
+    },
+    {
+      "slug": "kitulgala",
+      "name": "Kitulgala",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "kitulgala",
+      "name": "Kitulgala",
+      "kind": "attraction",
+      "attraction": "Whitewater rafting",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "kitulgala",
+      "name": "Kitulgala",
+      "kind": "attraction",
+      "attraction": "Belilena Cave",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "kitulgala",
+      "name": "Kitulgala",
+      "kind": "attraction",
+      "attraction": "Makandawa Rainforest",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "mirissa",
+      "name": "Mirissa",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a3d3893a7017c30c45",
+        "filename": "mirissa",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403426/srilankatoursdriver/excursions/zip-toursmirissa.webp",
+        "score": 1,
+        "reason": "filename \"mirissa\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a3d3893a7017c30c45",
+          "filename": "mirissa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403426/srilankatoursdriver/excursions/zip-toursmirissa.webp",
+          "score": 1,
+          "reason": "filename \"mirissa\""
+        }
+      ]
+    },
+    {
+      "slug": "mirissa",
+      "name": "Mirissa",
+      "kind": "attraction",
+      "attraction": "Whale watching",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "mirissa",
+      "name": "Mirissa",
+      "kind": "attraction",
+      "attraction": "Mirissa Beach",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5d8d3893a7017c30c8f",
+        "filename": "gallery-04",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+        "score": 1,
+        "reason": "title \"Mirissa Beach\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5d8d3893a7017c30c8f",
+          "filename": "gallery-04",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+          "score": 1,
+          "reason": "title \"Mirissa Beach\""
+        }
+      ]
+    },
+    {
+      "slug": "mirissa",
+      "name": "Mirissa",
+      "kind": "attraction",
+      "attraction": "Coconut Tree Hill",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a602d3893a7017c30cd6",
+          "filename": "ella-poster",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403521/srilankatoursdriver/hero/zip-heroella-poster.webp",
+          "score": 0.33,
+          "reason": "title \"Ella · Hill Country\""
+        }
+      ]
+    },
+    {
+      "slug": "negombo",
+      "name": "Negombo",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a9d3893a7017c30c51",
+        "filename": "negombo",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403432/srilankatoursdriver/excursions/zip-toursnegombo.jpg",
+        "score": 1,
+        "reason": "filename \"negombo\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a9d3893a7017c30c51",
+          "filename": "negombo",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403432/srilankatoursdriver/excursions/zip-toursnegombo.jpg",
+          "score": 1,
+          "reason": "filename \"negombo\""
+        }
+      ]
+    },
+    {
+      "slug": "negombo",
+      "name": "Negombo",
+      "kind": "attraction",
+      "attraction": "Negombo Lagoon",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5e6d3893a7017c30ca1",
+        "filename": "gallery-10",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403492/srilankatoursdriver/gallery/zip-gallerygallery-10.jpg",
+        "score": 1,
+        "reason": "title \"Negombo Lagoon\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5e6d3893a7017c30ca1",
+          "filename": "gallery-10",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403492/srilankatoursdriver/gallery/zip-gallerygallery-10.jpg",
+          "score": 1,
+          "reason": "title \"Negombo Lagoon\""
+        }
+      ]
+    },
+    {
+      "slug": "negombo",
+      "name": "Negombo",
+      "kind": "attraction",
+      "attraction": "Fish market",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "negombo",
+      "name": "Negombo",
+      "kind": "attraction",
+      "attraction": "Dutch Canal",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a59ed3893a7017c30c3d",
+        "filename": "nuwaraeliya",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403422/srilankatoursdriver/excursions/zip-toursnuwaraeliya.jpg",
+        "score": 1,
+        "reason": "filename \"nuwaraeliya\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a59ed3893a7017c30c3d",
+          "filename": "nuwaraeliya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403422/srilankatoursdriver/excursions/zip-toursnuwaraeliya.jpg",
+          "score": 1,
+          "reason": "filename \"nuwaraeliya\""
+        }
+      ]
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "kind": "attraction",
+      "attraction": "Tea plantations",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "kind": "attraction",
+      "attraction": "Gregory Lake",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "kind": "attraction",
+      "attraction": "Hakgala Botanical Garden",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "kind": "attraction",
+      "attraction": "Victoria Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.33,
+          "reason": "title \"Yala National Park\""
+        }
+      ]
+    },
+    {
+      "slug": "passikudah",
+      "name": "Passikudah",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a6d3893a7017c30c4b",
+        "filename": "pasikuda",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403429/srilankatoursdriver/excursions/zip-tourspasikuda.jpg",
+        "score": 1,
+        "reason": "filename \"pasikuda\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a6d3893a7017c30c4b",
+          "filename": "pasikuda",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403429/srilankatoursdriver/excursions/zip-tourspasikuda.jpg",
+          "score": 1,
+          "reason": "filename \"pasikuda\""
+        }
+      ]
+    },
+    {
+      "slug": "passikudah",
+      "name": "Passikudah",
+      "kind": "attraction",
+      "attraction": "Passikudah Beach",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5ecd3893a7017c30caa",
+        "filename": "gallery-14",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+        "score": 1,
+        "reason": "title \"Pasikuda Beach\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5ecd3893a7017c30caa",
+          "filename": "gallery-14",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+          "score": 1,
+          "reason": "title \"Pasikuda Beach\""
+        }
+      ]
+    },
+    {
+      "slug": "passikudah",
+      "name": "Passikudah",
+      "kind": "attraction",
+      "attraction": "Swimming",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "passikudah",
+      "name": "Passikudah",
+      "kind": "attraction",
+      "attraction": "Water activities",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a1d3893a7017c30c43",
+        "filename": "polonnaruwa",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403425/srilankatoursdriver/excursions/zip-tourspolonnaruwa.jpg",
+        "score": 1,
+        "reason": "filename \"polonnaruwa\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a1d3893a7017c30c43",
+          "filename": "polonnaruwa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403425/srilankatoursdriver/excursions/zip-tourspolonnaruwa.jpg",
+          "score": 1,
+          "reason": "filename \"polonnaruwa\""
+        }
+      ]
+    },
+    {
+      "slug": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "kind": "attraction",
+      "attraction": "Gal Vihara",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "kind": "attraction",
+      "attraction": "Royal Palace",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "kind": "attraction",
+      "attraction": "Polonnaruwa Ancient City",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a592d3893a7017c30c22",
+          "filename": "colombo-city",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403409/srilankatoursdriver/destinations/zip-destinationscolombo-city.jpg",
+          "score": 0.33,
+          "reason": "title \"Colombo City\""
+        },
+        {
+          "imageId": "6ac6a5a1d3893a7017c30c43",
+          "filename": "polonnaruwa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403425/srilankatoursdriver/excursions/zip-tourspolonnaruwa.jpg",
+          "score": 0.33,
+          "reason": "title \"Polonnaruwa\""
+        }
+      ]
+    },
+    {
+      "slug": "sigiriya",
+      "name": "Sigiriya",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a59fd3893a7017c30c3f",
+        "filename": "sigiriya",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403423/srilankatoursdriver/excursions/zip-tourssigiriya.jpg",
+        "score": 1,
+        "reason": "filename \"sigiriya\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a59fd3893a7017c30c3f",
+          "filename": "sigiriya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403423/srilankatoursdriver/excursions/zip-tourssigiriya.jpg",
+          "score": 1,
+          "reason": "filename \"sigiriya\""
+        }
+      ]
+    },
+    {
+      "slug": "sigiriya",
+      "name": "Sigiriya",
+      "kind": "attraction",
+      "attraction": "Sigiriya Rock Fortress",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5d5d3893a7017c30c8c",
+        "filename": "gallery-01",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403477/srilankatoursdriver/gallery/zip-gallerygallery-01.jpg",
+        "score": 1,
+        "reason": "title \"Sigiriya Rock Fortress\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5d5d3893a7017c30c8c",
+          "filename": "gallery-01",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403477/srilankatoursdriver/gallery/zip-gallerygallery-01.jpg",
+          "score": 1,
+          "reason": "title \"Sigiriya Rock Fortress\""
+        }
+      ]
+    },
+    {
+      "slug": "sigiriya",
+      "name": "Sigiriya",
+      "kind": "attraction",
+      "attraction": "Pidurangala Rock",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d5d3893a7017c30c8c",
+          "filename": "gallery-01",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403477/srilankatoursdriver/gallery/zip-gallerygallery-01.jpg",
+          "score": 0.33,
+          "reason": "title \"Sigiriya Rock Fortress\""
+        },
+        {
+          "imageId": "6ac6a5e8d3893a7017c30ca3",
+          "filename": "gallery-12",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403495/srilankatoursdriver/gallery/zip-gallerygallery-12.jpg",
+          "score": 0.33,
+          "reason": "title \"Ella Rock View\""
+        },
+        {
+          "imageId": "6ac6a5ffd3893a7017c30cd3",
+          "filename": "sigiriya-poster",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403518/srilankatoursdriver/hero/zip-herosigiriya-poster.webp",
+          "score": 0.25,
+          "reason": "title \"Sigiriya · Lion Rock Fortress\""
+        }
+      ]
+    },
+    {
+      "slug": "sigiriya",
+      "name": "Sigiriya",
+      "kind": "attraction",
+      "attraction": "Sigiriya Museum",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a59fd3893a7017c30c3f",
+          "filename": "sigiriya",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403423/srilankatoursdriver/excursions/zip-tourssigiriya.jpg",
+          "score": 0.5,
+          "reason": "filename \"sigiriya\""
+        },
+        {
+          "imageId": "6ac6a5ffd3893a7017c30cd3",
+          "filename": "sigiriya-poster",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403518/srilankatoursdriver/hero/zip-herosigiriya-poster.webp",
+          "score": 0.5,
+          "reason": "filename \"sigiriya-poster\""
+        },
+        {
+          "imageId": "6ac6a5d3d3893a7017c30c88",
+          "filename": "sigiriya-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403475/srilankatoursdriver/tours/zip-tourssigiriya-one-day-tour.jpg",
+          "score": 0.33,
+          "reason": "title \"Sigiriya One Day Tour\""
+        }
+      ]
+    },
+    {
+      "slug": "sinharaja",
+      "name": "Sinharaja",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "sinharaja",
+      "name": "Sinharaja",
+      "kind": "attraction",
+      "attraction": "Guided rainforest walk",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "sinharaja",
+      "name": "Sinharaja",
+      "kind": "attraction",
+      "attraction": "Birdwatching",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "sinharaja",
+      "name": "Sinharaja",
+      "kind": "attraction",
+      "attraction": "Waterfall trek",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "tangalle",
+      "name": "Tangalle",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "tangalle",
+      "name": "Tangalle",
+      "kind": "attraction",
+      "attraction": "Rekawa Turtle Conservation Project",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "tangalle",
+      "name": "Tangalle",
+      "kind": "attraction",
+      "attraction": "Hummanaya Blowhole",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "tangalle",
+      "name": "Tangalle",
+      "kind": "attraction",
+      "attraction": "Mulkirigala Temple",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a5d3893a7017c30c49",
+        "filename": "trincomalee",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403428/srilankatoursdriver/excursions/zip-tourstrincomalee.jpg",
+        "score": 1,
+        "reason": "filename \"trincomalee\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a5d3893a7017c30c49",
+          "filename": "trincomalee",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403428/srilankatoursdriver/excursions/zip-tourstrincomalee.jpg",
+          "score": 1,
+          "reason": "filename \"trincomalee\""
+        }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "kind": "attraction",
+      "attraction": "Koneswaram Temple",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a593d3893a7017c30c25",
+          "filename": "gangaramaya-temple",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403410/srilankatoursdriver/destinations/zip-destinationsgangaramaya-temple.webp",
+          "score": 0.5,
+          "reason": "filename \"gangaramaya-temple\""
+        },
+        {
+          "imageId": "6ac6a5d6d3893a7017c30c8d",
+          "filename": "gallery-02",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403478/srilankatoursdriver/gallery/zip-gallerygallery-02.jpg",
+          "score": 0.33,
+          "reason": "title \"Kandy Temple of the Tooth\""
+        },
+        {
+          "imageId": "6ac6a5e7d3893a7017c30ca2",
+          "filename": "gallery-11",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403494/srilankatoursdriver/gallery/zip-gallerygallery-11.jpg",
+          "score": 0.33,
+          "reason": "title \"Dambulla Cave Temple\""
+        }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "kind": "attraction",
+      "attraction": "Fort Frederick",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "kind": "attraction",
+      "attraction": "Nilaveli Beach",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d8d3893a7017c30c8f",
+          "filename": "gallery-04",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+          "score": 0.5,
+          "reason": "title \"Mirissa Beach\""
+        },
+        {
+          "imageId": "6ac6a5ecd3893a7017c30caa",
+          "filename": "gallery-14",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+          "score": 0.5,
+          "reason": "title \"Pasikuda Beach\""
+        },
+        {
+          "imageId": "6ac6a5e0d3893a7017c30c99",
+          "filename": "gallery-09",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403488/srilankatoursdriver/gallery/zip-gallerygallery-09.jpg",
+          "score": 0.33,
+          "reason": "title \"Beach Hotel Mirissa\""
+        }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "kind": "attraction",
+      "attraction": "Pigeon Island",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5edd3893a7017c30cab",
+        "filename": "gallery-15",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403500/srilankatoursdriver/gallery/zip-gallerygallery-15.jpg",
+        "score": 1,
+        "reason": "title \"Pigeon Island\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5edd3893a7017c30cab",
+          "filename": "gallery-15",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403500/srilankatoursdriver/gallery/zip-gallerygallery-15.jpg",
+          "score": 1,
+          "reason": "title \"Pigeon Island\""
+        }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "name": "Udawalawe",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a5a8d3893a7017c30c4f",
+        "filename": "udawalawa",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403431/srilankatoursdriver/excursions/zip-toursudawalawa.jpg",
+        "score": 1,
+        "reason": "filename \"udawalawa\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a5a8d3893a7017c30c4f",
+          "filename": "udawalawa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403431/srilankatoursdriver/excursions/zip-toursudawalawa.jpg",
+          "score": 1,
+          "reason": "filename \"udawalawa\""
+        }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "name": "Udawalawe",
+      "kind": "attraction",
+      "attraction": "Udawalawe National Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.67,
+          "reason": "filename \"yala-national-park\""
+        },
+        {
+          "imageId": "6ac6a5a8d3893a7017c30c4f",
+          "filename": "udawalawa",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403431/srilankatoursdriver/excursions/zip-toursudawalawa.jpg",
+          "score": 0.33,
+          "reason": "title \"Udawalawa\""
+        },
+        {
+          "imageId": "6ac6a5d9d3893a7017c30c90",
+          "filename": "gallery-05",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-05.jpg",
+          "score": 0.33,
+          "reason": "title \"Udawalawe Safari\""
+        }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "name": "Udawalawe",
+      "kind": "attraction",
+      "attraction": "Jeep safari",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5e8d3893a7017c30ca4",
+          "filename": "gallery-13",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403496/srilankatoursdriver/gallery/zip-gallerygallery-13.jpg",
+          "score": 0.67,
+          "reason": "title \"Yala Safari Jeep\""
+        },
+        {
+          "imageId": "6ac6a5d9d3893a7017c30c90",
+          "filename": "gallery-05",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-05.jpg",
+          "score": 0.5,
+          "reason": "title \"Udawalawe Safari\""
+        },
+        {
+          "imageId": "6ac6a5d4d3893a7017c30c8a",
+          "filename": "udawalawa-safari-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403476/srilankatoursdriver/tours/zip-toursudawalawa-safari-one-day-tour.jpg",
+          "score": 0.25,
+          "reason": "filename \"udawalawa-safari-one-day-tour\""
+        }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "name": "Udawalawe",
+      "kind": "attraction",
+      "attraction": "Elephant Transit Home",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac7ed353f965f784fb4af80",
+          "filename": "woonfit9vnnnr9slpbli",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791487283/srilankatoursdriver/hero/woonfit9vnnnr9slpbli.png",
+          "score": 0.2,
+          "reason": "title \"Elephant Journey Beneath Sigiriya Rock\""
+        }
+      ]
+    },
+    {
+      "slug": "unawatuna",
+      "name": "Unawatuna",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "unawatuna",
+      "name": "Unawatuna",
+      "kind": "attraction",
+      "attraction": "Jungle Beach",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d8d3893a7017c30c8f",
+          "filename": "gallery-04",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-04.jpg",
+          "score": 0.5,
+          "reason": "title \"Mirissa Beach\""
+        },
+        {
+          "imageId": "6ac6a5ecd3893a7017c30caa",
+          "filename": "gallery-14",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403499/srilankatoursdriver/gallery/zip-gallerygallery-14.jpg",
+          "score": 0.5,
+          "reason": "title \"Pasikuda Beach\""
+        },
+        {
+          "imageId": "6ac6a5e0d3893a7017c30c99",
+          "filename": "gallery-09",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403488/srilankatoursdriver/gallery/zip-gallerygallery-09.jpg",
+          "score": 0.33,
+          "reason": "title \"Beach Hotel Mirissa\""
+        }
+      ]
+    },
+    {
+      "slug": "unawatuna",
+      "name": "Unawatuna",
+      "kind": "attraction",
+      "attraction": "Japanese Peace Pagoda",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "unawatuna",
+      "name": "Unawatuna",
+      "kind": "attraction",
+      "attraction": "Dalawella rope swings",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "weligama",
+      "name": "Weligama",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "weligama",
+      "name": "Weligama",
+      "kind": "attraction",
+      "attraction": "Surf lessons",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "weligama",
+      "name": "Weligama",
+      "kind": "attraction",
+      "attraction": "Weligama Bay",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "weligama",
+      "name": "Weligama",
+      "kind": "attraction",
+      "attraction": "Stilt fishing",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wellawaya",
+      "name": "Wellawaya",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wellawaya",
+      "name": "Wellawaya",
+      "kind": "attraction",
+      "attraction": "Buduruwagala",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wellawaya",
+      "name": "Wellawaya",
+      "kind": "attraction",
+      "attraction": "Diyaluma Falls",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wellawaya",
+      "name": "Wellawaya",
+      "kind": "attraction",
+      "attraction": "Rural landscapes",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wilpattu",
+      "name": "Wilpattu",
+      "kind": "destination",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "wilpattu",
+      "name": "Wilpattu",
+      "kind": "attraction",
+      "attraction": "Wilpattu National Park",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 0.67,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "wilpattu",
+      "name": "Wilpattu",
+      "kind": "attraction",
+      "attraction": "Safari",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d9d3893a7017c30c90",
+          "filename": "gallery-05",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-05.jpg",
+          "score": 0.5,
+          "reason": "title \"Udawalawe Safari\""
+        },
+        {
+          "imageId": "6ac6a5e8d3893a7017c30ca4",
+          "filename": "gallery-13",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403496/srilankatoursdriver/gallery/zip-gallerygallery-13.jpg",
+          "score": 0.33,
+          "reason": "title \"Yala Safari Jeep\""
+        },
+        {
+          "imageId": "6ac6a5d4d3893a7017c30c8a",
+          "filename": "udawalawa-safari-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403476/srilankatoursdriver/tours/zip-toursudawalawa-safari-one-day-tour.jpg",
+          "score": 0.25,
+          "reason": "filename \"udawalawa-safari-one-day-tour\""
+        }
+      ]
+    },
+    {
+      "slug": "wilpattu",
+      "name": "Wilpattu",
+      "kind": "attraction",
+      "attraction": "Villu wetlands",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    },
+    {
+      "slug": "yala",
+      "name": "Yala",
+      "kind": "destination",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a596d3893a7017c30c2c",
+        "filename": "yala-national-park",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+        "score": 1,
+        "reason": "filename \"yala-national-park\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 1,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "yala",
+      "name": "Yala",
+      "kind": "attraction",
+      "attraction": "Yala National Park",
+      "group": "CONFIDENT",
+      "best": {
+        "imageId": "6ac6a596d3893a7017c30c2c",
+        "filename": "yala-national-park",
+        "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+        "score": 1,
+        "reason": "filename \"yala-national-park\""
+      },
+      "candidates": [
+        {
+          "imageId": "6ac6a596d3893a7017c30c2c",
+          "filename": "yala-national-park",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403413/srilankatoursdriver/destinations/zip-destinationsyala-national-park.jpg",
+          "score": 1,
+          "reason": "filename \"yala-national-park\""
+        }
+      ]
+    },
+    {
+      "slug": "yala",
+      "name": "Yala",
+      "kind": "attraction",
+      "attraction": "Wildlife safari",
+      "group": "REVIEW",
+      "best": null,
+      "candidates": [
+        {
+          "imageId": "6ac6a5d9d3893a7017c30c90",
+          "filename": "gallery-05",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403480/srilankatoursdriver/gallery/zip-gallerygallery-05.jpg",
+          "score": 0.5,
+          "reason": "title \"Udawalawe Safari\""
+        },
+        {
+          "imageId": "6ac6a5e8d3893a7017c30ca4",
+          "filename": "gallery-13",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403496/srilankatoursdriver/gallery/zip-gallerygallery-13.jpg",
+          "score": 0.33,
+          "reason": "title \"Yala Safari Jeep\""
+        },
+        {
+          "imageId": "6ac6a5d4d3893a7017c30c8a",
+          "filename": "udawalawa-safari-one-day-tour",
+          "url": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1791403476/srilankatoursdriver/tours/zip-toursudawalawa-safari-one-day-tour.jpg",
+          "score": 0.25,
+          "reason": "filename \"udawalawa-safari-one-day-tour\""
+        }
+      ]
+    },
+    {
+      "slug": "yala",
+      "name": "Yala",
+      "kind": "attraction",
+      "attraction": "Leopard watching",
+      "group": "UNMATCHED",
+      "best": null,
+      "candidates": []
+    }
+  ]
+}
