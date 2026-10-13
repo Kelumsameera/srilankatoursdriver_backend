@@ -16,6 +16,7 @@ interface PublicQuery {
   category?: string;
   destination?: string;
   search?: string;
+  q?: string;
   platform?: string;
   kind?: string;
   token?: string;
@@ -82,7 +83,7 @@ export function list(key: pub.PublicResourceKey) {
       featured: query.featured === "true",
       category: query.category,
       destination: query.destination,
-      search: query.search,
+      search: query.search ?? query.q,
       platform: query.platform,
     });
     return ok(res, items, "OK", 200, meta);

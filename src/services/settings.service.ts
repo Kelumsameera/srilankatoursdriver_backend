@@ -37,7 +37,8 @@ export async function updateSiteSettings(patch: AnyRecord) {
 
 export async function getBranding() {
   const doc = await BrandSetting.findOne({ key: "default" }).lean();
-  return doc ?? (await BrandSetting.create({ key: "default" })).toObject();
+  // A public GET must not create database records. Defaults can be returned in memory.
+  return doc ?? new BrandSetting({ key: "default" }).toObject();
 }
 
 export async function updateBranding(patch: AnyRecord) {

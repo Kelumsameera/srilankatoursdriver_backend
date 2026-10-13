@@ -1,0 +1,268 @@
+{
+  "anuradhapura": {
+    "hero": "6ac6a5a0d3893a7017c30c41",
+    "gallery": [],
+    "attractions": {
+      "Ruwanwelisaya": null,
+      "Sri Maha Bodhi": null,
+      "Abhayagiri": null,
+      "Jetavanaramaya": null
+    }
+  },
+  "arugam-bay": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Kumana National Park": null,
+      "Learn Surfing": null,
+      "Kudumbigala Sanctuary": null
+    }
+  },
+  "bentota": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Bentota Beach": null,
+      "Bentota River": null,
+      "Water sports": null,
+      "Lunuganga": null
+    }
+  },
+  "colombo": {
+    "hero": "6ac6a599d3893a7017c30c34",
+    "gallery": [],
+    "attractions": {
+      "Independence Square": null,
+      "Colombo National Museum": null,
+      "Gangaramaya Temple": "6ac6a593d3893a7017c30c25"
+    }
+  },
+  "dambulla": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Dambulla Cave Temple": "6ac6a5e7d3893a7017c30ca2",
+      "Golden Temple": null,
+      "Popham's Arboretum": null
+    }
+  },
+  "ella": {
+    "hero": "6ac6a59dd3893a7017c30c3a",
+    "gallery": [],
+    "attractions": {
+      "Nine Arch Bridge": null,
+      "Little Adam's Peak": null,
+      "Ravana Falls": null,
+      "Ella Rock": null
+    }
+  },
+  "galle": {
+    "hero": "6ac6a59bd3893a7017c30c38",
+    "gallery": [],
+    "attractions": {
+      "Galle Fort": null,
+      "Galle Lighthouse": null,
+      "Dutch-era streets": null
+    }
+  },
+  "habarana": {
+    "hero": "6ac6a5dad3893a7017c30c91",
+    "gallery": [],
+    "attractions": {
+      "Minneriya National Park": null,
+      "Kaudulla National Park": null,
+      "Village experiences": null
+    }
+  },
+  "hatton": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Tea estates": null,
+      "Castlereagh Reservoir": null,
+      "Adam's Peak access": null
+    }
+  },
+  "hikkaduwa": {
+    "hero": "6ac6a5a4d3893a7017c30c47",
+    "gallery": [],
+    "attractions": {
+      "Hikkaduwa Beach": null,
+      "Coral reefs": null,
+      "Snorkelling": null
+    }
+  },
+  "jaffna": {
+    "hero": "6ac6a5abd3893a7017c30c55",
+    "gallery": [],
+    "attractions": {
+      "Nallur Temple": null,
+      "Nagadeepa Temple": null,
+      "Delft Island": null
+    }
+  },
+  "kalpitiya": {
+    "hero": "6ac6a5f9d3893a7017c30cbe",
+    "gallery": [],
+    "attractions": {
+      "Dolphin watching": null,
+      "Kitesurfing": null,
+      "Kalpitiya Lagoon": null
+    }
+  },
+  "kandy": {
+    "hero": "6ac6a59ad3893a7017c30c36",
+    "gallery": [],
+    "attractions": {
+      "Temple of the Tooth": null,
+      "Royal Botanical Gardens": null,
+      "Kandy Lake": null
+    }
+  },
+  "kitulgala": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Whitewater rafting": null,
+      "Belilena Cave": null,
+      "Makandawa Rainforest": null
+    }
+  },
+  "mirissa": {
+    "hero": "6ac6a5a3d3893a7017c30c45",
+    "gallery": [],
+    "attractions": {
+      "Whale watching": null,
+      "Mirissa Beach": "6ac6a5d8d3893a7017c30c8f",
+      "Coconut Tree Hill": null
+    }
+  },
+  "negombo": {
+    "hero": "6ac6a5a9d3893a7017c30c51",
+    "gallery": [],
+    "attractions": {
+      "Negombo Lagoon": "6ac6a5e6d3893a7017c30ca1",
+      "Fish market": null,
+      "Dutch Canal": null
+    }
+  },
+  "nuwara-eliya": {
+    "hero": "6ac6a59ed3893a7017c30c3d",
+    "gallery": [],
+    "attractions": {
+      "Tea plantations": null,
+      "Gregory Lake": null,
+      "Hakgala Botanical Garden": null,
+      "Victoria Park": null
+    }
+  },
+  "passikudah": {
+    "hero": "6ac6a5a6d3893a7017c30c4b",
+    "gallery": [],
+    "attractions": {
+      "Passikudah Beach": "6ac6a5ecd3893a7017c30caa",
+      "Swimming": null,
+      "Water activities": null
+    }
+  },
+  "polonnaruwa": {
+    "hero": "6ac6a5a1d3893a7017c30c43",
+    "gallery": [],
+    "attractions": {
+      "Gal Vihara": null,
+      "Royal Palace": null,
+      "Polonnaruwa Ancient City": null
+    }
+  },
+  "sigiriya": {
+    "hero": "6ac6a59fd3893a7017c30c3f",
+    "gallery": [],
+    "attractions": {
+      "Sigiriya Rock Fortress": "6ac6a5d5d3893a7017c30c8c",
+      "Pidurangala Rock": null,
+      "Sigiriya Museum": null
+    }
+  },
+  "sinharaja": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Guided rainforest walk": null,
+      "Birdwatching": null,
+      "Waterfall trek": null
+    }
+  },
+  "tangalle": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Rekawa Turtle Conservation Project": null,
+      "Hummanaya Blowhole": null,
+      "Mulkirigala Temple": null
+    }
+  },
+  "trincomalee": {
+    "hero": "6ac6a5a5d3893a7017c30c49",
+    "gallery": [],
+    "attractions": {
+      "Koneswaram Temple": null,
+      "Fort Frederick": null,
+      "Nilaveli Beach": null,
+      "Pigeon Island": "6ac6a5edd3893a7017c30cab"
+    }
+  },
+  "udawalawe": {
+    "hero": "6ac6a5a8d3893a7017c30c4f",
+    "gallery": [],
+    "attractions": {
+      "Udawalawe National Park": null,
+      "Jeep safari": null,
+      "Elephant Transit Home": null
+    }
+  },
+  "unawatuna": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Jungle Beach": null,
+      "Japanese Peace Pagoda": null,
+      "Dalawella rope swings": null
+    }
+  },
+  "weligama": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Surf lessons": null,
+      "Weligama Bay": null,
+      "Stilt fishing": null
+    }
+  },
+  "wellawaya": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Buduruwagala": null,
+      "Diyaluma Falls": null,
+      "Rural landscapes": null
+    }
+  },
+  "wilpattu": {
+    "hero": null,
+    "gallery": [],
+    "attractions": {
+      "Wilpattu National Park": null,
+      "Safari": null,
+      "Villu wetlands": null
+    }
+  },
+  "yala": {
+    "hero": "6ac6a596d3893a7017c30c2c",
+    "gallery": [],
+    "attractions": {
+      "Yala National Park": "6ac6a596d3893a7017c30c2c",
+      "Wildlife safari": null,
+      "Leopard watching": null
+    }
+  }
+}

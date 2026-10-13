@@ -1,0 +1,1210 @@
+{
+  "_readme": "Editable source for `npm run seed:destinations`. All copy is original. Practical facts (best time, travel times, coordinates) are approximate; attractions with verified=false still need a fact check (TODO verify).",
+  "categories": [
+    {
+      "slug": "heritage",
+      "name": "Heritage"
+    },
+    {
+      "slug": "beach",
+      "name": "Beach"
+    },
+    {
+      "slug": "hill-country",
+      "name": "Hill Country"
+    },
+    {
+      "slug": "wildlife",
+      "name": "Wildlife"
+    },
+    {
+      "slug": "city",
+      "name": "City"
+    },
+    {
+      "slug": "adventure",
+      "name": "Adventure"
+    },
+    {
+      "slug": "nature",
+      "name": "Nature"
+    }
+  ],
+  "destinations": [
+    {
+      "order": 1,
+      "name": "Anuradhapura",
+      "slug": "anuradhapura",
+      "category": "heritage",
+      "theme": "Heritage",
+      "summary": "Explore Sri Lanka's ancient sacred capital, known for monumental stupas and archaeological sites.",
+      "tagline": "Where the island's story first took shape",
+      "subtitle": "Sacred city of the north-central plains",
+      "intro": "Great white dagobas rise above quiet reservoirs and shaded monastery ruins in the first of Sri Lanka's royal capitals. Pilgrims in white still walk between the shrines, so a slow, early-morning visit with your guide is the best way to feel the place.",
+      "attractions": [
+        {
+          "name": "Ruwanwelisaya",
+          "description": "A vast, gleaming white stupa ringed by a wall of carved elephants, and one of the most revered shrines on the island.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Sri Maha Bodhi",
+          "description": "A sacred fig tree honoured by Buddhists for more than two thousand years, with daily offerings of flowers and chanting.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Abhayagiri",
+          "description": "The extensive grounds of a once-powerful monastery, with a towering brick dagoba, guardstones and moonstones in the forest.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Jetavanaramaya",
+          "description": "A colossal brick stupa that ranks among the tallest structures built in the ancient world.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Pleasant most of the year; the driest months are roughly May to September. Avoid the midday heat and wear clothing that covers shoulders and knees.",
+      "howToGetThere": "Around 4–5 hours by road from Colombo or the airport, or about 1.5 hours from Sigiriya and Dambulla. Your driver can combine it with Mihintale on the same day.",
+      "itinerary": [],
+      "location": {
+        "lat": 8.3114,
+        "lng": 80.4037
+      },
+      "seoTitle": "Anuradhapura Travel Guide",
+      "seoDescription": "Discover Anuradhapura, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 2,
+      "name": "Arugam Bay",
+      "slug": "arugam-bay",
+      "category": "beach",
+      "theme": "Surf & Beach",
+      "summary": "Discover eastern surfing beaches alongside lagoons and protected wilderness.",
+      "tagline": "Easy-going surf town on the east coast",
+      "subtitle": "Waves, lagoons and wild country",
+      "intro": "A crescent bay of sand and fishing boats, with point breaks that draw surfers from around the world. Behind the coast lie lagoons, rock hermitages and some of the island's quietest national parks.",
+      "attractions": [
+        {
+          "name": "Kumana National Park",
+          "description": "A remote park of lagoons and dry forest, well known for wetland birds and occasional elephant and leopard sightings.",
+          "verified": true
+        },
+        {
+          "name": "Learn Surfing",
+          "description": "Gentle inside breaks and friendly local schools make this a good place for a first lesson on a board.",
+          "verified": true
+        },
+        {
+          "name": "Kudumbigala Sanctuary",
+          "description": "An ancient forest hermitage of rock shelters and a hilltop stupa with wide views over the jungle.",
+          "verified": true
+        }
+      ],
+      "bestTimeToVisit": "The surf and dry-weather season runs roughly April to October. From November to March the east coast sees more rain and many places close.",
+      "howToGetThere": "Around 7–8 hours by road from Colombo, or about 3 hours from Ella. It pairs well with an east-coast or hill-country route.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.8406,
+        "lng": 81.8368
+      },
+      "seoTitle": "Arugam Bay Travel Guide",
+      "seoDescription": "Discover Arugam Bay, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 3,
+      "name": "Bentota",
+      "slug": "bentota",
+      "category": "beach",
+      "theme": "Beach & Water Sports",
+      "summary": "Relax on southwest-coast beaches and explore river-based activities.",
+      "tagline": "Golden sands where the river meets the sea",
+      "subtitle": "Slow days on the southwest coast",
+      "intro": "Long, palm-lined beaches meet a broad river estuary dotted with mangrove islands. It's an easy first or last stop on a trip, with boat rides, water sports and garden estates to fill gentle days.",
+      "attractions": [
+        {
+          "name": "Bentota Beach",
+          "description": "A wide stretch of golden sand that is ideal for long walks and lazy afternoons under the palms.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Bentota River",
+          "description": "Boat safaris wind through mangroves, past cinnamon islands and quiet riverbank villages.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Water sports",
+          "description": "Jet skiing, banana boats and windsurfing on the calmer waters where the river meets the sea.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Lunuganga",
+          "description": "A celebrated country garden laid out over many decades by a renowned Sri Lankan architect.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "December to April brings the calmest sea and the most sunshine. From May to October the southwest monsoon makes the sea rough.",
+      "howToGetThere": "About 1.5 hours by road from Colombo on the Southern Expressway, and roughly 2 hours from the airport.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.421,
+        "lng": 79.998
+      },
+      "seoTitle": "Bentota Travel Guide",
+      "seoDescription": "Discover Bentota, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 4,
+      "name": "Colombo",
+      "slug": "colombo",
+      "category": "city",
+      "theme": "City & Culture",
+      "summary": "Experience Sri Lanka's commercial capital through architecture, museums, temples and markets.",
+      "tagline": "A capital of contrasts by the Indian Ocean",
+      "subtitle": "Markets, museums and seafront evenings",
+      "intro": "Colonial landmarks, glass towers, temples and busy bazaars share the streets of Sri Lanka's commercial capital. A half-day with your driver-guide is the easiest way to see the highlights without the traffic stress.",
+      "attractions": [
+        {
+          "name": "Independence Square",
+          "description": "A grand memorial hall set in leafy gardens, built to mark the country's independence.",
+          "verified": true
+        },
+        {
+          "name": "Colombo National Museum",
+          "description": "The island's largest museum, with royal regalia, ancient sculpture and art in a white colonial building.",
+          "verified": true
+        },
+        {
+          "name": "Gangaramaya Temple",
+          "description": "A lively temple complex that blends several architectural styles and holds an eclectic museum collection.",
+          "verified": true
+        }
+      ],
+      "bestTimeToVisit": "A good stop all year. December to March is the driest, while the May to September monsoon brings short, heavy showers.",
+      "howToGetThere": "About 45 minutes from the international airport. Colombo is usually the first or last night of a tour.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.9271,
+        "lng": 79.8612
+      },
+      "seoTitle": "Colombo Travel Guide",
+      "seoDescription": "Discover Colombo, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 5,
+      "name": "Dambulla",
+      "slug": "dambulla",
+      "category": "heritage",
+      "theme": "Heritage",
+      "summary": "Visit world-famous cave shrines and discover the cultural triangle.",
+      "tagline": "Painted caves above the Cultural Triangle",
+      "subtitle": "A rock temple at the island's crossroads",
+      "intro": "Inside a granite outcrop, a series of cave shrines are filled with Buddha statues and ceilings covered in centuries of murals. Dambulla sits at the heart of the Cultural Triangle, so it's an easy base for Sigiriya and the ancient cities.",
+      "attractions": [
+        {
+          "name": "Dambulla Cave Temple",
+          "description": "A cluster of cave shrines with reclining Buddhas and richly painted rock ceilings.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Golden Temple",
+          "description": "A modern temple at the foot of the rock, crowned by a giant golden Buddha.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Popham's Arboretum",
+          "description": "A quiet dry-zone forest reserve with walking trails, good for birds and butterflies.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Rewarding year-round, with the driest weather roughly May to September. Climb to the caves early, before the rock heats up.",
+      "howToGetThere": "Around 4 hours by road from Colombo, or about 2.5 hours from Kandy.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.8567,
+        "lng": 80.6492
+      },
+      "seoTitle": "Dambulla Travel Guide",
+      "seoDescription": "Discover Dambulla, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 6,
+      "name": "Ella",
+      "slug": "ella",
+      "category": "hill-country",
+      "theme": "Hill Country",
+      "summary": "Enjoy spectacular hill-country walks, bridges and lush mountain scenery.",
+      "tagline": "Mountain trails and misty viewpoints",
+      "subtitle": "A village in the clouds of the hill country",
+      "intro": "Ella is a small mountain village wrapped in tea gardens and forested ridges, with walks for every pace. Mornings are cool and clear, which makes them the best time for the viewpoints before the mist rolls in.",
+      "attractions": [
+        {
+          "name": "Nine Arch Bridge",
+          "description": "A stone viaduct curving through the jungle, especially photogenic when a train crosses.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Little Adam's Peak",
+          "description": "An easy hike through tea bushes to a ridge with sweeping views over the valley.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Ravana Falls",
+          "description": "A tiered waterfall right beside the road below Ella, at its fullest after rain.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Ella Rock",
+          "description": "A longer, rewarding trek along rail tracks and forest paths to a high lookout.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "January to April is usually the driest and clearest. Showers are possible all year, so pack a light rain jacket.",
+      "howToGetThere": "About 6 hours by road from Colombo, or roughly 3 hours from Nuwara Eliya. Many guests take the scenic train and meet their driver at Ella station.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.8667,
+        "lng": 81.0466
+      },
+      "seoTitle": "Ella Travel Guide",
+      "seoDescription": "Discover Ella, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 7,
+      "name": "Galle",
+      "slug": "galle",
+      "category": "heritage",
+      "theme": "Heritage & Coast",
+      "summary": "Walk within a historic coastal fort and discover the trading history of the southern coast.",
+      "tagline": "Ramparts, lanes and ocean light",
+      "subtitle": "A fortified harbour town on the south coast",
+      "intro": "Inside thick sea walls, Galle Fort's lanes are lined with old houses, churches, cafés and boutiques. Walk the ramparts at sunset with your guide and hear how centuries of traders shaped this corner of the coast.",
+      "attractions": [
+        {
+          "name": "Galle Fort",
+          "description": "A walled old town on a headland, with a layout and buildings that tell stories of the colonial era.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Galle Lighthouse",
+          "description": "A white lighthouse on the fort's ramparts, framed by the sea on three sides.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Dutch-era streets",
+          "description": "Narrow lanes of verandah houses, little museums and craft shops for a relaxed wander.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "December to April is the sunniest season on the south coast. The fort is good to explore year-round, between rain showers.",
+      "howToGetThere": "About 2 hours by road from Colombo on the Southern Expressway, and close to Unawatuna, Hikkaduwa and Mirissa.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.0329,
+        "lng": 80.2168
+      },
+      "seoTitle": "Galle Travel Guide",
+      "seoDescription": "Discover Galle, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 8,
+      "name": "Habarana",
+      "slug": "habarana",
+      "category": "wildlife",
+      "theme": "Wildlife & Heritage",
+      "summary": "Use this central village as a gateway to elephant safaris and heritage sites.",
+      "tagline": "Gateway to the great elephant gatherings",
+      "subtitle": "A quiet base in the dry-zone heartland",
+      "intro": "Habarana is a small junction town surrounded by forest and reservoirs, ideally placed for safaris and the ancient cities. It's a calm place to stay, with village life close by and wildlife parks a short drive away.",
+      "attractions": [
+        {
+          "name": "Minneriya National Park",
+          "description": "A park built around an ancient reservoir, where large herds of elephants gather in the dry season.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Kaudulla National Park",
+          "description": "A neighbouring park often visited when the herds move, with open grasslands and waterbirds.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Village experiences",
+          "description": "Spend time with a farming family, cook a traditional meal or take a bullock-cart ride.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Good most of the year. Elephant gatherings at the nearby parks are usually largest from around July to October.",
+      "howToGetThere": "About 4 hours by road from Colombo, and under an hour from Sigiriya, Dambulla and Polonnaruwa.",
+      "itinerary": [],
+      "location": {
+        "lat": 8.035,
+        "lng": 80.75
+      },
+      "seoTitle": "Habarana Travel Guide",
+      "seoDescription": "Discover Habarana, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 9,
+      "name": "Hatton",
+      "slug": "hatton",
+      "category": "hill-country",
+      "theme": "Tea Country",
+      "summary": "Explore cool-climate tea estates, reservoirs and highland landscapes.",
+      "tagline": "Tea country in the high hills",
+      "subtitle": "Estates, reservoirs and the pilgrims' peak",
+      "intro": "Rolling estates cover the slopes around Hatton, a working tea town in the central highlands. It's a peaceful stop for bungalow stays and factory visits, and the starting point for the famous pre-dawn climb to Adam's Peak.",
+      "attractions": [
+        {
+          "name": "Tea estates",
+          "description": "Walk among the tea bushes and visit a factory to see how the leaf becomes the cup.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Castlereagh Reservoir",
+          "description": "A tranquil lake framed by tea-covered hills, lovely for a slow boat ride or picnic.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Adam's Peak access",
+          "description": "Hatton is the gateway to the night climb up this sacred mountain to watch sunrise from the summit.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "The Adam's Peak pilgrimage season usually runs from December to May, which is also the driest period here.",
+      "howToGetThere": "About 4 hours by road from Colombo, or 2.5 hours from Kandy. The hill-country train also stops at Hatton.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.8916,
+        "lng": 80.5955
+      },
+      "seoTitle": "Hatton Travel Guide",
+      "seoDescription": "Discover Hatton, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 10,
+      "name": "Hikkaduwa",
+      "slug": "hikkaduwa",
+      "category": "beach",
+      "theme": "Beach & Marine",
+      "summary": "Discover seaside recreation, coral reefs and marine activities.",
+      "tagline": "Reefs, turtles and sunset beaches",
+      "subtitle": "Seaside fun on the southwest coast",
+      "intro": "Hikkaduwa is a lively beach town with shallow reefs close to shore and a relaxed café scene. It's a good spot to snorkel, watch turtles in the shallows or simply enjoy the sunset.",
+      "attractions": [
+        {
+          "name": "Hikkaduwa Beach",
+          "description": "A long stretch of sand with gentle surf, beach cafés and colourful sunsets.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Coral reefs",
+          "description": "A protected coral area near the shore, home to reef fish and visiting sea turtles.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Snorkelling",
+          "description": "Calm, shallow water in season makes it easy to explore the reef straight from the beach.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "November to April brings calm seas and clear water for swimming and snorkelling.",
+      "howToGetThere": "About 2 hours by road from Colombo, and around 30 minutes north of Galle.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.1395,
+        "lng": 80.1063
+      },
+      "seoTitle": "Hikkaduwa Travel Guide",
+      "seoDescription": "Discover Hikkaduwa, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 11,
+      "name": "Jaffna",
+      "slug": "jaffna",
+      "category": "heritage",
+      "theme": "Heritage & Culture",
+      "summary": "Experience the distinctive Tamil culture and heritage of Sri Lanka's northern peninsula.",
+      "tagline": "The vibrant north, unlike anywhere else",
+      "subtitle": "Temples, islands and Tamil culture",
+      "intro": "On a flat peninsula at the tip of the island, Jaffna has its own flavours, festivals and architecture. Colourful Hindu temples, palmyra palms and little island ferries make it a rewarding trip for curious travellers.",
+      "attractions": [
+        {
+          "name": "Nallur Temple",
+          "description": "A grand Hindu temple with a golden gateway tower, famous for its long summer festival.",
+          "verified": true
+        },
+        {
+          "name": "Nagadeepa Temple",
+          "description": "An island temple reached by boat, important to both Buddhist and Hindu visitors.",
+          "verified": true
+        },
+        {
+          "name": "Delft Island",
+          "description": "A remote, windswept island of coral walls, wild ponies and old colonial ruins.",
+          "verified": true
+        }
+      ],
+      "bestTimeToVisit": "Generally warm and dry; roughly February to September is best. The northeast monsoon brings rain from around October to December.",
+      "howToGetThere": "About 7–8 hours by road from Colombo, or around 4 hours from Anuradhapura.",
+      "itinerary": [],
+      "location": {
+        "lat": 9.6615,
+        "lng": 80.0255
+      },
+      "seoTitle": "Jaffna Travel Guide",
+      "seoDescription": "Discover Jaffna, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 12,
+      "name": "Kalpitiya",
+      "slug": "kalpitiya",
+      "category": "beach",
+      "theme": "Beach & Marine",
+      "summary": "Explore a peninsula of lagoons, beaches, dolphins and kitesurfing.",
+      "tagline": "Lagoons, dolphins and steady winds",
+      "subtitle": "A wild peninsula on the northwest coast",
+      "intro": "Kalpitiya is a sandy peninsula of fishing villages, lagoons and undeveloped beaches. Depending on the season, you can head out to sea in search of dolphins or catch the strong winds that make it a kitesurfing favourite.",
+      "attractions": [
+        {
+          "name": "Dolphin watching",
+          "description": "Early-morning boat trips offshore, where pods of dolphins are often seen in season.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Kitesurfing",
+          "description": "Flat lagoon water and reliable winds make this one of the region's best places to learn.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Kalpitiya Lagoon",
+          "description": "A wide, shallow lagoon fringed by mangroves and fishing villages.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Kitesurfing winds are strongest from around May to October; the sea is calmer for dolphin trips from around November to April.",
+      "howToGetThere": "About 3.5–4 hours by road from Colombo. It combines well with Wilpattu National Park.",
+      "itinerary": [],
+      "location": {
+        "lat": 8.2333,
+        "lng": 79.7667
+      },
+      "seoTitle": "Kalpitiya Travel Guide",
+      "seoDescription": "Discover Kalpitiya, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 13,
+      "name": "Kandy",
+      "slug": "kandy",
+      "category": "heritage",
+      "theme": "Heritage & Culture",
+      "summary": "Discover the island's hill capital, royal heritage and sacred sites.",
+      "tagline": "The last royal capital, in the hills",
+      "subtitle": "Sacred, green and full of tradition",
+      "intro": "Kandy sits around a lake in a ring of forested hills and remains the cultural heart of the island. Visit the temple at dusk for the evening ceremony, then explore gardens, markets and craft workshops with your guide.",
+      "attractions": [
+        {
+          "name": "Temple of the Tooth",
+          "description": "The island's most revered shrine, home to a sacred relic and a daily rhythm of ceremonies.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Royal Botanical Gardens",
+          "description": "Vast gardens with an orchid house, giant bamboo and avenues of royal palms.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Kandy Lake",
+          "description": "A tranquil lake in the town centre with a shady path that is lovely for an evening stroll.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "A good stop year-round, with drier weather roughly January to April. The Perahera pageant usually takes place in July or August.",
+      "howToGetThere": "About 3 hours by road from Colombo or the airport. Kandy is also the start of the scenic hill-country railway.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.2906,
+        "lng": 80.6337
+      },
+      "seoTitle": "Kandy Travel Guide",
+      "seoDescription": "Discover Kandy, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 14,
+      "name": "Kitulgala",
+      "slug": "kitulgala",
+      "category": "adventure",
+      "theme": "Adventure",
+      "summary": "Experience whitewater rafting and rainforest adventures in a riverside setting.",
+      "tagline": "White water and rainforest trails",
+      "subtitle": "Adventure on the Kelani River",
+      "intro": "Kitulgala lies on a fast-flowing river framed by lowland rainforest. It's the island's best-known spot for rafting, and the forest around it offers birdwatching, waterfalls and caves for quieter moments.",
+      "attractions": [
+        {
+          "name": "Whitewater rafting",
+          "description": "Guided trips through a series of rapids, suitable for first-timers with a sense of adventure.",
+          "verified": true
+        },
+        {
+          "name": "Belilena Cave",
+          "description": "An archaeological cave site set in the forest near the river.",
+          "verified": true
+        },
+        {
+          "name": "Makandawa Rainforest",
+          "description": "A lowland forest reserve with trails for birdwatching and nature walks.",
+          "verified": true
+        }
+      ],
+      "bestTimeToVisit": "Rafting runs for much of the year; the river is livelier after the monsoon rains. Ask us for the best timing for your dates.",
+      "howToGetThere": "About 2.5 hours by road from Colombo, on the way to Nuwara Eliya and Hatton.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.9906,
+        "lng": 80.4172
+      },
+      "seoTitle": "Kitulgala Travel Guide",
+      "seoDescription": "Discover Kitulgala, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 15,
+      "name": "Mirissa",
+      "slug": "mirissa",
+      "category": "beach",
+      "theme": "Beach & Marine",
+      "summary": "Visit a southern beach town known for ocean excursions and seaside relaxation.",
+      "tagline": "Blue water and big ocean encounters",
+      "subtitle": "A palm-fringed bay on the deep south coast",
+      "intro": "Mirissa is a small crescent of sand and swaying palms with a laid-back beach scene. Early-morning boat trips set out to sea in search of whales, and the afternoons are made for swimming and seafood.",
+      "attractions": [
+        {
+          "name": "Whale watching",
+          "description": "Boat trips head out to deep water where whales and dolphins are often seen in season.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Mirissa Beach",
+          "description": "A curving beach with soft sand, beach cafés and gentle swimming spots in season.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Coconut Tree Hill",
+          "description": "A small headland of tall palms with a much-loved view over the ocean.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "November to April is the main season for calm seas and whale watching.",
+      "howToGetThere": "About 2.5–3 hours by road from Colombo on the Southern Expressway, or 45 minutes from Galle.",
+      "itinerary": [],
+      "location": {
+        "lat": 5.9483,
+        "lng": 80.4716
+      },
+      "seoTitle": "Mirissa Travel Guide",
+      "seoDescription": "Discover Mirissa, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 16,
+      "name": "Negombo",
+      "slug": "negombo",
+      "category": "beach",
+      "theme": "Beach & Culture",
+      "summary": "Experience a coastal fishing town, historic waterways and lagoon landscapes.",
+      "tagline": "Fishing boats, lagoons and canals",
+      "subtitle": "An easy first or last night by the sea",
+      "intro": "Just north of the airport, Negombo is a seaside town of fishing traditions, churches and a wide lagoon. It's an ideal place to rest after a long flight or before heading home.",
+      "attractions": [
+        {
+          "name": "Negombo Lagoon",
+          "description": "A broad lagoon of mangroves and fishing canoes, best explored by boat.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Fish market",
+          "description": "A bustling early-morning market where the day's catch is sold and fish are dried on the sand.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Dutch Canal",
+          "description": "An old waterway built for trade that still threads through the town and countryside.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "December to March is the driest season. The town works well year-round as an arrival or departure stop.",
+      "howToGetThere": "About 20 minutes from the international airport, or 1 hour from Colombo.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.2083,
+        "lng": 79.8358
+      },
+      "seoTitle": "Negombo Travel Guide",
+      "seoDescription": "Discover Negombo, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 17,
+      "name": "Nuwara Eliya",
+      "slug": "nuwara-eliya",
+      "category": "hill-country",
+      "theme": "Hill Country",
+      "summary": "Discover tea country, cool mountain air and colonial-era landscapes.",
+      "tagline": "Cool air and endless tea",
+      "subtitle": "A highland town of gardens and old bungalows",
+      "intro": "High in the central hills, Nuwara Eliya is surrounded by emerald tea estates and misty peaks. Expect crisp mornings, colonial-era buildings, flower gardens and plenty of fresh tea.",
+      "attractions": [
+        {
+          "name": "Tea plantations",
+          "description": "Visit a tea estate and factory to follow the leaf from the bush to the cup.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Gregory Lake",
+          "description": "A lakeside park with walking paths, paddle boats and views of the surrounding hills.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Hakgala Botanical Garden",
+          "description": "Terraced gardens of roses, ferns and tall trees on the slopes of a dramatic rock.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Victoria Park",
+          "description": "A well-kept town park with flower beds and birdlife in the centre of town.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "The driest months are usually January to April. Bring a warm layer, as evenings can be chilly all year.",
+      "howToGetThere": "About 5 hours by road from Colombo, or 2.5 hours from Kandy. The nearest train station is Nanu Oya, a short drive away.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.9497,
+        "lng": 80.7891
+      },
+      "seoTitle": "Nuwara Eliya Travel Guide",
+      "seoDescription": "Discover Nuwara Eliya, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 18,
+      "name": "Passikudah",
+      "slug": "passikudah",
+      "category": "beach",
+      "theme": "Beach",
+      "summary": "Relax by a long, shallow eastern coastline known for calm-water beach holidays.",
+      "tagline": "Calm, shallow water on the east coast",
+      "subtitle": "A gentle bay for easy beach days",
+      "intro": "Passikudah's bay is protected by reefs, so the water stays shallow and calm far from shore. It's a relaxed place to swim, rest and unwind after touring the Cultural Triangle.",
+      "attractions": [
+        {
+          "name": "Passikudah Beach",
+          "description": "A long, curving beach with soft sand and some of the calmest water on the island.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Swimming",
+          "description": "Shallow, sheltered water that's ideal for relaxed swimming and families.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Water activities",
+          "description": "Snorkelling and boat trips in season, arranged locally.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "The east-coast season runs roughly April to September. From November to February rain is more frequent.",
+      "howToGetThere": "About 6 hours by road from Colombo, or roughly 2 hours from Polonnaruwa.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.93,
+        "lng": 81.56
+      },
+      "seoTitle": "Passikudah Travel Guide",
+      "seoDescription": "Discover Passikudah, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 19,
+      "name": "Polonnaruwa",
+      "slug": "polonnaruwa",
+      "category": "heritage",
+      "theme": "Heritage",
+      "summary": "Explore one of Sri Lanka's best-preserved ancient royal capitals.",
+      "tagline": "A medieval royal city among the trees",
+      "subtitle": "Ruins best explored by bicycle",
+      "intro": "Polonnaruwa's palaces, shrines and carved statues lie spread across green parkland beside a vast reservoir. It's compact and well preserved, so it's easy to explore by bike or with your driver.",
+      "attractions": [
+        {
+          "name": "Gal Vihara",
+          "description": "Exquisite Buddha figures carved from a single granite face, including a serene reclining image.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Royal Palace",
+          "description": "The remains of a once multi-storey palace and its council chamber.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Polonnaruwa Ancient City",
+          "description": "A large archaeological park of temples, stupas and moonstones in shady woodland.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Visit year-round; the driest months are roughly May to September. Start early or late to avoid the heat.",
+      "howToGetThere": "About 5 hours by road from Colombo, or under an hour from Habarana and Sigiriya.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.9403,
+        "lng": 81.0188
+      },
+      "seoTitle": "Polonnaruwa Travel Guide",
+      "seoDescription": "Discover Polonnaruwa, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 20,
+      "name": "Sigiriya",
+      "slug": "sigiriya",
+      "category": "heritage",
+      "theme": "Heritage",
+      "summary": "Visit the iconic rock fortress amid the archaeological landscapes of the Cultural Triangle.",
+      "tagline": "A fortress on the rock",
+      "subtitle": "Gardens, frescoes and a summit view",
+      "intro": "A sheer rock rises out of the forest, ringed by water gardens and topped with the ruins of a royal citadel. Climb early with your guide for cooler air and the best light over the plains.",
+      "attractions": [
+        {
+          "name": "Sigiriya Rock Fortress",
+          "description": "Stairways, frescoes and the famous lion's paws lead to palace ruins on the summit.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Pidurangala Rock",
+          "description": "A neighbouring rock with a temple at its base and a superb view of Sigiriya from the top.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Sigiriya Museum",
+          "description": "A small museum that brings the site's history and art to life before your climb.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Good most of the year; the driest months are around May to September. Start the climb at opening time to avoid the heat.",
+      "howToGetThere": "About 4 hours by road from Colombo, or 2.5 hours from Kandy.",
+      "itinerary": [],
+      "location": {
+        "lat": 7.957,
+        "lng": 80.7603
+      },
+      "seoTitle": "Sigiriya Travel Guide",
+      "seoDescription": "Discover Sigiriya, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 21,
+      "name": "Sinharaja",
+      "slug": "sinharaja",
+      "category": "nature",
+      "theme": "Rainforest",
+      "summary": "Discover biodiverse rainforest trails in a globally significant protected forest.",
+      "tagline": "Deep green rainforest",
+      "subtitle": "A living treasure of rare species",
+      "intro": "Sinharaja is one of the island's last great stretches of lowland rainforest, rich in endemic birds, plants and wildlife. Walking the trails with a naturalist reveals a hidden world of colour and sound.",
+      "attractions": [
+        {
+          "name": "Guided rainforest walk",
+          "description": "A naturalist leads you along forest trails, pointing out rare plants and wildlife.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Birdwatching",
+          "description": "Mixed flocks of colourful, endemic birds are one of the forest's highlights.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Waterfall trek",
+          "description": "Forest paths lead to cool streams and waterfalls deep in the reserve.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Generally best from around January to April and August to September, when there is less rain. Leech socks are a good idea all year.",
+      "howToGetThere": "About 3.5–4 hours by road from Colombo, depending on the entrance used.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.4,
+        "lng": 80.5
+      },
+      "seoTitle": "Sinharaja Travel Guide",
+      "seoDescription": "Discover Sinharaja, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 22,
+      "name": "Tangalle",
+      "slug": "tangalle",
+      "category": "beach",
+      "theme": "Beach & Nature",
+      "summary": "Explore peaceful south-coast beaches, cultural sites and coastal wildlife.",
+      "tagline": "Quiet coves on the deep south coast",
+      "subtitle": "Turtles, temples and empty beaches",
+      "intro": "Tangalle's coastline is a string of sheltered coves and long, uncrowded beaches. It's a peaceful base for turtle watching, rock temples and simple, slow days by the sea.",
+      "attractions": [
+        {
+          "name": "Rekawa Turtle Conservation Project",
+          "description": "A community project protecting the beach where sea turtles come ashore to nest.",
+          "verified": true
+        },
+        {
+          "name": "Hummanaya Blowhole",
+          "description": "A natural blowhole that sends sea spray high into the air when the swell is up.",
+          "verified": true
+        },
+        {
+          "name": "Mulkirigala Temple",
+          "description": "A rock temple with cave shrines reached by stairs climbing a steep outcrop.",
+          "verified": true
+        }
+      ],
+      "bestTimeToVisit": "November to April is the best season for calm seas and sunshine.",
+      "howToGetThere": "About 3 hours by road from Colombo on the Southern Expressway, or 1 hour from Mirissa.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.024,
+        "lng": 80.7941
+      },
+      "seoTitle": "Tangalle Travel Guide",
+      "seoDescription": "Discover Tangalle, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 23,
+      "name": "Trincomalee",
+      "slug": "trincomalee",
+      "category": "beach",
+      "theme": "Beach & Heritage",
+      "summary": "Discover an eastern port city celebrated for its history, temples and beaches.",
+      "tagline": "A natural harbour on the east coast",
+      "subtitle": "Temples, forts and coral islands",
+      "intro": "Trincomalee has one of the world's finest natural harbours, with white beaches stretching north of the town. Combine clifftop temples and old forts with snorkelling trips to coral reefs offshore.",
+      "attractions": [
+        {
+          "name": "Koneswaram Temple",
+          "description": "A Hindu temple perched on a cliff above the ocean, with sweeping sea views.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Fort Frederick",
+          "description": "A historic fort on a headland, with resident deer and a path up to the temple.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Nilaveli Beach",
+          "description": "A long, quiet beach of white sand north of town.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Pigeon Island",
+          "description": "A small marine national park just offshore, popular for snorkelling over coral.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "The best season is roughly April to October, when the east coast is drier and the sea is calm.",
+      "howToGetThere": "About 6 hours by road from Colombo, or 2.5 hours from Sigiriya.",
+      "itinerary": [],
+      "location": {
+        "lat": 8.5874,
+        "lng": 81.2152
+      },
+      "seoTitle": "Trincomalee Travel Guide",
+      "seoDescription": "Discover Trincomalee, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 24,
+      "name": "Udawalawe",
+      "slug": "udawalawe",
+      "category": "wildlife",
+      "theme": "Wildlife",
+      "summary": "Visit a major wildlife park especially known for Asian elephant sightings.",
+      "tagline": "Elephants on the open plains",
+      "subtitle": "Safari country in the south",
+      "intro": "Udawalawe's grasslands and reservoir support large numbers of wild elephants, which are often easy to see. A jeep safari here is a great choice for families and first-time wildlife watchers.",
+      "attractions": [
+        {
+          "name": "Udawalawe National Park",
+          "description": "Open grasslands around a large reservoir, home to herds of wild elephants.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Jeep safari",
+          "description": "Morning or afternoon game drives with a tracker to look for elephants, birds and more.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Elephant Transit Home",
+          "description": "A rehabilitation centre that cares for orphaned elephants before release into the wild.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Good year-round. Elephant sightings are reliable in every season.",
+      "howToGetThere": "About 4 hours by road from Colombo, or 2 hours from Ella or the south coast.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.474,
+        "lng": 80.8985
+      },
+      "seoTitle": "Udawalawe Travel Guide",
+      "seoDescription": "Discover Udawalawe, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 25,
+      "name": "Unawatuna",
+      "slug": "unawatuna",
+      "category": "beach",
+      "theme": "Beach",
+      "summary": "Enjoy relaxed beach life close to Galle, hidden coves and coastal temples.",
+      "tagline": "Easy beach days near Galle",
+      "subtitle": "Coves, cafés and coastal temples",
+      "intro": "Unawatuna is a sheltered bay with soft sand, just a few minutes from Galle Fort. Small coves, clifftop viewpoints and beachside cafés make it an easy place to linger.",
+      "attractions": [
+        {
+          "name": "Jungle Beach",
+          "description": "A small, tree-fringed cove reached by a short walk, good for calm-day swimming.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Japanese Peace Pagoda",
+          "description": "A white peace stupa on the headland with views over the coast towards Galle.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Dalawella rope swings",
+          "description": "Palm-tree swings over the shallows, a popular photo spot at sunset.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "November to April brings the calmest sea and the most sunshine.",
+      "howToGetThere": "About 2 hours by road from Colombo, and 15 minutes from Galle.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.01,
+        "lng": 80.249
+      },
+      "seoTitle": "Unawatuna Travel Guide",
+      "seoDescription": "Discover Unawatuna, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 26,
+      "name": "Weligama",
+      "slug": "weligama",
+      "category": "beach",
+      "theme": "Beach & Surf",
+      "summary": "Explore a sheltered bay famous for beginner surfing and fishing traditions.",
+      "tagline": "The south coast's beginner surf bay",
+      "subtitle": "Gentle waves and fishing traditions",
+      "intro": "Weligama's wide, sandy bay has soft, rolling waves that are ideal for learning to surf. Along the coast you'll find fishing traditions, small islands and easy access to the beaches of the south.",
+      "attractions": [
+        {
+          "name": "Surf lessons",
+          "description": "Gentle, consistent waves and many local surf schools make it easy to get started.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Weligama Bay",
+          "description": "A broad bay with a tiny island and a long stretch of sand for walks.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Stilt fishing",
+          "description": "Fishermen balancing on poles in the shallows, a traditional sight along this stretch of coast.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "November to April is the main surf and beach season.",
+      "howToGetThere": "About 2.5 hours by road from Colombo, or 30 minutes from Galle.",
+      "itinerary": [],
+      "location": {
+        "lat": 5.975,
+        "lng": 80.429
+      },
+      "seoTitle": "Weligama Travel Guide",
+      "seoDescription": "Discover Weligama, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 27,
+      "name": "Wellawaya",
+      "slug": "wellawaya",
+      "category": "nature",
+      "theme": "Nature & Heritage",
+      "summary": "Discover waterfalls, rock-cut heritage and beautiful rural landscapes.",
+      "tagline": "Waterfalls and rock-carved figures",
+      "subtitle": "Where the hills meet the plains",
+      "intro": "Wellawaya sits where the hill country drops into the dry lowlands, among rice fields and forested hills. It's a quiet stop for waterfalls, ancient rock carvings and rural scenery between Ella and the south.",
+      "attractions": [
+        {
+          "name": "Buduruwagala",
+          "description": "Giant figures carved into a rock face, standing in a peaceful forest setting.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Diyaluma Falls",
+          "description": "One of the highest waterfalls on the island, with natural pools near the top.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Rural landscapes",
+          "description": "Paddy fields, village temples and quiet country roads to explore with your driver.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Pleasant much of the year; waterfalls are fullest after the rains.",
+      "howToGetThere": "About 1 hour by road from Ella, and around 2 hours from Yala or Udawalawe.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.7333,
+        "lng": 81.1
+      },
+      "seoTitle": "Wellawaya Travel Guide",
+      "seoDescription": "Discover Wellawaya, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 28,
+      "name": "Wilpattu",
+      "slug": "wilpattu",
+      "category": "wildlife",
+      "theme": "Wildlife",
+      "summary": "Experience safari landscapes, lakes and rich biodiversity in a large national park.",
+      "tagline": "Forest lakes and quiet safaris",
+      "subtitle": "A wild park of natural water holes",
+      "intro": "Wilpattu is the island's largest national park, a mosaic of forest and natural lakes called villus. Safaris here are calmer and less crowded, with chances to see leopards, sloth bears and plenty of birds.",
+      "attractions": [
+        {
+          "name": "Wilpattu National Park",
+          "description": "A vast park of forest and lakes, known for peaceful, uncrowded game drives.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Safari",
+          "description": "Morning and afternoon jeep safaris with experienced trackers.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Villu wetlands",
+          "description": "Natural rain-filled lakes that attract wildlife and waterbirds throughout the park.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "The best season is usually from around February to October.",
+      "howToGetThere": "About 4 hours by road from Colombo, or 1 hour from Anuradhapura.",
+      "itinerary": [],
+      "location": {
+        "lat": 8.45,
+        "lng": 80.0
+      },
+      "seoTitle": "Wilpattu Travel Guide",
+      "seoDescription": "Discover Wilpattu, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    },
+    {
+      "order": 29,
+      "name": "Yala",
+      "slug": "yala",
+      "category": "wildlife",
+      "theme": "Wildlife",
+      "summary": "Explore southeastern dry-zone habitats in a national park famous for leopard sightings.",
+      "tagline": "Leopard country by the sea",
+      "subtitle": "Classic safaris in the southeast",
+      "intro": "Yala's scrub forest, lagoons and rocky outcrops run right down to the coast. It's one of the best places in Asia to look for leopards, along with elephants, crocodiles and a wealth of birdlife.",
+      "attractions": [
+        {
+          "name": "Yala National Park",
+          "description": "Dry forest, lagoons and beaches in one of the island's most famous national parks.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Wildlife safari",
+          "description": "Early-morning and afternoon jeep drives, when the animals are most active.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        },
+        {
+          "name": "Leopard watching",
+          "description": "Patient tracking with experienced guides gives you a good chance of seeing a leopard.",
+          "verified": false,
+          "note": "TODO verify against a reliable source"
+        }
+      ],
+      "bestTimeToVisit": "Good for most of the year. Parts of the park usually close for a few weeks around September to October; we'll check dates for you.",
+      "howToGetThere": "About 5 hours by road from Colombo, or 2.5 hours from Ella. Most guests stay in Tissamaharama or near the park.",
+      "itinerary": [],
+      "location": {
+        "lat": 6.372,
+        "lng": 81.52
+      },
+      "seoTitle": "Yala Travel Guide",
+      "seoDescription": "Discover Yala, Sri Lanka: highlights, activities and private tour ideas. Plan your tailor-made journey."
+    }
+  ]
+}

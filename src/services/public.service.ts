@@ -61,7 +61,8 @@ export const PUBLIC_RESOURCES = {
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, createdAt: -1 },
     listSelect:
-      "title slug shortDescription heroMedia durationDays durationNights price currency priceNote startLocation endLocation category tourType difficulty featured highlights destinations",
+      // itinerary.location: lets cards show the real day-by-day route without loading full itineraries.
+      "title slug shortDescription heroMedia durationDays durationNights price currency priceNote startLocation endLocation category tourType difficulty featured highlights destinations itinerary.location",
     populate: [categoryPopulate, { path: "destinations", select: "name slug", match: { status: "published" } }],
     searchFields: ["title", "shortDescription"],
   },
@@ -71,9 +72,9 @@ export const PUBLIC_RESOURCES = {
     categoryKind: "destination",
     filter: () => ({ status: "published" }),
     sort: { featured: -1, order: 1, name: 1 },
-    listSelect: "name slug region shortDescription heroMedia featured category location",
+    listSelect: "name slug region tagline shortDescription heroMedia featured category location order",
     populate: [categoryPopulate],
-    searchFields: ["name", "region"],
+    searchFields: ["name", "region", "shortDescription"],
   },
   excursions: {
     model: Excursion,
@@ -182,7 +183,7 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
   return { items, meta: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } };
 }
 
-async function localizeCategories<T extends AnyRecord>(docs: T[], locale?: string): Promise<T[]> {
+export async function localizeCategories<T extends AnyRecord>(docs: T[], locale?: string): Promise<T[]> {
   const cats = docs.map((d) => d.category as AnyRecord | undefined).filter((c): c is AnyRecord => Boolean(c && c._id));
   if (cats.length === 0) return docs;
   const localized = await localize("category", cats, locale);
