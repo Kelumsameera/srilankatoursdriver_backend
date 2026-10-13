@@ -6,18 +6,11 @@ import { verifyPreviewToken } from "../services/auth.service.js";
 import { createPublicReview } from "../services/crm.service.js";
 import { ok, created } from "../utils/response.js";
 import { ApiError } from "../utils/ApiError.js";
-import { isLocale } from "../config/locales.js";
-import type { PublicQuery } from "../validations/public.js";
-
-const q = (req: Request) => (req.validated?.query ?? {}) as PublicQuery;
-const locale = (req: Request) => {
-  const l = q(req).locale;
-  return isLocale(l) ? l : undefined;
-};
+import { readLocale, readQuery } from "./publicRequest.js";
 
 /** Public settings: never includes internal flags. */
 export async function siteSettings(req: Request, res: Response) {
-  const s = (await settings.getSiteSettings(locale(req))) as Record<string, unknown>;
+  const s = (await settings.getSiteSettings(readLocale(req))) as Record<string, unknown>;
   const { _id, __v, key, createdAt, ...rest } = s;
   void _id;
   void __v;
@@ -41,30 +34,30 @@ export async function languages(_req: Request, res: Response) {
 }
 
 export async function navigation(req: Request, res: Response) {
-  return ok(res, await pub.getNavigation(locale(req)));
+  return ok(res, await pub.getNavigation(readLocale(req)));
 }
 
 export async function hero(req: Request, res: Response) {
-  return ok(res, await pub.getActiveHeroSlides(locale(req)));
+  return ok(res, await pub.getActiveHeroSlides(readLocale(req)));
 }
 
 export async function page(req: Request, res: Response) {
-  return ok(res, await pub.getPublicPage(String(req.params.slug), locale(req)));
+  return ok(res, await pub.getPublicPage(String(req.params.slug), readLocale(req)));
 }
 
 /** Preview including disabled sections / draft pages, authorised by a short-lived admin token. */
 export async function previewPage(req: Request, res: Response) {
-  const token = q(req).token;
+  const token = readQuery(req).token;
   if (!token || !verifyPreviewToken(token, String(req.params.slug))) throw ApiError.unauthorized("Invalid or expired preview link");
   res.setHeader("Cache-Control", "no-store");
-  return ok(res, await pub.getPublicPage(String(req.params.slug), locale(req), { preview: true }));
+  return ok(res, await pub.getPublicPage(String(req.params.slug), readLocale(req), { preview: true }));
 }
 
 export function list(key: pub.PublicResourceKey) {
   return async (req: Request, res: Response) => {
-    const query = q(req);
+    const query = readQuery(req);
     const { items, meta } = await pub.listPublicLocalized(key, {
-      locale: locale(req),
+      locale: readLocale(req),
       page: query.page,
       limit: query.limit,
       featured: query.featured === "true",
@@ -78,9 +71,9 @@ export function list(key: pub.PublicResourceKey) {
 }
 
 export async function categories(req: Request, res: Response) {
-  const kind = q(req).kind;
+  const kind = readQuery(req).kind;
   if (!kind) throw ApiError.badRequest("kind is required");
-  return ok(res, await pub.listCategories(kind, locale(req)));
+  return ok(res, await pub.listCategories(kind, readLocale(req)));
 }
 
 export async function tripadvisor(_req: Request, res: Response) {
