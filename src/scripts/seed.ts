@@ -12,6 +12,7 @@ import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import crypto from "node:crypto";
 import { env, isProduction } from "../config/env.js";
+import { SEO_AUDIT_CONTENT } from "./seo-audit-content.js";
 import { passwordPolicy } from "../validations/auth.js";
 import { connectDatabase, disconnectDatabase } from "../config/db.js";
 import {
@@ -229,7 +230,11 @@ async function seedTours(destIds: (names: string[]) => Promise<unknown[]>) {
 
 async function seedPages() {
   for (const p of data.SYSTEM_PAGES) {
-    await upsert(Page, { slug: p.slug }, { slug: p.slug, title: p.title, subtitle: p.subtitle, isSystem: true, status: "published" });
+    const copy = SEO_AUDIT_CONTENT[p.slug];
+    await upsert(Page, { slug: p.slug }, {
+      slug: p.slug, title: p.title, subtitle: p.subtitle, isSystem: true, status: "published",
+      ...(copy ? { seo: { seoTitle: copy.seoTitle, metaDescription: copy.metaDescription }, content: copy.content ?? "" } : {}),
+    });
     const page = await Page.findOne({ slug: p.slug });
     if (!page) continue;
     if (p.sections?.length && !(await PageSection.exists({ page: page._id }))) {

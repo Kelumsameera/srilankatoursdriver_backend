@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "test": "tsx --test tests/*.test.ts",
     "seed": "tsx src/scripts/seed.ts",
+    "seo:audit-content": "tsx src/scripts/improve-page-seo.ts",
     "create-admin": "tsx src/scripts/create-admin.ts",
     "verify:cloudinary": "tsx src/scripts/verify-cloudinary.ts",
     "seed:destinations": "tsx src/scripts/seed-destinations.ts",
