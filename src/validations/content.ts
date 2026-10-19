@@ -276,6 +276,57 @@ export const publicReviewSubmit = z.object({
   website: z.string().max(500).optional(), // honeypot – filled in by bots only (silently discarded)
 });
 
+/* ───────────── Comments (blog posts and guest stories) ───────────── */
+/** A signed-in customer writing a comment – always lands as pending. */
+export const commentSubmit = z.object({
+  text: shortText(2000).min(2),
+});
+
+/** Admin: add a comment by hand (e.g. one received by email) */
+export const commentCreate = z.object({
+  targetModel: z.enum(["BlogPost", "Story"]),
+  target: objectId,
+  authorName: shortText(120).min(1),
+  text: shortText(2000).min(1),
+  status: z.enum(["pending", "published", "rejected"]).optional(),
+});
+
+/** Admin moderation: change the status, or tidy the text / shown name. */
+export const commentUpdate = commentCreate.omit({ targetModel: true, target: true }).partial();
+
+/* ───────────── Guest stories ───────────── */
+/** One uploaded story photo or video (publicId + url from the upload endpoint) */
+const storyMedia = z.object({
+  publicId: shortText(500).min(1),
+  url: httpUrl,
+  resourceType: z.enum(["image", "video"]).optional(),
+  format: shortText(20).optional(),
+  width: optionalNumber,
+  height: optionalNumber,
+  duration: optionalNumber,
+  alt: shortText(300).optional(),
+});
+
+/** A signed-in customer sharing a story. Photos must already be uploaded through /customer/stories/upload. */
+export const storySubmit = z.object({
+  title: shortText(140).min(3),
+  text: shortText(5000).min(20),
+  place: shortText(120).optional(),
+  media: z.array(storyMedia).min(1).max(6),
+});
+
+/** Admin: write or edit a story (e.g. one received by email) */
+export const storyCreate = z.object({
+  authorName: shortText(120).min(1),
+  title: shortText(140).min(1),
+  text: shortText(5000).min(1),
+  place: shortText(120).optional(),
+  media: z.array(storyMedia).max(6).optional(),
+  status: z.enum(["pending", "published", "rejected"]).optional(),
+  featured: z.boolean().optional(),
+});
+export const storyUpdate = storyCreate.partial();
+
 /* ───────────── FAQs ───────────── */
 export const faqCreate = z.object({
   question: shortText(300).min(3),
@@ -366,7 +417,7 @@ export const sectionCreate = z.object({
       limit: z.number().int().min(1).max(24).optional(),
       source: z.enum(["featured", "latest", "all"]).optional(),
       theme: z.enum(["light", "sand", "forest", "dark"]).optional(),
-      layout: z.enum(["grid", "carousel", "list", "split"]).optional(),
+      layout: z.enum(["grid", "carousel", "list", "split", "staggered"]).optional(),
       category: optionalRef,
     })
     .optional(),

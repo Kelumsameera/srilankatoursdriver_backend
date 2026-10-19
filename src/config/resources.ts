@@ -1,6 +1,9 @@
 import type { ResourceConfig } from "../services/crud/crud.service.js";
 import {
   BlogPost,
+  Comment,
+  Like,
+  Story,
   Category,
   Destination,
   Excursion,
@@ -155,7 +158,50 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.blog],
     translatable: "blogPost",
     publishField: "status",
+    // A deleted post takes its likes and comments with it
+    onDelete: async (id) => {
+      await Comment.deleteMany({ target: id });
+      await Like.deleteMany({ target: id });
+    },
   },
+  // Comments on blog posts and guest stories: guests write them, admins approve (publish) or reject them.
+  // Moderated by whoever may edit the blog.
+  comments: {
+    name: "comment",
+    label: "Comment",
+    model: Comment,
+    permission: "blog",
+    createSchema: v.commentCreate,
+    updateSchema: v.commentUpdate,
+    searchFields: ["authorName", "text"],
+    defaultSort: { createdAt: -1 },
+    filters: { status: "status" },
+    populate: [{ path: "target", select: "title slug" }],
+    cacheTags: [CACHE_TAGS.blog, CACHE_TAGS.stories],
+    publishField: "status",
+  },
+  // Travel stories shared by signed-in guests. Published stories appear on /stories.
+  stories: {
+    name: "story",
+    label: "Story",
+    model: Story,
+    permission: "blog",
+    createSchema: v.storyCreate,
+    updateSchema: v.storyUpdate,
+    searchFields: ["title", "authorName", "text", "place"],
+    defaultSort: { createdAt: -1 },
+    filters: { status: "status", featured: "featured" },
+    listSelect: "title authorName place status featured media publishedAt createdAt",
+    cacheTags: [CACHE_TAGS.stories],
+    publishField: "status",
+    duplicateTitleField: "title",
+    // A deleted story takes its likes and comments with it
+    onDelete: async (id) => {
+      await Comment.deleteMany({ target: id });
+      await Like.deleteMany({ target: id });
+    },
+  },
+
   guestShorts: {
     name: "guestShort",
     label: "Guest short",

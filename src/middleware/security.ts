@@ -37,6 +37,8 @@ export const formLimiter = make(60 * 60 * 1000, 20);
 export const trackLimiter = make(15 * 60 * 1000, 600);
 /** Media uploads. */
 export const uploadLimiter = make(15 * 60 * 1000, 200);
+/** Website guests uploading story photos/videos: 30 files an hour per IP. */
+export const guestUploadLimiter = make(60 * 60 * 1000, 30);
 
 let warnedAboutProxy = false;
 

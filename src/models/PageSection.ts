@@ -58,7 +58,7 @@ const pageSectionSchema = new Schema(
       limit: { type: Number, default: 6, min: 1, max: 24 },
       source: { type: String, enum: ["featured", "latest", "all"], default: "featured" },
       theme: { type: String, enum: ["light", "sand", "forest", "dark"], default: "light" },
-      layout: { type: String, enum: ["grid", "carousel", "list", "split"], default: "grid" },
+      layout: { type: String, enum: ["grid", "carousel", "list", "split", "staggered"], default: "grid" },
       /** Optional category filter for list sections (e.g. "Seasonal" or "One-day" tours). */
       category: { type: Schema.Types.ObjectId, ref: "Category", default: null },
     },

@@ -14,6 +14,7 @@ export const MEDIA_FOLDERS = [
   "gallery",
   "blog",
   "guest-shorts",
+  "stories",
   "reviews",
   "seo",
   "pages",

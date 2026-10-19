@@ -66,6 +66,8 @@ adminRouter.use("/vehicles", crudRouter(RESOURCES.vehicles));
 adminRouter.use("/categories", crudRouter(RESOURCES.categories));
 adminRouter.use("/gallery", crudRouter(RESOURCES.gallery));
 adminRouter.use("/blog", crudRouter(RESOURCES.blog));
+adminRouter.use("/comments", crudRouter(RESOURCES.comments));
+adminRouter.use("/stories", crudRouter(RESOURCES.stories));
 adminRouter.use("/guest-shorts", crudRouter(RESOURCES.guestShorts));
 adminRouter.use("/reviews", crudRouter(RESOURCES.reviews));
 adminRouter.use("/faqs", crudRouter(RESOURCES.faqs));

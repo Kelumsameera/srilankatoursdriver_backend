@@ -18,6 +18,7 @@ export const CACHE_TAGS = {
   categories: "categories",
   gallery: "gallery",
   blog: "blog",
+  stories: "stories",
   guestShorts: "guest-shorts",
   reviews: "reviews",
   faqs: "faqs",
