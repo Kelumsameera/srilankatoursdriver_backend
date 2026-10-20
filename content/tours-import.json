@@ -1,0 +1,3280 @@
+{
+  "categories": [
+    {
+      "slug": "beach-tours",
+      "name": "Beach Tours",
+      "description": "Sri Lanka’s coast dazzles with golden beaches, turquoise waters, vibrant coral reefs, and bustling fishing villages, offering relaxation, adventure, rich culture, and breathtaking sunsets along its endless tropical shoreline."
+    },
+    {
+      "slug": "cultural-tours",
+      "name": "Cultural Tours",
+      "description": "Step into a land where every smile tells a story, every temple whispers history, and every meal is a celebration. Our cultural tours take you beyond sightseeing into the real Sri Lanka. Walk ancient paths, share tea with locals, witness timeless rituals, and feel the island’s rhythm in your soul. Whether it’s a village drumbeat or a monk’s quiet chant, you’ll carry the spirit of Sri Lanka long after your journey ends."
+    },
+    {
+      "slug": "adventure-tours",
+      "name": "Adventure Tours",
+      "description": "Experience thrilling adventure tours in Sri Lanka with hikes, wildlife safaris, water sports, and mountain treks—ideal for nature lovers and thrill-seekers chasing unforgettable outdoor moments."
+    },
+    {
+      "slug": "wildlife-tours",
+      "name": "Wildlife Tours",
+      "description": "Discover Sri Lanka’s rich biodiversity through lush rainforests, serene national parks, and vibrant wildlife. Experience nature up close in Yala, Wilpattu, Sinharaja, and Minneriya on unforgettable eco-adventures."
+    },
+    {
+      "slug": "ayurvedic-tours",
+      "name": "Ayurvedic Tours",
+      "description": "Rejuvenate your mind and body with Sri Lanka’s authentic Ayurvedic tours. Experience traditional healing, herbal treatments, massages, and wellness rituals rooted in centuries of ancient wisdom and natural balance."
+    },
+    {
+      "slug": "hill-country-tours",
+      "name": "Hill Country Tours",
+      "description": "Experience the beauty of Sri Lanka’s hill country with scenic train rides, lush tea estates, charming towns, and refreshing mountain air-perfect for nature lovers and peaceful getaways."
+    },
+    {
+      "slug": "honeymoon-tours",
+      "name": "Honeymoon Tours",
+      "description": "Celebrate love with romantic honeymoon tours in Sri Lanka, featuring stunning beaches, serene hill stations, luxury resorts, candlelight dinners, and unforgettable moments for couples seeking intimacy and adventure together."
+    },
+    {
+      "slug": "family-tours",
+      "name": "Family Tours",
+      "description": "Experience unforgettable family moments exploring Sri Lanka’s vibrant culture, stunning landscapes, wildlife safaris, beautiful beaches, and exciting activities suitable for all ages and interests."
+    },
+    {
+      "slug": "golf-tours",
+      "name": "Golf Tours",
+      "description": "Tee off across Sri Lanka’s scenic golf courses nestled in lush hills, coastal plains, and colonial settings. Enjoy world-class greens, cool climates, and unforgettable golfing experiences."
+    },
+    {
+      "slug": "ramayana-tours",
+      "name": "Ramayana Tours",
+      "description": "Explore sacred sites, epic tales, temples, caves, Ashok Vatika, Seetha Eliya, Hanuman footprints and Ravana’s palace where history, mythology, and breathtaking landscapes come together in one unforgettable journey."
+    }
+  ],
+  "tours": [
+    {
+      "importKey": "beach-tours:southern-sands-voyage",
+      "slug": "southern-sands-voyage",
+      "name": "Southern Sands Voyage",
+      "categorySlug": "beach-tours",
+      "duration": {
+        "days": 10,
+        "nights": 9
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/southern-sands-voyage/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival",
+            "fish market",
+            "mangroves",
+            "beach"
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 3,
+          "location": "Tangalle",
+          "activities_summary": [
+            "Hummanaya Blow Hole",
+            "Mulgirigala Temple",
+            "Kalametiya Bird Sanctuary",
+            "diving"
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 5,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Dondra Head",
+            "Coconut Tree Hill",
+            "whale and dolphin watching",
+            "surfing"
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Galle",
+          "activities_summary": [
+            "Unawatuna Jungle Beach",
+            "Galle Fort"
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 8,
+          "location": "Hikkaduwa",
+          "activities_summary": [
+            "Coral snorkeling",
+            "glass-bottom boat",
+            "kayaking"
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Bentota",
+          "activities_summary": [
+            "Kosgoda turtle hatchery",
+            "beach"
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer"
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Ten days along the southern coast, linking Negombo, Tangalle, Mirissa, Galle, Hikkaduwa and Bentota for beaches and coastal exploration.",
+      "description": "Ten days along the southern coast, linking Negombo, Tangalle, Mirissa, Galle, Hikkaduwa and Bentota for beaches and coastal exploration.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Tangalle",
+        "Mirissa",
+        "Galle",
+        "Hikkaduwa",
+        "Bentota"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "beach-tours:eastern-blue-bliss",
+      "slug": "eastern-blue-bliss",
+      "name": "Eastern Blue Bliss",
+      "categorySlug": "beach-tours",
+      "duration": {
+        "days": 12,
+        "nights": 11
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/eastern-blue-bliss/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival",
+            "fish market",
+            "mangroves"
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Habarana",
+          "activities_summary": [
+            "Sigiriya Rock"
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 4,
+          "location": "Trincomalee",
+          "activities_summary": [
+            "Pigeon Island",
+            "Swami Rock",
+            "Koneswaram Temple"
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 6,
+          "location": "Pasikudah",
+          "activities_summary": [
+            "Beach and swimming"
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 8,
+          "location": "Arugam Bay",
+          "activities_summary": [
+            "Surfing"
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Yala",
+          "activities_summary": [
+            "Yala National Park safari"
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Galle",
+          "activities_summary": [
+            "Galle Fort"
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Colombo",
+          "activities_summary": [
+            "Kosgoda turtle hatchery",
+            "shopping",
+            "city tour"
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer"
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A twelve-day coastal circuit through Trincomalee, Pasikudah and Arugam Bay, with Sigiriya heritage, a Yala safari and Galle sightseeing.",
+      "description": "A twelve-day coastal circuit through Trincomalee, Pasikudah and Arugam Bay, with Sigiriya heritage, a Yala safari and Galle sightseeing.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Habarana",
+        "Trincomalee",
+        "Pasikudah",
+        "Arugam Bay",
+        "Yala"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "beach-tours:sunrise-shores-tour",
+      "slug": "sunrise-shores-tour",
+      "name": "Sunrise Shores Tour",
+      "categorySlug": "beach-tours",
+      "duration": {
+        "days": 14,
+        "nights": 13
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/sunrise-shores-tour/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival",
+            "fish market",
+            "mangroves"
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 3,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Kitesurfing",
+            "dolphins"
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Mannar",
+          "activities_summary": [
+            "Mannar Fort"
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 6,
+          "location": "Jaffna",
+          "activities_summary": [
+            "KKS Beach",
+            "Casuarina Beach",
+            "Keerimalai springs"
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 8,
+          "location": "Trincomalee",
+          "activities_summary": [
+            "Pigeon Island",
+            "Swami Rock",
+            "Koneswaram Temple"
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 10,
+          "location": "Arugam Bay",
+          "activities_summary": [
+            "Surfing"
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Yala",
+          "activities_summary": [
+            "Yala National Park safari"
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Galle",
+          "activities_summary": [
+            "Galle Fort"
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Colombo",
+          "activities_summary": [
+            "City stop"
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer"
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A fourteen-day journey around the northern and eastern shores, combining Kalpitiya, Mannar, Jaffna, Trincomalee and Arugam Bay with southern highlights.",
+      "description": "A fourteen-day journey around the northern and eastern shores, combining Kalpitiya, Mannar, Jaffna, Trincomalee and Arugam Bay with southern highlights.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kalpitiya",
+        "Mannar",
+        "Jaffna",
+        "Trincomalee",
+        "Arugam Bay"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "cultural-tours:a-historical-journey",
+      "slug": "a-historical-journey",
+      "name": "A Historical Journey",
+      "categorySlug": "cultural-tours",
+      "duration": {
+        "days": 6,
+        "nights": 5
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/a-historical-journey/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and coastal rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Visit the Tooth Relic temple."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Dambulla",
+          "activities_summary": [
+            "Explore cave temples and Sigiriya."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Polonnaruwa",
+          "activities_summary": [
+            "Walk the archaeological ruins."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Colombo",
+          "activities_summary": [
+            "See the Red Mosque and city."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A six-day introduction to Sri Lankan heritage, connecting Kandy, the Cultural Triangle and Colombo.",
+      "description": "A six-day introduction to Sri Lankan heritage, connecting Kandy, the Cultural Triangle and Colombo.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kandy",
+        "Dambulla",
+        "Polonnaruwa",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "cultural-tours:the-cultural-odyssey",
+      "slug": "the-cultural-odyssey",
+      "name": "The Cultural Odyssey",
+      "categorySlug": "cultural-tours",
+      "duration": {
+        "days": 9,
+        "nights": 8
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-cultural-odyssey/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Dambulla",
+          "activities_summary": [
+            "Cave temples and Sigiriya climb."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Polonnaruwa",
+          "activities_summary": [
+            "Hiriwadunna village and ancient ruins."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Anuradhapura",
+          "activities_summary": [
+            "Sacred city and Ritigala visit."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Kandy",
+          "activities_summary": [
+            "Visit the Tooth Relic temple."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Kandy",
+          "activities_summary": [
+            "Explore historic surrounding temples."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Scenic rail journey and Seetha temple."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Colombo",
+          "activities_summary": [
+            "Shopping and free time."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Nine days of archaeological sites, village life and hill-country scenery, from the Cultural Triangle to Kandy and Nuwara Eliya.",
+      "description": "Nine days of archaeological sites, village life and hill-country scenery, from the Cultural Triangle to Kandy and Nuwara Eliya.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Dambulla",
+        "Polonnaruwa",
+        "Anuradhapura",
+        "Kandy",
+        "Nuwara Eliya"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "cultural-tours:the-ultimate-legacy",
+      "slug": "the-ultimate-legacy",
+      "name": "The Ultimate Legacy",
+      "categorySlug": "cultural-tours",
+      "duration": {
+        "days": 15,
+        "nights": 14
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-ultimate-legacy/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Anuradhapura",
+          "activities_summary": [
+            "Sacred stupas and historic ruins."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Jaffna",
+          "activities_summary": [
+            "Explore the Dutch fort."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Jaffna",
+          "activities_summary": [
+            "Library and Nagadeepa island visit."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Jaffna",
+          "activities_summary": [
+            "Point Pedro and Keerimalai excursion."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Dambulla",
+          "activities_summary": [
+            "Polonnaruwa ruins and Hiriwadunna village."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Dambulla",
+          "activities_summary": [
+            "Sigiriya and cave temples."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Kandy",
+          "activities_summary": [
+            "Tooth Relic temple and dance."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Kandy",
+          "activities_summary": [
+            "Embekke and nearby temple trail."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tea factory and Seetha temple."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Ella",
+          "activities_summary": [
+            "Train journey and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Kataragama",
+          "activities_summary": [
+            "Visit the pilgrimage town."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Galle",
+          "activities_summary": [
+            "Explore the fortified old town."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A fifteen-day circuit linking northern heritage, ancient capitals, hill-country rail travel and the southern coast.",
+      "description": "A fifteen-day circuit linking northern heritage, ancient capitals, hill-country rail travel and the southern coast.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Anuradhapura",
+        "Jaffna",
+        "Dambulla",
+        "Kandy",
+        "Nuwara Eliya"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "adventure-tours:southern-explorer",
+      "slug": "southern-explorer",
+      "name": "Southern Explorer",
+      "categorySlug": "adventure-tours",
+      "duration": {
+        "days": 6,
+        "nights": 5
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-southern-explorer/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Blowhole, Coconut Tree Hill and surfing."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Bentota",
+          "activities_summary": [
+            "Whale watching, Galle and river excursion."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and street food."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A six-day southern circuit combining a Yala safari, Mirissa beach activities, Galle heritage and Colombo sightseeing.",
+      "description": "A six-day southern circuit combining a Yala safari, Mirissa beach activities, Galle heritage and Colombo sightseeing.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Yala",
+        "Mirissa",
+        "Bentota",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "adventure-tours:venture-further",
+      "slug": "venture-further",
+      "name": "Venture Further",
+      "categorySlug": "adventure-tours",
+      "duration": {
+        "days": 11,
+        "nights": 10
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/venture-further/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Kitesurfing and beach time."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Dolphin excursion, fishing and cooking."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Wilpattu safari and lagoon cruise."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Travel inland and climb Sigiriya."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Habarana",
+          "activities_summary": [
+            "Pidurangala hike and Minneriya safari."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Kandy",
+          "activities_summary": [
+            "Hanthana mountain hike."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Hatton",
+          "activities_summary": [
+            "Kandy sightseeing before hill transfer."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Hatton",
+          "activities_summary": [
+            "Laxapana waterfall adventure activities."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Colombo",
+          "activities_summary": [
+            "City exploration and shopping."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "An eleven-day active route with Kalpitiya watersports, wildlife safaris, rock climbs and hill-country adventures.",
+      "description": "An eleven-day active route with Kalpitiya watersports, wildlife safaris, rock climbs and hill-country adventures.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kalpitiya",
+        "Habarana",
+        "Kandy",
+        "Hatton",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "adventure-tours:beyond-boundaries",
+      "slug": "beyond-boundaries",
+      "name": "Beyond Boundaries",
+      "categorySlug": "adventure-tours",
+      "duration": {
+        "days": 15,
+        "nights": 14
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/beyond-boundaries/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Temple visit and cultural performance."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Hike the Hanthana range."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Hatton",
+          "activities_summary": [
+            "Kitulgala rafting en route."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Hatton",
+          "activities_summary": [
+            "Laxapana waterfall adventure activities."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Ella",
+          "activities_summary": [
+            "Train journey, bridge and waterfalls."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and zipline."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Surfing and beach time."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Dolphin excursion and relaxation."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Hikkaduwa",
+          "activities_summary": [
+            "Visit Galle en route."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Hikkaduwa",
+          "activities_summary": [
+            "Kayaking and diving activities."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A fifteen-day outdoor journey through mountain trails, rafting country, wildlife parks and the southern beaches.",
+      "description": "A fifteen-day outdoor journey through mountain trails, rafting country, wildlife parks and the southern beaches.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kandy",
+        "Hatton",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "wildlife-tours:wild-trails-glimpse",
+      "slug": "wild-trails-glimpse",
+      "name": "Wild Trails – Glimpse",
+      "categorySlug": "wildlife-tours",
+      "duration": {
+        "days": 8,
+        "nights": 7
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/wild-wonders-and-heritage-trails-of-sri-lanka/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya wildlife safari."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Habarana",
+          "activities_summary": [
+            "Hiriwadunna village and Sigiriya."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Habarana",
+          "activities_summary": [
+            "Wasgamuwa wildlife excursion."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tea factory visit."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Colombo",
+          "activities_summary": [
+            "City exploration and free time."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Eight days linking elephant country, Sigiriya, village experiences and the highland landscapes around Nuwara Eliya.",
+      "description": "Eight days linking elephant country, Sigiriya, village experiences and the highland landscapes around Nuwara Eliya.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Habarana",
+        "Nuwara Eliya",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "wildlife-tours:wilderness-uncovered",
+      "slug": "wilderness-uncovered",
+      "name": "Wilderness Uncovered",
+      "categorySlug": "wildlife-tours",
+      "duration": {
+        "days": 14,
+        "nights": 13
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/wilderness-uncovered/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Wilpattu",
+          "activities_summary": [
+            "Transfer and relaxation."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Wilpattu",
+          "activities_summary": [
+            "Full-day wildlife safari."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Habarana",
+          "activities_summary": [
+            "Visit Anuradhapura en route."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Sigiriya climb and Minneriya safari."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla caves and Tooth temple."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Gardens and tea factory."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains and Moon Plains."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Ella",
+          "activities_summary": [
+            "Scenic railway journey."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and bridge."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda visits en route."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Bentota",
+          "activities_summary": [
+            "Beach relaxation."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A fourteen-day wildlife and heritage circuit, taking in Wilpattu, the Cultural Triangle, tea country, Ella, Yala and Bentota.",
+      "description": "A fourteen-day wildlife and heritage circuit, taking in Wilpattu, the Cultural Triangle, tea country, Ella, Yala and Bentota.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Wilpattu",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "wildlife-tours:deep-dive-into-the-wild",
+      "slug": "deep-dive-into-the-wild",
+      "name": "Deep Dive Into the Wild",
+      "categorySlug": "wildlife-tours",
+      "duration": {
+        "days": 17,
+        "nights": 16
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/deep-dive-into-the-wild/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Wilpattu",
+          "activities_summary": [
+            "Transfer and relaxation."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Wilpattu",
+          "activities_summary": [
+            "Full-day wildlife safari."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Habarana",
+          "activities_summary": [
+            "Explore Anuradhapura."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya wildlife safari."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tea factory visit."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains and Moon Plains."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Ella",
+          "activities_summary": [
+            "Scenic train and town exploration."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Arugam Bay",
+          "activities_summary": [
+            "Elephant Rock and beach time."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Arugam Bay",
+          "activities_summary": [
+            "Kumana wildlife excursion."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Udawalawe",
+          "activities_summary": [
+            "Elephant-country safari."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Yala",
+          "activities_summary": [
+            "Travel onward for afternoon safari."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Sinharaja",
+          "activities_summary": [
+            "Arrival and rainforest surroundings."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Sinharaja",
+          "activities_summary": [
+            "Rainforest walking excursion."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River excursion."
+          ]
+        },
+        {
+          "day_start": 16,
+          "day_end": 16,
+          "location": "Bentota",
+          "activities_summary": [
+            "Beach relaxation."
+          ]
+        },
+        {
+          "day_start": 17,
+          "day_end": 17,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Seventeen days across national parks, highland trails, eastern beaches and rainforest, ending with time on the southwest coast.",
+      "description": "Seventeen days across national parks, highland trails, eastern beaches and rainforest, ending with time on the southwest coast.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Wilpattu",
+        "Habarana",
+        "Nuwara Eliya",
+        "Ella",
+        "Arugam Bay"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "ayurvedic-tours:wander-awaken",
+      "slug": "wander-awaken",
+      "name": "Wander & Awaken",
+      "categorySlug": "ayurvedic-tours",
+      "duration": {
+        "days": 11,
+        "nights": 10
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/wander-awaken/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Tooth temple and cultural performance."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Yoga, meditation and leisure."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Ella",
+          "activities_summary": [
+            "Train journey, bridge and waterfalls."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Ella",
+          "activities_summary": [
+            "Yoga, meditation and leisure."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Beach time and surfing."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Yoga and wellness leisure."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "An eleven-day journey balancing yoga and leisure with Kandy culture, highland scenery, Yala wildlife and Mirissa beaches.",
+      "description": "An eleven-day journey balancing yoga and leisure with Kandy culture, highland scenery, Yala wildlife and Mirissa beaches.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala",
+        "Mirissa"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "ayurvedic-tours:the-wellness-retreat",
+      "slug": "the-wellness-retreat",
+      "name": "The Wellness Retreat",
+      "categorySlug": "ayurvedic-tours",
+      "duration": {
+        "days": 10,
+        "nights": 9
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-wellness-retreat/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 9,
+          "location": "Beruwala",
+          "activities_summary": [
+            "Arrival and wellness stay, days 1-9."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A ten-day coastal wellness stay in Beruwala, with time for relaxation and an individually arranged Ayurveda programme.",
+      "description": "A ten-day coastal wellness stay in Beruwala, with time for relaxation and an individually arranged Ayurveda programme.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Beruwala"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "hill-country-tours:hill-country-retreat",
+      "slug": "hill-country-retreat",
+      "name": "Hill Country Retreat",
+      "categorySlug": "hill-country-tours",
+      "duration": {
+        "days": 7,
+        "nights": 6
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/hillcountry-retreat/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Hill transfer and cultural performance."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Tooth temple and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Scenic railway and tea factory."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Hakgala gardens and Ambewela farm."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Colombo",
+          "activities_summary": [
+            "Shopping and free time."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Seven days exploring Kandy traditions, tea-growing highlands, gardens and the changing scenery between coast and mountains.",
+      "description": "Seven days exploring Kandy traditions, tea-growing highlands, gardens and the changing scenery between coast and mountains.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kandy",
+        "Nuwara Eliya",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "hill-country-tours:an-escape-to-the-hills",
+      "slug": "an-escape-to-the-hills",
+      "name": "An Escape to the Hills",
+      "categorySlug": "hill-country-tours",
+      "duration": {
+        "days": 9,
+        "nights": 8
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/a-quick-escape-to-the-hills/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Tooth temple and city viewpoint."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Ambuluwawa and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Scenic rail and tea factory."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Hakgala gardens and Ambewela farm."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Ella",
+          "activities_summary": [
+            "Rail journey and Nine Arch Bridge."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Colombo",
+          "activities_summary": [
+            "Explore Galle Fort en route."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A nine-day hill-country route combining Kandy, tea estates, scenic rail journeys and Ella before returning via Galle.",
+      "description": "A nine-day hill-country route combining Kandy, tea estates, scenic rail journeys and Ella before returning via Galle.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "honeymoon-tours:coastal-romance",
+      "slug": "coastal-romance",
+      "name": "Coastal Romance",
+      "categorySlug": "honeymoon-tours",
+      "duration": {
+        "days": 7,
+        "nights": 6
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/romantic-shores-and-sunset-moments-in-sri-lanka/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Colombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and street food."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Colombo",
+          "activities_summary": [
+            "Coastal sunset cruise."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Bentota",
+          "activities_summary": [
+            "Beach transfer and leisure."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River boat excursion."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Bentota",
+          "activities_summary": [
+            "Unhurried beach day."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Seven days and six nights combining Colombo city experiences with a relaxed Bentota coastal stay.",
+      "description": "Begin in Colombo with city sightseeing, shopping and a street food experience, followed by a sunset cruise. Continue to Bentota for beach time and a Madu River boat ride. This package focuses on the city and southwest coast rather than the Cultural Triangle or hill-country circuit.",
+      "highlights": [
+        "City Tour and Shopping",
+        "Street Food Experience",
+        "Sunset Cruise",
+        "Madu River Boat Ride"
+      ],
+      "researchedAt": "2026-10-20",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded.",
+      "referenceDestinations": [
+        "Colombo",
+        "Bentota"
+      ],
+      "comparisonSource": "https://www.walkerstours.com/sri-lanka-tours/honeymoon-tours/"
+    },
+    {
+      "importKey": "honeymoon-tours:romantic-retreat-in-the-hills",
+      "slug": "romantic-retreat-in-the-hills",
+      "name": "Romantic Retreat in the Hills",
+      "categorySlug": "honeymoon-tours",
+      "duration": {
+        "days": 12,
+        "nights": 11
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/romantic-retreat-in-the-hills/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya wildlife safari."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Habarana",
+          "activities_summary": [
+            "Hiriwadunna village and Sigiriya."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Habarana",
+          "activities_summary": [
+            "Balloon excursion and leisure."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla caves and cultural show."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Kandy",
+          "activities_summary": [
+            "Tooth temple and Ambuluwawa."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tea factory visit."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Ella",
+          "activities_summary": [
+            "Scenic railway journey."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Ella",
+          "activities_summary": [
+            "Bridge, Mini Adams Peak and falls."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Colombo",
+          "activities_summary": [
+            "Galle Fort visit en route."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Colombo",
+          "activities_summary": [
+            "Shopping and free time."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Twelve days and eleven nights through Negombo, Habarana, Kandy, Nuwara Eliya and Ella, returning via Galle and Colombo.",
+      "description": "Combine Minneriya wildlife viewing with Hiriwadunna village, Sigiriya, a hot air balloon experience and Dambulla Cave Temple. In Kandy, visit the Temple of the Tooth and Ambuluwawa Tower and experience a cultural show. Continue to a tea factory and the Ella sights: Nine Arch Bridge, Mini Adam's Peak and Ravana Falls. Visit Galle Dutch Fort before time for Colombo city sightseeing and shopping.",
+      "highlights": [
+        "City Tour and Shopping",
+        "Minneriya National Park",
+        "Hiriwadunna Village",
+        "Sigiriya",
+        "Hot Air Balloon",
+        "Dambulla Cave Temple",
+        "Temple of the Tooth",
+        "Cultural Show",
+        "Ambuluwawa Tower",
+        "Tea Factory",
+        "Nine Arch Bridge",
+        "Mini Adam's Peak",
+        "Ravana Falls",
+        "Galle Dutch Fort"
+      ],
+      "researchedAt": "2026-10-20",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded.",
+      "referenceDestinations": [
+        "Colombo",
+        "Negombo",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Galle",
+        "Sigiriya"
+      ],
+      "comparisonSource": "https://www.walkerstours.com/sri-lanka-tours/honeymoon-tours/"
+    },
+    {
+      "importKey": "honeymoon-tours:adventure-culture-love",
+      "slug": "adventure-culture-love",
+      "name": "Adventure, Culture & Love",
+      "categorySlug": "honeymoon-tours",
+      "duration": {
+        "days": 17,
+        "nights": 16
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/adventure-culture-love/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya wildlife safari."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Habarana",
+          "activities_summary": [
+            "Sigiriya and spa leisure."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Habarana",
+          "activities_summary": [
+            "Balloon ride and Anuradhapura cycling."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Hiriwadunna village excursion."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla caves and Tooth temple."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Kandy",
+          "activities_summary": [
+            "Ambuluwawa and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Ramboda Falls en route."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Strawberry farm and Gregory Lake."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Ella",
+          "activities_summary": [
+            "Scenic railway journey."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Yala",
+          "activities_summary": [
+            "Safari and evening dining."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Beach relaxation."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Mirissa",
+          "activities_summary": [
+            "Coastal leisure."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda en route."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Bentota",
+          "activities_summary": [
+            "River boat excursion."
+          ]
+        },
+        {
+          "day_start": 16,
+          "day_end": 16,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and street food."
+          ]
+        },
+        {
+          "day_start": 17,
+          "day_end": 17,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Seventeen days and sixteen nights combining cultural sites, hill-country scenery, wildlife and southern beaches.",
+      "description": "Explore Habarana, Sigiriya, Hiriwadunna and Minneriya, with a balloon experience and Anuradhapura visit. Discover Dambulla Cave Temple, Kandy's Temple of the Tooth, a cultural show, Ambuluwawa Tower and the Royal Botanical Garden. Continue through Nuwara Eliya for Ramboda Falls, Gregory Lake and a strawberry farm, then Ella for Nine Arch Bridge, Mini Adam's Peak and Ravana Falls. The southern section features Yala National Park, Mirissa, Galle Dutch Fort, Kosgoda Sea Turtle Hatchery and a Bentota sunset cruise. Finish with Colombo city sightseeing, shopping and street food.",
+      "highlights": [
+        "City Tour and Shopping",
+        "Street Food Experience",
+        "Minneriya National Park",
+        "Hiriwadunna Village",
+        "Sigiriya",
+        "Hot Air Balloon",
+        "Dambulla Cave Temple",
+        "Anuradhapura",
+        "Temple of the Tooth",
+        "Cultural Show",
+        "Ambuluwawa Tower",
+        "Royal Botanical Garden",
+        "Ramboda Falls",
+        "Gregory Lake",
+        "Strawberry Farm",
+        "Nine Arch Bridge",
+        "Mini Adam's Peak",
+        "Ravana Falls",
+        "Yala National Park",
+        "Galle Dutch Fort",
+        "Kosgoda Sea Turtle Hatchery",
+        "Sunset Cruise - Bentota"
+      ],
+      "researchedAt": "2026-10-20",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded.",
+      "referenceDestinations": [
+        "Colombo",
+        "Negombo",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala",
+        "Mirissa",
+        "Galle",
+        "Bentota",
+        "Sigiriya",
+        "Anuradhapura"
+      ],
+      "comparisonSource": "https://www.walkerstours.com/sri-lanka-tours/honeymoon-tours/"
+    },
+    {
+      "importKey": "honeymoon-tours:family-escapade-in-sri-lanka",
+      "slug": "family-escapade-in-sri-lanka",
+      "name": "Family Escapade in Sri Lanka",
+      "categorySlug": "family-tours",
+      "duration": {
+        "days": 19,
+        "nights": 18
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/family-escapade-in-paradise/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Kitesurfing and beach time."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Dolphins, fishing and cooking."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Wilpattu safari and lagoon."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Anuradhapura and Sigiriya visits."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya and Hiriwadunna village."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla, Tooth temple and dance."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Kandy",
+          "activities_summary": [
+            "Ambuluwawa and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Ramboda Falls and tea factory."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Ella",
+          "activities_summary": [
+            "Train, bridge and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and zipline."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Weligama",
+          "activities_summary": [
+            "Coastal transfer and sightseeing."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Weligama",
+          "activities_summary": [
+            "Family beach time."
+          ]
+        },
+        {
+          "day_start": 16,
+          "day_end": 16,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda en route."
+          ]
+        },
+        {
+          "day_start": 17,
+          "day_end": 17,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River boat excursion."
+          ]
+        },
+        {
+          "day_start": 18,
+          "day_end": 18,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 19,
+          "day_end": 19,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Explore Sri Lanka with your family over 19 days and 18 nights, combining wildlife, cultural visits, hill-country scenery and beach time.",
+      "description": "Travel from Negombo through Kalpitiya, Habarana, Kandy, Nuwara Eliya and Ella. Continue to Yala, Weligama and Bentota before Colombo and departure. The route combines safaris, heritage stops, outdoor activities and coastal relaxation.",
+      "highlights": [
+        "Kalpitiya coast",
+        "Cultural Triangle",
+        "Hill-country journey",
+        "Wildlife safaris",
+        "Southern beaches"
+      ],
+      "researchedAt": "2026-10-20",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded.",
+      "referenceDestinations": [
+        "Negombo",
+        "Kalpitiya",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala",
+        "Weligama",
+        "Bentota",
+        "Colombo"
+      ],
+      "previousItineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Kitesurfing and beach time."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Dolphins, fishing and cooking."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Wilpattu safari and lagoon."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Anuradhapura and Sigiriya visits."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya and Hiriwadunna village."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla, Tooth temple and dance."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Kandy",
+          "activities_summary": [
+            "Ambuluwawa and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Ramboda Falls and tea factory."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Ella",
+          "activities_summary": [
+            "Train, bridge and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and zipline."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Weligama",
+          "activities_summary": [
+            "Coastal transfer and sightseeing."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Weligama",
+          "activities_summary": [
+            "Family beach time."
+          ]
+        },
+        {
+          "day_start": 16,
+          "day_end": 16,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda en route."
+          ]
+        },
+        {
+          "day_start": 17,
+          "day_end": 17,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River boat excursion."
+          ]
+        },
+        {
+          "day_start": 18,
+          "day_end": 18,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 19,
+          "day_end": 19,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ]
+    },
+    {
+      "importKey": "family-tours:magical-sri-lanka",
+      "slug": "magical-sri-lanka",
+      "name": "Magical Sri Lanka",
+      "categorySlug": "family-tours",
+      "duration": {
+        "days": 15,
+        "nights": 14
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/magical-sri-lanka/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya wildlife safari."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Habarana",
+          "activities_summary": [
+            "Sigiriya and Hiriwadunna village."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla, Tooth temple and dance."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Ramboda Falls and tea factory."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Ella",
+          "activities_summary": [
+            "Train, bridge and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and zipline."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Weligama",
+          "activities_summary": [
+            "Coastal transfer and sightseeing."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Weligama",
+          "activities_summary": [
+            "Family beach time."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda en route."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River boat excursion."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A fifteen-day family route with cultural landmarks, hill-country adventures, wildlife safaris and time on the southern beaches.",
+      "description": "A fifteen-day family route with cultural landmarks, hill-country adventures, wildlife safaris and time on the southern beaches.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Negombo",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "family-tours:family-escapade-in-sri-lanka",
+      "slug": "family-escapade-in-sri-lanka",
+      "name": "Family Escapade in Sri Lanka",
+      "categorySlug": "family-tours",
+      "duration": {
+        "days": 19,
+        "nights": 18
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/family-escapade-in-paradise/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Negombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Kitesurfing and beach time."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Dolphins, fishing and cooking."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kalpitiya",
+          "activities_summary": [
+            "Wilpattu safari and lagoon."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Habarana",
+          "activities_summary": [
+            "Anuradhapura and Sigiriya visits."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Habarana",
+          "activities_summary": [
+            "Minneriya and Hiriwadunna village."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla, Tooth temple and dance."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Kandy",
+          "activities_summary": [
+            "Ambuluwawa and Peradeniya gardens."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Ramboda Falls and tea factory."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Horton Plains walking excursion."
+          ]
+        },
+        {
+          "day_start": 11,
+          "day_end": 11,
+          "location": "Ella",
+          "activities_summary": [
+            "Train, bridge and Ravana Falls."
+          ]
+        },
+        {
+          "day_start": 12,
+          "day_end": 12,
+          "location": "Ella",
+          "activities_summary": [
+            "Mini Adams Peak and zipline."
+          ]
+        },
+        {
+          "day_start": 13,
+          "day_end": 13,
+          "location": "Yala",
+          "activities_summary": [
+            "Afternoon wildlife safari."
+          ]
+        },
+        {
+          "day_start": 14,
+          "day_end": 14,
+          "location": "Weligama",
+          "activities_summary": [
+            "Coastal transfer and sightseeing."
+          ]
+        },
+        {
+          "day_start": 15,
+          "day_end": 15,
+          "location": "Weligama",
+          "activities_summary": [
+            "Family beach time."
+          ]
+        },
+        {
+          "day_start": 16,
+          "day_end": 16,
+          "location": "Bentota",
+          "activities_summary": [
+            "Galle and Kosgoda en route."
+          ]
+        },
+        {
+          "day_start": 17,
+          "day_end": 17,
+          "location": "Bentota",
+          "activities_summary": [
+            "Madu River boat excursion."
+          ]
+        },
+        {
+          "day_start": 18,
+          "day_end": 18,
+          "location": "Colombo",
+          "activities_summary": [
+            "City sights and shopping."
+          ]
+        },
+        {
+          "day_start": 19,
+          "day_end": 19,
+          "location": "Departure",
+          "activities_summary": [
+            "Airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Explore Sri Lanka with your family over 19 days and 18 nights, combining wildlife, cultural visits, hill-country scenery and beach time.",
+      "description": "Travel from Negombo through Kalpitiya, Habarana, Kandy, Nuwara Eliya and Ella. Continue to Yala, Weligama and Bentota before Colombo and departure. The route combines safaris, heritage stops, outdoor activities and coastal relaxation.",
+      "highlights": [
+        "Kalpitiya coast",
+        "Cultural Triangle",
+        "Hill-country journey",
+        "Wildlife safaris",
+        "Southern beaches"
+      ],
+      "researchedAt": "2026-10-20",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded.",
+      "referenceDestinations": [
+        "Negombo",
+        "Kalpitiya",
+        "Habarana",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Yala",
+        "Weligama",
+        "Bentota",
+        "Colombo"
+      ]
+    },
+    {
+      "importKey": "golf-tours:hillcountry-swing",
+      "slug": "hillcountry-swing",
+      "name": "Hillcountry Swing",
+      "categorySlug": "golf-tours",
+      "duration": {
+        "days": 6,
+        "nights": 5
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-hill-country-swing/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Colombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Kandy",
+          "activities_summary": [
+            "Colombo sightseeing and Tooth temple."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Victoria Golf Club round."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Negombo",
+          "activities_summary": [
+            "Second Victoria round; coastal transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A golf-focused break combining Colombo sightseeing, Kandy heritage and rounds at Victoria Golf Club.",
+      "description": "A golf-focused break combining Colombo sightseeing, Kandy heritage and rounds at Victoria Golf Club.\n\nThe listed duration is six days. The remaining daily schedule and departure date must be confirmed before booking.",
+      "editorialNote": "Reference advertises 6 days but describes departure on day 5. Confirm the remaining schedule and departure date before booking.",
+      "highlights": [
+        "Colombo",
+        "Kandy",
+        "Negombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "golf-tours:the-ultimate-golf-escape",
+      "slug": "the-ultimate-golf-escape",
+      "name": "The Ultimate Golf Escape",
+      "categorySlug": "golf-tours",
+      "duration": {
+        "days": 11,
+        "nights": 10
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/the-ultimate-golf-escape/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Colombo",
+          "activities_summary": [
+            "Arrival and rest."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Colombo",
+          "activities_summary": [
+            "Royal Colombo golf and sightseeing."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kandy",
+          "activities_summary": [
+            "Gardens, Tooth temple and dance."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kandy",
+          "activities_summary": [
+            "Victoria Golf Club round."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tea factory visit."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Golf club round."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Hambantota",
+          "activities_summary": [
+            "Southern coast transfer and leisure."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Hambantota",
+          "activities_summary": [
+            "Golf and beach leisure."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "Golf across Colombo, Kandy, Nuwara Eliya and Hambantota, with tea-country scenery and coastal relaxation between rounds.",
+      "description": "Golf across Colombo, Kandy, Nuwara Eliya and Hambantota, with tea-country scenery and coastal relaxation between rounds.\n\nThe listed duration is eleven days. The remaining daily schedule and departure date must be confirmed before booking.",
+      "editorialNote": "Reference advertises 11 days but describes departure on day 9. Confirm the remaining schedule and departure date before booking.",
+      "highlights": [
+        "Colombo",
+        "Kandy",
+        "Nuwara Eliya",
+        "Hambantota"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "ramayana-tours:ramayana-tour-01",
+      "slug": "ramayana-tour-01",
+      "name": "Ramayana Tour 01",
+      "categorySlug": "ramayana-tours",
+      "duration": {
+        "days": 5,
+        "nights": 4
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/ramayana-tour-01/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Kandy",
+          "activities_summary": [
+            "Munneswaram visit via Chilaw."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tooth temple and Hanuman temple."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Divurumpola, Seetha temple and Gayathri."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Colombo",
+          "activities_summary": [
+            "Anjaneyar temple and city tour."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Departure",
+          "activities_summary": [
+            "Kelaniya temple before airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A five-day temple trail through Chilaw, Kandy and Nuwara Eliya, returning via Colombo and Kelaniya.",
+      "description": "A five-day temple trail through Chilaw, Kandy and Nuwara Eliya, returning via Colombo and Kelaniya.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Kandy",
+        "Nuwara Eliya",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "ramayana-tours:ramayana-tour-02",
+      "slug": "ramayana-tour-02",
+      "name": "Ramayana Tour 02",
+      "categorySlug": "ramayana-tours",
+      "duration": {
+        "days": 7,
+        "nights": 6
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/ramayana-tour-02/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Kandy",
+          "activities_summary": [
+            "Munneswaram visit via Chilaw."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tooth temple and Hanuman temple."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Kataragama",
+          "activities_summary": [
+            "Seetha temple, Divurumpola and falls."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Bentota",
+          "activities_summary": [
+            "Kataragama worship and Rumassala."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Bentota",
+          "activities_summary": [
+            "Beach leisure."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Colombo",
+          "activities_summary": [
+            "Anjaneyar temple and city tour."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Departure",
+          "activities_summary": [
+            "Kelaniya temple before airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A seven-day pilgrimage route connecting hill-country Ramayana sites with Kataragama, the southern coast and Colombo.",
+      "description": "A seven-day pilgrimage route connecting hill-country Ramayana sites with Kataragama, the southern coast and Colombo.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Kandy",
+        "Nuwara Eliya",
+        "Kataragama",
+        "Bentota",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    },
+    {
+      "importKey": "ramayana-tours:ramayana-tour-03",
+      "slug": "ramayana-tour-03",
+      "name": "Ramayana Tour 03",
+      "categorySlug": "ramayana-tours",
+      "duration": {
+        "days": 10,
+        "nights": 9
+      },
+      "sourceUrl": "https://www.walkerstours.com/tours/ramayana-tour-03/",
+      "itineraryReference": [
+        {
+          "day_start": 1,
+          "day_end": 1,
+          "location": "Dambulla",
+          "activities_summary": [
+            "Munneswaram visit via Chilaw."
+          ]
+        },
+        {
+          "day_start": 2,
+          "day_end": 2,
+          "location": "Trincomalee",
+          "activities_summary": [
+            "Sigiriya climb en route."
+          ]
+        },
+        {
+          "day_start": 3,
+          "day_end": 3,
+          "location": "Trincomalee",
+          "activities_summary": [
+            "Koneswaram temple and hot springs."
+          ]
+        },
+        {
+          "day_start": 4,
+          "day_end": 4,
+          "location": "Kandy",
+          "activities_summary": [
+            "Dambulla caves and city tour."
+          ]
+        },
+        {
+          "day_start": 5,
+          "day_end": 5,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Tooth temple and Hanuman temple."
+          ]
+        },
+        {
+          "day_start": 6,
+          "day_end": 6,
+          "location": "Nuwara Eliya",
+          "activities_summary": [
+            "Divurumpola and Seetha temple visits."
+          ]
+        },
+        {
+          "day_start": 7,
+          "day_end": 7,
+          "location": "Bentota",
+          "activities_summary": [
+            "Transfer to the coast."
+          ]
+        },
+        {
+          "day_start": 8,
+          "day_end": 8,
+          "location": "Bentota",
+          "activities_summary": [
+            "Rumassala and Galle excursion."
+          ]
+        },
+        {
+          "day_start": 9,
+          "day_end": 9,
+          "location": "Colombo",
+          "activities_summary": [
+            "Anjaneyar temple and city tour."
+          ]
+        },
+        {
+          "day_start": 10,
+          "day_end": 10,
+          "location": "Departure",
+          "activities_summary": [
+            "Kelaniya temple before airport transfer."
+          ]
+        }
+      ],
+      "publicationStatus": "draft",
+      "referenceOnly": true,
+      "requiresEditorialReview": true,
+      "shortDescription": "A ten-day spiritual and cultural circuit including Chilaw, Sigiriya, Trincomalee, Kandy, Nuwara Eliya and the southern coast.",
+      "description": "A ten-day spiritual and cultural circuit including Chilaw, Sigiriya, Trincomalee, Kandy, Nuwara Eliya and the southern coast.\n\nExplore the stops and activities in the itinerary below. Excursions depend on availability, weather and local conditions.",
+      "highlights": [
+        "Dambulla",
+        "Trincomalee",
+        "Kandy",
+        "Nuwara Eliya",
+        "Bentota",
+        "Colombo"
+      ],
+      "researchedAt": "2026-10-19",
+      "descriptionOrigin": "Original concise route summary based on cited reference; commercial terms and images excluded."
+    }
+  ]
+}

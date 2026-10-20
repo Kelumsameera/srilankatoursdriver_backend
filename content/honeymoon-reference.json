@@ -1,0 +1,373 @@
+{
+  "sourceUrl": "https://www.walkerstours.com/sri-lanka-tours/honeymoon-tours/",
+  "verifiedAt": "2026-10-20",
+  "method": "Read original comparison-matrix DOM including empty cells. The fourth column is entirely empty; its membership remains unknown.",
+  "tourSlugs": [
+    "coastal-romance",
+    "romantic-retreat-in-the-hills",
+    "adventure-culture-love",
+    "family-escapade-in-sri-lanka"
+  ],
+  "rows": [
+    {
+      "label": "Colombo",
+      "type": "location",
+      "membership": [
+        true,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "City Tour and Shopping",
+      "type": "activity",
+      "membership": [
+        true,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Street Food Experience",
+      "type": "activity",
+      "membership": [
+        true,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Sunset Cruise",
+      "type": "activity",
+      "membership": [
+        true,
+        false,
+        false,
+        null
+      ]
+    },
+    {
+      "label": "Bentota",
+      "type": "location",
+      "membership": [
+        true,
+        false,
+        false,
+        null
+      ]
+    },
+    {
+      "label": "Madu River Boat Ride",
+      "type": "activity",
+      "membership": [
+        true,
+        false,
+        false,
+        null
+      ]
+    },
+    {
+      "label": "Negombo",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Habarana",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Minneriya National Park",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Hiriwadunna Village",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Sigiriya",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Hot Air Balloon",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Dambulla Cave Temple",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Anuradhapura",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Kandy",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Temple of the Tooth",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Cultural Show",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Ambuluwawa Tower",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Royal Botanical Garden",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Nuwara Eliya",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Ramboda Falls",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Gregory Lake",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Strawberry Farm",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Tea Factory",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        false,
+        null
+      ]
+    },
+    {
+      "label": "Ella",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Nine Arch Bridge",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Mini Adam's Peak",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Ravana Falls",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Yala",
+      "type": "location",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Yala National Park",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Mirissa",
+      "type": "location",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Galle",
+      "type": "location",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Galle Dutch Fort",
+      "type": "activity",
+      "membership": [
+        false,
+        true,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Kosgoda Sea Turtle Hatchery",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Bentota",
+      "type": "location",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    },
+    {
+      "label": "Sunset Cruise - Bentota",
+      "type": "activity",
+      "membership": [
+        false,
+        false,
+        true,
+        null
+      ]
+    }
+  ]
+}

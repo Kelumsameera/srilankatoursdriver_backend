@@ -229,7 +229,15 @@ export async function getPublicBySlug(key: "tours" | "destinations" | "excursion
 }
 
 export async function listCategories(kind: string, locale?: string) {
-  const rows = await Category.find({ kind: kind as CategoryKind, enabled: true }).sort({ order: 1, name: 1 }).select("-__v").lean();
+  // Draft-only and unused categories must not lead visitors to empty tour lists.
+  const publishedCategories = kind === "tour"
+    ? await Tour.distinct("category", { status: "published" })
+    : undefined;
+  const rows = await Category.find({
+    kind: kind as CategoryKind,
+    enabled: true,
+    ...(publishedCategories ? { _id: { $in: publishedCategories } } : {}),
+  }).sort({ order: 1, name: 1 }).select("-__v").lean();
   return localize("category", rows as AnyRecord[], locale);
 }
 

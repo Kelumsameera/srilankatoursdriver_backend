@@ -63,3 +63,6 @@ Desktop.ini
 
 # Seed backups (may contain content exports)
 backups/
+
+# Translation work files
+translation-work/
