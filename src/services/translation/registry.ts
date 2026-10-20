@@ -51,6 +51,8 @@ export const TRANSLATABLE: Record<string, TranslatableEntity> = {
       "included.*",
       "excluded.*",
       "itinerary.*.title",
+      // Place name of the day, shown as route chips on tour cards and tour pages
+      "itinerary.*.location",
       "itinerary.*.description",
       "itinerary.*.activities.*",
       "itinerary.*.travelTime",
