@@ -17,6 +17,8 @@ import * as media from "../../controllers/media.controller.js";
 import * as users from "../../controllers/users.controller.js";
 import * as system from "../../controllers/system.controller.js";
 import * as translations from "../../controllers/translations.controller.js";
+import * as uiMessages from "../../controllers/ui-messages.controller.js";
+import { uiLocaleParams, uiMessagesUpdate } from "../../validations/ui-messages.js";
 import { crmController } from "../../controllers/crm.controller.js";
 import * as analytics from "../../controllers/analytics.controller.js";
 import * as customers from "../../controllers/customers.controller.js";
@@ -57,6 +59,9 @@ adminRouter.get("/branding", can("branding:read"), settings.getBranding);
 adminRouter.put("/branding", can("branding:update"), validate({ body: brandingUpdate }), settings.updateBranding);
 adminRouter.get("/languages", can("translations:read"), settings.listLanguages);
 adminRouter.put("/languages", can("translations:update"), validate({ body: languageUpdate }), settings.updateLanguages);
+// Website UI text overrides (Translations → UI texts)
+adminRouter.get("/ui-messages/:locale", can("translations:read"), validate({ params: uiLocaleParams }), uiMessages.list);
+adminRouter.put("/ui-messages/:locale", can("translations:update"), validate({ params: uiLocaleParams, body: uiMessagesUpdate }), uiMessages.update);
 
 /* ───────────── Generic CMS resources ───────────── */
 adminRouter.use("/tours", crudRouter(RESOURCES.tours));

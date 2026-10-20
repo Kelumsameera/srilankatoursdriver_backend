@@ -27,6 +27,7 @@ export { Review } from "./Review.js";
 export { FAQ } from "./FAQ.js";
 export { Translation } from "./Translation.js";
 export { Language } from "./Language.js";
+export { UiMessage } from "./UiMessage.js";
 export { SeoMetadata } from "./SeoMetadata.js";
 export { ContactMessage } from "./ContactMessage.js";
 export { ActivityLog } from "./ActivityLog.js";

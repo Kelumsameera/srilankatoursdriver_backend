@@ -18,6 +18,11 @@ const brandSettingSchema = new Schema(
       secondary: { type: String, default: "#1f7a4d" },
       accent: { type: String, default: "#c99a3b" },
     },
+    /**
+     * Site Appearance settings (validations/theme.ts). Stored as one object; fields that are missing fall back to
+     * the frontend defaults, so documents saved before this field existed need no migration.
+     */
+    theme: { type: Schema.Types.Mixed, default: undefined },
   },
   { timestamps: true },
 );

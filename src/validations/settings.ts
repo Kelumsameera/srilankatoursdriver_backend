@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { httpUrl, mapEmbedUrl, mediaAsset, safeUrl, shortText } from "./common.js";
 import { SUPPORTED_LOCALES } from "../config/locales.js";
+import { themeSettings } from "./theme.js";
 
 const phone = z
   .string()
@@ -108,6 +109,8 @@ export const brandingUpdate = z
     logoWidth: z.number().int().min(40).max(600),
     logoHeight: z.number().int().min(16).max(300),
     colors: z.object({ primary: hexColor, secondary: hexColor, accent: hexColor }).partial(),
+    /** Site Appearance page: colours, fonts, background, shape and custom CSS (replaced as a whole on save). */
+    theme: themeSettings,
   })
   .partial();
 
@@ -121,4 +124,6 @@ export const languageUpdate = z.object({
       }),
     )
     .min(1),
+  /** Language for visitors whose browser language is not enabled (and for x-default). */
+  defaultLanguage: z.enum(SUPPORTED_LOCALES).optional(),
 });

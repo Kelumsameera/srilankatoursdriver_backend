@@ -51,22 +51,34 @@ export async function updateBranding(patch: AnyRecord) {
   return doc.toObject();
 }
 
-export async function listLanguages(onlyEnabled = false) {
-  const rows = await Language.find(onlyEnabled ? { enabled: true } : {}).sort({ order: 1 }).lean();
-  if (rows.length > 0) return rows;
-  // Fallback before seeding: expose all supported locales.
-  return SUPPORTED_LOCALES.map((code, i) => ({
-    code,
-    name: LOCALE_META[code].name,
-    nativeName: LOCALE_META[code].nativeName,
-    rtl: Boolean(LOCALE_META[code].rtl),
-    enabled: true,
-    order: i,
-  }));
+/** The website's default language: Site Settings value when that language is enabled, otherwise English. */
+async function defaultLanguageCode(enabled: string[]) {
+  const settings = await SiteSetting.findOne({ key: "default" }).select("defaultLanguage").lean();
+  const code = settings?.defaultLanguage ?? "en";
+  return enabled.includes(code) ? code : "en";
 }
 
-export async function updateLanguages(languages: { code: string; enabled: boolean; order?: number }[]) {
+export async function listLanguages(onlyEnabled = false) {
+  const stored = await Language.find(onlyEnabled ? { enabled: true } : {}).sort({ order: 1 }).lean();
+  // Fallback before seeding: expose all supported locales.
+  const rows =
+    stored.length > 0
+      ? stored
+      : SUPPORTED_LOCALES.map((code, i) => ({
+          code,
+          name: LOCALE_META[code].name,
+          nativeName: LOCALE_META[code].nativeName,
+          rtl: Boolean(LOCALE_META[code].rtl),
+          enabled: true,
+          order: i,
+        }));
+  const defaultCode = await defaultLanguageCode(rows.filter((r) => r.enabled).map((r) => r.code));
+  return rows.map((r) => ({ ...r, isDefault: r.code === defaultCode }));
+}
+
+export async function updateLanguages(languages: { code: string; enabled: boolean; order?: number }[], defaultLanguage?: string) {
   if (!languages.some((l) => l.code === "en" && l.enabled)) throw ApiError.badRequest("English (source language) must stay enabled");
+  if (defaultLanguage && !languages.some((l) => l.code === defaultLanguage && l.enabled)) throw ApiError.badRequest("The default language must be enabled");
   await Language.bulkWrite(
     languages.map((l) => ({
       updateOne: {
@@ -83,5 +95,6 @@ export async function updateLanguages(languages: { code: string; enabled: boolea
       },
     })),
   );
+  if (defaultLanguage) await SiteSetting.updateOne({ key: "default" }, { $set: { defaultLanguage } });
   return listLanguages();
 }

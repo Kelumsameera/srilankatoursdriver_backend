@@ -6,6 +6,8 @@ import { identifyCustomer } from "../../controllers/customer-auth.controller.js"
 import { validate } from "../../middleware/validate.js";
 import { formLimiter, trackLimiter } from "../../middleware/security.js";
 import * as analytics from "../../controllers/analytics.controller.js";
+import * as uiMessages from "../../controllers/ui-messages.controller.js";
+import { uiLocaleParams } from "../../validations/ui-messages.js";
 import { trackBody } from "../../validations/analytics.js";
 import { bookingCreate, contactCreate, tailorMadeCreate } from "../../validations/crm.js";
 import { publicReviewSubmit } from "../../validations/content.js";
@@ -29,6 +31,7 @@ export const publicRouter = Router();
 publicRouter.get("/site-settings", lq, c.siteSettings);
 publicRouter.get("/branding", c.branding);
 publicRouter.get("/languages", c.languages);
+publicRouter.get("/ui-messages/:locale", validate({ params: uiLocaleParams }), uiMessages.list);
 publicRouter.get("/navigation", lq, c.navigation);
 publicRouter.get("/hero", lq, c.hero);
 publicRouter.get("/pages/:slug", sq, c.page);

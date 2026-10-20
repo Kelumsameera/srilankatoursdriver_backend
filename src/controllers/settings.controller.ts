@@ -33,9 +33,10 @@ export async function listLanguages(_req: Request, res: Response) {
 }
 
 export async function updateLanguages(req: Request, res: Response) {
-  const { languages } = req.validated?.body as { languages: { code: string; enabled: boolean; order?: number }[] };
-  const rows = await settings.updateLanguages(languages);
+  const { languages, defaultLanguage } = req.validated?.body as { languages: { code: string; enabled: boolean; order?: number }[]; defaultLanguage?: string };
+  const rows = await settings.updateLanguages(languages, defaultLanguage);
   await logActivity(req, { action: "settings_update", entity: "language", summary: "Updated enabled languages" });
   revalidateFrontend(CACHE_TAGS.languages);
+  if (defaultLanguage) revalidateFrontend(CACHE_TAGS.settings);
   return ok(res, rows, "Languages saved");
 }
