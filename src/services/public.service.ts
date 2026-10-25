@@ -81,7 +81,8 @@ export const PUBLIC_RESOURCES = {
     translatable: "excursion",
     categoryKind: "excursion",
     filter: () => ({ status: "published" }),
-    sort: { featured: -1, order: 1, createdAt: -1 },
+    // A-Z by name, so visitors can find their starting place
+    sort: { title: 1 },
     listSelect: "title slug shortDescription heroMedia duration price currency priceNote location category featured destination",
     populate: [categoryPopulate],
     searchFields: ["title", "location"],
