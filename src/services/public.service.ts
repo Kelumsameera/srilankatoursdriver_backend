@@ -62,7 +62,7 @@ export const PUBLIC_RESOURCES = {
     sort: { featured: -1, order: 1, createdAt: -1 },
     listSelect:
       // itinerary.location: lets cards show the real day-by-day route without loading full itineraries.
-      "title slug shortDescription heroMedia durationDays durationNights price currency priceNote startLocation endLocation category tourType difficulty featured highlights destinations itinerary.location",
+      "title slug shortDescription heroMedia durationDays durationNights price currency priceNote groupPrices startLocation endLocation category tourType difficulty featured highlights destinations itinerary.location",
     populate: [categoryPopulate, { path: "destinations", select: "name slug", match: { status: "published" } }],
     searchFields: ["title", "shortDescription"],
   },
@@ -170,6 +170,8 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
     filter.$and = [...((filter.$and as unknown[]) ?? []), { $or: cfg.searchFields.map((f) => ({ [f]: rx })) }];
   }
 
+  if (key === "tours") return listToursBySeason(cfg, filter, page, limit, opts.locale);
+
   let query = cfg.model
     .find(filter)
     .select(cfg.listSelect ?? HIDDEN)
@@ -180,6 +182,55 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
   const [rows, total] = await Promise.all([query.lean(), cfg.model.countDocuments(filter)]);
   const localized = cfg.translatable ? await localize(cfg.translatable, rows as AnyRecord[], opts.locale) : rows;
   const items = await pricesInUsd(key, localized as AnyRecord[]);
+  return { items, meta: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } };
+}
+
+/**
+ * Seasonal tour packages: Down South runs November–June, East Coast July–October (Sri Lanka time).
+ * The tours that are in season now come first, day tours and the rest sit in the middle,
+ * and the out-of-season packages go to the end. Each tour carries its `seasonRank`
+ * (0 in season, 1 day tour, 2 other, 3 off season) so the site can group the cards.
+ */
+const SEASONAL_TOUR_CATEGORIES = { downSouth: "down-south-tours", eastCoast: "east-coast-tours" };
+const DAY_TOUR_CATEGORY = "day-tours";
+
+export function seasonalTourCategories(now = new Date()) {
+  const month = Number(new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Colombo", month: "numeric" }).format(now));
+  const eastCoastSeason = month >= 7 && month <= 10;
+  return eastCoastSeason
+    ? { inSeason: SEASONAL_TOUR_CATEGORIES.eastCoast, offSeason: SEASONAL_TOUR_CATEGORIES.downSouth }
+    : { inSeason: SEASONAL_TOUR_CATEGORIES.downSouth, offSeason: SEASONAL_TOUR_CATEGORIES.eastCoast };
+}
+
+async function listToursBySeason(cfg: PublicResource, filter: AnyRecord, page: number, limit: number, locale?: string) {
+  const { inSeason, offSeason } = seasonalTourCategories();
+  const cats = await Category.find({ kind: "tour", slug: { $in: [inSeason, offSeason, DAY_TOUR_CATEGORY] } }).select("_id slug").lean();
+  const ranks: [string, number][] = [[inSeason, 0], [DAY_TOUR_CATEGORY, 1], [offSeason, 3]];
+  const branches = ranks.flatMap(([slug, rank]) => {
+    const id = cats.find((c) => c.slug === slug)?._id;
+    return id ? [{ case: { $eq: ["$category", id] }, then: rank }] : [];
+  });
+  const project = Object.fromEntries((cfg.listSelect ?? "").split(/\s+/).filter(Boolean).map((f) => [f, 1]));
+
+  // aggregate() skips Mongoose casting, so string ids in the filter (category, destination) are cast here
+  const match = Tour.find().cast(Tour, filter);
+  const rows = await Tour.aggregate([
+    { $match: match },
+    {
+      $addFields: {
+        seasonRank: branches.length ? { $switch: { branches, default: 2 } } : 2,
+      },
+    },
+    // Seasonal packages run shortest to longest (5, 8, 10, 12, 14 days)
+    { $addFields: { seasonDays: { $cond: [{ $in: ["$seasonRank", [0, 3]] }, { $ifNull: ["$durationDays", 0] }, 0] } } },
+    { $sort: { seasonRank: 1, seasonDays: 1, ...cfg.sort, _id: 1 } },
+    { $skip: (page - 1) * limit },
+    { $limit: limit },
+    { $project: { ...project, seasonRank: 1 } },
+  ]);
+  const [populated, total] = await Promise.all([Tour.populate(rows, cfg.populate ?? []), Tour.countDocuments(filter)]);
+  const localized = await localize("tour", populated as unknown as AnyRecord[], locale);
+  const items = await pricesInUsd("tours", localized);
   return { items, meta: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } };
 }
 

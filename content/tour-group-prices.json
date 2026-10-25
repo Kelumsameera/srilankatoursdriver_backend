@@ -1,0 +1,527 @@
+{
+  "source": "Tours package prices.xlsx (Desktop), 2026-10-25",
+  "currency": "USD",
+  "note": "Price is for the whole group. 1 USD = 325 LKR in the sheet.",
+  "tours": {
+    "05-days-down-south": [
+      {
+        "persons": 1,
+        "price": 420,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 450,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 480,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 530,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 560,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 590,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 610,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 620,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 630,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 640,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "05-days-east-coast": [
+      {
+        "persons": 1,
+        "price": 430,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 460,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 490,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 540,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 570,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 600,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 620,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 630,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 640,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 650,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "08-days-down-south": [
+      {
+        "persons": 1,
+        "price": 630,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 660,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 690,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 800,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 820,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 840,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 870,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 880,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 890,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 900,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "08-days-east-coast": [
+      {
+        "persons": 1,
+        "price": 640,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 670,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 700,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 820,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 840,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 860,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 890,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 900,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 910,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 920,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "10-days-down-south": [
+      {
+        "persons": 1,
+        "price": 770,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 800,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 830,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1000,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1020,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1040,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1060,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1070,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1080,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1090,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "10-days-east-coast": [
+      {
+        "persons": 1,
+        "price": 780,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 810,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 840,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1040,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1060,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1080,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1120,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1130,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1140,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1150,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "12-days-down-south": [
+      {
+        "persons": 1,
+        "price": 900,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 920,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 940,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1170,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1190,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1210,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1250,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1260,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1270,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1280,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "12-days-east-coast": [
+      {
+        "persons": 1,
+        "price": 910,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 940,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 970,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1180,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1200,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1220,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1290,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1300,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1310,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1320,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "14-days-down-south": [
+      {
+        "persons": 1,
+        "price": 1000,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 1030,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 1060,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1260,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1280,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1300,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1370,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1380,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1390,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1400,
+        "vehicle": "KDH Highroof"
+      }
+    ],
+    "14-days-east-coast": [
+      {
+        "persons": 1,
+        "price": 1040,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 2,
+        "price": 1070,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 3,
+        "price": 1100,
+        "vehicle": "Sedan car"
+      },
+      {
+        "persons": 4,
+        "price": 1350,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 5,
+        "price": 1370,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 6,
+        "price": 1390,
+        "vehicle": "KDH Flatroof"
+      },
+      {
+        "persons": 7,
+        "price": 1440,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 8,
+        "price": 1450,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 9,
+        "price": 1460,
+        "vehicle": "KDH Highroof"
+      },
+      {
+        "persons": 10,
+        "price": 1470,
+        "vehicle": "KDH Highroof"
+      }
+    ]
+  }
+}

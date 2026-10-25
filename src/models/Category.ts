@@ -16,6 +16,8 @@ const categorySchema = new Schema(
     description: { type: String, trim: true, default: "" },
     icon: { type: String, trim: true, default: "" },
     image: mediaAssetSchema,
+    /** Seasonal tour categories: background video for the tours page hero while this category is in season. */
+    heroVideo: mediaAssetSchema,
     order: { type: Number, default: 0 },
     enabled: { type: Boolean, default: true },
   },

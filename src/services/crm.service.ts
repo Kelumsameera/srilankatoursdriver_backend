@@ -4,6 +4,7 @@ import { ApiError } from "../utils/ApiError.js";
 import { assertObjectId, escapeRegex, fingerprint, generateReference, sha256, toCsv } from "../utils/helpers.js";
 import type { ListQuery } from "../validations/common.js";
 import { env } from "../config/env.js";
+import { groupPriceFor, type GroupPrice } from "../utils/group-price.js";
 import { notifyNewSubmission } from "./email/email.service.js";
 
 type AnyRecord = Record<string, unknown>;
@@ -49,6 +50,7 @@ export async function createBooking(input: AnyRecord, accountId?: string) {
   if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
 
   let itemTitle = "";
+  let listPrice: { price: number; vehicle?: string; currency: string } | undefined;
   const type = String(data.type ?? "general");
   const refModel: Record<string, Model<AnyRecord>> = {
     tour: Tour as unknown as Model<AnyRecord>,
@@ -58,15 +60,20 @@ export async function createBooking(input: AnyRecord, accountId?: string) {
   if (type in refModel) {
     const id = data[type];
     if (!id) throw ApiError.badRequest(`Please choose a ${type}`, [{ path: type, message: "Required" }]);
-    const item = await refModel[type].findOne({ _id: id, status: "published" }).select("title name").lean();
+    const item = await refModel[type].findOne({ _id: id, status: "published" }).select("title name groupPrices currency").lean();
     if (!item) throw ApiError.badRequest(`Selected ${type} is not available`);
     itemTitle = String(item.title ?? item.name ?? "");
+    // The price the booking form showed, from the tour's price list – staff can change the quote later
+    const persons = Number(data.adults ?? 1) + Number(data.children ?? 0);
+    const row = groupPriceFor(item.groupPrices as GroupPrice[] | undefined, persons);
+    if (row) listPrice = { price: row.price, vehicle: row.vehicle, currency: String(item.currency ?? "USD") };
   }
   for (const k of ["tour", "excursion", "vehicle"]) if (k !== type) delete data[k];
 
   const booking = await Booking.create({
     ...data,
     itemTitle,
+    ...(listPrice && { quotedAmount: listPrice.price, currency: listPrice.currency }),
     account: accountId,
     submissionHash,
     reference: generateReference("B"),
@@ -89,6 +96,8 @@ export async function createBooking(input: AnyRecord, accountId?: string) {
       ["End date", booking.endDate],
       ["Adults", booking.adults],
       ["Children", booking.children],
+      ["Children's ages", booking.childrenAges?.length ? booking.childrenAges.join(", ") : ""],
+      ["Price list", listPrice ? `${listPrice.currency} ${listPrice.price}${listPrice.vehicle ? ` (${listPrice.vehicle})` : ""}` : ""],
       ["Pickup", booking.pickupLocation],
       ["Message", booking.message],
     ],
@@ -345,6 +354,7 @@ const EXPORT_COLUMNS: Record<CrmKind, { key: string; label: string }[]> = {
     { key: "endDate", label: "End" },
     { key: "adults", label: "Adults" },
     { key: "children", label: "Children" },
+    { key: "childrenAges", label: "Children's ages" },
     { key: "pickupLocation", label: "Pickup" },
     { key: "quotedAmount", label: "Quoted" },
     { key: "currency", label: "Currency" },

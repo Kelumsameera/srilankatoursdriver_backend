@@ -13,6 +13,16 @@ const hotelSchema = new Schema(
   { _id: false },
 );
 
+/** Price list row: the whole group's price (tour currency) and the vehicle used for that many travellers. */
+const groupPriceSchema = new Schema(
+  {
+    persons: { type: Number, required: true, min: 1 },
+    price: { type: Number, required: true, min: 0 },
+    vehicle: { type: String, trim: true, default: "" },
+  },
+  { _id: false },
+);
+
 const tourSchema = new Schema(
   {
     title: { type: String, required: true, trim: true, maxlength: 160 },
@@ -26,6 +36,8 @@ const tourSchema = new Schema(
     price: { type: Number, min: 0 },
     currency: { type: String, trim: true, uppercase: true, default: "USD" },
     priceNote: { type: String, trim: true, default: "" },
+    /** Booking form price list: price by number of travellers (empty → no automatic price). */
+    groupPrices: { type: [groupPriceSchema], default: [] },
     startLocation: { type: String, trim: true, default: "" },
     endLocation: { type: String, trim: true, default: "" },
     destinations: [{ type: Schema.Types.ObjectId, ref: "Destination" }],

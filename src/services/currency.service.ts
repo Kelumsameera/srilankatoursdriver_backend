@@ -71,6 +71,9 @@ export function toUsd<T extends Record<string, unknown>>(doc: T, rates: Rates): 
     for (const f of AMOUNT_FIELDS) {
       if (typeof doc[f] === "number") out[f] = Math.round((doc[f] as number) / rate);
     }
+    if (Array.isArray(doc.groupPrices)) {
+      out.groupPrices = (doc.groupPrices as { price: number }[]).map((g) => ({ ...g, price: Math.round(g.price / rate) }));
+    }
   }
   return out as T;
 }

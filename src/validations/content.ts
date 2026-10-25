@@ -53,6 +53,16 @@ export const tourCreate = z.object({
   price: optionalNumber,
   currency,
   priceNote: shortText(160).optional(),
+  groupPrices: z
+    .array(
+      z.object({
+        persons: z.number().int().min(1).max(100),
+        price: z.number().min(0),
+        vehicle: shortText(80).optional(),
+      }),
+    )
+    .max(100)
+    .optional(),
   startLocation: shortText(160).optional(),
   endLocation: shortText(160).optional(),
   destinations: z.array(objectId).max(60).optional(),
@@ -179,6 +189,7 @@ export const categoryCreate = z.object({
   description: shortText(1000).optional(),
   icon: shortText(60).optional(),
   image: mediaAsset,
+  heroVideo: mediaAsset,
   order: z.number().int().optional(),
   enabled: z.boolean().optional(),
 });

@@ -1,0 +1,1373 @@
+{
+  "_readme": "Additive attraction content and locally bundled AI-generated illustrative media. Existing CMS images and text are preserved; entries are matched by title within each destination. Run src/scripts/seed-attraction-media.ts --apply after bundling frontend assets.",
+  "sources": [
+    "https://www.srilanka.travel/tourist-attractions",
+    "https://www.treasury.gov.lk/si/web/si-about/section/history",
+    "https://kelaniyatemple.lk/",
+    "https://ccf.gov.lk/heritage-sites/sigiriya-rock-fortress/",
+    "https://www.srilanka.travel/attraction?attraction_id=163",
+    "https://srilanka.travel/index.php?destination=5&route=attractions%2Fdestination"
+  ],
+  "destinations": [
+    {
+      "slug": "sigiriya",
+      "experiences": [
+        {
+          "title": "Sigiriya Rock Fortress",
+          "image": {
+            "url": "/images/editorial/destination-sigiriya.webp",
+            "alt": "AI-generated illustrative view of Sigiriya Rock Fortress in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Pidurangala Rock",
+          "image": {
+            "url": "/images/editorial/attractions/pidurangala.webp",
+            "alt": "AI-generated illustrative view of Pidurangala Rock in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Sigiriya Museum",
+          "image": {
+            "url": "/images/editorial/attractions/sigiriya-museum.webp",
+            "alt": "AI-generated illustrative view of Sigiriya Museum in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Sigiriya Water Gardens",
+          "description": "Explore the landscaped pools, channels and pathways at the foot of the rock fortress.",
+          "image": {
+            "url": "/images/editorial/destination-sigiriya.webp",
+            "alt": "AI-generated illustrative view of Sigiriya Water Gardens in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "arugam-bay",
+      "experiences": [
+        {
+          "title": "Kumana National Park",
+          "image": {
+            "url": "/images/editorial/attractions/kumana.webp",
+            "alt": "AI-generated illustrative view of Kumana National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Learn Surfing",
+          "image": {
+            "url": "/images/editorial/attractions/arugam-surfing.webp",
+            "alt": "AI-generated illustrative view of Learn Surfing in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Kudumbigala Sanctuary",
+          "image": {
+            "url": "/images/editorial/attractions/kudumbigala.webp",
+            "alt": "AI-generated illustrative view of Kudumbigala Sanctuary in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ella",
+      "experiences": [
+        {
+          "title": "Nine Arch Bridge",
+          "image": {
+            "url": "/images/editorial/destination-ella-nine-arch-bridge.webp",
+            "alt": "AI-generated illustrative view of Nine Arch Bridge in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Little Adam's Peak",
+          "image": {
+            "url": "/images/editorial/attractions/little-adams-peak.webp",
+            "alt": "AI-generated illustrative view of Little Adam's Peak in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Ravana Falls",
+          "image": {
+            "url": "/images/editorial/attractions/ravana-falls.webp",
+            "alt": "AI-generated illustrative view of Ravana Falls in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Ella Rock",
+          "image": {
+            "url": "/images/editorial/attractions/ella-rock.webp",
+            "alt": "AI-generated illustrative view of Ella Rock in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kandy",
+      "experiences": [
+        {
+          "title": "Temple of the Tooth",
+          "image": {
+            "url": "/images/editorial/attractions/tooth-temple.webp",
+            "alt": "AI-generated illustrative view of Temple of the Tooth in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Royal Botanical Gardens",
+          "image": {
+            "url": "/images/editorial/attractions/peradeniya.webp",
+            "alt": "AI-generated illustrative view of Royal Botanical Gardens in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Kandy Lake",
+          "image": {
+            "url": "/images/editorial/attractions/kandy-lake.webp",
+            "alt": "AI-generated illustrative view of Kandy Lake in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "galle",
+      "experiences": [
+        {
+          "title": "Galle Fort",
+          "image": {
+            "url": "/images/editorial/destination-galle.webp",
+            "alt": "AI-generated illustrative view of Galle Fort in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Galle Lighthouse",
+          "image": {
+            "url": "/images/editorial/destination-galle.webp",
+            "alt": "AI-generated illustrative view of Galle Lighthouse in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Dutch-era streets",
+          "image": {
+            "url": "/images/editorial/attractions/galle-streets.webp",
+            "alt": "AI-generated illustrative view of Dutch-era streets in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nuwara-eliya",
+      "experiences": [
+        {
+          "title": "Tea plantations",
+          "image": {
+            "url": "/images/editorial/destination-nuwara-eliya.webp",
+            "alt": "AI-generated illustrative view of Tea plantations in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Gregory Lake",
+          "image": {
+            "url": "/images/editorial/attractions/gregory-lake.webp",
+            "alt": "AI-generated illustrative view of Gregory Lake in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Hakgala Botanical Garden",
+          "image": {
+            "url": "/images/editorial/attractions/hakgala.webp",
+            "alt": "AI-generated illustrative view of Hakgala Botanical Garden in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Victoria Park",
+          "image": {
+            "url": "/images/editorial/attractions/victoria-park.webp",
+            "alt": "AI-generated illustrative view of Victoria Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "yala",
+      "experiences": [
+        {
+          "title": "Yala National Park",
+          "image": {
+            "url": "/images/editorial/destination-yala-elephant.webp",
+            "alt": "AI-generated illustrative view of Yala National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Wildlife safari",
+          "image": {
+            "url": "/images/editorial/attractions/yala-safari.webp",
+            "alt": "AI-generated illustrative view of Wildlife safari in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Leopard watching",
+          "image": {
+            "url": "/images/editorial/attractions/yala-leopard.webp",
+            "alt": "AI-generated illustrative view of Leopard watching in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mirissa",
+      "experiences": [
+        {
+          "title": "Whale watching",
+          "image": {
+            "url": "/images/editorial/attractions/whale-watching.webp",
+            "alt": "AI-generated illustrative view of Whale watching in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Mirissa Beach",
+          "image": {
+            "url": "/images/editorial/destination-mirissa.webp",
+            "alt": "AI-generated illustrative view of Mirissa Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Coconut Tree Hill",
+          "image": {
+            "url": "/images/editorial/attractions/coconut-tree-hill.webp",
+            "alt": "AI-generated illustrative view of Coconut Tree Hill in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bentota",
+      "experiences": [
+        {
+          "title": "Bentota Beach",
+          "image": {
+            "url": "/images/editorial/destination-bentota.webp",
+            "alt": "AI-generated illustrative view of Bentota Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Bentota River",
+          "image": {
+            "url": "/images/editorial/attractions/bentota-river.webp",
+            "alt": "AI-generated illustrative view of Bentota River in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Water sports",
+          "image": {
+            "url": "/images/editorial/attractions/bentota-water-sports.webp",
+            "alt": "AI-generated illustrative view of Water sports in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Lunuganga",
+          "image": {
+            "url": "/images/editorial/attractions/lunuganga.webp",
+            "alt": "AI-generated illustrative view of Lunuganga in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "habarana",
+      "experiences": [
+        {
+          "title": "Minneriya National Park",
+          "image": {
+            "url": "/images/editorial/attractions/minneriya.webp",
+            "alt": "AI-generated illustrative view of Minneriya National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Kaudulla National Park",
+          "image": {
+            "url": "/images/editorial/attractions/kaudulla.webp",
+            "alt": "AI-generated illustrative view of Kaudulla National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Village experiences",
+          "image": {
+            "url": "/images/editorial/attractions/habarana-village.webp",
+            "alt": "AI-generated illustrative view of Village experiences in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hatton",
+      "experiences": [
+        {
+          "title": "Tea estates",
+          "image": {
+            "url": "/images/editorial/destination-hatton.webp",
+            "alt": "AI-generated illustrative view of Tea estates in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Castlereagh Reservoir",
+          "image": {
+            "url": "/images/editorial/destination-hatton.webp",
+            "alt": "AI-generated illustrative view of Castlereagh Reservoir in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Adam's Peak access",
+          "image": {
+            "url": "/images/editorial/attractions/adams-peak.webp",
+            "alt": "AI-generated illustrative view of Adam's Peak access in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hikkaduwa",
+      "experiences": [
+        {
+          "title": "Hikkaduwa Beach",
+          "image": {
+            "url": "/images/editorial/destination-hikkaduwa.webp",
+            "alt": "AI-generated illustrative view of Hikkaduwa Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Coral reefs",
+          "image": {
+            "url": "/images/editorial/attractions/hikkaduwa-reef.webp",
+            "alt": "AI-generated illustrative view of Coral reefs in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Snorkelling",
+          "image": {
+            "url": "/images/editorial/attractions/hikkaduwa-snorkelling.webp",
+            "alt": "AI-generated illustrative view of Snorkelling in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "polonnaruwa",
+      "experiences": [
+        {
+          "title": "Gal Vihara",
+          "image": {
+            "url": "/images/editorial/destination-polonnaruwa.webp",
+            "alt": "AI-generated illustrative view of Gal Vihara in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Royal Palace",
+          "image": {
+            "url": "/images/editorial/attractions/polonnaruwa-palace.webp",
+            "alt": "AI-generated illustrative view of Royal Palace in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Polonnaruwa Ancient City",
+          "image": {
+            "url": "/images/editorial/attractions/polonnaruwa-vatadage.webp",
+            "alt": "AI-generated illustrative view of Polonnaruwa Ancient City in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dambulla",
+      "experiences": [
+        {
+          "title": "Dambulla Cave Temple",
+          "image": {
+            "url": "/images/editorial/destination-dambulla.webp",
+            "alt": "AI-generated illustrative view of Dambulla Cave Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Golden Temple",
+          "image": {
+            "url": "/images/editorial/attractions/golden-temple.webp",
+            "alt": "AI-generated illustrative view of Golden Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Popham's Arboretum",
+          "image": {
+            "url": "/images/editorial/attractions/pophams-arboretum.webp",
+            "alt": "AI-generated illustrative view of Popham's Arboretum in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "jaffna",
+      "experiences": [
+        {
+          "title": "Nallur Temple",
+          "image": {
+            "url": "/images/editorial/destination-jaffna.webp",
+            "alt": "AI-generated illustrative view of Nallur Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Nagadeepa Temple",
+          "image": {
+            "url": "/images/editorial/attractions/nagadeepa.webp",
+            "alt": "AI-generated illustrative view of Nagadeepa Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Delft Island",
+          "image": {
+            "url": "/images/editorial/attractions/delft-island.webp",
+            "alt": "AI-generated illustrative view of Delft Island in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "colombo",
+      "experiences": [
+        {
+          "title": "Independence Square",
+          "image": {
+            "url": "/images/editorial/attractions/independence-square.webp",
+            "alt": "AI-generated illustrative view of Independence Square in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Colombo National Museum",
+          "image": {
+            "url": "/images/editorial/attractions/colombo-museum.webp",
+            "alt": "AI-generated illustrative view of Colombo National Museum in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Gangaramaya Temple",
+          "image": {
+            "url": "/images/editorial/attractions/gangaramaya.webp",
+            "alt": "AI-generated illustrative view of Gangaramaya Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kalpitiya",
+      "experiences": [
+        {
+          "title": "Dolphin watching",
+          "image": {
+            "url": "/images/editorial/attractions/kalpitiya-dolphins.webp",
+            "alt": "AI-generated illustrative view of Dolphin watching in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Kitesurfing",
+          "image": {
+            "url": "/images/editorial/attractions/kalpitiya-kitesurfing.webp",
+            "alt": "AI-generated illustrative view of Kitesurfing in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Kalpitiya Lagoon",
+          "image": {
+            "url": "/images/editorial/destination-kalpitiya.webp",
+            "alt": "AI-generated illustrative view of Kalpitiya Lagoon in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kitulgala",
+      "experiences": [
+        {
+          "title": "Whitewater rafting",
+          "image": {
+            "url": "/images/editorial/attractions/kitulgala-rafting.webp",
+            "alt": "AI-generated illustrative view of Whitewater rafting in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Belilena Cave",
+          "image": {
+            "url": "/images/editorial/attractions/belilena.webp",
+            "alt": "AI-generated illustrative view of Belilena Cave in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Makandawa Rainforest",
+          "image": {
+            "url": "/images/editorial/attractions/makandawa.webp",
+            "alt": "AI-generated illustrative view of Makandawa Rainforest in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "negombo",
+      "experiences": [
+        {
+          "title": "Negombo Lagoon",
+          "image": {
+            "url": "/images/editorial/destination-negombo.webp",
+            "alt": "AI-generated illustrative view of Negombo Lagoon in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Fish market",
+          "image": {
+            "url": "/images/editorial/attractions/negombo-fish-market.webp",
+            "alt": "AI-generated illustrative view of Fish market in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Dutch Canal",
+          "image": {
+            "url": "/images/editorial/attractions/negombo-dutch-canal.webp",
+            "alt": "AI-generated illustrative view of Dutch Canal in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "passikudah",
+      "experiences": [
+        {
+          "title": "Passikudah Beach",
+          "image": {
+            "url": "/images/editorial/destination-passikudah.webp",
+            "alt": "AI-generated illustrative view of Passikudah Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Swimming",
+          "image": {
+            "url": "/images/editorial/attractions/passikudah-swimming.webp",
+            "alt": "AI-generated illustrative view of Swimming in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Water activities",
+          "image": {
+            "url": "/images/editorial/attractions/passikudah-kayaking.webp",
+            "alt": "AI-generated illustrative view of Water activities in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sinharaja",
+      "experiences": [
+        {
+          "title": "Guided rainforest walk",
+          "image": {
+            "url": "/images/editorial/destination-sinharaja.webp",
+            "alt": "AI-generated illustrative view of Guided rainforest walk in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Birdwatching",
+          "image": {
+            "url": "/images/editorial/attractions/sinharaja-birds.webp",
+            "alt": "AI-generated illustrative view of Birdwatching in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Waterfall trek",
+          "image": {
+            "url": "/images/editorial/attractions/sinharaja-waterfall.webp",
+            "alt": "AI-generated illustrative view of Waterfall trek in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tangalle",
+      "experiences": [
+        {
+          "title": "Rekawa Turtle Conservation Project",
+          "image": {
+            "url": "/images/editorial/attractions/rekawa-turtles.webp",
+            "alt": "AI-generated illustrative view of Rekawa Turtle Conservation Project in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Hummanaya Blowhole",
+          "image": {
+            "url": "/images/editorial/attractions/hummanaya.webp",
+            "alt": "AI-generated illustrative view of Hummanaya Blowhole in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Mulkirigala Temple",
+          "image": {
+            "url": "/images/editorial/attractions/mulkirigala.webp",
+            "alt": "AI-generated illustrative view of Mulkirigala Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "experiences": [
+        {
+          "title": "Koneswaram Temple",
+          "image": {
+            "url": "/images/editorial/destination-trincomalee.webp",
+            "alt": "AI-generated illustrative view of Koneswaram Temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Fort Frederick",
+          "image": {
+            "url": "/images/editorial/attractions/fort-frederick.webp",
+            "alt": "AI-generated illustrative view of Fort Frederick in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Nilaveli Beach",
+          "image": {
+            "url": "/images/editorial/attractions/nilaveli.webp",
+            "alt": "AI-generated illustrative view of Nilaveli Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Pigeon Island",
+          "image": {
+            "url": "/images/editorial/attractions/pigeon-island.webp",
+            "alt": "AI-generated illustrative view of Pigeon Island in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "experiences": [
+        {
+          "title": "Udawalawe National Park",
+          "image": {
+            "url": "/images/editorial/destination-udawalawe.webp",
+            "alt": "AI-generated illustrative view of Udawalawe National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Jeep safari",
+          "image": {
+            "url": "/images/editorial/attractions/udawalawe-safari.webp",
+            "alt": "AI-generated illustrative view of Jeep safari in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Elephant Transit Home",
+          "image": {
+            "url": "/images/editorial/attractions/elephant-transit-home.webp",
+            "alt": "AI-generated illustrative view of Elephant Transit Home in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "unawatuna",
+      "experiences": [
+        {
+          "title": "Jungle Beach",
+          "image": {
+            "url": "/images/editorial/attractions/jungle-beach.webp",
+            "alt": "AI-generated illustrative view of Jungle Beach in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Japanese Peace Pagoda",
+          "image": {
+            "url": "/images/editorial/attractions/peace-pagoda.webp",
+            "alt": "AI-generated illustrative view of Japanese Peace Pagoda in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Dalawella rope swings",
+          "image": {
+            "url": "/images/editorial/attractions/dalawella.webp",
+            "alt": "AI-generated illustrative view of Dalawella rope swings in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "weligama",
+      "experiences": [
+        {
+          "title": "Surf lessons",
+          "image": {
+            "url": "/images/editorial/attractions/weligama-surfing.webp",
+            "alt": "AI-generated illustrative view of Surf lessons in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Weligama Bay",
+          "image": {
+            "url": "/images/editorial/destination-weligama.webp",
+            "alt": "AI-generated illustrative view of Weligama Bay in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Stilt fishing",
+          "image": {
+            "url": "/images/editorial/attractions/stilt-fishing.webp",
+            "alt": "AI-generated illustrative view of Stilt fishing in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "wellawaya",
+      "experiences": [
+        {
+          "title": "Buduruwagala",
+          "image": {
+            "url": "/images/editorial/attractions/buduruwagala.webp",
+            "alt": "AI-generated illustrative view of Buduruwagala in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Diyaluma Falls",
+          "image": {
+            "url": "/images/editorial/attractions/diyaluma.webp",
+            "alt": "AI-generated illustrative view of Diyaluma Falls in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Rural landscapes",
+          "image": {
+            "url": "/images/editorial/attractions/wellawaya-rural.webp",
+            "alt": "AI-generated illustrative view of Rural landscapes in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "wilpattu",
+      "experiences": [
+        {
+          "title": "Wilpattu National Park",
+          "image": {
+            "url": "/images/editorial/destination-wilpattu.webp",
+            "alt": "AI-generated illustrative view of Wilpattu National Park in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Safari",
+          "image": {
+            "url": "/images/editorial/attractions/wilpattu-safari.webp",
+            "alt": "AI-generated illustrative view of Safari in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        },
+        {
+          "title": "Villu wetlands",
+          "image": {
+            "url": "/images/editorial/attractions/wilpattu-villu.webp",
+            "alt": "AI-generated illustrative view of Villu wetlands in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    {
+      "slug": "old-parliament-building",
+      "experiences": [
+        {
+          "title": "Old Parliament exterior",
+          "description": "See the sandstone columns and classical frontage from the public streets around the building. Interior access is not included.",
+          "image": {
+            "url": "/images/editorial/attractions/old-parliament.webp",
+            "alt": "AI-generated illustrative view of Old Parliament exterior in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Galle Face promenade",
+          "description": "Combine the exterior view with a walk along the nearby oceanfront promenade.",
+          "image": {
+            "url": "/images/editorial/attractions/galle-face.webp",
+            "alt": "AI-generated illustrative view of Galle Face promenade in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Colombo Lighthouse",
+          "description": "Explore the lighthouse area in Colombo Fort as a nearby coastal stop.",
+          "image": {
+            "url": "/images/editorial/attractions/colombo-lighthouse.webp",
+            "alt": "AI-generated illustrative view of Colombo Lighthouse in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "jami-ul-alfar-mosque",
+      "experiences": [
+        {
+          "title": "Red Mosque exterior",
+          "description": "Admire the distinctive red-and-white facade from Pettah's streets; visits inside depend on the mosque's current visitor arrangements.",
+          "image": {
+            "url": "/images/editorial/attractions/red-mosque.webp",
+            "alt": "AI-generated illustrative view of Red Mosque exterior in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Pettah Market",
+          "description": "Explore the surrounding market streets, with produce stalls, textiles and everyday city life.",
+          "image": {
+            "url": "/images/editorial/attractions/pettah-market.webp",
+            "alt": "AI-generated illustrative view of Pettah Market in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Khan Clock Tower",
+          "description": "Look for this historic clock tower on a walk through the Pettah district.",
+          "image": {
+            "url": "/images/editorial/attractions/khan-clock-tower.webp",
+            "alt": "AI-generated illustrative view of Khan Clock Tower in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "colombo-city",
+      "experiences": [
+        {
+          "title": "Lotus Tower and Beira Lake",
+          "description": "View the city's distinctive tower rising above the lake and surrounding skyline.",
+          "image": {
+            "url": "/images/editorial/destination-colombo.webp",
+            "alt": "AI-generated illustrative view of Lotus Tower and Beira Lake in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Independence Square",
+          "description": "Walk around the stone-pillared memorial hall, its lion sculptures and surrounding gardens.",
+          "image": {
+            "url": "/images/editorial/attractions/independence-square.webp",
+            "alt": "AI-generated illustrative view of Independence Square in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Colombo National Museum",
+          "description": "Explore the museum's colonial exterior and, during opening hours, its collections of Sri Lankan heritage.",
+          "image": {
+            "url": "/images/editorial/attractions/colombo-museum.webp",
+            "alt": "AI-generated illustrative view of Colombo National Museum in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "gangaramaya-temple",
+      "experiences": [
+        {
+          "title": "Gangaramaya temple courtyard",
+          "description": "Explore the main temple's courtyard and shrine buildings respectfully, following the temple's visitor guidance.",
+          "image": {
+            "url": "/images/editorial/attractions/gangaramaya.webp",
+            "alt": "AI-generated illustrative view of Gangaramaya temple courtyard in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Seema Malaka",
+          "description": "Visit the lakeside pavilions associated with Gangaramaya for a quieter view across Beira Lake.",
+          "image": {
+            "url": "/images/editorial/attractions/seema-malaka.webp",
+            "alt": "AI-generated illustrative view of Seema Malaka in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Beira Lake",
+          "description": "Enjoy the surrounding lake views as part of a walk around this part of central Colombo.",
+          "image": {
+            "url": "/images/editorial/destination-colombo.webp",
+            "alt": "AI-generated illustrative view of Beira Lake in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "galle-face-green",
+      "experiences": [
+        {
+          "title": "Galle Face promenade",
+          "description": "Walk beside the Indian Ocean along the seafront edge of the green.",
+          "image": {
+            "url": "/images/editorial/attractions/galle-face.webp",
+            "alt": "AI-generated illustrative view of Galle Face promenade in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Sunset by the ocean",
+          "description": "Watch the changing evening light from the promenade, with the city and sea close together.",
+          "image": {
+            "url": "/images/editorial/attractions/galle-face-sunset.webp",
+            "alt": "AI-generated illustrative view of Sunset by the ocean in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Old Parliament exterior",
+          "description": "See the classical sandstone facade at the northern end of the Galle Face area from public viewpoints.",
+          "image": {
+            "url": "/images/editorial/attractions/old-parliament.webp",
+            "alt": "AI-generated illustrative view of Old Parliament exterior in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "kelaniya-raja-maha-viharaya",
+      "experiences": [
+        {
+          "title": "Kelaniya stupa",
+          "description": "Walk respectfully around the white stupa and the open temple courtyard.",
+          "image": {
+            "url": "/images/editorial/attractions/kelaniya-stupa.webp",
+            "alt": "AI-generated illustrative view of Kelaniya stupa in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Kelaniya shrine hall",
+          "description": "See the shrine hall's traditional architecture and carved details, and follow local guidance around worship areas.",
+          "image": {
+            "url": "/images/editorial/attractions/kelaniya-shrine.webp",
+            "alt": "AI-generated illustrative view of Kelaniya shrine hall in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Kelani River",
+          "description": "Combine the temple visit with a view of the nearby river landscape.",
+          "image": {
+            "url": "/images/editorial/attractions/kelani-river.webp",
+            "alt": "AI-generated illustrative view of Kelani River in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "yala-national-park",
+      "experiences": [
+        {
+          "title": "Wildlife safari",
+          "description": "Explore the park's scrub forest, tracks and waterholes with an authorised safari operator. Wildlife sightings vary.",
+          "image": {
+            "url": "/images/editorial/attractions/yala-safari.webp",
+            "alt": "AI-generated illustrative view of Wildlife safari in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Sithulpawwa rock temple",
+          "description": "Consider the rock-top Buddhist temple in the wider Yala area as a separate cultural stop, subject to local access.",
+          "image": {
+            "url": "/images/editorial/attractions/sithulpawwa.webp",
+            "alt": "AI-generated illustrative view of Sithulpawwa rock temple in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Patanangala coast",
+          "description": "See the wild coastline and rocky headland where permitted by your park guide; this is not a swimming stop.",
+          "image": {
+            "url": "/images/editorial/attractions/patanangala.webp",
+            "alt": "AI-generated illustrative view of Patanangala coast in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    },
+    {
+      "slug": "st-marys-church-negombo",
+      "experiences": [
+        {
+          "title": "St Mary's Church exterior",
+          "description": "See the pale church frontage and its bell towers from Grand Street in central Negombo.",
+          "image": {
+            "url": "/images/editorial/attractions/st-marys-exterior.webp",
+            "alt": "AI-generated illustrative view of St Mary's Church exterior in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Painted nave and ceiling",
+          "description": "During permitted visiting times, step quietly into the nave to appreciate the church's painted ceiling and worship space.",
+          "image": {
+            "url": "/images/editorial/attractions/st-marys-nave.webp",
+            "alt": "AI-generated illustrative view of Painted nave and ceiling in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        },
+        {
+          "title": "Dutch Canal",
+          "description": "Add a nearby canal-side walk to explore another part of Negombo's historic townscape.",
+          "image": {
+            "url": "/images/editorial/attractions/negombo-dutch-canal.webp",
+            "alt": "AI-generated illustrative view of Dutch Canal in Sri Lanka",
+            "resourceType": "image",
+            "width": 1536,
+            "height": 1024
+          },
+          "verified": true
+        }
+      ]
+    }
+  ]
+}

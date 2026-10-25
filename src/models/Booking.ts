@@ -43,6 +43,8 @@ const bookingSchema = new Schema(
     endDate: Date,
     adults: { type: Number, min: 1, default: 1 },
     children: { type: Number, min: 0, default: 0 },
+    /** Age of each child, in years (one entry per child). */
+    childrenAges: { type: [Number], default: [] },
     pickupLocation: { type: String, trim: true, default: "" },
     message: { type: String, trim: true, default: "" },
     status: { type: String, enum: BOOKING_STATUSES, default: "new", index: true },

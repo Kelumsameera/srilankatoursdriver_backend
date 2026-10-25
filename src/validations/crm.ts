@@ -37,10 +37,15 @@ export const bookingCreate = z
     endDate: optionalDate,
     adults: z.number().int().min(1).max(100),
     children: z.number().int().min(0).max(100).optional(),
+    childrenAges: z.array(z.number().int().min(0).max(17)).max(100).optional(),
     pickupLocation: shortText(200).optional(),
     message: shortText(3000).optional(),
     locale,
     website: honeypot,
+  })
+  .refine((b) => (b.childrenAges?.length ?? 0) <= (b.children ?? 0), {
+    message: "More ages than children",
+    path: ["childrenAges"],
   })
   .refine((b) => !b.endDate || b.endDate >= b.startDate, { message: "End date must be after start date", path: ["endDate"] })
   .refine((b) => b.startDate.getTime() >= Date.now() - 24 * 3600 * 1000, {
