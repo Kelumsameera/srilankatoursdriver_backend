@@ -9,6 +9,18 @@ const phone = z
   .max(30)
   .regex(/^[+\d][\d\s()-]*$|^$/, "Invalid phone number");
 
+const currencyCode = z.string().trim().toUpperCase().regex(/^[A-Z]{3}$/, "Use a 3-letter currency code");
+
+/** One destination row of a transfer price table (airport rates and excursion rates). */
+const transferRateRow = z.object({
+  destination: shortText(120).min(1),
+  car: z.number().min(0).max(100_000_000).nullable().optional(),
+  van: z.number().min(0).max(100_000_000).nullable().optional(),
+  bus: z.number().min(0).max(100_000_000).nullable().optional(),
+  duration: shortText(80).optional(),
+  distanceKm: z.number().min(0).max(5000).nullable().optional(),
+});
+
 export const siteSettingsUpdate = z
   .object({
     siteName: shortText(120).min(1),
@@ -75,20 +87,19 @@ export const siteSettingsUpdate = z
         enabled: z.boolean(),
         title: shortText(120),
         subtitle: shortText(200),
-        currency: z.string().trim().toUpperCase().regex(/^[A-Z]{3}$/, "Use a 3-letter currency code"),
+        currency: currencyCode,
         note: shortText(400),
-        rows: z
-          .array(
-            z.object({
-              destination: shortText(120).min(1),
-              car: z.number().min(0).max(100_000_000).nullable().optional(),
-              van: z.number().min(0).max(100_000_000).nullable().optional(),
-              bus: z.number().min(0).max(100_000_000).nullable().optional(),
-              duration: shortText(80).optional(),
-              distanceKm: z.number().min(0).max(5000).nullable().optional(),
-            }),
-          )
-          .max(80),
+        rows: z.array(transferRateRow).max(80),
+      })
+      .partial(),
+    excursionRates: z
+      .object({
+        enabled: z.boolean(),
+        title: shortText(120),
+        subtitle: shortText(200),
+        currency: currencyCode,
+        note: shortText(400),
+        tables: z.array(z.object({ origin: shortText(120).min(1), rows: z.array(transferRateRow).max(80) })).max(40),
       })
       .partial(),
     partners: z.array(z.object({ name: shortText(120).min(1), url: httpUrl.optional(), logo: mediaAsset })).max(20),

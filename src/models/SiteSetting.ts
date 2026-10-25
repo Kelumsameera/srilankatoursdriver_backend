@@ -14,6 +14,15 @@ const transferRateSchema = new Schema(
   { _id: false },
 );
 
+/** One "Transfers from <origin>" price table on the excursions page. */
+const excursionRateTableSchema = new Schema(
+  {
+    origin: { type: String, trim: true, required: true },
+    rows: { type: [transferRateSchema], default: [] },
+  },
+  { _id: false },
+);
+
 /** Accreditation / partner logos shown in the website trust bar (SLTDA, PATA, TripAdvisor …). */
 const partnerSchema = new Schema(
   {
@@ -91,6 +100,14 @@ const siteSettingSchema = new Schema(
       currency: { type: String, trim: true, uppercase: true, default: "USD" },
       note: { type: String, trim: true, default: "" },
       rows: { type: [transferRateSchema], default: [] },
+    },
+    excursionRates: {
+      enabled: { type: Boolean, default: true },
+      title: { type: String, trim: true, default: "" },
+      subtitle: { type: String, trim: true, default: "" },
+      currency: { type: String, trim: true, uppercase: true, default: "LKR" },
+      note: { type: String, trim: true, default: "" },
+      tables: { type: [excursionRateTableSchema], default: [] },
     },
     maintenanceMode: { type: Boolean, default: false },
   },
