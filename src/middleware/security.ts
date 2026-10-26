@@ -11,20 +11,21 @@ const rateLimitHandler = (_req: Request, _res: Response, next: NextFunction) =>
   next(new ApiError(429, "Too many requests, please try again later.", [], "RATE_LIMITED"));
 
 /** A per-IP rate limiter. Exported so tests can exercise real limits. */
-export const createRateLimiter = (windowMs: number, limit: number) =>
+export const createRateLimiter = (windowMs: number, limit: number, skip?: (req: Request) => boolean) =>
   rateLimit({
     windowMs,
     limit,
     standardHeaders: "draft-8",
     legacyHeaders: false,
     handler: rateLimitHandler,
+    skip,
   });
 
 // The test suite sends hundreds of requests from one IP, so the shared limiters are effectively off there.
 const make = (windowMs: number, limit: number) => createRateLimiter(windowMs, isTest ? 10_000 : limit);
 
 /** General API limiter. */
-export const apiLimiter = make(15 * 60 * 1000, 1500);
+export const apiLimiter = createRateLimiter(15 * 60 * 1000, isTest ? 10_000 : 1500, isTrustedContentRead);
 /** Login / refresh brute-force protection. */
 export const authLimiter = make(15 * 60 * 1000, env.AUTH_RATE_LIMIT);
 /** Customer register / login / refresh – a separate budget so visitors can't lock admins out (and vice versa). */
@@ -61,6 +62,14 @@ export const PROXY_CLIENT_COUNTRY_HEADER = "x-sltd-client-country";
 
 const digest = (value: string) => createHash("sha256").update(value).digest();
 const expectedProxySecret = env.API_PROXY_SECRET ? digest(env.API_PROXY_SECRET) : null;
+const expectedContentSecret = env.REVALIDATE_SECRET ? digest(env.REVALIDATE_SECRET) : null;
+const serverContentRequests = new WeakSet<Request>();
+
+/** Only authenticated server reads of public CMS content bypass the shared IP budget. */
+export function isTrustedContentRead(req: Request): boolean {
+  return serverContentRequests.has(req) && req.method === "GET" &&
+    /^\/api\/(?:site-settings|branding|languages|ui-messages|navigation|hero|pages|seo|sitemap-data|categories|tours|destinations|excursions|vehicles|blog|stories|feed|gallery|guest-shorts|reviews|faqs)(?:\/|\?|$)/.test(req.originalUrl);
+}
 
 /**
  * Requests forwarded by the frontend's /api proxy (Vercel) arrive from Vercel's addresses, so every visitor
@@ -73,6 +82,12 @@ export function trustedProxyClientIp(req: Request, _res: Response, next: NextFun
   const secret = req.headers[PROXY_SECRET_HEADER];
   const ip = req.headers[PROXY_CLIENT_IP_HEADER];
   const country = req.headers[PROXY_CLIENT_COUNTRY_HEADER];
+  // Cache fills use the existing cache-revalidation credential, never visitor-IP proxy privileges.
+  const contentSecret = req.headers["x-revalidate-secret"];
+  if (expectedContentSecret && typeof contentSecret === "string" && timingSafeEqual(digest(contentSecret), expectedContentSecret)) {
+    serverContentRequests.add(req);
+  }
+  delete req.headers["x-revalidate-secret"];
   if (expectedProxySecret && typeof secret === "string" && typeof ip === "string" && isIP(ip) && timingSafeEqual(digest(secret), expectedProxySecret)) {
     Object.defineProperty(req, "ip", { value: ip, configurable: true, enumerable: true });
     if (typeof country === "string" && /^[A-Z]{2}$/.test(country)) req.clientCountry = country;
