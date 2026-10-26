@@ -1,5 +1,5 @@
 import type { Model, SortOrder } from "mongoose";
-import { Booking, ContactMessage, Destination, Excursion, Review, TailorMadeEnquiry, Tour, User, Vehicle } from "../models/index.js";
+import { Booking, ContactMessage, Excursion, Review, TailorMadeEnquiry, Tour, User, Vehicle } from "../models/index.js";
 import { ApiError } from "../utils/ApiError.js";
 import { assertObjectId, escapeRegex, fingerprint, generateReference, sha256, toCsv } from "../utils/helpers.js";
 import type { ListQuery } from "../validations/common.js";
@@ -113,17 +113,6 @@ export async function createTailorMadeEnquiry(input: AnyRecord) {
   const duplicate = await findRecentDuplicate(TailorMadeEnquiry, submissionHash);
   if (duplicate) return { reference: String(duplicate.reference), id: String(duplicate._id), duplicate: true };
 
-  // Only keep references to content that exists and is public.
-  if (Array.isArray(data.destinations) && data.destinations.length) {
-    const found = await Destination.find({ _id: { $in: data.destinations }, status: "published" }).select("_id").lean();
-    const ok = new Set(found.map((d) => String(d._id)));
-    data.destinations = (data.destinations as string[]).filter((d) => ok.has(String(d)));
-  }
-  const vehicle = data.vehicle as { vehicleRef?: string | null } | undefined;
-  if (vehicle?.vehicleRef && !(await Vehicle.exists({ _id: vehicle.vehicleRef, status: "published" }))) {
-    data.vehicle = { ...vehicle, vehicleRef: null };
-  }
-
   const travel = data.travel as { arrivalDate: Date; departureDate: Date };
   const durationDays = Math.max(1, Math.round((travel.departureDate.getTime() - travel.arrivalDate.getTime()) / 86_400_000));
   const enquiry = await TailorMadeEnquiry.create({
@@ -142,17 +131,19 @@ export async function createTailorMadeEnquiry(input: AnyRecord) {
     [
       ["Name", `${p.firstName} ${p.lastName ?? ""}`.trim()],
       ["Email", p.email],
-      ["Phone", p.phone],
       ["WhatsApp", p.whatsapp],
-      ["Country", p.country],
-      ["Arrival", enquiry.travel?.arrivalDate],
-      ["Departure", enquiry.travel?.departureDate],
+      ["Travelling", enquiry.trip?.travelType],
+      ["Vehicle", enquiry.trip?.vehicleType],
+      ["Transportation", enquiry.trip?.transportMethod],
+      ["Holiday types", enquiry.interests],
+      ["Accommodation", enquiry.accommodation],
+      ["Meal plan", enquiry.mealPlan],
+      ["Services", enquiry.services],
+      ["Start", enquiry.travel?.arrivalDate],
+      ["End", enquiry.travel?.departureDate],
       ["Days", durationDays],
       ["Adults", enquiry.travelers?.adults],
       ["Children", enquiry.travelers?.children],
-      ["Interests", enquiry.interests],
-      ["Hotel category", enquiry.hotels?.category],
-      ["Budget", enquiry.budget?.amount ? `${enquiry.budget.amount} ${enquiry.budget.currency}` : enquiry.budget?.range],
       ["Requirements", enquiry.additionalRequirements],
     ],
   );
@@ -365,20 +356,23 @@ const EXPORT_COLUMNS: Record<CrmKind, { key: string; label: string }[]> = {
     { key: "reference", label: "Reference" },
     { key: "createdAt", label: "Received" },
     { key: "status", label: "Status" },
-    { key: "personal.firstName", label: "First name" },
+    { key: "personal.firstName", label: "Name" },
     { key: "personal.lastName", label: "Last name" },
     { key: "personal.email", label: "Email" },
+    { key: "personal.whatsapp", label: "WhatsApp" },
     { key: "personal.phone", label: "Phone" },
-    { key: "personal.country", label: "Country" },
-    { key: "travel.arrivalDate", label: "Arrival" },
-    { key: "travel.departureDate", label: "Departure" },
+    { key: "travel.arrivalDate", label: "Start" },
+    { key: "travel.departureDate", label: "End" },
     { key: "travel.durationDays", label: "Days" },
     { key: "travelers.adults", label: "Adults" },
     { key: "travelers.children", label: "Children" },
-    { key: "interests", label: "Interests" },
-    { key: "hotels.category", label: "Hotels" },
-    { key: "budget.amount", label: "Budget" },
-    { key: "budget.currency", label: "Budget currency" },
+    { key: "trip.travelType", label: "Travelling" },
+    { key: "trip.vehicleType", label: "Vehicle" },
+    { key: "trip.transportMethod", label: "Transportation" },
+    { key: "interests", label: "Holiday types" },
+    { key: "accommodation", label: "Accommodation" },
+    { key: "mealPlan", label: "Meal plan" },
+    { key: "services", label: "Services" },
     { key: "assignedTo.name", label: "Assigned to" },
     { key: "additionalRequirements", label: "Requirements" },
   ],

@@ -1,7 +1,16 @@
 import { z } from "zod";
-import { objectId, optionalDate, optionalNumber, optionalRef, shortText } from "./common.js";
+import { optionalDate, optionalNumber, optionalRef, shortText } from "./common.js";
 import { BOOKING_STATUSES } from "../models/Booking.js";
-import { ENQUIRY_STATUSES } from "../models/TailorMadeEnquiry.js";
+import {
+  ACCOMMODATION_TYPES,
+  ENQUIRY_STATUSES,
+  EXTRA_SERVICES,
+  HOLIDAY_TYPES,
+  MEAL_PLANS,
+  TRANSPORT_METHODS,
+  TRAVEL_TYPES,
+  VEHICLE_TYPES,
+} from "../models/TailorMadeEnquiry.js";
 import { SUPPORTED_LOCALES } from "../config/locales.js";
 
 const phone = z
@@ -82,21 +91,15 @@ export const bookingAdminUpdate = z
   .partial();
 
 /* ───────────── Tailor-made ───────────── */
-const transfer = z.object({
-  airport: shortText(120).optional(),
-  flightNumber: shortText(20).optional(),
-  time: shortText(20).optional(),
-  needsTransfer: z.boolean().optional(),
-});
-
+/** The public form: trip style, holiday types, stay, requirements, travellers + dates, contact. */
 export const tailorMadeCreate = z
   .object({
     personal: z.object({
-      firstName: shortText(80).min(1, "First name is required"),
+      firstName: shortText(80).min(1, "Name is required"),
       lastName: shortText(80).optional(),
       email: z.email("Please enter a valid email").max(254),
       phone: phone.optional(),
-      whatsapp: phone.optional(),
+      whatsapp: phone.min(5, "WhatsApp number is required"),
       country: shortText(80).optional(),
     }),
     travel: z.object({
@@ -110,27 +113,15 @@ export const tailorMadeCreate = z
       infants: z.number().int().min(0).max(50).optional(),
       childAges: shortText(120).optional(),
     }),
-    arrival: transfer.optional(),
-    departure: transfer.optional(),
-    destinations: z.array(objectId).max(40).optional(),
-    otherDestinations: shortText(1000).optional(),
-    interests: z.array(shortText(60)).max(30).optional(),
-    hotels: z
-      .object({
-        category: z.enum(["budget", "standard", "boutique", "luxury", "mixed"]),
-        roomType: shortText(120).optional(),
-        notes: shortText(1000).optional(),
-      })
-      .optional(),
-    vehicle: z.object({ vehicleRef: optionalRef, preference: shortText(200).optional() }).optional(),
-    budget: z
-      .object({
-        amount: optionalNumber,
-        currency: z.string().trim().toUpperCase().regex(/^[A-Z]{3}$/).optional(),
-        perPerson: z.boolean().optional(),
-        range: shortText(80).optional(),
-      })
-      .optional(),
+    trip: z.object({
+      travelType: z.enum(TRAVEL_TYPES),
+      vehicleType: z.enum(VEHICLE_TYPES),
+      transportMethod: z.enum(TRANSPORT_METHODS),
+    }),
+    interests: z.array(z.enum(HOLIDAY_TYPES)).min(1, "Choose at least one holiday type").max(HOLIDAY_TYPES.length),
+    accommodation: z.enum(ACCOMMODATION_TYPES),
+    mealPlan: z.enum(MEAL_PLANS).optional(),
+    services: z.array(z.enum(EXTRA_SERVICES)).max(EXTRA_SERVICES.length).optional(),
     additionalRequirements: shortText(5000).optional(),
     locale,
     website: honeypot,
