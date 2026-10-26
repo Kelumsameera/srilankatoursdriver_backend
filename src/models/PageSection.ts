@@ -56,7 +56,8 @@ const pageSectionSchema = new Schema(
     media: mediaAssetSchema,
     settings: {
       limit: { type: Number, default: 6, min: 1, max: 24 },
-      source: { type: String, enum: ["featured", "latest", "all"], default: "featured" },
+      /** "season" (tour sections): the seasonal category in season now – see seasonalTourCategories(). */
+      source: { type: String, enum: ["featured", "latest", "all", "season"], default: "featured" },
       theme: { type: String, enum: ["light", "sand", "forest", "dark"], default: "light" },
       layout: { type: String, enum: ["grid", "carousel", "list", "split", "staggered"], default: "grid" },
       /** Optional category filter for list sections (e.g. "Seasonal" or "One-day" tours). */

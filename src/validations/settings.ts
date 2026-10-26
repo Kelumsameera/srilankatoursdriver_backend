@@ -107,6 +107,9 @@ export const siteSettingsUpdate = z
   })
   .partial();
 
+/** Each line of the text logo ("SRI LANKA" / "TOURS DRIVER") – short enough to fit next to the icon on a phone. */
+export const LOGO_TEXT_MAX = 30;
+
 const hexColor = z.string().regex(/^#[0-9a-f]{6}$/i, "Use a hex colour like #0f3d2e");
 
 export const brandingUpdate = z
@@ -116,6 +119,9 @@ export const brandingUpdate = z
     darkLogo: mediaAsset,
     mobileLogo: mediaAsset,
     favicon: mediaAsset,
+    logoIcon: mediaAsset,
+    logoTextLine1: shortText(LOGO_TEXT_MAX),
+    logoTextLine2: shortText(LOGO_TEXT_MAX),
     logoAlt: shortText(200),
     logoWidth: z.number().int().min(40).max(600),
     logoHeight: z.number().int().min(16).max(300),

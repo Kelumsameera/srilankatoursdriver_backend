@@ -105,6 +105,12 @@ export const tourUpdate = tourCreate.partial();
 /** Accepted destination coordinates (WGS84 decimal degrees), slightly wider than the island itself. */
 export const SRI_LANKA_BOUNDS = { lat: [5.5, 10], lng: [79, 82.5] } as const;
 
+// { lat, lng } inside Sri Lanka, or both empty
+const sriLankaPoint = z.object({
+  lat: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lat[0] && v <= SRI_LANKA_BOUNDS.lat[1]), `Latitude must be between ${SRI_LANKA_BOUNDS.lat[0]} and ${SRI_LANKA_BOUNDS.lat[1]} (Sri Lanka)`),
+  lng: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lng[0] && v <= SRI_LANKA_BOUNDS.lng[1]), `Longitude must be between ${SRI_LANKA_BOUNDS.lng[0]} and ${SRI_LANKA_BOUNDS.lng[1]} (Sri Lanka)`),
+}).refine((l) => (l.lat == null) === (l.lng == null), { message: "Enter both latitude and longitude, or leave both empty", path: ["lng"] });
+
 export const destinationCreate = z.object({
   name: shortText(120).min(2),
   slug: slugField,
@@ -129,10 +135,7 @@ export const destinationCreate = z.object({
   howToGetThere: shortText(2000).optional(),
   itinerary: z.array(z.object({ title: shortText(160).min(1), description: shortText(1000).optional() })).max(14).optional(),
   // Destinations are in Sri Lanka: reject out-of-island values (and swapped lat/lng) instead of storing a pin that can't be drawn.
-  location: z.object({
-    lat: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lat[0] && v <= SRI_LANKA_BOUNDS.lat[1]), `Latitude must be between ${SRI_LANKA_BOUNDS.lat[0]} and ${SRI_LANKA_BOUNDS.lat[1]} (Sri Lanka)`),
-    lng: optionalNumber.refine((v) => v == null || (v >= SRI_LANKA_BOUNDS.lng[0] && v <= SRI_LANKA_BOUNDS.lng[1]), `Longitude must be between ${SRI_LANKA_BOUNDS.lng[0]} and ${SRI_LANKA_BOUNDS.lng[1]} (Sri Lanka)`),
-  }).refine((l) => (l.lat == null) === (l.lng == null), { message: "Enter both latitude and longitude, or leave both empty", path: ["lng"] }).optional(),
+  location: sriLankaPoint.optional(),
   category: optionalRef,
   seo,
   ...publishable,
@@ -146,6 +149,7 @@ export const excursionCreate = z.object({
   category: optionalRef,
   destination: optionalRef,
   location: shortText(160).optional(),
+  coordinates: sriLankaPoint.optional(),
   duration: shortText(80).optional(),
   price: optionalNumber,
   currency,
@@ -426,7 +430,7 @@ export const sectionCreate = z.object({
   settings: z
     .object({
       limit: z.number().int().min(1).max(24).optional(),
-      source: z.enum(["featured", "latest", "all"]).optional(),
+      source: z.enum(["featured", "latest", "all", "season"]).optional(),
       theme: z.enum(["light", "sand", "forest", "dark"]).optional(),
       layout: z.enum(["grid", "carousel", "list", "split", "staggered"]).optional(),
       category: optionalRef,

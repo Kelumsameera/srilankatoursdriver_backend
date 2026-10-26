@@ -10,6 +10,10 @@ const brandSettingSchema = new Schema(
     darkLogo: mediaAssetSchema,
     mobileLogo: mediaAssetSchema,
     favicon: mediaAssetSchema,
+    /** Icon + text logo. When the icon or the first line is set, the site shows these instead of the logo images. */
+    logoIcon: mediaAssetSchema,
+    logoTextLine1: { type: String, trim: true, default: "" },
+    logoTextLine2: { type: String, trim: true, default: "" },
     logoAlt: { type: String, trim: true, default: "" },
     logoWidth: { type: Number, default: 180, min: 40, max: 600 },
     logoHeight: { type: Number, default: 56, min: 16, max: 300 },

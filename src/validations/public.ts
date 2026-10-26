@@ -16,6 +16,8 @@ export const publicQuery = z.object({
   /** Alias of `search`. */
   q: z.string().trim().max(120).optional(),
   platform: z.enum(["youtube", "instagram", "tiktok", "upload", "website", "tripadvisor", "google", "facebook", "other"]).optional(),
+  /** Tour length: 1, 5, 8, 10, 12 or 14 days, or "other" for every other length. */
+  days: z.enum(["1", "5", "8", "10", "12", "14", "other"]).optional(),
   kind: z.enum(CATEGORY_KINDS).optional(),
   token: z.string().max(2000).optional(),
 });

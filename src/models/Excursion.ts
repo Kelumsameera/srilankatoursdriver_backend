@@ -8,6 +8,11 @@ const excursionSchema = new Schema(
     category: { type: Schema.Types.ObjectId, ref: "Category", index: true },
     destination: { type: Schema.Types.ObjectId, ref: "Destination" },
     location: { type: String, trim: true, default: "" },
+    // Pin on the Sri Lanka map of the excursion page
+    coordinates: {
+      lat: { type: Number, min: -90, max: 90 },
+      lng: { type: Number, min: -180, max: 180 },
+    },
     duration: { type: String, trim: true, default: "" },
     price: { type: Number, min: 0 },
     currency: { type: String, trim: true, uppercase: true, default: "USD" },

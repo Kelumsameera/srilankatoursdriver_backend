@@ -22,6 +22,7 @@ import { escapeRegex } from "../utils/helpers.js";
 import { localize, localizeOne } from "./translation/translation.service.js";
 import type { TranslatableType } from "./translation/registry.js";
 import { getTripAdvisorSummary, isTripAdvisorConfigured } from "./tripadvisor/tripadvisor.service.js";
+import { mergeLiveReviews } from "./tripadvisor/tripadvisor.mapper.js";
 import { getUsdRates, toUsd } from "./currency.service.js";
 
 type AnyRecord = Record<string, unknown>;
@@ -147,6 +148,15 @@ interface PublicListOptions {
   destination?: string;
   search?: string;
   platform?: string;
+  /** Tours only: a length from TOUR_DAY_FILTERS, or "other". */
+  days?: string;
+}
+
+/** Tour lengths the website filters by (the seasonal packages run 5–14 days); "other" is every other length. */
+export const TOUR_DAY_FILTERS = [1, 5, 8, 10, 12, 14];
+
+export function tourDaysFilter(days: string) {
+  return days === "other" ? { $nin: TOUR_DAY_FILTERS } : Number(days);
 }
 
 export async function listPublic(key: PublicResourceKey, opts: PublicListOptions = {}) {
@@ -166,6 +176,7 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
   }
   if (opts.destination) filter[key === "tours" ? "destinations" : "destination"] = opts.destination;
   if (opts.platform) filter.platform = opts.platform;
+  if (opts.days && key === "tours") filter.durationDays = tourDaysFilter(opts.days);
   if (opts.search && cfg.searchFields) {
     const rx = new RegExp(escapeRegex(opts.search), "i");
     filter.$and = [...((filter.$and as unknown[]) ?? []), { $or: cfg.searchFields.map((f) => ({ [f]: rx })) }];
@@ -330,26 +341,7 @@ export async function getActiveHeroSlides(locale?: string) {
  */
 async function withLiveTripAdvisor(items: unknown[], limit: number): Promise<unknown[]> {
   if (!isTripAdvisorConfigured()) return items;
-  const ta = await getTripAdvisorSummary();
-  const known = new Set((items as AnyRecord[]).map((r) => String(r.guestName ?? "").trim().toLowerCase()));
-  const live = ta.reviews
-    .filter((r) => r.text && !known.has(r.user.username.trim().toLowerCase()))
-    .map((r) => ({
-      _id: `tripadvisor-${r.id}`,
-      guestName: r.user.username,
-      country: r.user.country ?? "",
-      rating: r.rating,
-      title: r.title,
-      review: r.text,
-      date: r.publishedDate,
-      platform: "tripadvisor",
-      sourceUrl: r.url,
-      verified: true,
-      live: true,
-    }));
-  if (!live.length) return items;
-  const byDate = (r: AnyRecord) => new Date(String(r.date ?? 0)).getTime() || 0;
-  return [...live, ...(items as AnyRecord[])].sort((a, b) => byDate(b) - byDate(a)).slice(0, Math.max(limit, live.length));
+  return mergeLiveReviews(items, await getTripAdvisorSummary(), limit);
 }
 
 /** Loads the data each dynamic section needs, so a page renders from a single API call. */
@@ -367,6 +359,8 @@ async function resolveSectionData(section: AnyRecord, locale?: string): Promise<
     case "hero":
       return getActiveHeroSlides(locale);
     case "popularTours":
+      // "In season now": Down South tours November–June, East Coast tours July–October
+      if (settings.source === "season") return (await listPublicLocalized("tours", { locale, limit, category: seasonalTourCategories().inSeason })).items;
       return fetchList("tours");
     case "destinations":
       return fetchList("destinations");

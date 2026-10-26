@@ -3,7 +3,7 @@ import { getPublicBySlug, listPublicLocalized } from "../services/public.service
 import { ok } from "../utils/response.js";
 import { readLocale, readQuery } from "./publicRequest.js";
 
-// GET /api/tours - list published tours (filters: featured, category, destination, search; paged)
+// GET /api/tours - list published tours (filters: featured, category, days, destination, search; paged)
 export async function getTours(req: Request, res: Response, next: NextFunction) {
   try {
     const query = readQuery(req);
@@ -13,6 +13,7 @@ export async function getTours(req: Request, res: Response, next: NextFunction) 
       limit: query.limit,
       featured: query.featured === "true",
       category: query.category,
+      days: query.days,
       destination: query.destination,
       search: query.search ?? query.q,
       platform: query.platform,
