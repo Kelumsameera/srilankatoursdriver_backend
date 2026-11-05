@@ -77,3 +77,21 @@ export function toUsd<T extends Record<string, unknown>>(doc: T, rates: Rates): 
   }
   return out as T;
 }
+
+type RatesConfig = { currency?: string; tables?: { rows?: Record<string, unknown>[] }[] } & Record<string, unknown>;
+
+/** Excursion transfer tables (car / van / bus) for the public site, converted to USD like every other price. */
+export function excursionRatesToUsd<T extends RatesConfig>(cfg: T, rates: Rates): T {
+  const currency = (cfg.currency || "LKR").toUpperCase();
+  const rate = rates[currency];
+  if (currency === "USD" || !rate) return cfg;
+  const tables = (cfg.tables ?? []).map((tbl) => ({
+    ...tbl,
+    rows: (tbl.rows ?? []).map((row) => {
+      const out = { ...row };
+      for (const v of ["car", "van", "bus"]) if (typeof row[v] === "number") out[v] = Math.round((row[v] as number) / rate);
+      return out;
+    }),
+  }));
+  return { ...cfg, currency: "USD", tables };
+}

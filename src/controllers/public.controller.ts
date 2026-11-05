@@ -4,6 +4,7 @@ import * as settings from "../services/settings.service.js";
 import { getTripAdvisorSummary } from "../services/tripadvisor/tripadvisor.service.js";
 import { verifyPreviewToken } from "../services/auth.service.js";
 import { createPublicReview } from "../services/crm.service.js";
+import { getUsdRates, excursionRatesToUsd } from "../services/currency.service.js";
 import { ok, created } from "../utils/response.js";
 import { ApiError } from "../utils/ApiError.js";
 import { readLocale, readQuery } from "./publicRequest.js";
@@ -16,6 +17,10 @@ export async function siteSettings(req: Request, res: Response) {
   void __v;
   void key;
   void createdAt;
+  // Rate tables are entered in LKR but the public site shows USD
+  if (rest.excursionRates && typeof rest.excursionRates === "object") {
+    rest.excursionRates = excursionRatesToUsd(rest.excursionRates as Record<string, unknown>, await getUsdRates());
+  }
   return ok(res, rest);
 }
 
@@ -26,6 +31,10 @@ export async function branding(_req: Request, res: Response) {
   void __v;
   void key;
   void createdAt;
+  // Rate tables are entered in LKR but the public site shows USD
+  if (rest.excursionRates && typeof rest.excursionRates === "object") {
+    rest.excursionRates = excursionRatesToUsd(rest.excursionRates as Record<string, unknown>, await getUsdRates());
+  }
   return ok(res, rest);
 }
 

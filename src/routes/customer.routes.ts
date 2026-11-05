@@ -5,6 +5,7 @@ import { customerAuthLimiter, formLimiter, guestUploadLimiter } from "../middlew
 import { cleanupTempFiles, mediaUpload } from "../middleware/upload.js";
 import { addComment, getEngagement, toggleLike } from "../controllers/engagementController.js";
 import { myStories, submitStory, uploadStoryMedia } from "../controllers/storyController.js";
+import { linkChatToCustomer, requireChatEnabled, requireChatHeader } from "../controllers/chatController.js";
 import { validate } from "../middleware/validate.js";
 import { customerRegisterSchema, googleLoginSchema, loginSchema } from "../validations/auth.js";
 import { commentSubmit, storySubmit } from "../validations/content.js";
@@ -35,6 +36,9 @@ const engagementParams = validate({ params: engagementParam });
 customerRouter.get("/engagement/:type/:key", engagementParams, c.identifyCustomer, getEngagement);
 customerRouter.post("/engagement/:type/:key/like", engagementParams, c.authenticateCustomer, toggleLike);
 customerRouter.post("/engagement/:type/:key/comments", formLimiter, validate({ params: engagementParam, body: commentSubmit }), c.authenticateCustomer, addComment);
+
+// AI CHAT: link the visitor's chat to their account. It lives here because the login cookie is only sent to /api/customer.
+customerRouter.post("/chat/link", requireChatEnabled, requireChatHeader, c.authenticateCustomer, linkChatToCustomer);
 
 // GUEST STORIES: upload photos/videos one by one, then send the story (it waits for approval)
 customerRouter.get("/stories", c.authenticateCustomer, myStories);

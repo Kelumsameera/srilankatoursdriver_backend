@@ -399,6 +399,10 @@ export const pageCreate = z.object({
   title: shortText(200).min(1),
   subtitle: shortText(500).optional(),
   heroImage: mediaAsset,
+  heroVideos: z
+    .array(mediaAsset.unwrap().unwrap().refine((v) => v.resourceType === "video", "Choose a video"))
+    .max(8)
+    .optional(),
   content: longText(200_000).optional(),
   status: z.enum(["draft", "published"]).optional(),
   seo,
@@ -434,6 +438,10 @@ export const sectionCreate = z.object({
       theme: z.enum(["light", "sand", "forest", "dark"]).optional(),
       layout: z.enum(["grid", "carousel", "list", "split", "staggered"]).optional(),
       category: optionalRef,
+      backdropHeight: z.number().int().min(10).max(100).optional(),
+      backdropWidth: z.number().int().min(10).max(100).optional(),
+      backdropAlign: z.enum(["left", "center", "right"]).optional(),
+      backdropFocus: z.enum(["top", "center", "bottom"]).optional(),
     })
     .optional(),
   enabled: z.boolean().optional(),

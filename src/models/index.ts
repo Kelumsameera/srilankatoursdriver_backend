@@ -35,3 +35,6 @@ export { LoginAttempt } from "./LoginAttempt.js";
 export { TranslationJob } from "./TranslationJob.js";
 export { PasswordReset } from "./PasswordReset.js";
 export { PageView } from "./PageView.js";
+export { ChatConversation } from "./ChatConversation.js";
+export { ChatUsage } from "./ChatUsage.js";
+export { ChatKnowledge } from "./ChatKnowledge.js";

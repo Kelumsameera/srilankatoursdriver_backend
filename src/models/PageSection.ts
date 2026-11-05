@@ -62,6 +62,11 @@ const pageSectionSchema = new Schema(
       layout: { type: String, enum: ["grid", "carousel", "list", "split", "staggered"], default: "grid" },
       /** Optional category filter for list sections (e.g. "Seasonal" or "One-day" tours). */
       category: { type: Schema.Types.ObjectId, ref: "Category", default: null },
+      /** Tour sections with a background image: its size (% of the section), side and which part of the photo shows. */
+      backdropHeight: { type: Number, min: 10, max: 100 },
+      backdropWidth: { type: Number, min: 10, max: 100 },
+      backdropAlign: { type: String, enum: ["left", "center", "right"] },
+      backdropFocus: { type: String, enum: ["top", "center", "bottom"] },
     },
     enabled: { type: Boolean, default: true, index: true },
     order: { type: Number, default: 0 },

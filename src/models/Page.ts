@@ -11,6 +11,8 @@ const pageSchema = new Schema(
     title: { type: String, required: true, trim: true },
     subtitle: { type: String, trim: true, default: "" },
     heroImage: mediaAssetSchema,
+    /** Tours page: header videos that take turns, like the homepage hero slides. */
+    heroVideos: { type: [mediaAssetSchema], default: [] },
     content: { type: String, default: "" },
     isSystem: { type: Boolean, default: false },
     status: { type: String, enum: ["draft", "published"], default: "published", index: true },

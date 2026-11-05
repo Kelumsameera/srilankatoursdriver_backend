@@ -74,6 +74,20 @@ const envSchema = z.object({
   TRIPADVISOR_API_KEY: optionalString,
   TRIPADVISOR_LOCATION_ID: optionalString,
 
+  /** AI travel assistant (Gemini). Empty GEMINI_API_KEY switches the chat off. */
+  GEMINI_API_KEY: optionalString,
+  GEMINI_MODEL: z.preprocess(blankToUndefined, z.string().default("gemini-3.8-flash")),
+  /** Free-tier models tried in order when the main one is out of quota (429) or gone (404). Comma separated. */
+  GEMINI_FALLBACK_MODELS: z.preprocess(blankToUndefined, z.string().default("gemini-flash-latest,gemini-flash-lite-latest")),
+  /** Signs the visitor's chat cookie. Empty = the chat stays off even with a Gemini key. */
+  CHAT_SESSION_SECRET: optionalString.refine((v) => v === undefined || v.length >= 32, {
+    message: "CHAT_SESSION_SECRET must be at least 32 characters (or empty to disable the chat)",
+  }),
+  /** Spending guard: total Gemini tokens (in + out) the whole site may use per day (UTC). */
+  CHAT_DAILY_TOKEN_LIMIT: z.coerce.number().int().positive().default(300_000),
+  /** Chats are deleted automatically this many days after the last message. */
+  CHAT_RETENTION_DAYS: z.coerce.number().int().positive().default(30),
+
   SEED_ADMIN_NAME: z.string().default("Super Admin"),
   /** No default: the Super Admin sign-in should not be the published business address (anyone can target it). */
   SEED_ADMIN_EMAIL: z.preprocess(blankToUndefined, z.email().optional()),
@@ -95,7 +109,10 @@ const checkedEnvSchema = envSchema.superRefine((e, ctx) => {
   if (e.COOKIE_SAMESITE === "none" && e.COOKIE_SECURE === "false") {
     ctx.addIssue({ code: "custom", path: ["COOKIE_SECURE"], message: "Browsers reject SameSite=none cookies without Secure – use COOKIE_SECURE=auto or true" });
   }
-  for (const origin of (e.CORS_ORIGINS ?? "").split(",").map((o) => o.trim()).filter(Boolean)) {
+  for (const origin of (e.CORS_ORIGINS ?? "")
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean)) {
     if (!isOrigin(origin.replace(/\/$/, ""))) {
       ctx.addIssue({ code: "custom", path: ["CORS_ORIGINS"], message: `"${origin}" is not an origin like https://www.example.com (no path)` });
     }
@@ -107,7 +124,7 @@ const checkedEnvSchema = envSchema.superRefine((e, ctx) => {
     ctx.addIssue({ code: "custom", path: ["API_PROXY_SECRET"], message: "API_PROXY_SECRET must not reuse another secret" });
   }
   if (e.NODE_ENV === "production") {
-    for (const key of ["JWT_ACCESS_SECRET", "JWT_REFRESH_SECRET", "REVALIDATE_SECRET", "API_PROXY_SECRET"] as const) {
+    for (const key of ["JWT_ACCESS_SECRET", "JWT_REFRESH_SECRET", "REVALIDATE_SECRET", "API_PROXY_SECRET", "CHAT_SESSION_SECRET"] as const) {
       const value = e[key];
       if (value && PLACEHOLDER_SECRET.test(value)) ctx.addIssue({ code: "custom", path: [key], message: `${key} looks like a placeholder – generate a long random value` });
     }
@@ -163,6 +180,4 @@ export const allowedOrigins: string[] = Array.from(
 );
 
 /** Whether auth cookies get the Secure flag. "auto" also turns it on whenever the site itself is served over HTTPS. */
-export const cookieSecure =
-  env.COOKIE_SECURE === "true" ||
-  (env.COOKIE_SECURE === "auto" && (isProduction || env.COOKIE_SAMESITE === "none" || env.FRONTEND_URL.startsWith("https:")));
+export const cookieSecure = env.COOKIE_SECURE === "true" || (env.COOKIE_SECURE === "auto" && (isProduction || env.COOKIE_SAMESITE === "none" || env.FRONTEND_URL.startsWith("https:")));

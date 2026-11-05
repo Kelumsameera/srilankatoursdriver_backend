@@ -23,6 +23,8 @@ import { crmController } from "../../controllers/crm.controller.js";
 import * as analytics from "../../controllers/analytics.controller.js";
 import * as customers from "../../controllers/customers.controller.js";
 import * as guests from "../../controllers/guests.controller.js";
+import * as chatAdmin from "../../controllers/chatAdminController.js";
+import { chatAdminList, chatAdminUpdate, chatUsageQuery } from "../../validations/chat.js";
 import { analyticsQuery, customerAdminUpdate, guestParams, guestUpdate } from "../../validations/analytics.js";
 import { MEDIA_FOLDERS } from "../../services/cloudinary/index.js";
 import { SUPPORTED_LOCALES } from "../../config/locales.js";
@@ -76,6 +78,7 @@ adminRouter.use("/stories", crudRouter(RESOURCES.stories));
 adminRouter.use("/guest-shorts", crudRouter(RESOURCES.guestShorts));
 adminRouter.use("/reviews", crudRouter(RESOURCES.reviews));
 adminRouter.use("/faqs", crudRouter(RESOURCES.faqs));
+adminRouter.use("/chat-knowledge", crudRouter(RESOURCES.chatKnowledge));
 adminRouter.use("/hero", crudRouter(RESOURCES.hero));
 adminRouter.use("/navigation", crudRouter(RESOURCES.navigation));
 adminRouter.use("/seo", crudRouter(RESOURCES.seo));
@@ -167,6 +170,13 @@ function mountCrm(path: string, kind: "bookings" | "enquiries" | "contacts", upd
 mountCrm("/bookings", "bookings", bookingAdminUpdate);
 mountCrm("/tailor-made-enquiries", "enquiries", tailorMadeAdminUpdate);
 mountCrm("/contact-messages", "contacts", contactAdminUpdate);
+
+/* ───────────── AI travel assistant: chat inbox (leads = bookings permission) and usage ───────────── */
+adminRouter.get("/chats/usage", can("analytics:read"), validate({ query: chatUsageQuery }), chatAdmin.chatUsage);
+adminRouter.get("/chats", can("bookings:read"), validate({ query: chatAdminList }), chatAdmin.listChats);
+adminRouter.get("/chats/:id", can("bookings:read"), id, chatAdmin.getChatForAdmin);
+adminRouter.patch("/chats/:id", can("bookings:update"), id, validate({ body: chatAdminUpdate }), chatAdmin.updateChat);
+adminRouter.delete("/chats/:id", can("bookings:delete"), id, chatAdmin.deleteChatForAdmin);
 
 /* ───────────── Website customers ───────────── */
 adminRouter.get("/customers", can("customers:read"), validate({ query: listQuery }), customers.list);

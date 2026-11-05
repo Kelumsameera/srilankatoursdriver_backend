@@ -1,6 +1,7 @@
 import type { ResourceConfig } from "../services/crud/crud.service.js";
 import {
   BlogPost,
+  ChatKnowledge,
   Comment,
   Like,
   Story,
@@ -18,6 +19,7 @@ import {
   Vehicle,
 } from "../models/index.js";
 import * as v from "../validations/content.js";
+import { chatKnowledgeCreate, chatKnowledgeUpdate } from "../validations/chat.js";
 import { ApiError } from "../utils/ApiError.js";
 import { CACHE_TAGS } from "../services/revalidate.service.js";
 
@@ -230,6 +232,21 @@ export const RESOURCES = {
     cacheTags: [CACHE_TAGS.reviews],
     publishField: "status",
     duplicateTitleField: "guestName",
+  },
+  // Facts for the AI travel assistant (no public page, so nothing to revalidate)
+  chatKnowledge: {
+    name: "chatKnowledge",
+    label: "AI knowledge",
+    model: ChatKnowledge,
+    permission: "faqs",
+    createSchema: chatKnowledgeCreate,
+    updateSchema: chatKnowledgeUpdate,
+    searchFields: ["title", "content"],
+    defaultSort: { order: 1, createdAt: 1 },
+    filters: { status: "status" },
+    cacheTags: [],
+    publishField: "status",
+    duplicateTitleField: "title",
   },
   faqs: {
     name: "faq",
