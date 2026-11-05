@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Router } from "express";
-import * as c from "../controllers/customer-auth.controller.js";
+import * as c from "../controllers/customerAuthController.js";
 import { customerAuthLimiter, formLimiter, guestUploadLimiter } from "../middleware/security.js";
 import { cleanupTempFiles, mediaUpload } from "../middleware/upload.js";
 import { addComment, getEngagement, toggleLike } from "../controllers/engagementController.js";

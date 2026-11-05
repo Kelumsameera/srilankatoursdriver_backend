@@ -1,8 +1,8 @@
 import { Router } from "express";
 import mongoose from "mongoose";
-import { authRouter } from "./auth.routes.js";
-import { customerRouter } from "./customer.routes.js";
-import { passwordRouter } from "./password.routes.js";
+import { authRouter } from "./authRouter.js";
+import { customerRouter } from "./customerRouter.js";
+import { passwordRouter } from "./passwordRouter.js";
 import { publicRouter } from "./public/index.js";
 import { adminRouter } from "./admin/index.js";
 import { chatRouter } from "./chatRouter.js";

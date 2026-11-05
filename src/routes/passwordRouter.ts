@@ -1,5 +1,5 @@
 import { Router } from "express";
-import * as c from "../controllers/password-reset.controller.js";
+import * as c from "../controllers/passwordResetController.js";
 import { passwordResetLimiter } from "../middleware/security.js";
 import { validate } from "../middleware/validate.js";
 import { forgotPasswordSchema, resetPasswordSchema } from "../validations/auth.js";

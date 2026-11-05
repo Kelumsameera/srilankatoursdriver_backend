@@ -3,7 +3,7 @@ import { z } from "zod";
 import { requirePermission } from "../../middleware/authenticate.js";
 import { validate } from "../../middleware/validate.js";
 import { listQuery, objectId, reorderSchema, statusSchema } from "../../validations/common.js";
-import { createCrudController } from "../../controllers/crud.controller.js";
+import { createCrudController } from "../../controllers/crudController.js";
 import type { ResourceConfig } from "../../services/crud/crud.service.js";
 
 const idParams = z.object({ id: objectId });

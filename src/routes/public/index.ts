@@ -1,12 +1,12 @@
 import { Router } from "express";
 import { z } from "zod";
-import * as c from "../../controllers/public.controller.js";
-import * as crm from "../../controllers/crm.controller.js";
-import { identifyCustomer } from "../../controllers/customer-auth.controller.js";
+import * as c from "../../controllers/publicController.js";
+import * as crm from "../../controllers/crmController.js";
+import { identifyCustomer } from "../../controllers/customerAuthController.js";
 import { validate } from "../../middleware/validate.js";
 import { formLimiter, trackLimiter } from "../../middleware/security.js";
-import * as analytics from "../../controllers/analytics.controller.js";
-import * as uiMessages from "../../controllers/ui-messages.controller.js";
+import * as analytics from "../../controllers/analyticsController.js";
+import * as uiMessages from "../../controllers/uiMessagesController.js";
 import { uiLocaleParams } from "../../validations/ui-messages.js";
 import { trackBody } from "../../validations/analytics.js";
 import { bookingCreate, contactCreate, tailorMadeCreate } from "../../validations/crm.js";
