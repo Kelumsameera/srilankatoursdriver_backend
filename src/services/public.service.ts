@@ -45,8 +45,7 @@ interface PublicResource {
   translatable?: TranslatableType;
   /** Category slugs are only unique per kind, so `?category=<slug>` is looked up within this kind. */
   categoryKind?: CategoryKind;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  filter: () => Record<string, any>;
+  filter: () => Record<string, unknown>;
   sort: Record<string, 1 | -1>;
   listSelect?: string;
   populate?: PopulateOptions[];
@@ -418,6 +417,7 @@ export async function getSitemapData() {
     Destination.find({ status: "published" }).select(pick).lean(),
     Excursion.find({ status: "published" }).select(pick).lean(),
     Vehicle.find({ status: "published" }).select(pick).lean(),
+    // Mongoose's strict filter types reject the shared $or filter, so the model is widened here
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (BlogPost as Model<any>).find(PUBLIC_RESOURCES.blog.filter()).select(pick).lean(),
     Page.find({ status: "published", isSystem: false }).select(pick).lean(),

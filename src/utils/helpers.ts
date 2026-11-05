@@ -3,10 +3,8 @@ import slugifyLib from "slugify";
 import { Types } from "mongoose";
 import { ApiError } from "./ApiError.js";
 
-const slugifyFn = slugifyLib as unknown as (s: string, o?: object) => string;
-
 export function slugify(input: string): string {
-  return slugifyFn(input, { lower: true, strict: true, trim: true }).slice(0, 120) || "item";
+  return slugifyLib(input, { lower: true, strict: true, trim: true }).slice(0, 120) || "item";
 }
 
 /** Escapes user input before using it inside a RegExp (prevents ReDoS / regex injection). */

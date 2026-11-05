@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, type InferSchemaType, type HydratedDocument } from "mongoose";
 
 /*
  * One AI-assistant chat with a website visitor.
@@ -45,3 +45,4 @@ chatConversationSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 chatConversationSchema.index({ updatedAt: -1 });
 
 export const ChatConversation = model("ChatConversation", chatConversationSchema);
+export type ChatConversationDocument = HydratedDocument<InferSchemaType<typeof chatConversationSchema>>;

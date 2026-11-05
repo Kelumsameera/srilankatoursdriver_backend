@@ -3,6 +3,7 @@ import type { NextFunction, Request, Response } from "express";
 import { env } from "../config/env.js";
 import { logger } from "../config/logger.js";
 import { ChatConversation, ChatUsage, Customer } from "../models/index.js";
+import type { ChatConversationDocument } from "../models/ChatConversation.js";
 import { baseCookie } from "../services/auth.service.js";
 import { generateReply } from "../services/gemini.service.js";
 import { createBooking } from "../services/crm.service.js";
@@ -77,8 +78,7 @@ export function firstNameOf(name: unknown) {
 }
 
 // The booking draft as the visitor sees it in the "check and confirm" card
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function draftSummary(draft: any) {
+function draftSummary(draft: ChatConversationDocument["bookingDraft"]) {
   if (!draft) return null;
   return {
     tourTitle: draft.tourTitle,
@@ -92,11 +92,10 @@ function draftSummary(draft: any) {
 }
 
 // What the browser may see of a chat (no hashes, no token counts, no staff notes)
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function publicChat(chat: any) {
+function publicChat(chat: ChatConversationDocument) {
   return {
     locale: chat.locale,
-    messages: chat.messages.map((m: { role: string; text: string; createdAt: Date }) => ({ role: m.role, text: m.text, createdAt: m.createdAt })),
+    messages: chat.messages.map((m) => ({ role: m.role, text: m.text, createdAt: m.createdAt })),
     bookingDraft: draftSummary(chat.bookingDraft),
     bookingReference: chat.booking?.reference ?? null,
     handoff: Boolean(chat.handoff?.requested),

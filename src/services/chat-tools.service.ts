@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { ChatKnowledge, FAQ, Tour } from "../models/index.js";
+import type { ChatConversationDocument } from "../models/ChatConversation.js";
 import { bookingCreate } from "../validations/crm.js";
 import { escapeRegex } from "../utils/helpers.js";
 import { groupPriceFor, type GroupPrice } from "../utils/group-price.js";
@@ -13,9 +14,7 @@ import { getPublicBySlug, listPublicLocalized } from "./public.service.js";
 
 export interface ToolContext {
   locale: string;
-  // The visitor's ChatConversation document (mongoose)
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  chat: any;
+  chat: ChatConversationDocument;
 }
 
 type AnyRecord = Record<string, unknown>;
