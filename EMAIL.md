@@ -56,6 +56,7 @@ previously committed must be rotated at Titan; deleting it from the latest versi
 does not remove it from Git history.
 
 Recorded Tripadvisor award years are shown in the signature, using the same green
-PNG badges as the website. Badge images are hosted under the frontend's public
-`/images/awards/` path; only explicitly recorded years are claimed. New award years
+PNG badges as the website. Email badge images are published on Cloudinary so they
+do not depend on a frontend deployment. PNG/SVG source assets remain in the frontend's
+`public/images/awards/` folder; only explicitly recorded years are claimed. New award years
 can be entered in Site Settings, and matching image assets can be added when supplied.

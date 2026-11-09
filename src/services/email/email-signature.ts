@@ -1,7 +1,11 @@
 import { escapeHtml } from "../../utils/helpers.js";
 
 const WEBSITE = "https://srilankatoursdriver.com";
-const AWARD_ASSETS = "https://srilankatoursdriver.vercel.app/images/awards";
+const AWARD_IMAGES: Record<number, string> = {
+  "2024": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1794257813/srilankatoursdriver/branding/tripadvisor-choice-2024_mfczqh.png",
+  "2025": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1794257815/srilankatoursdriver/branding/tripadvisor-choice-2025_jvztif.png",
+  "2026": "https://res.cloudinary.com/m3vlxnsr/image/upload/v1794257817/srilankatoursdriver/branding/tripadvisor-choice-2026_uhkqju.png"
+};
 const PROFILE = "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews-Sri_Lanka_Tours_Driver-Colombo_Western_Province.html";
 const LOGO = "https://srilankatoursdriver.vercel.app/images/branding/sri-lanka-emblem-512.png";
 
@@ -18,10 +22,10 @@ export function buildEmailSignature(name: string, logoUrl?: string, websiteUrl?:
   const logo = publicHttps(logoUrl, LOGO);
   const years = [...new Set(awards.filter((award) => Number.isInteger(award.year) && award.year >= 2000 && award.year <= 2100 && /travell?ers.? choice/i.test(award.name)).map((award) => award.year))].sort((a, b) => a - b);
   const awardText = years.length ? `Tripadvisor Travelers' Choice winner: ${years.join(" | ")}` : "";
-  const badges = years.filter((year) => [2024, 2025, 2026].includes(year)).map((year) => {
+  const badges = years.filter((year) => AWARD_IMAGES[year]).map((year) => {
     const award = awards.find((item) => item.year === year)!;
     const link = publicHttps(award.sourceUrl, PROFILE);
-    return `<td style="padding-right:12px;vertical-align:top"><a href="${escapeHtml(link)}"><img src="${AWARD_ASSETS}/tripadvisor-choice-${year}.png" alt="Tripadvisor Travelers' Choice Awards ${year}" width="108" height="122" style="display:block;width:108px;height:auto;border:0"></a></td>`;
+    return `<td style="padding-right:12px;vertical-align:top"><a href="${escapeHtml(link)}"><img src="${escapeHtml(AWARD_IMAGES[year])}" alt="Tripadvisor Travelers' Choice Awards ${year}" width="108" height="122" style="display:block;width:108px;height:auto;border:0"></a></td>`;
   }).join("");
   const awardHtml = awardText ? `<div style="margin-bottom:18px"><p style="margin:0 0 8px;font-weight:bold">${escapeHtml(awardText)}</p>${badges ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>${badges}</tr></table>` : ""}<p style="margin:8px 0 0"><a href="${PROFILE}" style="color:#009f91">Tripadvisor: Sri Lanka Tours Driver</a></p></div>` : "";
   return {
