@@ -1,0 +1,33 @@
+{
+  "sources": ["https://www.srilanka.travel/attraction?attraction_id=101", "https://www.srilanka.travel/attraction?attraction_id=49"],
+  "excursions": [
+    {
+      "slug": "arugam-bay",
+      "title": "Arugambay",
+      "categorySlug": "surfing",
+      "destinationSlug": "arugam-bay",
+      "location": "Arugam Bay, Eastern Province",
+      "coordinates": { "lat": 6.8406, "lng": 81.8368 },
+      "duration": "Flexible itinerary — confirm when booking",
+      "shortDescription": "Discover Arugam Bay's sandy coastline and famous surf points, with a private journey tailored to your pick-up location and time by the sea.",
+      "description": "Arugam Bay is a relaxed coastal destination near Pottuvil on Sri Lanka's east coast, known for its curved sandy bay and surfing. Visit for coastal scenery, a beach break or a longer east-coast stay.\n\n## Things to see and do\n\nSpend time along Arugam Bay beach and watch the surf at Main Point. Pottuvil Point is another nearby surf spot that can be discussed when planning your route. Surfing depends on local conditions and your experience; lessons and equipment should be arranged with a suitable local operator.\n\n## Suggested visit\n\nBegin with pick-up at your agreed location and travel to Arugam Bay. Allow time for the beach, a meal at your own expense and stops agreed with your driver. Discuss any surf session or nearby sightseeing before confirming the itinerary. A longer journey may work better as an overnight stay than a same-day return.\n\n## When to visit\n\nSri Lanka Tourism describes the Arugam Bay surf season as April to October. Weather and sea conditions vary, so confirm local conditions before planning water activities.\n\n## Plan your transfer\n\nTell us your pick-up point, travel date, passenger count, luggage and preferred stops so we can recommend a vehicle and quote for your route. Journey time depends on your starting point, traffic and stops.\n\n## Booking details\n\nThe final quote will specify transport arrangements and inclusions. Accommodation, meals, surf lessons, board hire and other activities are separate unless explicitly included in your booking. Entrance fees and any additional activities should be confirmed in advance.",
+      "highlights": ["Arugam Bay beach and coastal scenery", "Watch the waves at Main Point", "Discuss a visit to nearby Pottuvil Point", "Flexible private transfer and sightseeing stops", "Combine with a longer east-coast stay"],
+      "included": [],
+      "priceNote": "Request a personalised quote based on your pick-up location, vehicle, travel dates and agreed stops. Activity fees and accommodation are separate unless confirmed.",
+      "heroMedia": {
+        "url": "/images/editorial/excursions/arugam-bay-v2.webp",
+        "alt": "AI-generated illustrative view of Arugam Bay's sandy coastline and a breaking surf wave",
+        "resourceType": "image",
+        "format": "webp",
+        "width": 1536,
+        "height": 1024
+      },
+      "seo": {
+        "seoTitle": "Arugam Bay Excursion & Private Transfers | Sri Lanka Tours Driver",
+        "metaDescription": "Plan a private trip to Arugam Bay with beach time, surf-point scenery and flexible stops. Request a quote tailored to your pick-up point and travel dates.",
+        "keywords": ["Arugam Bay excursion", "Arugambay private transfer", "Sri Lanka east coast", "Pottuvil"],
+        "robots": "index,follow"
+      }
+    }
+  ]
+}
