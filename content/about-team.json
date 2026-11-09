@@ -1,0 +1,19 @@
+{
+  "people": [
+    {
+      "title": "Thanuja Dinushanka",
+      "role": "Owner",
+      "description": "Thanuja Dinushanka is the owner of Sri Lanka Tours Driver. For company enquiries and private tour planning, contact the team through our enquiry channels."
+    },
+    {
+      "title": "Gayathtri Sooriyaarachchi",
+      "role": "Manager",
+      "description": "Gayathtri Sooriyaarachchi is the Manager at Sri Lanka Tours Driver. Contact the team for help with tour enquiries, itinerary preferences and booking arrangements."
+    },
+    {
+      "title": "Sameera Kelum",
+      "role": "Developer",
+      "description": "Sameera Kelum is the Developer behind the Sri Lanka Tours Driver website. This role focuses on the website and its online booking experience."
+    }
+  ]
+}

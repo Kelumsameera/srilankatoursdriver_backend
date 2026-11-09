@@ -80,6 +80,16 @@ export const siteSettingsUpdate = z
         enabled: z.boolean(),
         profileUrl: httpUrl,
         ratingText: shortText(200),
+        awards: z.array(z.object({
+          year: z.number().int().min(2000).max(2100),
+          name: shortText(100).min(1),
+          sourceUrl: z.url().refine((value) => {
+            try {
+              const url = new URL(value);
+              return url.protocol === "https:" && /(^|\.)tripadvisor\.(com|com\.au|co\.uk|in|it)$/.test(url.hostname);
+            } catch { return false; }
+          }, "Use the official Tripadvisor listing URL"),
+        })).max(30),
       })
       .partial(),
     transferRates: z

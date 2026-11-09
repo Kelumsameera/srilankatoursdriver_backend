@@ -6,6 +6,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test:awards": "tsx --test tests/tripadvisor-awards.test.ts",
+    "content:tripadvisor-awards": "tsx src/scripts/set-tripadvisor-awards.ts",
+    "content:excursion-details": "tsx src/scripts/update-excursion-details.ts",
     "test:email": "tsx --test tests/email.test.ts",
     "verify:email": "tsx src/scripts/verify-email.ts",
     "dev": "tsx watch src/server.ts",

@@ -91,6 +91,14 @@ const siteSettingSchema = new Schema(
       enabled: { type: Boolean, default: false },
       profileUrl: { type: String, trim: true, default: "" },
       ratingText: { type: String, trim: true, default: "" },
+      awards: {
+        type: [new Schema({
+          year: { type: Number, required: true, min: 2000, max: 2100 },
+          name: { type: String, required: true, trim: true, maxlength: 100 },
+          sourceUrl: { type: String, required: true, trim: true },
+        }, { _id: false })],
+        default: [],
+      },
     },
     partners: { type: [partnerSchema], default: [] },
     transferRates: {

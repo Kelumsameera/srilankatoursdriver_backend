@@ -43,3 +43,14 @@ After credentials are configured, perform an explicitly marked test booking usin
 controlled customer inbox. Check both admin inboxes and the customer inbox separately,
 including spam folders. SMTP acceptance does not guarantee final inbox delivery.
 No production deployment is performed by this setup.
+
+All booking notifications, guest acknowledgements and password-reset messages include
+an HTML signature with ?Best regards?, the CMS logo, business name, official mailbox
+and website link. Plain-text messages carry the same contact details. A failed branding
+lookup uses a public logo fallback and never prevents the message from being sent.
+Only HTTPS logo/website URLs without embedded credentials are used.
+
+Never store the real SMTP password in tests. Tests use a transport override and an
+empty password, with dotenv pointed away from the real environment file. Any password
+previously committed must be rotated at Titan; deleting it from the latest version
+does not remove it from Git history.

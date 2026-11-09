@@ -1,6 +1,8 @@
 import nodemailer, { type Transporter } from "nodemailer";
 import { env } from "../../config/env.js";
 import { logger } from "../../config/logger.js";
+import { BrandSetting } from "../../models/BrandSetting.js";
+import { buildEmailSignature } from "./email-signature.js";
 import { SiteSetting } from "../../models/SiteSetting.js";
 import { escapeHtml } from "../../utils/helpers.js";
 
@@ -122,6 +124,16 @@ async function businessName(): Promise<string> {
   return s?.businessName || "Sri Lanka Tours Driver";
 }
 
+async function emailSignature(name: string) {
+  try {
+    const branding = await BrandSetting.findOne({ key: "default" }).select("logoIcon primaryLogo darkLogo").lean();
+    return buildEmailSignature(name, (branding?.logoIcon?.url || branding?.primaryLogo?.url || branding?.darkLogo?.url) ?? undefined, env.FRONTEND_URL);
+  } catch {
+    // Branding lookup failure must not stop a booking notification or password reset.
+    return buildEmailSignature(name, undefined, env.FRONTEND_URL);
+  }
+}
+
 /** Header-safe single line (no CR/LF) of limited length. */
 function headerText(value: string, max = 80): string {
   return value.replace(/[\r\n\t]+/g, " ").trim().slice(0, max);
@@ -182,14 +194,15 @@ export async function notifyNewSubmission(kind: string, reference: string, guest
 async function deliverSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
   if (!getTransporter()) return;
   const [to, name] = await Promise.all([notifyAddress(), businessName()]);
+  const signature = await emailSignature(name);
   if (to) {
     const internal = table([["Reference", reference], ...details]);
     await sendMail({
       to,
       replyTo: guestEmail,
       subject: `New ${kind} ${reference} – ${headerText(guestName)}`,
-      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${internal.html}`,
-      text: `New ${kind}\n\n${internal.text}`,
+      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${internal.html}${signature.html}`,
+      text: `New ${kind}\n\n${internal.text}\n\n${signature.text}`,
     });
   }
   if (!allowAcknowledgement(guestEmail)) {
@@ -201,8 +214,8 @@ async function deliverSubmission(kind: string, reference: string, guestEmail: st
     subject: `We received your ${kind} (${reference})`,
     html: `<p style="font-family:Arial">Hello,</p><p style="font-family:Arial">Thank you for contacting ${escapeHtml(name)}. We have received your ${escapeHtml(
       kind,
-    )} (reference <strong>${escapeHtml(reference)}</strong>) and will reply shortly.</p><p style="font-family:Arial">— ${escapeHtml(name)}</p>`,
-    text: `Hello,\n\nThank you for contacting ${name}. We have received your ${kind} (reference ${reference}) and will reply shortly.\n\n— ${name}`,
+    )} (reference <strong>${escapeHtml(reference)}</strong>) and will reply shortly.</p>${signature.html}`,
+    text: `Hello,\n\nThank you for contacting ${name}. We have received your ${kind} (reference ${reference}) and will reply shortly.\n\n${signature.text}`,
   });
 }
 
@@ -210,6 +223,7 @@ async function deliverSubmission(kind: string, reference: string, guestEmail: st
 export async function sendPasswordResetEmail(to: string, name: string, link: string, team: boolean) {
   if (!getTransporter()) return;
   const site = await businessName();
+  const signature = await emailSignature(site);
   const intro = team ? `We received a request to reset the password of your ${site} team account.` : `We received a request to reset your ${site} account password.`;
   const outro = "This link works once and expires in 1 hour. If you didn't ask for this, you can ignore this email – your password stays the same.";
   await sendMail({
@@ -221,7 +235,8 @@ export async function sendPasswordResetEmail(to: string, name: string, link: str
 <p><a href="${escapeHtml(link)}" style="display:inline-block;background:#1f4d3a;color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none">Reset password</a></p>
 <p style="color:#555;font-size:13px">Or paste this link into your browser:<br>${escapeHtml(link)}</p>
 <p style="color:#555;font-size:13px">${escapeHtml(outro)}</p>
+${signature.html}
 </div>`,
-    text: `Hello ${name},\n\n${intro}\n\nReset your password: ${link}\n\n${outro}`,
+    text: `Hello ${name},\n\n${intro}\n\nReset your password: ${link}\n\n${outro}\n\n${signature.text}`,
   });
 }

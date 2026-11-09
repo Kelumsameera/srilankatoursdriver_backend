@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { after, test, mock } from "node:test";
 
 // Never load real credentials or contact SMTP/DB in tests.
+process.env.DOTENV_CONFIG_PATH = "tests/.env-not-used";
 process.env.NODE_ENV = "test";
 process.env.MONGODB_URI = "mongodb://127.0.0.1/email-test";
 process.env.JWT_ACCESS_SECRET = "a".repeat(40);
@@ -10,12 +11,15 @@ process.env.SMTP_HOST = "smtp.titan.email";
 process.env.SMTP_PORT = "465";
 process.env.SMTP_USER = "info@srilankatoursdriver.com";
 process.env.SMTP_FROM = "Sri Lanka Tours Driver <info@srilankatoursdriver.com>";
-process.env.SMTP_PASSWORD = "Tours1@Thanuja";
+process.env.SMTP_PASSWORD = "";
 process.env.NOTIFY_EMAIL = "info@srilankatoursdriver.com; srilankatoursdriver@gmail.com";
+const { BrandSetting } = await import("../src/models/BrandSetting.js");
+const { buildEmailSignature } = await import("../src/services/email/email-signature.js");
 const { SiteSetting } = await import("../src/models/SiteSetting.js");
 const { parseEnv } = await import("../src/config/env.js");
 const email = await import("../src/services/email/email.service.js");
 mock.method(SiteSetting, "findOne", () => ({ select: () => ({ lean: async () => ({ businessName: "Sri Lanka Tours Driver" }) }) }));
+mock.method(BrandSetting, "findOne", () => ({ select: () => ({ lean: async () => ({ logoIcon: { url: "https://example.com/logo.png" } }) }) }));
 after(() => {
   email.setMailTransport(null);
   mock.restoreAll();
@@ -108,4 +112,24 @@ test("connection verification and missing password report correctly", async () =
   assert.equal(await email.verifyEmailConnection(), true);
   email.setMailTransport(null);
   assert.equal(await email.verifyEmailConnection(), false);
+});
+
+test("admin, customer and password reset messages include a logo signature", async () => {
+  const messages = capture();
+  await email.notifyNewSubmission("booking request", "B-SIGNATURE", "guest@example.com", "Guest", []);
+  await email.sendPasswordResetEmail("guest@example.com", "Guest", "https://example.com/reset?token=test", false);
+  assert.equal(messages.length, 3);
+  for (const mail of messages) {
+    assert.match(mail.text, /Best regards,\nSri Lanka Tours Driver/);
+    assert.match(mail.html, /src="https:\/\/example.com\/logo.png"/);
+    assert.match(mail.html, /mailto:info@srilankatoursdriver.com/);
+  }
+});
+test("signature escapes branding and rejects unsafe image and website URLs", () => {
+  const signature = buildEmailSignature('<script>bad</script>', 'javascript:alert(1)', 'https://user:password@example.com');
+  assert.ok(!signature.html.includes('<script>'));
+  assert.ok(!signature.html.includes('javascript:'));
+  assert.ok(!signature.html.includes('password'));
+  assert.match(signature.html, /sri-lanka-emblem-512.png/);
+  assert.match(signature.text, /https:\/\/srilankatoursdriver.com/);
 });
