@@ -1,3 +1,4 @@
+import { verifyEmailConnection } from "./services/email/email.service.js";
 import { env } from "./config/env.js";
 import { logger } from "./config/logger.js";
 import { connectDatabase, disconnectDatabase } from "./config/db.js";
@@ -5,6 +6,7 @@ import { createApp } from "./app.js";
 
 async function main() {
   await connectDatabase();
+  void verifyEmailConnection();
   const app = createApp();
   const server = app.listen(env.PORT, () => logger.info(`API listening on http://localhost:${env.PORT}/api`));
 

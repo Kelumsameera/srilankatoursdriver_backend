@@ -6,6 +6,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test:email": "tsx --test tests/email.test.ts",
+    "verify:email": "tsx src/scripts/verify-email.ts",
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/src/server.js",

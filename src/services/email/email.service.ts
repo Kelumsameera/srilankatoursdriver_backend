@@ -8,7 +8,8 @@ let transporter: Transporter | null = null;
 
 /** Minimal transport shape, so tests can capture mail without an SMTP server. */
 export interface MailTransport {
-  sendMail(mail: Mail & { from: string }): Promise<unknown>;
+  sendMail(mail: Mail & { from: string }): Promise<{ accepted?: unknown[]; rejected?: unknown[] }>;
+  verify(): Promise<unknown>;
 }
 let override: MailTransport | null = null;
 /** Test hook – lets tests capture outgoing mail. */
@@ -26,29 +27,68 @@ function getTransporter(): MailTransport | null {
   transporter ??= nodemailer.createTransport({
     host: env.SMTP_HOST,
     port: env.SMTP_PORT,
-    secure: env.SMTP_PORT === 465,
+    secure: true,
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 20_000,
+    logger: false,
+    debug: false,
     auth: { user: env.SMTP_USER, pass: env.SMTP_PASSWORD },
   });
   return transporter;
 }
 
 interface Mail {
-  to: string;
+  to: string | string[];
   subject: string;
   html: string;
   text: string;
   replyTo?: string;
 }
 
-/** Sends an email if SMTP is configured. Never throws – failures are logged. */
+/** Log only safe metadata: SMTP errors can contain credentials or message content. */
+function logSmtpError(error: unknown, operation: string) {
+  const e = error as { code?: unknown; responseCode?: unknown } | null;
+  const code = typeof e?.code === "string" && /^[A-Z_]+$/.test(e.code) ? e.code : "UNKNOWN";
+  const responseCode = typeof e?.responseCode === "number" ? e.responseCode : undefined;
+  logger.error({ code, responseCode, operation }, code === "EAUTH" || responseCode === 535
+    ? "Titan authentication failed: check the official mailbox password, third-party access and app password if 2FA is enabled"
+    : "Titan SMTP operation failed");
+}
+
+/** Verifies TLS connectivity and authentication; does not send a message. */
+export async function verifyEmailConnection(): Promise<boolean> {
+  const t = getTransporter();
+  if (!t) {
+    logger.warn("Titan SMTP is disabled: SMTP_PASSWORD is missing");
+    return false;
+  }
+  try {
+    await t.verify();
+    return true;
+  } catch (error) {
+    logSmtpError(error, "verify");
+    return false;
+  }
+}
+
+/** True only if SMTP accepted every intended recipient. Never retry ambiguous/partial sends. */
 export async function sendMail(mail: Mail): Promise<boolean> {
   const t = getTransporter();
   if (!t) return false;
+  const recipients = [...new Set((Array.isArray(mail.to) ? mail.to : [mail.to]).map((a) => a.trim().toLowerCase()))];
+  if (!recipients.length || recipients.some((a) => !/^[^\s@<>;,]+@[^\s@<>;,]+\.[^\s@<>;,]+$/.test(a))) {
+    logger.error("Email recipients are invalid");
+    return false;
+  }
   try {
-    await t.sendMail({ from: env.SMTP_FROM, ...mail });
-    return true;
-  } catch (err) {
-    logger.error({ err, to: mail.to }, "Email send failed");
+    const result = await t.sendMail({ ...mail, to: recipients, from: env.SMTP_FROM });
+    const accepted = new Set((result.accepted ?? []).map((a) => String(a).toLowerCase()));
+    const complete = Array.isArray(result.accepted) && Array.isArray(result.rejected) && result.rejected.length === 0 && recipients.every((a) => accepted.has(a));
+    if (!complete) logger.error({ acceptedCount: accepted.size, rejectedCount: result.rejected?.length, expectedCount: recipients.length }, "SMTP did not accept all recipients; no automatic retry");
+    return complete;
+  } catch (error) {
+    logSmtpError(error, "send");
     return false;
   }
 }
@@ -69,10 +109,12 @@ function table(rows: [string, unknown][]): { html: string; text: string } {
   };
 }
 
-async function notifyAddress(): Promise<string | null> {
-  if (env.NOTIFY_EMAIL) return env.NOTIFY_EMAIL;
+// NOTIFY_EMAIL can hold several inboxes: "a@x.com, b@y.com" – every one gets each notification
+async function notifyAddress(): Promise<string[] | null> {
+  const list = (env.NOTIFY_EMAIL ?? "").split(/[,;\s]+/).filter(Boolean);
+  if (list.length) return list;
   const s = await SiteSetting.findOne({ key: "default" }).select("email").lean();
-  return s?.email || null;
+  return s?.email ? [s.email] : null;
 }
 
 async function businessName(): Promise<string> {
@@ -120,7 +162,24 @@ export function resetAcknowledgementLimits() {
  * The acknowledgement contains only the reference and fixed text – nothing the visitor typed –
  * so the site can't be used to deliver attacker-written content from our domain.
  */
+// Match the booking submission deduplication window, including concurrent calls. No automatic
+// retries: after a timeout SMTP may already have accepted the message. This is process-local.
+const notifications = new Map<string, { startedAt: number; pending: Promise<void> }>();
 export async function notifyNewSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
+  if (!getTransporter()) return;
+  const now = Date.now();
+  for (const [key, value] of notifications) if (now - value.startedAt > 15 * 60 * 1000) notifications.delete(key);
+  const key = `${kind}:${reference}`;
+  const previous = notifications.get(key);
+  if (previous) return previous.pending;
+  const pending = deliverSubmission(kind, reference, guestEmail, guestName, details).catch((error: unknown) => {
+    logSmtpError(error, "notification");
+  });
+  notifications.set(key, { startedAt: now, pending });
+  return pending;
+}
+
+async function deliverSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
   if (!getTransporter()) return;
   const [to, name] = await Promise.all([notifyAddress(), businessName()]);
   if (to) {

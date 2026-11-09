@@ -58,11 +58,11 @@ const envSchema = z.object({
     message: "API_PROXY_SECRET must be at least 32 characters (or empty to disable it)",
   }),
 
-  SMTP_HOST: optionalString,
-  SMTP_PORT: z.coerce.number().int().positive().default(587),
-  SMTP_USER: optionalString,
+  SMTP_HOST: z.literal("smtp.titan.email").default("smtp.titan.email"),
+  SMTP_PORT: z.coerce.number().pipe(z.literal(465)).default(465),
+  SMTP_USER: z.literal("info@srilankatoursdriver.com").default("info@srilankatoursdriver.com"),
   SMTP_PASSWORD: optionalString,
-  SMTP_FROM: z.string().default("Sri Lanka Tours Driver <no-reply@srilankatoursdriver.com>"),
+  SMTP_FROM: z.literal("Sri Lanka Tours Driver <info@srilankatoursdriver.com>").default("Sri Lanka Tours Driver <info@srilankatoursdriver.com>"),
   NOTIFY_EMAIL: optionalString,
 
   TRANSLATION_PROVIDER: z.preprocess(blankToUndefined, z.enum(["deepl", "google", "libretranslate", "none"]).default("none")),
