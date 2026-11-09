@@ -126,8 +126,11 @@ async function businessName(): Promise<string> {
 
 async function emailSignature(name: string) {
   try {
-    const branding = await BrandSetting.findOne({ key: "default" }).select("logoIcon primaryLogo darkLogo").lean();
-    return buildEmailSignature(name, (branding?.logoIcon?.url || branding?.primaryLogo?.url || branding?.darkLogo?.url) ?? undefined, env.FRONTEND_URL);
+    const [branding, settings] = await Promise.all([
+      BrandSetting.findOne({ key: "default" }).select("logoIcon primaryLogo darkLogo").lean(),
+      SiteSetting.findOne({ key: "default" }).select("tripadvisor.awards").lean(),
+    ]);
+    return buildEmailSignature(name, (branding?.logoIcon?.url || branding?.primaryLogo?.url || branding?.darkLogo?.url) ?? undefined, env.FRONTEND_URL, settings?.tripadvisor?.awards);
   } catch {
     // Branding lookup failure must not stop a booking notification or password reset.
     return buildEmailSignature(name, undefined, env.FRONTEND_URL);

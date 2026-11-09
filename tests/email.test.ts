@@ -18,7 +18,7 @@ const { buildEmailSignature } = await import("../src/services/email/email-signat
 const { SiteSetting } = await import("../src/models/SiteSetting.js");
 const { parseEnv } = await import("../src/config/env.js");
 const email = await import("../src/services/email/email.service.js");
-mock.method(SiteSetting, "findOne", () => ({ select: () => ({ lean: async () => ({ businessName: "Sri Lanka Tours Driver" }) }) }));
+mock.method(SiteSetting, "findOne", () => ({ select: () => ({ lean: async () => ({ businessName: "Sri Lanka Tours Driver", tripadvisor: { awards: [{ year: 2024, name: "Travellers' Choice", sourceUrl: "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews.html" }] } }) }) }));
 mock.method(BrandSetting, "findOne", () => ({ select: () => ({ lean: async () => ({ logoIcon: { url: "https://example.com/logo.png" } }) }) }));
 after(() => {
   email.setMailTransport(null);
@@ -123,6 +123,7 @@ test("admin, customer and password reset messages include a logo signature", asy
     assert.match(mail.text, /Best regards,\nSri Lanka Tours Driver/);
     assert.match(mail.html, /src="https:\/\/example.com\/logo.png"/);
     assert.match(mail.html, /mailto:info@srilankatoursdriver.com/);
+    assert.match(mail.html, /tripadvisor-choice-2024.png/);
   }
 });
 test("signature escapes branding and rejects unsafe image and website URLs", () => {
@@ -132,4 +133,14 @@ test("signature escapes branding and rejects unsafe image and website URLs", () 
   assert.ok(!signature.html.includes('password'));
   assert.match(signature.html, /sri-lanka-emblem-512.png/);
   assert.match(signature.text, /https:\/\/srilankatoursdriver.com/);
+});
+
+test("signature shows only recorded award years with matching green badge images", () => {
+  const awards = [2025, 2024].map((year) => ({ year, name: "Travellers' Choice", sourceUrl: "https://www.tripadvisor.com/Attraction_Review-g293962-d23985020-Reviews.html" }));
+  const signature = buildEmailSignature("Sri Lanka Tours Driver", undefined, undefined, awards);
+  assert.match(signature.html, /tripadvisor-choice-2024.png/);
+  assert.match(signature.html, /tripadvisor-choice-2025.png/);
+  assert.ok(!signature.html.includes("tripadvisor-choice-2026.png"));
+  assert.match(signature.text, /2024 \| 2025/);
+  assert.ok(!buildEmailSignature("Sri Lanka Tours Driver").html.includes("Choice winner"));
 });
