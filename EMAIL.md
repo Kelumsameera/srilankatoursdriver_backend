@@ -45,10 +45,25 @@ including spam folders. SMTP acceptance does not guarantee final inbox delivery.
 No production deployment is performed by this setup.
 
 All booking notifications, guest acknowledgements and password-reset messages include
-an HTML signature with ?Best regards?, the CMS logo, business name, official mailbox
-and website link. Plain-text messages carry the same contact details. A failed branding
-lookup uses a public logo fallback and never prevents the message from being sent.
-Only HTTPS logo/website URLs without embedded credentials are used.
+an HTML signature with the founder's name and title, location, voice/WhatsApp number,
+official mailbox, website, WhatsApp contact link, and populated social profiles from
+Site Settings. Social icons use hosted PNG assets and are shown only for public HTTPS
+profile URLs without embedded credentials. Plain-text messages include the same
+available social links. The signature also includes Tripadvisor Travelers' Choice text,
+the configured profile link and smaller original-proportion badges when award years
+are recorded. A failed branding lookup uses a public logo fallback and never prevents
+the message from being sent. Only HTTPS logo, website, profile, and image URLs without
+embedded credentials are used.
+
+Tour booking request notifications include the selected published tour's server-resolved
+title, short description, duration and safe HTTPS image, with the requested dates and
+traveller count. The same responsive card appears in the admin notification and customer
+acknowledgement; the plain-text alternatives contain its absolute, locale-aware tour
+URL. The acknowledgement clearly says that the request is not yet a confirmed booking.
+Other submission and password-reset emails do not receive a tour card. Missing or unsafe
+tour media is omitted without affecting the saved booking request or email delivery.
+Social PNG sources are in `frontend/public/images/email-social/`; their email signature
+images are hosted on Cloudinary and use HTTPS URLs independent of frontend deployment.
 
 Never store the real SMTP password in tests. Tests use a transport override and an
 empty password, with dotenv pointed away from the real environment file. Any password
@@ -57,6 +72,10 @@ does not remove it from Git history.
 
 Recorded Tripadvisor award years are shown in the signature, using the same green
 PNG badges as the website. Email badge images are published on Cloudinary so they
-do not depend on a frontend deployment. PNG/SVG source assets remain in the frontend's
+do not depend on a frontend deployment. Original year artwork and provenance remain in the frontend's
 `public/images/awards/` folder; only explicitly recorded years are claimed. New award years
 can be entered in Site Settings, and matching image assets can be added when supplied.
+
+Badge artwork is no longer recreated: each year uses a published copy of the original
+Tripadvisor design. Source URLs and hashes are in `frontend/public/images/awards/sources.json`.
+Email image heights follow each original aspect ratio.

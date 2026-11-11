@@ -5,6 +5,7 @@ import { BrandSetting } from "../../models/BrandSetting.js";
 import { buildEmailSignature } from "./email-signature.js";
 import { SiteSetting } from "../../models/SiteSetting.js";
 import { escapeHtml } from "../../utils/helpers.js";
+import { renderTourCard, type TourBookingEmailContext } from "./tour-card.js";
 
 let transporter: Transporter | null = null;
 
@@ -119,21 +120,28 @@ async function notifyAddress(): Promise<string[] | null> {
   return s?.email ? [s.email] : null;
 }
 
-async function businessName(): Promise<string> {
-  const s = await SiteSetting.findOne({ key: "default" }).select("businessName").lean();
-  return s?.businessName || "Sri Lanka Tours Driver";
-}
-
-async function emailSignature(name: string) {
+async function emailBranding() {
   try {
     const [branding, settings] = await Promise.all([
       BrandSetting.findOne({ key: "default" }).select("logoIcon primaryLogo darkLogo").lean(),
-      SiteSetting.findOne({ key: "default" }).select("tripadvisor.awards").lean(),
+      SiteSetting.findOne({ key: "default" }).select("businessName social tripadvisor.awards tripadvisor.profileUrl").lean(),
     ]);
-    return buildEmailSignature(name, (branding?.logoIcon?.url || branding?.primaryLogo?.url || branding?.darkLogo?.url) ?? undefined, env.FRONTEND_URL, settings?.tripadvisor?.awards);
+    const name = settings?.businessName || "Sri Lanka Tours Driver";
+    return {
+      name,
+      signature: buildEmailSignature(
+        name,
+        (branding?.logoIcon?.url || branding?.primaryLogo?.url || branding?.darkLogo?.url) ?? undefined,
+        env.FRONTEND_URL,
+        settings?.tripadvisor?.awards,
+        settings?.social,
+        settings?.tripadvisor?.profileUrl,
+      ),
+    };
   } catch {
     // Branding lookup failure must not stop a booking notification or password reset.
-    return buildEmailSignature(name, undefined, env.FRONTEND_URL);
+    const name = "Sri Lanka Tours Driver";
+    return { name, signature: buildEmailSignature(name, undefined, env.FRONTEND_URL) };
   }
 }
 
@@ -174,38 +182,47 @@ export function resetAcknowledgementLimits() {
 
 /**
  * Internal notification (with every submitted detail) + a short guest acknowledgement.
- * The acknowledgement contains only the reference and fixed text – nothing the visitor typed –
- * so the site can't be used to deliver attacker-written content from our domain.
+ * The acknowledgement includes only validated request details and server-resolved tour content.
+ * Customer-provided text is not added to the tour card or linked URL.
  */
 // Match the booking submission deduplication window, including concurrent calls. No automatic
 // retries: after a timeout SMTP may already have accepted the message. This is process-local.
 const notifications = new Map<string, { startedAt: number; pending: Promise<void> }>();
-export async function notifyNewSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
+export async function notifyNewSubmission(
+  kind: string,
+  reference: string,
+  guestEmail: string,
+  guestName: string,
+  details: [string, unknown][],
+  bookingContext?: TourBookingEmailContext,
+) {
   if (!getTransporter()) return;
   const now = Date.now();
   for (const [key, value] of notifications) if (now - value.startedAt > 15 * 60 * 1000) notifications.delete(key);
   const key = `${kind}:${reference}`;
   const previous = notifications.get(key);
   if (previous) return previous.pending;
-  const pending = deliverSubmission(kind, reference, guestEmail, guestName, details).catch((error: unknown) => {
+  const pending = deliverSubmission(kind, reference, guestEmail, guestName, details, bookingContext).catch((error: unknown) => {
     logSmtpError(error, "notification");
   });
   notifications.set(key, { startedAt: now, pending });
   return pending;
 }
 
-async function deliverSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][]) {
+async function deliverSubmission(kind: string, reference: string, guestEmail: string, guestName: string, details: [string, unknown][], bookingContext?: TourBookingEmailContext) {
   if (!getTransporter()) return;
-  const [to, name] = await Promise.all([notifyAddress(), businessName()]);
-  const signature = await emailSignature(name);
+  const [to, branding] = await Promise.all([notifyAddress(), emailBranding()]);
+  const card = bookingContext ? renderTourCard(bookingContext, env.FRONTEND_URL) : undefined;
+  const safeGuestName = headerText(guestName, 120);
+  const signature = branding.signature;
   if (to) {
     const internal = table([["Reference", reference], ...details]);
     await sendMail({
       to,
       replyTo: guestEmail,
       subject: `New ${kind} ${reference} – ${headerText(guestName)}`,
-      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${internal.html}${signature.html}`,
-      text: `New ${kind}\n\n${internal.text}\n\n${signature.text}`,
+      html: `<h2 style="font-family:Arial">New ${escapeHtml(kind)}</h2>${internal.html}${card?.html ?? ""}${signature.html}`,
+      text: `New ${kind}\n\n${internal.text}${card ? `\n\n${card.text}` : ""}\n\n${signature.text}`,
     });
   }
   if (!allowAcknowledgement(guestEmail)) {
@@ -215,18 +232,18 @@ async function deliverSubmission(kind: string, reference: string, guestEmail: st
   await sendMail({
     to: guestEmail,
     subject: `We received your ${kind} (${reference})`,
-    html: `<p style="font-family:Arial">Hello,</p><p style="font-family:Arial">Thank you for contacting ${escapeHtml(name)}. We have received your ${escapeHtml(
+    html: `<p style="font-family:Arial">${bookingContext && safeGuestName ? `Hello ${escapeHtml(safeGuestName)},` : "Hello,"}</p><p style="font-family:Arial">Thank you for contacting ${escapeHtml(branding.name)}. We have received your ${escapeHtml(
       kind,
-    )} (reference <strong>${escapeHtml(reference)}</strong>) and will reply shortly.</p>${signature.html}`,
-    text: `Hello,\n\nThank you for contacting ${name}. We have received your ${kind} (reference ${reference}) and will reply shortly.\n\n${signature.text}`,
+    )} (reference <strong>${escapeHtml(reference)}</strong>) and will reply shortly.</p>${card?.html ?? ""}${card ? `<p style="font-family:Arial;color:#475569;font-size:13px">This email confirms receipt of your request only. Your booking is not confirmed yet.</p>` : ""}${signature.html}`,
+    text: `${bookingContext && safeGuestName ? `Hello ${safeGuestName},` : "Hello,"}\n\nThank you for contacting ${branding.name}. We have received your ${kind} (reference ${reference}) and will reply shortly.${card ? `\n\n${card.text}\n\nThis email confirms receipt of your request only. Your booking is not confirmed yet.` : ""}\n\n${signature.text}`,
   });
 }
 
 /** "Forgot password" email. The name is the account's own; the link is built by the server. */
 export async function sendPasswordResetEmail(to: string, name: string, link: string, team: boolean) {
   if (!getTransporter()) return;
-  const site = await businessName();
-  const signature = await emailSignature(site);
+  const branding = await emailBranding();
+  const site = branding.name;
   const intro = team ? `We received a request to reset the password of your ${site} team account.` : `We received a request to reset your ${site} account password.`;
   const outro = "This link works once and expires in 1 hour. If you didn't ask for this, you can ignore this email – your password stays the same.";
   await sendMail({
@@ -238,8 +255,8 @@ export async function sendPasswordResetEmail(to: string, name: string, link: str
 <p><a href="${escapeHtml(link)}" style="display:inline-block;background:#1f4d3a;color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none">Reset password</a></p>
 <p style="color:#555;font-size:13px">Or paste this link into your browser:<br>${escapeHtml(link)}</p>
 <p style="color:#555;font-size:13px">${escapeHtml(outro)}</p>
-${signature.html}
+${branding.signature.html}
 </div>`,
-    text: `Hello ${name},\n\n${intro}\n\nReset your password: ${link}\n\n${outro}\n\n${signature.text}`,
+    text: `Hello ${name},\n\n${intro}\n\nReset your password: ${link}\n\n${outro}\n\n${branding.signature.text}`,
   });
 }

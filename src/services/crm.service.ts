@@ -6,6 +6,7 @@ import type { ListQuery } from "../validations/common.js";
 import { env } from "../config/env.js";
 import { groupPriceFor, type GroupPrice } from "../utils/group-price.js";
 import { notifyNewSubmission } from "./email/email.service.js";
+import type { TourBookingEmailContext } from "./email/tour-card.js";
 
 type AnyRecord = Record<string, unknown>;
 
@@ -51,20 +52,45 @@ export async function createBooking(input: AnyRecord, accountId?: string) {
 
   let itemTitle = "";
   let listPrice: { price: number; vehicle?: string; currency: string } | undefined;
+  let bookingEmailContext: TourBookingEmailContext | undefined;
   const type = String(data.type ?? "general");
   const refModel: Record<string, Model<AnyRecord>> = {
-    tour: Tour as unknown as Model<AnyRecord>,
     excursion: Excursion as unknown as Model<AnyRecord>,
     vehicle: Vehicle as unknown as Model<AnyRecord>,
   };
-  if (type in refModel) {
+  const persons = Number(data.adults ?? 1) + Number(data.children ?? 0);
+  if (type === "tour") {
+    if (!data.tour) throw ApiError.badRequest("Please choose a tour", [{ path: "tour", message: "Required" }]);
+    const tour = await Tour.findOne({ _id: data.tour, status: "published" })
+      .select("title slug shortDescription heroMedia.url heroMedia.resourceType gallery.url gallery.resourceType durationDays durationNights groupPrices currency")
+      .lean();
+    if (!tour) throw ApiError.badRequest("Selected tour is not available");
+    itemTitle = tour.title;
+    const row = groupPriceFor(tour.groupPrices as GroupPrice[] | undefined, persons);
+    if (row) listPrice = { price: row.price, vehicle: row.vehicle, currency: tour.currency ?? "USD" };
+    bookingEmailContext = {
+      tour: {
+        title: tour.title,
+        slug: tour.slug,
+        shortDescription: tour.shortDescription,
+        heroMedia: tour.heroMedia,
+        gallery: tour.gallery,
+        durationDays: tour.durationDays,
+        durationNights: tour.durationNights,
+      },
+      locale: typeof data.locale === "string" ? data.locale : undefined,
+      startDate: data.startDate instanceof Date ? data.startDate : undefined,
+      endDate: data.endDate instanceof Date ? data.endDate : undefined,
+      adults: Number(data.adults ?? 1),
+      children: Number(data.children ?? 0),
+    };
+  } else if (type in refModel) {
     const id = data[type];
     if (!id) throw ApiError.badRequest(`Please choose a ${type}`, [{ path: type, message: "Required" }]);
     const item = await refModel[type].findOne({ _id: id, status: "published" }).select("title name groupPrices currency").lean();
     if (!item) throw ApiError.badRequest(`Selected ${type} is not available`);
     itemTitle = String(item.title ?? item.name ?? "");
-    // The price the booking form showed, from the tour's price list – staff can change the quote later
-    const persons = Number(data.adults ?? 1) + Number(data.children ?? 0);
+    // Keep the selected price list row; staff can change the quote later.
     const row = groupPriceFor(item.groupPrices as GroupPrice[] | undefined, persons);
     if (row) listPrice = { price: row.price, vehicle: row.vehicle, currency: String(item.currency ?? "USD") };
   }
@@ -101,6 +127,7 @@ export async function createBooking(input: AnyRecord, accountId?: string) {
       ["Pickup", booking.pickupLocation],
       ["Message", booking.message],
     ],
+    bookingEmailContext,
   );
   return { reference: booking.reference, id: String(booking._id) };
 }
