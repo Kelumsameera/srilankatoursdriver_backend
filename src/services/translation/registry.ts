@@ -147,6 +147,10 @@ export const TRANSLATABLE: Record<string, TranslatableEntity> = {
       "excursionRates.tables.*.rows.*.destination",
       "excursionRates.tables.*.rows.*.duration",
       "tripadvisor.ratingText",
+      "team.title",
+      "team.subtitle",
+      "team.members.*.role",
+      "team.members.*.bio",
     ],
   },
 };

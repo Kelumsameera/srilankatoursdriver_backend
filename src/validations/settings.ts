@@ -113,6 +113,27 @@ export const siteSettingsUpdate = z
       })
       .partial(),
     partners: z.array(z.object({ name: shortText(120).min(1), url: httpUrl.optional(), logo: mediaAsset })).max(20),
+    team: z
+      .object({
+        enabled: z.boolean(),
+        title: shortText(120),
+        subtitle: shortText(300),
+        members: z
+          .array(
+            z.object({
+              _id: z.string().regex(/^[a-f\d]{24}$/i).optional(),
+              name: shortText(120).min(1),
+              role: shortText(120).optional(),
+              bio: shortText(1000).optional(),
+              languages: z.array(shortText(40).min(1)).max(15).optional(),
+              photo: mediaAsset,
+              enabled: z.boolean().optional(),
+            }),
+          )
+          .max(50),
+        images: z.array(mediaAsset.unwrap().unwrap()).max(30),
+      })
+      .partial(),
     maintenanceMode: z.boolean(),
   })
   .partial();

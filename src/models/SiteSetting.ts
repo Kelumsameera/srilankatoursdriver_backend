@@ -33,6 +33,19 @@ const partnerSchema = new Schema(
   { _id: false },
 );
 
+/** One person on the "Our team" section (drivers, guides, owner …). */
+const teamMemberSchema = new Schema(
+  {
+    name: { type: String, trim: true, required: true },
+    role: { type: String, trim: true, default: "" },
+    bio: { type: String, trim: true, default: "" },
+    languages: { type: [String], default: [] },
+    photo: mediaAssetSchema,
+    enabled: { type: Boolean, default: true },
+  },
+  { _id: true },
+);
+
 const footerLinkSchema = new Schema(
   { label: { type: String, trim: true, required: true }, url: { type: String, trim: true, required: true } },
   { _id: false },
@@ -101,6 +114,14 @@ const siteSettingSchema = new Schema(
       },
     },
     partners: { type: [partnerSchema], default: [] },
+    /** "Our team" section: member cards plus free group/team photos. Array order = display order. */
+    team: {
+      enabled: { type: Boolean, default: true },
+      title: { type: String, trim: true, default: "" },
+      subtitle: { type: String, trim: true, default: "" },
+      members: { type: [teamMemberSchema], default: [] },
+      images: { type: [mediaAssetSchema], default: [] },
+    },
     transferRates: {
       enabled: { type: Boolean, default: true },
       title: { type: String, trim: true, default: "" },
