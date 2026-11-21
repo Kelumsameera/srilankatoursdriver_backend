@@ -111,6 +111,7 @@ export const themeSettings = z
     radiusScale: z.number().min(0).max(2),
     buttonStyle: z.enum(["pill", "rounded", "square"]),
     spacingScale: z.number().min(0.75).max(1.5),
+    snowfall: z.boolean(),
     customCss: z.string().max(20_000).transform(sanitizeCustomCss),
   })
   .partial();
