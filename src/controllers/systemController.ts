@@ -37,7 +37,7 @@ export async function integrations(_req: Request, res: Response) {
     environment: env.NODE_ENV,
     database: { connected: mongoose.connection.readyState === 1, name: mongoose.connection.name },
     cloudinary: { configured: isCloudinaryConfigured(), cloudName: env.CLOUDINARY_CLOUD_NAME ?? null, rootFolder: env.CLOUDINARY_ROOT_FOLDER },
-    email: { configured: isEmailConfigured(), host: env.SMTP_HOST ?? null, from: env.SMTP_FROM },
+    email: { configured: isEmailConfigured(), host: "Frontend mail route (Titan)", from: env.SMTP_FROM },
     translation: { configured: isTranslationConfigured(), provider: env.TRANSLATION_PROVIDER },
     tripadvisor: { configured: isTripAdvisorConfigured(), locationId: env.TRIPADVISOR_LOCATION_ID ?? null },
     revalidation: { configured: Boolean(env.REVALIDATE_SECRET), frontendUrl: env.FRONTEND_URL },

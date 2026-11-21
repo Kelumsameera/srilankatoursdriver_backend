@@ -1,14 +1,32 @@
-# Titan email setup
+# Website email setup
 
-All outgoing mail uses Titan SMTP only: `smtp.titan.email:465` with implicit TLS,
+## How mail is sent
+
+The backend never connects to an SMTP server. Every email (booking and enquiry
+notifications, guest acknowledgements) is POSTed to the frontend route
+`/api/internal-mail`, authenticated with a token derived from the shared
+`REVALIDATE_SECRET`. That route sends it through Titan SMTP.
+
+- Backend (Render): `REVALIDATE_SECRET` and `FRONTEND_URL` (canonical HTTPS frontend
+  origin, no redirect). No SMTP password is needed on the backend.
+- Frontend (Vercel, server-only): the same `REVALIDATE_SECRET` and `SMTP_PASSWORD`
+  (the Titan mailbox password).
+
+Deploy the frontend first, then the backend. `npm run verify:email` (backend) checks
+that the route is reachable and that Titan login works, without sending an email.
+A test booking is needed to check delivery to the admin and customer inboxes.
+
+## Titan SMTP settings (frontend route)
+
+The frontend route uses Titan SMTP at `smtp.titan.email:465` with implicit TLS,
 username `info@srilankatoursdriver.com`, sender
-`Sri Lanka Tours Driver <info@srilankatoursdriver.com>`. Environment validation rejects
-other providers, usernames, ports and senders. No Gmail SMTP fallback is used.
+`Sri Lanka Tours Driver <info@srilankatoursdriver.com>`. Host, port, username and sender
+are fixed in the route. No Gmail SMTP fallback is used.
 
-Set `SMTP_PASSWORD` securely in backend `.env` (or the deployment secret store) to
-this Titan mailbox password. If 2FA is enabled, use a Titan application password.
+Set `SMTP_PASSWORD` securely in the frontend's server-side environment (Vercel project
+settings, never a `NEXT_PUBLIC_` variable) to this Titan mailbox password. If 2FA is enabled, use a Titan application password.
 Enable third-party email access in Titan where required. Never use a Gmail password,
-put credentials in frontend variables, or paste credentials into logs/chat.
+expose credentials to the browser, or paste credentials into logs/chat.
 The previous local credentials belonged to another account and were removed from
 the SMTP password setting rather than reused with Titan.
 
@@ -18,8 +36,8 @@ trip, dates, party, pickup, price and other submitted fields, with customer Repl
 The existing separate guest acknowledgement contains the reference and fixed text.
 It acknowledges receipt of a request, not a final reservation approval.
 
-Run `npm run verify:email` after setting the password, then restart the backend.
-Startup also verifies SMTP without blocking booking API availability. Verification
+Run `npm run verify:email` after setting the password and redeploying the frontend.
+Backend startup also verifies the mail route without blocking booking API availability. Verification
 checks connection/authentication only; it does not prove sender authorization,
 recipient acceptance or inbox delivery. 535/EAUTH means Titan rejected authentication:
 check the mailbox password, third-party access and app password settings.

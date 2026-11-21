@@ -1,4 +1,4 @@
-import nodemailer, { type Transporter } from "nodemailer";
+import { createHmac } from "node:crypto";
 import { env } from "../../config/env.js";
 import { logger } from "../../config/logger.js";
 import { BrandSetting } from "../../models/BrandSetting.js";
@@ -7,7 +7,6 @@ import { SiteSetting } from "../../models/SiteSetting.js";
 import { escapeHtml } from "../../utils/helpers.js";
 import { renderTourCard, type TourBookingEmailContext } from "./tour-card.js";
 
-let transporter: Transporter | null = null;
 
 /** Minimal transport shape, so tests can capture mail without an SMTP server. */
 export interface MailTransport {
@@ -20,25 +19,43 @@ export function setMailTransport(t: MailTransport | null) {
   override = t;
 }
 
+/**
+ * The backend never talks to an SMTP server: every email goes to the frontend's /api/internal-mail route,
+ * which sends it through Titan. The route is authenticated with a token derived from REVALIDATE_SECRET.
+ */
 export function isEmailConfigured(): boolean {
-  return Boolean(env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASSWORD);
+  return Boolean(env.REVALIDATE_SECRET);
+}
+
+async function callMailRelay(method: "HEAD" | "POST", mail?: Mail) {
+  const url = new URL("/api/internal-mail", env.FRONTEND_URL);
+  if (env.NODE_ENV === "production" && url.protocol !== "https:") {
+    logger.error("Frontend mail relay requires an HTTPS FRONTEND_URL");
+    throw Object.assign(new Error("Invalid mail relay URL"), { code: "MAIL_RELAY_URL" });
+  }
+  const response = await fetch(url, {
+    method,
+    headers: { authorization: `Bearer ${createHmac("sha256", env.REVALIDATE_SECRET!).update("internal-mail").digest("hex")}`, "content-type": "application/json" },
+    body: mail ? JSON.stringify(mail) : undefined,
+    redirect: "error",
+    signal: AbortSignal.timeout(12_000),
+  });
+  if (response.status !== 204) {
+    logger.error({ status: response.status }, "Frontend mail relay failed");
+    throw Object.assign(new Error("Frontend mail relay failed"), { code: "MAIL_RELAY_FAILED" });
+  }
 }
 
 function getTransporter(): MailTransport | null {
   if (override) return override;
   if (!isEmailConfigured()) return null;
-  transporter ??= nodemailer.createTransport({
-    host: env.SMTP_HOST,
-    port: env.SMTP_PORT,
-    secure: true,
-    connectionTimeout: 10_000,
-    greetingTimeout: 10_000,
-    socketTimeout: 20_000,
-    logger: false,
-    debug: false,
-    auth: { user: env.SMTP_USER, pass: env.SMTP_PASSWORD },
-  });
-  return transporter;
+  return {
+    async sendMail({ to, subject, html, text, replyTo }) {
+      await callMailRelay("POST", { to, subject, html, text, replyTo });
+      return { accepted: Array.isArray(to) ? to : [to], rejected: [] };
+    },
+    verify: () => callMailRelay("HEAD"),
+  };
 }
 
 interface Mail {
@@ -56,14 +73,14 @@ function logSmtpError(error: unknown, operation: string) {
   const responseCode = typeof e?.responseCode === "number" ? e.responseCode : undefined;
   logger.error({ code, responseCode, operation }, code === "EAUTH" || responseCode === 535
     ? "Titan authentication failed: check the official mailbox password, third-party access and app password if 2FA is enabled"
-    : "Titan SMTP operation failed");
+    : "Frontend email operation failed");
 }
 
 /** Verifies TLS connectivity and authentication; does not send a message. */
 export async function verifyEmailConnection(): Promise<boolean> {
   const t = getTransporter();
   if (!t) {
-    logger.warn("Titan SMTP is disabled: SMTP_PASSWORD is missing");
+    logger.warn("Email is disabled: REVALIDATE_SECRET is missing, so the frontend mail route cannot be called");
     return false;
   }
   try {
