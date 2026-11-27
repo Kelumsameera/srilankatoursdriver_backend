@@ -59,7 +59,7 @@ async function defaultLanguageCode(enabled: string[]) {
 }
 
 export async function listLanguages(onlyEnabled = false) {
-  const stored = await Language.find(onlyEnabled ? { enabled: true } : {}).sort({ order: 1 }).lean();
+  const stored = await Language.find({ code: { $in: [...SUPPORTED_LOCALES] }, ...(onlyEnabled ? { enabled: true } : {}) }).sort({ order: 1 }).lean();
   // Fallback before seeding: expose all supported locales.
   const rows =
     stored.length > 0

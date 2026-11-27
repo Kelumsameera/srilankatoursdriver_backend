@@ -12,6 +12,7 @@ export const publicQuery = z.object({
     .string()
     .regex(/^[a-f0-9]{24}$/i)
     .optional(),
+  location: z.string().trim().max(120).optional(),
   search: z.string().trim().max(120).optional(),
   /** Alias of `search`. */
   q: z.string().trim().max(120).optional(),

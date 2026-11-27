@@ -25,9 +25,13 @@ try {
   }
   const patch = brandingUpdate.parse({
     logoIcon: { mediaId: String(media._id), publicId: media.publicId, url: media.secureUrl, resourceType: "image", format: media.format, width: media.width, height: media.height, alt: media.altText },
+    logoIconWidth: 64,
+    logoIconHeight: 64,
     logoTextLine1: "SRI LANKA",
     logoTextLine2: "TOURS DRIVER",
-    logoFont: "Poppins",
+    logoTextLine1Size: 32,
+    logoTextLine2Size: 18,
+    logoFont: "SriLankan",
     logoTextColor1: "#032d55",
     logoTextColor2: "#009f91",
     logoLightTextColor1: "#ffffff",

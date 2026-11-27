@@ -145,6 +145,7 @@ interface PublicListOptions {
   featured?: boolean;
   category?: string;
   destination?: string;
+  location?: string;
   search?: string;
   platform?: string;
   /** Tours only: a length from TOUR_DAY_FILTERS, or "other". */
@@ -174,6 +175,7 @@ export async function listPublic(key: PublicResourceKey, opts: PublicListOptions
     }
   }
   if (opts.destination) filter[key === "tours" ? "destinations" : "destination"] = opts.destination;
+  if (opts.location && key === "excursions") filter.location = opts.location;
   if (opts.platform) filter.platform = opts.platform;
   if (opts.days && key === "tours") filter.durationDays = tourDaysFilter(opts.days);
   if (opts.search && cfg.searchFields) {

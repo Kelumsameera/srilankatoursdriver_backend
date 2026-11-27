@@ -6,6 +6,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "translations:audit": "tsx src/scripts/audit-translations.ts",
+    "translations:complete": "tsx src/scripts/complete-translations.ts",
+    "translations:review": "tsx src/scripts/review-translations.ts",
+    "test:translations": "tsx --test tests/translation-fields.test.ts",
     "test:awards": "tsx --test tests/tripadvisor-awards.test.ts",
     "content:tripadvisor-awards": "tsx src/scripts/set-tripadvisor-awards.ts",
     "content:excursion-details": "tsx src/scripts/update-excursion-details.ts",

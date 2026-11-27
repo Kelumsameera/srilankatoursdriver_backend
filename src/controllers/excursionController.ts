@@ -14,6 +14,7 @@ export async function getExcursions(req: Request, res: Response, next: NextFunct
       featured: query.featured === "true",
       category: query.category,
       destination: query.destination,
+      location: query.location,
       search: query.search ?? query.q,
       platform: query.platform,
     });

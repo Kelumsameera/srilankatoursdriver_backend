@@ -2,7 +2,6 @@ export const SOURCE_LOCALE = "en" as const;
 
 export const SUPPORTED_LOCALES = [
   "en",
-  "si",
   "ta",
   "de",
   "fr",
@@ -23,7 +22,6 @@ export const TARGET_LOCALES = SUPPORTED_LOCALES.filter((l) => l !== SOURCE_LOCAL
 
 export const LOCALE_META: Record<Locale, { name: string; nativeName: string; rtl?: boolean }> = {
   en: { name: "English", nativeName: "English" },
-  si: { name: "Sinhala", nativeName: "සිංහල" },
   ta: { name: "Tamil", nativeName: "தமிழ்" },
   de: { name: "German", nativeName: "Deutsch" },
   fr: { name: "French", nativeName: "Français" },

@@ -28,6 +28,14 @@ Do not commit MongoDB credentials, session/JWT secrets, email passwords or exter
 
 Other content, admin-bootstrap and integration verification scripts are listed in `package.json`. Check their prerequisites before running them against real data.
 
+## Content translations
+
+`npm run translations:audit` checks every registered content type and supported target language. It writes a detailed report to the ignored `translation-work/audit.json` file.
+
+`npm run translations:complete` previews missing/outdated content and the amount of text to translate. Add `-- --apply` to translate and save using the configured Gemini key. Use `--locales=de,fr` to restrict the run. Existing locked translations remain protected, and changed source content or concurrent translation edits stop the save. A backup and resumable per-language checkpoints are kept under `translation-work/completion/`. URLs and placeholders are validated before saving, and affected frontend caches are revalidated.
+
+`npm run translations:review -- --apply` checks checkpoint translations against their English source for incorrect meaning, omissions and mismatched fields. Corrections and reasons are saved locally. Review those corrections, then run `npm run translations:complete -- --apply --use-cache` to apply the corrected checkpoints to content. Source IDs, rather than array positions, associate generated translations with fields.
+
 ## Layout
 
 - `src/routes/` — API route definitions
